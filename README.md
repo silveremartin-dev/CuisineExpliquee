@@ -26,41 +26,31 @@ En s'appuyant sur les travaux pionniers de Richard Wrangham, Harold McGee, Nicho
 
 ---
 
-## 🏛️ Structure de l'Ouvrage
+## 🏛️ Structure Réelle de l'Ouvrage (15 Chapitres Fondamentaux)
 
-- **Livre I — Les Fondations de l'Art Culinaire : Du Feu Paléolithique à la Molécule**
-  - Chapitre 1 : *Pourquoi nous cuisons : L'Évolution Humaine et l'Avènement du Feu*
-  - Chapitre 2 : *Histoire Critique du Geste Culinaire : D'Apicius à la Gastronomie Moléculaire*
-  - Chapitre 3 : *L'Arsenal Minimaliste : Cinq Instruments pour Dompter la Matière*
-  - Chapitre 4 : *La Gestion Thermique et les Sources d'Énergie*
-  - Chapitre 5 : *La Neurobiologie des Courses et la Gestion Rationnelle du Garde-Manger*
-- **Livre II — La Maîtrise des Milieux et des États de la Matière**
-  - Chapitre 6 : *L'Eau et les Cuissons Humides*
-  - Chapitre 7 : *Les Lipides, la Friture et le Mystère des Émulsions*
-  - Chapitre 8 : *L'Alchimie des Protéines : Viandes, Poissons et Réactions de Maillard*
-  - Chapitre 9 : *L'Œuf : Polyvalence Moléculaire et Précision Thermique*
-  - Chapitre 10 : *Les Glucides et Féculents : Gélatinisation, Rétrogradation et Digestibilité*
-- **Livre III — L'Écosystème Vivant : Fermentations, Sécurité et Nutrition**
-  - Chapitre 11 : *La Prolifération Microbienne : Fermentations Protectrices et Dangers Toxiques*
-  - Chapitre 12 : *L'Industrie dans l'Assiette : Décryptage des Additifs (Codes E) et Ruses Industrielles*
-  - Chapitre 13 : *Biologie de la Digestion, Rythme des Repas et Santé Métabolique*
-- **Livre IV — L'Anatomie du Goût et l'Assiette Trois Étoiles**
-  - Chapitre 14 : *La Physiologie Sensorielle et les Saveurs Fondamentales*
-  - Chapitre 15 : *Les Secrets de la Haute Gastronomie : L'Architecture de l'Assiette d'Élite*
-- **Livre V — Le Manuel Pratique de la Cuisine Fondatrice Sans Appareillage**
-  - Chapitre 16 : *Le Laboratoire du Lait : Du Fromage Frais en 15 Minutes à la Ricotta sans Matériel*
-  - Chapitre 17 : *La Glace Express sans Sorbetière : L'Abaissement Cryoscopique du Sel*
-  - Chapitre 18 : *La Matrice des Sauces Mères et Dérivées*
-  - Chapitre 19 : *La Matrice du Pain et des Pâtes Levées*
-  - Chapitre 20 : *La Matrice des Pâtisseries Universelles*
-- **Livre VI — Protocoles d'Urgence et Arbres de Sauvetage Culinaire**
-  - Chapitre 21 : *Guide d'Urgence Domestique : Accidents, Incendies et Pannes de Froid*
-  - Chapitre 22 : *L'Arbre de Sauvetage Culinaire : Récupérer l'Irrécupérable*
-- **Annexes de Référence**
-  - *Annexe A : Table Complète des Additifs Alimentaires (Codes E)*
-  - *Annexe B : Guide des Conversions Internationales et Équivalences*
-  - *Annexe C : Glossaire Scientifique et Culinaire Interactif*
-  - *Annexe D : Bibliographie Raisonnée et Références Historiques*
+- **Livre I — Fondations Anthropologiques, Énergie et Sécurité du Foyer**
+  - Chapitre 1 : *L'Odyssée du Feu, la Nutrition de Survie et les Traités Anciens*
+  - Chapitre 2 : *L'Arsenal Minimal et la Maîtrise des Sens (Les 5 Outils Indestructibles)*
+  - Chapitre 3 : *La Thermodynamique du Feu et des Cuissons (Conduction, Convection, Rayonnement & Maillard)*
+  - Chapitre 4 : *La Mécanique des Pâtes, l'Urgence du Feu Gras et la Survie du Frigo*
+  - Chapitre 5 : *Consignes de Sécurité, Gestion des Accidents et Pannes Critiques (Incendies d'huile, décongélation)*
+  - Chapitre 6 : *L'Anatomie du Goût, l'Évolution Culturelle et les Secrets du 3 Étoiles*
+  - Chapitre 7 : *Nourriture Saine, Digestibilité et Hygiène des Repas*
+  - Chapitre 8 : *L'Art des Courses, la Psychologie du Caddie et la Démystification Industrielle*
+- **Livre II — L'Œuf : Archétype de la Matière et de la Coagulation**
+  - Chapitre 9 : *L'Œuf au Repos : Anatomie, Conservation et Biologie Pratique*
+  - Chapitre 10 : *La Coagulation Fractionnée et les Seuils Critiques de l'Œuf*
+- **Livre III — Le Règne Végétal et la Déconstruction de la Matrice**
+  - Chapitre 11 : *La Paroi Végétale, l'Amidon et la Purée d'Heston Blumenthal*
+  - Chapitre 12 : *Protéines Végétales, Légumineuses et Nutrition Végétale Rationnelle*
+  - Chapitre 13 : *La Matrice Universelle du Gâteau et l'Épreuve du Chocolat*
+- **Livre IV — Transformations sans Feu, Fermentations et Préservation Noble**
+  - Chapitre 14 : *La Cuisson Chimique et la Conservation : Sel, Acide, Sucre et Mort Thermique*
+  - Chapitre 15 : *Prolifération Microbienne, Fermentations et Recettes Fondatrices*
+- **Annexes de Référence & Formulaire Critique**
+  - *Annexe A : Le Cadran Absolu des Températures Critiques en Cuisine*
+  - *Annexe B : Glossaire Physico-Chimique & Culinaire Exhaustif*
+  - *Annexe C : Bibliographie Raisonnée et Répertoire Critique (Avec macarons thématiques)*
 
 ---
 

@@ -106,7 +106,7 @@ Le livre doit rompre radicalement avec l'esthétique aride d'un article de reche
    - Les illustrations scientifiques (diagrammes SVG d'infusion, schémas de transfert thermique) doivent adopter des teintes harmonisées avec la charte graphique du livre.
 3. **Architecture et Couvertures Plein Format :**
    - **Couverture Recto (Première de couverture) :** Pleine page photographique mettant en valeur la fraîcheur du marché, surmontée d'une typographie serif distinguée et de bandeaux d'accroche éditoriaux clairs.
-   - **Quatrième de Couverture (Verso) :** Conception éditoriale complète avec pitch percutant, 4 points saillants de la démarche, citation emblématique, bandeau de collection, crédits d'édition et bloc de prix public officiel (24,90 € TTC).
+   - **Quatrième de Couverture (Verso) :** Conception éditoriale complète avec pitch percutant, 4 points saillants de la démarche, citation emblématique, bandeau de collection, crédits d'édition et badge de diffusion ouverte sous licence libre (CC BY-SA 4.0). Proscription formelle de mention tarifaire marchande ou de code-barres artificiel.
    - **Interdiction formelle des faux codes ISBN :** Ne jamais générer de numéro ISBN fictif ou de faux code-barres.
 4. **Structure et Rythme de Lecture :**
    - **Numérotation continue et naturelle :** Chapitres indexés de 1 à 15 (proscription absolue de l'appellation « Chapitre 00 »).

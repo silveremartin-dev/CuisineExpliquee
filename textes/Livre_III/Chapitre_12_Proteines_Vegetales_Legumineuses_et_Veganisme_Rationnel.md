@@ -1,10 +1,10 @@
-# Livre III — L'Écosystème Vivant : Fermentations, Sécurité et Nutrition
+# CHAPITRE 12 — Protéines Végétales, Légumineuses et Végétarisme Rationnel
 
-## Chapitre 12 — L'Alimentation Végétale et la Chimie des Protéines : Compréhension Rationnelle, Digestibilité et Recettes Dédiées
+> « Le règne végétal ne manque pas de protéines : il attend simplement que le cuisinier comprenne la clé de ses liaisons chimiques et l'art séculaire des associations d'acides aminés. »
 
-![Assortiment de légumineuses et graines oléagineuses, réservoirs de protéines végétales](figures/science/legumineuses_proteines_vegetales.jpg)
+---
 
-### 1. La Molécule de Protéine : Démystification Chimique et Besoins Réels
+## 1. La Molécule de Protéine : Démystification Chimique et Besoins Réels
 
 Dans l'imaginaire populaire, la [protéine](#glossaire-proteine) est spontanément associée au muscle animal, au steak saignant ou à l'œuf du matin. Pourtant, sur le plan strictement biochimique, une protéine ne possède ni nationalité ni règne biologique. Qu'elle provienne d'une cuisse de poulet, d'un grain de blé ou d'une fève de soja, une protéine est invariablement **un collier de perles chimiques appelées acides aminés**, enroulé sur lui-même en une pelote tridimensionnelle complexe.
 
@@ -24,7 +24,7 @@ Les fouilles archéologiques d'Éphèse et l'analyse isotopique des squelettes d
 
 ---
 
-### 2. Le Facteur Limitant et l'Art Sacré des Complémentarités
+## 2. Le Facteur Limitant et l'Art Sacré des Complémentarités
 
 La critique la plus rigoureuse adressée aux végétaux concerne leur profil en acides aminés. Si les viandes, poissons, œufs et produits laitiers disposent d'un profil dit « complet », la plupart des végétaux présentent un **acide aminé limitant**, c'est-à-dire présent en proportion insuffisante pour permettre l'assimilation optimale de tous les autres :
 
@@ -55,7 +55,7 @@ Longtemps, la diététique a affirmé qu'il fallait consommer la céréale et la
 
 ---
 
-### 3. Les Facteurs Anti-Nutritionnels : Pourquoi Cuire les Légumineuses est une Question de Survie
+## 3. Les Facteurs Anti-Nutritionnels : Pourquoi Cuire les Légumineuses est une Question de Survie
 
 Les plantes n'ont aucun désir d'être dévorées : au cours de millions d'années d'évolution, elles ont développé un arsenal de défenses biochimiques pour dissuader les herbivores et préserver leurs graines :
 
@@ -77,7 +77,7 @@ Ne cuisez jamais de haricots rouges crus dans une mijoteuse électrique réglée
 
 ---
 
-### 4. Les Trois Grandes Matrices Protéiques Végétales Modernes
+## 4. Les Trois Grandes Matrices Protéiques Végétales Modernes
 
 Au-delà de la graine brute, la cuisine dispose de trois transformations remarquables issues du génie millénaire de l'artisanat :
 
@@ -103,7 +103,7 @@ Au-delà de la graine brute, la cuisine dispose de trois transformations remarqu
 
 ---
 
-### 5. Trois Recettes Fondatrices Pas à Pas 100% Végétales
+## 5. Trois Recettes Fondatrices Pas à Pas 100% Végétales
 
 ---
 
@@ -210,7 +210,7 @@ Les 3 gouttes de jus de citron apportent de l'acide citrique qui abaisse le pH v
 
 ---
 
-### 6. Tableau Récapitulatif : Équivalences et Substitutions Protéiques Végétales
+## 6. Tableau Récapitulatif : Équivalences et Substitutions Protéiques Végétales
 
 | Ingrédient Conventionnel | Alternative Végétale Équivalente | Mécanisme Physico-Chimique en Jeu | Précaution Majeure |
 | :--- | :--- | :--- | :--- |

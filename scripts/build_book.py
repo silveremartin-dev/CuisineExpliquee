@@ -46,58 +46,45 @@ PREAMBLE = """
   author: "Silvère-Martin Michiellot & Antigravity"
 )
 
-// Palette Chromatique Haute Gastronomie
-#let c-bordeaux = rgb("#78350f")
-#let c-terracotta = rgb("#9a3412")
-#let c-gold = rgb("#b45309")
-#let c-dark = rgb("#1c1917")
-#let c-slate = rgb("#44403c")
-#let c-cream = rgb("#fffbeb")
-#let c-green = rgb("#15803d")
-#let c-red = rgb("#b91c1c")
-#let c-amber = rgb("#d97706")
-#let c-teal = rgb("#0f766e")
+// Palette Chromatique "Haute Gastronomie & Matière Noble" (Sobriété éditoriale, zéro look manuel scolaire)
+#let c-ink = rgb("#1f1c1a")        // Encre noire noble et chaude
+#let c-charcoal = rgb("#2e2a27")   // Anthracite profond
+#let c-slate = rgb("#544e49")      // Gris ardoise tiède
+#let c-bordeaux = rgb("#4a141e")   // Bordeaux amarante sombre
+#let c-terracotta = rgb("#8a3928") // Terracotta / Brique noble
+#let c-bronze = rgb("#9e7a44")     // Bronze laiton vieilli
+#let c-sand = rgb("#f5f2eb")       // Fond crème lin doux
+#let c-olive = rgb("#3d5440")      // Vert olive / Laurier sombre
+#let c-rust = rgb("#823223")       // Brun rouille sobre
 
 #set page(
   paper: "a4",
-  margin: (top: 2.5cm, bottom: 2.5cm, left: 2.2cm, right: 2.2cm),
+  margin: (top: 2.6cm, bottom: 2.6cm, left: 2.2cm, right: 2.2cm),
   header: context {
     let page-num = counter(page).get().first()
     if page-num > 4 [
-      #let cur-h2 = query(heading.where(level: 2)).filter(h => h.location().page() == here().position().page)
-      #let ch-title = if cur-h2.len() > 0 {
-        cur-h2.first().body
-      } else {
-        let prev-h2 = query(selector(heading.where(level: 2)).before(here()))
-        if prev-h2.len() > 0 { prev-h2.last().body } else { [] }
-      }
-      #let cur-h1 = query(heading.where(level: 1)).filter(h => h.location().page() == here().position().page)
-      #let vol-title = if cur-h1.len() > 0 {
-        cur-h1.first().body
-      } else {
-        let prev-h1 = query(selector(heading.where(level: 1)).before(here()))
-        if prev-h1.len() > 0 { prev-h1.last().body } else { [LA CUISINE EXPLIQUÉE] }
-      }
+      #let cur-h1 = query(selector(heading.where(level: 1)).before(here()))
+      #let title-left = if cur-h1.len() > 0 { cur-h1.last().body } else { [LA CUISINE EXPLIQUÉE] }
       #grid(
-        columns: (1fr, 1fr),
-        align: (left, right),
-        text(size: 8pt, fill: c-terracotta, font: "Liberation Sans", style: "italic", weight: "medium")[#vol-title],
-        text(size: 8pt, fill: c-dark, font: "Liberation Sans", weight: "bold")[#ch-title]
+        columns: (1fr, auto),
+        align: (left + horizon, right + horizon),
+        text(size: 8pt, fill: c-slate, font: "Liberation Sans", style: "italic")[#title-left],
+        text(size: 7.5pt, fill: c-bronze, font: "Liberation Sans", weight: "bold")[LA CUISINE EXPLIQUÉE]
       )
       #v(-4pt)
-      #line(length: 100%, stroke: 0.5pt + c-gold)
+      #line(length: 100%, stroke: 0.4pt + c-bronze)
     ]
   },
   footer: context {
     let page-num = counter(page).get().first()
     if page-num > 2 [
-      #line(length: 100%, stroke: 0.5pt + rgb("#fcd34d"))
+      #line(length: 100%, stroke: 0.4pt + rgb("#dfdacf"))
       #v(3pt)
       #grid(
         columns: (1fr, 1fr),
-        align: (left, right),
-        text(size: 8pt, fill: c-terracotta, font: "Liberation Sans", style: "italic")[LA CUISINE EXPLIQUÉE — Principes Premiers],
-        text(size: 8.5pt, fill: c-dark, font: "Liberation Sans", weight: "bold")[Page #page-num]
+        align: (left + horizon, right + horizon),
+        text(size: 8pt, fill: c-slate, font: "Liberation Sans", style: "italic")[Silvère-Martin Michiellot & Antigravity],
+        text(size: 8.5pt, fill: c-ink, font: "Liberation Sans", weight: "bold")[Page #page-num]
       )
     ]
   }
@@ -106,135 +93,153 @@ PREAMBLE = """
 #set text(
   font: ("Liberation Serif", "Georgia", "Times New Roman"),
   size: 10pt,
+  fill: c-ink,
   lang: "fr"
 )
 
 #set par(justify: true, leading: 0.74em, first-line-indent: 0pt, spacing: 0.88em)
 
 #show heading: set text(hyphenate: false)
-#show heading: set block(sticky: true)
 #show figure: set block(breakable: false)
 
 // Style des Hyperliens Interactifs
-#show link: it => text(fill: c-terracotta, weight: "medium")[#underline(stroke: 0.5pt + c-gold, offset: 1.5pt)[#it]]
+#show link: it => text(fill: c-terracotta, weight: "medium")[#underline(stroke: 0.5pt + c-bronze, offset: 1.5pt)[#it]]
 
-// Niveaux de Titres Éditoriaux
+// Niveaux de Titres Éditoriaux avec Protection Anti-Orphelines et Pagebreaks Automatiques
 #show heading.where(level: 1): it => {
-  v(0.8cm)
-  align(center)[
-    #block(
-      fill: rgb("#fffbeb"),
-      stroke: (top: 2pt + c-gold, bottom: 2pt + c-gold),
-      inset: (y: 16pt, x: 14pt),
-      width: 100%
-    )[
-      #text(size: 15pt, weight: "bold", fill: c-bordeaux, font: "Liberation Sans", tracking: 0.5pt)[#it.body]
+  pagebreak(weak: true)
+  v(0.6cm)
+  block(
+    fill: rgb("#f6f3ec"),
+    stroke: (top: 1.2pt + c-bronze, bottom: 1.2pt + c-bronze),
+    inset: (y: 16pt, x: 16pt),
+    width: 100%,
+    breakable: false,
+    sticky: true
+  )[
+    #align(center)[
+      #text(size: 14pt, weight: "bold", fill: c-bordeaux, font: "Liberation Serif", tracking: 0.6pt)[#it.body]
     ]
   ]
-  v(0.6cm)
+  v(0.5cm)
 }
 
-#show heading.where(level: 2): it => {
-  v(0.6cm)
-  text(size: 13pt, weight: "bold", fill: c-bordeaux, font: "Liberation Sans")[#it.body]
-  v(-3pt)
-  line(length: 100%, stroke: 1.0pt + c-gold)
-  v(0.25cm)
-}
-
-#show heading.where(level: 3): it => block(spacing: 1.1em)[
-  #v(0.15cm)
-  #text(size: 11pt, weight: "bold", fill: c-dark, font: "Liberation Sans")[#it.body]
-  #v(0.05cm)
-]
-
-#show heading.where(level: 4): it => block(spacing: 0.8em)[
-  #text(size: 10pt, weight: "bold", fill: c-slate, font: "Liberation Sans")[#it.body]
-]
-
-// Signalétique Didactique et Boîtes Culinaire
-#let anecdote_historique(body) = block(
-  fill: rgb("#fffbeb"),
-  stroke: (left: 3.5pt + c-gold),
-  inset: (left: 14pt, right: 12pt, top: 10pt, bottom: 10pt),
-  radius: (right: 5pt),
+#show heading.where(level: 2): it => block(
   width: 100%,
-  spacing: 1.2em,
-  breakable: false
+  breakable: false,
+  sticky: true,
+  spacing: 1.4em
 )[
-  #text(size: 9.5pt)[#body]
+  #v(0.4cm)
+  #text(size: 12.5pt, weight: "bold", fill: c-terracotta, font: "Liberation Sans")[#it.body]
+  #v(-3pt)
+  #line(length: 100%, stroke: 0.6pt + c-bronze)
+  #v(0.2cm)
 ]
 
+#show heading.where(level: 3): it => block(
+  width: 100%,
+  breakable: false,
+  sticky: true,
+  spacing: 1.1em
+)[
+  #v(0.2cm)
+  #text(size: 10.5pt, weight: "bold", fill: c-charcoal, font: "Liberation Sans")[#it.body]
+  #v(0.1cm)
+]
+
+#show heading.where(level: 4): it => block(
+  width: 100%,
+  breakable: false,
+  sticky: true,
+  spacing: 0.8em
+)[
+  #text(size: 9.5pt, weight: "bold", fill: c-slate, font: "Liberation Sans")[#it.body]
+]
+
+// Signalétique Didactique et Boîtes Culinaires Nobles (Teintes chaudes naturelles)
 #let truc_de_chef(body) = block(
-  fill: rgb("#fefce8"),
-  stroke: (left: 3.5pt + rgb("#ca8a04")),
+  fill: rgb("#faf7f0"),
+  stroke: (left: 3pt + c-bronze),
   inset: (left: 14pt, right: 12pt, top: 10pt, bottom: 10pt),
-  radius: (right: 5pt),
+  radius: (right: 4pt),
   width: 100%,
   spacing: 1.2em,
   breakable: false
 )[
-  #text(size: 9.5pt)[#body]
+  #text(size: 9.5pt, fill: c-ink)[#body]
 ]
 
-#let point_attention(body) = block(
-  fill: rgb("#fff1f2"),
-  stroke: (left: 3.5pt + rgb("#e11d48")),
+#let anecdote_historique(body) = block(
+  fill: rgb("#f7f5ef"),
+  stroke: (left: 3pt + rgb("#7a6250")),
   inset: (left: 14pt, right: 12pt, top: 10pt, bottom: 10pt),
-  radius: (right: 5pt),
+  radius: (right: 4pt),
   width: 100%,
   spacing: 1.2em,
   breakable: false
 )[
-  #text(size: 9.5pt)[#body]
-]
-
-#let oeil_molecule(body) = block(
-  fill: rgb("#f0fdfa"),
-  stroke: (left: 3.5pt + c-teal),
-  inset: (left: 14pt, right: 12pt, top: 10pt, bottom: 10pt),
-  radius: (right: 5pt),
-  width: 100%,
-  spacing: 1.2em,
-  breakable: false
-)[
-  #text(size: 9.5pt)[#body]
+  #text(size: 9.5pt, fill: c-ink)[#body]
 ]
 
 #let positif(body) = block(
-  fill: rgb("#f0fdf4"),
-  stroke: (left: 3.5pt + c-green),
+  fill: rgb("#f3f6f3"),
+  stroke: (left: 3pt + c-olive),
   inset: (left: 14pt, right: 12pt, top: 10pt, bottom: 10pt),
-  radius: (right: 5pt),
+  radius: (right: 4pt),
   width: 100%,
   spacing: 1.2em,
   breakable: false
 )[
-  #text(size: 9.5pt)[#body]
+  #text(size: 9.5pt, fill: c-ink)[#body]
 ]
 
 #let negatif(body) = block(
-  fill: rgb("#fef2f2"),
-  stroke: (left: 3.5pt + c-red),
+  fill: rgb("#faf4f2"),
+  stroke: (left: 3pt + c-rust),
   inset: (left: 14pt, right: 12pt, top: 10pt, bottom: 10pt),
-  radius: (right: 5pt),
+  radius: (right: 4pt),
   width: 100%,
   spacing: 1.2em,
   breakable: false
 )[
-  #text(size: 9.5pt)[#body]
+  #text(size: 9.5pt, fill: c-ink)[#body]
+]
+
+#let point_attention(body) = block(
+  fill: rgb("#faf6ed"),
+  stroke: (left: 3pt + rgb("#9e4e36")),
+  inset: (left: 14pt, right: 12pt, top: 10pt, bottom: 10pt),
+  radius: (right: 4pt),
+  width: 100%,
+  spacing: 1.2em,
+  breakable: false
+)[
+  #text(size: 9.5pt, fill: c-ink)[#body]
+]
+
+#let oeil_molecule(body) = block(
+  fill: rgb("#f5f4f2"),
+  stroke: (left: 3pt + c-slate),
+  inset: (left: 14pt, right: 12pt, top: 10pt, bottom: 10pt),
+  radius: (right: 4pt),
+  width: 100%,
+  spacing: 1.2em,
+  breakable: false
+)[
+  #text(size: 9.5pt, fill: c-ink)[#body]
 ]
 
 #let cas_limite(body) = block(
-  fill: rgb("#fffbeb"),
-  stroke: (left: 3.5pt + c-amber),
+  fill: rgb("#f8f6f0"),
+  stroke: (left: 3pt + rgb("#8c7355")),
   inset: (left: 14pt, right: 12pt, top: 10pt, bottom: 10pt),
-  radius: (right: 5pt),
+  radius: (right: 4pt),
   width: 100%,
   spacing: 1.2em,
   breakable: false
 )[
-  #text(size: 9.5pt)[#body]
+  #text(size: 9.5pt, fill: c-ink)[#body]
 ]
 
 #let quote_box(body) = block(
@@ -305,7 +310,35 @@ PREAMBLE = """
 #pagebreak()
 #set page(
   paper: "a4",
-  margin: (top: 2.5cm, bottom: 2.5cm, left: 2.2cm, right: 2.2cm)
+  margin: (top: 2.6cm, bottom: 2.6cm, left: 2.2cm, right: 2.2cm),
+  header: context {
+    let page-num = counter(page).get().first()
+    if page-num > 4 [
+      #let cur-h1 = query(selector(heading.where(level: 1)).before(here()))
+      #let title-left = if cur-h1.len() > 0 { cur-h1.last().body } else { [LA CUISINE EXPLIQUÉE] }
+      #grid(
+        columns: (1fr, auto),
+        align: (left + horizon, right + horizon),
+        text(size: 8pt, fill: c-slate, font: "Liberation Sans", style: "italic")[#title-left],
+        text(size: 7.5pt, fill: c-bronze, font: "Liberation Sans", weight: "bold")[LA CUISINE EXPLIQUÉE]
+      )
+      #v(-4pt)
+      #line(length: 100%, stroke: 0.4pt + c-bronze)
+    ]
+  },
+  footer: context {
+    let page-num = counter(page).get().first()
+    if page-num > 2 [
+      #line(length: 100%, stroke: 0.4pt + rgb("#dfdacf"))
+      #v(3pt)
+      #grid(
+        columns: (1fr, 1fr),
+        align: (left + horizon, right + horizon),
+        text(size: 8pt, fill: c-slate, font: "Liberation Sans", style: "italic")[Silvère-Martin Michiellot & Antigravity],
+        text(size: 8.5pt, fill: c-ink, font: "Liberation Sans", weight: "bold")[Page #page-num]
+      )
+    ]
+  }
 )
 
 // ==========================================
@@ -380,17 +413,17 @@ PREAMBLE = """
 // 5. TABLE DES RECETTES & PRÉPARATIONS PILIERS
 // ==========================================
 #align(center)[
-  #text(size: 15pt, weight: "bold", fill: c-bordeaux, font: "Liberation Sans")[
+  #text(size: 15pt, weight: "bold", fill: c-bordeaux, font: "Liberation Serif")[
     🍳 Table des Recettes et Préparations Piliers
   ]
   #v(-4pt)
-  #line(length: 60%, stroke: 1pt + c-gold)
+  #line(length: 60%, stroke: 0.8pt + c-bronze)
 ]
 #v(0.6cm)
 
 #block(
-  fill: rgb("#fffbeb"),
-  stroke: 0.5pt + rgb("#fde68a"),
+  fill: rgb("#faf7f0"),
+  stroke: 0.5pt + rgb("#dfdacf"),
   inset: 16pt,
   radius: 6pt,
   width: 100%
@@ -459,7 +492,7 @@ BACK_COVER = """
   #text(size: 10.5pt, fill: rgb("#f5f5f4"), font: "Liberation Serif")[
     Pourquoi l'eau qui bout à gros bouillons est-elle parfois l'ennemie jurée d'un aliment ? Pourquoi saler une viande quarante-cinq minutes avant de la poser sur le feu change-t-il radicalement sa jutosité ? Comment fabriquer un fromage frais en quinze minutes sans matériel, ou émulsionner des pâtes crémeuses à la perfection sans la moindre goutte de crème fraîche ?
 
-    *La Cuisine Expliquée* n'est pas un énième catalogue de recettes passives à réciter sans réfléchir. C'est un traité vivant d'**autonomie matérielle, de thermodynamique et de biologie du geste culinaire**, conçu pour libérer définitivement le cuisinier de la tyrannie des recettes magiques et du diktat des gadgets superflus.
+    *La Cuisine Expliquée* n'est pas un énième catalogue de recettes passives à réciter sans réfléchir. C'est un traité vivant d'*autonomie matérielle, de thermodynamique et de biologie du geste culinaire*, conçu pour libérer définitivement le cuisinier de la tyrannie des recettes magiques et du diktat des gadgets superflus.
 
     À travers quinze chapitres lumineux, ce manuel démontre qu'avec seulement cinq outils indestructibles (une poêle en fonte, une casserole inox, une planche de bois massif, un couteau affûté et une cuillère de bois) et la compréhension des états de la matière, il est possible de maîtriser l'intégralité du répertoire nourricier universel.
   ]
@@ -498,16 +531,17 @@ BACK_COVER = """
     ],
     [
       #block(
-        fill: white,
-        inset: (x: 12pt, y: 8pt),
+        fill: rgb("#292524"),
+        stroke: 0.5pt + rgb("#78716c"),
+        inset: (x: 14pt, y: 8pt),
         radius: 4pt
       )[
-        #text(size: 9.5pt, weight: "bold", fill: rgb("#0f172a"), font: "Liberation Sans")[
-          PRIX : 24,90 € TTC
+        #text(size: 8.5pt, weight: "bold", fill: rgb("#fbbf24"), font: "Liberation Sans")[
+          DIFFUSION OUVERTE & LIBRE
         ]
         #v(-2pt)
-        #text(size: 7.5pt, fill: rgb("#64748b"), font: "Liberation Sans")[
-          ÉDITION LIBRE CC BY-SA
+        #text(size: 7.5pt, fill: rgb("#d6d3d1"), font: "Liberation Sans")[
+          LICENCE CC BY-SA 4.0
         ]
       ]
     ]
@@ -565,10 +599,10 @@ def postprocess_typst(typ_content):
 # ==============================================================================
 
 def preprocess_markdown(md_text):
-    # Convertir <a id="..."></a> en marqueur protégé pour Pandoc
-    md_text = re.sub(r'<a\s+id=[\'"]([a-zA-Z0-9_\-]+)[\'"]\s*>\s*</a>', r'LABELSTART\1LABELSTART', md_text)
+    # Convertir <a id="..."></a> en marqueur protégé pour Pandoc isolé par des sauts de ligne
+    md_text = re.sub(r'<a\s+id=[\'"]([a-zA-Z0-9_\-]+)[\'"]\s*>\s*</a>', r'\n\nLABELSTART\1LABELSTART\n\n', md_text)
     
-    # Convertir ::: nom_boite en marqueur préservé par Pandoc
+    # Convertir ::: nom_boite en marqueur préservé par Pandoc isolé par des lignes vides
     lines = md_text.split('\n')
     out_lines = []
     in_callout = False
@@ -577,15 +611,18 @@ def preprocess_markdown(md_text):
         m_start = re.match(r'^:::\s*([a-zA-Z0-9_]+)\s*$', line.strip())
         if m_start:
             tag = m_start.group(1)
-            out_lines.append(f"CALLOUTSTART{tag}CALLOUTSTART")
+            out_lines.append(f"\n\nCALLOUTSTART{tag}CALLOUTSTART\n\n")
             in_callout = True
         elif line.strip() == ':::' and in_callout:
-            out_lines.append("CALLOUTEND")
+            out_lines.append("\n\nCALLOUTEND\n\n")
             in_callout = False
         else:
             out_lines.append(line)
             
-    return '\n'.join(out_lines)
+    text_processed = '\n'.join(out_lines)
+    # Garantir qu'aucun titre Markdown ne soit collé à un paragraphe précédent
+    text_processed = re.sub(r'([^\n])\n(#{1,6}\s+)', r'\1\n\n\2', text_processed)
+    return text_processed
 
 # ==============================================================================
 # RUN BUILD
@@ -614,7 +651,7 @@ def run_build():
             "textes/Livre_III/Chapitre_12_Proteines_Vegetales_Legumineuses_et_Veganisme_Rationnel.md",
             "textes/Livre_III/Chapitre_13_La_Matrice_du_Gateau_et_le_Chocolat.md"
         ]),
-        ("LIVRE V — LA PRÉSERVATION ET LES TRANSFORMATIONS SANS FEU", [
+        ("LIVRE IV — LA PRÉSERVATION ET LES TRANSFORMATIONS SANS FEU", [
             "textes/Livre_V/Chapitre_16_La_Cuisson_Chimique_et_la_Conservation_Sel_Acide_Sucre_et_Mort_Thermique.md",
             "textes/Livre_V/Chapitre_17_Proliferation_Microbienne_Fermentations_et_Recettes_Fondatrices.md"
         ]),
