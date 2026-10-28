@@ -1,0 +1,19 @@
+# Fichiers temporaires de compilation
+temp_*
+*.tmp
+temp_master_book.md
+temp_pandoc.typ
+
+# Cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Fichiers d'aperçu temporaires
+preview_*.png
+
+# Systèmes d'exploitation & logs
+.DS_Store
+Thumbs.db
+*.log
+.system_generated/
