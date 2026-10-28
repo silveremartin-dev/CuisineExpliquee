@@ -1,36 +1,49 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
-  <rect width="800" height="450" rx="16" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
-  <text x="400" y="38" font-family="Liberation Sans, Arial, sans-serif" font-size="20" font-weight="bold" fill="#0f172a" text-anchor="middle">ANATOMIE PHYSICO-CHIMIQUE ET BARRIÈRE CUTICULAIRE DE L'ŒUF</text>
-  <text x="400" y="62" font-family="Liberation Sans, Arial, sans-serif" font-size="13" fill="#64748b" text-anchor="middle">Pourquoi l'œuf est un écosystème respirant et pourquoi le lavage détruit sa défense biologique.</text>
-  <g transform="translate(60, 95)">
-    <path d="M 140 20 C 230 20 280 120 280 200 C 280 280 220 320 140 320 C 60 320 0 280 0 200 C 0 120 50 20 140 20 Z" fill="#fffbeb" stroke="#d97706" stroke-width="4"/>
-    <path d="M 140 14 C 236 14 286 118 286 200 C 286 286 224 326 140 326 C 56 326 -6 286 -6 200 C -6 118 44 14 140 14 Z" fill="none" stroke="#16a34a" stroke-width="2" stroke-dasharray="5,3"/>
-    <path d="M 50 295 Q 140 260 230 295 C 205 315 165 320 140 320 C 115 320 75 315 50 295 Z" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
-    <text x="140" y="303" font-family="Liberation Sans, Arial, sans-serif" font-size="11" font-weight="bold" fill="#0369a1" text-anchor="middle">Chambre à air</text>
-    <path d="M 140 35 C 215 35 260 125 260 195 C 260 255 205 265 140 265 C 75 265 20 255 20 195 C 20 125 65 35 140 35 Z" fill="#eff6ff" stroke="#93c5fd" stroke-width="1"/>
-    <path d="M 140 60 C 195 60 235 130 235 190 C 235 240 195 245 140 245 C 85 245 45 240 45 190 C 45 130 85 60 140 60 Z" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.8"/>
-    <circle cx="140" cy="165" r="52" fill="#fbbf24" stroke="#d97706" stroke-width="2.5"/>
-    <circle cx="140" cy="165" r="46" fill="#f59e0b"/>
-    <circle cx="120" cy="145" r="5" fill="#fef3c7"/>
-    <path d="M 88 165 C 70 160 65 170 48 165" fill="none" stroke="#ffffff" stroke-width="3"/>
-    <path d="M 192 165 C 210 160 215 170 232 165" fill="none" stroke="#ffffff" stroke-width="3"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="100%" height="100%">
+  <rect width="800" height="440" rx="12" fill="#fcfbf7" stroke="#dfdacf" stroke-width="1.5"/>
+  <text x="400" y="36" font-family="Liberation Serif, Georgia, serif" font-size="18" font-weight="bold" fill="#701c1a" text-anchor="middle">ANATOMIE PHYSICO-CHIMIQUE ET BARRIÈRE CUTICULAIRE DE L'ŒUF</text>
+  <text x="400" y="58" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#5c5549" text-anchor="middle">Pourquoi l'œuf est une citadelle respirante et pourquoi le laver détruit son bouclier biologique.</text>
+  
+  <g transform="translate(50, 88)">
+    <!-- Coquille et cuticule -->
+    <path d="M 135 20 C 222 20 270 116 270 194 C 270 272 212 310 135 310 C 58 310 0 272 0 194 C 0 116 48 20 135 20 Z" fill="#faf7f0" stroke="#8c7355" stroke-width="3.5"/>
+    <path d="M 135 14 C 228 14 276 114 276 194 C 276 278 216 316 135 316 C 54 316 -6 278 -6 194 C -6 114 42 14 135 14 Z" fill="none" stroke="#5a6e54" stroke-width="2" stroke-dasharray="5,3"/>
+    <!-- Chambre à air -->
+    <path d="M 48 286 Q 135 252 222 286 C 198 305 160 310 135 310 C 110 310 72 305 48 286 Z" fill="#f2ece1" stroke="#8c7355" stroke-width="1.5"/>
+    <text x="135" y="296" font-family="Liberation Sans, Arial, sans-serif" font-size="10" font-weight="bold" fill="#5c5549" text-anchor="middle">Chambre à air</text>
+    <!-- Blanc liquide et épais -->
+    <path d="M 135 35 C 208 35 250 120 250 188 C 250 246 198 256 135 256 C 72 256 20 246 20 188 C 20 120 62 35 135 35 Z" fill="#fcfbf7" stroke="#dfdacf" stroke-width="1.2"/>
+    <path d="M 135 58 C 188 58 226 125 226 184 C 226 232 188 238 135 238 C 82 238 44 232 44 184 C 44 125 82 58 135 58 Z" fill="#f7f4eb" stroke="#d4a373" stroke-width="1.5"/>
+    <!-- Jaune -->
+    <circle cx="135" cy="160" r="50" fill="#d4a373" stroke="#92400e" stroke-width="2"/>
+    <circle cx="135" cy="160" r="43" fill="#e6b88a"/>
+    <circle cx="118" cy="142" r="5" fill="#faf7f0"/>
+    <!-- Chalazes -->
+    <path d="M 85 160 C 68 155 62 165 46 160" fill="none" stroke="#8c7355" stroke-width="2.5"/>
+    <path d="M 185 160 C 202 155 208 165 224 160" fill="none" stroke="#8c7355" stroke-width="2.5"/>
+    <text x="135" y="164" font-family="Liberation Serif, Georgia, serif" font-size="10.5" font-weight="bold" fill="#451a03" text-anchor="middle">Jaune (Vitellus)</text>
+    <text x="135" y="222" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#5c5549" text-anchor="middle">Blanc dense (Albumen)</text>
   </g>
-  <g transform="translate(390, 95)">
-    <rect width="370" height="135" rx="8" fill="#f0fdf4" stroke="#86efac" stroke-width="1.5"/>
-    <text x="15" y="24" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#166534">LE DILEMME DU FRIGO : EUROPE vs ÉTATS-UNIS</text>
-    <text x="15" y="46" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#14532d">• <tspan font-weight="bold">La cuticule protectrice :</tspan> fine pellicule protéique naturelle</text>
-    <text x="25" y="62" font-family="Liberation Sans, Arial, sans-serif" font-size="10.5" fill="#15803d">qui colmate les 10 000 pores de calcite contre les microbes.</text>
-    <text x="15" y="82" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#14532d">• <tspan font-weight="bold">Europe (Pas de lavage obligatoire) :</tspan> cuticule intacte.</text>
-    <text x="25" y="98" font-family="Liberation Sans, Arial, sans-serif" font-size="10.5" fill="#15803d">Stockage tempéré possible (évite condensation favorisant bactéries).</text>
-    <text x="15" y="118" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#991b1b">• <tspan font-weight="bold">USA (Lavage désinfectant) :</tspan> cuticule détruite $	o$ frigo vital (4°C).</text>
-    <rect y="150" width="370" height="170" rx="8" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
-    <text x="15" y="174" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#1e40af">LA MÉCANIQUE DU TEMPS : 3 TRANSFORMATIONS</text>
-    <text x="15" y="196" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#1e3a8a"><tspan font-weight="bold">1. Évaporation hydrique :</tspan> la chambre à air grossit.</text>
-    <text x="25" y="211" font-family="Liberation Sans, Arial, sans-serif" font-size="10.5" fill="#3b82f6">Œuf frais coule horizontalement ; œuf vieux flotte verticalement.</text>
-    <text x="15" y="233" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#1e3a8a"><tspan font-weight="bold">2. Fuite de CO₂ dissous :</tspan> le pH monte de 7.6 à 9.2.</text>
-    <text x="25" y="248" font-family="Liberation Sans, Arial, sans-serif" font-size="10.5" fill="#3b82f6">L'albumen s'alcalinise spontanément et perd sa turbidité laiteuse.</text>
-    <text x="15" y="270" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#1e3a8a"><tspan font-weight="bold">3. Liquéfaction de l'albumen :</tspan> dégradation de l'ovomucine.</text>
-    <text x="25" y="285" font-family="Liberation Sans, Arial, sans-serif" font-size="10.5" fill="#3b82f6">L'œuf frais reste compact en dôme ; l'œuf âgé s'étale comme de l'eau.</text>
-    <text x="25" y="305" font-family="Liberation Sans, Arial, sans-serif" font-size="10.5" fill="#b91c1c" font-weight="bold">Conséquence : seul l'œuf extra-frais permet un œuf poché parfait.</text>
+
+  <g transform="translate(365, 88)">
+    <!-- Bloc 1 -->
+    <rect width="395" height="142" rx="8" fill="#f4f6f4" stroke="#6e826b" stroke-width="1.2"/>
+    <text x="16" y="24" font-family="Liberation Serif, Georgia, serif" font-size="12" font-weight="bold" fill="#5a6e54">LE DILEMME DU FRIGO : EUROPE vs ÉTATS-UNIS</text>
+    <text x="16" y="45" font-family="Liberation Sans, Arial, sans-serif" font-size="10" fill="#242124">• <tspan font-weight="bold" fill="#5a6e54">La cuticule protectrice :</tspan> fine pellicule de mucine qui</text>
+    <text x="26" y="60" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#5c5549">obture les 10 000 pores de la coquille contre les salmonelles.</text>
+    <text x="16" y="80" font-family="Liberation Sans, Arial, sans-serif" font-size="10" fill="#242124">• <tspan font-weight="bold" fill="#5a6e54">En Europe (œufs non lavés) :</tspan> cuticule intacte. Stockage</text>
+    <text x="26" y="95" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#5c5549">tempéré possible (évite la condensation sur la coquille).</text>
+    <text x="16" y="116" font-family="Liberation Sans, Arial, sans-serif" font-size="10" fill="#701c1a">• <tspan font-weight="bold">Aux USA (lavage industriel) :</tspan> cuticule détruite → froid</text>
+    <text x="26" y="131" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#701c1a">obligatoire à 4°C sous peine d'invasion bactérienne.</text>
+
+    <!-- Bloc 2 -->
+    <rect y="156" width="395" height="170" rx="8" fill="#faf7f2" stroke="#d4a373" stroke-width="1.2"/>
+    <text x="16" y="180" font-family="Liberation Serif, Georgia, serif" font-size="12" font-weight="bold" fill="#701c1a">LA MÉCANIQUE DU TEMPS : 3 TRANSFORMATIONS</text>
+    <text x="16" y="201" font-family="Liberation Sans, Arial, sans-serif" font-size="10" fill="#242124"><tspan font-weight="bold" fill="#a3432b">1. Évaporation de l'eau :</tspan> la chambre à air s'agrandit.</text>
+    <text x="26" y="216" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#5c5549">L'œuf frais coule à plat ; l'œuf vieux flotte à la surface.</text>
+    <text x="16" y="236" font-family="Liberation Sans, Arial, sans-serif" font-size="10" fill="#242124"><tspan font-weight="bold" fill="#a3432b">2. Fuite du gaz CO₂ :</tspan> le pH grimpe de 7,6 à 9,2 en 2 semaines.</text>
+    <text x="26" y="251" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#5c5549">L'œuf rassit devient plus facile à écaler une fois cuit dur.</text>
+    <text x="16" y="271" font-family="Liberation Sans, Arial, sans-serif" font-size="10" fill="#242124"><tspan font-weight="bold" fill="#a3432b">3. Liquéfaction du blanc :</tspan> le filet d'ovomucine se relâche.</text>
+    <text x="26" y="286" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#5c5549">L'œuf frais bombe dans la poêle ; l'œuf âgé s'étale en flaque.</text>
+    <text x="16" y="310" font-family="Liberation Serif, Georgia, serif" font-size="10" fill="#701c1a" font-weight="bold">→ Seul un œuf extra-frais (&lt; 9 jours) réussit l'œuf poché.</text>
   </g>
 </svg>

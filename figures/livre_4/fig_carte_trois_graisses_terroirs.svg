@@ -1,78 +1,87 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="100%" height="100%">
-  <rect width="800" height="420" rx="16" fill="#fcfbf7" stroke="#e8e2d5" stroke-width="2"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 415" width="100%" height="100%">
+  <rect width="800" height="415" rx="12" fill="#fcfbf7" stroke="#dfdacf" stroke-width="1.5"/>
   
-  <text x="400" y="32" font-family="Liberation Sans, Arial, sans-serif" font-size="16" font-weight="bold" fill="#701c1a" text-anchor="middle">LA GÉOPOLITIQUE DES TROIS CORPS GRAS FONDATEURS</text>
-  <text x="400" y="52" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#5c5549" text-anchor="middle">Avant l'huile raffinée industrielle, la géographie et le climat dictaient les transferts thermiques et le goût.</text>
+  <text x="400" y="32" font-family="Liberation Serif, Georgia, serif" font-size="17" font-weight="bold" fill="#701c1a" text-anchor="middle">LA GÉOPOLITIQUE DES TROIS CORPS GRAS FONDATEURS</text>
+  <text x="400" y="52" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#5c5549" text-anchor="middle">Avant l'industrie moderne, le climat et le terroir dictaient le corps gras, le mode de cuisson et le goût.</text>
 
   <!-- Zone 1 : Le Beurre et la Crème (Nord-Ouest) -->
-  <g transform="translate(30, 75)">
-    <rect width="235" height="320" rx="10" fill="#ffffff" stroke="#fde047" stroke-width="1.5"/>
-    <rect x="0" y="0" width="235" height="32" rx="10" fill="#eab308"/>
-    <text x="117" y="21" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#ffffff" text-anchor="middle">LE MONDE DU BEURRE</text>
+  <g transform="translate(30, 72)">
+    <rect width="235" height="320" rx="8" fill="#faf7f2" stroke="#d4a373" stroke-width="1.2"/>
+    <rect x="0" y="0" width="235" height="30" rx="8" fill="#8c7355"/>
+    <text x="117.5" y="20" font-family="Liberation Serif, Georgia, serif" font-size="11" font-weight="bold" fill="#fcfbf7" text-anchor="middle">1. L'EUROPE DU BEURRE</text>
 
-    <text x="12" y="52" font-family="Liberation Sans, Arial, sans-serif" font-size="10" font-weight="bold" fill="#854d0e">Nord-Ouest &amp; Îles Britanniques</text>
-    <text x="12" y="68" font-family="Liberation Sans, Arial, sans-serif" font-size="9" fill="#713f12">Normandie, Bretagne, Flandres, Irlande</text>
+    <text x="12" y="50" font-family="Liberation Serif, Georgia, serif" font-size="10" font-weight="bold" fill="#92400e">Nord-Ouest &amp; Herbages</text>
+    <text x="12" y="65" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#5c5549">Normandie, Bretagne, Flandres</text>
     
-    <rect x="12" y="82" width="211" height="52" rx="5" fill="#fefce8" stroke="#fef08a" stroke-width="1"/>
-    <text x="18" y="98" font-family="Liberation Sans, Arial, sans-serif" font-size="8.5" fill="#713f12">• Pâturages humides permanents</text>
-    <text x="18" y="112" font-family="Liberation Sans, Arial, sans-serif" font-size="8.5" fill="#713f12">• 82% lipides saturés, 16% eau, 2% caséine</text>
-    <text x="18" y="126" font-family="Liberation Sans, Arial, sans-serif" font-size="8.5" fill="#713f12">• Point de fumée bas : 130 à 150°C</text>
+    <rect x="12" y="78" width="211" height="52" rx="5" fill="#faf6ee" stroke="#dfdacf" stroke-width="1"/>
+    <text x="18" y="94" font-family="Liberation Sans, Arial, sans-serif" font-size="8.5" fill="#242124">• Pâturages humides toute l'année</text>
+    <text x="18" y="108" font-family="Liberation Sans, Arial, sans-serif" font-size="8.5" fill="#242124">• 82 % gras, 16 % eau, 2 % caséines</text>
+    <text x="18" y="122" font-family="Liberation Sans, Arial, sans-serif" font-size="8.5" fill="#701c1a">• Point de fumée bas : 130–150°C</text>
 
-    <text x="12" y="152" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" font-weight="bold" fill="#854d0e">Mécanique Culinaire :</text>
-    <text x="12" y="170" font-family="Liberation Sans, Arial, sans-serif" font-size="9" fill="#334155">Cuissons douces, suer sans colorer, arrosage au beurre moussant, montages de sauces au fouet (beurre blanc, hollandaise).</text>
+    <text x="12" y="150" font-family="Liberation Serif, Georgia, serif" font-size="9.5" font-weight="bold" fill="#92400e">Mécanique Culinaire :</text>
+    <text x="12" y="166" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#383330">Cuissons douces, arrosage au</text>
+    <text x="12" y="180" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#383330">beurre moussant, sauces montées</text>
+    <text x="12" y="194" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#383330">au fouet (beurre blanc, hollandaise).</text>
 
-    <text x="12" y="222" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" font-weight="bold" fill="#854d0e">Empreinte Flaveur :</text>
-    <text x="12" y="240" font-family="Liberation Sans, Arial, sans-serif" font-size="9" fill="#334155">Lactée, ronde, esters de noisette toastée (réaction caséine/lactose à 140°C), nappe délicate.</text>
+    <text x="12" y="218" font-family="Liberation Serif, Georgia, serif" font-size="9.5" font-weight="bold" fill="#92400e">Signature Aromatique :</text>
+    <text x="12" y="234" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#383330">Lactée, ronde, arômes de noisette</text>
+    <text x="12" y="248" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#383330">toastée dès 140°C (Maillard laitier).</text>
 
-    <rect x="12" y="275" width="211" height="32" rx="5" fill="#fef9c3"/>
-    <text x="117" y="295" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="bold" fill="#a16207" text-anchor="middle">« La noblesse du velouté »</text>
+    <rect x="12" y="274" width="211" height="32" rx="5" fill="#f2ece1"/>
+    <text x="117.5" y="294" font-family="Liberation Serif, Georgia, serif" font-size="9.2" font-weight="bold" fill="#92400e" text-anchor="middle">« La noblesse du velouté »</text>
   </g>
 
   <!-- Zone 2 : Graisse de Canard / Oie (Sud-Ouest & Centre) -->
-  <g transform="translate(282, 75)">
-    <rect width="235" height="320" rx="10" fill="#ffffff" stroke="#fb923c" stroke-width="1.5"/>
-    <rect x="0" y="0" width="235" height="32" rx="10" fill="#ea580c"/>
-    <text x="117" y="21" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#ffffff" text-anchor="middle">LA GRAISSE DE VOLAILLE</text>
+  <g transform="translate(282.5, 72)">
+    <rect width="235" height="320" rx="8" fill="#faf7f2" stroke="#b06d60" stroke-width="1.2"/>
+    <rect x="0" y="0" width="235" height="30" rx="8" fill="#a3432b"/>
+    <text x="117.5" y="20" font-family="Liberation Serif, Georgia, serif" font-size="11" font-weight="bold" fill="#fcfbf7" text-anchor="middle">2. LA GRAISSE D'OIE &amp; CANARD</text>
 
-    <text x="12" y="52" font-family="Liberation Sans, Arial, sans-serif" font-size="10" font-weight="bold" fill="#9a3412">Sud-Ouest &amp; Europe Centrale</text>
-    <text x="12" y="68" font-family="Liberation Sans, Arial, sans-serif" font-size="9" fill="#7c2d12">Périgord, Gascogne, Alsace, Bohême</text>
+    <text x="12" y="50" font-family="Liberation Serif, Georgia, serif" font-size="10" font-weight="bold" fill="#701c1a">Sud-Ouest &amp; Europe Centrale</text>
+    <text x="12" y="65" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#5c5549">Gascogne, Périgord, Alsace</text>
     
-    <rect x="12" y="82" width="211" height="52" rx="5" fill="#fff7ed" stroke="#fed7aa" stroke-width="1"/>
-    <text x="18" y="98" font-family="Liberation Sans, Arial, sans-serif" font-size="8.5" fill="#7c2d12">• Élevage d'oies et canards gras</text>
-    <text x="18" y="112" font-family="Liberation Sans, Arial, sans-serif" font-size="8.5" fill="#7c2d12">• 55% acide oléique mono-insaturé</text>
-    <text x="18" y="126" font-family="Liberation Sans, Arial, sans-serif" font-size="8.5" fill="#7c2d12">• Point de fumée élevé : 190°C</text>
+    <rect x="12" y="78" width="211" height="52" rx="5" fill="#fbf6f5" stroke="#dfdacf" stroke-width="1"/>
+    <text x="18" y="94" font-family="Liberation Sans, Arial, sans-serif" font-size="8.5" fill="#242124">• Élevage paysan de palmipèdes</text>
+    <text x="18" y="108" font-family="Liberation Sans, Arial, sans-serif" font-size="8.5" fill="#242124">• 55 % d'acide oléique (fondant)</text>
+    <text x="18" y="122" font-family="Liberation Sans, Arial, sans-serif" font-size="8.5" fill="#5a6e54">• Point de fumée haut : 190°C</text>
 
-    <text x="12" y="152" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" font-weight="bold" fill="#9a3412">Mécanique Culinaire :</text>
-    <text x="12" y="170" font-family="Liberation Sans, Arial, sans-serif" font-size="9" fill="#334155">Le confisage ancestral : cuisson lente sous graisse hermétique à 85°C. Rissolage vif de pommes de terre et haricots.</text>
+    <text x="12" y="150" font-family="Liberation Serif, Georgia, serif" font-size="9.5" font-weight="bold" fill="#701c1a">Mécanique Culinaire :</text>
+    <text x="12" y="166" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#383330">Le confisage lent à 85°C à l'abri</text>
+    <text x="12" y="180" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#383330">de l'air ; rissolage ultra-croustillant</text>
+    <text x="12" y="194" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#383330">des pommes de terre sarladaises.</text>
 
-    <text x="12" y="222" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" font-weight="bold" fill="#9a3412">Empreinte Flaveur :</text>
-    <text x="12" y="240" font-family="Liberation Sans, Arial, sans-serif" font-size="9" fill="#334155">Profonde, carnée, croustillant sonore inimitable, conservation jusqu'à 1 an en bocal de grès.</text>
+    <text x="12" y="218" font-family="Liberation Serif, Georgia, serif" font-size="9.5" font-weight="bold" fill="#701c1a">Signature Aromatique :</text>
+    <text x="12" y="234" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#383330">Savoureuse, carnée, dorure</text>
+    <text x="12" y="248" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#383330">sonore et conservation en grès.</text>
 
-    <rect x="12" y="275" width="211" height="32" rx="5" fill="#ffedd5"/>
-    <text x="117" y="295" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="bold" fill="#c2410c" text-anchor="middle">« La puissance du confit »</text>
+    <rect x="12" y="274" width="211" height="32" rx="5" fill="#fbf6f5"/>
+    <text x="117.5" y="294" font-family="Liberation Serif, Georgia, serif" font-size="9.2" font-weight="bold" fill="#701c1a" text-anchor="middle">« Le génie du confit »</text>
   </g>
 
   <!-- Zone 3 : Huile d'Olive (Bassin Méditerranéen) -->
-  <g transform="translate(535, 75)">
-    <rect width="235" height="320" rx="10" fill="#ffffff" stroke="#4ade80" stroke-width="1.5"/>
-    <rect x="0" y="0" width="235" height="32" rx="10" fill="#16a34a"/>
-    <text x="117" y="21" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#ffffff" text-anchor="middle">L'HUILE D'OLIVE</text>
+  <g transform="translate(535, 72)">
+    <rect width="235" height="320" rx="8" fill="#faf7f2" stroke="#6e826b" stroke-width="1.2"/>
+    <rect x="0" y="0" width="235" height="30" rx="8" fill="#5a6e54"/>
+    <text x="117.5" y="20" font-family="Liberation Serif, Georgia, serif" font-size="11" font-weight="bold" fill="#fcfbf7" text-anchor="middle">3. L'OLIVIER MÉDITERRANÉEN</text>
 
-    <text x="12" y="52" font-family="Liberation Sans, Arial, sans-serif" font-size="10" font-weight="bold" fill="#14532d">Bassin Méditerranéen</text>
-    <text x="12" y="68" font-family="Liberation Sans, Arial, sans-serif" font-size="9" fill="#14532d">Provence, Toscane, Grèce, Andalousie</text>
+    <text x="12" y="50" font-family="Liberation Serif, Georgia, serif" font-size="10" font-weight="bold" fill="#5a6e54">Bassin Méditerranéen</text>
+    <text x="12" y="65" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#5c5549">Provence, Italie, Grèce, Espagne</text>
     
-    <rect x="12" y="82" width="211" height="52" rx="5" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
-    <text x="18" y="98" font-family="Liberation Sans, Arial, sans-serif" font-size="8.5" fill="#14532d">• Sols arides et garrigues ensoleillées</text>
-    <text x="18" y="112" font-family="Liberation Sans, Arial, sans-serif" font-size="8.5" fill="#14532d">• 75% acide oléique, polyphénols antiox.</text>
-    <text x="18" y="126" font-family="Liberation Sans, Arial, sans-serif" font-size="8.5" fill="#14532d">• Point de fumée : 190 à 210°C (extra vierge)</text>
+    <rect x="12" y="78" width="211" height="52" rx="5" fill="#f4f6f4" stroke="#dfdacf" stroke-width="1"/>
+    <text x="18" y="94" font-family="Liberation Sans, Arial, sans-serif" font-size="8.5" fill="#242124">• Coteaux secs et rocaille solaire</text>
+    <text x="18" y="108" font-family="Liberation Sans, Arial, sans-serif" font-size="8.5" fill="#242124">• 75 % acide oléique + polyphénols</text>
+    <text x="18" y="122" font-family="Liberation Sans, Arial, sans-serif" font-size="8.5" fill="#5a6e54">• Point de fumée : 190–210°C</text>
 
-    <text x="12" y="152" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" font-weight="bold" fill="#14532d">Mécanique Culinaire :</text>
-    <text x="12" y="170" font-family="Liberation Sans, Arial, sans-serif" font-size="9" fill="#334155">Émulsions froides pilées au mortier (aïoli, pesto), friture légère, filet cru de finition pour préserver les polyphénols.</text>
+    <text x="12" y="150" font-family="Liberation Serif, Georgia, serif" font-size="9.5" font-weight="bold" fill="#5a6e54">Mécanique Culinaire :</text>
+    <text x="12" y="166" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#383330">Émulsions à froid (aïoli, pistou),</text>
+    <text x="12" y="180" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#383330">poêlées vives de légumes et</text>
+    <text x="12" y="194" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#383330">filet cru parfumé au dressage.</text>
 
-    <text x="12" y="222" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" font-weight="bold" fill="#14532d">Empreinte Flaveur :</text>
-    <text x="12" y="240" font-family="Liberation Sans, Arial, sans-serif" font-size="9" fill="#334155">Fruitée, ardente, poivrée, amertume végétale stimulatrice des papilles et de la salivation.</text>
+    <text x="12" y="218" font-family="Liberation Serif, Georgia, serif" font-size="9.5" font-weight="bold" fill="#5a6e54">Signature Aromatique :</text>
+    <text x="12" y="234" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#383330">Fruitée, herbacée, ardence</text>
+    <text x="12" y="248" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#383330">poivrée protectrice (oléocanthal).</text>
 
-    <rect x="12" y="275" width="211" height="32" rx="5" fill="#dcfce7"/>
-    <text x="117" y="295" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="bold" fill="#15803d" text-anchor="middle">« Le feu solaire végétal »</text>
+    <rect x="12" y="274" width="211" height="32" rx="5" fill="#f4f6f4"/>
+    <text x="117.5" y="294" font-family="Liberation Serif, Georgia, serif" font-size="9.2" font-weight="bold" fill="#5a6e54" text-anchor="middle">« L'or vert solaire »</text>
   </g>
 </svg>

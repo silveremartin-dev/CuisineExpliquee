@@ -1,41 +1,58 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 320" width="100%" height="100%">
-  <rect width="760" height="320" rx="14" fill="#fcfbf7" stroke="#e8e2d5" stroke-width="2"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 365" width="100%" height="100%">
+  <rect width="800" height="365" rx="12" fill="#fcfbf7" stroke="#dfdacf" stroke-width="1.5"/>
   
-  <text x="380" y="30" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#701c1a" text-anchor="middle">LE BOUCLIER THERMIQUE DE LA MERINGUE : L'OMELETTE NORVÉGIENNE</text>
-  <text x="380" y="48" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#5c5549" text-anchor="middle">Comment cuire à 240°C un dôme sans faire fondre la glace à -18°C située au cœur.</text>
+  <text x="400" y="32" font-family="Liberation Serif, Georgia, serif" font-size="17" font-weight="bold" fill="#701c1a" text-anchor="middle">LE BOUCLIER THERMIQUE DE LA MERINGUE : L'OMELETTE NORVÉGIENNE</text>
+  <text x="400" y="52" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#5c5549" text-anchor="middle">Comment dorer un dôme à 240°C sans faire fondre le cœur de glace à -18°C.</text>
 
-  <!-- Flammes et chaleur four du haut -->
-  <g transform="translate(180, 65)">
-    <path d="M 50 15 L 50 0" stroke="#dc2626" stroke-width="2"/>
-    <polygon points="50,22 46,14 54,14" fill="#dc2626"/>
-    <text x="50" y="-4" font-family="Liberation Sans, Arial, sans-serif" font-size="8.5" font-weight="bold" fill="#dc2626" text-anchor="middle">240°C</text>
+  <!-- Coupe architecturale à gauche (x=40..440) -->
+  <g transform="translate(40, 72)">
+    <!-- Flèches de chaleur du four en haut -->
+    <text x="200" y="12" font-family="Liberation Serif, Georgia, serif" font-size="10.2" font-weight="bold" fill="#a3432b" text-anchor="middle">CHALEUR DU FOUR (240°C) OU FLAMBAGE (800°C)</text>
+    <line x1="75" y1="20" x2="75" y2="52" stroke="#a3432b" stroke-width="2"/>
+    <polygon points="75,57 71,49 79,49" fill="#a3432b"/>
+    <line x1="200" y1="20" x2="200" y2="42" stroke="#a3432b" stroke-width="2"/>
+    <polygon points="200,47 196,39 204,39" fill="#a3432b"/>
+    <line x1="325" y1="20" x2="325" y2="52" stroke="#a3432b" stroke-width="2"/>
+    <polygon points="325,57 321,49 329,49" fill="#a3432b"/>
 
-    <path d="M 200 15 L 200 0" stroke="#ea580c" stroke-width="2"/>
-    <polygon points="200,22 196,14 204,14" fill="#ea580c"/>
-    <text x="200" y="-4" font-family="Liberation Sans, Arial, sans-serif" font-size="8.5" font-weight="bold" fill="#ea580c" text-anchor="middle">FLAMBAGE 800°C</text>
+    <!-- Dôme de Meringue (Apex exact à y = 0.75*8 + 0.25*234 = 64.5) -->
+    <path d="M 25 234 C 25 8 375 8 375 234 Z" fill="#faf7f0" stroke="#92400e" stroke-width="2.5"/>
+    <!-- Croûte caramélisée externe (trait pointillé doré, apex à y = 71) -->
+    <path d="M 33 232 C 33 17 367 17 367 232" fill="none" stroke="#d4a373" stroke-width="2" stroke-dasharray="5,3"/>
 
-    <path d="M 350 15 L 350 0" stroke="#dc2626" stroke-width="2"/>
-    <polygon points="350,22 346,14 354,14" fill="#dc2626"/>
-    <text x="350" y="-4" font-family="Liberation Sans, Arial, sans-serif" font-size="8.5" font-weight="bold" fill="#dc2626" text-anchor="middle">240°C</text>
+    <!-- Légende interne Meringue (placée entre y=105 et y=125, largement sous l'apex y=71 et au-dessus du cœur y=162) -->
+    <text x="200" y="106" font-family="Liberation Serif, Georgia, serif" font-size="10.5" font-weight="bold" fill="#92400e" text-anchor="middle">MANTEAU DE MERINGUE (2 cm)</text>
+    <text x="200" y="122" font-family="Liberation Sans, Arial, sans-serif" font-size="9.2" fill="#5c5549" text-anchor="middle">90 % de microbulles d'air immobile</text>
+
+    <!-- Cœur de Crème Glacée (Apex exact à y = 0.75*138 + 0.25*234 = 162) -->
+    <path d="M 95 234 C 95 138 305 138 305 234 Z" fill="#f2ece1" stroke="#8c7355" stroke-width="2"/>
+    <text x="200" y="196" font-family="Liberation Serif, Georgia, serif" font-size="10.5" font-weight="bold" fill="#242124" text-anchor="middle">CŒUR DE GLACE (-18°C)</text>
+    <text x="200" y="212" font-family="Liberation Sans, Arial, sans-serif" font-size="9" fill="#5a6e54" font-weight="bold" text-anchor="middle">Intact : zéro fusion thermique</text>
+
+    <!-- Socle de Génoise -->
+    <rect x="18" y="234" width="364" height="24" rx="4" fill="#e6c49a" stroke="#92400e" stroke-width="1.5"/>
+    <text x="200" y="250" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" font-weight="bold" fill="#451a03" text-anchor="middle">SOCLE DE GÉNOISE : Isolant thermique inférieur</text>
   </g>
 
-  <!-- Meringue dorée externe (Dôme) -->
-  <path d="M 160 260 C 160 110 600 110 600 260 Z" fill="#fffbeb" stroke="#d97706" stroke-width="3"/>
-  <!-- Flammes dorées en surface -->
-  <path d="M 230 165 Q 240 145 250 165" stroke="#b45309" stroke-width="2" fill="none"/>
-  <path d="M 360 130 Q 370 110 380 130" stroke="#b45309" stroke-width="2" fill="none"/>
-  <path d="M 490 160 Q 500 140 510 160" stroke="#b45309" stroke-width="2" fill="none"/>
+  <!-- Cartouche explicatif à droite (x=455..765) -->
+  <g transform="translate(455, 80)">
+    <rect width="310" height="252" rx="8" fill="#faf7f2" stroke="#dfdacf" stroke-width="1.2"/>
+    <rect width="310" height="30" rx="8" fill="#701c1a"/>
+    <text x="155" y="20" font-family="Liberation Serif, Georgia, serif" font-size="11" font-weight="bold" fill="#fcfbf7" text-anchor="middle">LES 3 SECRETS PHYSIQUES DU MIRACLE</text>
 
-  <!-- Texte Meringue -->
-  <text x="380" y="150" font-family="Liberation Sans, Arial, sans-serif" font-size="10.5" font-weight="bold" fill="#78350f" text-anchor="middle">MOUCHE DE MERINGUE : 90% D'AIR IMMOBILE</text>
-  <text x="380" y="166" font-family="Liberation Sans, Arial, sans-serif" font-size="9" fill="#92400e" text-anchor="middle">Conductivité thermique infime : λ = 0,026 W/(m·K) (Bouclier thermique parfait)</text>
+    <text x="16" y="52" font-family="Liberation Serif, Georgia, serif" font-size="10" font-weight="bold" fill="#a3432b">1. L'air prisonnier est un mur thermique</text>
+    <text x="16" y="68" font-family="Liberation Sans, Arial, sans-serif" font-size="9.3" fill="#242124">La mousse de blancs d'œufs bloque la chaleur</text>
+    <text x="16" y="82" font-family="Liberation Sans, Arial, sans-serif" font-size="9.3" fill="#5c5549">comme un double vitrage (λ = 0,026 W/m·K).</text>
 
-  <!-- Bloc de Glace au centre -->
-  <path d="M 270 260 C 270 190 490 190 490 260 Z" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
-  <text x="380" y="222" font-family="Liberation Sans, Arial, sans-serif" font-size="11" font-weight="bold" fill="#0369a1" text-anchor="middle">CRÈME GLACÉE FERME (-18°C)</text>
-  <text x="380" y="238" font-family="Liberation Sans, Arial, sans-serif" font-size="8.5" fill="#0369a1" text-anchor="middle">Aucune calorie n'atteint le cœur : zéro fusion !</text>
+    <text x="16" y="110" font-family="Liberation Serif, Georgia, serif" font-size="10" font-weight="bold" fill="#a3432b">2. Le socle biscuité coupe la conduction</text>
+    <text x="16" y="126" font-family="Liberation Sans, Arial, sans-serif" font-size="9.3" fill="#242124">La génoise aérée empêche le métal chaud</text>
+    <text x="16" y="140" font-family="Liberation Sans, Arial, sans-serif" font-size="9.3" fill="#5c5549">du plat de faire fondre la glace par le dessous.</text>
 
-  <!-- Socle Génoise -->
-  <rect x="140" y="260" width="480" height="22" rx="4" fill="#fde68a" stroke="#d97706" stroke-width="1.5"/>
-  <text x="380" y="275" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" font-weight="bold" fill="#854d0e" text-anchor="middle">Socle de Génoise biscuitée : isolant inférieur contre la conduction du plat</text>
+    <text x="16" y="168" font-family="Liberation Serif, Georgia, serif" font-size="10" font-weight="bold" fill="#701c1a">3. Étanchéité absolue exigée</text>
+    <text x="16" y="184" font-family="Liberation Sans, Arial, sans-serif" font-size="9.3" fill="#242124">La meringue doit jointer jusqu'au plat sans</text>
+    <text x="16" y="198" font-family="Liberation Sans, Arial, sans-serif" font-size="9.3" fill="#5c5549">la moindre fissure (cuisson éclair : 3 à 4 min).</text>
+
+    <rect x="16" y="214" width="278" height="26" rx="4" fill="#f4f6f4" stroke="#6e826b" stroke-width="1"/>
+    <text x="155" y="231" font-family="Liberation Serif, Georgia, serif" font-size="9.3" font-weight="bold" fill="#5a6e54" text-anchor="middle">Contraste : +240°C dehors / -18°C dedans</text>
+  </g>
 </svg>

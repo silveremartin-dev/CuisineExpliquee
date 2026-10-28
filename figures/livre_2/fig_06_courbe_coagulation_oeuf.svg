@@ -1,45 +1,66 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="100%" height="100%">
-  <rect width="800" height="420" rx="16" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
-  <text x="400" y="36" font-family="Liberation Sans, Arial, sans-serif" font-size="20" font-weight="bold" fill="#0f172a" text-anchor="middle">LE SPECTRE DE COAGULATION THERMIQUE DE L'ŒUF</text>
-  <text x="400" y="60" font-family="Liberation Sans, Arial, sans-serif" font-size="13" fill="#64748b" text-anchor="middle">Seuils de dénaturation des fractions protéiques et pilotage millimétrique des textures.</text>
-  <g transform="translate(60, 100)">
-    <rect x="0" y="100" width="680" height="24" rx="12" fill="#e2e8f0"/>
-    <rect x="136" y="100" width="136" height="24" fill="#fef08a"/>
-    <rect x="272" y="100" width="136" height="24" fill="#fed7aa"/>
-    <rect x="408" y="100" width="136" height="24" fill="#fca5a5"/>
-    <rect x="544" y="100" width="136" height="24" rx="12" fill="#ef4444"/>
-    <line x1="0" y1="95" x2="0" y2="130" stroke="#64748b" stroke-width="2"/>
-    <text x="0" y="148" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#475569" text-anchor="middle">50°C</text>
-    <line x1="136" y1="95" x2="136" y2="130" stroke="#64748b" stroke-width="2"/>
-    <text x="136" y="148" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#475569" text-anchor="middle">60°C</text>
-    <line x1="163" y1="60" x2="163" y2="125" stroke="#2563eb" stroke-width="2" stroke-dasharray="3,2"/>
-    <rect x="100" y="25" width="126" height="35" rx="5" fill="#eff6ff" stroke="#3b82f6" stroke-width="1"/>
-    <text x="163" y="40" font-family="Liberation Sans, Arial, sans-serif" font-size="10.5" font-weight="bold" fill="#1e40af" text-anchor="middle">62°C : Ovotransferrine</text>
-    <text x="163" y="53" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#2563eb" text-anchor="middle">Blanc prend en gelée douce</text>
-    <line x1="190" y1="95" x2="190" y2="185" stroke="#16a34a" stroke-width="3"/>
-    <rect x="120" y="195" width="140" height="42" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
-    <text x="190" y="212" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#166534" text-anchor="middle">64°C : ŒUF PARFAIT</text>
-    <text x="190" y="228" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#15803d" text-anchor="middle">Blanc crémeux tremblotant</text>
-    <text x="190" y="240" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#15803d" text-anchor="middle">Jaune pâteux soyeux</text>
-    <line x1="245" y1="60" x2="245" y2="125" stroke="#d97706" stroke-width="2" stroke-dasharray="3,2"/>
-    <rect x="185" y="25" width="120" height="35" rx="5" fill="#fffbeb" stroke="#d97706" stroke-width="1"/>
-    <text x="245" y="40" font-family="Liberation Sans, Arial, sans-serif" font-size="10.5" font-weight="bold" fill="#92400e" text-anchor="middle">68°C : Jaune ferme</text>
-    <text x="245" y="53" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#b45309" text-anchor="middle">Lipovitellines figées</text>
-    <line x1="272" y1="95" x2="272" y2="130" stroke="#64748b" stroke-width="2"/>
-    <text x="272" y="148" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#475569" text-anchor="middle">70°C</text>
-    <line x1="408" y1="95" x2="408" y2="130" stroke="#64748b" stroke-width="2"/>
-    <text x="408" y="148" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#475569" text-anchor="middle">80°C</text>
-    <line x1="462" y1="60" x2="462" y2="125" stroke="#dc2626" stroke-width="2" stroke-dasharray="3,2"/>
-    <rect x="402" y="25" width="120" height="35" rx="5" fill="#fef2f2" stroke="#dc2626" stroke-width="1"/>
-    <text x="462" y="40" font-family="Liberation Sans, Arial, sans-serif" font-size="10.5" font-weight="bold" fill="#991b1b" text-anchor="middle">84°C : Ovalbumine</text>
-    <text x="462" y="53" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#b91c1c" text-anchor="middle">54% du blanc, ferme solide</text>
-    <line x1="680" y1="95" x2="680" y2="130" stroke="#64748b" stroke-width="2"/>
-    <text x="680" y="148" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#475569" text-anchor="middle">100°C</text>
-    <rect x="480" y="195" width="200" height="48" rx="6" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.5"/>
-    <text x="580" y="212" font-family="Liberation Sans, Arial, sans-serif" font-size="11" font-weight="bold" fill="#991b1b" text-anchor="middle">ZONE DANGER : ANNEAU VERT</text>
-    <text x="580" y="227" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#7f1d1d" text-anchor="middle">H₂S (blanc) + Fe²⁺ (jaune) → FeS</text>
-    <text x="580" y="239" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#7f1d1d" text-anchor="middle">Précipité de sulfure de fer grisâtre</text>
+  <rect width="800" height="420" rx="12" fill="#fcfbf7" stroke="#dfdacf" stroke-width="1.5"/>
+  <text x="400" y="36" font-family="Liberation Serif, Georgia, serif" font-size="18" font-weight="bold" fill="#701c1a" text-anchor="middle">LE SPECTRE DE COAGULATION THERMIQUE DE L'ŒUF</text>
+  <text x="400" y="58" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#5c5549" text-anchor="middle">Seuils de dénaturation des protéines et pilotage au degré près des textures.</text>
+
+  <g transform="translate(60, 95)">
+    <!-- Barre de gradient thermique -->
+    <rect x="0" y="105" width="680" height="22" rx="11" fill="#f2ece1" stroke="#dfdacf" stroke-width="1"/>
+    <rect x="136" y="105" width="136" height="22" fill="#f5e6c8"/>
+    <rect x="272" y="105" width="136" height="22" fill="#e6c49a"/>
+    <rect x="408" y="105" width="136" height="22" fill="#c88a70"/>
+    <rect x="544" y="105" width="136" height="22" rx="11" fill="#701c1a"/>
+
+    <!-- Graduations -->
+    <line x1="0" y1="100" x2="0" y2="133" stroke="#5c5549" stroke-width="2"/>
+    <text x="0" y="150" font-family="Liberation Sans, Arial, sans-serif" font-size="11" font-weight="bold" fill="#5c5549" text-anchor="middle">50°C</text>
+
+    <line x1="136" y1="100" x2="136" y2="133" stroke="#5c5549" stroke-width="2"/>
+    <text x="136" y="150" font-family="Liberation Sans, Arial, sans-serif" font-size="11" font-weight="bold" fill="#5c5549" text-anchor="middle">60°C</text>
+
+    <line x1="272" y1="100" x2="272" y2="133" stroke="#5c5549" stroke-width="2"/>
+    <text x="272" y="150" font-family="Liberation Sans, Arial, sans-serif" font-size="11" font-weight="bold" fill="#5c5549" text-anchor="middle">70°C</text>
+
+    <line x1="408" y1="100" x2="408" y2="133" stroke="#5c5549" stroke-width="2"/>
+    <text x="408" y="150" font-family="Liberation Sans, Arial, sans-serif" font-size="11" font-weight="bold" fill="#5c5549" text-anchor="middle">80°C</text>
+
+    <line x1="680" y1="100" x2="680" y2="133" stroke="#5c5549" stroke-width="2"/>
+    <text x="680" y="150" font-family="Liberation Sans, Arial, sans-serif" font-size="11" font-weight="bold" fill="#5c5549" text-anchor="middle">100°C</text>
+
+    <!-- 62°C (En haut à gauche, bien séparé de 68°C) -->
+    <line x1="163" y1="62" x2="163" y2="105" stroke="#8c7355" stroke-width="2" stroke-dasharray="3,2"/>
+    <rect x="45" y="15" width="165" height="45" rx="6" fill="#faf7f0" stroke="#d4a373" stroke-width="1.2"/>
+    <text x="127.5" y="34" font-family="Liberation Serif, Georgia, serif" font-size="10.5" font-weight="bold" fill="#701c1a" text-anchor="middle">62°C : Ovotransferrine</text>
+    <text x="127.5" y="50" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#5c5549" text-anchor="middle">Le blanc prend en gelée laiteuse</text>
+
+    <!-- 64°C (En bas à gauche) -->
+    <line x1="190" y1="127" x2="190" y2="180" stroke="#5a6e54" stroke-width="2.5"/>
+    <rect x="95" y="182" width="190" height="56" rx="6" fill="#f4f6f4" stroke="#5a6e54" stroke-width="1.5"/>
+    <text x="190" y="201" font-family="Liberation Serif, Georgia, serif" font-size="11" font-weight="bold" fill="#5a6e54" text-anchor="middle">64°C : L'ŒUF PARFAIT</text>
+    <text x="190" y="217" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#242124" text-anchor="middle">Blanc crémeux tremblotant</text>
+    <text x="190" y="231" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#5c5549" text-anchor="middle">&amp; jaune confit ultra-soyeux</text>
+
+    <!-- 68°C (En haut au centre, décalé à x=230 pour zéro chevauchement) -->
+    <line x1="245" y1="62" x2="245" y2="105" stroke="#92400e" stroke-width="2" stroke-dasharray="3,2"/>
+    <rect x="225" y="15" width="160" height="45" rx="6" fill="#faf6ee" stroke="#a3432b" stroke-width="1.2"/>
+    <text x="305" y="34" font-family="Liberation Serif, Georgia, serif" font-size="10.5" font-weight="bold" fill="#92400e" text-anchor="middle">68°C : Jaune pris</text>
+    <text x="305" y="50" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#5c5549" text-anchor="middle">Lipovitellines coagulées</text>
+
+    <!-- 84°C (En haut à droite) -->
+    <line x1="462" y1="62" x2="462" y2="105" stroke="#701c1a" stroke-width="2" stroke-dasharray="3,2"/>
+    <rect x="405" y="15" width="175" height="45" rx="6" fill="#fbf6f5" stroke="#b06d60" stroke-width="1.2"/>
+    <text x="492.5" y="34" font-family="Liberation Serif, Georgia, serif" font-size="10.5" font-weight="bold" fill="#701c1a" text-anchor="middle">84°C : Ovalbumine</text>
+    <text x="492.5" y="50" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#5c5549" text-anchor="middle">Blanc ferme (seuil crème anglaise)</text>
+
+    <!-- >90°C (En bas à droite) -->
+    <line x1="560" y1="127" x2="560" y2="180" stroke="#701c1a" stroke-width="2.5"/>
+    <rect x="435" y="182" width="235" height="56" rx="6" fill="#fbf6f5" stroke="#701c1a" stroke-width="1.5"/>
+    <text x="552.5" y="201" font-family="Liberation Serif, Georgia, serif" font-size="11" font-weight="bold" fill="#701c1a" text-anchor="middle">&gt; 90°C : SURCUISSON &amp; SOUFRE</text>
+    <text x="552.5" y="217" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#242124" text-anchor="middle">Soufre (blanc) + Fer (jaune) = FeS</text>
+    <text x="552.5" y="231" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#701c1a" text-anchor="middle">Anneau gris-vert et blanc caoutchouteux</text>
   </g>
-  <rect x="50" y="370" width="700" height="32" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
-  <text x="400" y="391" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#334155" text-anchor="middle"><tspan font-weight="bold">Règle de maîtrise :</tspan> Cuire un œuf dur sans anneau vert exige une eau frémissante (90°C max) et un bain glacé immédiat pour stopper la diffusion du fer.</text>
+
+  <rect x="45" y="356" width="710" height="46" rx="6" fill="#f2ece1" stroke="#d4a373" stroke-width="1"/>
+  <text x="400" y="375" font-family="Liberation Serif, Georgia, serif" font-size="10.5" fill="#701c1a" text-anchor="middle" font-weight="bold">Règle de maîtrise : Cuire l'œuf dur dans une eau frémissante (90°C, 9 min) et le plonger</text>
+  <text x="400" y="392" font-family="Liberation Sans, Arial, sans-serif" font-size="10" fill="#5c5549" text-anchor="middle">immédiatement dans l'eau glacée stoppe la migration du soufre et garantit un jaune d'or sans cerne gris.</text>
 </svg>

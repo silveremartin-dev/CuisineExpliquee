@@ -60,65 +60,78 @@
 // Style des Hyperliens Interactifs
 #show link: it => text(fill: c-terracotta, weight: "medium")[#underline(stroke: 0.5pt + c-bronze, offset: 1.5pt)[#it]]
 
-// Niveaux de Titres : Portails de Livre en Style 5 (Minimalisme Nordique, Page 21) et Chapitres en Style 1 (Grand Traité Étoilé)
+// Niveaux de Titres : Portails de Livre en Style 5 (Page 21, alignés à gauche, sans couleur bleue) et Chapitres en Style 1 (en haut de page, alignés à gauche)
 #show heading.where(level: 1): it => {
   pagebreak(weak: true)
   let body_repr = repr(it.body)
-  if body_repr.contains("01") or body_repr.contains("02") or body_repr.contains("03") or body_repr.contains("04") or body_repr.contains("05") or "PARTIE" in body_repr {
-    // STYLE 5 (PAGE 21) : EXACT MINIMALISME ÉDITORIAL NORDIQUE POUR LES ENTÊTES DE LIVRE
+  let is_portal = (body_repr.contains("01") or body_repr.contains("02") or body_repr.contains("03") or body_repr.contains("04") or body_repr.contains("05")) and not body_repr.contains("CHAPITRE") and not body_repr.contains("ANNEXE") and not body_repr.contains("Sommaire")
+  if is_portal {
+    // STYLE 5 (PAGE 21) : OUVERTURE DE LIVRE SUR PAGE DÉDIÉE, ALIGNÉE À GAUCHE, TONS CHAUDS DU STYLE 1
+    let part_num = if body_repr.contains("01") { [PREMIÈRE PARTIE] } else if body_repr.contains("02") { [DEUXIÈME PARTIE] } else if body_repr.contains("03") { [TROISIÈME PARTIE] } else if body_repr.contains("04") { [QUATRIÈME PARTIE] } else { [CINQUIÈME PARTIE] }
     v(2.5cm)
-    align(center)[
-      #let part_num = if body_repr.contains("01") { [PREMIÈRE PARTIE] }
-        else if body_repr.contains("02") { [DEUXIÈME PARTIE] }
-        else if body_repr.contains("03") { [TROISIÈME PARTIE] }
-        else if body_repr.contains("04") { [QUATRIÈME PARTIE] }
-        else { [CINQUIÈME PARTIE] }
-      #text(size: 11pt, tracking: 0.15em, fill: rgb(100, 116, 139), font: "Liberation Sans", weight: "bold")[#part_num]      #v(1.0cm)
-      #text(size: 32pt, weight: "light", fill: c-ink, tracking: 0.05em, font: "Liberation Sans")[#it.body]
+    align(left)[
+      #text(size: 11pt, tracking: 0.15em, fill: c-bordeaux, font: "Liberation Sans", weight: "bold")[#part_num]
+      #v(1.0cm)
+      #text(size: 30pt, weight: "light", fill: c-ink, tracking: 0.04em, font: "Liberation Sans")[#it.body]
       #v(2.0cm)
-      #text(size: 11.5pt, fill: rgb(100, 116, 139), font: "Liberation Sans", tracking: 0.05em)[
+      #text(size: 11pt, fill: c-slate, font: "Liberation Sans", tracking: 0.04em)[
         #if body_repr.contains("01") [
-          Rien de trop.          Un couteau affûté.          Une flamme pure.          L'intelligence du temps.
+          Rien de trop.#linebreak()
+          Un couteau affûté.#linebreak()
+          Une flamme pure.#linebreak()
+          L'intelligence du temps.
         ] else if body_repr.contains("02") [
-          L'anatomie invisible de l'assiette.          La vérité sans fard de la matière.          Le rythme biologique de la digestion.          Le cycle vivant de la terre et de l'eau.
+          L'anatomie invisible de l'assiette.#linebreak()
+          La vérité sans fard de la matière.#linebreak()
+          Le rythme biologique de la digestion.#linebreak()
+          Le cycle vivant de la terre et de l'eau.
         ] else if body_repr.contains("03") [
-          La contraction millimétrique du muscle.          Les seuils thermiques de l'oeuf.          L'extraction aromatique des parois végétales.          La matrice élémentaire de la pâte.
+          La contraction millimétrique du muscle.#linebreak()
+          Les seuils thermiques de l'œuf.#linebreak()
+          L'extraction aromatique des parois végétales.#linebreak()
+          La matrice élémentaire de la pâte.
         ] else if body_repr.contains("04") [
-          Le sel et l'acide qui transforment à froid.          La prolifération noble des ferments.          La géographie ancestrale des trois graisses.          La mémoire vivante du goût partagé.
+          Le sel et l'acide qui transforment à froid.#linebreak()
+          La prolifération noble des ferments.#linebreak()
+          La géographie ancestrale des trois graisses.#linebreak()
+          La mémoire vivante du goût partagé.
         ] else [
-          Le cadran absolu des températures critiques.          Le glossaire physico-chimique exhaustif.          La bibliographie raisonnée et critique.          Les règles sanitaires de la conservation.
+          Le cadran absolu des températures critiques.#linebreak()
+          Le glossaire physico-chimique exhaustif.#linebreak()
+          La bibliographie raisonnée et critique.#linebreak()
+          Les règles sanitaires de la conservation.
         ]
       ]
     ]
     pagebreak()
   } else {
-    // STYLE 1 : LE GRAND TRAITÉ ÉTOILÉ POUR LES CHAPITRES
-    v(1.0cm)
-    align(center)[
-      #text(size: 10pt, tracking: 0.25em, fill: c-bordeaux, weight: "bold", font: "Liberation Sans")[#smallcaps[Traité de Cuisine & de Physique Culinaire]]
-      #v(8pt)
-      #text(size: 20pt, weight: "bold", fill: c-ink, font: "Liberation Serif")[#it.body]
-      #v(10pt)
-      #line(length: 25%, stroke: 1pt + c-bronze)
-      #v(0.6cm)
+    // STYLE 1 : LE GRAND TRAITÉ ÉTOILÉ POUR LES CHAPITRES (EN HAUT DE PAGE, ALIGNÉ À GAUCHE)
+    v(0.3cm)
+    align(left)[
+      #text(size: 9pt, tracking: 0.2em, fill: c-bordeaux, weight: "bold", font: "Liberation Sans")[#smallcaps[Traité de Cuisine & de Physique Culinaire]]
+      #v(5pt)
+      #text(size: 18.5pt, weight: "bold", fill: c-ink, font: "Liberation Serif")[#it.body]
+      #v(7pt)
+      #line(length: 100%, stroke: 1pt + c-bronze)
+      #v(0.35cm)
     ]
   }
 }
 
-// Titres de niveau 2, 3 et 4 systématiquement centrés (proscription des alignements à gauche)
+// Titres de niveau 2, 3 et 4 systématiquement alignés à gauche (Style 1)
 #show heading.where(level: 2): it => block(
   width: 100%,
   breakable: false,
   sticky: true,
   spacing: 1.4em
 )[
-  #v(0.4cm)
-  #align(center)[
+  #v(0.35cm)
+  #align(left)[
     #text(size: 13pt, weight: "bold", fill: c-bordeaux, font: "Liberation Serif")[#it.body]
     #v(4pt)
-    #line(length: 25%, stroke: 0.8pt + c-bronze)
+    #line(length: 100%, stroke: 0.6pt + c-bronze)
   ]
-  #v(0.2cm)
+  #v(0.15cm)
 ]
 
 #show heading.where(level: 3): it => block(
@@ -128,18 +141,19 @@
   spacing: 1.1em
 )[
   #v(0.2cm)
-  #align(center)[
+  #align(left)[
     #text(size: 11pt, weight: "bold", fill: c-terracotta, font: "Liberation Serif")[#it.body]
   ]
   #v(0.1cm)
 ]
 
 #show heading.where(level: 4): it => block(
+  width: 100%,
   breakable: false,
   sticky: true,
   spacing: 0.8em
 )[
-  #align(center)[
+  #align(left)[
     #text(size: 9.5pt, weight: "bold", fill: c-slate, font: "Liberation Sans")[#it.body]
   ]
 ]
@@ -328,42 +342,33 @@
 #pagebreak()
 #set page(
   paper: "a4",
-  margin: (top: 2.6cm, bottom: 2.6cm, left: 2.2cm, right: 2.2cm),
+  margin: (top: 2.5cm, bottom: 2.5cm, left: 2.2cm, right: 2.2cm),
   header: context {
     let page-num = counter(page).get().first()
     if page-num > 4 {
-      let cur-h1 = query(selector(heading.where(level: 1)).before(here()))
+      let page-h1 = query(selector(heading.where(level: 1))).filter(h => h.location().page() == here().page())
+      let cur-h1 = if page-h1.len() > 0 { page-h1 } else { query(selector(heading.where(level: 1)).before(here())) }
       let repr-h1 = if cur-h1.len() > 0 { repr(cur-h1.last().body) } else { "" }
-      let is-portal = repr-h1.contains("01") or repr-h1.contains("02") or repr-h1.contains("03") or repr-h1.contains("04") or repr-h1.contains("05")
-      // Sur les pages d'ouverture de livre en Style 5, pas d'en-tête pour préserver la pureté éditoriale
+      let is-portal = (repr-h1.contains("01") or repr-h1.contains("02") or repr-h1.contains("03") or repr-h1.contains("04") or repr-h1.contains("05")) and not repr-h1.contains("CHAPITRE") and not repr-h1.contains("ANNEXE") and not repr-h1.contains("Sommaire")
       if not is-portal {
-        let title-left = cur-h1.last().body
-        grid(
-          columns: (1fr, auto),
-          align: (left + horizon, right + horizon),
-          text(size: 8pt, fill: c-slate, font: "Liberation Sans", style: "italic")[#title-left],
-          text(size: 7.5pt, fill: c-bronze, font: "Liberation Sans", weight: "bold")[LA CUISINE EXPLIQUÉE]
-        )
+        let title-left = if cur-h1.len() > 0 { cur-h1.last().body } else { [LA CUISINE EXPLIQUÉE] }
+        text(font: "Liberation Serif", size: 8.5pt, fill: c-bordeaux, tracking: 0.08em)[
+          #smallcaps[#title-left] #h(1fr) #emph[La Cuisine Expliquée]
+        ]
         v(-4pt)
-        line(length: 100%, stroke: 0.4pt + c-bronze)
+        line(length: 100%, stroke: 0.5pt + c-bronze)
       }
     }
   },
   footer: context {
     let page-num = counter(page).get().first()
     if page-num > 2 {
-      let cur-h1 = query(selector(heading.where(level: 1)).before(here()))
+      let page-h1 = query(selector(heading.where(level: 1))).filter(h => h.location().page() == here().page())
+      let cur-h1 = if page-h1.len() > 0 { page-h1 } else { query(selector(heading.where(level: 1)).before(here())) }
       let repr-h1 = if cur-h1.len() > 0 { repr(cur-h1.last().body) } else { "" }
-      let is-portal = repr-h1.contains("01") or repr-h1.contains("02") or repr-h1.contains("03") or repr-h1.contains("04") or repr-h1.contains("05")
+      let is-portal = (repr-h1.contains("01") or repr-h1.contains("02") or repr-h1.contains("03") or repr-h1.contains("04") or repr-h1.contains("05")) and not repr-h1.contains("CHAPITRE") and not repr-h1.contains("ANNEXE") and not repr-h1.contains("Sommaire")
       if not is-portal {
-        line(length: 100%, stroke: 0.4pt + rgb("#dfdacf"))
-        v(3pt)
-        grid(
-          columns: (1fr, 1fr),
-          align: (left + horizon, right + horizon),
-          text(size: 8pt, fill: c-slate, font: "Liberation Sans", style: "italic")[Silvère-Martin Michiellot & Antigravity],
-          text(size: 8.5pt, fill: c-ink, font: "Liberation Sans", weight: "bold")[Page #page-num]
-        )
+        align(center)[#text(font: "Liberation Serif", size: 9pt, fill: c-bordeaux)[— #page-num —]]
       }
     }
   }
@@ -442,12 +447,12 @@
 // ==========================================
 // 5. TABLE DES RECETTES & PRÉPARATIONS PILIERS
 // ==========================================
-#align(center)[
+#align(left)[
   #text(size: 15pt, weight: "bold", fill: c-bordeaux, font: "Liberation Serif")[
     🍳 Table des Vingt-et-Une Recettes et Préparations Piliers
   ]
   #v(-4pt)
-  #line(length: 60%, stroke: 0.8pt + c-bronze)
+  #line(length: 100%, stroke: 0.8pt + c-bronze)
 ]
 #v(0.4cm)
 
@@ -506,9 +511,6 @@
 
 = 01 --- L'Homme, le Feu et la Règle du Foyer
 <lhomme-le-feu-et-la-règle-du-foyer>
-
-#divider()
-
 = CHAPITRE 01 --- L'Odyssée du Feu, la Nutrition de Survie et les Traités Anciens
 <chapitre-01-lodyssée-du-feu-la-nutrition-de-survie-et-les-traités-anciens>
 #quote(block: true)[
@@ -684,7 +686,12 @@ ascorbique (vitamine C vitale non synthétisée par l'organisme humain).
 Comment distinguer l'évolution noble d'un aliment de son pourrissement
 mortel ?
 
-#box(image("figures/histoire/fig_maturation_vs_putrefaction.svg", alt: "La bifurcation biologique : maturation contrôlée enzymatique versus putréfaction bactérienne"))\`\`
+#figure(image("figures/histoire/fig_maturation_vs_putrefaction.svg", alt: "La bifurcation biologique : maturation contrôlée enzymatique versus putréfaction bactérienne"),
+  caption: [
+    La bifurcation biologique : maturation contrôlée enzymatique versus
+    putréfaction bactérienne
+  ]
+)
 
 === Le Cas Critique : Le Péril Invisible du Botulisme (#emph[Clostridium botulinum])
 <le-cas-critique-le-péril-invisible-du-botulisme-clostridium-botulinum>
@@ -736,7 +743,7 @@ de géants sur lesquelles nous sommes juchés :
   professionnels (tournebroches mécaniques, couteaux spécialisés,
   bassines en cuivre) et en codifiant la cuisson douce au bain-marie.
 
-  #figure(image("figures/patrimoine/scappi_cuisine_renaissance.jpg", alt: "La cuisine de la Renaissance selon Bartolomeo Scappi (1570) : première gravure moderne des ustensiles et de l’ordre rationnel du foyer"),
+  #figure(image("figures/patrimoine/scappi_cuisine_renaissance.jpg", height: 38%, alt: "La cuisine de la Renaissance selon Bartolomeo Scappi (1570) : première gravure moderne des ustensiles et de l’ordre rationnel du foyer"),
     caption: [
       La cuisine de la Renaissance selon Bartolomeo Scappi (1570) :
       première gravure moderne des ustensiles et de l'ordre rationnel du
@@ -796,8 +803,6 @@ de géants sur lesquelles nous sommes juchés :
   )]
   , kind: table
   )
-
-#divider()
 
 = CHAPITRE 02 --- L'Arsenal Minimal et la Maîtrise des Sens
 <chapitre-02-larsenal-minimal-et-la-maîtrise-des-sens>
@@ -1059,7 +1064,7 @@ antiadhésif.
   elle formera des coulures visqueuses et collantes qui ruineront le
   culottage.
 + #strong[La Cuisson au Four :] Préchauffer le four ménager à
-  #strong[$230 e x t - - 240^compose upright(C)$]. Poser la poêle
+  #strong[$230 upright("–") 240^compose upright(C)$]. Poser la poêle
   #strong[à l'envers] sur la grille centrale (pour éviter toute
   accumulation résiduelle). Laisser cuire pendant #strong[1 heure
   complète].
@@ -1211,10 +1216,10 @@ bouillie brunâtre visqueuse et nauséabonde.
   dans un grand torchon de coton propre (ou tapisser un récipient d'un
   papier absorbant) très légèrement humidifié.
 + #strong[Le Stockage en Bac à Légumes
-  ($6 e x t à 8^compose upright(C)$) :] Le linge en coton maintient une
-  humidité relative ambiante saturée ($> 90 thin %$) qui bloque
-  l'évaporation sans jamais créer de flaque asphyxiante. La feuille
-  respire et conserve son croquant intact pendant dix jours.
+  ($6 upright(" à ") 8^compose upright(C)$) :] Le linge en coton
+  maintient une humidité relative ambiante saturée ($> 90 thin %$) qui
+  bloque l'évaporation sans jamais créer de flaque asphyxiante. La
+  feuille respire et conserve son croquant intact pendant dix jours.
 + #strong[Le Bain de Jouvence à l'Eau Glacée :] Si une salade a ramolli,
   la plonger 15 minutes dans un saladier d'eau saturée de glaçons. L'eau
   froide s'engouffre par osmose à travers les parois cellulaires pour
@@ -1292,9 +1297,11 @@ jusqu'à 200 ml d'huile grâce aux lécithines.]
   bol (pour stabiliser sans troisième main).
 - #strong[Ingrédients :]
   - Jaune d'œuf à température ambiante : 1 pièce
-  - Moutarde forte de Dijon : $15 e x t g$ (1 cuillère à café bombée)
-  - Huile de tournesol ou pépins de raisin : $150 e x t à 180 e x t m l$
-  - Vinaigre de vin vieux ou jus de citron : $1 e x t c . à c a f é$
+  - Moutarde forte de Dijon : $15 upright(" g")$ (1 cuillère à café
+    bombée)
+  - Huile de tournesol ou pépins de raisin :
+    $150 upright(" à ") 180 upright(" ml")$
+  - Vinaigre de vin vieux ou jus de citron : $1 upright(" c. à café")$
   - Sel fin et poivre blanc moulu
 
 ===== Protocole Pas à Pas :
@@ -1409,8 +1416,6 @@ encombrer vos étagères.
 
 
 ]
-
-#divider()
 
 = CHAPITRE 03 --- La Thermodynamique du Feu, des Cuissons et Réactions de Maillard
 <chapitre-03-la-thermodynamique-du-feu-des-cuissons-et-réactions-de-maillard>
@@ -1663,9 +1668,9 @@ modes de cuissons douces d'une perfection absolue :
 === A. La Vapeur Improvisée sans Panier Vapeur
 <a.-la-vapeur-improvisée-sans-panier-vapeur>
 Comment cuire à la vapeur pure sans posséder de cuiseur dédié ? -
-#strong[Le Montage Physique :] Verser $1\,5 e x t c m$ d'eau au fond de
-la casserole inox. Poser au centre un ramequin ou un petit bol en
-céramique/inox retourné à l'envers. Poser une petite assiette plate
+#strong[Le Montage Physique :] Verser $1\,5 upright(" cm")$ d'eau au
+fond de la casserole inox. Poser au centre un ramequin ou un petit bol
+en céramique/inox retourné à l'envers. Poser une petite assiette plate
 par-dessus (qui repose de façon stable au-dessus du niveau de l'eau).
 Déposer les légumes ou filets de poisson sur l'assiette et fermer avec
 le couvercle lourd. - #strong[Le Principe Thermodynamique :] L'eau bout
@@ -1682,13 +1687,13 @@ pas lessivés.
 === B. La Cuisson à l'Étouffée (ou Étuvée) dans l'Eau de Constitution
 <b.-la-cuisson-à-létouffée-ou-étuvée-dans-leau-de-constitution>
 Certains végétaux (courgettes, poireaux, tomates, champignons) sont
-constitués de $90 e x t à 95 thin %$ d'eau. - #strong[Le Protocole :]
-Déposer les légumes taillés dans la casserole froide avec une simple
-noisette de beurre ou une cuillère d'huile d'olive et une pincée de sel
-fin. #strong[N'ajouter aucune goutte d'eau extérieure]. Poser le
-couvercle ajusté et allumer à feu très doux. - #strong[Le Cycle
+constitués de $90 upright(" à ") 95 thin %$ d'eau. - #strong[Le
+Protocole :] Déposer les légumes taillés dans la casserole froide avec
+une simple noisette de beurre ou une cuillère d'huile d'olive et une
+pincée de sel fin. #strong[N'ajouter aucune goutte d'eau extérieure].
+Poser le couvercle ajusté et allumer à feu très doux. - #strong[Le Cycle
 Hydrologique en Miniature :] Sous l'effet de la chaleur douce
-($80 e x t - - 90^compose upright(C)$) et de la pression osmotique du
+($80 upright("–") 90^compose upright(C)$) et de la pression osmotique du
 sel, les cellules végétales relâchent leur propre eau de constitution
 aromatisée. Cette vapeur monte, vient frapper la face interne du
 couvercle plus frais, s'y condense en gouttelettes et retombe en pluie
@@ -1702,13 +1707,18 @@ Pourquoi les plus grandes brigades de cuisine placent-elles un disque de
 papier sulfurisé directement sur les légumes plutôt qu'un simple
 couvercle métallique ?
 
-#box(image("figures/livre_1/fig_cartouche_cuisson_douce.svg", alt: "Le cartouche de papier sulfurisé : régulation millimétrique de l’évaporation et glaçage à blanc"))\`\`
+#figure(image("figures/livre_1/fig_cartouche_cuisson_douce.svg", alt: "Le cartouche de papier sulfurisé : régulation millimétrique de l’évaporation et glaçage à blanc"),
+  caption: [
+    Le cartouche de papier sulfurisé : régulation millimétrique de
+    l'évaporation et glaçage à blanc
+  ]
+)
 
 + #strong[La Confection :] Plier une feuille carrée de papier cuisson en
   triangle successifs, couper la pointe (pour créer une petite cheminée
-  d'échappement centrale de $1 e x t c m$) et découper l'arc de cercle
-  au diamètre exact de votre casserole. Beurrer légèrement la face
-  inférieure.
+  d'échappement centrale de $1 upright(" cm")$) et découper l'arc de
+  cercle au diamètre exact de votre casserole. Beurrer légèrement la
+  face inférieure.
 + #strong[La Régulation Thermique Parfaite :] Posé au contact direct des
   légumes frémissants, le cartouche empêche l'évaporation trop violente
   (qui brûlerait le fond) tout en interdisant la retombée diluante des
@@ -1798,8 +1808,6 @@ passif remarquable :
   Vous obtenez le contraste absolu de la haute cuisine : une croûte
   croustillante de Maillard d'un millimètre et un cœur juteux, rose et
   tiède d'un bord à l'autre.
-
-#divider()
 
 = CHAPITRE 04 --- Consignes de Sécurité, Premiers Secours et Pannes Critiques
 <chapitre-04-consignes-de-sécurité-premiers-secours-et-pannes-critiques>
@@ -2269,13 +2277,8 @@ JAMAIS RACCROCHER LE PREMIER :] Attendez que l'opérateur régulateur vous
 donne formellement l'instruction de raccrocher et vous indique l'arrivée
 des secours.
 
-#divider()
-
 = 02 --- L'Alchimie du Vivant : Physiologie et Écologie
 <lalchimie-du-vivant-physiologie-et-écologie>
-
-#divider()
-
 = CHAPITRE 05 --- L'Anatomie du Goût, l'Évolution Culturelle et les Secrets du 3 Étoiles
 <chapitre-05-lanatomie-du-goût-lévolution-culturelle-et-les-secrets-du-3-étoiles>
 #quote(block: true)[
@@ -2363,7 +2366,7 @@ extrême qui associe trois systèmes distincts :
     éclair et ce dégagement immédiat des sinus bien connu des amateurs
     de wasabi.
 
-#figure(image("figures/patrimoine/brillat_savarin_portrait.jpg", alt: "Jean Anthelme Brillat-Savarin (1755-1826), auteur de la Physiologie du goût"),
+#figure(image("figures/patrimoine/brillat_savarin_portrait.jpg", height: 38%, alt: "Jean Anthelme Brillat-Savarin (1755-1826), auteur de la Physiologie du goût"),
   caption: [
     Jean Anthelme Brillat-Savarin (1755-1826), auteur de la Physiologie
     du goût
@@ -2395,7 +2398,7 @@ d'ingrédients magiques inaccessibles, mais de l'application maniaque de
 six lois physiques et chimiques fondamentales que tout cuisinier peut
 reproduire chez lui avec une casserole et un couteau :
 
-#figure(image("figures/patrimoine/auguste_escoffier_portrait.jpg", alt: "Auguste Escoffier (1846-1935), le législateur de la grande cuisine classique"),
+#figure(image("figures/patrimoine/auguste_escoffier_portrait.jpg", height: 38%, alt: "Auguste Escoffier (1846-1935), le législateur de la grande cuisine classique"),
   caption: [
     Auguste Escoffier (1846-1935), le législateur de la grande cuisine
     classique
@@ -2590,9 +2593,9 @@ hydrophiles fixés au métal pour en faire un velours aromatique.]
 - #strong[Minimalisme Instrumental :] La poêle ou sauteuse ayant servi à
   cuire la viande, 1 spatule plate en bois.
 - #strong[Ingrédients :] Sucs de cuisson bruns, 1 échalote finement
-  ciselée, $100 e x t m l$ de vin rouge ou blanc sec, $100 e x t m l$ de
-  fond de veau ou bouillon corsé, $30 e x t g$ de beurre très froid en
-  cubes.
+  ciselée, $100 upright(" ml")$ de vin rouge ou blanc sec,
+  $100 upright(" ml")$ de fond de veau ou bouillon corsé,
+  $30 upright(" g")$ de beurre très froid en cubes.
 
 ===== Protocole Pas à Pas :
 <protocole-pas-à-pas-1>
@@ -2622,7 +2625,7 @@ nectar d'or limpide comme du cristal.]
   :] 35 minutes
 - #strong[Minimalisme Instrumental :] 1 grande casserole, 1 passoire, 1
   étamine de lin fin.
-- #strong[Ingrédients :] $1\,5 e x t L$ de bouillon de bœuf ou de
+- #strong[Ingrédients :] $1\,5 upright(" L")$ de bouillon de bœuf ou de
   volaille refroidi et dégraissé, 2 blancs d'œufs crus battus mousseux,
   1 blanc de poireau émincé, 1 carotte râpée.
 
@@ -2653,9 +2656,9 @@ farine de s'agglomérer en blocs collants.]
   :] 10 minutes
 - #strong[Minimalisme Instrumental :] 1 casserole inox, 1 fouet
   métallique.
-- #strong[Ingrédients :] $50 e x t g$ de beurre, $50 e x t g$ de farine
-  T55, $500 e x t m l$ de lait entier froid, noix de muscade râpée, sel
-  fin, poivre blanc.
+- #strong[Ingrédients :] $50 upright(" g")$ de beurre,
+  $50 upright(" g")$ de farine T55, $500 upright(" ml")$ de lait entier
+  froid, noix de muscade râpée, sel fin, poivre blanc.
 
 ===== Protocole Pas à Pas :
 <protocole-pas-à-pas-3>
@@ -2674,8 +2677,6 @@ farine de s'agglomérer en blocs collants.]
   enchantement en un velouté fluide, lisse et brillant. Laisser cuire 2
   minutes pour éliminer le goût de farine crue, assaisonner de muscade
   et sel.
-
-#divider()
 
 = CHAPITRE 06 --- Nourriture Saine, Digestibilité et Hygiène des Repas
 <chapitre-06-nourriture-saine-digestibilité-et-hygiène-des-repas>
@@ -2820,7 +2821,7 @@ de cuisson opère un double miracle : 1. #emph[L'échange d'ions :] Les
 ions sodium $upright(N a)^(+)$ monovalents remplacent les ions calcium
 $upright(C a)^(2 +)$, empêchant la formation des ponts rigides. 2.
 #emph[L'élévation du pH :] En faisant monter le pH vers
-$8\,0 e x t - - 8\,5$ (milieu modérément alcalin), le bicarbonate
+$8\,0 upright("–") 8\,5$ (milieu modérément alcalin), le bicarbonate
 accélère l'hydrolyse des hémicelluloses. Les légumineuses cuisent en
 deux fois moins de temps et atteignent un fondant absolu tout en
 devenant infiniment plus digestes.
@@ -2957,8 +2958,6 @@ traditionnel ou la poêle à sec conviennent.
   )]
   , kind: table
   )
-
-#divider()
 
 = CHAPITRE 07 --- L'Art des Courses, la Psychologie du Caddie et la Démystification Industrielle
 <chapitre-07-lart-des-courses-la-psychologie-du-caddie-et-la-démystification-industrielle>
@@ -3126,8 +3125,6 @@ ce stock ? »]. - Utilisez une liste partagée numérique fermée et
   )]
   , kind: table
   )
-
-#divider()
 
 = CHAPITRE 08 --- L'Enquête des Additifs Alimentaires : Décodage Global, Yuka, Nutri-Score et Codes E
 <chapitre-08-lenquête-des-additifs-alimentaires-décodage-global-yuka-nutri-score-et-codes-e>
@@ -3481,8 +3478,6 @@ entrent dans votre casserole.
 
 ]
 
-#divider()
-
 = CHAPITRE 09 --- L'Écologie de la Matière : Empreinte Hydrique, Flux de Déchets et Saisons de la Terre et du Troupeau
 <chapitre-09-lécologie-de-la-matière-empreinte-hydrique-flux-de-déchets-et-saisons-de-la-terre-et-du-troupeau>
 #quote(block: true)[
@@ -3570,7 +3565,12 @@ poubelle] est constitué de matière organique humide (épluchures de
 légumes, os, marc de café, coquilles d'œufs, restes de repas). Le mode
 de tri transforme radicalement leur destin écologique.
 
-#box(image("figures/livre_2/fig_flux_dechets_cuisine.svg", alt: "Le destin des déchets de cuisine : valorisation en poubelle bio versus hérésie du sac noir"))\`\`
+#figure(image("figures/livre_2/fig_flux_dechets_cuisine.svg", alt: "Le destin des déchets de cuisine : valorisation en poubelle bio versus hérésie du sac noir"),
+  caption: [
+    Le destin des déchets de cuisine : valorisation en poubelle bio
+    versus hérésie du sac noir
+  ]
+)
 
 === A. La Poubelle Noire (Ordures Ménagères Non Triées) : Le Désastre Énergétique
 <a.-la-poubelle-noire-ordures-ménagères-non-triées-le-désastre-énergétique>
@@ -3715,13 +3715,8 @@ gustative atteint son apogée.
     terpènes boisés dans la pâte coulant sous la cuillère.
   - #emph[Reblochon fermier d'hiver et Raclette au lait cru.]
 
-#divider()
-
 = 03 --- La Matière Animale et Végétale aux Fourneaux
 <la-matière-animale-et-végétale-aux-fourneaux>
-
-#divider()
-
 = CHAPITRE 10 --- L'Œuf au Repos : Anatomie, Flottaison et Conservation
 <chapitre-10-lœuf-au-repos-anatomie-flottaison-et-conservation>
 #quote(block: true)[
@@ -3975,8 +3970,6 @@ succès ou de l'échec de la préparation.
   , kind: table
   )
 
-#divider()
-
 = CHAPITRE 11 --- La Coagulation Fractionnée et les Seuils Thermiques de l'Œuf
 <chapitre-11-la-coagulation-fractionnée-et-les-seuils-thermiques-de-lœuf>
 #quote(block: true)[
@@ -4220,10 +4213,11 @@ farine ni épaississant de synthèse.]
   cul-de-poule, 1 fouet, 1 spatule maryse ou cuillère en bois, 1
   thermomètre sonde.
 - #strong[Ingrédients pour 4 personnes :]
-  - Lait entier fermier : $500 e x t m l$ (ou $250 e x t m l$ lait +
-    $250 e x t m l$ crème liquide)
-  - Jaunes d'œufs frais : $4 e x t à 5$ (environ $80 e x t g$)
-  - Sucre semoule : $80 e x t g$
+  - Lait entier fermier : $500 upright(" ml")$ (ou $250 upright(" ml")$
+    lait + $250 upright(" ml")$ crème liquide)
+  - Jaunes d'œufs frais : $4 upright(" à ") 5$ (environ
+    $80 upright(" g")$)
+  - Sucre semoule : $80 upright(" g")$
   - Gousse de vanille Bourbon : 1 pièce
 
 ===== Protocole Pas à Pas :
@@ -4258,7 +4252,7 @@ du beurre clarifié à 58°C.]
   :] 5 minutes
 - #strong[Minimalisme Instrumental :] 1 cul-de-poule inox posé sur une
   casserole d'eau chaude (bain-marie), 1 fouet.
-- #strong[Ingrédients :] 3 jaunes d'œufs, $150 e x t g$ de beurre
+- #strong[Ingrédients :] 3 jaunes d'œufs, $150 upright(" g")$ de beurre
   clarifié tiède, 1 cuillère à soupe de jus de citron, 1 pincée de sel
   et de piment de Cayenne.
 
@@ -4278,8 +4272,6 @@ du beurre clarifié à 58°C.]
 + #strong[L'Équilibrage :] Hors du feu, incorporer le jus de citron
   frais qui détend la viscosité et apporte l'acidité tranchante
   indispensable.
-
-#divider()
 
 = CHAPITRE 12 --- La Paroi Végétale, l'Amidon et la Purée d'Heston Blumenthal
 <chapitre-12-la-paroi-végétale-lamidon-et-la-purée-dheston-blumenthal>
@@ -4459,10 +4451,10 @@ Prenons la modeste carotte maraîchère (#emph[Daucus carota]) :
     juteuse et éclatante.]], [Saveur végétale verte, terpènes frais,
     acidulé stimulant.],
     [#strong[\2. Étuvée Glacée au Beurre sous Cartouche]], [Cuisson
-    confinée douce ($85 e x t - - 90^compose upright(C)$) en casserole
-    fermée avec beurre et eau de constitution.], [Gélatinisation ménagée
-    des protopectines sans rupture cellulaire
-    totale.], [#strong[Fondante, moelleuse, nappée et
+    confinée douce ($85 upright("–") 90^compose upright(C)$) en
+    casserole fermée avec beurre et eau de
+    constitution.], [Gélatinisation ménagée des protopectines sans
+    rupture cellulaire totale.], [#strong[Fondante, moelleuse, nappée et
     soyeuse.]], [Rondeur beurrée, douceur douce, sucres naturels
     concentrés.],
     [#strong[\3. Rôtie au Four à Sec (Caramélisation
@@ -4490,11 +4482,11 @@ Prenons la modeste carotte maraîchère (#emph[Daucus carota]) :
   L'acide fige le croquant pectique en dissolvant le film gras : entrée
   vivifiante en 3 minutes.
 + #strong[La Carotte 2 (Le Glaçage à Blanc sous Cartouche) :] Tronçonner
-  en biseaux de $2 e x t c m$. Déposer dans la casserole avec
-  $20 e x t g$ de beurre, $50 e x t m l$ d'eau et une pincée de sel.
-  Couvrir du cartouche de papier sulfurisé troué. Cuire 15 minutes à feu
-  moyen : l'eau s'évapore, le beurre nappe les carottes fondantes d'un
-  émail laqué brillant.
+  en biseaux de $2 upright(" cm")$. Déposer dans la casserole avec
+  $20 upright(" g")$ de beurre, $50 upright(" ml")$ d'eau et une pincée
+  de sel. Couvrir du cartouche de papier sulfurisé troué. Cuire 15
+  minutes à feu moyen : l'eau s'évapore, le beurre nappe les carottes
+  fondantes d'un émail laqué brillant.
 + #strong[La Carotte 3 (Le Rôti Concentré) :] Fendre les carottes en
   deux dans la longueur. Les badigeonner d'un voile d'huile, saupoudrer
   de cumin et fleur de sel. Poser à plat sur plaque chaude et enfourner
@@ -4503,13 +4495,11 @@ Prenons la modeste carotte maraîchère (#emph[Daucus carota]) :
 + #strong[La Carotte 4 (L'Émulsion Veloutée sans Crème) :] Cuire les
   carottes en rondelles dans une eau frémissante jusqu'à ce qu'une
   pointe de couteau les traverse sans résistance. Égoutter en gardant
-  $100 e x t m l$ d'eau de cuisson. Mixer à chaud avec cette eau et
-  incorporer $40 e x t g$ de beurre noisette tiède : les pectines
+  $100 upright(" ml")$ d'eau de cuisson. Mixer à chaud avec cette eau et
+  incorporer $40 upright(" g")$ de beurre noisette tiède : les pectines
   végétales émulsionnent la matière grasse pour former une crème
   onctueuse digne d'un trois étoiles, sans un seul gramme de crème
   laitière !
-
-#divider()
 
 = CHAPITRE 13 --- Protéines Végétales, Légumineuses et Nutrition Végétale Rationnelle
 <chapitre-13-protéines-végétales-légumineuses-et-nutrition-végétale-rationnelle>
@@ -5073,7 +5063,7 @@ pas de les passer sous un mince filet d'eau tiède : les molécules
 phytosanitaires sont formulées avec des surfactants gras pour adhérer
 aux feuilles même en cas de pluie torrentielle. Immergez vos végétaux
 pendant #strong[12 minutes dans une eau saturée de bicarbonate de
-sodium] ($10 e x t g\/L$, soit une cuillère à soupe par litre) : le
+sodium] ($10 upright(" g/L")$, soit une cuillère à soupe par litre) : le
 milieu alcalin hydrolyse et décolle jusqu'à $80 thin %$ des résidus
 superficiels de pesticides (méthode validée par les chimistes de
 l'Université du Massachusetts). Rincez abondamment avant dégustation.
@@ -5118,8 +5108,6 @@ l'Université du Massachusetts). Rincez abondamment avant dégustation.
   )]
   , kind: table
   )
-
-#divider()
 
 = CHAPITRE 14 --- La Matrice Universelle du Gâteau et l'Épreuve du Chocolat
 <chapitre-14-la-matrice-universelle-du-gâteau-et-lépreuve-du-chocolat>
@@ -5387,14 +5375,18 @@ chauffé à #strong[$240^compose upright(C)$] (ou de l'arroser de rhum
 flamboyant à $800^compose upright(C)$) sans que la glace ne fonde d'un
 seul millimètre ?
 
-#box(image("figures/livre_3/fig_omelette_norvegienne_bouclier.svg", alt: "Le bouclier thermique de la meringue dans l’Omelette Norvégienne"))\`\`
+#figure(image("figures/livre_3/fig_omelette_norvegienne_bouclier.svg", alt: "Le bouclier thermique de la meringue dans l’Omelette Norvégienne"),
+  caption: [
+    Le bouclier thermique de la meringue dans l'Omelette Norvégienne
+  ]
+)
 
 - #strong[Le Pouvoir Isolant de l'Air :] L'air immobile possède une
   conductivité thermique remarquablement basse :
-  \$\$k\_{ ext{air}} pprox 0{,}026\\,\\mathrm{W/(m\\cdot K)}\$\$ C'est
-  l'un des isolants thermiques les plus efficaces de la nature (c'est le
-  principe du duvet des oiseaux, de la laine polaire et du double
-  vitrage).
+  $ k_(upright("air")) approx 0\,026 thin upright(W\/\(m dot.op K\)) $
+  C'est l'un des isolants thermiques les plus efficaces de la nature
+  (c'est le principe du duvet des oiseaux, de la laine polaire et du
+  double vitrage).
 - #strong[La Meringue comme Bouclier Spatial :] La meringue est une
   émulsion de gaz dans un liquide : des milliards de microbulles d'air
   emprisonnées dans une cage de protéines dénaturées (ovalbumine)
@@ -5417,13 +5409,13 @@ brûlant et de la glace sans compromis.]
   cul-de-poule, 1 plat allant au four, 1 spatule.
 - #strong[Ingrédients pour 4 personnes :]
   - Crème glacée artisanale ferme (vanille ou framboise) :
-    $500 e x t m l$ (très froide, $- 18^compose upright(C)$)
+    $500 upright(" ml")$ (très froide, $- 18^compose upright(C)$)
   - Tranches de génoise, brioche rassie ou biscuits à la cuillère :
-    $100 e x t g$
-  - Blancs d'œufs frais : 4 pièces ($120 e x t g$)
-  - Sucre semoule fin : $150 e x t g$
-  - Alcool pour flamber (Grand Marnier, Rhum vieux) : $40 e x t m l$
-    (facultatif)
+    $100 upright(" g")$
+  - Blancs d'œufs frais : 4 pièces ($120 upright(" g")$)
+  - Sucre semoule fin : $150 upright(" g")$
+  - Alcool pour flamber (Grand Marnier, Rhum vieux) :
+    $40 upright(" ml")$ (facultatif)
 
 ===== Protocole Pas à Pas :
 <protocole-pas-à-pas-7>
@@ -5437,9 +5429,10 @@ brûlant et de la glace sans compromis.]
   brillante, dense et formant un bec d'oiseau rigide.
 + #strong[Le Masquage Hermétique (L'Étape Vitale) :] À l'aide de la
   spatule, recouvrir la glace et le biscuit d'une couche continue de
-  meringue de #strong[$2 e x t c m$ d'épaisseur minimale]. Veiller à ne
-  laisser #strong[aucun interstice ni trou d'air] : la moindre fissure
-  laisserait pénétrer l'air brûlant du four et ferait fuir la glace.
+  meringue de #strong[$2 upright(" cm")$ d'épaisseur minimale]. Veiller
+  à ne laisser #strong[aucun interstice ni trou d'air] : la moindre
+  fissure laisserait pénétrer l'air brûlant du four et ferait fuir la
+  glace.
 + #strong[Le Choc Thermique :] Enfourner immédiatement à four préchauffé
   à $240^compose upright(C)$ (position grill) pendant #strong[3 à 4
   minutes]. La meringue dore et croustille en surface.
@@ -5467,13 +5460,8 @@ tempura. La lenteur de la diffusion thermique permet de servir une
 sphère glacée à l'extérieur qui explose en un torrent brûlant dès la
 première bouchée.
 
-#divider()
-
 = 04 --- Transformations sans Feu, Terroirs et Mémoire Culinaire
 <transformations-sans-feu-terroirs-et-mémoire-culinaire>
-
-#divider()
-
 = CHAPITRE 15 --- La Cuisson Chimique et la Conservation : Sel, Acide, Sucre et Mort Thermique
 <chapitre-15-la-cuisson-chimique-et-la-conservation-sel-acide-sucre-et-mort-thermique>
 #quote(block: true)[
@@ -5665,8 +5653,6 @@ que Louis Pasteur n'explique l'existence des micro-organismes] !
 
 
 ]
-
-#divider()
 
 = CHAPITRE 16 --- Prolifération Microbienne, Fermentations et Recettes Fondatrices
 <chapitre-16-prolifération-microbienne-fermentations-et-recettes-fondatrices>
@@ -5931,7 +5917,7 @@ préalablement déchlorée (reposée 2 heures à l'air libre). 2. Ajouter
 #strong[$40 thin upright(g)$ de grains de kéfir d'eau], #strong[1 figue
 sèche bio] (ou datte) et #strong[une demi-rondelle de citron bio non
 traité]. 3. Fermer le bocal hermétiquement. Laisser fermenter à
-température ambiante ($20 e x t - - 24^compose upright(C)$). -
+température ambiante ($20 upright("–") 24^compose upright(C)$). -
 #strong[Le Signal Visuel :] Après 24 à 48 heures, la figue gorgée de gaz
 remonte flotter à la surface : la première fermentation est accomplie. -
 #strong[La Mise en Bouteille (La Prise de Mousse) :] Filtrer à travers
@@ -5994,13 +5980,11 @@ $ upright(C H)_3 upright(C H)_2 upright(O H) + upright(O)_2 arrow.r upright(C H)
 \- #strong[Le Vinaigrier Domestique :] Verser un reste de vin rouge
 naturel (non sulfité ou aéré) titrant entre $8$ et $10 %$ d'alcool dans
 un pot en grès à large col couvert d'un linge fin. Laisser à l'obscurité
-à #strong[$20 e x t - - 25^compose upright(C)$]. - En quelques semaines,
-un voile diaphane plissé se forme à la surface : c'est la #strong[mère
-de vinaigre]. Le liquide devient un vinaigre de vin vieux aux arômes
-profonds, infiniment supérieur aux vinaigres industriels pasteurisés et
-dévitalisés du commerce.
-
-#divider()
+à #strong[$20 upright("–") 25^compose upright(C)$]. - En quelques
+semaines, un voile diaphane plissé se forme à la surface : c'est la
+#strong[mère de vinaigre]. Le liquide devient un vinaigre de vin vieux
+aux arômes profonds, infiniment supérieur aux vinaigres industriels
+pasteurisés et dévitalisés du commerce.
 
 = CHAPITRE 17 --- La Géopolitique du Goût : Géographie des Graisses, Terroirs et Mondialisation
 <chapitre-17-la-géopolitique-du-goût-géographie-des-graisses-terroirs-et-mondialisation>
@@ -6021,7 +6005,12 @@ localement]. C'est le corps gras qui détermine le #link(<glossaire-point-fumee>
 mode de transfert thermique et l'architecture aromatique d'un plat de
 terroir.
 
-#box(image("figures/livre_4/fig_carte_trois_graisses_terroirs.svg", alt: "La géopolitique des trois corps gras fondateurs : beurre du Nord, graisse de volaille du Sud-Ouest et huile d’olive méditerranéenne"))\`\`
+#figure(image("figures/livre_4/fig_carte_trois_graisses_terroirs.svg", alt: "La géopolitique des trois corps gras fondateurs : beurre du Nord, graisse de volaille du Sud-Ouest et huile d’olive méditerranéenne"),
+  caption: [
+    La géopolitique des trois corps gras fondateurs : beurre du Nord,
+    graisse de volaille du Sud-Ouest et huile d'olive méditerranéenne
+  ]
+)
 
 === A. Le Monde du Beurre et de la Crème : La Douceur Tempérée du Nord
 <a.-le-monde-du-beurre-et-de-la-crème-la-douceur-tempérée-du-nord>
@@ -6130,16 +6119,16 @@ tolérer 190°C sans noircir.]
   :] 25 minutes
 - #strong[Minimalisme Instrumental :] 1 poêle en fonte ou sauteuse en
   acier, 1 spatule en bois.
-- #strong[Ingrédients :] $800 e x t g$ de pommes de terre à chair ferme
-  (Charlotte ou Amandine), $3 e x t c . à s o u p e$ de graisse de
-  canard filtrée, 4 gousses d'ail écrasées, persil plat haché, fleur de
-  sel.
+- #strong[Ingrédients :] $800 upright(" g")$ de pommes de terre à chair
+  ferme (Charlotte ou Amandine), $3 upright(" c. à soupe")$ de graisse
+  de canard filtrée, 4 gousses d'ail écrasées, persil plat haché, fleur
+  de sel.
 
 ===== Protocole Pas à Pas :
 <protocole-pas-à-pas-8>
 + #strong[La Découpe Régulière :] Éplucher et couper les pommes de terre
-  en rondelles de $3 e x t m m$ d'épaisseur. Les rincer à l'eau froide
-  pour enlever l'amidon de coupe, puis les #strong[sécher très
+  en rondelles de $3 upright(" mm")$ d'épaisseur. Les rincer à l'eau
+  froide pour enlever l'amidon de coupe, puis les #strong[sécher très
   soigneusement] dans un torchon propre.
 + #strong[Le Bain Chaud :] Faire fondre la graisse de canard dans la
   poêle en fonte sur feu vif jusqu'à frémissement léger
@@ -6192,8 +6181,6 @@ mucilages de l'ail et de l'huile d'olive.]
   d'olive au goutte-à-goutte très lent au début. Dès que l'émulsion «
   mord », verser en mince filet continu. L'aïoli blanchit et épaissit
   pour atteindre la consistance d'une pommade ferme et dense.
-
-#divider()
 
 = CHAPITRE 18 --- La Mécanique des Pâtes et l'Émulsion d'Or Jaune (Spaghetti alla Carbonara)
 <chapitre-18-la-mécanique-des-pâtes-et-lémulsion-dor-jaune-spaghetti-alla-carbonara>
@@ -6372,13 +6359,8 @@ polymérisation de l'ovotransferrine et ré-émulsionne la phase liquide.
 
 ]
 
-#divider()
-
 = 05 --- Annexes, Formulaire et Répertoire Critique
 <annexes-formulaire-et-répertoire-critique>
-
-#divider()
-
 = ANNEXE A --- Le Cadran Absolu des Températures Critiques en Cuisine
 <annexe-a-le-cadran-absolu-des-températures-critiques-en-cuisine>
 #quote(block: true)[
@@ -6507,8 +6489,6 @@ en surface.
   )]
   , kind: table
   )
-
-#divider()
 
 = ANNEXE B --- Glossaire Physico-Chimique & Culinaire Exhaustif
 <annexe-b-glossaire-physico-chimique-culinaire-exhaustif>
@@ -6739,8 +6719,6 @@ gustatifs de la langue. Confère une sensation de plénitude, de rondeur
 et de sapidité savoureuse typique des viandes rôties, fromages affinés,
 champignons séchés, bouillons et sauce soja.
 
-#divider()
-
 = ANNEXE C --- Bibliographie Raisonnée et Répertoire Critique
 <annexe-c-bibliographie-raisonnée-et-répertoire-critique>
 #quote(block: true)[
@@ -6880,8 +6858,6 @@ Brillat-Savarin, #emph[Physiologie du goût] (1825)
   :] #strong[\[Best-seller mondial d'initiation\]] \ Synthèse limpide et
   universelle des quatre piliers fondamentaux pour assaisonner
   d'instinct sans jamais avoir besoin de livre de recettes.
-
-#divider()
 
 = ANNEXE D --- Guide d'Achat de l'Arsenal Minimal, Coûts Énergétiques & Durées de Cuisson
 <annexe-d-guide-dachat-de-larsenal-minimal-coûts-énergétiques-durées-de-cuisson>
@@ -7103,8 +7079,6 @@ gaspilleur.
   )]
   , kind: table
   )
-
-#divider()
 
 = ANNEXE E --- Conservation au Froid, Zones du Réfrigérateur & Durées Limites Sanitaires
 <annexe-e-conservation-au-froid-zones-du-réfrigérateur-durées-limites-sanitaires>
@@ -7377,22 +7351,22 @@ de quatre mille descendants toxiques !
 
 
 // Ancres de navigation transversale invisibles
+#hide[] <chapitre-survie-parasites>
+#hide[] <recette-ceviche-cabillaud>
+#hide[] <recette-glace-sel>
 #hide[] <glossaire-synerese>
 #hide[] <recette-dahl-lentilles>
-#hide[] <recette-tofu-croustillant>
-#hide[] <chapitre-oeuf-repos>
-#hide[] <recette-ceviche-cabillaud>
-#hide[] <recette-pain-cocotte>
-#hide[] <recette-carbonara-traditionnelle>
-#hide[] <sec-emulsion>
-#hide[] <recette-moelleux-chocolat>
-#hide[] <recette-glace-sel>
-#hide[] <sec-proteines-chair>
 #hide[] <glossaire-bliss-point>
-#hide[] <chapitre-08--lenquete-des-additifs-alimentaires--decodage-yuka-nutri-score-et-codes-e-dangereux>
-#hide[] <sec-leidenfrost>
+#hide[] <recette-moelleux-chocolat>
+#hide[] <chapitre-oeuf-repos>
 #hide[] <recette-pate-brisee>
-#hide[] <recette-steak-fonte>
 #hide[] <recette-fromage-frais>
+#hide[] <recette-pain-cocotte>
+#hide[] <sec-proteines-chair>
+#hide[] <recette-tofu-croustillant>
+#hide[] <recette-carbonara-traditionnelle>
 #hide[] <recette-mousse-aquafaba>
-#hide[] <chapitre-survie-parasites>
+#hide[] <sec-emulsion>
+#hide[] <sec-leidenfrost>
+#hide[] <chapitre-08--lenquete-des-additifs-alimentaires--decodage-yuka-nutri-score-et-codes-e-dangereux>
+#hide[] <recette-steak-fonte>

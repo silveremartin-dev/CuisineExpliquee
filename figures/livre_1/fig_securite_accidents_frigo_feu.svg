@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%">
-  <rect width="800" height="480" rx="14" fill="#fcfbf7" stroke="#e8e2d5" stroke-width="2"/>
+  <rect width="800" height="480" rx="14" fill="#fcfbf7" stroke="#dfdacf" stroke-width="2"/>
   <text x="400" y="34" font-family="Liberation Serif, Georgia, serif" font-size="17" font-weight="bold" fill="#701c1a" text-anchor="middle">SÉCURITÉ EN CUISINE : LES 4 ACCIDENTS MAJEURS ET LEURS PARADES</text>
   <text x="400" y="54" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#5c5549" text-anchor="middle">Ce qu'il faut faire immédiatement et ce qu'il faut absolument proscrire.</text>
 
   <!-- Bloc 1 : Panne de Frigo -->
   <g transform="translate(35, 75)">
-    <rect width="355" height="185" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <rect width="355" height="185" rx="8" fill="#ffffff" stroke="#dfdacf" stroke-width="1.2"/>
     <rect x="0" y="0" width="355" height="28" rx="8" fill="#5c5549"/>
     <text x="177" y="19" font-family="Liberation Sans, Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">1. PANNE DE FROID (RÉFRIGÉRATEUR / DÉGEL)</text>
 
@@ -22,7 +22,7 @@
 
   <!-- Bloc 2 : Poêle en Feu -->
   <g transform="translate(410, 75)">
-    <rect width="355" height="185" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <rect width="355" height="185" rx="8" fill="#ffffff" stroke="#dfdacf" stroke-width="1.2"/>
     <rect x="0" y="0" width="355" height="28" rx="8" fill="#701c1a"/>
     <text x="177" y="19" font-family="Liberation Sans, Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">2. FEU D'HUILE OU DE POÊLE (SURCHAUFFE)</text>
 
@@ -39,7 +39,7 @@
 
   <!-- Bloc 3 : Brûlures Thermiques -->
   <g transform="translate(35, 275)">
-    <rect width="355" height="185" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <rect width="355" height="185" rx="8" fill="#ffffff" stroke="#dfdacf" stroke-width="1.2"/>
     <rect x="0" y="0" width="355" height="28" rx="8" fill="#a3432b"/>
     <text x="177" y="19" font-family="Liberation Sans, Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">3. BRÛLURES (HUILE, CONTACT, CARAMEL)</text>
 
@@ -56,7 +56,7 @@
 
   <!-- Bloc 4 : Coupures -->
   <g transform="translate(410, 275)">
-    <rect width="355" height="185" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <rect width="355" height="185" rx="8" fill="#ffffff" stroke="#dfdacf" stroke-width="1.2"/>
     <rect x="0" y="0" width="355" height="28" rx="8" fill="#5c5549"/>
     <text x="177" y="19" font-family="Liberation Sans, Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">4. GESTION DES COUPURES ET TENUE DU COUTEAU</text>
 

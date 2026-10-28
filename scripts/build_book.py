@@ -102,80 +102,78 @@ PREAMBLE = """
 // Style des Hyperliens Interactifs
 #show link: it => text(fill: c-terracotta, weight: "medium")[#underline(stroke: 0.5pt + c-bronze, offset: 1.5pt)[#it]]
 
-// Niveaux de Titres : Portails de Livre en Style 5 (Minimalisme Nordique, Page 21) et Chapitres en Style 1 (Grand Traité Étoilé)
+// Niveaux de Titres : Portails de Livre en Style 5 (Page 21, alignés à gauche, sans couleur bleue) et Chapitres en Style 1 (en haut de page, alignés à gauche)
 #show heading.where(level: 1): it => {
   pagebreak(weak: true)
   let body_repr = repr(it.body)
-  if body_repr.contains("01") or body_repr.contains("02") or body_repr.contains("03") or body_repr.contains("04") or body_repr.contains("05") or "PARTIE" in body_repr {
-    // STYLE 5 (PAGE 21) : EXACT MINIMALISME ÉDITORIAL NORDIQUE POUR LES ENTÊTES DE LIVRE
+  let is_portal = (body_repr.contains("01") or body_repr.contains("02") or body_repr.contains("03") or body_repr.contains("04") or body_repr.contains("05")) and not body_repr.contains("CHAPITRE") and not body_repr.contains("ANNEXE") and not body_repr.contains("Sommaire")
+  if is_portal {
+    // STYLE 5 (PAGE 21) : OUVERTURE DE LIVRE SUR PAGE DÉDIÉE, ALIGNÉE À GAUCHE, TONS CHAUDS DU STYLE 1
+    let part_num = if body_repr.contains("01") { [PREMIÈRE PARTIE] } else if body_repr.contains("02") { [DEUXIÈME PARTIE] } else if body_repr.contains("03") { [TROISIÈME PARTIE] } else if body_repr.contains("04") { [QUATRIÈME PARTIE] } else { [CINQUIÈME PARTIE] }
     v(2.5cm)
-    align(center)[
-      #let part_num = if body_repr.contains("01") { [PREMIÈRE PARTIE] }
-        else if body_repr.contains("02") { [DEUXIÈME PARTIE] }
-        else if body_repr.contains("03") { [TROISIÈME PARTIE] }
-        else if body_repr.contains("04") { [QUATRIÈME PARTIE] }
-        else { [CINQUIÈME PARTIE] }
-      #text(size: 11pt, tracking: 0.15em, fill: rgb(100, 116, 139), font: "Liberation Sans", weight: "bold")[#part_num]      #v(1.0cm)
-      #text(size: 32pt, weight: "light", fill: c-ink, tracking: 0.05em, font: "Liberation Sans")[#it.body]
+    align(left)[
+      #text(size: 11pt, tracking: 0.15em, fill: c-bordeaux, font: "Liberation Sans", weight: "bold")[#part_num]
+      #v(1.0cm)
+      #text(size: 30pt, weight: "light", fill: c-ink, tracking: 0.04em, font: "Liberation Sans")[#it.body]
       #v(2.0cm)
-      #text(size: 11.5pt, fill: rgb(100, 116, 139), font: "Liberation Sans", tracking: 0.05em)[
+      #text(size: 11pt, fill: c-slate, font: "Liberation Sans", tracking: 0.04em)[
         #if body_repr.contains("01") [
-          Rien de trop.\
-          Un couteau affûté.\
-          Une flamme pure.\
+          Rien de trop.#linebreak()
+          Un couteau affûté.#linebreak()
+          Une flamme pure.#linebreak()
           L'intelligence du temps.
         ] else if body_repr.contains("02") [
-          L'anatomie invisible de l'assiette.\
-          La vérité sans fard de la matière.\
-          Le rythme biologique de la digestion.\
+          L'anatomie invisible de l'assiette.#linebreak()
+          La vérité sans fard de la matière.#linebreak()
+          Le rythme biologique de la digestion.#linebreak()
           Le cycle vivant de la terre et de l'eau.
         ] else if body_repr.contains("03") [
-          La contraction millimétrique du muscle.\
-          Les seuils thermiques de l'oeuf.\
-          L'extraction aromatique des parois végétales.\
+          La contraction millimétrique du muscle.#linebreak()
+          Les seuils thermiques de l'œuf.#linebreak()
+          L'extraction aromatique des parois végétales.#linebreak()
           La matrice élémentaire de la pâte.
         ] else if body_repr.contains("04") [
-          Le sel et l'acide qui transforment à froid.\
-          La prolifération noble des ferments.\
-          La géographie ancestrale des trois graisses.\
+          Le sel et l'acide qui transforment à froid.#linebreak()
+          La prolifération noble des ferments.#linebreak()
+          La géographie ancestrale des trois graisses.#linebreak()
           La mémoire vivante du goût partagé.
         ] else [
-          Le cadran absolu des températures critiques.\
-          Le glossaire physico-chimique exhaustif.\
-          La bibliographie raisonnée et critique.\
+          Le cadran absolu des températures critiques.#linebreak()
+          Le glossaire physico-chimique exhaustif.#linebreak()
+          La bibliographie raisonnée et critique.#linebreak()
           Les règles sanitaires de la conservation.
         ]
       ]
     ]
     pagebreak()
   } else {
-    // STYLE 1 : LE GRAND TRAITÉ ÉTOILÉ POUR LES CHAPITRES
-    v(1.0cm)
-    align(center)[
-      #text(size: 10pt, tracking: 0.25em, fill: c-bordeaux, weight: "bold", font: "Liberation Sans")[#smallcaps[Traité de Cuisine & de Physique Culinaire]]
-      #v(8pt)
-      #text(size: 20pt, weight: "bold", fill: c-ink, font: "Liberation Serif")[#it.body]
-      #v(10pt)
-      #line(length: 25%, stroke: 1pt + c-bronze)
-      #v(0.6cm)
+    // STYLE 1 : LE GRAND TRAITÉ ÉTOILÉ POUR LES CHAPITRES (EN HAUT DE PAGE, ALIGNÉ À GAUCHE)
+    v(0.3cm)
+    align(left)[
+      #text(size: 9pt, tracking: 0.2em, fill: c-bordeaux, weight: "bold", font: "Liberation Sans")[#smallcaps[Traité de Cuisine & de Physique Culinaire]]
+      #v(5pt)
+      #text(size: 18.5pt, weight: "bold", fill: c-ink, font: "Liberation Serif")[#it.body]
+      #v(7pt)
+      #line(length: 100%, stroke: 1pt + c-bronze)
+      #v(0.35cm)
     ]
   }
 }
 
-// Titres de niveau 2, 3 et 4 systématiquement centrés (proscription des alignements à gauche)
+// Titres de niveau 2, 3 et 4 systématiquement alignés à gauche (Style 1)
 #show heading.where(level: 2): it => block(
   width: 100%,
   breakable: false,
   sticky: true,
   spacing: 1.4em
 )[
-  #v(0.4cm)
-  #align(center)[
+  #v(0.35cm)
+  #align(left)[
     #text(size: 13pt, weight: "bold", fill: c-bordeaux, font: "Liberation Serif")[#it.body]
     #v(4pt)
-    #line(length: 25%, stroke: 0.8pt + c-bronze)
+    #line(length: 100%, stroke: 0.6pt + c-bronze)
   ]
-  #v(0.2cm)
+  #v(0.15cm)
 ]
 
 #show heading.where(level: 3): it => block(
@@ -185,18 +183,19 @@ PREAMBLE = """
   spacing: 1.1em
 )[
   #v(0.2cm)
-  #align(center)[
+  #align(left)[
     #text(size: 11pt, weight: "bold", fill: c-terracotta, font: "Liberation Serif")[#it.body]
   ]
   #v(0.1cm)
 ]
 
 #show heading.where(level: 4): it => block(
+  width: 100%,
   breakable: false,
   sticky: true,
   spacing: 0.8em
 )[
-  #align(center)[
+  #align(left)[
     #text(size: 9.5pt, weight: "bold", fill: c-slate, font: "Liberation Sans")[#it.body]
   ]
 ]
@@ -385,42 +384,33 @@ PREAMBLE = """
 #pagebreak()
 #set page(
   paper: "a4",
-  margin: (top: 2.6cm, bottom: 2.6cm, left: 2.2cm, right: 2.2cm),
+  margin: (top: 2.5cm, bottom: 2.5cm, left: 2.2cm, right: 2.2cm),
   header: context {
     let page-num = counter(page).get().first()
     if page-num > 4 {
-      let cur-h1 = query(selector(heading.where(level: 1)).before(here()))
+      let page-h1 = query(selector(heading.where(level: 1))).filter(h => h.location().page() == here().page())
+      let cur-h1 = if page-h1.len() > 0 { page-h1 } else { query(selector(heading.where(level: 1)).before(here())) }
       let repr-h1 = if cur-h1.len() > 0 { repr(cur-h1.last().body) } else { "" }
-      let is-portal = repr-h1.contains("01") or repr-h1.contains("02") or repr-h1.contains("03") or repr-h1.contains("04") or repr-h1.contains("05")
-      // Sur les pages d'ouverture de livre en Style 5, pas d'en-tête pour préserver la pureté éditoriale
+      let is-portal = (repr-h1.contains("01") or repr-h1.contains("02") or repr-h1.contains("03") or repr-h1.contains("04") or repr-h1.contains("05")) and not repr-h1.contains("CHAPITRE") and not repr-h1.contains("ANNEXE") and not repr-h1.contains("Sommaire")
       if not is-portal {
-        let title-left = cur-h1.last().body
-        grid(
-          columns: (1fr, auto),
-          align: (left + horizon, right + horizon),
-          text(size: 8pt, fill: c-slate, font: "Liberation Sans", style: "italic")[#title-left],
-          text(size: 7.5pt, fill: c-bronze, font: "Liberation Sans", weight: "bold")[LA CUISINE EXPLIQUÉE]
-        )
+        let title-left = if cur-h1.len() > 0 { cur-h1.last().body } else { [LA CUISINE EXPLIQUÉE] }
+        text(font: "Liberation Serif", size: 8.5pt, fill: c-bordeaux, tracking: 0.08em)[
+          #smallcaps[#title-left] #h(1fr) #emph[La Cuisine Expliquée]
+        ]
         v(-4pt)
-        line(length: 100%, stroke: 0.4pt + c-bronze)
+        line(length: 100%, stroke: 0.5pt + c-bronze)
       }
     }
   },
   footer: context {
     let page-num = counter(page).get().first()
     if page-num > 2 {
-      let cur-h1 = query(selector(heading.where(level: 1)).before(here()))
+      let page-h1 = query(selector(heading.where(level: 1))).filter(h => h.location().page() == here().page())
+      let cur-h1 = if page-h1.len() > 0 { page-h1 } else { query(selector(heading.where(level: 1)).before(here())) }
       let repr-h1 = if cur-h1.len() > 0 { repr(cur-h1.last().body) } else { "" }
-      let is-portal = repr-h1.contains("01") or repr-h1.contains("02") or repr-h1.contains("03") or repr-h1.contains("04") or repr-h1.contains("05")
+      let is-portal = (repr-h1.contains("01") or repr-h1.contains("02") or repr-h1.contains("03") or repr-h1.contains("04") or repr-h1.contains("05")) and not repr-h1.contains("CHAPITRE") and not repr-h1.contains("ANNEXE") and not repr-h1.contains("Sommaire")
       if not is-portal {
-        line(length: 100%, stroke: 0.4pt + rgb("#dfdacf"))
-        v(3pt)
-        grid(
-          columns: (1fr, 1fr),
-          align: (left + horizon, right + horizon),
-          text(size: 8pt, fill: c-slate, font: "Liberation Sans", style: "italic")[Silvère-Martin Michiellot & Antigravity],
-          text(size: 8.5pt, fill: c-ink, font: "Liberation Sans", weight: "bold")[Page #page-num]
-        )
+        align(center)[#text(font: "Liberation Serif", size: 9pt, fill: c-bordeaux)[— #page-num —]]
       }
     }
   }
@@ -499,12 +489,12 @@ PREAMBLE = """
 // ==========================================
 // 5. TABLE DES RECETTES & PRÉPARATIONS PILIERS
 // ==========================================
-#align(center)[
+#align(left)[
   #text(size: 15pt, weight: "bold", fill: c-bordeaux, font: "Liberation Serif")[
     🍳 Table des Vingt-et-Une Recettes et Préparations Piliers
   ]
   #v(-4pt)
-  #line(length: 60%, stroke: 0.8pt + c-bronze)
+  #line(length: 100%, stroke: 0.8pt + c-bronze)
 ]
 #v(0.4cm)
 
@@ -652,6 +642,10 @@ BACK_COVER = """
 # ==============================================================================
 
 def postprocess_typst(typ_content):
+    # Constrain tall portrait heritage images so they never collide with the footer
+    for portrait_img in ["scappi_cuisine_renaissance.jpg", "brillat_savarin_portrait.jpg", "auguste_escoffier_portrait.jpg"]:
+        typ_content = typ_content.replace(f'image("figures/patrimoine/{portrait_img}"', f'image("figures/patrimoine/{portrait_img}", height: 38%')
+
     # Remplacer les citations blockquote par quote_box
     typ_content = re.sub(
         r'#block\(\s*fill:\s*none,\s*stroke:\s*\(left:\s*[^)]+\),\s*inset:\s*[^,]+,\s*\[([\s\S]*?)\]\s*\)',
@@ -829,7 +823,7 @@ def run_build():
             else:
                 print(f"  [ATTENTION] Fichier introuvable : {full_path}")
 
-    full_md_content = "\n\n---\n\n".join(all_md)
+    full_md_content = "\n\n".join(all_md)
     with open(TEMP_MD, "w", encoding="utf-8") as f:
         f.write(full_md_content)
     print(f"[OK] Master Markdown assemblé : {TEMP_MD} ({len(full_md_content)} caractères)")

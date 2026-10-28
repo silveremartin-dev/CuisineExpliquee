@@ -211,7 +211,7 @@ Parce que le budget alimentaire n'est pas infini, voici la matrice rationnelle f
 ::: truc_de_chef
 #### 💡 L'Élimination Mécanique des Résidus sur le Conventionnel
 Si vous achetez des fruits ou légumes conventionnels, ne vous contentez pas de les passer sous un mince filet d'eau tiède : les molécules phytosanitaires sont formulées avec des surfactants gras pour adhérer aux feuilles même en cas de pluie torrentielle. 
-Immergez vos végétaux pendant **12 minutes dans une eau saturée de bicarbonate de sodium** ($10	ext{ g/L}$, soit une cuillère à soupe par litre) : le milieu alcalin hydrolyse et décolle jusqu'à $80\,\%$ des résidus superficiels de pesticides (méthode validée par les chimistes de l'Université du Massachusetts). Rincez abondamment avant dégustation.
+Immergez vos végétaux pendant **12 minutes dans une eau saturée de bicarbonate de sodium** ($10\text{ g/L}$, soit une cuillère à soupe par litre) : le milieu alcalin hydrolyse et décolle jusqu'à $80\,\%$ des résidus superficiels de pesticides (méthode validée par les chimistes de l'Université du Massachusetts). Rincez abondamment avant dégustation.
 :::
 
 ## 6. Tableau Récapitulatif : Équivalences et Substitutions Protéiques Végétales

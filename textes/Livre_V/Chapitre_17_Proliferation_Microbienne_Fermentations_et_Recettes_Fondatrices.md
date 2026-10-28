@@ -121,7 +121,7 @@ Le kéfir de fruits repose sur des **grains de kéfir**, consortium symbiotique 
 - **Le Protocole en 48 Heures :**
   1. Dans un bocal en verre de 1 litre à joint de caoutchouc, dissoudre **$40\,\mathrm{g}$ de sucre blond bio** dans $1\,\text{L}$ d'eau du robinet préalablement déchlorée (reposée 2 heures à l'air libre).
   2. Ajouter **$40\,\mathrm{g}$ de grains de kéfir d'eau**, **1 figue sèche bio** (ou datte) et **une demi-rondelle de citron bio non traité**.
-  3. Fermer le bocal hermétiquement. Laisser fermenter à température ambiante ($20	ext{--}24^\circ\mathrm{C}$).
+  3. Fermer le bocal hermétiquement. Laisser fermenter à température ambiante ($20\text{--}24^\circ\mathrm{C}$).
 - **Le Signal Visuel :** Après 24 à 48 heures, la figue gorgée de gaz remonte flotter à la surface : la première fermentation est accomplie.
 - **La Mise en Bouteille (La Prise de Mousse) :** Filtrer à travers une passoire en plastique (éviter le métal nu qui altère les grains). Récupérer les grains pour la tournée suivante. Embouteiller le liquide dans une bouteille en verre à bouchon mécanique (*bouteille de limonade*) pendant 24 heures supplémentaires : le $\mathrm{CO}_2$ dissous s'accumule sans s'échapper, créant un pétillement d'une extrême finesse.
 
@@ -147,5 +147,5 @@ Comment fabriquer une véritable bière de gingembre (*ginger beer*) pétillante
 Ne jetez plus jamais vos restes de bouteilles de bon vin ou de cidre brut :
 - **Le Principe :** Les bactéries acétiques transforment l'éthanol en acide acétique en consommant l'oxygène de l'air :
   $$\mathrm{CH}_3\mathrm{CH}_2\mathrm{OH} + \mathrm{O}_2 \longrightarrow \mathrm{CH}_3\mathrm{COOH} + \mathrm{H}_2\mathrm{O}$$
-- **Le Vinaigrier Domestique :** Verser un reste de vin rouge naturel (non sulfité ou aéré) titrant entre $8$ et $10\%$ d'alcool dans un pot en grès à large col couvert d'un linge fin. Laisser à l'obscurité à **$20	ext{--}25^\circ\mathrm{C}$**.
+- **Le Vinaigrier Domestique :** Verser un reste de vin rouge naturel (non sulfité ou aéré) titrant entre $8$ et $10\%$ d'alcool dans un pot en grès à large col couvert d'un linge fin. Laisser à l'obscurité à **$20\text{--}25^\circ\mathrm{C}$**.
 - En quelques semaines, un voile diaphane plissé se forme à la surface : c'est la **mère de vinaigre**. Le liquide devient un vinaigre de vin vieux aux arômes profonds, infiniment supérieur aux vinaigres industriels pasteurisés et dévitalisés du commerce.

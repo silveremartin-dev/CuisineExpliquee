@@ -104,22 +104,22 @@ L'illusion moderne pousse à acheter des cuiseurs vapeur électriques encombrant
 
 ### A. La Vapeur Improvisée sans Panier Vapeur
 Comment cuire à la vapeur pure sans posséder de cuiseur dédié ?
-- **Le Montage Physique :** Verser $1{,}5	ext{ cm}$ d'eau au fond de la casserole inox. Poser au centre un ramequin ou un petit bol en céramique/inox retourné à l'envers. Poser une petite assiette plate par-dessus (qui repose de façon stable au-dessus du niveau de l'eau). Déposer les légumes ou filets de poisson sur l'assiette et fermer avec le couvercle lourd.
+- **Le Montage Physique :** Verser $1{,}5\text{ cm}$ d'eau au fond de la casserole inox. Poser au centre un ramequin ou un petit bol en céramique/inox retourné à l'envers. Poser une petite assiette plate par-dessus (qui repose de façon stable au-dessus du niveau de l'eau). Déposer les légumes ou filets de poisson sur l'assiette et fermer avec le couvercle lourd.
 - **Le Principe Thermodynamique :** L'eau bout à $100^\circ\mathrm{C}$. En se vaporisant, l'eau absorbe une quantité colossale d'énergie : sa **chaleur latente de vaporisation ($L_v = 2\,260\,\mathrm{kJ/kg}$)**. Dès que cette vapeur touche la surface froide de l'aliment, elle se condense instantanément en libérant d'un coup toute cette énergie calorique dans le tissu végétal.
 - **Le Résultat :** L'aliment cuit cinq fois plus vite que dans un four à air chaud à même température, sans jamais tremper dans l'eau liquide : ses sels minéraux et ses vitamines hydrosolubles ne sont pas lessivés.
 
 ### B. La Cuisson à l'Étouffée (ou Étuvée) dans l'Eau de Constitution
-Certains végétaux (courgettes, poireaux, tomates, champignons) sont constitués de $90	ext{ à }95\,\%$ d'eau. 
+Certains végétaux (courgettes, poireaux, tomates, champignons) sont constitués de $90\text{ à }95\,\%$ d'eau. 
 - **Le Protocole :** Déposer les légumes taillés dans la casserole froide avec une simple noisette de beurre ou une cuillère d'huile d'olive et une pincée de sel fin. **N'ajouter aucune goutte d'eau extérieure**. Poser le couvercle ajusté et allumer à feu très doux.
-- **Le Cycle Hydrologique en Miniature :** Sous l'effet de la chaleur douce ($80	ext{--}90^\circ\mathrm{C}$) et de la pression osmotique du sel, les cellules végétales relâchent leur propre eau de constitution aromatisée. Cette vapeur monte, vient frapper la face interne du couvercle plus frais, s'y condense en gouttelettes et retombe en pluie continue sur les légumes.
+- **Le Cycle Hydrologique en Miniature :** Sous l'effet de la chaleur douce ($80\text{--}90^\circ\mathrm{C}$) et de la pression osmotique du sel, les cellules végétales relâchent leur propre eau de constitution aromatisée. Cette vapeur monte, vient frapper la face interne du couvercle plus frais, s'y condense en gouttelettes et retombe en pluie continue sur les légumes.
 - **La Concentration Aromatique :** L'aliment cuit dans son propre sérum naturel, sans dilution aqueuse parasite. Les arômes sont denses, le fondant est parfait.
 
 ### C. Le Secret Professionnel du Chef : Le « Cartouche » de Papier Sulfurisé
 Pourquoi les plus grandes brigades de cuisine placent-elles un disque de papier sulfurisé directement sur les légumes plutôt qu'un simple couvercle métallique ?
 
-![Le cartouche de papier sulfurisé : régulation millimétrique de l'évaporation et glaçage à blanc](figures/livre_1/fig_cartouche_cuisson_douce.svg)``
+![Le cartouche de papier sulfurisé : régulation millimétrique de l'évaporation et glaçage à blanc](figures/livre_1/fig_cartouche_cuisson_douce.svg)
 
-1. **La Confection :** Plier une feuille carrée de papier cuisson en triangle successifs, couper la pointe (pour créer une petite cheminée d'échappement centrale de $1	ext{ cm}$) et découper l'arc de cercle au diamètre exact de votre casserole. Beurrer légèrement la face inférieure.
+1. **La Confection :** Plier une feuille carrée de papier cuisson en triangle successifs, couper la pointe (pour créer une petite cheminée d'échappement centrale de $1\text{ cm}$) et découper l'arc de cercle au diamètre exact de votre casserole. Beurrer légèrement la face inférieure.
 2. **La Régulation Thermique Parfaite :** Posé au contact direct des légumes frémissants, le cartouche empêche l'évaporation trop violente (qui brûlerait le fond) tout en interdisant la retombée diluante des grosses gouttes froides d'un couvercle en verre.
 3. **Le Glaçage Automatique :** L'eau s'évapore très lentement par la cheminée centrale. Au fur et à mesure de la cuisson, le liquide se concentre en un sirop soyeux constitué des sucres naturels du légume et de la matière grasse émulsionnée, qui nappe et laque chaque morceau d'un éclat brillant spectaculaire.
 

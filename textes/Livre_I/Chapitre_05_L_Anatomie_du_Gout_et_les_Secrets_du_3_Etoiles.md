@@ -122,7 +122,7 @@ Si vous incorporez votre beurre dans une sauce qui bout à plus de $85^\circ\mat
 
 - **Temps de préparation :** 3 minutes | **Temps de cuisson :** 5 minutes
 - **Minimalisme Instrumental :** La poêle ou sauteuse ayant servi à cuire la viande, 1 spatule plate en bois.
-- **Ingrédients :** Sucs de cuisson bruns, 1 échalote finement ciselée, $100	ext{ ml}$ de vin rouge ou blanc sec, $100	ext{ ml}$ de fond de veau ou bouillon corsé, $30	ext{ g}$ de beurre très froid en cubes.
+- **Ingrédients :** Sucs de cuisson bruns, 1 échalote finement ciselée, $100\text{ ml}$ de vin rouge ou blanc sec, $100\text{ ml}$ de fond de veau ou bouillon corsé, $30\text{ g}$ de beurre très froid en cubes.
 
 ##### Protocole Pas à Pas :
 1. **Le Dégraissage Partiel :** Retirer la viande cuite et réserver sous aluminium tiède. Jeter l'excédent de graisse brûlée en laissant les sucs caramélisés attachés au fond.
@@ -139,7 +139,7 @@ Si vous incorporez votre beurre dans une sauce qui bout à plus de $85^\circ\mat
 
 - **Temps de préparation :** 15 minutes | **Temps de cuisson :** 35 minutes
 - **Minimalisme Instrumental :** 1 grande casserole, 1 passoire, 1 étamine de lin fin.
-- **Ingrédients :** $1{,}5	ext{ L}$ de bouillon de bœuf ou de volaille refroidi et dégraissé, 2 blancs d'œufs crus battus mousseux, 1 blanc de poireau émincé, 1 carotte râpée.
+- **Ingrédients :** $1{,}5\text{ L}$ de bouillon de bœuf ou de volaille refroidi et dégraissé, 2 blancs d'œufs crus battus mousseux, 1 blanc de poireau émincé, 1 carotte râpée.
 
 ##### Protocole Pas à Pas :
 1. **Le Mélange à Froid :** Mélanger les légumes râpés et les blancs d'œufs fouettés dans le bouillon **totalement froid**.
@@ -155,7 +155,7 @@ Si vous incorporez votre beurre dans une sauce qui bout à plus de $85^\circ\mat
 
 - **Temps de préparation :** 5 minutes | **Temps de cuisson :** 10 minutes
 - **Minimalisme Instrumental :** 1 casserole inox, 1 fouet métallique.
-- **Ingrédients :** $50	ext{ g}$ de beurre, $50	ext{ g}$ de farine T55, $500	ext{ ml}$ de lait entier froid, noix de muscade râpée, sel fin, poivre blanc.
+- **Ingrédients :** $50\text{ g}$ de beurre, $50\text{ g}$ de farine T55, $500\text{ ml}$ de lait entier froid, noix de muscade râpée, sel fin, poivre blanc.
 
 ##### Protocole Pas à Pas :
 1. **La Fonte du Beurre :** Faire fondre le beurre à feu doux sans le laisser dorer.

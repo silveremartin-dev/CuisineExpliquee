@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 460" width="100%" height="100%">
-  <rect width="820" height="460" rx="14" fill="#fcfbf7" stroke="#e8e2d5" stroke-width="2"/>
+  <rect width="820" height="460" rx="14" fill="#fcfbf7" stroke="#dfdacf" stroke-width="2"/>
   <text x="410" y="34" font-family="Liberation Serif, Georgia, serif" font-size="17" font-weight="bold" fill="#701c1a" text-anchor="middle">LA PHYSIQUE DES PÂTES : GÉLATINISATION ET ÉMULSION</text>
   <text x="410" y="54" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#5c5549" text-anchor="middle">L'équation 100 / 10 / 1 et la maîtrise de l'amidon pour lier la sauce.</text>
 
   <!-- Volet Gauche : Règles d'Or -->
   <g transform="translate(35, 75)">
-    <rect width="360" height="365" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <rect width="360" height="365" rx="8" fill="#ffffff" stroke="#dfdacf" stroke-width="1.2"/>
     <rect x="0" y="0" width="360" height="28" rx="8" fill="#5a6e54"/>
     <text x="180" y="19" font-family="Liberation Sans, Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">L'ÉQUATION DES PÂTES : 100 / 10 / 1</text>
 
@@ -38,7 +38,7 @@
 
   <!-- Volet Droit : L'Émulsion Carbonara -->
   <g transform="translate(425, 75)">
-    <rect width="360" height="365" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <rect width="360" height="365" rx="8" fill="#ffffff" stroke="#dfdacf" stroke-width="1.2"/>
     <rect x="0" y="0" width="360" height="28" rx="8" fill="#d4a373"/>
     <text x="180" y="19" font-family="Liberation Sans, Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">L'ÉMULSION DE L'OR JAUNE (CARBONARA)</text>
 
@@ -53,7 +53,7 @@
     <text x="24" y="156" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#5c5549">• À 65°C : la vitelline s'épaissit en velours.</text>
     <text x="24" y="170" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#701c1a">• À 70°C : l'oeuf coagule en omelette granuleuse.</text>
 
-    <rect x="14" y="188" width="332" height="164" rx="6" fill="#fcf8f2" stroke="#d4a373" stroke-width="1"/>
+    <rect x="14" y="188" width="332" height="164" rx="6" fill="#faf7f2" stroke="#d4a373" stroke-width="1"/>
     <text x="24" y="206" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" font-weight="bold" fill="#701c1a">LE PRODGE DU FOISONNEMENT :</text>
     <text x="24" y="222" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#242124">1. Verser les pâtes égouttées dans la poêle tiédie.</text>
     <text x="24" y="238" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#242124">2. Ajouter le mélange oeuf / pecorino / poivre.</text>

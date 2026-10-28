@@ -99,7 +99,7 @@ Le culottage n'est pas un dépôt de graisse : c'est la **polymérisation thermi
 1. **Le Choix de l'Huile :** Privilégier l'**huile de lin biologique alimentaire** (la plus riche en acide alpha-linolénique à triple liaison, qui polymérise le plus vite) ou, à défaut, de l'huile de colza ou de pépin de raisin.
 2. **L'Onction Invisible :** Déposer 1 demi-cuillère à café d'huile au centre de la poêle tiédie. Avec un essuie-tout ou un linge, étaler l'huile sur l'ensemble de la pièce (intérieur, fond, dos, manche).
 3. **L'Essuyage Total (Le Secret) :** Prendre un second chiffon parfaitement sec et frotter la poêle avec insistance comme si vous vouliez retirer toute l'huile. La poêle doit paraître complètement sèche au toucher ! S'il reste une nappe brillante d'huile liquide, elle formera des coulures visqueuses et collantes qui ruineront le culottage.
-4. **La Cuisson au Four :** Préchauffer le four ménager à **$230	ext{--}240^\circ\mathrm{C}$**. Poser la poêle **à l'envers** sur la grille centrale (pour éviter toute accumulation résiduelle). Laisser cuire pendant **1 heure complète**.
+4. **La Cuisson au Four :** Préchauffer le four ménager à **$230\text{--}240^\circ\mathrm{C}$**. Poser la poêle **à l'envers** sur la grille centrale (pour éviter toute accumulation résiduelle). Laisser cuire pendant **1 heure complète**.
 5. Éteindre le four et laisser la poêle refroidir doucement à l'intérieur sans ouvrir la porte.
 6. **Répéter le protocole 3 fois :** À chaque passage, la couche polymérisée s'épaissit. La poêle passe du gris mat à un noir d'ébène profond et satiné.
 
@@ -165,7 +165,7 @@ Une feuille de salade est constituée à **$95\,\%$ d'eau**. Sa rigidité croqua
 #### ✓ Le Protocole d'Or de Conservation (Croquante pendant 8 à 10 jours)
 1. **L'Essorage Vigoureux :** Après trempage, essorer scrupuleusement les feuilles pour éliminer chaque gouttelette d'eau libre de surface.
 2. **Le Linge Humide Régulateur :** Envelopper la salade essorée dans un grand torchon de coton propre (ou tapisser un récipient d'un papier absorbant) très légèrement humidifié.
-3. **Le Stockage en Bac à Légumes ($6	ext{ à }8^\circ\mathrm{C}$) :** Le linge en coton maintient une humidité relative ambiante saturée ($>90\,\%$) qui bloque l'évaporation sans jamais créer de flaque asphyxiante. La feuille respire et conserve son croquant intact pendant dix jours.
+3. **Le Stockage en Bac à Légumes ($6\text{ à }8^\circ\mathrm{C}$) :** Le linge en coton maintient une humidité relative ambiante saturée ($>90\,\%$) qui bloque l'évaporation sans jamais créer de flaque asphyxiante. La feuille respire et conserve son croquant intact pendant dix jours.
 4. **Le Bain de Jouvence à l'Eau Glacée :** Si une salade a ramolli, la plonger 15 minutes dans un saladier d'eau saturée de glaçons. L'eau froide s'engouffre par osmose à travers les parois cellulaires pour regonfler les vacuoles : la feuille redevient rigide et cassante comme au premier jour.
 :::
 
@@ -201,9 +201,9 @@ Au-delà de la destruction bactérienne, l'acidité (ions $\mathrm{H}^+$) est l'
 - **Minimalisme Instrumental :** 1 cul-de-poule inox demi-sphérique, 1 fouet métallique, 1 torchon plié en couronne sous le bol (pour stabiliser sans troisième main).
 - **Ingrédients :**
   - Jaune d'œuf à température ambiante : 1 pièce
-  - Moutarde forte de Dijon : $15	ext{ g}$ (1 cuillère à café bombée)
-  - Huile de tournesol ou pépins de raisin : $150	ext{ à }180	ext{ ml}$
-  - Vinaigre de vin vieux ou jus de citron : $1	ext{ c. à café}$
+  - Moutarde forte de Dijon : $15\text{ g}$ (1 cuillère à café bombée)
+  - Huile de tournesol ou pépins de raisin : $150\text{ à }180\text{ ml}$
+  - Vinaigre de vin vieux ou jus de citron : $1\text{ c. à café}$
   - Sel fin et poivre blanc moulu
 
 ##### Protocole Pas à Pas :

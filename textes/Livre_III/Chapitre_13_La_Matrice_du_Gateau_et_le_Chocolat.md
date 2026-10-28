@@ -120,11 +120,11 @@ La cuisine recèle des paradoxes physiques fascinants où l'intuition ordinaire 
 ### A. La Physique de l'Omelette Norvégienne : L'Air comme Bouclier Thermique
 Comment est-il physiquement possible de poser un bloc de crème glacée à **$-18^\circ\mathrm{C}$** sur un biscuit, de le recouvrir de blancs d'œufs en neige sucrés, puis d'enfourner le tout dans un four chauffé à **$240^\circ\mathrm{C}$** (ou de l'arroser de rhum flamboyant à $800^\circ\mathrm{C}$) sans que la glace ne fonde d'un seul millimètre ?
 
-![Le bouclier thermique de la meringue dans l'Omelette Norvégienne](figures/livre_3/fig_omelette_norvegienne_bouclier.svg)``
+![Le bouclier thermique de la meringue dans l'Omelette Norvégienne](figures/livre_3/fig_omelette_norvegienne_bouclier.svg)
 
 - **Le Pouvoir Isolant de l'Air :**
   L'air immobile possède une conductivité thermique remarquablement basse :
-  $$k_{	ext{air}} pprox 0{,}026\,\mathrm{W/(m\cdot K)}$$
+  $$k_{\text{air}} \approx 0{,}026\,\mathrm{W/(m\cdot K)}$$
   C'est l'un des isolants thermiques les plus efficaces de la nature (c'est le principe du duvet des oiseaux, de la laine polaire et du double vitrage).
 - **La Meringue comme Bouclier Spatial :**
   La meringue est une émulsion de gaz dans un liquide : des milliards de microbulles d'air emprisonnées dans une cage de protéines dénaturées (ovalbumine) rigidifiée par le sucre. En passant au four chaud, la chaleur caramélise la surface extérieure en une croûte dorée croustillante, mais les calories sont incapables de traverser l'épaisseur d'air stagnant pour atteindre le cœur. La glace reste à $-18^\circ\mathrm{C}$ sous son manteau isolant.
@@ -138,17 +138,17 @@ Comment est-il physiquement possible de poser un bloc de crème glacée à **$-1
 - **Temps de préparation :** 20 minutes | **Temps de cuisson :** 4 minutes au four à $240^\circ\mathrm{C}$
 - **Minimalisme Instrumental :** 1 batteur ou fouet manuel, 1 cul-de-poule, 1 plat allant au four, 1 spatule.
 - **Ingrédients pour 4 personnes :**
-  - Crème glacée artisanale ferme (vanille ou framboise) : $500	ext{ ml}$ (très froide, $-18^\circ\mathrm{C}$)
-  - Tranches de génoise, brioche rassie ou biscuits à la cuillère : $100	ext{ g}$
-  - Blancs d'œufs frais : 4 pièces ($120	ext{ g}$)
-  - Sucre semoule fin : $150	ext{ g}$
-  - Alcool pour flamber (Grand Marnier, Rhum vieux) : $40	ext{ ml}$ (facultatif)
+  - Crème glacée artisanale ferme (vanille ou framboise) : $500\text{ ml}$ (très froide, $-18^\circ\mathrm{C}$)
+  - Tranches de génoise, brioche rassie ou biscuits à la cuillère : $100\text{ g}$
+  - Blancs d'œufs frais : 4 pièces ($120\text{ g}$)
+  - Sucre semoule fin : $150\text{ g}$
+  - Alcool pour flamber (Grand Marnier, Rhum vieux) : $40\text{ ml}$ (facultatif)
 
 ##### Protocole Pas à Pas :
 1. **Le Socle Isolant :** Disposer les tranches de génoise au fond du plat. Le biscuit agit comme un second isolant thermique par le bas.
 2. **Le Dôme Givré :** Démouler le bloc de crème glacée directement congelé sur le biscuit.
 3. **Le Montage de la Meringue Serrée :** Monter les 4 blancs en neige ferme dans un cul-de-poule propre. Dès qu'ils moussent, incorporer le sucre en trois fois jusqu'à obtenir une meringue brillante, dense et formant un bec d'oiseau rigide.
-4. **Le Masquage Hermétique (L'Étape Vitale) :** À l'aide de la spatule, recouvrir la glace et le biscuit d'une couche continue de meringue de **$2	ext{ cm}$ d'épaisseur minimale**. Veiller à ne laisser **aucun interstice ni trou d'air** : la moindre fissure laisserait pénétrer l'air brûlant du four et ferait fuir la glace.
+4. **Le Masquage Hermétique (L'Étape Vitale) :** À l'aide de la spatule, recouvrir la glace et le biscuit d'une couche continue de meringue de **$2\text{ cm}$ d'épaisseur minimale**. Veiller à ne laisser **aucun interstice ni trou d'air** : la moindre fissure laisserait pénétrer l'air brûlant du four et ferait fuir la glace.
 5. **Le Choc Thermique :** Enfourner immédiatement à four préchauffé à $240^\circ\mathrm{C}$ (position grill) pendant **3 à 4 minutes**. La meringue dore et croustille en surface.
 6. **L'Envoi Spectaculaire :** Sortir du four, verser l'alcool tiédi flambé à la cuillère sur le dôme et servir immédiatement. À la découpe, le contraste entre la meringue tiède dorée et le cœur de glace intact est saisissant.
 

@@ -1,22 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" width="100%" height="100%">
   <rect width="240" height="180" rx="8" fill="#fffdfa" stroke="#dcd6ca" stroke-width="1.2"/>
   <!-- Gouttelette d'huile au centre -->
-  <circle cx="120" cy="85" r="35" fill="#fef08a" stroke="#ca8a04" stroke-width="2"/>
-  <text x="120" y="89" font-family="Liberation Sans, Arial, sans-serif" font-size="10" font-weight="bold" fill="#854d0e" text-anchor="middle">HUILE</text>
+  <circle cx="120" cy="85" r="35" fill="#faf6ee" stroke="#d4a373" stroke-width="2"/>
+  <text x="120" y="89" font-family="Liberation Sans, Arial, sans-serif" font-size="10" font-weight="bold" fill="#92400e" text-anchor="middle">HUILE</text>
   <!-- Micelles tensioactives autour -->
   <!-- Haut -->
-  <circle cx="120" cy="40" r="5" fill="#2563eb"/>
-  <line x1="120" y1="45" x2="120" y2="52" stroke="#475569" stroke-width="2"/>
+  <circle cx="120" cy="40" r="5" fill="#a3432b"/>
+  <line x1="120" y1="45" x2="120" y2="52" stroke="#5c5549" stroke-width="2"/>
   <!-- Bas -->
-  <circle cx="120" cy="130" r="5" fill="#2563eb"/>
-  <line x1="120" y1="125" x2="120" y2="118" stroke="#475569" stroke-width="2"/>
+  <circle cx="120" cy="130" r="5" fill="#a3432b"/>
+  <line x1="120" y1="125" x2="120" y2="118" stroke="#5c5549" stroke-width="2"/>
   <!-- Gauche -->
-  <circle cx="75" cy="85" r="5" fill="#2563eb"/>
-  <line x1="80" y1="85" x2="87" y2="85" stroke="#475569" stroke-width="2"/>
+  <circle cx="75" cy="85" r="5" fill="#a3432b"/>
+  <line x1="80" y1="85" x2="87" y2="85" stroke="#5c5549" stroke-width="2"/>
   <!-- Droite -->
-  <circle cx="165" cy="85" r="5" fill="#2563eb"/>
-  <line x1="160" y1="85" x2="153" y2="85" stroke="#475569" stroke-width="2"/>
+  <circle cx="165" cy="85" r="5" fill="#a3432b"/>
+  <line x1="160" y1="85" x2="153" y2="85" stroke="#5c5549" stroke-width="2"/>
   
-  <text x="120" y="155" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="bold" fill="#1e40af" text-anchor="middle">Tête polaire hydrophile (eau)</text>
-  <text x="120" y="169" font-family="Liberation Sans, Arial, sans-serif" font-size="8" fill="#475569" text-anchor="middle">Queue lipophile (huile)</text>
+  <text x="120" y="155" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="bold" fill="#701c1a" text-anchor="middle">Tête polaire hydrophile (eau)</text>
+  <text x="120" y="169" font-family="Liberation Sans, Arial, sans-serif" font-size="8" fill="#5c5549" text-anchor="middle">Queue lipophile (huile)</text>
 </svg>

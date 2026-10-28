@@ -81,7 +81,7 @@ Nos papilles gustatives et nos neurones olfactifs ne sont pas des instruments de
 
 Comment distinguer l'évolution noble d'un aliment de son pourrissement mortel ?
 
-![La bifurcation biologique : maturation contrôlée enzymatique versus putréfaction bactérienne](figures/histoire/fig_maturation_vs_putrefaction.svg)``
+![La bifurcation biologique : maturation contrôlée enzymatique versus putréfaction bactérienne](figures/histoire/fig_maturation_vs_putrefaction.svg)
 
 ### Le Cas Critique : Le Péril Invisible du Botulisme (*Clostridium botulinum*)
 Contrairement aux bactéries de putréfaction ordinaires qui sentent mauvais et décolorent la chair, la bactérie tellurique *Clostridium botulinum* :

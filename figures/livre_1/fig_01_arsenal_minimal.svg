@@ -1,82 +1,82 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
-  <rect width="800" height="450" rx="16" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
-  <text x="400" y="42" font-family="Liberation Sans, Arial, sans-serif" font-size="20" font-weight="bold" fill="#0f172a" text-anchor="middle">L'ARSENAL MINIMAL : CINQ ORGANES FONDAMENTAUX DU CUISINIER</text>
-  <text x="400" y="68" font-family="Liberation Sans, Arial, sans-serif" font-size="13" fill="#64748b" text-anchor="middle">La connaissance des lois physico-chimiques remplace l'amoncellement des gadgets.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 430" width="100%" height="100%">
+  <rect width="800" height="430" rx="12" fill="#fcfbf7" stroke="#dfdacf" stroke-width="1.5"/>
+  <text x="400" y="36" font-family="Liberation Serif, Georgia, serif" font-size="18" font-weight="bold" fill="#701c1a" text-anchor="middle">L'ARSENAL MINIMAL : CINQ ORGANES FONDAMENTAUX DU CUISINIER</text>
+  <text x="400" y="58" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#5c5549" text-anchor="middle">La connaissance des lois physico-chimiques remplace l'amoncellement des gadgets.</text>
 
   <!-- Outil 1 : Le Couteau de Chef -->
-  <g transform="translate(40, 100)">
-    <rect width="130" height="280" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
-    <rect x="0" y="0" width="130" height="32" rx="12" fill="#0f172a"/>
-    <text x="65" y="21" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">1. LE TRANCHANT</text>
-    <path d="M 25 70 Q 75 75 105 130 L 35 130 Z" fill="#94a3b8" stroke="#334155" stroke-width="2"/>
-    <rect x="25" y="130" width="16" height="75" rx="3" fill="#475569"/>
-    <circle cx="33" cy="145" r="2.5" fill="#cbd5e1"/>
-    <circle cx="33" cy="165" r="2.5" fill="#cbd5e1"/>
-    <circle cx="33" cy="185" r="2.5" fill="#cbd5e1"/>
-    <text x="65" y="225" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">Couteau de chef</text>
-    <text x="65" y="245" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">Lame forgée 20 cm</text>
-    <text x="65" y="263" font-family="Liberation Sans, Arial, sans-serif" font-size="10.5" fill="#64748b" text-anchor="middle">Section cellulaire nette,</text>
-    <text x="65" y="277" font-family="Liberation Sans, Arial, sans-serif" font-size="10.5" fill="#64748b" text-anchor="middle">zéro écrasement des jus.</text>
+  <g transform="translate(35, 82)">
+    <rect width="134" height="275" rx="8" fill="#faf7f2" stroke="#dfdacf" stroke-width="1.2"/>
+    <rect x="0" y="0" width="134" height="30" rx="8" fill="#701c1a"/>
+    <text x="67" y="20" font-family="Liberation Serif, Georgia, serif" font-size="11" font-weight="bold" fill="#fcfbf7" text-anchor="middle">1. LE TRANCHANT</text>
+    <path d="M 27 68 Q 77 73 107 125 L 37 125 Z" fill="#dcd6ca" stroke="#5c5549" stroke-width="1.8"/>
+    <rect x="27" y="125" width="15" height="68" rx="3" fill="#383330"/>
+    <circle cx="34.5" cy="140" r="2" fill="#d4a373"/>
+    <circle cx="34.5" cy="158" r="2" fill="#d4a373"/>
+    <circle cx="34.5" cy="176" r="2" fill="#d4a373"/>
+    <text x="67" y="218" font-family="Liberation Serif, Georgia, serif" font-size="12" font-weight="bold" fill="#242124" text-anchor="middle">Couteau de chef</text>
+    <text x="67" y="236" font-family="Liberation Sans, Arial, sans-serif" font-size="10" fill="#5c5549" text-anchor="middle">Lame forgée 20 cm</text>
+    <text x="67" y="253" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#701c1a" text-anchor="middle">Section cellulaire nette,</text>
+    <text x="67" y="267" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#701c1a" text-anchor="middle">zéro perte de jus.</text>
   </g>
 
   <!-- Outil 2 : Poêle Fonte Épaisse -->
-  <g transform="translate(190, 100)">
-    <rect width="130" height="280" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
-    <rect x="0" y="0" width="130" height="32" rx="12" fill="#dc2626"/>
-    <text x="65" y="21" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">2. L'INERTIE</text>
-    <ellipse cx="65" cy="115" rx="42" ry="24" fill="#334155" stroke="#0f172a" stroke-width="3"/>
-    <ellipse cx="65" cy="112" rx="36" ry="19" fill="#1e293b"/>
-    <path d="M 95 125 L 122 155" stroke="#0f172a" stroke-width="7" stroke-linecap="round"/>
-    <text x="65" y="225" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">Poêle lourde</text>
-    <text x="65" y="245" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">Fonte ou Inox 5 plis</text>
-    <text x="65" y="263" font-family="Liberation Sans, Arial, sans-serif" font-size="10.5" fill="#dc2626" text-anchor="middle">Tampon calorifique,</text>
-    <text x="65" y="277" font-family="Liberation Sans, Arial, sans-serif" font-size="10.5" fill="#dc2626" text-anchor="middle">chaleur de Maillard constante.</text>
+  <g transform="translate(184, 82)">
+    <rect width="134" height="275" rx="8" fill="#faf7f2" stroke="#dfdacf" stroke-width="1.2"/>
+    <rect x="0" y="0" width="134" height="30" rx="8" fill="#a3432b"/>
+    <text x="67" y="20" font-family="Liberation Serif, Georgia, serif" font-size="11" font-weight="bold" fill="#fcfbf7" text-anchor="middle">2. L'INERTIE</text>
+    <ellipse cx="62" cy="112" rx="38" ry="22" fill="#5c5549" stroke="#242124" stroke-width="2.5"/>
+    <ellipse cx="62" cy="109" rx="32" ry="17" fill="#383330"/>
+    <path d="M 90 122 L 116 148" stroke="#242124" stroke-width="6" stroke-linecap="round"/>
+    <text x="67" y="218" font-family="Liberation Serif, Georgia, serif" font-size="12" font-weight="bold" fill="#242124" text-anchor="middle">Poêle lourde</text>
+    <text x="67" y="236" font-family="Liberation Sans, Arial, sans-serif" font-size="10" fill="#5c5549" text-anchor="middle">Fonte ou Inox 5 plis</text>
+    <text x="67" y="253" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#a3432b" text-anchor="middle">Tampon calorifique,</text>
+    <text x="67" y="267" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#a3432b" text-anchor="middle">croûte de Maillard.</text>
   </g>
 
   <!-- Outil 3 : Casserole Moyenne Fond Épais -->
-  <g transform="translate(340, 100)">
-    <rect width="130" height="280" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
-    <rect x="0" y="0" width="130" height="32" rx="12" fill="#2563eb"/>
-    <text x="65" y="21" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">3. LE FLUIDE</text>
-    <rect x="25" y="90" width="60" height="42" rx="4" fill="#cbd5e1" stroke="#475569" stroke-width="2"/>
-    <ellipse cx="55" cy="90" rx="30" ry="10" fill="#93c5fd" stroke="#475569" stroke-width="2"/>
-    <path d="M 85 96 L 120 90" stroke="#334155" stroke-width="5" stroke-linecap="round"/>
-    <rect x="25" y="128" width="60" height="7" fill="#64748b"/>
-    <text x="65" y="225" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">Casserole 2-3 L</text>
-    <text x="65" y="245" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">Fond sandwich épais</text>
-    <text x="65" y="263" font-family="Liberation Sans, Arial, sans-serif" font-size="10.5" fill="#2563eb" text-anchor="middle">Convection liquide,</text>
-    <text x="65" y="277" font-family="Liberation Sans, Arial, sans-serif" font-size="10.5" fill="#2563eb" text-anchor="middle">régulation frémissante.</text>
+  <g transform="translate(333, 82)">
+    <rect width="134" height="275" rx="8" fill="#faf7f2" stroke="#dfdacf" stroke-width="1.2"/>
+    <rect x="0" y="0" width="134" height="30" rx="8" fill="#8c7355"/>
+    <text x="67" y="20" font-family="Liberation Serif, Georgia, serif" font-size="11" font-weight="bold" fill="#fcfbf7" text-anchor="middle">3. LE FLUIDE</text>
+    <rect x="26" y="88" width="58" height="40" rx="4" fill="#dcd6ca" stroke="#5c5549" stroke-width="1.8"/>
+    <ellipse cx="55" cy="88" rx="29" ry="9" fill="#f2ece1" stroke="#5c5549" stroke-width="1.8"/>
+    <path d="M 84 94 L 116 88" stroke="#383330" stroke-width="4.5" stroke-linecap="round"/>
+    <rect x="26" y="124" width="58" height="6" fill="#8c7355"/>
+    <text x="67" y="218" font-family="Liberation Serif, Georgia, serif" font-size="12" font-weight="bold" fill="#242124" text-anchor="middle">Casserole 2–3 L</text>
+    <text x="67" y="236" font-family="Liberation Sans, Arial, sans-serif" font-size="10" fill="#5c5549" text-anchor="middle">Fond sandwich épais</text>
+    <text x="67" y="253" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#5c5549" text-anchor="middle">Convection liquide,</text>
+    <text x="67" y="267" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#5c5549" text-anchor="middle">frémissement doux.</text>
   </g>
 
   <!-- Outil 4 : Cul-de-poule et Fouet -->
-  <g transform="translate(490, 100)">
-    <rect width="130" height="280" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
-    <rect x="0" y="0" width="130" height="32" rx="12" fill="#d97706"/>
-    <text x="65" y="21" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">4. LA CINÉTIQUE</text>
-    <path d="M 20 90 A 45 45 0 0 0 110 90 Z" fill="#e2e8f0" stroke="#475569" stroke-width="2"/>
-    <path d="M 75 60 L 55 110" stroke="#94a3b8" stroke-width="3"/>
-    <ellipse cx="50" cy="100" rx="10" ry="16" fill="none" stroke="#d97706" stroke-width="1.8" transform="rotate(-25 50 100)"/>
-    <text x="65" y="225" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">Cul-de-poule inox</text>
-    <text x="65" y="245" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">+ Fouet manuel ballon</text>
-    <text x="65" y="263" font-family="Liberation Sans, Arial, sans-serif" font-size="10.5" fill="#d97706" text-anchor="middle">Émulsion moléculaire,</text>
-    <text x="65" y="277" font-family="Liberation Sans, Arial, sans-serif" font-size="10.5" fill="#d97706" text-anchor="middle">foisonnement d'air.</text>
+  <g transform="translate(482, 82)">
+    <rect width="134" height="275" rx="8" fill="#faf7f2" stroke="#dfdacf" stroke-width="1.2"/>
+    <rect x="0" y="0" width="134" height="30" rx="8" fill="#92400e"/>
+    <text x="67" y="20" font-family="Liberation Serif, Georgia, serif" font-size="11" font-weight="bold" fill="#fcfbf7" text-anchor="middle">4. LA CINÉTIQUE</text>
+    <path d="M 24 90 A 43 43 0 0 0 110 90 Z" fill="#f2ece1" stroke="#5c5549" stroke-width="1.8"/>
+    <path d="M 76 62 L 56 108" stroke="#8c7355" stroke-width="2.5"/>
+    <ellipse cx="52" cy="98" rx="9" ry="15" fill="none" stroke="#92400e" stroke-width="1.6" transform="rotate(-25 52 98)"/>
+    <text x="67" y="218" font-family="Liberation Serif, Georgia, serif" font-size="12" font-weight="bold" fill="#242124" text-anchor="middle">Cul-de-poule inox</text>
+    <text x="67" y="236" font-family="Liberation Sans, Arial, sans-serif" font-size="10" fill="#5c5549" text-anchor="middle">+ Fouet manuel ballon</text>
+    <text x="67" y="253" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#92400e" text-anchor="middle">Émulsion mécanique,</text>
+    <text x="67" y="267" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#92400e" text-anchor="middle">foisonnement d'air.</text>
   </g>
 
   <!-- Outil 5 : Planche Bois Franc -->
-  <g transform="translate(640, 100)">
-    <rect width="120" height="280" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
-    <rect x="0" y="0" width="120" height="32" rx="12" fill="#16a34a"/>
-    <text x="60" y="21" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">5. LE TERRAIN</text>
-    <rect x="18" y="75" width="84" height="60" rx="4" fill="#fed7aa" stroke="#c2410c" stroke-width="2"/>
-    <line x1="28" y1="85" x2="92" y2="85" stroke="#f97316" stroke-width="1"/>
-    <line x1="28" y1="105" x2="92" y2="105" stroke="#f97316" stroke-width="1"/>
-    <line x1="28" y1="125" x2="92" y2="125" stroke="#f97316" stroke-width="1"/>
-    <text x="60" y="225" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">Planche en bois</text>
-    <text x="60" y="245" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">Bois de bout ou hêtre</text>
-    <text x="60" y="263" font-family="Liberation Sans, Arial, sans-serif" font-size="10.5" fill="#16a34a" text-anchor="middle">Hygiène par dessiccation,</text>
-    <text x="60" y="277" font-family="Liberation Sans, Arial, sans-serif" font-size="10.5" fill="#16a34a" text-anchor="middle">préservation du fil.</text>
+  <g transform="translate(631, 82)">
+    <rect width="134" height="275" rx="8" fill="#faf7f2" stroke="#dfdacf" stroke-width="1.2"/>
+    <rect x="0" y="0" width="134" height="30" rx="8" fill="#5a6e54"/>
+    <text x="67" y="20" font-family="Liberation Serif, Georgia, serif" font-size="11" font-weight="bold" fill="#fcfbf7" text-anchor="middle">5. LE TERRAIN</text>
+    <rect x="22" y="75" width="90" height="56" rx="4" fill="#f2ece1" stroke="#8c7355" stroke-width="1.8"/>
+    <line x1="32" y1="86" x2="102" y2="86" stroke="#d4a373" stroke-width="1.2"/>
+    <line x1="32" y1="103" x2="102" y2="103" stroke="#d4a373" stroke-width="1.2"/>
+    <line x1="32" y1="120" x2="102" y2="120" stroke="#d4a373" stroke-width="1.2"/>
+    <text x="67" y="218" font-family="Liberation Serif, Georgia, serif" font-size="12" font-weight="bold" fill="#242124" text-anchor="middle">Planche en bois</text>
+    <text x="67" y="236" font-family="Liberation Sans, Arial, sans-serif" font-size="10" fill="#5c5549" text-anchor="middle">Bois de bout ou hêtre</text>
+    <text x="67" y="253" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#5a6e54" text-anchor="middle">Hygiène capillaire,</text>
+    <text x="67" y="267" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#5a6e54" text-anchor="middle">respect du tranchant.</text>
   </g>
 
-  <rect x="40" y="395" width="720" height="35" rx="8" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
-  <text x="400" y="417" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#1e40af" text-anchor="middle" font-weight="bold">Règle d'or : Maîtriser le gradient thermique et le contact physique surpasse tout investissement machine.</text>
+  <rect x="35" y="374" width="730" height="36" rx="6" fill="#f2ece1" stroke="#d4a373" stroke-width="1"/>
+  <text x="400" y="396" font-family="Liberation Serif, Georgia, serif" font-size="11.5" fill="#701c1a" text-anchor="middle" font-weight="bold">Règle d'or : Maîtriser le flux thermique et le geste mécanique surpasse tout investissement en robots.</text>
 </svg>

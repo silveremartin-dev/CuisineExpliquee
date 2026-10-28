@@ -109,9 +109,9 @@ La peur de rater paralyse l'apprentissage. Or, en physique culinaire, une émuls
 - **Temps de préparation :** 10 minutes | **Temps de cuisson :** 8 minutes
 - **Minimalisme Instrumental :** 1 casserole inox à fond épais, 1 cul-de-poule, 1 fouet, 1 spatule maryse ou cuillère en bois, 1 thermomètre sonde.
 - **Ingrédients pour 4 personnes :**
-  - Lait entier fermier : $500	ext{ ml}$ (ou $250	ext{ ml}$ lait + $250	ext{ ml}$ crème liquide)
-  - Jaunes d'œufs frais : $4	ext{ à }5$ (environ $80	ext{ g}$)
-  - Sucre semoule : $80	ext{ g}$
+  - Lait entier fermier : $500\text{ ml}$ (ou $250\text{ ml}$ lait + $250\text{ ml}$ crème liquide)
+  - Jaunes d'œufs frais : $4\text{ à }5$ (environ $80\text{ g}$)
+  - Sucre semoule : $80\text{ g}$
   - Gousse de vanille Bourbon : 1 pièce
 
 ##### Protocole Pas à Pas :
@@ -129,7 +129,7 @@ La peur de rater paralyse l'apprentissage. Or, en physique culinaire, une émuls
 
 - **Temps de préparation :** 10 minutes | **Temps de cuisson :** 5 minutes
 - **Minimalisme Instrumental :** 1 cul-de-poule inox posé sur une casserole d'eau chaude (bain-marie), 1 fouet.
-- **Ingrédients :** 3 jaunes d'œufs, $150	ext{ g}$ de beurre clarifié tiède, 1 cuillère à soupe de jus de citron, 1 pincée de sel et de piment de Cayenne.
+- **Ingrédients :** 3 jaunes d'œufs, $150\text{ g}$ de beurre clarifié tiède, 1 cuillère à soupe de jus de citron, 1 pincée de sel et de piment de Cayenne.
 
 ##### Protocole Pas à Pas :
 1. **Le Sabayon Initial :** Dans le cul-de-poule tiède hors feu, fouetter les jaunes avec 2 cuillères à soupe d'eau froide et le sel jusqu'à obtenir une mousse aérée.
