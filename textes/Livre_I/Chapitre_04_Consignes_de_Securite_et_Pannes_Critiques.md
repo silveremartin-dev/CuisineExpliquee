@@ -53,20 +53,7 @@ Pourquoi cet interdit est-il répété par tous les microbiologistes du monde ?
 
 Le couteau de chef est le prolongement de la main. Les coupures graves ne se produisent pas lorsque la lame est rasoir, mais lorsqu'elle est émoussée (la lame dérape sur la peau cireuse d'un poivron ou d'un oignon) ou lorsque la main passive est mal positionnée.
 
-```
-                  POSTURE DE PROTECTION EN « GRIFFE DE CHAT »
-                        (Vue de la main guide)
-                      
-                         Ongles repliés en dedans
-                               ┌───┐ ┌───┐ ┌───┐
-                               │   │ │   │ │   │
-                 Plat de       │ 1 │ │ 2 │ │ 3 │
-                 la lame ----> │   │ │   │ │   │
-                 en appui      └───┘ └───┘ └───┘
-                                   │     │     │
-                                 Deuxième phalange
-                                (Bouclier vertical)
-```
+![Sécurité du couteau : biomécanique de la prise en pince et protection en griffe de chat](figures/livre_1/fig_posture_griffe_de_chat.svg)``
 
 1. **La Main Guide (La Griffe de Chat) :**
    Les extrémités des doigts (pulpe et ongles) sont repliées vers l'intérieur de la paume. La face plate de la lame du couteau vient s'appuyer légèrement contre la **deuxième phalange** des doigts. Le fil coupant se trouve 1 centimètre plus bas : il est géométriquement impossible que la lame entaille la chair des doigts.

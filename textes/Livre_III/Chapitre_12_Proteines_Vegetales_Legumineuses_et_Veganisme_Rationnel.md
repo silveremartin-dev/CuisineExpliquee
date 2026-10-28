@@ -83,15 +83,21 @@ Au-delà de la graine brute, la cuisine dispose de trois transformations remarqu
 
 | Matrice Protéique | Origine & Procédé Physique | Propriétés Texturales | Biodisponibilité & Digestion | Destination Culinaire Idéale |
 | :--- | :--- | :--- | :--- | :--- |
-| **Le Tofu** | Lait de soja chauffé puis coagulé au *nigari* ($\mathrm{MgCl}_2$) | Gel tendre, neutre, forte porosité d'absorption | Taux protéique de 8 à \,\%$, zéro cholestérol | Rissolé croustillant, potages, marinades |
-| **Le Seitan** | Pâte de blé pétrie sous l'eau pour dissoudre l'amidon | Masse élastique, fibreuse et filandreuse | Concentré de gluten pur (\,\%$ de protéines) | Ragoûts mijotés, émincés sautés, brochettes |
-| **Le Tempeh** | Fèves de soja fermentées par le champignon *Rhizopus* | Gâteau dense, arômes de noisette et sous-bois | Prédigéré par le mycélium, digestibilité maximale | Tranches laquées à la poêle, salades tièdes || Horloge | Phase Opératoire | Action Physico-Chimique en Casserole | Repère Sensoriel Clé |
+| **Le Tofu** | Lait de soja chauffé puis coagulé au *nigari* ($\\mathrm{MgCl}_2$) | Gel tendre, neutre, forte porosité d'absorption | Taux protéique de 8 à 15 %, zéro cholestérol | Rissolé croustillant, potages, marinades |
+| **Le Seitan** | Pâte de blé pétrie sous l'eau pour dissoudre l'amidon | Masse élastique, dense, fibreuse et filandreuse | Concentré de gluten pur (25 à 30 % de protéines) | Ragoûts mijotés, émincés sautés, brochettes |
+| **Le Tempeh** | Fèves de soja fermentées par le champignon *Rhizopus* | Gâteau compact, arômes de noisette et sous-bois | Prédigéré par le mycélium, digestibilité maximale | Tranches laquées à la poêle, salades tièdes |
+
+---
+
+### La Chronologie Cinétique d'un Dahl Parfait
+
+| Horloge | Phase Opératoire | Action Physico-Chimique en Casserole | Repère Sensoriel Clé |
 | :---: | :--- | :--- | :--- |
 | **0 min** | **Torréfaction à sec** | Libération thermique des terpènes du cumin | Les graines crépitent et exhalent la noisette |
 | **2 min** | **Bain aromatique** | Dissolution des essences lipophiles dans l'huile | Oignons translucides, arômes suaves ail/gingembre |
 | **6 min** | **Enrobage lipidique** | Les grains de lentilles sont imperméabilisés au curcuma | Éclat orangé brillant de chaque lentille |
 | **8 min** | **Mouillage & mijotage** | Gélatinisation de l'amidon et dénaturation douce | Léger frémissement sous couvercle entrouvert |
-| **23 min** | **Finition & équilibrage** | Amidon délié en crème, réveil par l'acide citrique | Onctuosité veloutée sans mixeur, éclat en bouche |``
+| **23 min** | **Finition & équilibrage** | Amidon délié en crème, réveil par l'acide citrique | Onctuosité veloutée sans mixeur, éclat en bouche |
 
 ##### Étapes Pas à Pas :
 1. **La Torréfaction à Sec des Épices :** Poser la casserole inox sur feu moyen sans matière grasse. Jeter les graines de cumin. Dès qu'elles crépitent et dégagent une odeur chaude de noisette (environ 60 secondes), ajouter immédiatement les 2 cuillères d'huile pour stopper la torréfaction et fixer les composés aromatiques lipophiles dans la matière grasse.

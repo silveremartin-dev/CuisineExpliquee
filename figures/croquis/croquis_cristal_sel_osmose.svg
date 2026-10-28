@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" width="100%" height="100%">
+  <rect width="240" height="180" rx="8" fill="#fffdfa" stroke="#dcd6ca" stroke-width="1.2"/>
+  <!-- Cristal de sel cubique -->
+  <polygon points="90,70 120,50 150,70 120,90" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
+  <polygon points="90,70 120,90 120,120 90,100" fill="#bae6fd" stroke="#0284c7" stroke-width="1.5"/>
+  <polygon points="120,90 150,70 150,100 120,120" fill="#7dd3fc" stroke="#0284c7" stroke-width="1.5"/>
+  <text x="120" y="88" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="bold" fill="#0369a1" text-anchor="middle">NaCl</text>
+  
+  <!-- Flèches d'eau attirées -->
+  <path d="M 50 85 L 75 85" stroke="#2563eb" stroke-width="2"/>
+  <polygon points="80,85 73,81 73,89" fill="#2563eb"/>
+  <text x="45" y="88" font-family="Liberation Sans, Arial, sans-serif" font-size="8" fill="#1e40af">H₂O</text>
+
+  <path d="M 190 85 L 165 85" stroke="#2563eb" stroke-width="2"/>
+  <polygon points="160,85 167,81 167,89" fill="#2563eb"/>
+  <text x="200" y="88" font-family="Liberation Sans, Arial, sans-serif" font-size="8" fill="#1e40af">H₂O</text>
+
+  <text x="120" y="152" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="bold" fill="#0369a1" text-anchor="middle">Pompage Osmotique</text>
+  <text x="120" y="167" font-family="Liberation Sans, Arial, sans-serif" font-size="8" fill="#64748b" text-anchor="middle">L'eau cellulaire est attirée vers le sel</text>
+</svg>

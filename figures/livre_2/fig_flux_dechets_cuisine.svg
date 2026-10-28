@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 370" width="100%" height="100%">
+  <rect width="800" height="370" rx="16" fill="#fcfbf7" stroke="#e8e2d5" stroke-width="2"/>
+  
+  <text x="400" y="32" font-family="Liberation Sans, Arial, sans-serif" font-size="16" font-weight="bold" fill="#701c1a" text-anchor="middle">LE DESTIN DES DÉCHETS DE CUISINE : POUBELLE BIO vs SAC NOIR</text>
+  <text x="400" y="52" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#5c5549" text-anchor="middle">30% du poids des ordures ménagères est de la matière organique : l'hérésie de l'incinération face au cercle vertueux.</text>
+
+  <!-- Bloc Central -->
+  <rect x="250" y="70" width="300" height="40" rx="8" fill="#f4eee1" stroke="#d4a373" stroke-width="1.5"/>
+  <text x="400" y="95" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#242124" text-anchor="middle">DÉCHETS DE CUISINE (80% D'EAU)</text>
+
+  <!-- Flux Gauche : Poubelle Bio -->
+  <path d="M 320 110 L 320 145 L 205 145 L 205 165" fill="none" stroke="#2d6a4f" stroke-width="2.5"/>
+  <polygon points="205,172 200,163 210,163" fill="#2d6a4f"/>
+
+  <!-- Flux Droit : Poubelle Noire -->
+  <path d="M 480 110 L 480 145 L 595 145 L 595 165" fill="none" stroke="#9e2a2b" stroke-width="2.5"/>
+  <polygon points="595,172 590,163 600,163" fill="#9e2a2b"/>
+
+  <!-- Carte Gauche : Poubelle Bio -->
+  <g transform="translate(40, 175)">
+    <rect width="330" height="175" rx="10" fill="#ffffff" stroke="#74c69d" stroke-width="1.5"/>
+    <rect x="0" y="0" width="330" height="30" rx="10" fill="#2d6a4f"/>
+    <text x="165" y="20" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">✓ POUBELLE BIO (BIODÉCHETS TRIÉS)</text>
+
+    <!-- Deux destinations -->
+    <rect x="15" y="42" width="140" height="60" rx="6" fill="#f0fdf4" stroke="#86efac" stroke-width="1"/>
+    <text x="85" y="60" font-family="Liberation Sans, Arial, sans-serif" font-size="10.5" font-weight="bold" fill="#166534" text-anchor="middle">Méthanisation</text>
+    <text x="85" y="76" font-family="Liberation Sans, Arial, sans-serif" font-size="8.5" fill="#14532d" text-anchor="middle">Production de biogaz</text>
+    <text x="85" y="90" font-family="Liberation Sans, Arial, sans-serif" font-size="8.5" fill="#14532d" text-anchor="middle">(énergie renouvelable)</text>
+
+    <rect x="175" y="42" width="140" height="60" rx="6" fill="#f0fdf4" stroke="#86efac" stroke-width="1"/>
+    <text x="245" y="60" font-family="Liberation Sans, Arial, sans-serif" font-size="10.5" font-weight="bold" fill="#166534" text-anchor="middle">Compostage</text>
+    <text x="245" y="76" font-family="Liberation Sans, Arial, sans-serif" font-size="8.5" fill="#14532d" text-anchor="middle">Humus agricole riche</text>
+    <text x="245" y="90" font-family="Liberation Sans, Arial, sans-serif" font-size="8.5" fill="#14532d" text-anchor="middle">(remplace engrais NPK)</text>
+
+    <text x="15" y="125" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#1b4332"><tspan font-weight="bold">• Bilan énergétique :</tspan> Excédentaire et régénératif.</text>
+    <text x="15" y="142" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#1b4332"><tspan font-weight="bold">• Cycle des nutriments :</tspan> Retour direct de la matière au sol.</text>
+    <text x="15" y="160" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" font-weight="bold" fill="#2d6a4f">→ Zéro gaspillage thermodynamique.</text>
+  </g>
+
+  <!-- Carte Droite : Poubelle Noire -->
+  <g transform="translate(430, 175)">
+    <rect width="330" height="175" rx="10" fill="#ffffff" stroke="#e63946" stroke-width="1.5"/>
+    <rect x="0" y="0" width="330" height="30" rx="10" fill="#9e2a2b"/>
+    <text x="165" y="20" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">✗ POUBELLE NOIRE (TOUT-VENANT)</text>
+
+    <!-- Deux désastres -->
+    <rect x="15" y="42" width="140" height="60" rx="6" fill="#fef2f2" stroke="#fca5a5" stroke-width="1"/>
+    <text x="85" y="60" font-family="Liberation Sans, Arial, sans-serif" font-size="10.5" font-weight="bold" fill="#991b1b" text-anchor="middle">Incinération</text>
+    <text x="85" y="76" font-family="Liberation Sans, Arial, sans-serif" font-size="8.5" fill="#7f1d1d" text-anchor="middle">Brûler de l'eau !</text>
+    <text x="85" y="90" font-family="Liberation Sans, Arial, sans-serif" font-size="8.5" fill="#7f1d1d" text-anchor="middle">Injection de fioul de soutien</text>
+
+    <rect x="175" y="42" width="140" height="60" rx="6" fill="#fef2f2" stroke="#fca5a5" stroke-width="1"/>
+    <text x="245" y="60" font-family="Liberation Sans, Arial, sans-serif" font-size="10.5" font-weight="bold" fill="#991b1b" text-anchor="middle">Enfouissement</text>
+    <text x="245" y="76" font-family="Liberation Sans, Arial, sans-serif" font-size="8.5" fill="#7f1d1d" text-anchor="middle">Fermentation anaérobie</text>
+    <text x="245" y="90" font-family="Liberation Sans, Arial, sans-serif" font-size="8.5" fill="#7f1d1d" text-anchor="middle">Émission de CH₄ (effet de serre)</text>
+
+    <text x="15" y="125" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#540b0e"><tspan font-weight="bold">• Bilan énergétique :</tspan> Désastreux, perte d'énergie fossile.</text>
+    <text x="15" y="142" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#540b0e"><tspan font-weight="bold">• Pollution induite :</tspan> Lixiviats acides vers les nappes.</text>
+    <text x="15" y="160" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" font-weight="bold" fill="#9e2a2b">→ Rupture stérile du cycle du vivant.</text>
+  </g>
+</svg>

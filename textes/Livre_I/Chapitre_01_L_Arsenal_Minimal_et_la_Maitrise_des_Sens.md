@@ -88,3 +88,25 @@ Avant l'invention des thermocouples numériques, les cuisiniers maîtrisaient le
 | **Couteau** | Aiguiser régulièrement sur pierre à eau grain 1000/3000 ; ranger sur barre aimantée ou dans un fourreau sec. | Jeter la lame en vrac dans un tiroir avec d'autres métaux ; passer le couteau au lave-vaisselle (l'eau bouillante et les détergents alcalins détruisent le fil). |
 | **Poêle fonte** | Culotter avec une fine pellicule d'huile polymérisée à chaud ; laver à l'eau chaude et essuyer immédiatement sur le feu résiduel. | Laisser tremper dans l'évier toute la nuit (oxydation rouille immédiate) ou récurer au liquide vaisselle agressif décapant la patine protectrice. |
 | **Planche à découper** | Huiler le bois une fois par mois à l'huile minérale ou de lin ; brosser au gros sel et au demi-citron après chaque découpe. | Utiliser du plastique blanc profondément tailladé qui retient les micro-organismes dans les crevasses et libère des microplastiques à chaque coup de lame. |
+
+
+---
+
+### 🍳 Fiche Recette 7 : La Mayonnaise Maison Inratable au Fouet Manuel {#recette-mayonnaise}
+
+*La physique de l'émulsion froide : 1 jaune d'œuf peut disperser jusqu'à 200 ml d'huile grâce aux lécithines.*
+
+- **Temps de préparation :** 5 minutes
+- **Minimalisme Instrumental :** 1 cul-de-poule inox demi-sphérique, 1 fouet métallique, 1 torchon plié en couronne sous le bol (pour stabiliser sans troisième main).
+- **Ingrédients :**
+  - Jaune d'œuf à température ambiante : 1 pièce
+  - Moutarde forte de Dijon : $15	ext{ g}$ (1 cuillère à café bombée)
+  - Huile de tournesol ou pépins de raisin : $150	ext{ à }180	ext{ ml}$
+  - Vinaigre de vin vieux ou jus de citron : $1	ext{ c. à café}$
+  - Sel fin et poivre blanc moulu
+
+##### Protocole Pas à Pas :
+1. **L'Amorce Tensioactive :** Dans le cul-de-poule posé sur la couronne de torchon, mélanger le jaune d'œuf, la moutarde, le sel et le vinaigre. Laisser reposer 1 minute pour que le sel dissolve légèrement la membrane des lipovitellines.
+2. **La Dispersion Goutte à Goutte :** Commencer à fouetter activement en versant l'huile gouttelette par gouttelette. Chaque goutte doit être cisaillée en millions de billes microscopiques avant d'en ajouter une autre.
+3. **Le Montage en Filet :** Dès que l'émulsion « prend » et prend une consistance nappante brillante, verser l'huile restante en mince filet continu tout en maintenant un battement circulaire rapide.
+4. **Le Blocage Sensoriel :** La mayonnaise devient ferme, dense et tient sur le fouet à l'envers. Rectifier en sel et acidité.

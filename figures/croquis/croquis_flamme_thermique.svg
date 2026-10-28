@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" width="100%" height="100%">
+  <!-- Croquis style dessin de carnet : flamme et zones thermiques -->
+  <rect width="240" height="180" rx="8" fill="#fffdfa" stroke="#dcd6ca" stroke-width="1.2"/>
+  <path d="M 120 140 C 90 140 70 115 80 85 C 88 60 110 35 120 20 C 130 35 152 60 160 85 C 170 115 150 140 120 140 Z" fill="#ffedd5" stroke="#ea580c" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 120 135 C 105 135 95 120 100 100 C 105 85 115 65 120 50 C 125 65 135 85 140 100 C 145 120 135 135 120 135 Z" fill="#fed7aa" stroke="#c2410c" stroke-width="1.5"/>
+  <path d="M 120 130 C 112 130 108 120 110 110 C 112 100 118 85 120 75 C 122 85 128 100 130 110 C 132 120 128 130 120 130 Z" fill="#93c5fd" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="120" y="160" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="bold" fill="#701c1a" text-anchor="middle">Zone bleue réductrice : 1 200°C</text>
+  <text x="120" y="172" font-family="Liberation Sans, Arial, sans-serif" font-size="8" fill="#64748b" text-anchor="middle">Pointe oxydante : 800°C</text>
+</svg>

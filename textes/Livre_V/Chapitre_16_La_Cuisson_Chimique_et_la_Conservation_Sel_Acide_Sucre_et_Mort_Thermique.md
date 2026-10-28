@@ -68,6 +68,8 @@ C'est une confusion fréquente et potentiellement mortelle :
    - *Au-delà de 45 minutes :* L'acide hydrolyse complètement les protéines : la chair se déshydrate, expulse toute son eau et devient farineuse, sèche et friable sous la dent.
 5. **L'Envoi :** Ajouter la coriandre ciselée et le filet d'huile d'olive (qui apporte une rondeur lipidique adoucissant l'acidité citrique). Déguster immédiatement avec le jus aromatique à la cuillère.
 
+![Ceviche authentique de poisson blanc mariné à froid au jus de citron vert frais, lamelles d'oignon rouge et piment doux](figures/nourriture/ceviche_poisson_frais.jpg)
+
 ---
 
 ## 4. L'ACTIVITÉ DE L'EAU ($a_w$) ET LA RÉVOLUTION D'APPERT
@@ -80,7 +82,7 @@ Les micro-organismes (bactéries, levures, moisissures) ont un besoin vital d'ea
 - Moisissures les plus résistantes : croissance bloquée à $a_w < 0{,}60$.
 Le sucre et le sel agissent en créant des liaisons hydrogène fortes avec les molécules d'eau : l'eau n'est plus « libre », les bactéries meurent littéralement de soif au milieu d'un pot de confiture.
 
-![Ceviche de poisson frais mariné au citron vert, piment doux et oignon rouge](figures/nourriture/ceviche_poisson_frais.jpg)
+
 
 ::: anecdote_historique
 #### 🏛️ L'Anecdote Historique : Nicolas Appert et les Soldats de Napoléon

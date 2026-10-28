@@ -100,7 +100,12 @@ PREAMBLE = """
 #set par(justify: true, leading: 0.74em, first-line-indent: 0pt, spacing: 0.88em)
 
 #show heading: set text(hyphenate: false)
-#show figure: set block(breakable: false)
+#show figure.where(kind: table): set block(breakable: true)
+#show figure.caption: it => [
+  #v(7pt)
+  #text(size: 8.8pt, style: "italic", fill: rgb("#5c5549"))[#it]
+  #v(13pt)
+]
 
 // Style des Hyperliens Interactifs
 #show link: it => text(fill: c-terracotta, weight: "medium")[#underline(stroke: 0.5pt + c-bronze, offset: 1.5pt)[#it]]
@@ -206,6 +211,19 @@ PREAMBLE = """
   #text(size: 9.5pt, fill: c-ink)[#body]
 ]
 
+#let danger(body) = block(
+  fill: rgb("#fef2f2"),
+  stroke: (left: 3.5pt + rgb("#dc2626")),
+  inset: (left: 14pt, right: 12pt, top: 10pt, bottom: 10pt),
+  radius: (right: 4pt),
+  width: 100%,
+  spacing: 1.2em,
+  breakable: false
+)[
+  #text(size: 9.5pt, fill: c-ink)[#body]
+]
+
+#let alerte(body) = danger(body)
 #let point_attention(body) = block(
   fill: rgb("#faf6ed"),
   stroke: (left: 3pt + rgb("#9e4e36")),
@@ -217,6 +235,8 @@ PREAMBLE = """
 )[
   #text(size: 9.5pt, fill: c-ink)[#body]
 ]
+
+#let anecdote_historique(body) = point_attention(body)
 
 #let oeil_molecule(body) = block(
   fill: rgb("#f5f4f2"),
@@ -414,52 +434,62 @@ PREAMBLE = """
 // ==========================================
 #align(center)[
   #text(size: 15pt, weight: "bold", fill: c-bordeaux, font: "Liberation Serif")[
-    🍳 Table des Recettes et Préparations Piliers
+    🍳 Table des Vingt Recettes et Préparations Piliers
   ]
   #v(-4pt)
   #line(length: 60%, stroke: 0.8pt + c-bronze)
 ]
-#v(0.6cm)
+#v(0.4cm)
 
 #block(
   fill: rgb("#faf7f0"),
   stroke: 0.5pt + rgb("#dfdacf"),
-  inset: 16pt,
+  inset: 14pt,
   radius: 6pt,
   width: 100%
 )[
-  #text(size: 10pt)[
-    Cette table réunit les dix protocoles fondamentaux pas à pas décrits dans l'ouvrage. Chaque recette constitue une application directe et immédiate des principes physico-chimiques exposés :
+  #text(size: 9.5pt)[
+    Cette table réunit les vingt protocoles fondamentaux pas à pas décrits dans l'ouvrage. Chaque recette constitue une application directe et vivante des principes thermodynamiques et biologiques exposés :
 
-    #v(0.3cm)
-    *Pains, Levains & Fromagerie Autonome*
+    #v(0.2cm)
+    *1. Pains, Levains, Fermentations & Fromagerie Autonome*
     - #link(<recette-pain-cocotte>)[Le Pain Cocotte d'Autonomie sans Pétrissage (*No-Knead Bread*)] --- _Chapitre 16_
     - #link(<recette-fromage-frais>)[Le Fromage Frais Maison en 15 Minutes (Caillage Acide sans Présure)] --- _Chapitre 16_
-    - #link(<recette-glace-sel>)[La Glace Express sans Sorbetière (Abaissement Cryoscopique du Sel)] --- _Chapitre 16_
+    - #link(<recette-glace-sel>)[La Glace Express sans Sorbetière (Abaissement Cryoscopique du Sel à -18°C)] --- _Chapitre 16_
 
-    #v(0.2cm)
-    *Viandes, Poissons & Saisies à la Poêle*
-    - #link(<recette-steak-fonte>)[Le Pavé de Bœuf en Poêle Fonte & Arrosage au Beurre Mousseux (*Basting*)] --- _Chapitre 03_
-    - #link(<recette-deglacage-minute>)[Le Déglaçage Minute & Sauce Montée au Beurre Émulsionnée] --- _Chapitre 05_
+    #v(0.15cm)
+    *2. Viandes, Poissons, Sauces Mères & Saisies à la Poêle*
+    - #link(<recette-steak-fonte>)[Le Pavé de Bœuf Saisi en Fonte & Arrosé au Beurre Moussant (*Basting*)] --- _Chapitre 03_
+    - #link(<recette-deglacage-minute>)[Le Déglaçage Minute & Sauce Réduite au Vin Montée au Beurre] --- _Chapitre 05_
+    - #link(<recette-consomme-clarifie>)[Le Consommé Clarifié à l'Albumine d'Œuf (Filtre Macromoléculaire)] --- _Chapitre 05_
+    - #link(<recette-sauce-bechamel>)[Le Roux Blanc & la Sauce Béchamel Veloutée Sans Grumeaux] --- _Chapitre 05_
     - #link(<recette-ceviche-cabillaud>)[Le Vrai Ceviche de Cabillaud Mariné au Citron Vert & Piment Doux] --- _Chapitre 15_
 
-    #v(0.2cm)
-    *Pâtes & Émulsions d'Or*
+    #v(0.15cm)
+    *3. Émulsions Maîtres, Œufs & Sauces Chaudes*
+    - #link(<recette-mayonnaise>)[La Mayonnaise Maison Inratable au Fouet Manuel (Lécithines & Cisaillement)] --- _Chapitre 01_
+    - #link(<recette-oeuf-mollet>)[L'Œuf Mollet Parfait en 6 Minutes & l'Œuf à 64°C (Gradient Thermique)] --- _Chapitre 06_
+    - #link(<recette-creme-anglaise>)[La Crème Anglaise au Degré Près (Seuil Critique de 82°C au Ruban)] --- _Chapitre 06_
+    - #link(<recette-sauce-hollandaise>)[La Sauce Hollandaise Émulsionnée Chaude au Bain-Marie (58°C)] --- _Chapitre 06_
+    - #link(<recette-grand-aioli>)[Le Grand Aïoli Provençal au Mortier de Marbre (Émulsion Pure à l'Ail)] --- _Chapitre 17_
+
+    #v(0.15cm)
+    *4. Pâtes & Féculents Fondateurs*
     - #link(<recette-carbonara-traditionnelle>)[Les Vraies Spaghetti alla Carbonara (L'Émulsion d'Or Jaune sans Crème)] --- _Chapitre 18_
+    - #link(<recette-pommes-sarladaises>)[Les Pommes Sarladaises Croustillantes à la Graisse de Canard (190°C)] --- _Chapitre 17_
 
-    #v(0.2cm)
-    *Cuisine Végétale & Protéines Alternatives*
-    - #link(<recette-dahl-lentilles>)[Le Dahl Réconfortant de Lentilles Corail au Cumin Torréfié & Coco] --- _Chapitre 13_
-    - #link(<recette-tofu-croustillant>)[Le Tofu Doré Ultra-Croustillant & son Laquage Tamari-Sésame] --- _Chapitre 13_
-    - #link(<recette-mousse-aquafaba>)[La Mousse au Chocolat Aérienne à l'Aquafaba (Zéro Œuf, Zéro Crème)] --- _Chapitre 13_
+    #v(0.15cm)
+    *5. Cuisine Végétale & Protéines Alternatives*
+    - #link(<recette-dahl-lentilles>)[Le Dahl Réconfortant de Lentilles Corail au Cumin Torréfié & Coco] --- _Chapitre 12_
+    - #link(<recette-tofu-croustillant>)[Le Tofu Doré Ultra-Croustillant & son Laquage Tamari-Sésame] --- _Chapitre 12_
+    - #link(<recette-mousse-aquafaba>)[La Mousse au Chocolat Aérienne à l'Aquafaba (Zéro Œuf, Zéro Crème)] --- _Chapitre 12_
 
-    #v(0.2cm)
-    *Desserts & Maîtrise des Seuils Thermiques*
-    - #link(<recette-moelleux-chocolat>)[Le Moelleux au Chocolat Cœur Coulant (Gradient Thermique Calibré)] --- _Chapitre 14_
-    - #link(<recette-creme-anglaise>)[La Crème Anglaise Onctueuse Inratable (Seuil Critique de 83°C au Ruban)] --- _Chapitre 14_
+    #v(0.15cm)
+    *6. Pâtisserie Matricielle & Contrôle de l'Amidon*
+    - #link(<recette-moelleux-chocolat>)[Le Moelleux au Chocolat Cœur Coulant (Gradient Thermique Étalonné)] --- _Chapitre 13_
+    - #link(<recette-pate-brisee>)[La Pâte Brisée Pur Beurre au Sablage Express (Inhibition du Gluten)] --- _Chapitre 13_
   ]
 ]
-
 #pagebreak()
 """
 
@@ -578,6 +608,46 @@ def postprocess_typst(typ_content):
     # Reconvertir les ancres HTML en labels Typst #hide[] <mon-label> (invisible sur la page)
     typ_content = re.sub(r'LABELSTART([a-zA-Z0-9_\-]+)LABELSTART', r'#hide[] <\1>', typ_content)
     
+    # Liaison automatique et interactive des termes techniques vers le Glossaire (Annexe B)
+    glossary_targets = {
+        r'\b(réaction[s]? de Maillard|effet Maillard)\b': 'glossaire-maillard',
+        r'\b(effet Leidenfrost|phénomène de Leidenfrost)\b': 'glossaire-leidenfrost',
+        r"\b(gélatinisation de l'amidon|gélatinisation)\b": 'glossaire-gelatinisation',
+        r"\b(activité de l'eau)\b": 'glossaire-aw',
+        r'\b(actomyosine|actine et myosine)\b': 'glossaire-actomyosine',
+        r'\b(acides aminés essentiels)\b': 'glossaire-acides-amines',
+        r'\b(alkylpyrazines)\b': 'glossaire-alkylpyrazines',
+        r'\b(appertisation)\b': 'glossaire-appertisation',
+        r'\b(aquafaba)\b': 'glossaire-aquafaba',
+        r'\b(toxine botulique|botulisme|Clostridium botulinum)\b': 'glossaire-botulisme',
+        r'\b(caséine[s]?)\b': 'glossaire-caseine',
+        r'\b(coalescence)\b': 'glossaire-coalescence',
+        r'\b(collagène)\b': 'glossaire-collagene',
+        r'\b(dénaturation protéique|dénaturation)\b': 'glossaire-denaturation',
+        r'\b(point de fumée)\b': 'glossaire-point-fumee',
+        r'\b(synérèse)\b': 'glossaire-synerese',
+        r'\b(bliss point)\b': 'glossaire-bliss-point'
+    }
+    
+    # Remplacer avec parcimonie dans les paragraphes de texte purs (jamais dans les labels <...>, titres =, images, ou tableaux)
+    lines = typ_content.splitlines()
+    new_lines = []
+    seen_counts = {k: 0 for k in glossary_targets}
+    
+    for line in lines:
+        sline = line.strip()
+        # Ne pas toucher aux lignes de labels, titres, figures ou balises
+        if sline.startswith('<') or sline.startswith('=') or sline.startswith('#figure') or sline.startswith('#image') or '<glossaire-' in sline or '#link(' in sline:
+            new_lines.append(line)
+        else:
+            for pattern, target_label in glossary_targets.items():
+                if seen_counts[pattern] < 2:
+                    if re.search(pattern, line, flags=re.IGNORECASE):
+                        line = re.sub(pattern, rf"#link(<{target_label}>)[\g<1>]", line, count=1, flags=re.IGNORECASE)
+                        seen_counts[pattern] += 1
+            new_lines.append(line)
+    typ_content = '\n'.join(new_lines)
+
     # Assembler le document complet
     full_text = PREAMBLE + "\n\n" + typ_content + "\n\n" + BACK_COVER
     
@@ -631,6 +701,50 @@ def preprocess_markdown(md_text):
 def run_build():
     print("=== Étape 1 : Assemblage et Préparation des Textes Markdown ===")
     
+    portals = {
+        "LIVRE I — L'HOMME, LE FEU ET LA RÈGLE DU FOYER": """
+# LIVRE I — L'Homme, le Feu et la Règle du Foyer
+
+> « L'homme ne devient véritablement humain que le jour où il cesse d'ingérer la chair crue pour la soumettre à la médiation alchimique de la braise. » — Claude Lévi-Strauss
+
+Ce premier livre pose les fondations anthropologiques, instrumentales et thermodynamiques de l'art culinaire. De l'étincelle paléolithique à la maîtrise du transfert thermique par conduction, convection et rayonnement, il enseigne la manipulation rigoureuse de l'énergie avec un arsenal minimaliste de huit instruments inusables, tout en fixant les réflexes de sécurité vitale pour conjurer les pannes et les accidents domestiques.
+
+![La cuisine de la Renaissance selon Bartolomeo Scappi : l'ordre rationnel et minimaliste du foyer](figures/patrimoine/scappi_cuisine_renaissance.jpg)
+""",
+        "LIVRE II — L'ALCHIMIE DU VIVANT : PHYSIOLOGIE, ÉCOLOGIE ET VÉRITÉ DE L'ASSIETTE": """
+# LIVRE II — L'Alchimie du Vivant : Physiologie, Écologie et Vérité de l'Assiette
+
+> « Dis-moi ce que tu manges, je te dirai ce que tu es. » — Jean Anthelme Brillat-Savarin
+
+Le deuxième livre explore la trajectoire de la matière, depuis les équilibres écologiques du champ jusqu'aux récepteurs sensoriels de notre palais. Il dissèque l'anatomie secrète d'une assiette trois étoiles, les mécanismes hormonaux de la satiété et de la digestion, la psychologie prédatrice du supermarché, le décryptage sans complaisance des additifs industriels et la réalité des flux écologiques et des saisons.
+
+![Légumes maraîchers de pleine terre : fraîcheur cellulaire et respect des cycles saisonniers](figures/nourriture/poireaux_frais.jpg)
+""",
+        "LIVRE III — LA MATIÈRE ANIMALE ET VÉGÉTALE AUX FOURNEAUX": """
+# LIVRE III — La Matière Animale et Végétale aux Fourneaux
+
+> « La cuisine est une science qui s'ignore et un art qui se cherche. » — Nicholas Kurti
+
+Ce troisième livre pénètre au cœur des tissus du vivant. En observant la contraction millimétrique des fibres d'actomyosine, la coagulation fractionnée des albumines de l'œuf, l'infusion aromatique des pelures végétales et l'équation matricielle de la pâtisserie, le praticien apprend à sculpter les textures et à substituer les ingrédients avec une souveraine liberté.
+
+![Préparation de la matière carnée et des aromates : la rencontre du muscle et des essences végétales](figures/nourriture/viande_herbes_preparation.jpg)
+""",
+        "LIVRE IV — TRANSFORMATIONS SANS FEU, TERROIRS ET MÉMOIRE CULINAIRE": """
+# LIVRE IV — Transformations sans Feu, Terroirs et Mémoire Culinaire
+
+> « Tout ce qui fermente porte en soi l'esprit de la vie et le souvenir de la terre. »
+
+Le quatrième livre explore les métamorphoses opérées sans combustible : la dénaturation chimique par le sel, l'acide et le sucre, la domestication des ferments nobles du levain et du caillé fromager, la géopolitique des trois corps gras fondateurs et la géographie des terroirs ancestraux confrontés aux métissages de la modernité culinaire.
+
+![Le plateau de fromages de terroir : chef-d'œuvre de l'affinage enzymatique et du temps](figures/nourriture/plateau_fromages_terroir.jpg)
+""",
+        "ANNEXES, FORMULAIRE ET RÉPERTOIRE CRITIQUE": """
+# ANNEXES, FORMULAIRE ET RÉPERTOIRE CRITIQUE
+
+> Références métrologiques, seuils critiques, formulaires énergétiques, glossaire physico-chimique interactif et bibliographie raisonnée.
+"""
+    }
+
     sections = [
         ("LIVRE I — L'HOMME, LE FEU ET LA RÈGLE DU FOYER", [
             "textes/Livre_I/Chapitre_00_L_Odyssee_du_Feu_et_la_Nutrition_de_Survie.md",
@@ -661,14 +775,17 @@ def run_build():
         ("ANNEXES, FORMULAIRE ET RÉPERTOIRE CRITIQUE", [
             "textes/Annexes/Annexe_A_Tableau_des_Temperatures_Critiques.md",
             "textes/Annexes/Annexe_B_Glossaire_Physico_Chimique_et_Culinaire.md",
-            "textes/Annexes/Annexe_C_Bibliographie_Raisonnee.md"
+            "textes/Annexes/Annexe_C_Bibliographie_Raisonnee.md",
+            "textes/Annexes/Annexe_D_Guide_Achat_Arsenal_Minimal_Couts_et_Durees_de_Cuisson.md",
+            "textes/Annexes/Annexe_E_Conservation_au_Froid_Zones_du_Refrigerateur_et_Durees_Limites.md"
         ])
     ]
 
     all_md = []
     for book_title, files in sections:
-        # Titre de partie intégré sans page blanche superflue
-        all_md.append(f"\n# {book_title}\n")
+        # Portail d'ouverture de livre riche avec illustration pleine page
+        portal_text = portals.get(book_title, f"\n# {book_title}\n")
+        all_md.append(portal_text)
         for f in files:
             full_path = os.path.join(BASE_DIR, f)
             if os.path.exists(full_path):

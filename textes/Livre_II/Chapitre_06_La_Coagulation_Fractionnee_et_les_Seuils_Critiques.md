@@ -70,3 +70,58 @@ Ne jetez rien !
 1. Retirer la casserole du feu instantanément et plonger le fond dans un évier d'eau froide pour stopper l'inertie thermique.
 2. Ajouter **2 glaçons ou une cuillère à soupe de lait glacé** (pour faire redescendre la température sous $75^\circ\mathrm{C}$).
 3. Transvaser dans une bouteille fermée et secouer violemment comme un shaker, ou fouetter énergiquement avec un fouet à fils fins dans un cul-de-poule : le cisaillement mécanique pulvérise les agrégats protéiques, et l'émulsion se reconstitue.
+
+
+---
+
+### 🍳 Fiche Recette 4 : L'Œuf Mollet Parfait et l'Œuf à 64°C {#recette-oeuf-mollet}
+
+*La maîtrise du gradient thermique : un blanc pris mais soyeux et un jaune chaud et crémeux.*
+
+- **Temps de préparation :** 2 minutes
+- **Temps de cuisson :** Exactement 6 minutes (eau bouillante) ou 45 minutes (bain à 64°C)
+- **Minimalisme Instrumental :** 1 casserole inox, 1 écumoire, 1 bol d'eau avec glaçons.
+- **Ingrédients :** 2 à 4 œufs très frais (calibre M ou L, sortis du réfrigérateur 15 min avant), 1 c. à soupe de vinaigre blanc, sel fin.
+
+##### Protocole Pas à Pas :
+1. **L'Ébullition Franche :** Porter une casserole d'eau à ébullition avec le vinaigre (qui aide à coaguler immédiatement une éventuelle fissure).
+2. **La Plongée Délicate :** À l'aide de l'écumoire, déposer les œufs délicatement au fond. Déclencher le chronomètre pour **exactement 6 minutes**.
+3. **Le Choc Thermique Glacé (Capital pour l'écalage) :** Dès la sonnerie, transférer immédiatement les œufs dans le bol d'eau saturée en glaçons. La chute thermique rétracte la poche d'air et fige la membrane coquillière interne.
+4. **L'Écalage sous un Filet d'Eau :** Tapoter la coquille sur le plan de travail, puis peler sous un mince filet d'eau tiède : l'eau s'infiltre sous la membrane et décolle la coquille sans entamer le blanc.
+
+---
+
+### 🍳 Fiche Recette 5 : La Crème Anglaise au Degré Près (82°C) {#recette-creme-anglaise}
+
+*La reine des sauces mères douces : la liaison au jaune d'œuf sans farine ni épaississant de synthèse.*
+
+- **Temps de préparation :** 10 minutes | **Temps de cuisson :** 8 minutes
+- **Minimalisme Instrumental :** 1 casserole inox à fond épais, 1 cul-de-poule, 1 fouet, 1 spatule maryse ou cuillère en bois, 1 thermomètre sonde.
+- **Ingrédients pour 4 personnes :**
+  - Lait entier fermier : $500	ext{ ml}$ (ou $250	ext{ ml}$ lait + $250	ext{ ml}$ crème liquide)
+  - Jaunes d'œufs frais : $4	ext{ à }5$ (environ $80	ext{ g}$)
+  - Sucre semoule : $80	ext{ g}$
+  - Gousse de vanille Bourbon : 1 pièce
+
+##### Protocole Pas à Pas :
+1. **L'Infusion Aromatique :** Fendre la gousse de vanille, gratter les grains et chauffer avec le lait jusqu'au frémissement ($80^\circ\mathrm{C}$). Couvrir et laisser infuser 15 minutes hors du feu.
+2. **Le Blanchiment Doux :** Fouetter énergiquement les jaunes d'œufs et le sucre dans le cul-de-poule jusqu'à ce que le mélange pâlisse et fasse le ruban.
+3. **Le Tempérage :** Verser la moitié du lait chaud infusé sur les jaunes en remuant constamment au fouet pour acclimater thermiquement les protéines sans les surprendre.
+4. **La Coagulation Contrôlée à la Spatule :** Reverser dans la casserole. Cuire à feu très doux en formant des « 8 » réguliers sur le fond avec la spatule pour éviter tout point chaud.
+5. **Le Seuil Critique des 82°C :** À $82^\circ\mathrm{C}$, la crème « nappe » la cuillère : passer le doigt sur le dos de la spatule, le trait tracé reste net sans que la crème ne coule. **Retirer immédiatement du feu** et transvaser dans un récipient froid posé sur des glaçons pour stopper la cuisson.
+
+---
+
+### 🍳 Fiche Recette 6 : La Sauce Hollandaise Émulsionnée Chaude {#recette-sauce-hollandaise}
+
+*L'art de l'émulsion lipidique chaude : l'union du jaune d'œuf et du beurre clarifié à 58°C.*
+
+- **Temps de préparation :** 10 minutes | **Temps de cuisson :** 5 minutes
+- **Minimalisme Instrumental :** 1 cul-de-poule inox posé sur une casserole d'eau chaude (bain-marie), 1 fouet.
+- **Ingrédients :** 3 jaunes d'œufs, $150	ext{ g}$ de beurre clarifié tiède, 1 cuillère à soupe de jus de citron, 1 pincée de sel et de piment de Cayenne.
+
+##### Protocole Pas à Pas :
+1. **Le Sabayon Initial :** Dans le cul-de-poule tiède hors feu, fouetter les jaunes avec 2 cuillères à soupe d'eau froide et le sel jusqu'à obtenir une mousse aérée.
+2. **Le Bain-Marie Doux :** Poser le cul-de-poule au-dessus d'une eau frémissante (qui ne doit pas toucher le fond du bol). Fouetter en continu en « 8 ». La température doit osciller entre $55^\circ\mathrm{C}$ et $60^\circ\mathrm{C}$. Le mélange épaissit en crème onctueuse.
+3. **L'Émulsion au Filet :** Tout en fouettant vivement, verser le beurre clarifié tiède goutte à goutte au début, puis en mince filet régulier. L'émulsion prend comme une mayonnaise chaude.
+4. **L'Équilibrage :** Hors du feu, incorporer le jus de citron frais qui détend la viscosité et apporte l'acidité tranchante indispensable.

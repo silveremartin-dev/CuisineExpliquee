@@ -8,30 +8,7 @@
 
 Avant l'avènement des autoroutes frigorifiques et de l'huile de tournesol industrielle raffinée, la cuisine du monde entier était strictement dictée par la nature du **corps gras disponible localement**. C'est le corps gras qui détermine le point de fumée, le mode de transfert thermique et l'architecture aromatique d'un plat de terroir.
 
-```
-                            L'EUROPE DES TROIS GRAISSES
-                            
-         ┌──────────────────────────────────────────────────────────────┐
-         │ LE MONDE DU BEURRE ET DE LA CRÈME (Nord-Ouest)               │
-         │ Normandie, Bretagne, Irlande, Danemark, Flandres             │
-         │ - Climat océanique tempéré et humide, prairies laitières     │
-         │ - Cuissons douces ($<130^\circ\mathrm{C}$), suer, lier       │
-         └──────────────────────────────┬───────────────────────────────┘
-                                        │
-         ┌──────────────────────────────┴───────────────────────────────┐
-         │ LE MONDE DE LA GRAISSE D'OIE ET DE CANARD (Sud-Ouest)        │
-         │ Périgord, Gascogne, Béarn, Alsace, Europe centrale           │
-         │ - Préservation séculaire par confisage sous chape étanche   │
-         │ - Cuissons chaudes croustillantes, pommes sarladaises        │
-         └──────────────────────────────┬───────────────────────────────┘
-                                        │
-         ┌──────────────────────────────┴───────────────────────────────┐
-         │ LE MONDE DE L'HUILE D'OLIVE (Bassin Méditerranéen)          │
-         │ Provence, Toscane, Andalousie, Grèce, Maghreb, Levant        │
-         │ - Sol calcaire aride et garrigue, oliviers millénaires       │
-         │ - Saisies vives, émulsions froides (Aïoli, Pesto), fraîcheur │
-         └──────────────────────────────────────────────────────────────┘
-```
+![La géopolitique des trois corps gras fondateurs : beurre du Nord, graisse de volaille du Sud-Ouest et huile d'olive méditerranéenne](figures/livre_4/fig_carte_trois_graisses_terroirs.svg)``
 
 ### A. Le Monde du Beurre et de la Crème : La Douceur Tempérée du Nord
 Dans les plaines humides de Normandie, de Bretagne et des îles britanniques, l'herbe grasse pousse dix mois sur douze, favorisant l'élevage bovin laitier.
@@ -65,3 +42,35 @@ Avant le retour des caravelles de Christophe Colomb du Nouveau Monde, **aucun de
 Au XXIe siècle, la mondialisation bien comprise n'est pas l'uniformisation insipide des chaînes de restauration rapide : c'est l'emprunt réciproque des techniques d'excellence :
 - **L'infusion du Dashi Japonais dans les sauces françaises :** Les chefs parisiens contemporains abandonnent les liaisons lourdes à la farine pour adopter le bouillon d'algue *kombu* (acide glutamique naturel pur) et de bonite séchée (inosine monophosphate), décuplant la profondeur umami des jus de volaille sans aucune lourdeur lipidique.
 - **Le Wok asiatique et la Maillard Express :** La poêle fine en acier carbone culottée et la flamme torche du brûleur asiatique (*Wok Hei*, le « souffle du wok ») réalisent la pyrolyse superficielle des légumes en 45 secondes chrono, préservant ainsi l'intégralité de la vitamine C et le croquant cellulaire que la cuisine bourgeoise d'autrefois ramollissait en cuissons prolongées.
+
+
+---
+
+### 🍳 Fiche Recette 11 : Les Pommes Sarladaises à la Graisse de Canard {#recette-pommes-sarladaises}
+
+*La maîtrise du croustillant par la graisse noble du Sud-Ouest : tolérer 190°C sans noircir.*
+
+- **Temps de préparation :** 15 minutes | **Temps de cuisson :** 25 minutes
+- **Minimalisme Instrumental :** 1 poêle en fonte ou sauteuse en acier, 1 spatule en bois.
+- **Ingrédients :** $800	ext{ g}$ de pommes de terre à chair ferme (Charlotte ou Amandine), $3	ext{ c. à soupe}$ de graisse de canard filtrée, 4 gousses d'ail écrasées, persil plat haché, fleur de sel.
+
+##### Protocole Pas à Pas :
+1. **La Découpe Régulière :** Éplucher et couper les pommes de terre en rondelles de $3	ext{ mm}$ d'épaisseur. Les rincer à l'eau froide pour enlever l'amidon de coupe, puis les **sécher très soigneusement** dans un torchon propre.
+2. **Le Bain Chaud :** Faire fondre la graisse de canard dans la poêle en fonte sur feu vif jusqu'à frémissement léger ($180^\circ\mathrm{C}$).
+3. **Le Rissolage à Découvert :** Déposer les pommes de terre. Laisser dorer 10 minutes sans trop remuer pour créer une première face croustillante.
+4. **La Finition Persillée :** Retourner, baisser le feu, couvrir 10 minutes pour cuire le cœur à la vapeur interne, puis découvrir, ajouter l'ail écrasé et le persil, et faire sauter 3 minutes à feu vif. Saler en sortie.
+
+---
+
+### 🍳 Fiche Recette 12 : L'Aïoli Provençal Traditionnel au Mortier de Marbre {#recette-grand-aioli}
+
+*L'émulsion originelle sans œuf : le miracle mécanique des mucilages de l'ail et de l'huile d'olive.*
+
+- **Temps de préparation :** 15 minutes
+- **Minimalisme Instrumental :** 1 mortier en marbre ou grès lourd, 1 pilon en buis.
+- **Ingrédients :** 6 gousses d'ail violet très frais, $200	ext{ ml}$ d'huile d'olive vierge extra fruitée douce, 1 pincée de gros sel marin, quelques gouttes de jus de citron.
+
+##### Protocole Pas à Pas :
+1. **Le Broyage Cellulaire :** Dégermer les gousses d'ail. Les placer dans le mortier avec le gros sel. Écraser au pilon par rotations fermes jusqu'à destruction totale des parois cellulaires et obtention d'une pommade translucide et collante.
+2. **L'Amorçage de l'Émulsion :** Ajouter une cuillère à café d'eau tiède ou de jus de citron pour apporter la phase aqueuse nécessaire.
+3. **Le Fil d'Huile au Pilon :** Tout en tournant le pilon de manière ininterrompue contre les parois du mortier dans le même sens, verser l'huile d'olive au goutte-à-goutte. L'émulsion se forme spontanément, blanchissant et prenant la consistance d'un beurre ferme. Le pilon doit tenir debout tout seul au centre du mortier.

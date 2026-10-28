@@ -36,26 +36,7 @@ Que devient un bœuf de race à viande de $700\text{ kg}$ sur pied élevé penda
 
 Dans un foyer occidental moyen, **$30\,\%$ du poids de la poubelle** est constitué de matière organique humide (épluchures de légumes, os, marc de café, coquilles d'œufs, restes de repas). Le mode de tri transforme radicalement leur destin écologique.
 
-```
-                      ┌─────────────────────────────────┐
-                      │    DÉCHETS DE LA CUISINE        │
-                      └────────────────┬────────────────┘
-                                       │
-            ┌──────────────────────────┴──────────────────────────┐
-            ▼                                                     ▼
-┌───────────────────────────────┐             ┌───────────────────────────────┐
-│       POUBELLE BIO            │             │        POUBELLE NOIRE         │
-│   (Biodéchets séparés)        │             │    (Ordures résiduelles)      │
-└───────────────┬───────────────┘             └───────────────┬───────────────┘
-                │                                             │
-      ┌─────────┴─────────┐                         ┌─────────┴─────────┐
-      ▼                   ▼                         ▼                   ▼
-┌───────────┐       ┌───────────┐             ┌───────────┐       ┌───────────┐
-│Méthanisa- │       │Compostage │             │Incinéra-  │       │Enfouisse- │
-│tion       │       │agricole   │             │tion       │       │ment       │
-│(Biogaz)   │       │(Humus sol)│             │(Vapeur/Él)│       │(Lixiviats)│
-└───────────┘       └───────────┘             └───────────┘       └───────────┘
-```
+![Le destin des déchets de cuisine : valorisation en poubelle bio versus hérésie du sac noir](figures/livre_2/fig_flux_dechets_cuisine.svg)``
 
 ### A. La Poubelle Noire (Ordures Ménagères Non Triées) : Le Désastre Énergétique
 Quand les biodéchets humides ($80\,\%$ d'eau) sont jetés dans le sac noir ordinaire :

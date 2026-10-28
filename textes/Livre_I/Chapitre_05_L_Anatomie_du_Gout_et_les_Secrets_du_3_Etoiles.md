@@ -95,3 +95,53 @@ Ce contraste perpétuel maintient l'attention du cerveau en éveil et empêche l
 #### ⚠️ Point d'Attention : Ne Jamais Monter au Beurre sur le Feu Vif !
 Si vous incorporez votre beurre dans une sauce qui bout à plus de $85^\circ\mathrm{C}$, l'émulsion se brise immédiatement (*la sauce tranche*) : le gras se sépare de l'eau et forme une flaque d'huile jaune disgracieuse et indigeste. L'émulsion exige une température modérée ($55\text{--}65^\circ\mathrm{C}$) où les phospholipides naturels du beurre peuvent déployer leurs têtes polaires pour emprisonner les gouttelettes d'eau.
 :::
+
+
+---
+
+### 🍳 Fiche Recette 8 : Le Déglaçage Minute et la Sauce Réduite au Vin {#recette-deglacage-minute}
+
+*La capture des sucs de Maillard : dissoudre les composés hydrophiles fixés au métal pour en faire un velours aromatique.*
+
+- **Temps de préparation :** 3 minutes | **Temps de cuisson :** 5 minutes
+- **Minimalisme Instrumental :** La poêle ou sauteuse ayant servi à cuire la viande, 1 spatule plate en bois.
+- **Ingrédients :** Sucs de cuisson bruns, 1 échalote finement ciselée, $100	ext{ ml}$ de vin rouge ou blanc sec, $100	ext{ ml}$ de fond de veau ou bouillon corsé, $30	ext{ g}$ de beurre très froid en cubes.
+
+##### Protocole Pas à Pas :
+1. **Le Dégraissage Partiel :** Retirer la viande cuite et réserver sous aluminium tiède. Jeter l'excédent de graisse brûlée en laissant les sucs caramélisés attachés au fond.
+2. **Le Suage de l'Échalote :** Ajouter l'échalote sur feu moyen pendant 1 minute.
+3. **Le Choc Thermique du Déglaçage :** Verser le vin d'un coup. Le liquide bout instantanément : gratter vigoureusement le fond avec la spatule de bois pour détacher et dissoudre tous les sucs caramélisés.
+4. **La Réduction des Deux Tiers :** Laisser réduire à gros bouillons jusqu'à consistance sirupeuse.
+5. **Le Montage au Beurre Froid :** Éteindre le feu. Ajouter les dés de beurre glacé en faisant tournoyer la poêle par rotations douces : le beurre fond sans se dissocier, émulsionnant la sauce en un miroir brillant et soyeux.
+
+---
+
+### 🍳 Fiche Recette 9 : Le Consommé Clarifié à l'Albumine d'Œuf {#recette-consomme-clarifie}
+
+*Le filtre macromoléculaire : transformer un bouillon trouble en un nectar d'or limpide comme du cristal.*
+
+- **Temps de préparation :** 15 minutes | **Temps de cuisson :** 35 minutes
+- **Minimalisme Instrumental :** 1 grande casserole, 1 passoire, 1 étamine de lin fin.
+- **Ingrédients :** $1{,}5	ext{ L}$ de bouillon de bœuf ou de volaille refroidi et dégraissé, 2 blancs d'œufs crus battus mousseux, 1 blanc de poireau émincé, 1 carotte râpée.
+
+##### Protocole Pas à Pas :
+1. **Le Mélange à Froid :** Mélanger les légumes râpés et les blancs d'œufs fouettés dans le bouillon **totalement froid**.
+2. **La Montée Thermique Lente :** Poser sur feu moyen sans couvercle. En chauffant, les blancs d'œufs coagulent progressivement vers $62^\circ\mathrm{C}$ et montent à la surface en formant un « chapeau » spongieux.
+3. **Le Tamis Biologique :** Ce chapeau agit comme un filtre microscopique qui emprisonne toutes les particules colloïdales en suspension. Laisser frémir tout doucement 30 minutes sans jamais remuer.
+4. **La Filtration :** À l'aide d'une louche, percer délicatement le centre du chapeau et prélever le consommé cristallin à travers l'étamine.
+
+---
+
+### 🍳 Fiche Recette 10 : Le Roux et la Sauce Béchamel Veloutée Sans Grumeaux {#recette-sauce-bechamel}
+
+*L'enrobage lipidique de l'amidon : comment empêcher les grains de farine de s'agglomérer en blocs collants.*
+
+- **Temps de préparation :** 5 minutes | **Temps de cuisson :** 10 minutes
+- **Minimalisme Instrumental :** 1 casserole inox, 1 fouet métallique.
+- **Ingrédients :** $50	ext{ g}$ de beurre, $50	ext{ g}$ de farine T55, $500	ext{ ml}$ de lait entier froid, noix de muscade râpée, sel fin, poivre blanc.
+
+##### Protocole Pas à Pas :
+1. **La Fonte du Beurre :** Faire fondre le beurre à feu doux sans le laisser dorer.
+2. **La Torréfaction du Roux :** Verser toute la farine d'un seul coup. Mélanger au fouet pendant 2 minutes à feu doux : la matière grasse enrobe chaque grain d'amidon d'une pellicule lipidique étanche (le roux « sable » et blanchit).
+3. **Le Choc Thermique Inversé :** Verser le lait **froid** d'un seul coup sur le roux chaud tout en fouettant vivement. Le lait froid donne le temps aux grains d'amidon de se disperser individuellement dans le liquide avant de commencer à gonfler.
+4. **La Gélatinisation :** Porter à ébullition douce en continuant de fouetter. Vers $85^\circ\mathrm{C}$, la sauce épaissit comme par enchantement en un velouté fluide, lisse et brillant. Laisser cuire 2 minutes pour éliminer le goût de farine crue, assaisonner de muscade et sel.
