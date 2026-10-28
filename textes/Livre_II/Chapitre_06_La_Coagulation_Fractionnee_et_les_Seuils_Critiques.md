@@ -1,4 +1,4 @@
-# CHAPITRE 06 — La Coagulation Fractionnée et les Seuils Critiques de l'Œuf
+# CHAPITRE 10 — La Coagulation Fractionnée et les Seuils Critiques de l'Œuf
 
 > « Un œuf n'est pas un bloc homogène qui cuit à 100°C : c'est une symphonie de protéines dont chaque instrument entre en scène à un degré précis. »  
 > — Hervé This, *Casseroles et éprouvettes*

@@ -5,55 +5,78 @@
 
 ---
 
-## 1. TRAITÉS ANTIQUES, MÉDIÉVAUX ET PATRIMONIAUX
+## 1. TRAITÉS FONDAMENTAUX, PATRIMONIAUX ET HISTORIQUES
 
-- **Apicius (Marcus Gavius Apicius)** — *De re coquinaria* (Ier - IVe siècle).  
-  *Édition de référence :* Texte établi et traduit par J. André, Les Belles Lettres, Paris, 1974.  
-  Le corpus fondateur de la cuisine romaine antique. Documente l'usage massif du garum (protéolyse enzymatique de poissons), des acides (vinaigre, verjus) et du miel pour la conservation et l'assaisonnement.
+- **Marcus Gavius Apicius** — *De re coquinaria* (Ier - IVe siècle).  
+  *Édition critique établie et traduite par J. André (Les Belles Lettres, Paris).*  
+  *Mention critique :* **[Traité historique fondamental]**  
+  Le corpus fondateur de la cuisine impériale romaine. Documente l'usage de la protéolyse enzymatique par le garum (l'ancêtre romain du nuoc-mâm), la conservation par le miel et le vinaigre, et l'assaisonnement poivré précurseur de l'umami.
+
 - **Guillaume Tirel dit Taillevent** — *Le Viandier* (vers 1380).  
-  *Édition de référence :* Manuscrit de la Bibliothèque Nationale de France (BnF Rés. V. 841).  
-  Le grand classique de la cuisine médiévale courtoise. Maîtrise des cuissons en deux temps (bouilli puis rôti), sauces non grasses liées au pain rassis trempé et acidifiées au verjus, usage hygiéniste et aromatique des épices exotiques.
+  *Édition de référence d'après le manuscrit de la Bibliothèque Nationale de France.*  
+  *Mention critique :* **[Traité historique fondamental]**  
+  L'apogée de la gastronomie médiévale européenne. Enseigne les cuissons combinées (bouilli préalable puis rôti sur braise) et les sauces légères et vives sans matière grasse superflue, liées au pain rassis et acidifiées au verjus de raisin vert.
+
 - **Anonyme bourgeois** — *Le Ménagier de Paris* (1393).  
-  Traité d'économie domestique et culinaire. Contient des observations empiriques remarquables sur la conservation des denrées, le salage des viandes et l'art de tenir un cellier sans putréfaction.
+  *Mention critique :* **[Autonomie domestique et cellier]**  
+  Traité pratique bourgeois remarquable. Guide d'autonomie pour tenir un foyer, préserver les viandes par saumurage, clarifier les vins et confectionner des conserves domestiques bien avant l'avènement du froid moderne.
+
 - **Bartolomeo Scappi** — *Opera dell'arte del cucinare* (Venise, 1570).  
-  Premier traité moderne illustré de planches gravées décrivant l'agencement rationnel des cuisines, les batteries de casseroles en cuivre étamé, les broches mécaniques et la cuisson des poissons selon leur morphologie.
+  *Mention critique :* **[Pionnier du minimalisme instrumental]**  
+  Cuisinier privé des papes de la Renaissance au Vatican. Premier ouvrage illustré de planches de découpe et de coutellerie, instaurant l'usage raisonné du bain-marie et la distinction morphologique des cuissons des chairs.
+
 - **François Pierre de La Varenne** — *Le Cuisinier François* (1651).  
-  Marque la rupture avec la cuisine médiévale épicée et l'acte de naissance de la cuisine française classique : invention du roux (farine + beurre cuits pour lier les sauces), des fonds de veau et valorisation des saveurs naturelles des légumes au beurre.
+  *Mention critique :* **[L'acte de naissance de la cuisine française]**  
+  La rupture avec les épices lourdes du Moyen Âge au profit du beurre frais, des herbes indigènes (estragon, cerfeuil, laurier) et l'invention fondatrice du roux de farine pour napper les sauces.
+
 - **Jean Anthelme Brillat-Savarin** — *Physiologie du goût, ou Méditations de gastronomie transcendante* (1825).  
-  Ouvrage philosophique et précurseur de la psycho-physiologie sensorielle. Analyse de la mécanique du goût, de l'olfaction rétro-nasale, de la digestion et des effets métaboliques de l'alimentation sur le corps.
-- **Nicolas Appert** — *L'Art de conserver, pendant plusieurs années, toutes les substances animales et végétales* (Paris, Patris, 1810).  
-  Livre fondateur de la conserve moderne (appertisation). Démonstration empirique de la stérilisation thermique hermétique soixante ans avant les découvertes de Pasteur.
+  *Mention critique :* **[La référence philosophique et sensorielle]**  
+  L'ouvrage le plus spirituel et le plus profond jamais écrit sur l'acte de manger. Précurseur génial de la psycho-physiologie buccale, de l'olfaction rétro-nasale et de la thermodynamique de la friture.
+
 - **Auguste Escoffier** — *Le Guide Culinaire* (1903, avec Philéas Gilbert et Émile Fétu).  
-  La bible monumentale de la haute gastronomie codifiée. Rationalisation des brigades de cuisine, codification universelle des 5 sauces mères (espagnole, velouté, béchamel, tomate, hollandaise) et précision millimétrée des gestes.
+  *Mention critique :* **[La bible absolue de la codification]**  
+  Législation définitive de la grande cuisine classique. Structure militaire des brigades, codification universelle des cinq sauces mères (espagnole, velouté, béchamel, tomate, hollandaise) et épure du geste technique.
+
+- **Collectif éditorial Domus** — *La Cuillère d'argent* (*Il Cucchiaio d'Argento*, Editoriale Domus, Milan, 1950 ; Édition française Phaidon).  
+  *Mention critique :* **[Grand classique universel de la cuisine familiale]**  
+  Véritable trésor patrimonial de la cuisine domestique italienne. Transmet la noblesse du geste humble, l'art des pâtes fraîches, la maîtrise des cuissons à la poêle et la vérité nue des produits de saison sans artifice.
 
 ---
 
-## 2. ANTHROPOLOGIE ÉVOLUTIVE ET BIOLOGIE DU FEU
+## 2. ANTHROPOLOGIE ÉVOLUTIVE ET BIOLOGIE DE LA NUTRITION
 
-- **Richard Wrangham** — *Catching Fire: How Cooking Made Us Human* (Basic Books, New York, 2009 ; traduction française : *Quand la cuisine fit l'homme*, Flammarion).  
-  L'ouvrage révolutionnaire qui démontre que la cuisson par le feu a précédé et conditionné l'émergence d'Homo sapiens par réduction du tube digestif et allocation d'énergie au cerveau.
-- **Claude Lévi-Strauss** — *Le Cru et le Cuit* (*Mythologiques*, tome 1, Plon, Paris, 1964).  
-  L'analyse structurale du triangle culinaire (le cru, le cuit, le pourri) et le passage universel de la nature à la culture par la médiation du foyer.
-- **Louis Pasteur** — *Études sur la bière* (1876) et *Études sur le vin et le vinaigre* (1866).  
-  Découverte des micro-organismes vivants, des ferments lactiques et acétiques, et formalisation de la pasteurisation pour assainir les boissons fermentées.
+- **Richard Wrangham** — *Catching Fire: How Cooking Made Us Human* (Basic Books ; traduction française : *Quand la cuisine fit l'homme*, Flammarion).  
+  *Mention critique :* **[Ouvrage révolutionnaire d'anthropologie]**  
+  Démontre scientifiquement que la cuisson par le feu a précédé et engendré *Homo sapiens* : l'externalisation de la digestion a réduit le tube digestif et permis le triplement du volume cérébral humain.
+
+- **Claude Lévi-Strauss** — *Le Cru et le Cuit* (*Mythologiques*, tome 1, Plon, 1964).  
+  *Mention critique :* **[Penser l'humain par la cuisine]**  
+  L'analyse structurale du triangle culinaire universel (le cru, le cuit, le pourri). Comment le passage par le foyer transforme l'aliment biologique en acte de culture et de lien social.
 
 ---
 
-## 3. GASTRONOMIE MOLÉCULAIRE ET SCIENCE MODERNE DE LA CASSEROLE
+## 3. GASTRONOMIE MOLÉCULAIRE ET SCIENCE DE LA CASSEROLE
 
-- **Harold McGee** — *On Food and Cooking: The Science and Lore of the Kitchen* (Scribner, New York, 1984, révisé en 2004 ; traduction française : *Le Grand Précis des sciences culinaires*).  
-  La véritable encyclopédie mondiale de référence en physico-chimie des aliments. Chaque chapitre décortique la composition atomique, les enzymes, les émulsions et les transferts thermiques de tous les règnes alimentaires.
-- **Nicholas Kurti & Hervé This** — *Les Secrets de la casserole* (Belin, Paris, 1993) ; *Casseroles et éprouvettes* (Belin, 2002) ; *La Gastronomie moléculaire* (Dunod, 2002).  
-  Les fondateurs de la gastronomie moléculaire et physique. Démystification expérimentale des tours de main, étude rigoureuse de la coagulation des œufs (invention de l'œuf à 64°C), des mousses et des émulsions.
-- **Heston Blumenthal** — *The Fat Duck Cookbook* (Bloomsbury, Londres, 2008) ; *In Search of Perfection* (Bloomsbury, 2006).  
-  Recherche obstinée de l'excellence sensorielle par la méthode scientifique : extraction aromatique des épluchures de pommes de terre pour la purée, triple cuisson des frites, analyse psychologique du goût et mémoire multisensorielle.
-- **Ferran Adrià, Juli Soler & Albert Adrià** — *A Day at elBulli* (Phaidon, 2008) ; *elBulli 2005-2011* (Catalogue Raisonné Général).  
-  La révolution avant-gardiste catalane : déconstruction radicale des textures (gélifications à l'agar-agar, sphérifications aux alginates, émulsions au siphon sans matière grasse, cryo-cuisson à l'azote liquide).
-- **Nathan Myhrvold, Chris Young & Maxime Bilet** — *Modernist Cuisine: The Art and Science of Cooking* (The Cooking Lab, 6 volumes, 2011).  
-  Le monument absolu de la technique culinaire du XXIe siècle. Imagerie en coupe de récipients, thermodynamique ultra-précise et vulgarisation visuelle spectaculaire.
-- **J. Kenji López-Alt** — *The Food Lab: Better Home Cooking Through Science* (W. W. Norton, New York, 2015).  
-  L'application magistrale de la méthode expérimentale à la cuisine domestique quotidienne : salage à sec des viandes, physique du smash burger, cuisson parfaite des œufs mollets.
-- **Samin Nosrat** — *Salt, Fat, Acid, Heat: Mastering the Elements of Good Cooking* (Simon & Schuster, 2017).  
-  Synthèse limpide et intuitive des quatre principes cardinaux qui régissent l'équilibre gustatif de tout aliment.
-- **Arthur Le Caisne** — *La cuisine c'est aussi de la chimie* (Hachette Pratique, 2013) ; *Pourquoi les spaghetti descendent au fond ?* (2020).  
-  Ouvrages pédagogiques clairs démystifiant les erreurs courantes en cuisine ménagère avec humour et rigueur graphique.
+- **Harold McGee** — *On Food and Cooking: The Science and Lore of the Kitchen* (Scribner ; traduction française : *Le Grand Précis des sciences culinaires*).  
+  *Mention critique :* **[La référence mondiale incontournable]**  
+  L'encyclopédie exhaustive de chevet de tous les chefs contemporains. Décortique atome par atome les transformations des émulsions, des mousses, des protéines animales et des parois végétales.
+
+- **Nicholas Kurti & Hervé This** — *Les Secrets de la casserole* (Belin, 1993) ; *Casseroles et éprouvettes* (Belin, 2002).  
+  *Mention critique :* **[Gastronomie moléculaire originelle]**  
+  Les inventeurs de la discipline en 1988. Déconstruction expérimentale des dictons de grand-mère, découverte de la cuisson fractionnée de l'œuf à 64°C et réhabilitation physique des sauces émulsionnées.
+
+- **Heston Blumenthal** — *The Fat Duck Cookbook* (Bloomsbury) ; *In Search of Perfection* (Bloomsbury).  
+  *Mention critique :* **[L'excellence sensorielle par la méthode scientifique]**  
+  Recherche obstinée de l'extraction aromatique (infusion des pelures de pommes de terre pour la purée), de la triple cuisson des frites et de la mémoire affective des saveurs.
+
+- **Nathan Myhrvold, Chris Young & Maxime Bilet** — *Modernist Cuisine: The Art and Science of Cooking* (The Cooking Lab, 6 volumes).  
+  *Mention critique :* **[Le monument technique du XXIe siècle]**  
+  Photographie en coupe de récipients au cœur de la flamme, thermodynamique de précision et démythification des procédés industriels au service de la créativité.
+
+- **J. Kenji López-Alt** — *The Food Lab: Better Home Cooking Through Science* (W. W. Norton).  
+  *Mention critique :* **[Le meilleur manuel pratique contemporain]**  
+  Application brillante de la démarche expérimentale aux gestes quotidiens : le salage à sec 45 minutes avant la saisie, la poêle en fonte et la physique du smash burger.
+
+- **Samin Nosrat** — *Salt, Fat, Acid, Heat: Mastering the Elements of Good Cooking* (Simon & Schuster).  
+  *Mention critique :* **[Best-seller mondial d'initiation]**  
+  Synthèse limpide et universelle des quatre piliers fondamentaux pour assaisonner d'instinct sans jamais avoir besoin de livre de recettes.

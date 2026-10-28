@@ -1,4 +1,4 @@
-# CHAPITRE 03 — La Mécanique des Pâtes, l'Urgence du Feu Gras et la Survie du Frigo
+# CHAPITRE 04 — La Mécanique des Pâtes, l'Urgence du Feu Gras et la Survie du Frigo
 
 > « Il n'y a pas de geste anodin en cuisine. Jeter cent grammes de blé dur dans de l'eau tiède est un désastre physique ; les jeter dans une eau saturée de bouillonnement est un triomphe de la gélatinisation. »
 
@@ -32,6 +32,8 @@ Contrairement à la légende contemporaine qui y voit l'intervention de la crèm
 ## 2. RECETTE FONDATRICE PAS À PAS : LES VRAIES SPAGHETTI ALLA CARBONARA
 
 *L'émulsion d'or jaune : zéro crème fraîche, zéro matière grasse ajoutée, pure physique de l'œuf et de l'amidon.*
+
+![Spaghetti à la carbonara dorée : émulsion veloutée de jaunes d'œufs, pecorino et guanciale](figures/nourriture/spaghetti_carbonara.jpg)
 
 - **Temps de préparation :** 10 minutes
 - **Temps de cuisson :** 10 minutes

@@ -1,4 +1,4 @@
-# CHAPITRE 07 — L'Art des Courses, la Psychologie du Caddie et la Démystification Industrielle
+# CHAPITRE 08 — L'Art des Courses, la Psychologie du Caddie et la Démystification Industrielle
 
 > « On ne cuisine pas dans le vide : le destin de votre santé et la qualité de vos assiettes se scellent dès le franchissement des portes du marché ou du supermarché. Comprendre la psychologie de l'achat et l'ingénierie agroalimentaire est le premier bouclier du cuisinier libre. »
 

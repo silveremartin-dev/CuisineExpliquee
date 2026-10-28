@@ -1,4 +1,4 @@
-# CHAPITRE 05 — L'Anatomie du Goût, l'Évolution Culturelle et les Secrets du 3 Étoiles
+# CHAPITRE 06 — L'Anatomie du Goût, l'Évolution Culturelle et les Secrets du 3 Étoiles
 
 > « Le goût n'est pas une simple réaction chimique sur la langue : c'est un souvenir, une émotion et une symphonie de textures. Ce qui fait la grandeur d'un plat trois étoiles ne réside pas dans le cristal de la table, mais dans la rigueur invisible de ce qui se passe dans la casserole. »
 

@@ -21,7 +21,7 @@
   margin: (top: 2.5cm, bottom: 2.5cm, left: 2.2cm, right: 2.2cm),
   header: context {
     let page-num = counter(page).get().first()
-    if page-num > 3 [
+    if page-num > 4 [
       #let cur-h2 = query(heading.where(level: 2)).filter(h => h.location().page() == here().position().page)
       #let ch-title = if cur-h2.len() > 0 {
         cur-h2.first().body
@@ -78,26 +78,25 @@
 
 // Niveaux de Titres Éditoriaux
 #show heading.where(level: 1): it => {
-  pagebreak()
-  v(1.0cm)
+  v(0.8cm)
   align(center)[
     #block(
       fill: rgb("#fffbeb"),
-      stroke: (top: 2.5pt + c-gold, bottom: 2.5pt + c-gold),
-      inset: (y: 20pt, x: 16pt),
+      stroke: (top: 2pt + c-gold, bottom: 2pt + c-gold),
+      inset: (y: 16pt, x: 14pt),
       width: 100%
     )[
-      #text(size: 16pt, weight: "bold", fill: c-bordeaux, font: "Liberation Sans", tracking: 0.5pt)[#it.body]
+      #text(size: 15pt, weight: "bold", fill: c-bordeaux, font: "Liberation Sans", tracking: 0.5pt)[#it.body]
     ]
   ]
-  v(0.8cm)
+  v(0.6cm)
 }
 
 #show heading.where(level: 2): it => {
   v(0.6cm)
-  text(size: 13.5pt, weight: "bold", fill: c-bordeaux, font: "Liberation Sans")[#it.body]
+  text(size: 13pt, weight: "bold", fill: c-bordeaux, font: "Liberation Sans")[#it.body]
   v(-3pt)
-  line(length: 100%, stroke: 1.2pt + c-gold)
+  line(length: 100%, stroke: 1.0pt + c-gold)
   v(0.25cm)
 }
 
@@ -114,9 +113,9 @@
 // Signalétique Didactique et Boîtes Culinaire
 #let anecdote_historique(body) = block(
   fill: rgb("#fffbeb"),
-  stroke: (left: 4pt + c-gold),
+  stroke: (left: 3.5pt + c-gold),
   inset: (left: 14pt, right: 12pt, top: 10pt, bottom: 10pt),
-  radius: (right: 6pt),
+  radius: (right: 5pt),
   width: 100%,
   spacing: 1.2em,
   breakable: false
@@ -126,9 +125,9 @@
 
 #let truc_de_chef(body) = block(
   fill: rgb("#fefce8"),
-  stroke: (left: 4pt + rgb("#ca8a04")),
+  stroke: (left: 3.5pt + rgb("#ca8a04")),
   inset: (left: 14pt, right: 12pt, top: 10pt, bottom: 10pt),
-  radius: (right: 6pt),
+  radius: (right: 5pt),
   width: 100%,
   spacing: 1.2em,
   breakable: false
@@ -138,9 +137,9 @@
 
 #let point_attention(body) = block(
   fill: rgb("#fff1f2"),
-  stroke: (left: 4pt + rgb("#e11d48")),
+  stroke: (left: 3.5pt + rgb("#e11d48")),
   inset: (left: 14pt, right: 12pt, top: 10pt, bottom: 10pt),
-  radius: (right: 6pt),
+  radius: (right: 5pt),
   width: 100%,
   spacing: 1.2em,
   breakable: false
@@ -150,9 +149,9 @@
 
 #let oeil_molecule(body) = block(
   fill: rgb("#f0fdfa"),
-  stroke: (left: 4pt + c-teal),
+  stroke: (left: 3.5pt + c-teal),
   inset: (left: 14pt, right: 12pt, top: 10pt, bottom: 10pt),
-  radius: (right: 6pt),
+  radius: (right: 5pt),
   width: 100%,
   spacing: 1.2em,
   breakable: false
@@ -162,9 +161,9 @@
 
 #let positif(body) = block(
   fill: rgb("#f0fdf4"),
-  stroke: (left: 4pt + c-green),
+  stroke: (left: 3.5pt + c-green),
   inset: (left: 14pt, right: 12pt, top: 10pt, bottom: 10pt),
-  radius: (right: 6pt),
+  radius: (right: 5pt),
   width: 100%,
   spacing: 1.2em,
   breakable: false
@@ -174,9 +173,9 @@
 
 #let negatif(body) = block(
   fill: rgb("#fef2f2"),
-  stroke: (left: 4pt + c-red),
+  stroke: (left: 3.5pt + c-red),
   inset: (left: 14pt, right: 12pt, top: 10pt, bottom: 10pt),
-  radius: (right: 6pt),
+  radius: (right: 5pt),
   width: 100%,
   spacing: 1.2em,
   breakable: false
@@ -186,9 +185,9 @@
 
 #let cas_limite(body) = block(
   fill: rgb("#fffbeb"),
-  stroke: (left: 4pt + c-amber),
+  stroke: (left: 3.5pt + c-amber),
   inset: (left: 14pt, right: 12pt, top: 10pt, bottom: 10pt),
-  radius: (right: 6pt),
+  radius: (right: 5pt),
   width: 100%,
   spacing: 1.2em,
   breakable: false
@@ -209,50 +208,63 @@
 ]
 
 // ==========================================
-// 1. COUVERTURE GASTRONOMIQUE DE RÉFÉRENCE
+// 1. COUVERTURE PHOTOGRAPHIQUE GASTRONOMIQUE
 // ==========================================
-#align(center + horizon)[
-  #block(
-    fill: rgb("#1c1917"),
-    inset: 32pt,
-    radius: 14pt,
-    width: 95%
-  )[
-    #v(0.6cm)
-    #text(size: 13pt, weight: "bold", fill: rgb("#fbbf24"), tracking: 2pt, font: "Liberation Sans")[
-      SILVÈRE-MARTIN MICHIELLOT & ANTIGRAVITY
-    ]
-    #v(1.0cm)
-    #text(size: 30pt, weight: "bold", fill: white, font: "Liberation Serif")[
-      LA CUISINE EXPLIQUÉE
-    ]
-    #v(0.3cm)
-    #text(size: 14pt, weight: "bold", fill: rgb("#fed7aa"), font: "Liberation Sans")[
-      Principes Premiers, Maîtrise de la Matière et Minimalisme Instrumental
-    ]
-    #v(0.8cm)
-    #line(length: 60%, stroke: 2pt + rgb("#f59e0b"))
-    #v(0.8cm)
-    #text(size: 10.5pt, fill: rgb("#e7e5e4"), font: "Liberation Serif", style: "italic")[
-      Traité d'anthropologie, de biologie, de physique et de gestuelle appliquée aux fourneaux.\
-      De l'étincelle paléolithique à la thermodynamique des émulsions et des chairs.\
-      Apprendre à dompter le feu et les ingrédients avec cinq ustensiles fondamentaux.
-    ]
-    #v(1.2cm)
+#set page(margin: 0pt, header: none, footer: none)
+
+#block(width: 100%, height: 100%, fill: rgb("#1c1917"))[
+  // Image de couverture pleine largeur (légumes frais du marché)
+  #place(top + left)[
+    #image("figures/nourriture/couverture_legumes_marche.jpg", width: 100%, height: 52%, fit: "cover")
+  ]
+  
+  // Voile sombre et cartouche typographique
+  #place(bottom + left)[
     #block(
-      fill: rgb("#292524"),
-      inset: (x: 18pt, y: 10pt),
-      radius: 6pt
+      fill: rgb("#1c1917"),
+      width: 100%,
+      height: 52%,
+      inset: (x: 2.4cm, y: 1.8cm)
     )[
-      #text(size: 9.5pt, weight: "bold", fill: rgb("#fcd34d"), font: "Liberation Sans")[
-        ÉDITION INTÉGRALE DE RÉFÉRENCE — 2026
+      #v(0.2cm)
+      #text(size: 11pt, weight: "bold", fill: rgb("#fbbf24"), tracking: 3pt, font: "Liberation Sans")[
+        SILVÈRE-MARTIN MICHIELLOT & ANTIGRAVITY
       ]
+      #v(0.6cm)
+      #text(size: 28pt, weight: "bold", fill: white, font: "Liberation Serif")[
+        LA CUISINE EXPLIQUÉE
+      ]
+      #v(0.3cm)
+      #text(size: 13.5pt, weight: "medium", fill: rgb("#fed7aa"), font: "Liberation Sans")[
+        Principes Premiers, Maîtrise de la Matière et Minimalisme Instrumental
+      ]
+      #v(0.6cm)
+      #line(length: 100%, stroke: 1.5pt + rgb("#f59e0b"))
+      #v(0.5cm)
+      #text(size: 10pt, fill: rgb("#e7e5e4"), font: "Liberation Serif", style: "italic")[
+        Traité vivant d'anthropologie, de biologie et de thermodynamique appliquée aux fourneaux.\
+        Comprendre la matière brute, dompter le feu et cuisiner en toute liberté avec cinq instruments.
+      ]
+      #v(0.8cm)
+      #grid(
+        columns: (1fr, auto),
+        align: (left + horizon, right + horizon),
+        text(size: 9pt, weight: "bold", fill: rgb("#fcd34d"), font: "Liberation Sans")[
+          ÉDITION INTÉGRALE DE RÉFÉRENCE — 2026
+        ],
+        text(size: 8.5pt, fill: rgb("#a8a29e"), font: "Liberation Sans")[
+          LICENCE LIBRE CC BY-SA 4.0
+        ]
+      )
     ]
-    #v(0.6cm)
   ]
 ]
 
 #pagebreak()
+#set page(
+  paper: "a4",
+  margin: (top: 2.5cm, bottom: 2.5cm, left: 2.2cm, right: 2.2cm)
+)
 
 // ==========================================
 // 2. PAGE DE MENTIONS LÉGALES & LICENCE LIBRE
@@ -274,9 +286,10 @@
       \
       *Conception didactique et scientifique :* Silvère-Martin Michiellot & Antigravity.\
       *Illustrations vectorielles :* Antigravity Visual Engine (norme SVG Byrne-Culinaire).\
-      *Gravures patrimoniales & photographies scientifiques :* Wikimedia Commons (Domaine Public & Creative Commons).\
+      *Photographies culinaires & gravures :* Wikimedia Commons (Domaine Public & Creative Commons).\
       *Composition typographique :* Typst v0.15.1, polices Liberation Serif & Sans.\
-      *Dépôt de code et figures sources :* Dépôt GitHub public sous licence CC BY-SA 4.0.
+      *Dépôt de code et figures sources :* Dépôt GitHub public sous licence CC BY-SA 4.0.\
+      *Dépôt légal :* Octobre 2026 (Sans mention commerciale obligatoire).
     ]
   ]
 ]
@@ -321,14 +334,67 @@
 
 #pagebreak()
 
+// ==========================================
+// 5. TABLE DES RECETTES & PRÉPARATIONS PILIERS
+// ==========================================
+#align(center)[
+  #text(size: 15pt, weight: "bold", fill: c-bordeaux, font: "Liberation Sans")[
+    🍳 Table des Recettes et Préparations Piliers
+  ]
+  #v(-4pt)
+  #line(length: 60%, stroke: 1pt + c-gold)
+]
+#v(0.6cm)
+
+#block(
+  fill: rgb("#fffbeb"),
+  stroke: 0.5pt + rgb("#fde68a"),
+  inset: 16pt,
+  radius: 6pt,
+  width: 100%
+)[
+  #text(size: 10pt)[
+    Cette table réunit les dix protocoles fondamentaux pas à pas décrits dans l'ouvrage. Chaque recette constitue une application directe et immédiate des principes physico-chimiques exposés :
+
+    #v(0.3cm)
+    *Pains, Levains & Fromagerie Autonome*
+    - #link(<recette-pain-cocotte>)[Le Pain Cocotte d'Autonomie sans Pétrissage (*No-Knead Bread*)] --- _Chapitre 15_
+    - #link(<recette-fromage-frais>)[Le Fromage Frais Maison en 15 Minutes (Caillage Acide sans Présure)] --- _Chapitre 15_
+    - #link(<recette-glace-sel>)[La Glace Express sans Sorbetière (Abaissement Cryoscopique du Sel)] --- _Chapitre 15_
+
+    #v(0.2cm)
+    *Viandes, Poissons & Saisies à la Poêle*
+    - #link(<recette-steak-fonte>)[Le Pavé de Bœuf en Poêle Fonte & Arrosage au Beurre Mousseux (*Basting*)] --- _Chapitre 03_
+    - #link(<recette-deglacage-minute>)[Le Déglaçage Minute & Sauce Montée au Beurre Émulsionnée] --- _Chapitre 06_
+    - #link(<recette-ceviche-cabillaud>)[Le Vrai Ceviche de Cabillaud Mariné au Citron Vert & Piment Doux] --- _Chapitre 14_
+
+    #v(0.2cm)
+    *Pâtes & Émulsions d'Or*
+    - #link(<recette-carbonara-traditionnelle>)[Les Vraies Spaghetti alla Carbonara (L'Émulsion d'Or Jaune sans Crème)] --- _Chapitre 04_
+
+    #v(0.2cm)
+    *Cuisine Végétale & Protéines Alternatives*
+    - #link(<recette-dahl-lentilles>)[Le Dahl Réconfortant de Lentilles Corail au Cumin Torréfié & Coco] --- _Chapitre 12_
+    - #link(<recette-tofu-croustillant>)[Le Tofu Doré Ultra-Croustillant & son Laquage Tamari-Sésame] --- _Chapitre 12_
+    - #link(<recette-mousse-aquafaba>)[La Mousse au Chocolat Aérienne à l'Aquafaba (Zéro Œuf, Zéro Crème)] --- _Chapitre 12_
+
+    #v(0.2cm)
+    *Desserts & Maîtrise des Seuils Thermiques*
+    - #link(<recette-moelleux-chocolat>)[Le Moelleux au Chocolat Cœur Coulant (Gradient Thermique Calibré)] --- _Chapitre 13_
+    - #link(<recette-creme-anglaise>)[La Crème Anglaise Onctueuse Inratable (Seuil Critique de 83°C au Ruban)] --- _Chapitre 13_
+  ]
+]
+
+#pagebreak()
+
 
 = LIVRE I --- L'HOMME, LE FEU ET LA SURVIE : HISTOIRE, ANTHROPOLOGIE ET NUTRITION
 <livre-i-lhomme-le-feu-et-la-survie-histoire-anthropologie-et-nutrition>
 
 #divider()
 
-= CHAPITRE 00 --- L'Odyssée du Feu, la Nutrition de Survie et les Traités Anciens
-<chapitre-00-lodyssée-du-feu-la-nutrition-de-survie-et-les-traités-anciens>
+= CHAPITRE 01 --- L'Odyssée du Feu, la Nutrition de Survie et les Traités Anciens
+<chapitre-01-lodyssée-du-feu-la-nutrition-de-survie-et-les-traités-anciens>
 #quote(block: true)[
 « L'homme est le seul animal qui cuisine. En allumant le premier foyer,
 Homo erectus n'a pas seulement réchauffé sa nourriture : il a
@@ -616,8 +682,8 @@ de géants sur lesquelles nous sommes juchés :
 
 #divider()
 
-= CHAPITRE 01 --- L'Arsenal Minimal et la Maîtrise des Sens
-<chapitre-01-larsenal-minimal-et-la-maîtrise-des-sens>
+= CHAPITRE 02 --- L'Arsenal Minimal et la Maîtrise des Sens
+<chapitre-02-larsenal-minimal-et-la-maîtrise-des-sens>
 #quote(block: true)[
 « La perfection est atteinte non pas lorsqu'il n'y a plus rien à
 ajouter, mais lorsqu'il n'y a plus rien à retrancher. » \ --- Antoine de
@@ -845,8 +911,8 @@ maîtrisaient les transitions de phase par l'étalonnage de leurs sens :
 
 #divider()
 
-= CHAPITRE 02 --- La Thermodynamique du Feu et des Cuissons
-<chapitre-02-la-thermodynamique-du-feu-et-des-cuissons>
+= CHAPITRE 03 --- La Thermodynamique du Feu et des Cuissons
+<chapitre-03-la-thermodynamique-du-feu-et-des-cuissons>
 #quote(block: true)[
 « Cuire, c'est orchestrer une collision contrôlée entre des photons, des
 électrons et des molécules d'eau. »
@@ -866,7 +932,7 @@ et l'intérieur de l'aliment via trois mécanismes physiques distincts.
   ]
 )
 
-[] <sec-conduction> \#\#\# A. La Conduction Solide : La
+#hide[] <sec-conduction> \#\#\# A. La Conduction Solide : La
 Loi de Fourier La conduction s'opère par transmission directe de
 l'agitation thermique d'un atome à son voisin, sans déplacement de
 matière. $ arrow(q) = - k nabla T $ Où $q$ est la densité de flux
@@ -888,7 +954,7 @@ de l'épaisseur] pour atteindre le centre : $ t prop x^2 / alpha $
 Doubler l'épaisseur d'une pièce de viande ne double pas son temps de
 cuisson : cela le #strong[quadruple].
 
-[] <sec-convection> \#\#\# B. La Convection Fluide : La
+#hide[] <sec-convection> \#\#\# B. La Convection Fluide : La
 Loi de Refroidissement de Newton La convection implique le mouvement
 d'un fluide caloporteur (eau, huile fondue, air pulsé).
 $ q = h\(T_(upright("fluide")) - T_(upright("surface"))\) $ -
@@ -903,7 +969,7 @@ fine pellicule d'eau refroidie s'isole autour de l'aliment (couche
 limite laminaire). Remuer l'eau ou fouetter une sauce brise cette couche
 et multiplie par dix le coefficient de transfert thermique $h$.
 
-[] <sec-rayonnement> \#\#\# C. Le Rayonnement
+#hide[] <sec-rayonnement> \#\#\# C. Le Rayonnement
 Électromagnétique : La Loi de Stefan-Boltzmann Le rayonnement thermique
 ne nécessite aucun intermédiaire matériel : il se propage sous forme
 d'ondes infrarouges émises par les corps incandescents (braises,
@@ -935,7 +1001,7 @@ elle le cuit à la vapeur interne !
 
 #divider()
 
-[] <sec-maillard> \#\# 2. LA RÉACTION DE MAILLARD ET LE
+#hide[] <sec-maillard> \#\# 2. LA RÉACTION DE MAILLARD ET LE
 SECRET DES CHAIRS DORÉES
 
 Découverte en 1912 par le chimiste lorrain Louis-Camille Maillard, cette
@@ -972,6 +1038,13 @@ seconde, juste au moment de poser la pièce sur le feu.
 <recette-fondatrice-pas-à-pas-le-pavé-de-bœuf-en-poêle-fonte-arrosage-au-beurre-mousseux>
 #emph[L'archétype absolu de la saisie par conduction, de la réaction de
 Maillard et de la redistribution des sucs.]
+
+#figure(image("figures/nourriture/steak_poele_fonte.jpg", alt: "Pavé de bœuf saisi en poêle de fonte avec arrosage continu au beurre mousseux et herbes fraîches"),
+  caption: [
+    Pavé de bœuf saisi en poêle de fonte avec arrosage continu au beurre
+    mousseux et herbes fraîches
+  ]
+)
 
 - #strong[Temps de préparation :] 5 minutes (dont 45 min de salage à
   température ambiante)
@@ -1051,8 +1124,8 @@ cuillères de bois.
 
 #divider()
 
-= CHAPITRE 03 --- La Mécanique des Pâtes, l'Urgence du Feu Gras et la Survie du Frigo
-<chapitre-03-la-mécanique-des-pâtes-lurgence-du-feu-gras-et-la-survie-du-frigo>
+= CHAPITRE 04 --- La Mécanique des Pâtes, l'Urgence du Feu Gras et la Survie du Frigo
+<chapitre-04-la-mécanique-des-pâtes-lurgence-du-feu-gras-et-la-survie-du-frigo>
 #quote(block: true)[
 « Il n'y a pas de geste anodin en cuisine. Jeter cent grammes de blé dur
 dans de l'eau tiède est un désastre physique \; les jeter dans une eau
@@ -1126,6 +1199,13 @@ travailleurs.
 <recette-fondatrice-pas-à-pas-les-vraies-spaghetti-alla-carbonara>
 #emph[L'émulsion d'or jaune : zéro crème fraîche, zéro matière grasse
 ajoutée, pure physique de l'œuf et de l'amidon.]
+
+#figure(image("figures/nourriture/spaghetti_carbonara.jpg", alt: "Spaghetti à la carbonara dorée : émulsion veloutée de jaunes d’œufs, pecorino et guanciale"),
+  caption: [
+    Spaghetti à la carbonara dorée : émulsion veloutée de jaunes d'œufs,
+    pecorino et guanciale
+  ]
+)
 
 - #strong[Temps de préparation :] 10 minutes
 - #strong[Temps de cuisson :] 10 minutes
@@ -1252,8 +1332,8 @@ grièvement l'opérateur.
 
 #divider()
 
-= CHAPITRE 04 --- Consignes de Sécurité, Gestion des Accidents et Pannes Critiques
-<chapitre-04-consignes-de-sécurité-gestion-des-accidents-et-pannes-critiques>
+= CHAPITRE 05 --- Consignes de Sécurité, Gestion des Accidents et Pannes Critiques
+<chapitre-05-consignes-de-sécurité-gestion-des-accidents-et-pannes-critiques>
 #quote(block: true)[
 « Dans un atelier où l'on manie des lames d'acier au fil rasoir, des
 récipients à trois cents degrés et des graisses inflammables, la
@@ -1460,8 +1540,8 @@ oignon) ou lorsque la main passive est mal positionnée.
 
 #divider()
 
-= CHAPITRE 05 --- L'Anatomie du Goût, l'Évolution Culturelle et les Secrets du 3 Étoiles
-<chapitre-05-lanatomie-du-goût-lévolution-culturelle-et-les-secrets-du-3-étoiles>
+= CHAPITRE 06 --- L'Anatomie du Goût, l'Évolution Culturelle et les Secrets du 3 Étoiles
+<chapitre-06-lanatomie-du-goût-lévolution-culturelle-et-les-secrets-du-3-étoiles>
 #quote(block: true)[
 « Le goût n'est pas une simple réaction chimique sur la langue : c'est
 un souvenir, une émotion et une symphonie de textures. Ce qui fait la
@@ -1672,8 +1752,8 @@ gouttelettes d'eau.
 
 #divider()
 
-= CHAPITRE 06 --- Nourriture Saine, Digestibilité et Hygiène des Repas
-<chapitre-06-nourriture-saine-digestibilité-et-hygiène-des-repas>
+= CHAPITRE 07 --- Nourriture Saine, Digestibilité et Hygiène des Repas
+<chapitre-07-nourriture-saine-digestibilité-et-hygiène-des-repas>
 #quote(block: true)[
 « La moitié de ce que nous mangeons nous maintient en vie \; l'autre
 moitié maintient les médecins en vie. Bien manger n'est pas une ascèse
@@ -1834,8 +1914,8 @@ que vous paierez par une léthargie post-prandiale épuisante.
 
 #divider()
 
-= CHAPITRE 07 --- L'Art des Courses, la Psychologie du Caddie et la Démystification Industrielle
-<chapitre-07-lart-des-courses-la-psychologie-du-caddie-et-la-démystification-industrielle>
+= CHAPITRE 08 --- L'Art des Courses, la Psychologie du Caddie et la Démystification Industrielle
+<chapitre-08-lart-des-courses-la-psychologie-du-caddie-et-la-démystification-industrielle>
 #quote(block: true)[
 « On ne cuisine pas dans le vide : le destin de votre santé et la
 qualité de vos assiettes se scellent dès le franchissement des portes du
@@ -2045,8 +2125,8 @@ ce stock ? »]. - Utilisez une liste partagée numérique fermée et
 
 #divider()
 
-= CHAPITRE 05 --- L'Œuf au Repos : Anatomie, Conservation et Biologie Pratique
-<chapitre-05-lœuf-au-repos-anatomie-conservation-et-biologie-pratique>
+= CHAPITRE 09 --- L'Œuf au Repos : Anatomie, Conservation et Biologie Pratique
+<chapitre-09-lœuf-au-repos-anatomie-conservation-et-biologie-pratique>
 #quote(block: true)[
 « L'œuf est le chef-d'œuvre de l'architecture biologique : une cellule
 unique de cinquante grammes capable de se faire roche, gelée, mousse ou
@@ -2275,8 +2355,8 @@ succès ou de l'échec de la préparation.
 
 #divider()
 
-= CHAPITRE 06 --- La Coagulation Fractionnée et les Seuils Critiques de l'Œuf
-<chapitre-06-la-coagulation-fractionnée-et-les-seuils-critiques-de-lœuf>
+= CHAPITRE 10 --- La Coagulation Fractionnée et les Seuils Critiques de l'Œuf
+<chapitre-10-la-coagulation-fractionnée-et-les-seuils-critiques-de-lœuf>
 #quote(block: true)[
 « Un œuf n'est pas un bloc homogène qui cuit à 100°C : c'est une
 symphonie de protéines dont chaque instrument entre en scène à un degré
@@ -3118,6 +3198,13 @@ torréfiés et offre un démoulage impeccable d'un brun profond satiné.
 #emph[Le triomphe du gradient thermique : comment obtenir une croûte
 cuite et un cœur liquide dans le même moule.]
 
+#figure(image("figures/nourriture/moelleux_chocolat_fondant.jpg", alt: "Moelleux au chocolat noir intense : contraste thermique entre croûte cuite et cœur coulant"),
+  caption: [
+    Moelleux au chocolat noir intense : contraste thermique entre croûte
+    cuite et cœur coulant
+  ]
+)
+
 - #strong[Temps de préparation :] 10 minutes
 - #strong[Temps de cuisson précis :] 11 à 12 minutes à
   $180^compose upright(C)$
@@ -3254,8 +3341,8 @@ sa texture veloutée parfaite.
 
 #divider()
 
-= CHAPITRE 16 --- La Cuisson Chimique et la Conservation : Sel, Acide, Sucre et Mort Thermique
-<chapitre-16-la-cuisson-chimique-et-la-conservation-sel-acide-sucre-et-mort-thermique>
+= CHAPITRE 14 --- La Cuisson Chimique et la Conservation : Sel, Acide, Sucre et Mort Thermique
+<chapitre-14-la-cuisson-chimique-et-la-conservation-sel-acide-sucre-et-mort-thermique>
 #quote(block: true)[
 « Le feu n'a pas le monopole de la cuisson. Le sel déshydrate par appel
 d'eau, l'acide déroule les protéines sans un watt d'énergie, et le sucre
@@ -3264,7 +3351,7 @@ affame les bactéries en séquestrant l'eau libre. »
 
 #divider()
 
-[] <sec-osmose> \#\# 1. LE POUVOIR DU SEL ET L'OSMOSE
+#hide[] <sec-osmose> \#\# 1. LE POUVOIR DU SEL ET L'OSMOSE
 D'ÉQUILIBRE
 
 Le sel de table (chlorure de sodium, $upright(N a C l)$) est le réactif
@@ -3413,10 +3500,10 @@ agissent en créant des liaisons hydrogène fortes avec les molécules
 d'eau : l'eau n'est plus « libre », les bactéries meurent littéralement
 de soif au milieu d'un pot de confiture.
 
-#figure(image("figures/patrimoine/nicolas_appert_conserve.jpg", alt: "Nicolas Appert (1749-1841), inventeur français de la conserve hermétique"),
+#figure(image("figures/nourriture/ceviche_poisson_frais.jpg", alt: "Ceviche de poisson frais mariné au citron vert, piment doux et oignon rouge"),
   caption: [
-    Nicolas Appert (1749-1841), inventeur français de la conserve
-    hermétique
+    Ceviche de poisson frais mariné au citron vert, piment doux et
+    oignon rouge
   ]
 )
 
@@ -3439,8 +3526,8 @@ Pasteur n'explique l'existence des micro-organismes] !
 
 #divider()
 
-= CHAPITRE 17 --- Prolifération Microbienne, Fermentations et Recettes Fondatrices
-<chapitre-17-prolifération-microbienne-fermentations-et-recettes-fondatrices>
+= CHAPITRE 15 --- Prolifération Microbienne, Fermentations et Recettes Fondatrices
+<chapitre-15-prolifération-microbienne-fermentations-et-recettes-fondatrices>
 #quote(block: true)[
 « Les micro-organismes sont les cuisiniers invisibles de la Terre.
 Savoir leur ouvrir la porte quand ils nous nourrissent et leur claquer
@@ -3603,10 +3690,10 @@ broyée), le point de fusion de la saumure chute spectaculairement à
 #emph[Comment obtenir une miche de boulanger d'exception avec 1 gramme
 de levure et zéro pétrissage mécanique.]
 
-#figure(image("figures/patrimoine/diderot_encyclopedie_fournil.jpg", alt: "Planche de fournil et boulangerie artisanale (Encyclopédie de Diderot et d’Alembert)"),
+#figure(image("figures/nourriture/pain_artisan_croute.jpg", alt: "Pain artisanal doré à croûte craquante et mie alvéolée cuit en cocotte en fonte"),
   caption: [
-    Planche de fournil et boulangerie artisanale (Encyclopédie de
-    Diderot et d'Alembert)
+    Pain artisanal doré à croûte craquante et mie alvéolée cuit en
+    cocotte en fonte
   ]
 )
 
@@ -4054,127 +4141,234 @@ Brillat-Savarin, #emph[Physiologie du goût] (1825)
 
 #divider()
 
-== 1. TRAITÉS ANTIQUES, MÉDIÉVAUX ET PATRIMONIAUX
-<traités-antiques-médiévaux-et-patrimoniaux>
-- #strong[Apicius (Marcus Gavius Apicius)] --- #emph[De re coquinaria]
-  (Ier - IVe siècle). \ #emph[Édition de référence :] Texte établi et
-  traduit par J. André, Les Belles Lettres, Paris, 1974. \ Le corpus
-  fondateur de la cuisine romaine antique. Documente l'usage massif du
-  garum (protéolyse enzymatique de poissons), des acides (vinaigre,
-  verjus) et du miel pour la conservation et l'assaisonnement.
+== 1. TRAITÉS FONDAMENTAUX, PATRIMONIAUX ET HISTORIQUES
+<traités-fondamentaux-patrimoniaux-et-historiques>
+- #strong[Marcus Gavius Apicius] --- #emph[De re coquinaria] (Ier - IVe
+  siècle). \ #emph[Édition critique établie et traduite par J. André
+  (Les Belles Lettres, Paris).] \ #emph[Mention critique :]
+  #strong[\[Traité historique fondamental\]] \ Le corpus fondateur de la
+  cuisine impériale romaine. Documente l'usage de la protéolyse
+  enzymatique par le garum (l'ancêtre romain du nuoc-mâm), la
+  conservation par le miel et le vinaigre, et l'assaisonnement poivré
+  précurseur de l'umami.
+
 - #strong[Guillaume Tirel dit Taillevent] --- #emph[Le Viandier] (vers
-  1380). \ #emph[Édition de référence :] Manuscrit de la Bibliothèque
-  Nationale de France (BnF Rés. V. 841). \ Le grand classique de la
-  cuisine médiévale courtoise. Maîtrise des cuissons en deux temps
-  (bouilli puis rôti), sauces non grasses liées au pain rassis trempé et
-  acidifiées au verjus, usage hygiéniste et aromatique des épices
-  exotiques.
+  1380). \ #emph[Édition de référence d'après le manuscrit de la
+  Bibliothèque Nationale de France.] \ #emph[Mention critique :]
+  #strong[\[Traité historique fondamental\]] \ L'apogée de la
+  gastronomie médiévale européenne. Enseigne les cuissons combinées
+  (bouilli préalable puis rôti sur braise) et les sauces légères et
+  vives sans matière grasse superflue, liées au pain rassis et
+  acidifiées au verjus de raisin vert.
+
 - #strong[Anonyme bourgeois] --- #emph[Le Ménagier de Paris] (1393). \
-  Traité d'économie domestique et culinaire. Contient des observations
-  empiriques remarquables sur la conservation des denrées, le salage des
-  viandes et l'art de tenir un cellier sans putréfaction.
+  #emph[Mention critique :] #strong[\[Autonomie domestique et cellier\]]
+  \ Traité pratique bourgeois remarquable. Guide d'autonomie pour tenir
+  un foyer, préserver les viandes par saumurage, clarifier les vins et
+  confectionner des conserves domestiques bien avant l'avènement du
+  froid moderne.
+
 - #strong[Bartolomeo Scappi] --- #emph[Opera dell'arte del cucinare]
-  (Venise, 1570). \ Premier traité moderne illustré de planches gravées
-  décrivant l'agencement rationnel des cuisines, les batteries de
-  casseroles en cuivre étamé, les broches mécaniques et la cuisson des
-  poissons selon leur morphologie.
+  (Venise, 1570). \ #emph[Mention critique :] #strong[\[Pionnier du
+  minimalisme instrumental\]] \ Cuisinier privé des papes de la
+  Renaissance au Vatican. Premier ouvrage illustré de planches de
+  découpe et de coutellerie, instaurant l'usage raisonné du bain-marie
+  et la distinction morphologique des cuissons des chairs.
+
 - #strong[François Pierre de La Varenne] --- #emph[Le Cuisinier
-  François] (1651). \ Marque la rupture avec la cuisine médiévale épicée
-  et l'acte de naissance de la cuisine française classique : invention
-  du roux (farine + beurre cuits pour lier les sauces), des fonds de
-  veau et valorisation des saveurs naturelles des légumes au beurre.
+  François] (1651). \ #emph[Mention critique :] #strong[\[L'acte de
+  naissance de la cuisine française\]] \ La rupture avec les épices
+  lourdes du Moyen Âge au profit du beurre frais, des herbes indigènes
+  (estragon, cerfeuil, laurier) et l'invention fondatrice du roux de
+  farine pour napper les sauces.
+
 - #strong[Jean Anthelme Brillat-Savarin] --- #emph[Physiologie du goût,
-  ou Méditations de gastronomie transcendante] (1825). \ Ouvrage
-  philosophique et précurseur de la psycho-physiologie sensorielle.
-  Analyse de la mécanique du goût, de l'olfaction rétro-nasale, de la
-  digestion et des effets métaboliques de l'alimentation sur le corps.
-- #strong[Nicolas Appert] --- #emph[L'Art de conserver, pendant
-  plusieurs années, toutes les substances animales et végétales] (Paris,
-  Patris, 1810). \ Livre fondateur de la conserve moderne
-  (appertisation). Démonstration empirique de la stérilisation thermique
-  hermétique soixante ans avant les découvertes de Pasteur.
+  ou Méditations de gastronomie transcendante] (1825). \ #emph[Mention
+  critique :] #strong[\[La référence philosophique et sensorielle\]] \
+  L'ouvrage le plus spirituel et le plus profond jamais écrit sur l'acte
+  de manger. Précurseur génial de la psycho-physiologie buccale, de
+  l'olfaction rétro-nasale et de la thermodynamique de la friture.
+
 - #strong[Auguste Escoffier] --- #emph[Le Guide Culinaire] (1903, avec
-  Philéas Gilbert et Émile Fétu). \ La bible monumentale de la haute
-  gastronomie codifiée. Rationalisation des brigades de cuisine,
-  codification universelle des 5 sauces mères (espagnole, velouté,
-  béchamel, tomate, hollandaise) et précision millimétrée des gestes.
+  Philéas Gilbert et Émile Fétu). \ #emph[Mention critique :]
+  #strong[\[La bible absolue de la codification\]] \ Législation
+  définitive de la grande cuisine classique. Structure militaire des
+  brigades, codification universelle des cinq sauces mères (espagnole,
+  velouté, béchamel, tomate, hollandaise) et épure du geste technique.
+
+- #strong[Collectif éditorial Domus] --- #emph[La Cuillère d'argent]
+  (#emph[Il Cucchiaio d'Argento], Editoriale Domus, Milan, 1950 \;
+  Édition française Phaidon). \ #emph[Mention critique :]
+  #strong[\[Grand classique universel de la cuisine familiale\]] \
+  Véritable trésor patrimonial de la cuisine domestique italienne.
+  Transmet la noblesse du geste humble, l'art des pâtes fraîches, la
+  maîtrise des cuissons à la poêle et la vérité nue des produits de
+  saison sans artifice.
 
 #divider()
 
-== 2. ANTHROPOLOGIE ÉVOLUTIVE ET BIOLOGIE DU FEU
-<anthropologie-évolutive-et-biologie-du-feu>
+== 2. ANTHROPOLOGIE ÉVOLUTIVE ET BIOLOGIE DE LA NUTRITION
+<anthropologie-évolutive-et-biologie-de-la-nutrition>
 - #strong[Richard Wrangham] --- #emph[Catching Fire: How Cooking Made Us
-  Human] (Basic Books, New York, 2009 \; traduction française :
-  #emph[Quand la cuisine fit l'homme], Flammarion). \ L'ouvrage
-  révolutionnaire qui démontre que la cuisson par le feu a précédé et
-  conditionné l'émergence d'Homo sapiens par réduction du tube digestif
-  et allocation d'énergie au cerveau.
+  Human] (Basic Books \; traduction française : #emph[Quand la cuisine
+  fit l'homme], Flammarion). \ #emph[Mention critique :]
+  #strong[\[Ouvrage révolutionnaire d'anthropologie\]] \ Démontre
+  scientifiquement que la cuisson par le feu a précédé et engendré
+  #emph[Homo sapiens] : l'externalisation de la digestion a réduit le
+  tube digestif et permis le triplement du volume cérébral humain.
+
 - #strong[Claude Lévi-Strauss] --- #emph[Le Cru et le Cuit]
-  (#emph[Mythologiques], tome 1, Plon, Paris, 1964). \ L'analyse
-  structurale du triangle culinaire (le cru, le cuit, le pourri) et le
-  passage universel de la nature à la culture par la médiation du foyer.
-- #strong[Louis Pasteur] --- #emph[Études sur la bière] (1876) et
-  #emph[Études sur le vin et le vinaigre] (1866). \ Découverte des
-  micro-organismes vivants, des ferments lactiques et acétiques, et
-  formalisation de la pasteurisation pour assainir les boissons
-  fermentées.
+  (#emph[Mythologiques], tome 1, Plon, 1964). \ #emph[Mention critique
+  :] #strong[\[Penser l'humain par la cuisine\]] \ L'analyse structurale
+  du triangle culinaire universel (le cru, le cuit, le pourri). Comment
+  le passage par le foyer transforme l'aliment biologique en acte de
+  culture et de lien social.
 
 #divider()
 
-== 3. GASTRONOMIE MOLÉCULAIRE ET SCIENCE MODERNE DE LA CASSEROLE
-<gastronomie-moléculaire-et-science-moderne-de-la-casserole>
+== 3. GASTRONOMIE MOLÉCULAIRE ET SCIENCE DE LA CASSEROLE
+<gastronomie-moléculaire-et-science-de-la-casserole>
 - #strong[Harold McGee] --- #emph[On Food and Cooking: The Science and
-  Lore of the Kitchen] (Scribner, New York, 1984, révisé en 2004 \;
-  traduction française : #emph[Le Grand Précis des sciences
-  culinaires]). \ La véritable encyclopédie mondiale de référence en
-  physico-chimie des aliments. Chaque chapitre décortique la composition
-  atomique, les enzymes, les émulsions et les transferts thermiques de
-  tous les règnes alimentaires.
+  Lore of the Kitchen] (Scribner \; traduction française : #emph[Le
+  Grand Précis des sciences culinaires]). \ #emph[Mention critique :]
+  #strong[\[La référence mondiale incontournable\]] \ L'encyclopédie
+  exhaustive de chevet de tous les chefs contemporains. Décortique atome
+  par atome les transformations des émulsions, des mousses, des
+  protéines animales et des parois végétales.
+
 - #strong[Nicholas Kurti & Hervé This] --- #emph[Les Secrets de la
-  casserole] (Belin, Paris, 1993) \; #emph[Casseroles et éprouvettes]
-  (Belin, 2002) \; #emph[La Gastronomie moléculaire] (Dunod, 2002). \
-  Les fondateurs de la gastronomie moléculaire et physique.
-  Démystification expérimentale des tours de main, étude rigoureuse de
-  la coagulation des œufs (invention de l'œuf à 64°C), des mousses et
-  des émulsions.
+  casserole] (Belin, 1993) \; #emph[Casseroles et éprouvettes] (Belin,
+  2002). \ #emph[Mention critique :] #strong[\[Gastronomie moléculaire
+  originelle\]] \ Les inventeurs de la discipline en 1988.
+  Déconstruction expérimentale des dictons de grand-mère, découverte de
+  la cuisson fractionnée de l'œuf à 64°C et réhabilitation physique des
+  sauces émulsionnées.
+
 - #strong[Heston Blumenthal] --- #emph[The Fat Duck Cookbook]
-  (Bloomsbury, Londres, 2008) \; #emph[In Search of Perfection]
-  (Bloomsbury, 2006). \ Recherche obstinée de l'excellence sensorielle
-  par la méthode scientifique : extraction aromatique des épluchures de
-  pommes de terre pour la purée, triple cuisson des frites, analyse
-  psychologique du goût et mémoire multisensorielle.
-- #strong[Ferran Adrià, Juli Soler & Albert Adrià] --- #emph[A Day at
-  elBulli] (Phaidon, 2008) \; #emph[elBulli 2005-2011] (Catalogue
-  Raisonné Général). \ La révolution avant-gardiste catalane :
-  déconstruction radicale des textures (gélifications à l'agar-agar,
-  sphérifications aux alginates, émulsions au siphon sans matière
-  grasse, cryo-cuisson à l'azote liquide).
+  (Bloomsbury) \; #emph[In Search of Perfection] (Bloomsbury). \
+  #emph[Mention critique :] #strong[\[L'excellence sensorielle par la
+  méthode scientifique\]] \ Recherche obstinée de l'extraction
+  aromatique (infusion des pelures de pommes de terre pour la purée), de
+  la triple cuisson des frites et de la mémoire affective des saveurs.
+
 - #strong[Nathan Myhrvold, Chris Young & Maxime Bilet] ---
   #emph[Modernist Cuisine: The Art and Science of Cooking] (The Cooking
-  Lab, 6 volumes, 2011). \ Le monument absolu de la technique culinaire
-  du XXIe siècle. Imagerie en coupe de récipients, thermodynamique
-  ultra-précise et vulgarisation visuelle spectaculaire.
+  Lab, 6 volumes). \ #emph[Mention critique :] #strong[\[Le monument
+  technique du XXIe siècle\]] \ Photographie en coupe de récipients au
+  cœur de la flamme, thermodynamique de précision et démythification des
+  procédés industriels au service de la créativité.
+
 - #strong[J. Kenji López-Alt] --- #emph[The Food Lab: Better Home
-  Cooking Through Science] (W. W. Norton, New York, 2015). \
-  L'application magistrale de la méthode expérimentale à la cuisine
-  domestique quotidienne : salage à sec des viandes, physique du smash
-  burger, cuisson parfaite des œufs mollets.
+  Cooking Through Science] (W. W. Norton). \ #emph[Mention critique :]
+  #strong[\[Le meilleur manuel pratique contemporain\]] \ Application
+  brillante de la démarche expérimentale aux gestes quotidiens : le
+  salage à sec 45 minutes avant la saisie, la poêle en fonte et la
+  physique du smash burger.
+
 - #strong[Samin Nosrat] --- #emph[Salt, Fat, Acid, Heat: Mastering the
-  Elements of Good Cooking] (Simon & Schuster, 2017). \ Synthèse limpide
-  et intuitive des quatre principes cardinaux qui régissent l'équilibre
-  gustatif de tout aliment.
-- #strong[Arthur Le Caisne] --- #emph[La cuisine c'est aussi de la
-  chimie] (Hachette Pratique, 2013) \; #emph[Pourquoi les spaghetti
-  descendent au fond ?] (2020). \ Ouvrages pédagogiques clairs
-  démystifiant les erreurs courantes en cuisine ménagère avec humour et
-  rigueur graphique.
+  Elements of Good Cooking] (Simon & Schuster). \ #emph[Mention critique
+  :] #strong[\[Best-seller mondial d'initiation\]] \ Synthèse limpide et
+  universelle des quatre piliers fondamentaux pour assaisonner
+  d'instinct sans jamais avoir besoin de livre de recettes.
 
 
-// Ancres de navigation transversale automatiques
-[] <sec-leidenfrost>
-[] <sec-coagulation>
-[] <chapitre-survie-parasites>
-[] <recette-creme-anglaise>
-[] <sec-emulsion>
-[] <chapitre-oeuf-repos>
-[] <sec-proteines-chair>
+
+#pagebreak()
+#set page(margin: 0pt, header: none, footer: none)
+
+#block(
+  fill: rgb("#1c1917"),
+  width: 100%,
+  height: 100%,
+  inset: (x: 2.6cm, y: 2.4cm)
+)[
+  #v(0.8cm)
+  #text(size: 11pt, weight: "bold", fill: rgb("#fbbf24"), tracking: 2pt, font: "Liberation Sans")[
+    LA CUISINE EXPLIQUÉE
+  ]
+  #v(0.2cm)
+  #text(size: 20pt, weight: "bold", fill: white, font: "Liberation Serif")[
+    Retrouver la liberté souveraine de comprendre ce que l'on fait.
+  ]
+  #v(0.4cm)
+  #line(length: 100%, stroke: 1.5pt + rgb("#f59e0b"))
+  #v(0.6cm)
+
+  #text(size: 10.5pt, fill: rgb("#f5f5f4"), font: "Liberation Serif")[
+    Pourquoi l'eau qui bout à gros bouillons est-elle parfois l'ennemie jurée d'un aliment ? Pourquoi saler une viande quarante-cinq minutes avant de la poser sur le feu change-t-il radicalement sa jutosité ? Comment fabriquer un fromage frais en quinze minutes sans matériel, ou émulsionner des pâtes crémeuses à la perfection sans la moindre goutte de crème fraîche ?
+
+    *La Cuisine Expliquée* n'est pas un énième catalogue de recettes passives à réciter sans réfléchir. C'est un traité vivant d'**autonomie matérielle, de thermodynamique et de biologie du geste culinaire**, conçu pour libérer définitivement le cuisinier de la tyrannie des recettes magiques et du diktat des gadgets superflus.
+
+    À travers quinze chapitres lumineux, ce manuel démontre qu'avec seulement cinq outils indestructibles (une poêle en fonte, une casserole inox, une planche de bois massif, un couteau affûté et une cuillère de bois) et la compréhension des états de la matière, il est possible de maîtriser l'intégralité du répertoire nourricier universel.
+  ]
+
+  #v(0.8cm)
+  #block(
+    fill: rgb("#292524"),
+    stroke: 1pt + rgb("#44403c"),
+    inset: 14pt,
+    radius: 6pt,
+    width: 100%
+  )[
+    #text(size: 9.5pt, fill: rgb("#fed7aa"), font: "Liberation Sans", weight: "bold")[
+      DANS CET OUVRAGE :
+    ]
+    #v(3pt)
+    #text(size: 9pt, fill: rgb("#e7e5e4"), font: "Liberation Sans")[
+      • *15 Chapitres Fondamentaux* : De l'étincelle paléolithique à la science moléculaire.\
+      • *10 Recettes Piliers Pas à Pas* : Ratios universels, repères sensoriels et arbres de sauvetage.\
+      • *Guide de Survie & Protocoles d'Urgence* : Incendies d'huile, pannes de froid et intoxications.\
+      • *Cuisine Végétale Rationnelle* : Chimie des acides aminés et biodisponibilité des protéines.\
+      • *Édition Ouverte & Pérenne* : Diffusée sous licence libre Creative Commons CC BY-SA 4.0.
+    ]
+  ]
+
+  #v(1.2cm)
+  #grid(
+    columns: (1fr, auto),
+    align: (left + bottom, right + bottom),
+    [
+      #text(size: 9pt, fill: rgb("#a8a29e"), font: "Liberation Sans")[
+        *Silvère-Martin Michiellot & Antigravity*\
+        Édition Numérique et Patrimoniale — 2026\
+        Dépôt GitHub Public / Open Access Book
+      ]
+    ],
+    [
+      #block(
+        fill: white,
+        inset: (x: 12pt, y: 8pt),
+        radius: 4pt
+      )[
+        #text(size: 9.5pt, weight: "bold", fill: rgb("#0f172a"), font: "Liberation Sans")[
+          PRIX : 24,90 € TTC
+        ]
+        #v(-2pt)
+        #text(size: 7.5pt, fill: rgb("#64748b"), font: "Liberation Sans")[
+          ÉDITION LIBRE CC BY-SA
+        ]
+      ]
+    ]
+  )
+]
+
+
+// Ancres de navigation transversale invisibles
+#hide[] <sec-proteines-chair>
+#hide[] <recette-dahl-lentilles>
+#hide[] <recette-glace-sel>
+#hide[] <recette-fromage-frais>
+#hide[] <recette-creme-anglaise>
+#hide[] <recette-pain-cocotte>
+#hide[] <recette-ceviche-cabillaud>
+#hide[] <recette-carbonara-traditionnelle>
+#hide[] <recette-deglacage-minute>
+#hide[] <sec-leidenfrost>
+#hide[] <recette-moelleux-chocolat>
+#hide[] <sec-emulsion>
+#hide[] <sec-coagulation>
+#hide[] <recette-steak-fonte>
+#hide[] <recette-mousse-aquafaba>
+#hide[] <recette-tofu-croustillant>
+#hide[] <chapitre-survie-parasites>
+#hide[] <chapitre-oeuf-repos>

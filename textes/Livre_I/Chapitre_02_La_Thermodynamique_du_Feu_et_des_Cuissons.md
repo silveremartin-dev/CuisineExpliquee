@@ -1,4 +1,4 @@
-# CHAPITRE 02 — La Thermodynamique du Feu et des Cuissons
+# CHAPITRE 03 — La Thermodynamique du Feu et des Cuissons
 
 > « Cuire, c'est orchestrer une collision contrôlée entre des photons, des électrons et des molécules d'eau. »
 
@@ -66,6 +66,8 @@ C'est la règle d'or des grands rôtisseurs expliquée par l'osmose :
 ## 3. RECETTE FONDATRICE PAS À PAS : LE PAVÉ DE BŒUF EN POÊLE FONTE & ARROSAGE AU BEURRE MOUSSEUX
 
 *L'archétype absolu de la saisie par conduction, de la réaction de Maillard et de la redistribution des sucs.*
+
+![Pavé de bœuf saisi en poêle de fonte avec arrosage continu au beurre mousseux et herbes fraîches](figures/nourriture/steak_poele_fonte.jpg)
 
 - **Temps de préparation :** 5 minutes (dont 45 min de salage à température ambiante)
 - **Temps de cuisson :** 5 à 6 minutes

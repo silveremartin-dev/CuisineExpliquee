@@ -1,4 +1,4 @@
-# CHAPITRE 00 — L'Odyssée du Feu, la Nutrition de Survie et les Traités Anciens
+# CHAPITRE 01 — L'Odyssée du Feu, la Nutrition de Survie et les Traités Anciens
 
 > « L'homme est le seul animal qui cuisine. En allumant le premier foyer, Homo erectus n'a pas seulement réchauffé sa nourriture : il a externalisé sa digestion, libéré son cerveau et fondé la civilisation humaine. »  
 > — Richard Wrangham, *Catching Fire: How Cooking Made Us Human*

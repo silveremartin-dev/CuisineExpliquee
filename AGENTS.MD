@@ -91,3 +91,38 @@ Pourquoi un plat semble-t-il infiniment supérieur dans un grand restaurant éto
 L'ouvrage propose des réalisations concrètes démontrant la puissance des principes premiers :
 - **Le Fromage Frais Maison (Faisselle / Paneer / Ricotta) :** Lait entier + 2 cuillères de jus de citron ou de vinaigre blanc à $82^\circ\mathrm{C}$. Coagulation acide instantanée des caséines, égouttage à l'étamine. Zéro matériel sophistiqué, du fromage frais en 15 minutes.
 - **La Glace Onctueuse sans Sorbetière (L'Abaissement Cryoscopique du Sel) :** Crème anglaise placée dans un petit bol, lui-même immergé dans un grand bol de glaçons saturés de gros sel. La dissolution endothermique du sel dans la glace abaisse la température du bain à **$-18^\circ\mathrm{C}$**, permettant une prise de glace express avec un simple fouet manuel.
+
+---
+
+## 6. DIRECTION ARTISTIQUE & DESIGN ÉDITORIAL DU LIVRE CULINAIRE
+
+Le livre doit rompre radicalement avec l'esthétique aride d'un article de recherche ou d'un manuel universitaire de mathématiques :
+1. **Palette et Typographie Gastronomique :**
+   - Palette chromatique chaude et organique : Terracotta (`#A3432B`), Bordeaux profond (`#701C1A`), Or chaleureux (`#D4A373`), Fond crème doux (`#FCFBF7`) et texte anthracite (`#242124`).
+   - Lignes de filet ultrafines ($0.5\,\mathrm{pt}$) pour aérer les blocs techniques sans alourdir la page.
+   - Proscription des titres froids et des encadrés d'allure purement académique.
+2. **Iconographie Vivante et Produits Frais :**
+   - Remplacement systématique des portraits historiques austères (ex. Nicolas Appert, pages de titre d'encyclopédie) par de véritables photographies culinaires en haute résolution : carottes maraîchères avec fanes, poireaux frais perlés de rosée, pain artisanal au levain à la croûte dorée alvéolée, steak saisi en poêle de fonte au beurre moussant, ceviche éclatant aux oignons rouges et zestes de lime.
+   - Les illustrations scientifiques (diagrammes SVG d'infusion, schémas de transfert thermique) doivent adopter des teintes harmonisées avec la charte graphique du livre.
+3. **Architecture et Couvertures Plein Format :**
+   - **Couverture Recto (Première de couverture) :** Pleine page photographique mettant en valeur la fraîcheur du marché, surmontée d'une typographie serif distinguée et de bandeaux d'accroche éditoriaux clairs.
+   - **Quatrième de Couverture (Verso) :** Conception éditoriale complète avec pitch percutant, 4 points saillants de la démarche, citation emblématique, bandeau de collection, crédits d'édition et bloc de prix public officiel (24,90 € TTC).
+   - **Interdiction formelle des faux codes ISBN :** Ne jamais générer de numéro ISBN fictif ou de faux code-barres.
+4. **Structure et Rythme de Lecture :**
+   - **Numérotation continue et naturelle :** Chapitres indexés de 1 à 15 (proscription absolue de l'appellation « Chapitre 00 »).
+   - **Table des Recettes et Préparations Piliers :** Insérée dès l'entrée du livre (juste après le Sommaire général) pour un repérage immédiat de toutes les réalisations pratiques.
+   - **Élimination des lignes orphelines/veuves et des pages blanches artificielles :** Pas de page blanche intercalaire inutile avant les grandes parties.
+   - **Hyperliens transversaux intégrés :** Navigation fluide entre la table des recettes, les chapitres de principes et les annexes techniques.
+
+---
+
+## 7. DENSITÉ COGNITIVE, ÉPISTÉMOLOGIE DU GESTE ET BIBLIOGRAPHIE CRITIQUE
+
+1. **La Densité Maximale d'Information :**
+   - Chaque paragraphe doit apporter une valeur pratique ou scientifique directe : un ratio massique au gramme près, une cinétique thermique en secondes, un indice sensoriel net (son du crépitement, odeur de noisette du beurre, tension superficielle) ou une astuce de chef éprouvée. Zéro verbiage creux.
+2. **Le Découpage Pas-à-Pas Bipolaire :**
+   - Chaque préparation pilier détaille la cinétique pas-à-pas, assortie de son bloc systématique « Ce qu'il faut faire » (points critiques) et « Ce qu'il faut éviter » (erreurs fréquentes et explications causales).
+3. **La Bibliographie Raisonnée et Évaluée :**
+   - Toutes les entrées bibliographiques comportent un badge thématique explicatif (`[Traité historique fondateur]`, `[Gastronomie moléculaire]`, `[Grand classique de la cuisine familiale]`, `[Best-seller mondial]`, etc.).
+   - Inclusion incontournable des références majeures comme *La Cuillère d'argent* (bible de la cuisine italienne ménagère).
+   - Absence totale de numéros ISBN factices.

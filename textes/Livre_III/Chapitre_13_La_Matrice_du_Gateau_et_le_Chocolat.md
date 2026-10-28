@@ -35,6 +35,8 @@ Lorsque vous beurrez un moule à gâteau au chocolat, ne saupoudrez jamais de fa
 
 *Le triomphe du gradient thermique : comment obtenir une croûte cuite et un cœur liquide dans le même moule.*
 
+![Moelleux au chocolat noir intense : contraste thermique entre croûte cuite et cœur coulant](figures/nourriture/moelleux_chocolat_fondant.jpg)
+
 - **Temps de préparation :** 10 minutes
 - **Temps de cuisson précis :** 11 à 12 minutes à $180^\circ\mathrm{C}$
 - **Minimalisme Instrumental :** 1 bol résistant à la chaleur, 1 casserole (bain-marie), 1 fouet à main, 4 ramequins individuels en céramique ou moules en inox.

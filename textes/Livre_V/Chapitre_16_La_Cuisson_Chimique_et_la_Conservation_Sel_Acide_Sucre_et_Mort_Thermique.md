@@ -1,4 +1,4 @@
-# CHAPITRE 16 — La Cuisson Chimique et la Conservation : Sel, Acide, Sucre et Mort Thermique
+# CHAPITRE 14 — La Cuisson Chimique et la Conservation : Sel, Acide, Sucre et Mort Thermique
 
 > « Le feu n'a pas le monopole de la cuisson. Le sel déshydrate par appel d'eau, l'acide déroule les protéines sans un watt d'énergie, et le sucre affame les bactéries en séquestrant l'eau libre. »
 
@@ -80,7 +80,7 @@ Les micro-organismes (bactéries, levures, moisissures) ont un besoin vital d'ea
 - Moisissures les plus résistantes : croissance bloquée à $a_w < 0{,}60$.
 Le sucre et le sel agissent en créant des liaisons hydrogène fortes avec les molécules d'eau : l'eau n'est plus « libre », les bactéries meurent littéralement de soif au milieu d'un pot de confiture.
 
-![Nicolas Appert (1749-1841), inventeur français de la conserve hermétique](figures/patrimoine/nicolas_appert_conserve.jpg)
+![Ceviche de poisson frais mariné au citron vert, piment doux et oignon rouge](figures/nourriture/ceviche_poisson_frais.jpg)
 
 ::: anecdote_historique
 #### 🏛️ L'Anecdote Historique : Nicolas Appert et les Soldats de Napoléon

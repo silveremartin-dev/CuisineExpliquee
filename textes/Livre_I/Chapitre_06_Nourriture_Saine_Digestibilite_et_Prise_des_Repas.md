@@ -1,4 +1,4 @@
-# CHAPITRE 06 — Nourriture Saine, Digestibilité et Hygiène des Repas
+# CHAPITRE 07 — Nourriture Saine, Digestibilité et Hygiène des Repas
 
 > « La moitié de ce que nous mangeons nous maintient en vie ; l'autre moitié maintient les médecins en vie. Bien manger n'est pas une ascèse de privation : c'est l'art mécanique d'accorder notre nourriture aux cadences de notre machinerie biologique. »
 

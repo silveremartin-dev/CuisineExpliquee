@@ -1,4 +1,4 @@
-# CHAPITRE 01 — L'Arsenal Minimal et la Maîtrise des Sens
+# CHAPITRE 02 — L'Arsenal Minimal et la Maîtrise des Sens
 
 > « La perfection est atteinte non pas lorsqu'il n'y a plus rien à ajouter, mais lorsqu'il n'y a plus rien à retrancher. »  
 > — Antoine de Saint-Exupéry (appliqué à l'art culinaire)

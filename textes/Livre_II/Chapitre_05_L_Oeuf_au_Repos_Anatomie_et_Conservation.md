@@ -1,4 +1,4 @@
-# CHAPITRE 05 — L'Œuf au Repos : Anatomie, Conservation et Biologie Pratique
+# CHAPITRE 09 — L'Œuf au Repos : Anatomie, Conservation et Biologie Pratique
 
 > « L'œuf est le chef-d'œuvre de l'architecture biologique : une cellule unique de cinquante grammes capable de se faire roche, gelée, mousse ou colle selon la loi physique qu'on lui applique. »  
 > — Hervé This, *Les Secrets de la casserole*

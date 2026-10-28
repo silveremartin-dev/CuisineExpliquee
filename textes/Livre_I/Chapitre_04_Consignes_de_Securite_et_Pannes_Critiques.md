@@ -1,4 +1,4 @@
-# CHAPITRE 04 — Consignes de Sécurité, Gestion des Accidents et Pannes Critiques
+# CHAPITRE 05 — Consignes de Sécurité, Gestion des Accidents et Pannes Critiques
 
 > « Dans un atelier où l'on manie des lames d'acier au fil rasoir, des récipients à trois cents degrés et des graisses inflammables, la sérénité du geste naît de la connaissance exacte du danger. »
 

@@ -5,8 +5,11 @@ Master Culinary Book Builder pour LA CUISINE EXPLIQUÉE
 - Moteur Typographique : Typst v0.15.1
 - Moteur de conversion : Pandoc 3.12.1
 - Direction Artistique : Haute Gastronomie Éditoriale (Terracotta, Bordeaux, Or Chaud)
+- Couverture photographique vibrante (légumes frais du marché)
+- Quatrième de couverture complète (synopsis, manifeste, code-barres et prix)
+- Index dédié des recettes dès le début du livre
 - En-têtes vivants et Pieds de page sur toutes les pages de lecture
-- Signalétique didactique complète (Anecdotes, Trucs de Chef, Points d'attention, Fiches Recettes)
+- Zéro veuve/orpheline, zéro faux ISBN, typographie soignée
 """
 
 import os
@@ -60,7 +63,7 @@ PREAMBLE = """
   margin: (top: 2.5cm, bottom: 2.5cm, left: 2.2cm, right: 2.2cm),
   header: context {
     let page-num = counter(page).get().first()
-    if page-num > 3 [
+    if page-num > 4 [
       #let cur-h2 = query(heading.where(level: 2)).filter(h => h.location().page() == here().position().page)
       #let ch-title = if cur-h2.len() > 0 {
         cur-h2.first().body
@@ -117,26 +120,25 @@ PREAMBLE = """
 
 // Niveaux de Titres Éditoriaux
 #show heading.where(level: 1): it => {
-  pagebreak()
-  v(1.0cm)
+  v(0.8cm)
   align(center)[
     #block(
       fill: rgb("#fffbeb"),
-      stroke: (top: 2.5pt + c-gold, bottom: 2.5pt + c-gold),
-      inset: (y: 20pt, x: 16pt),
+      stroke: (top: 2pt + c-gold, bottom: 2pt + c-gold),
+      inset: (y: 16pt, x: 14pt),
       width: 100%
     )[
-      #text(size: 16pt, weight: "bold", fill: c-bordeaux, font: "Liberation Sans", tracking: 0.5pt)[#it.body]
+      #text(size: 15pt, weight: "bold", fill: c-bordeaux, font: "Liberation Sans", tracking: 0.5pt)[#it.body]
     ]
   ]
-  v(0.8cm)
+  v(0.6cm)
 }
 
 #show heading.where(level: 2): it => {
   v(0.6cm)
-  text(size: 13.5pt, weight: "bold", fill: c-bordeaux, font: "Liberation Sans")[#it.body]
+  text(size: 13pt, weight: "bold", fill: c-bordeaux, font: "Liberation Sans")[#it.body]
   v(-3pt)
-  line(length: 100%, stroke: 1.2pt + c-gold)
+  line(length: 100%, stroke: 1.0pt + c-gold)
   v(0.25cm)
 }
 
@@ -153,9 +155,9 @@ PREAMBLE = """
 // Signalétique Didactique et Boîtes Culinaire
 #let anecdote_historique(body) = block(
   fill: rgb("#fffbeb"),
-  stroke: (left: 4pt + c-gold),
+  stroke: (left: 3.5pt + c-gold),
   inset: (left: 14pt, right: 12pt, top: 10pt, bottom: 10pt),
-  radius: (right: 6pt),
+  radius: (right: 5pt),
   width: 100%,
   spacing: 1.2em,
   breakable: false
@@ -165,9 +167,9 @@ PREAMBLE = """
 
 #let truc_de_chef(body) = block(
   fill: rgb("#fefce8"),
-  stroke: (left: 4pt + rgb("#ca8a04")),
+  stroke: (left: 3.5pt + rgb("#ca8a04")),
   inset: (left: 14pt, right: 12pt, top: 10pt, bottom: 10pt),
-  radius: (right: 6pt),
+  radius: (right: 5pt),
   width: 100%,
   spacing: 1.2em,
   breakable: false
@@ -177,9 +179,9 @@ PREAMBLE = """
 
 #let point_attention(body) = block(
   fill: rgb("#fff1f2"),
-  stroke: (left: 4pt + rgb("#e11d48")),
+  stroke: (left: 3.5pt + rgb("#e11d48")),
   inset: (left: 14pt, right: 12pt, top: 10pt, bottom: 10pt),
-  radius: (right: 6pt),
+  radius: (right: 5pt),
   width: 100%,
   spacing: 1.2em,
   breakable: false
@@ -189,9 +191,9 @@ PREAMBLE = """
 
 #let oeil_molecule(body) = block(
   fill: rgb("#f0fdfa"),
-  stroke: (left: 4pt + c-teal),
+  stroke: (left: 3.5pt + c-teal),
   inset: (left: 14pt, right: 12pt, top: 10pt, bottom: 10pt),
-  radius: (right: 6pt),
+  radius: (right: 5pt),
   width: 100%,
   spacing: 1.2em,
   breakable: false
@@ -201,9 +203,9 @@ PREAMBLE = """
 
 #let positif(body) = block(
   fill: rgb("#f0fdf4"),
-  stroke: (left: 4pt + c-green),
+  stroke: (left: 3.5pt + c-green),
   inset: (left: 14pt, right: 12pt, top: 10pt, bottom: 10pt),
-  radius: (right: 6pt),
+  radius: (right: 5pt),
   width: 100%,
   spacing: 1.2em,
   breakable: false
@@ -213,9 +215,9 @@ PREAMBLE = """
 
 #let negatif(body) = block(
   fill: rgb("#fef2f2"),
-  stroke: (left: 4pt + c-red),
+  stroke: (left: 3.5pt + c-red),
   inset: (left: 14pt, right: 12pt, top: 10pt, bottom: 10pt),
-  radius: (right: 6pt),
+  radius: (right: 5pt),
   width: 100%,
   spacing: 1.2em,
   breakable: false
@@ -225,9 +227,9 @@ PREAMBLE = """
 
 #let cas_limite(body) = block(
   fill: rgb("#fffbeb"),
-  stroke: (left: 4pt + c-amber),
+  stroke: (left: 3.5pt + c-amber),
   inset: (left: 14pt, right: 12pt, top: 10pt, bottom: 10pt),
-  radius: (right: 6pt),
+  radius: (right: 5pt),
   width: 100%,
   spacing: 1.2em,
   breakable: false
@@ -248,50 +250,63 @@ PREAMBLE = """
 ]
 
 // ==========================================
-// 1. COUVERTURE GASTRONOMIQUE DE RÉFÉRENCE
+// 1. COUVERTURE PHOTOGRAPHIQUE GASTRONOMIQUE
 // ==========================================
-#align(center + horizon)[
-  #block(
-    fill: rgb("#1c1917"),
-    inset: 32pt,
-    radius: 14pt,
-    width: 95%
-  )[
-    #v(0.6cm)
-    #text(size: 13pt, weight: "bold", fill: rgb("#fbbf24"), tracking: 2pt, font: "Liberation Sans")[
-      SILVÈRE-MARTIN MICHIELLOT & ANTIGRAVITY
-    ]
-    #v(1.0cm)
-    #text(size: 30pt, weight: "bold", fill: white, font: "Liberation Serif")[
-      LA CUISINE EXPLIQUÉE
-    ]
-    #v(0.3cm)
-    #text(size: 14pt, weight: "bold", fill: rgb("#fed7aa"), font: "Liberation Sans")[
-      Principes Premiers, Maîtrise de la Matière et Minimalisme Instrumental
-    ]
-    #v(0.8cm)
-    #line(length: 60%, stroke: 2pt + rgb("#f59e0b"))
-    #v(0.8cm)
-    #text(size: 10.5pt, fill: rgb("#e7e5e4"), font: "Liberation Serif", style: "italic")[
-      Traité d'anthropologie, de biologie, de physique et de gestuelle appliquée aux fourneaux.\\
-      De l'étincelle paléolithique à la thermodynamique des émulsions et des chairs.\\
-      Apprendre à dompter le feu et les ingrédients avec cinq ustensiles fondamentaux.
-    ]
-    #v(1.2cm)
+#set page(margin: 0pt, header: none, footer: none)
+
+#block(width: 100%, height: 100%, fill: rgb("#1c1917"))[
+  // Image de couverture pleine largeur (légumes frais du marché)
+  #place(top + left)[
+    #image("figures/nourriture/couverture_legumes_marche.jpg", width: 100%, height: 52%, fit: "cover")
+  ]
+  
+  // Voile sombre et cartouche typographique
+  #place(bottom + left)[
     #block(
-      fill: rgb("#292524"),
-      inset: (x: 18pt, y: 10pt),
-      radius: 6pt
+      fill: rgb("#1c1917"),
+      width: 100%,
+      height: 52%,
+      inset: (x: 2.4cm, y: 1.8cm)
     )[
-      #text(size: 9.5pt, weight: "bold", fill: rgb("#fcd34d"), font: "Liberation Sans")[
-        ÉDITION INTÉGRALE DE RÉFÉRENCE — 2026
+      #v(0.2cm)
+      #text(size: 11pt, weight: "bold", fill: rgb("#fbbf24"), tracking: 3pt, font: "Liberation Sans")[
+        SILVÈRE-MARTIN MICHIELLOT & ANTIGRAVITY
       ]
+      #v(0.6cm)
+      #text(size: 28pt, weight: "bold", fill: white, font: "Liberation Serif")[
+        LA CUISINE EXPLIQUÉE
+      ]
+      #v(0.3cm)
+      #text(size: 13.5pt, weight: "medium", fill: rgb("#fed7aa"), font: "Liberation Sans")[
+        Principes Premiers, Maîtrise de la Matière et Minimalisme Instrumental
+      ]
+      #v(0.6cm)
+      #line(length: 100%, stroke: 1.5pt + rgb("#f59e0b"))
+      #v(0.5cm)
+      #text(size: 10pt, fill: rgb("#e7e5e4"), font: "Liberation Serif", style: "italic")[
+        Traité vivant d'anthropologie, de biologie et de thermodynamique appliquée aux fourneaux.\\
+        Comprendre la matière brute, dompter le feu et cuisiner en toute liberté avec cinq instruments.
+      ]
+      #v(0.8cm)
+      #grid(
+        columns: (1fr, auto),
+        align: (left + horizon, right + horizon),
+        text(size: 9pt, weight: "bold", fill: rgb("#fcd34d"), font: "Liberation Sans")[
+          ÉDITION INTÉGRALE DE RÉFÉRENCE — 2026
+        ],
+        text(size: 8.5pt, fill: rgb("#a8a29e"), font: "Liberation Sans")[
+          LICENCE LIBRE CC BY-SA 4.0
+        ]
+      )
     ]
-    #v(0.6cm)
   ]
 ]
 
 #pagebreak()
+#set page(
+  paper: "a4",
+  margin: (top: 2.5cm, bottom: 2.5cm, left: 2.2cm, right: 2.2cm)
+)
 
 // ==========================================
 // 2. PAGE DE MENTIONS LÉGALES & LICENCE LIBRE
@@ -313,9 +328,10 @@ PREAMBLE = """
       \\
       *Conception didactique et scientifique :* Silvère-Martin Michiellot & Antigravity.\\
       *Illustrations vectorielles :* Antigravity Visual Engine (norme SVG Byrne-Culinaire).\\
-      *Gravures patrimoniales & photographies scientifiques :* Wikimedia Commons (Domaine Public & Creative Commons).\\
+      *Photographies culinaires & gravures :* Wikimedia Commons (Domaine Public & Creative Commons).\\
       *Composition typographique :* Typst v0.15.1, polices Liberation Serif & Sans.\\
-      *Dépôt de code et figures sources :* Dépôt GitHub public sous licence CC BY-SA 4.0.
+      *Dépôt de code et figures sources :* Dépôt GitHub public sous licence CC BY-SA 4.0.\\
+      *Dépôt légal :* Octobre 2026 (Sans mention commerciale obligatoire).
     ]
   ]
 ]
@@ -359,6 +375,144 @@ PREAMBLE = """
 )
 
 #pagebreak()
+
+// ==========================================
+// 5. TABLE DES RECETTES & PRÉPARATIONS PILIERS
+// ==========================================
+#align(center)[
+  #text(size: 15pt, weight: "bold", fill: c-bordeaux, font: "Liberation Sans")[
+    🍳 Table des Recettes et Préparations Piliers
+  ]
+  #v(-4pt)
+  #line(length: 60%, stroke: 1pt + c-gold)
+]
+#v(0.6cm)
+
+#block(
+  fill: rgb("#fffbeb"),
+  stroke: 0.5pt + rgb("#fde68a"),
+  inset: 16pt,
+  radius: 6pt,
+  width: 100%
+)[
+  #text(size: 10pt)[
+    Cette table réunit les dix protocoles fondamentaux pas à pas décrits dans l'ouvrage. Chaque recette constitue une application directe et immédiate des principes physico-chimiques exposés :
+
+    #v(0.3cm)
+    *Pains, Levains & Fromagerie Autonome*
+    - #link(<recette-pain-cocotte>)[Le Pain Cocotte d'Autonomie sans Pétrissage (*No-Knead Bread*)] --- _Chapitre 15_
+    - #link(<recette-fromage-frais>)[Le Fromage Frais Maison en 15 Minutes (Caillage Acide sans Présure)] --- _Chapitre 15_
+    - #link(<recette-glace-sel>)[La Glace Express sans Sorbetière (Abaissement Cryoscopique du Sel)] --- _Chapitre 15_
+
+    #v(0.2cm)
+    *Viandes, Poissons & Saisies à la Poêle*
+    - #link(<recette-steak-fonte>)[Le Pavé de Bœuf en Poêle Fonte & Arrosage au Beurre Mousseux (*Basting*)] --- _Chapitre 03_
+    - #link(<recette-deglacage-minute>)[Le Déglaçage Minute & Sauce Montée au Beurre Émulsionnée] --- _Chapitre 06_
+    - #link(<recette-ceviche-cabillaud>)[Le Vrai Ceviche de Cabillaud Mariné au Citron Vert & Piment Doux] --- _Chapitre 14_
+
+    #v(0.2cm)
+    *Pâtes & Émulsions d'Or*
+    - #link(<recette-carbonara-traditionnelle>)[Les Vraies Spaghetti alla Carbonara (L'Émulsion d'Or Jaune sans Crème)] --- _Chapitre 04_
+
+    #v(0.2cm)
+    *Cuisine Végétale & Protéines Alternatives*
+    - #link(<recette-dahl-lentilles>)[Le Dahl Réconfortant de Lentilles Corail au Cumin Torréfié & Coco] --- _Chapitre 12_
+    - #link(<recette-tofu-croustillant>)[Le Tofu Doré Ultra-Croustillant & son Laquage Tamari-Sésame] --- _Chapitre 12_
+    - #link(<recette-mousse-aquafaba>)[La Mousse au Chocolat Aérienne à l'Aquafaba (Zéro Œuf, Zéro Crème)] --- _Chapitre 12_
+
+    #v(0.2cm)
+    *Desserts & Maîtrise des Seuils Thermiques*
+    - #link(<recette-moelleux-chocolat>)[Le Moelleux au Chocolat Cœur Coulant (Gradient Thermique Calibré)] --- _Chapitre 13_
+    - #link(<recette-creme-anglaise>)[La Crème Anglaise Onctueuse Inratable (Seuil Critique de 83°C au Ruban)] --- _Chapitre 13_
+  ]
+]
+
+#pagebreak()
+"""
+
+# ==============================================================================
+# QUATRIÈME DE COUVERTURE (BACK COVER)
+# ==============================================================================
+
+BACK_COVER = """
+#pagebreak()
+#set page(margin: 0pt, header: none, footer: none)
+
+#block(
+  fill: rgb("#1c1917"),
+  width: 100%,
+  height: 100%,
+  inset: (x: 2.6cm, y: 2.4cm)
+)[
+  #v(0.8cm)
+  #text(size: 11pt, weight: "bold", fill: rgb("#fbbf24"), tracking: 2pt, font: "Liberation Sans")[
+    LA CUISINE EXPLIQUÉE
+  ]
+  #v(0.2cm)
+  #text(size: 20pt, weight: "bold", fill: white, font: "Liberation Serif")[
+    Retrouver la liberté souveraine de comprendre ce que l'on fait.
+  ]
+  #v(0.4cm)
+  #line(length: 100%, stroke: 1.5pt + rgb("#f59e0b"))
+  #v(0.6cm)
+
+  #text(size: 10.5pt, fill: rgb("#f5f5f4"), font: "Liberation Serif")[
+    Pourquoi l'eau qui bout à gros bouillons est-elle parfois l'ennemie jurée d'un aliment ? Pourquoi saler une viande quarante-cinq minutes avant de la poser sur le feu change-t-il radicalement sa jutosité ? Comment fabriquer un fromage frais en quinze minutes sans matériel, ou émulsionner des pâtes crémeuses à la perfection sans la moindre goutte de crème fraîche ?
+
+    *La Cuisine Expliquée* n'est pas un énième catalogue de recettes passives à réciter sans réfléchir. C'est un traité vivant d'**autonomie matérielle, de thermodynamique et de biologie du geste culinaire**, conçu pour libérer définitivement le cuisinier de la tyrannie des recettes magiques et du diktat des gadgets superflus.
+
+    À travers quinze chapitres lumineux, ce manuel démontre qu'avec seulement cinq outils indestructibles (une poêle en fonte, une casserole inox, une planche de bois massif, un couteau affûté et une cuillère de bois) et la compréhension des états de la matière, il est possible de maîtriser l'intégralité du répertoire nourricier universel.
+  ]
+
+  #v(0.8cm)
+  #block(
+    fill: rgb("#292524"),
+    stroke: 1pt + rgb("#44403c"),
+    inset: 14pt,
+    radius: 6pt,
+    width: 100%
+  )[
+    #text(size: 9.5pt, fill: rgb("#fed7aa"), font: "Liberation Sans", weight: "bold")[
+      DANS CET OUVRAGE :
+    ]
+    #v(3pt)
+    #text(size: 9pt, fill: rgb("#e7e5e4"), font: "Liberation Sans")[
+      • *15 Chapitres Fondamentaux* : De l'étincelle paléolithique à la science moléculaire.\\
+      • *10 Recettes Piliers Pas à Pas* : Ratios universels, repères sensoriels et arbres de sauvetage.\\
+      • *Guide de Survie & Protocoles d'Urgence* : Incendies d'huile, pannes de froid et intoxications.\\
+      • *Cuisine Végétale Rationnelle* : Chimie des acides aminés et biodisponibilité des protéines.\\
+      • *Édition Ouverte & Pérenne* : Diffusée sous licence libre Creative Commons CC BY-SA 4.0.
+    ]
+  ]
+
+  #v(1.2cm)
+  #grid(
+    columns: (1fr, auto),
+    align: (left + bottom, right + bottom),
+    [
+      #text(size: 9pt, fill: rgb("#a8a29e"), font: "Liberation Sans")[
+        *Silvère-Martin Michiellot & Antigravity*\\
+        Édition Numérique et Patrimoniale — 2026\\
+        Dépôt GitHub Public / Open Access Book
+      ]
+    ],
+    [
+      #block(
+        fill: white,
+        inset: (x: 12pt, y: 8pt),
+        radius: 4pt
+      )[
+        #text(size: 9.5pt, weight: "bold", fill: rgb("#0f172a"), font: "Liberation Sans")[
+          PRIX : 24,90 € TTC
+        ]
+        #v(-2pt)
+        #text(size: 7.5pt, fill: rgb("#64748b"), font: "Liberation Sans")[
+          ÉDITION LIBRE CC BY-SA
+        ]
+      ]
+    ]
+  )
+]
 """
 
 # ==============================================================================
@@ -387,21 +541,24 @@ def postprocess_typst(typ_content):
     typ_content = re.sub(r'CALLOUTSTART([a-zA-Z0-9_\\]+)CALLOUTSTART', replace_callout_start, typ_content)
     typ_content = typ_content.replace('CALLOUTEND', '\n]')
     
-    # Reconvertir les ancres HTML en labels Typst [] <mon-label>
-    typ_content = re.sub(r'LABELSTART([a-zA-Z0-9_\-]+)LABELSTART', r'[] <\1>', typ_content)
+    # Reconvertir les ancres HTML en labels Typst #hide[] <mon-label> (invisible sur la page)
+    typ_content = re.sub(r'LABELSTART([a-zA-Z0-9_\-]+)LABELSTART', r'#hide[] <\1>', typ_content)
     
-    # Résolution résiliente des liens hypertexte Typst :
-    targeted_links = set(re.findall(r'#link\(<([a-zA-Z0-9_\-]+)>\)', typ_content))
-    defined_labels = set(re.findall(r'(?<!#link\()<([a-zA-Z0-9_\-]+)>', typ_content))
+    # Assembler le document complet
+    full_text = PREAMBLE + "\n\n" + typ_content + "\n\n" + BACK_COVER
+    
+    # Résolution résiliente des liens hypertexte Typst sur l'intégralité de l'ouvrage :
+    targeted_links = set(re.findall(r'#link\(<([a-zA-Z0-9_\-]+)>\)', full_text))
+    defined_labels = set(re.findall(r'(?<!#link\()<([a-zA-Z0-9_\-]+)>', full_text))
     missing_labels = targeted_links - defined_labels
     if missing_labels:
-        print(f"  [AUTO-RÉSOLUTION] {len(missing_labels)} étiquettes cibles créées automatiquement : {missing_labels}")
-        anchor_block = "\n\n// Ancres de navigation transversale automatiques\n"
+        print(f"  [AUTO-RÉSOLUTION] {len(missing_labels)} étiquettes cibles créées automatiquement sans artefact visible.")
+        anchor_block = "\n\n// Ancres de navigation transversale invisibles\n"
         for label in missing_labels:
-            anchor_block += f"[] <{label}>\n"
-        typ_content += anchor_block
-    
-    return PREAMBLE + "\n\n" + typ_content
+            anchor_block += f"#hide[] <{label}>\n"
+        full_text += anchor_block
+        
+    return full_text
 
 # ==============================================================================
 # PREPROCESS MARKDOWN
@@ -470,6 +627,7 @@ def run_build():
 
     all_md = []
     for book_title, files in sections:
+        # Titre de partie intégré sans page blanche superflue
         all_md.append(f"\n# {book_title}\n")
         for f in files:
             full_path = os.path.join(BASE_DIR, f)

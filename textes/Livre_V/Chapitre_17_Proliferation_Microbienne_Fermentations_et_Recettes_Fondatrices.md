@@ -1,4 +1,4 @@
-# CHAPITRE 17 — Prolifération Microbienne, Fermentations et Recettes Fondatrices
+# CHAPITRE 15 — Prolifération Microbienne, Fermentations et Recettes Fondatrices
 
 > « Les micro-organismes sont les cuisiniers invisibles de la Terre. Savoir leur ouvrir la porte quand ils nous nourrissent et leur claquer la porte au nez quand ils veulent nous tuer est la frontière exacte entre la gastronomie et le poison. »
 
@@ -83,7 +83,7 @@ La dissolution du chlorure de sodium ($\mathrm{NaCl}$) dans la glace est un phé
 
 *Comment obtenir une miche de boulanger d'exception avec 1 gramme de levure et zéro pétrissage mécanique.*
 
-![Planche de fournil et boulangerie artisanale (Encyclopédie de Diderot et d'Alembert)](figures/patrimoine/diderot_encyclopedie_fournil.jpg)
+![Pain artisanal doré à croûte craquante et mie alvéolée cuit en cocotte en fonte](figures/nourriture/pain_artisan_croute.jpg)
 
 ::: anecdote_historique
 #### 🏛️ L'Anecdote Historique : L'Invention du Pain sans Pétrissage
