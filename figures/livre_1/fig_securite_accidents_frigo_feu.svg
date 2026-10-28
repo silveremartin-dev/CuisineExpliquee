@@ -1,69 +1,73 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
-  <rect width="800" height="450" rx="16" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
-  <text x="400" y="36" font-family="Liberation Sans, Arial, sans-serif" font-size="19" font-weight="bold" fill="#0f172a" text-anchor="middle">SÉCURITÉ EN CUISINE : LES 4 ACCIDENTS MAJEURS ET LEURS PARADES</text>
-  <text x="400" y="58" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" fill="#64748b" text-anchor="middle">Ce qu'il faut faire immédiatement et ce qu'il faut absolument proscrire.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%">
+  <rect width="800" height="480" rx="14" fill="#fcfbf7" stroke="#e8e2d5" stroke-width="2"/>
+  <text x="400" y="34" font-family="Liberation Serif, Georgia, serif" font-size="17" font-weight="bold" fill="#701c1a" text-anchor="middle">SÉCURITÉ EN CUISINE : LES 4 ACCIDENTS MAJEURS ET LEURS PARADES</text>
+  <text x="400" y="54" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#5c5549" text-anchor="middle">Ce qu'il faut faire immédiatement et ce qu'il faut absolument proscrire.</text>
 
-  <!-- Bloc 1 : Panne de Frigo / Congélateur -->
-  <g transform="translate(30, 75)">
-    <rect width="360" height="165" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
-    <rect x="0" y="0" width="360" height="28" rx="10" fill="#0284c7"/>
-    <text x="180" y="19" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#ffffff" text-anchor="middle">1. FRIGO / CONGÉLATEUR EN PANNE (DÉGEL)</text>
-    
-    <text x="12" y="46" font-family="Liberation Sans, Arial, sans-serif" font-size="10.5" fill="#15803d"><tspan font-weight="bold">✓ CE QU'IL FAUT FAIRE :</tspan></text>
-    <text x="12" y="62" font-family="Liberation Sans, Arial, sans-serif" font-size="10" fill="#166534">• Laisser les portes fermées (maintien du froid pendant 4 à 6 heures).</text>
-    <text x="12" y="77" font-family="Liberation Sans, Arial, sans-serif" font-size="10" fill="#166534">• Si température &gt; 4°C depuis &gt; 2h : cuire à cœur immédiatement viandes/poissons.</text>
-    <text x="12" y="92" font-family="Liberation Sans, Arial, sans-serif" font-size="10" fill="#166534">• Les aliments cuits à cœur peuvent alors être recongelés sans risque.</text>
-    
-    <text x="12" y="112" font-family="Liberation Sans, Arial, sans-serif" font-size="10.5" fill="#dc2626"><tspan font-weight="bold">✗ INTERDICTION ABSOLUE :</tspan></text>
-    <text x="12" y="128" font-family="Liberation Sans, Arial, sans-serif" font-size="10" fill="#b91c1c" font-weight="bold">• NE JAMAIS RECONGELER UN ALIMENT CRU DÉCONGELÉ !</text>
-    <text x="12" y="143" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#7f1d1d">Les bactéries prolifèrent à vitesse x100 dans l'eau cellulaire libérée.</text>
+  <!-- Bloc 1 : Panne de Frigo -->
+  <g transform="translate(35, 75)">
+    <rect width="355" height="185" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <rect x="0" y="0" width="355" height="28" rx="8" fill="#5c5549"/>
+    <text x="177" y="19" font-family="Liberation Sans, Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">1. PANNE DE FROID (RÉFRIGÉRATEUR / DÉGEL)</text>
+
+    <text x="12" y="46" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" font-weight="bold" fill="#5a6e54">✓ CE QU'IL FAUT FAIRE :</text>
+    <text x="20" y="60" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#242124">• Garder les portes fermées (froid préservé 4 à 6 h).</text>
+    <text x="20" y="74" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#242124">• Si T &gt; 4°C depuis &gt; 2h : cuire à coeur sans délai.</text>
+    <text x="20" y="88" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#242124">• Les aliments cuits à coeur peuvent être recongelés.</text>
+
+    <text x="12" y="112" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" font-weight="bold" fill="#701c1a">✗ DANGER ABSOLU :</text>
+    <text x="20" y="126" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" font-weight="bold" fill="#701c1a">• NE JAMAIS RECONGELER UN PRODUIT CRU DÉCONGELÉ !</text>
+    <text x="20" y="140" font-family="Liberation Sans, Arial, sans-serif" font-size="8.5" fill="#5c5549">L'eau cellulaire libérée multiplie les germes par 100.</text>
+    <text x="20" y="153" font-family="Liberation Sans, Arial, sans-serif" font-size="8.5" fill="#5c5549">La recongélation n'élimine aucune colonie bactérienne.</text>
   </g>
 
-  <!-- Bloc 2 : Poêle en Feu (Huile embrasée) -->
+  <!-- Bloc 2 : Poêle en Feu -->
   <g transform="translate(410, 75)">
-    <rect width="360" height="165" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
-    <rect x="0" y="0" width="360" height="28" rx="10" fill="#dc2626"/>
-    <text x="180" y="19" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#ffffff" text-anchor="middle">2. POÊLE EN FEU (INCENDIE DE CORPS GRAS)</text>
-    
-    <text x="12" y="46" font-family="Liberation Sans, Arial, sans-serif" font-size="10.5" fill="#15803d"><tspan font-weight="bold">✓ CE QU'IL FAUT FAIRE (3 SECONDES) :</tspan></text>
-    <text x="12" y="62" font-family="Liberation Sans, Arial, sans-serif" font-size="10" fill="#166534">• Couper immédiatement la source de chaleur (gaz/plaque).</text>
-    <text x="12" y="77" font-family="Liberation Sans, Arial, sans-serif" font-size="10" fill="#166534">• Glisser un couvercle métallique ou plaque pour étouffer l'oxygène (O₂).</text>
-    <text x="12" y="92" font-family="Liberation Sans, Arial, sans-serif" font-size="10" fill="#166534">• Laisser en place 15 min sans soulever pour éviter la ré-inflammation.</text>
-    
-    <text x="12" y="112" font-family="Liberation Sans, Arial, sans-serif" font-size="10.5" fill="#dc2626"><tspan font-weight="bold">✗ ERREUR MORTELLE :</tspan></text>
-    <text x="12" y="128" font-family="Liberation Sans, Arial, sans-serif" font-size="10" fill="#b91c1c" font-weight="bold">• NE JAMAIS JETER D'EAU SUR L'HUILE EN FLAMMES !</text>
-    <text x="12" y="143" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#7f1d1d">Vaporisation explosive (x1700) créant une boule de feu de 2 mètres.</text>
+    <rect width="355" height="185" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <rect x="0" y="0" width="355" height="28" rx="8" fill="#701c1a"/>
+    <text x="177" y="19" font-family="Liberation Sans, Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">2. FEU D'HUILE OU DE POÊLE (SURCHAUFFE)</text>
+
+    <text x="12" y="46" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" font-weight="bold" fill="#5a6e54">✓ CE QU'IL FAUT FAIRE (EN 3 SECONDES) :</text>
+    <text x="20" y="60" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#242124">• Couper immédiatement la source d'énergie (gaz/feu).</text>
+    <text x="20" y="74" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#242124">• Poser un couvercle métallique pour étouffer l'air.</text>
+    <text x="20" y="88" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#242124">• Laisser refroidir 15 min sans lever le couvercle.</text>
+
+    <text x="12" y="112" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" font-weight="bold" fill="#701c1a">✗ ERREUR MORTELLE :</text>
+    <text x="20" y="126" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" font-weight="bold" fill="#701c1a">• NE JAMAIS JETER D'EAU SUR L'HUILE EN FLAMMES !</text>
+    <text x="20" y="140" font-family="Liberation Sans, Arial, sans-serif" font-size="8.5" fill="#5c5549">Vaporisation explosive (x1700 en volume) créant</text>
+    <text x="20" y="153" font-family="Liberation Sans, Arial, sans-serif" font-size="8.5" fill="#5c5549">un aérosol incandescent et une déflagration immédiate.</text>
   </g>
 
   <!-- Bloc 3 : Brûlures Thermiques -->
-  <g transform="translate(30, 255)">
-    <rect width="360" height="175" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
-    <rect x="0" y="0" width="360" height="28" rx="10" fill="#d97706"/>
-    <text x="180" y="19" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#ffffff" text-anchor="middle">3. BRÛLURES PAR CONTACT OU CARAMEL</text>
-    
-    <text x="12" y="46" font-family="Liberation Sans, Arial, sans-serif" font-size="10.5" fill="#15803d"><tspan font-weight="bold">✓ LA RÈGLE DES « TROIS 15 » :</tspan></text>
-    <text x="12" y="64" font-family="Liberation Sans, Arial, sans-serif" font-size="10" fill="#166534">• Eau tempérée à <tspan font-weight="bold">15°C</tspan> (pas d'eau glacée qui aggrave l'ischémie).</text>
-    <text x="12" y="80" font-family="Liberation Sans, Arial, sans-serif" font-size="10" fill="#166534">• Pendant <tspan font-weight="bold">15 minutes</tspan> continues sans interruption.</text>
-    <text x="12" y="96" font-family="Liberation Sans, Arial, sans-serif" font-size="10" fill="#166534">• À <tspan font-weight="bold">15 cm</tspan> sous le jet doux du robinet pour stopper la chaleur résiduelle.</text>
-    
-    <text x="12" y="120" font-family="Liberation Sans, Arial, sans-serif" font-size="10.5" fill="#dc2626"><tspan font-weight="bold">✗ GESTE ABSURDE À BANNIR :</tspan></text>
-    <text x="12" y="138" font-family="Liberation Sans, Arial, sans-serif" font-size="10" fill="#b91c1c">• Mettre du beurre, de l'huile ou de la farine sur une brûlure !</text>
-    <text x="12" y="153" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#7f1d1d">Le gras isole thermiquement et cuit les tissus profonds en retenant la chaleur.</text>
+  <g transform="translate(35, 275)">
+    <rect width="355" height="185" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <rect x="0" y="0" width="355" height="28" rx="8" fill="#a3432b"/>
+    <text x="177" y="19" font-family="Liberation Sans, Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">3. BRÛLURES (HUILE, CONTACT, CARAMEL)</text>
+
+    <text x="12" y="46" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" font-weight="bold" fill="#5a6e54">✓ LA RÈGLE VITALE DES « TROIS 15 » :</text>
+    <text x="20" y="60" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#242124">• Eau tempérée à <tspan font-weight="bold">15°C</tspan> (pas de glaçon qui nécrose).</text>
+    <text x="20" y="74" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#242124">• Pendant <tspan font-weight="bold">15 minutes</tspan> sans interruption sous l'eau.</text>
+    <text x="20" y="88" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#242124">• À <tspan font-weight="bold">15 cm</tspan> du robinet (jet doux, refroidit en profondeur).</text>
+
+    <text x="12" y="112" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" font-weight="bold" fill="#701c1a">✗ GESTE ABSURDE À BANNIR :</text>
+    <text x="20" y="126" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" font-weight="bold" fill="#701c1a">• Mettre du beurre, de l'huile ou de la farine !</text>
+    <text x="20" y="140" font-family="Liberation Sans, Arial, sans-serif" font-size="8.5" fill="#5c5549">Le gras forme un isolant thermique qui emprisonne</text>
+    <text x="20" y="153" font-family="Liberation Sans, Arial, sans-serif" font-size="8.5" fill="#5c5549">la chaleur dans la chair et aggrave la nécrose.</text>
   </g>
 
-  <!-- Bloc 4 : Coupures et Fil de Lame -->
-  <g transform="translate(410, 255)">
-    <rect width="360" height="175" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
-    <rect x="0" y="0" width="360" height="28" rx="10" fill="#334155"/>
-    <text x="180" y="19" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#ffffff" text-anchor="middle">4. GESTION DES COUPURES ET TENUE DE LAME</text>
-    
-    <text x="12" y="46" font-family="Liberation Sans, Arial, sans-serif" font-size="10.5" fill="#15803d"><tspan font-weight="bold">✓ PRÉVENTION PAR LA POSTURE :</tspan></text>
-    <text x="12" y="64" font-family="Liberation Sans, Arial, sans-serif" font-size="10" fill="#166534">• Main guide : <tspan font-weight="bold">doigts repliés en « griffe de chat »</tspan>.</text>
-    <text x="22" y="79" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#166534">La face plate de la lame glisse contre les phalanges sans toucher le fil.</text>
-    <text x="12" y="96" font-family="Liberation Sans, Arial, sans-serif" font-size="10" fill="#166534">• Main active : pouce et index pincent la base de la lame (contrôle direct).</text>
-    
-    <text x="12" y="120" font-family="Liberation Sans, Arial, sans-serif" font-size="10.5" fill="#dc2626"><tspan font-weight="bold">✗ EN CAS DE COUPURE :</tspan></text>
-    <text x="12" y="138" font-family="Liberation Sans, Arial, sans-serif" font-size="10" fill="#b91c1c">• Ne pas sucer la plaie (bouche remplie de bactéries pathogènes).</text>
-    <text x="12" y="153" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#7f1d1d">Laver à l'eau courante, désinfecter et comprimer fort 5 min avec un linge propre.</text>
+  <!-- Bloc 4 : Coupures -->
+  <g transform="translate(410, 275)">
+    <rect width="355" height="185" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <rect x="0" y="0" width="355" height="28" rx="8" fill="#5c5549"/>
+    <text x="177" y="19" font-family="Liberation Sans, Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">4. GESTION DES COUPURES ET TENUE DU COUTEAU</text>
+
+    <text x="12" y="46" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" font-weight="bold" fill="#5a6e54">✓ POSTURE SÉCURITAIRE DU CHEF :</text>
+    <text x="20" y="60" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#242124">• Main guide : <tspan font-weight="bold">doigts repliés en « griffe de chat »</tspan>.</text>
+    <text x="30" y="74" font-family="Liberation Sans, Arial, sans-serif" font-size="8.5" fill="#5c5549">La lame glisse contre les phalanges, le fil ne touche rien.</text>
+    <text x="20" y="88" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#242124">• Main active : pouce et index pincent la base de la lame.</text>
+
+    <text x="12" y="112" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" font-weight="bold" fill="#701c1a">✗ CONDUITE EN CAS DE COUPURE :</text>
+    <text x="20" y="126" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#242124">• Ne pas sucer la plaie (bouche riche en germes).</text>
+    <text x="20" y="140" font-family="Liberation Sans, Arial, sans-serif" font-size="8.5" fill="#5c5549">Rincer à l'eau courante claire, désinfecter,</text>
+    <text x="20" y="153" font-family="Liberation Sans, Arial, sans-serif" font-size="8.5" fill="#5c5549">comprimer 5 min avec un linge propre et surélever.</text>
   </g>
 </svg>

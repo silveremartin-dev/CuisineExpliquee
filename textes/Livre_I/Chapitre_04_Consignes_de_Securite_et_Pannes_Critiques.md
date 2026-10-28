@@ -132,6 +132,20 @@ Pourquoi cet interdit est-il répété par tous les hygiénistes du monde ?
 - Lors de la seconde décongélation, la production d'entérotoxines thermostables (notamment staphylococciques, qui résistent même à la cuisson ultérieure) devient massive : vous risquez une intoxication alimentaire foudroyante.
 - **La seule règle licite :** Cuire intégralement à cœur l'aliment décongelé (la cuisson thermique détruit les bactéries végétatives). Une fois le produit cuit et transformé (ex. un bœuf bourguignon mijoté à $100^\circ\mathrm{C}$), la préparation est redevenue microbiologiquement assainie : **vous pouvez alors la recongeler sans danger**.
 
+### C. Le Protocole Expéditif de Décongélation Salubre (Sans Risque Bactérien)
+La décongélation est le moment le plus critique de la chaîne du froid : l'eau de constitution se liquéfie et les parois cellulaires brisées libèrent un bain nutritif d'acides aminés qui réveille instantanément les colonies bactériennes dormantes.
+
+::: positif
+#### ✓ Les Deux Seules Méthodes Salubres :
+1. **La Décongélation Lente au Froid ($0\text{ à }2^\circ\mathrm{C}$) :** Poser la pièce congelée sur une assiette au bas du réfrigérateur pendant 12 à 24 heures. La cinétique bactérienne reste bloquée par la basse température pendant que la glace fond doucement.
+2. **L'Immersion Hermétique en Eau Courante Glacée :** Si vous êtes pressé, enfermer la pièce sous vide ou dans un sachet zip étanche et l'immerger dans un saladier sous un mince filet d'eau froide courante ($10\text{ à }12^\circ\mathrm{C}$). L'eau liquide conduit la chaleur vingt-cinq fois plus vite que l'air : une pièce de viande de $300\text{ g}$ dégèle en 30 minutes sans jamais dépasser la température critique.
+:::
+
+::: danger
+#### ✗ L'Écueil Absolu : La Décongélation à Température Ambiante sur le Plan de Travail
+Abandonner un poulet ou du poisson surgelé sur le plan de travail de la cuisine à $20^\circ\mathrm{C}$ pendant quatre heures : la surface de la viande atteint $18^\circ\mathrm{C}$ en une heure alors que le cœur est encore gelé. Les bactéries de surface entrent dans leur phase de reproduction logarithmique et doublent leur population toutes les vingt minutes. En quatre heures, une bactérie initiale donne naissance à plus de quatre mille descendants toxiques !
+:::
+
 ---
 
 ## 6. L'ARBRE D'ACTION D'URGENCE ET NUMÉROS VITAUX

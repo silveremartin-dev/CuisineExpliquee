@@ -20,7 +20,7 @@ Or, la gastronomie de recherche — d'Auguste Escoffier à Ferran Adrià, en pas
 En 1570, Bartolomeo Scappi, cuisinier privé des papes Pie IV et Pie V au Vatican, publie son chef-d'œuvre *Opera dell'arte del cucinare*. Pour la première fois dans l'histoire de l'humanité, un traité culinaire n'est pas seulement une liste d'ingrédients princiers, mais un inventaire raisonné d'ingénierie mécanique. Scappi fait graver sur cuivre des dizaines de planches montrant des couteaux forgés à dos lourd, des roulettes à découper la pâte fraîche, des tamis de crin et des bassines en cuivre étamé. Cinq siècles plus tard, la forme de ces instruments fondamentaux n'a pas pris une ride : la biomécanique de la main humaine et la physique des fluides imposent toujours les mêmes contours d'efficacité optimale.
 :::
 
-![Instruments et ustensiles de découpe de pâte selon Bartolomeo Scappi (Opera, 1570)](figures/patrimoine/scappi_cuisine_renaissance.jpg)
+![Découpe maraîchère de précision au couteau de chef : le tranchant parfait préserve l'intégrité des cellules végétales](figures/nourriture/carottes_decoupe_cuisine.jpg)
 
 ---
 
@@ -155,6 +155,7 @@ Au-delà de la destruction bactérienne, l'acidité (ions $\mathrm{H}^+$) est l'
 2. **La Dispersion Goutte à Goutte :** Commencer à fouetter activement en versant l'huile gouttelette par gouttelette. Chaque goutte doit être cisaillée en millions de billes microscopiques avant d'en ajouter une autre.
 3. **Le Montage en Filet :** Dès que l'émulsion « prend » et prend une consistance nappante brillante, verser l'huile restante en mince filet continu tout en maintenant un battement circulaire rapide.
 4. **Le Blocage Sensoriel :** La mayonnaise devient ferme, dense et tient sur le fouet à l'envers. Rectifier en sel et acidité.
+
 ---
 
 ## 7. LE SYSTÈME D : DÉTOURNER LES OBJETS DU QUOTIDIEN POUR REMPLACER LES USTENSILES RARES

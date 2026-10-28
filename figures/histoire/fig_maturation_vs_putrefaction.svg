@@ -1,44 +1,60 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" width="100%" height="100%">
-  <rect width="800" height="360" rx="16" fill="#fcfbf7" stroke="#e8e2d5" stroke-width="2"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" width="100%" height="100%">
+  <rect width="800" height="380" rx="14" fill="#fcfbf7" stroke="#e8e2d5" stroke-width="2"/>
   
   <!-- Titre -->
-  <text x="400" y="32" font-family="Liberation Sans, Arial, sans-serif" font-size="16" font-weight="bold" fill="#701c1a" text-anchor="middle">LA BIFURCATION BIOLOGIQUE : MATURATION vs PUTRÉFACTION</text>
-  <text x="400" y="52" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#5c5549" text-anchor="middle">Comment l'environnement oriente la dégradation de la matière organique vers l'umami ou le poison.</text>
+  <text x="400" y="32" font-family="Liberation Serif, Georgia, serif" font-size="16" font-weight="bold" fill="#701c1a" text-anchor="middle">LA BIFURCATION BIOLOGIQUE : MATURATION vs PUTREFACTION</text>
+  <text x="400" y="52" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#5c5549" text-anchor="middle">Comment l'environnement oriente la degradation de la matiere vers l'umami ou le poison.</text>
 
   <!-- Bloc Central Sommet -->
-  <rect x="250" y="70" width="300" height="42" rx="8" fill="#f4eee1" stroke="#d4a373" stroke-width="1.5"/>
-  <text x="400" y="96" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#242124" text-anchor="middle">MATIÈRE ORGANIQUE FRAÎCHE</text>
+  <rect x="260" y="68" width="280" height="38" rx="8" fill="#f7f4eb" stroke="#d4a373" stroke-width="1.5"/>
+  <text x="400" y="92" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#242124" text-anchor="middle">MATIERE ORGANIQUE FRAICHE</text>
 
-  <!-- Lignes de flux -->
-  <path d="M 320 112 L 320 145 L 200 145 L 200 165" fill="none" stroke="#2d6a4f" stroke-width="2"/>
-  <polygon points="200,172 195,163 205,163" fill="#2d6a4f"/>
+  <!-- Lignes de bifurcation -->
+  <path d="M 330 106 L 330 135 L 210 135 L 210 152" fill="none" stroke="#5a6e54" stroke-width="2"/>
+  <polygon points="210,158 205,150 215,150" fill="#5a6e54"/>
 
-  <path d="M 480 112 L 480 145 L 600 145 L 600 165" fill="none" stroke="#9e2a2b" stroke-width="2"/>
-  <polygon points="600,172 595,163 605,163" fill="#9e2a2b"/>
+  <path d="M 470 106 L 470 135 L 590 135 L 590 152" fill="none" stroke="#a3432b" stroke-width="2"/>
+  <polygon points="590,158 585,150 595,150" fill="#a3432b"/>
 
-  <!-- Volet Gauche : Maturation Contrôlée -->
-  <g transform="translate(40, 175)">
-    <rect width="330" height="160" rx="10" fill="#ffffff" stroke="#74c69d" stroke-width="1.5"/>
-    <rect x="0" y="0" width="330" height="30" rx="10" fill="#2d6a4f"/>
-    <text x="165" y="20" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">✓ MATURATION CONTRÔLÉE (NOBLE)</text>
+  <!-- Volet Gauche : Maturation Controlee -->
+  <g transform="translate(40, 162)">
+    <rect width="340" height="198" rx="8" fill="#ffffff" stroke="#5a6e54" stroke-width="1.5"/>
+    <rect x="0" y="0" width="340" height="28" rx="8" fill="#5a6e54"/>
+    <text x="170" y="19" font-family="Liberation Sans, Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">MATURATION CONTROLEE (NOBLE)</text>
     
-    <text x="15" y="52" font-family="Liberation Sans, Arial, sans-serif" font-size="10" fill="#1b4332"><tspan font-weight="bold">• Acteurs :</tspan> Enzymes endogènes du muscle (calpaïnes, cathepsines)</text>
-    <text x="15" y="72" font-family="Liberation Sans, Arial, sans-serif" font-size="10" fill="#1b4332"><tspan font-weight="bold">• Milieu requis :</tspan> Froid sec (0 à 2°C), salé, ventilé ou acide</text>
-    <text x="15" y="92" font-family="Liberation Sans, Arial, sans-serif" font-size="10" fill="#1b4332"><tspan font-weight="bold">• Transformation :</tspan> Clivage doux des ponts d'actomyosine</text>
-    <text x="15" y="112" font-family="Liberation Sans, Arial, sans-serif" font-size="10" fill="#1b4332"><tspan font-weight="bold">• Signature :</tspan> Glutamate libre décuplé (puissant arôme umami)</text>
-    <text x="15" y="135" font-family="Liberation Sans, Arial, sans-serif" font-size="10.5" font-weight="bold" fill="#2d6a4f">→ Résultat : Chair fondante, digestible, saine et savoureuse.</text>
+    <text x="14" y="47" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#242124"><tspan font-weight="bold">- Acteurs :</tspan> Enzymes cellulaires endogenes</text>
+    <text x="24" y="61" font-family="Liberation Sans, Arial, sans-serif" font-size="9" fill="#5c5549">(calpaines, cathepsines) du muscle au repos.</text>
+
+    <text x="14" y="80" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#242124"><tspan font-weight="bold">- Milieu :</tspan> Froid sec regule (0 a 2 C),</text>
+    <text x="24" y="94" font-family="Liberation Sans, Arial, sans-serif" font-size="9" fill="#5c5549">ventilation constante, salage ou acidification.</text>
+
+    <text x="14" y="113" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#242124"><tspan font-weight="bold">- Action :</tspan> Rupture douce des ponts</text>
+    <text x="24" y="127" font-family="Liberation Sans, Arial, sans-serif" font-size="9" fill="#5c5549">d'actomyosine, attendrissement sans bacteries.</text>
+
+    <text x="14" y="146" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#242124"><tspan font-weight="bold">- Signature :</tspan> Liberation massive de glutamate</text>
+    <text x="24" y="160" font-family="Liberation Sans, Arial, sans-serif" font-size="9" fill="#5c5549">libre : explosion de la saveur umami.</text>
+
+    <text x="14" y="180" font-family="Liberation Sans, Arial, sans-serif" font-size="9.2" font-weight="bold" fill="#5a6e54">Bilan : Chair fondante, digeste et saine.</text>
   </g>
 
-  <!-- Volet Droit : Putréfaction Bactérienne -->
-  <g transform="translate(430, 175)">
-    <rect width="330" height="160" rx="10" fill="#ffffff" stroke="#e63946" stroke-width="1.5"/>
-    <rect x="0" y="0" width="330" height="30" rx="10" fill="#9e2a2b"/>
-    <text x="165" y="20" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">✗ PUTRÉFACTION BACTÉRIENNE (DANGER)</text>
+  <!-- Volet Droit : Putrefaction Bacterienne -->
+  <g transform="translate(420, 162)">
+    <rect width="340" height="198" rx="8" fill="#ffffff" stroke="#a3432b" stroke-width="1.5"/>
+    <rect x="0" y="0" width="340" height="28" rx="8" fill="#701c1a"/>
+    <text x="170" y="19" font-family="Liberation Sans, Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">PUTREFACTION BACTERIENNE (DANGER)</text>
     
-    <text x="15" y="52" font-family="Liberation Sans, Arial, sans-serif" font-size="10" fill="#540b0e"><tspan font-weight="bold">• Acteurs :</tspan> Bactéries telluriques et pathogènes (Pseudomonas, Clostridium)</text>
-    <text x="15" y="72" font-family="Liberation Sans, Arial, sans-serif" font-size="10" fill="#540b0e"><tspan font-weight="bold">• Milieu accélérateur :</tspan> Humidité tiède (10 à 50°C), absence de sel</text>
-    <text x="15" y="92" font-family="Liberation Sans, Arial, sans-serif" font-size="10" fill="#540b0e"><tspan font-weight="bold">• Décomposition :</tspan> Décarboxylation anarchique des acides aminés</text>
-    <text x="15" y="112" font-family="Liberation Sans, Arial, sans-serif" font-size="10" fill="#540b0e"><tspan font-weight="bold">• Toxines produites :</tspan> Cadavérine, putrescine, histamine, toxine botulique</text>
-    <text x="15" y="135" font-family="Liberation Sans, Arial, sans-serif" font-size="10.5" font-weight="bold" fill="#9e2a2b">→ Résultat : Odeur fétide, décomposition gluante, intoxication aiguë.</text>
+    <text x="14" y="47" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#242124"><tspan font-weight="bold">- Acteurs :</tspan> Bacteries telluriques et anaerobies</text>
+    <text x="24" y="61" font-family="Liberation Sans, Arial, sans-serif" font-size="9" fill="#5c5549">(Pseudomonas, Clostridium, coliformes).</text>
+
+    <text x="14" y="80" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#242124"><tspan font-weight="bold">- Milieu critique :</tspan> Humidite stagnante, tiedeur</text>
+    <text x="24" y="94" font-family="Liberation Sans, Arial, sans-serif" font-size="9" fill="#5c5549">(10 a 45 C), atmosphere close sans sel ni acide.</text>
+
+    <text x="14" y="113" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#242124"><tspan font-weight="bold">- Action :</tspan> Degradation anarchique des chaines</text>
+    <text x="24" y="127" font-family="Liberation Sans, Arial, sans-serif" font-size="9" fill="#5c5549">d'acides amines en amines biogenes toxiques.</text>
+
+    <text x="14" y="146" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#242124"><tspan font-weight="bold">- Toxines :</tspan> Cadaverine, putrescine,</text>
+    <text x="24" y="160" font-family="Liberation Sans, Arial, sans-serif" font-size="9" fill="#5c5549">histamine nocive et neurotoxine botulique.</text>
+
+    <text x="14" y="180" font-family="Liberation Sans, Arial, sans-serif" font-size="9.2" font-weight="bold" fill="#701c1a">Bilan : Odeur fetide, toxi-infection severe.</text>
   </g>
 </svg>

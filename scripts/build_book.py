@@ -106,15 +106,48 @@ PREAMBLE = """
 #show heading.where(level: 1): it => {
   pagebreak(weak: true)
   let body_repr = repr(it.body)
-  if "LIVRE" in body_repr or "ANNEXE" in body_repr {
-    // STYLE 5 (PAGE 21) : MINIMALISME ÉDITORIAL NORDIQUE POUR LES ENTÊTES DE LIVRE
+  if body_repr.contains("01") or body_repr.contains("02") or body_repr.contains("03") or body_repr.contains("04") or body_repr.contains("05") or "PARTIE" in body_repr {
+    // STYLE 5 (PAGE 21) : EXACT MINIMALISME ÉDITORIAL NORDIQUE POUR LES ENTÊTES DE LIVRE
     v(2.5cm)
-    text(size: 11pt, tracking: 0.25em, fill: rgb(100, 116, 139), font: "Liberation Sans", weight: "bold")[#smallcaps[Ouverture de Partie]]
-    v(0.8cm)
-    text(size: 28pt, weight: "light", fill: c-ink, tracking: 0.05em, font: "Liberation Serif")[#it.body]
-    v(1.0cm)
-    line(length: 15%, stroke: 1.5pt + c-bronze)
-    v(1.2cm)
+    align(center)[
+      #let part_num = if body_repr.contains("01") { [PREMIÈRE PARTIE] }
+        else if body_repr.contains("02") { [DEUXIÈME PARTIE] }
+        else if body_repr.contains("03") { [TROISIÈME PARTIE] }
+        else if body_repr.contains("04") { [QUATRIÈME PARTIE] }
+        else { [CINQUIÈME PARTIE] }
+      #text(size: 11pt, tracking: 0.15em, fill: rgb(100, 116, 139), font: "Liberation Sans", weight: "bold")[#part_num]      #v(1.0cm)
+      #text(size: 32pt, weight: "light", fill: c-ink, tracking: 0.05em, font: "Liberation Sans")[#it.body]
+      #v(2.0cm)
+      #text(size: 11.5pt, fill: rgb(100, 116, 139), font: "Liberation Sans", tracking: 0.05em)[
+        #if body_repr.contains("01") [
+          Rien de trop.\
+          Un couteau affûté.\
+          Une flamme pure.\
+          L'intelligence du temps.
+        ] else if body_repr.contains("02") [
+          L'anatomie invisible de l'assiette.\
+          La vérité sans fard de la matière.\
+          Le rythme biologique de la digestion.\
+          Le cycle vivant de la terre et de l'eau.
+        ] else if body_repr.contains("03") [
+          La contraction millimétrique du muscle.\
+          Les seuils thermiques de l'oeuf.\
+          L'extraction aromatique des parois végétales.\
+          La matrice élémentaire de la pâte.
+        ] else if body_repr.contains("04") [
+          Le sel et l'acide qui transforment à froid.\
+          La prolifération noble des ferments.\
+          La géographie ancestrale des trois graisses.\
+          La mémoire vivante du goût partagé.
+        ] else [
+          Le cadran absolu des températures critiques.\
+          Le glossaire physico-chimique exhaustif.\
+          La bibliographie raisonnée et critique.\
+          Les règles sanitaires de la conservation.
+        ]
+      ]
+    ]
+    pagebreak()
   } else {
     // STYLE 1 : LE GRAND TRAITÉ ÉTOILÉ POUR LES CHAPITRES
     v(1.0cm)
@@ -129,6 +162,7 @@ PREAMBLE = """
   }
 }
 
+// Titres de niveau 2, 3 et 4 systématiquement centrés (proscription des alignements à gauche)
 #show heading.where(level: 2): it => block(
   width: 100%,
   breakable: false,
@@ -136,9 +170,11 @@ PREAMBLE = """
   spacing: 1.4em
 )[
   #v(0.4cm)
-  #text(size: 12.5pt, weight: "bold", fill: c-bordeaux, font: "Liberation Serif")[#it.body]
-  #v(-2pt)
-  #line(length: 100%, stroke: 0.5pt + c-bronze)
+  #align(center)[
+    #text(size: 13pt, weight: "bold", fill: c-bordeaux, font: "Liberation Serif")[#it.body]
+    #v(4pt)
+    #line(length: 25%, stroke: 0.8pt + c-bronze)
+  ]
   #v(0.2cm)
 ]
 
@@ -149,7 +185,9 @@ PREAMBLE = """
   spacing: 1.1em
 )[
   #v(0.2cm)
-  #text(size: 11pt, weight: "bold", fill: c-terracotta, font: "Liberation Serif")[#it.body]
+  #align(center)[
+    #text(size: 11pt, weight: "bold", fill: c-terracotta, font: "Liberation Serif")[#it.body]
+  ]
   #v(0.1cm)
 ]
 
@@ -158,7 +196,9 @@ PREAMBLE = """
   sticky: true,
   spacing: 0.8em
 )[
-  #text(size: 9.5pt, weight: "bold", fill: c-slate, font: "Liberation Sans")[#it.body]
+  #align(center)[
+    #text(size: 9.5pt, weight: "bold", fill: c-slate, font: "Liberation Sans")[#it.body]
+  ]
 ]
 
 // Signalétique Didactique et Boîtes Culinaires Nobles (Style 1 : Couleurs douces et harmonieuses)
@@ -348,31 +388,41 @@ PREAMBLE = """
   margin: (top: 2.6cm, bottom: 2.6cm, left: 2.2cm, right: 2.2cm),
   header: context {
     let page-num = counter(page).get().first()
-    if page-num > 4 [
-      #let cur-h1 = query(selector(heading.where(level: 1)).before(here()))
-      #let title-left = if cur-h1.len() > 0 { cur-h1.last().body } else { [LA CUISINE EXPLIQUÉE] }
-      #grid(
-        columns: (1fr, auto),
-        align: (left + horizon, right + horizon),
-        text(size: 8pt, fill: c-slate, font: "Liberation Sans", style: "italic")[#title-left],
-        text(size: 7.5pt, fill: c-bronze, font: "Liberation Sans", weight: "bold")[LA CUISINE EXPLIQUÉE]
-      )
-      #v(-4pt)
-      #line(length: 100%, stroke: 0.4pt + c-bronze)
-    ]
+    if page-num > 4 {
+      let cur-h1 = query(selector(heading.where(level: 1)).before(here()))
+      let repr-h1 = if cur-h1.len() > 0 { repr(cur-h1.last().body) } else { "" }
+      let is-portal = repr-h1.contains("01") or repr-h1.contains("02") or repr-h1.contains("03") or repr-h1.contains("04") or repr-h1.contains("05")
+      // Sur les pages d'ouverture de livre en Style 5, pas d'en-tête pour préserver la pureté éditoriale
+      if not is-portal {
+        let title-left = cur-h1.last().body
+        grid(
+          columns: (1fr, auto),
+          align: (left + horizon, right + horizon),
+          text(size: 8pt, fill: c-slate, font: "Liberation Sans", style: "italic")[#title-left],
+          text(size: 7.5pt, fill: c-bronze, font: "Liberation Sans", weight: "bold")[LA CUISINE EXPLIQUÉE]
+        )
+        v(-4pt)
+        line(length: 100%, stroke: 0.4pt + c-bronze)
+      }
+    }
   },
   footer: context {
     let page-num = counter(page).get().first()
-    if page-num > 2 [
-      #line(length: 100%, stroke: 0.4pt + rgb("#dfdacf"))
-      #v(3pt)
-      #grid(
-        columns: (1fr, 1fr),
-        align: (left + horizon, right + horizon),
-        text(size: 8pt, fill: c-slate, font: "Liberation Sans", style: "italic")[Silvère-Martin Michiellot & Antigravity],
-        text(size: 8.5pt, fill: c-ink, font: "Liberation Sans", weight: "bold")[Page #page-num]
-      )
-    ]
+    if page-num > 2 {
+      let cur-h1 = query(selector(heading.where(level: 1)).before(here()))
+      let repr-h1 = if cur-h1.len() > 0 { repr(cur-h1.last().body) } else { "" }
+      let is-portal = repr-h1.contains("01") or repr-h1.contains("02") or repr-h1.contains("03") or repr-h1.contains("04") or repr-h1.contains("05")
+      if not is-portal {
+        line(length: 100%, stroke: 0.4pt + rgb("#dfdacf"))
+        v(3pt)
+        grid(
+          columns: (1fr, 1fr),
+          align: (left + horizon, right + horizon),
+          text(size: 8pt, fill: c-slate, font: "Liberation Sans", style: "italic")[Silvère-Martin Michiellot & Antigravity],
+          text(size: 8.5pt, fill: c-ink, font: "Liberation Sans", weight: "bold")[Page #page-num]
+        )
+      }
+    }
   }
 )
 
@@ -720,77 +770,41 @@ def run_build():
     print("=== Étape 1 : Assemblage et Préparation des Textes Markdown ===")
     
     portals = {
-        "LIVRE I — L'HOMME, LE FEU ET LA RÈGLE DU FOYER": """
-# LIVRE I — L'Homme, le Feu et la Règle du Foyer
-
-> « L'homme ne devient véritablement humain que le jour où il cesse d'ingérer la chair crue pour la soumettre à la médiation alchimique de la braise. » — Claude Lévi-Strauss
-
-Ce premier livre pose les fondations anthropologiques, instrumentales et thermodynamiques de l'art culinaire. De l'étincelle paléolithique à la maîtrise du transfert thermique par conduction, convection et rayonnement, il enseigne la manipulation rigoureuse de l'énergie avec un arsenal minimaliste de huit instruments inusables, tout en fixant les réflexes de sécurité vitale pour conjurer les pannes et les accidents domestiques.
-
-![La cuisine de la Renaissance selon Bartolomeo Scappi : l'ordre rationnel et minimaliste du foyer](figures/patrimoine/scappi_cuisine_renaissance.jpg)
-""",
-        "LIVRE II — L'ALCHIMIE DU VIVANT : PHYSIOLOGIE, ÉCOLOGIE ET VÉRITÉ DE L'ASSIETTE": """
-# LIVRE II — L'Alchimie du Vivant : Physiologie, Écologie et Vérité de l'Assiette
-
-> « Dis-moi ce que tu manges, je te dirai ce que tu es. » — Jean Anthelme Brillat-Savarin
-
-Le deuxième livre explore la trajectoire de la matière, depuis les équilibres écologiques du champ jusqu'aux récepteurs sensoriels de notre palais. Il dissèque l'anatomie secrète d'une assiette trois étoiles, les mécanismes hormonaux de la satiété et de la digestion, la psychologie prédatrice du supermarché, le décryptage sans complaisance des additifs industriels et la réalité des flux écologiques et des saisons.
-
-![Légumes maraîchers de pleine terre : fraîcheur cellulaire et respect des cycles saisonniers](figures/nourriture/poireaux_frais.jpg)
-""",
-        "LIVRE III — LA MATIÈRE ANIMALE ET VÉGÉTALE AUX FOURNEAUX": """
-# LIVRE III — La Matière Animale et Végétale aux Fourneaux
-
-> « La cuisine est une science qui s'ignore et un art qui se cherche. » — Nicholas Kurti
-
-Ce troisième livre pénètre au cœur des tissus du vivant. En observant la contraction millimétrique des fibres d'actomyosine, la coagulation fractionnée des albumines de l'œuf, l'infusion aromatique des pelures végétales et l'équation matricielle de la pâtisserie, le praticien apprend à sculpter les textures et à substituer les ingrédients avec une souveraine liberté.
-
-![Préparation de la matière carnée et des aromates : la rencontre du muscle et des essences végétales](figures/nourriture/viande_herbes_preparation.jpg)
-""",
-        "LIVRE IV — TRANSFORMATIONS SANS FEU, TERROIRS ET MÉMOIRE CULINAIRE": """
-# LIVRE IV — Transformations sans Feu, Terroirs et Mémoire Culinaire
-
-> « Tout ce qui fermente porte en soi l'esprit de la vie et le souvenir de la terre. »
-
-Le quatrième livre explore les métamorphoses opérées sans combustible : la dénaturation chimique par le sel, l'acide et le sucre, la domestication des ferments nobles du levain et du caillé fromager, la géopolitique des trois corps gras fondateurs et la géographie des terroirs ancestraux confrontés aux métissages de la modernité culinaire.
-
-![Le plateau de fromages de terroir : chef-d'œuvre de l'affinage enzymatique et du temps](figures/nourriture/plateau_fromages_terroir.jpg)
-""",
-        "ANNEXES, FORMULAIRE ET RÉPERTOIRE CRITIQUE": """
-# ANNEXES, FORMULAIRE ET RÉPERTOIRE CRITIQUE
-
-> Références métrologiques, seuils critiques, formulaires énergétiques, glossaire physico-chimique interactif et bibliographie raisonnée.
-"""
+        "01 — L'HOMME, LE FEU ET LA RÈGLE DU FOYER": "# 01 — L'Homme, le Feu et la Règle du Foyer\n",
+        "02 — L'ALCHIMIE DU VIVANT : PHYSIOLOGIE ET ÉCOLOGIE": "# 02 — L'Alchimie du Vivant : Physiologie et Écologie\n",
+        "03 — LA MATIÈRE ANIMALE ET VÉGÉTALE AUX FOURNEAUX": "# 03 — La Matière Animale et Végétale aux Fourneaux\n",
+        "04 — TRANSFORMATIONS SANS FEU, TERROIRS ET MÉMOIRE CULINAIRE": "# 04 — Transformations sans Feu, Terroirs et Mémoire Culinaire\n",
+        "05 — ANNEXES, FORMULAIRE ET RÉPERTOIRE CRITIQUE": "# 05 — Annexes, Formulaire et Répertoire Critique\n"
     }
 
     sections = [
-        ("LIVRE I — L'HOMME, LE FEU ET LA RÈGLE DU FOYER", [
+        ("01 — L'HOMME, LE FEU ET LA RÈGLE DU FOYER", [
             "textes/Livre_I/Chapitre_00_L_Odyssee_du_Feu_et_la_Nutrition_de_Survie.md",
             "textes/Livre_I/Chapitre_01_L_Arsenal_Minimal_et_la_Maitrise_des_Sens.md",
             "textes/Livre_I/Chapitre_02_La_Thermodynamique_du_Feu_et_des_Cuissons.md",
             "textes/Livre_I/Chapitre_04_Consignes_de_Securite_et_Pannes_Critiques.md"
         ]),
-        ("LIVRE II — L'ALCHIMIE DU VIVANT : PHYSIOLOGIE, ÉCOLOGIE ET VÉRITÉ DE L'ASSIETTE", [
+        ("02 — L'ALCHIMIE DU VIVANT : PHYSIOLOGIE ET ÉCOLOGIE", [
             "textes/Livre_I/Chapitre_05_L_Anatomie_du_Gout_et_les_Secrets_du_3_Etoiles.md",
             "textes/Livre_I/Chapitre_06_Nourriture_Saine_Digestibilite_et_Prise_des_Repas.md",
             "textes/Livre_I/Chapitre_07_L_Art_des_Courses_Psychologie_et_Demystification_Industrielle.md",
             "textes/Livre_II/Chapitre_08_L_Enquete_des_Additifs_et_Codes_E_Dangereux.md",
             "textes/Livre_II/Chapitre_09_L_Ecologie_de_la_Matiere_Flux_et_Saisonnalite_Globale.md"
         ]),
-        ("LIVRE III — LA MATIÈRE ANIMALE ET VÉGÉTALE AUX FOURNEAUX", [
+        ("03 — LA MATIÈRE ANIMALE ET VÉGÉTALE AUX FOURNEAUX", [
             "textes/Livre_II/Chapitre_05_L_Oeuf_au_Repos_Anatomie_et_Conservation.md",
             "textes/Livre_II/Chapitre_06_La_Coagulation_Fractionnee_et_les_Seuils_Critiques.md",
             "textes/Livre_III/Chapitre_11_Le_Monde_Vegetal_et_le_Secret_de_Blumenthal.md",
             "textes/Livre_III/Chapitre_12_Proteines_Vegetales_Legumineuses_et_Veganisme_Rationnel.md",
             "textes/Livre_III/Chapitre_13_La_Matrice_du_Gateau_et_le_Chocolat.md"
         ]),
-        ("LIVRE IV — TRANSFORMATIONS SANS FEU, TERROIRS ET MÉMOIRE CULINAIRE", [
+        ("04 — TRANSFORMATIONS SANS FEU, TERROIRS ET MÉMOIRE CULINAIRE", [
             "textes/Livre_V/Chapitre_16_La_Cuisson_Chimique_et_la_Conservation_Sel_Acide_Sucre_et_Mort_Thermique.md",
             "textes/Livre_V/Chapitre_17_Proliferation_Microbienne_Fermentations_et_Recettes_Fondatrices.md",
             "textes/Livre_IV/Chapitre_16_La_Geopolitique_du_Gout_Terroirs_et_Mondialisation.md",
             "textes/Livre_I/Chapitre_03_L_Art_des_Pates_et_l_Urgence_du_Feu.md"
         ]),
-        ("ANNEXES, FORMULAIRE ET RÉPERTOIRE CRITIQUE", [
+        ("05 — ANNEXES, FORMULAIRE ET RÉPERTOIRE CRITIQUE", [
             "textes/Annexes/Annexe_A_Tableau_des_Temperatures_Critiques.md",
             "textes/Annexes/Annexe_B_Glossaire_Physico_Chimique_et_Culinaire.md",
             "textes/Annexes/Annexe_C_Bibliographie_Raisonnee.md",

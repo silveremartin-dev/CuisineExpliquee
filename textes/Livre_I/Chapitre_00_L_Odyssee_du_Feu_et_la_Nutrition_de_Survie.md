@@ -104,6 +104,9 @@ Pour maîtriser la cuisine contemporaine, il faut connaître les épaules de gé
    Traité domestique bourgeois expliquant pour la première fois la tenue d'un ménage, la conservation des fruits par le miel et le séchage, et le sauvetage des vins tournés.
 4. **Bartolomeo Scappi (*Opera dell'arte del cucinare*, 1570, Vatican) :**
    Cuisinier secret du pape Pie V. Il révolutionne l'art culinaire en publiant les premières gravures détaillées d'ustensiles professionnels (tournebroches mécaniques, couteaux spécialisés, bassines en cuivre) et en codifiant la cuisson douce au bain-marie.
+
+   ![La cuisine de la Renaissance selon Bartolomeo Scappi (1570) : première gravure moderne des ustensiles et de l'ordre rationnel du foyer](figures/patrimoine/scappi_cuisine_renaissance.jpg)
+
 5. **Nicolas Appert (1810, *L'Art de conserver*) :**
    Inventeur de l'appertisation (conserve hermétique stérilisée par la chaleur). Soixante ans avant les découvertes de Louis Pasteur sur les micro-organismes, Appert prouve empiriquement que chauffer des aliments dans des récipients clos en verre scellé empêche indéfiniment toute altération.
 

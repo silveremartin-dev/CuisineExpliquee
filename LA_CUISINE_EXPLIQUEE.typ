@@ -64,15 +64,33 @@
 #show heading.where(level: 1): it => {
   pagebreak(weak: true)
   let body_repr = repr(it.body)
-  if "LIVRE" in body_repr or "ANNEXE" in body_repr {
-    // STYLE 5 (PAGE 21) : MINIMALISME ÉDITORIAL NORDIQUE POUR LES ENTÊTES DE LIVRE
+  if body_repr.contains("01") or body_repr.contains("02") or body_repr.contains("03") or body_repr.contains("04") or body_repr.contains("05") or "PARTIE" in body_repr {
+    // STYLE 5 (PAGE 21) : EXACT MINIMALISME ÉDITORIAL NORDIQUE POUR LES ENTÊTES DE LIVRE
     v(2.5cm)
-    text(size: 11pt, tracking: 0.25em, fill: rgb(100, 116, 139), font: "Liberation Sans", weight: "bold")[#smallcaps[Ouverture de Partie]]
-    v(0.8cm)
-    text(size: 28pt, weight: "light", fill: c-ink, tracking: 0.05em, font: "Liberation Serif")[#it.body]
-    v(1.0cm)
-    line(length: 15%, stroke: 1.5pt + c-bronze)
-    v(1.2cm)
+    align(center)[
+      #let part_num = if body_repr.contains("01") { [PREMIÈRE PARTIE] }
+        else if body_repr.contains("02") { [DEUXIÈME PARTIE] }
+        else if body_repr.contains("03") { [TROISIÈME PARTIE] }
+        else if body_repr.contains("04") { [QUATRIÈME PARTIE] }
+        else { [CINQUIÈME PARTIE] }
+      #text(size: 11pt, tracking: 0.15em, fill: rgb(100, 116, 139), font: "Liberation Sans", weight: "bold")[#part_num]      #v(1.0cm)
+      #text(size: 32pt, weight: "light", fill: c-ink, tracking: 0.05em, font: "Liberation Sans")[#it.body]
+      #v(2.0cm)
+      #text(size: 11.5pt, fill: rgb(100, 116, 139), font: "Liberation Sans", tracking: 0.05em)[
+        #if body_repr.contains("01") [
+          Rien de trop.          Un couteau affûté.          Une flamme pure.          L'intelligence du temps.
+        ] else if body_repr.contains("02") [
+          L'anatomie invisible de l'assiette.          La vérité sans fard de la matière.          Le rythme biologique de la digestion.          Le cycle vivant de la terre et de l'eau.
+        ] else if body_repr.contains("03") [
+          La contraction millimétrique du muscle.          Les seuils thermiques de l'oeuf.          L'extraction aromatique des parois végétales.          La matrice élémentaire de la pâte.
+        ] else if body_repr.contains("04") [
+          Le sel et l'acide qui transforment à froid.          La prolifération noble des ferments.          La géographie ancestrale des trois graisses.          La mémoire vivante du goût partagé.
+        ] else [
+          Le cadran absolu des températures critiques.          Le glossaire physico-chimique exhaustif.          La bibliographie raisonnée et critique.          Les règles sanitaires de la conservation.
+        ]
+      ]
+    ]
+    pagebreak()
   } else {
     // STYLE 1 : LE GRAND TRAITÉ ÉTOILÉ POUR LES CHAPITRES
     v(1.0cm)
@@ -87,6 +105,7 @@
   }
 }
 
+// Titres de niveau 2, 3 et 4 systématiquement centrés (proscription des alignements à gauche)
 #show heading.where(level: 2): it => block(
   width: 100%,
   breakable: false,
@@ -94,9 +113,11 @@
   spacing: 1.4em
 )[
   #v(0.4cm)
-  #text(size: 12.5pt, weight: "bold", fill: c-bordeaux, font: "Liberation Serif")[#it.body]
-  #v(-2pt)
-  #line(length: 100%, stroke: 0.5pt + c-bronze)
+  #align(center)[
+    #text(size: 13pt, weight: "bold", fill: c-bordeaux, font: "Liberation Serif")[#it.body]
+    #v(4pt)
+    #line(length: 25%, stroke: 0.8pt + c-bronze)
+  ]
   #v(0.2cm)
 ]
 
@@ -107,7 +128,9 @@
   spacing: 1.1em
 )[
   #v(0.2cm)
-  #text(size: 11pt, weight: "bold", fill: c-terracotta, font: "Liberation Serif")[#it.body]
+  #align(center)[
+    #text(size: 11pt, weight: "bold", fill: c-terracotta, font: "Liberation Serif")[#it.body]
+  ]
   #v(0.1cm)
 ]
 
@@ -116,7 +139,9 @@
   sticky: true,
   spacing: 0.8em
 )[
-  #text(size: 9.5pt, weight: "bold", fill: c-slate, font: "Liberation Sans")[#it.body]
+  #align(center)[
+    #text(size: 9.5pt, weight: "bold", fill: c-slate, font: "Liberation Sans")[#it.body]
+  ]
 ]
 
 // Signalétique Didactique et Boîtes Culinaires Nobles (Style 1 : Couleurs douces et harmonieuses)
@@ -306,31 +331,41 @@
   margin: (top: 2.6cm, bottom: 2.6cm, left: 2.2cm, right: 2.2cm),
   header: context {
     let page-num = counter(page).get().first()
-    if page-num > 4 [
-      #let cur-h1 = query(selector(heading.where(level: 1)).before(here()))
-      #let title-left = if cur-h1.len() > 0 { cur-h1.last().body } else { [LA CUISINE EXPLIQUÉE] }
-      #grid(
-        columns: (1fr, auto),
-        align: (left + horizon, right + horizon),
-        text(size: 8pt, fill: c-slate, font: "Liberation Sans", style: "italic")[#title-left],
-        text(size: 7.5pt, fill: c-bronze, font: "Liberation Sans", weight: "bold")[LA CUISINE EXPLIQUÉE]
-      )
-      #v(-4pt)
-      #line(length: 100%, stroke: 0.4pt + c-bronze)
-    ]
+    if page-num > 4 {
+      let cur-h1 = query(selector(heading.where(level: 1)).before(here()))
+      let repr-h1 = if cur-h1.len() > 0 { repr(cur-h1.last().body) } else { "" }
+      let is-portal = repr-h1.contains("01") or repr-h1.contains("02") or repr-h1.contains("03") or repr-h1.contains("04") or repr-h1.contains("05")
+      // Sur les pages d'ouverture de livre en Style 5, pas d'en-tête pour préserver la pureté éditoriale
+      if not is-portal {
+        let title-left = cur-h1.last().body
+        grid(
+          columns: (1fr, auto),
+          align: (left + horizon, right + horizon),
+          text(size: 8pt, fill: c-slate, font: "Liberation Sans", style: "italic")[#title-left],
+          text(size: 7.5pt, fill: c-bronze, font: "Liberation Sans", weight: "bold")[LA CUISINE EXPLIQUÉE]
+        )
+        v(-4pt)
+        line(length: 100%, stroke: 0.4pt + c-bronze)
+      }
+    }
   },
   footer: context {
     let page-num = counter(page).get().first()
-    if page-num > 2 [
-      #line(length: 100%, stroke: 0.4pt + rgb("#dfdacf"))
-      #v(3pt)
-      #grid(
-        columns: (1fr, 1fr),
-        align: (left + horizon, right + horizon),
-        text(size: 8pt, fill: c-slate, font: "Liberation Sans", style: "italic")[Silvère-Martin Michiellot & Antigravity],
-        text(size: 8.5pt, fill: c-ink, font: "Liberation Sans", weight: "bold")[Page #page-num]
-      )
-    ]
+    if page-num > 2 {
+      let cur-h1 = query(selector(heading.where(level: 1)).before(here()))
+      let repr-h1 = if cur-h1.len() > 0 { repr(cur-h1.last().body) } else { "" }
+      let is-portal = repr-h1.contains("01") or repr-h1.contains("02") or repr-h1.contains("03") or repr-h1.contains("04") or repr-h1.contains("05")
+      if not is-portal {
+        line(length: 100%, stroke: 0.4pt + rgb("#dfdacf"))
+        v(3pt)
+        grid(
+          columns: (1fr, 1fr),
+          align: (left + horizon, right + horizon),
+          text(size: 8pt, fill: c-slate, font: "Liberation Sans", style: "italic")[Silvère-Martin Michiellot & Antigravity],
+          text(size: 8.5pt, fill: c-ink, font: "Liberation Sans", weight: "bold")[Page #page-num]
+        )
+      }
+    }
   }
 )
 
@@ -469,28 +504,8 @@
 #pagebreak()
 
 
-= LIVRE I --- L'Homme, le Feu et la Règle du Foyer
-<livre-i-lhomme-le-feu-et-la-règle-du-foyer>
-#quote(block: true)[
-« L'homme ne devient véritablement humain que le jour où il cesse
-d'ingérer la chair crue pour la soumettre à la médiation alchimique de
-la braise. » --- Claude Lévi-Strauss
-]
-
-Ce premier livre pose les fondations anthropologiques, instrumentales et
-thermodynamiques de l'art culinaire. De l'étincelle paléolithique à la
-maîtrise du transfert thermique par conduction, convection et
-rayonnement, il enseigne la manipulation rigoureuse de l'énergie avec un
-arsenal minimaliste de huit instruments inusables, tout en fixant les
-réflexes de sécurité vitale pour conjurer les pannes et les accidents
-domestiques.
-
-#figure(image("figures/patrimoine/scappi_cuisine_renaissance.jpg", alt: "La cuisine de la Renaissance selon Bartolomeo Scappi : l’ordre rationnel et minimaliste du foyer"),
-  caption: [
-    La cuisine de la Renaissance selon Bartolomeo Scappi : l'ordre
-    rationnel et minimaliste du foyer
-  ]
-)
+= 01 --- L'Homme, le Feu et la Règle du Foyer
+<lhomme-le-feu-et-la-règle-du-foyer>
 
 #divider()
 
@@ -701,6 +716,7 @@ de géants sur lesquelles nous sommes juchés :
   enzymatique, ancêtre du nuoc-mâm), le miel, le vinaigre et le poivre
   pour assurer la conservation osmotique et bactériostatique des
   viandes.
+
 + #strong[Guillaume Tirel dit Taillevent (#emph[Le Viandier], vers 1380)
   :] Le grand livre de la cuisine médiévale française. La technique
   centrale est le bouilli suivi du rôti, lié au pain trempé et relevé de
@@ -708,15 +724,26 @@ de géants sur lesquelles nous sommes juchés :
   d'épices puissantes (gingembre, cannelle, clou de girofle). Ces épices
   masquaient la dégradation des viandes et exerçaient une action
   antiseptique démontrée.
+
 + #strong[Le Ménagier de Paris (1393) :] Traité domestique bourgeois
   expliquant pour la première fois la tenue d'un ménage, la conservation
   des fruits par le miel et le séchage, et le sauvetage des vins
   tournés.
+
 + #strong[Bartolomeo Scappi (#emph[Opera dell'arte del cucinare], 1570,
   Vatican) :] Cuisinier secret du pape Pie V. Il révolutionne l'art
   culinaire en publiant les premières gravures détaillées d'ustensiles
   professionnels (tournebroches mécaniques, couteaux spécialisés,
   bassines en cuivre) et en codifiant la cuisson douce au bain-marie.
+
+  #figure(image("figures/patrimoine/scappi_cuisine_renaissance.jpg", alt: "La cuisine de la Renaissance selon Bartolomeo Scappi (1570) : première gravure moderne des ustensiles et de l’ordre rationnel du foyer"),
+    caption: [
+      La cuisine de la Renaissance selon Bartolomeo Scappi (1570) :
+      première gravure moderne des ustensiles et de l'ordre rationnel du
+      foyer
+    ]
+  )
+
 + #strong[Nicolas Appert (1810, #emph[L'Art de conserver]) :] Inventeur
   de l'#link(<glossaire-appertisation>)[appertisation] (conserve hermétique stérilisée par la chaleur).
   Soixante ans avant les découvertes de Louis Pasteur sur les
@@ -830,10 +857,10 @@ contours d'efficacité optimale.
 
 ]
 
-#figure(image("figures/patrimoine/scappi_cuisine_renaissance.jpg", alt: "Instruments et ustensiles de découpe de pâte selon Bartolomeo Scappi (Opera, 1570)"),
+#figure(image("figures/nourriture/carottes_decoupe_cuisine.jpg", alt: "Découpe maraîchère de précision au couteau de chef : le tranchant parfait préserve l’intégrité des cellules végétales"),
   caption: [
-    Instruments et ustensiles de découpe de pâte selon Bartolomeo Scappi
-    (Opera, 1570)
+    Découpe maraîchère de précision au couteau de chef : le tranchant
+    parfait préserve l'intégrité des cellules végétales
   ]
 )
 
@@ -1143,18 +1170,17 @@ jusqu'à 200 ml d'huile grâce aux lécithines.]
   couronne de torchon, mélanger le jaune d'œuf, la moutarde, le sel et
   le vinaigre. Laisser reposer 1 minute pour que le sel dissolve
   légèrement la membrane des lipovitellines.
-
 + #strong[La Dispersion Goutte à Goutte :] Commencer à fouetter
   activement en versant l'huile gouttelette par gouttelette. Chaque
   goutte doit être cisaillée en millions de billes microscopiques avant
   d'en ajouter une autre.
-
 + #strong[Le Montage en Filet :] Dès que l'émulsion « prend » et prend
   une consistance nappante brillante, verser l'huile restante en mince
   filet continu tout en maintenant un battement circulaire rapide.
++ #strong[Le Blocage Sensoriel :] La mayonnaise devient ferme, dense et
+  tient sur le fouet à l'envers. Rectifier en sel et acidité.
 
-+ == #strong[Le Blocage Sensoriel :] La mayonnaise devient ferme, dense et tient sur le fouet à l'envers. Rectifier en sel et acidité.
-  <le-blocage-sensoriel-la-mayonnaise-devient-ferme-dense-et-tient-sur-le-fouet-à-lenvers.-rectifier-en-sel-et-acidité.>
+#divider()
 
 == 7. LE SYSTÈME D : DÉTOURNER LES OBJETS DU QUOTIDIEN POUR REMPLACER LES USTENSILES RARES
 <le-système-d-détourner-les-objets-du-quotidien-pour-remplacer-les-ustensiles-rares>
@@ -1863,6 +1889,50 @@ $100^compose upright(C)$), la préparation est redevenue
 microbiologiquement assainie : #strong[vous pouvez alors la recongeler
 sans danger].
 
+=== C. Le Protocole Expéditif de Décongélation Salubre (Sans Risque Bactérien)
+<c.-le-protocole-expéditif-de-décongélation-salubre-sans-risque-bactérien>
+La décongélation est le moment le plus critique de la chaîne du froid :
+l'eau de constitution se liquéfie et les parois cellulaires brisées
+libèrent un bain nutritif d'acides aminés qui réveille instantanément
+les colonies bactériennes dormantes.
+
+#positif[
+
+
+==== ✓ Les Deux Seules Méthodes Salubres :
+<les-deux-seules-méthodes-salubres>
++ #strong[La Décongélation Lente au Froid
+  ($0 upright(" à ") 2^compose upright(C)$) :] Poser la pièce congelée
+  sur une assiette au bas du réfrigérateur pendant 12 à 24 heures. La
+  cinétique bactérienne reste bloquée par la basse température pendant
+  que la glace fond doucement.
++ #strong[L'Immersion Hermétique en Eau Courante Glacée :] Si vous êtes
+  pressé, enfermer la pièce sous vide ou dans un sachet zip étanche et
+  l'immerger dans un saladier sous un mince filet d'eau froide courante
+  ($10 upright(" à ") 12^compose upright(C)$). L'eau liquide conduit la
+  chaleur vingt-cinq fois plus vite que l'air : une pièce de viande de
+  $300 upright(" g")$ dégèle en 30 minutes sans jamais dépasser la
+  température critique.
+
+
+]
+
+#danger[
+
+
+==== ✗ L'Écueil Absolu : La Décongélation à Température Ambiante sur le Plan de Travail
+<lécueil-absolu-la-décongélation-à-température-ambiante-sur-le-plan-de-travail>
+Abandonner un poulet ou du poisson surgelé sur le plan de travail de la
+cuisine à $20^compose upright(C)$ pendant quatre heures : la surface de
+la viande atteint $18^compose upright(C)$ en une heure alors que le cœur
+est encore gelé. Les bactéries de surface entrent dans leur phase de
+reproduction logarithmique et doublent leur population toutes les vingt
+minutes. En quatre heures, une bactérie initiale donne naissance à plus
+de quatre mille descendants toxiques !
+
+
+]
+
 #divider()
 
 == 6. L'ARBRE D'ACTION D'URGENCE ET NUMÉROS VITAUX
@@ -1927,26 +1997,8 @@ des secours.
 
 #divider()
 
-= LIVRE II --- L'Alchimie du Vivant : Physiologie, Écologie et Vérité de l'Assiette
-<livre-ii-lalchimie-du-vivant-physiologie-écologie-et-vérité-de-lassiette>
-#quote(block: true)[
-« Dis-moi ce que tu manges, je te dirai ce que tu es. » --- Jean
-Anthelme Brillat-Savarin
-]
-
-Le deuxième livre explore la trajectoire de la matière, depuis les
-équilibres écologiques du champ jusqu'aux récepteurs sensoriels de notre
-palais. Il dissèque l'anatomie secrète d'une assiette trois étoiles, les
-mécanismes hormonaux de la satiété et de la digestion, la psychologie
-prédatrice du supermarché, le décryptage sans complaisance des additifs
-industriels et la réalité des flux écologiques et des saisons.
-
-#figure(image("figures/nourriture/poireaux_frais.jpg", alt: "Légumes maraîchers de pleine terre : fraîcheur cellulaire et respect des cycles saisonniers"),
-  caption: [
-    Légumes maraîchers de pleine terre : fraîcheur cellulaire et respect
-    des cycles saisonniers
-  ]
-)
+= 02 --- L'Alchimie du Vivant : Physiologie et Écologie
+<lalchimie-du-vivant-physiologie-et-écologie>
 
 #divider()
 
@@ -3193,26 +3245,8 @@ gustative atteint son apogée.
 
 #divider()
 
-= LIVRE III --- La Matière Animale et Végétale aux Fourneaux
-<livre-iii-la-matière-animale-et-végétale-aux-fourneaux>
-#quote(block: true)[
-« La cuisine est une science qui s'ignore et un art qui se cherche. »
---- Nicholas Kurti
-]
-
-Ce troisième livre pénètre au cœur des tissus du vivant. En observant la
-contraction millimétrique des fibres d'actomyosine, la coagulation
-fractionnée des albumines de l'œuf, l'infusion aromatique des pelures
-végétales et l'équation matricielle de la pâtisserie, le praticien
-apprend à sculpter les textures et à substituer les ingrédients avec une
-souveraine liberté.
-
-#figure(image("figures/nourriture/viande_herbes_preparation.jpg", alt: "Préparation de la matière carnée et des aromates : la rencontre du muscle et des essences végétales"),
-  caption: [
-    Préparation de la matière carnée et des aromates : la rencontre du
-    muscle et des essences végétales
-  ]
-)
+= 03 --- La Matière Animale et Végétale aux Fourneaux
+<la-matière-animale-et-végétale-aux-fourneaux>
 
 #divider()
 
@@ -4893,25 +4927,8 @@ première bouchée.
 
 #divider()
 
-= LIVRE IV --- Transformations sans Feu, Terroirs et Mémoire Culinaire
-<livre-iv-transformations-sans-feu-terroirs-et-mémoire-culinaire>
-#quote(block: true)[
-« Tout ce qui fermente porte en soi l'esprit de la vie et le souvenir de
-la terre. »
-]
-
-Le quatrième livre explore les métamorphoses opérées sans combustible :
-la dénaturation chimique par le sel, l'acide et le sucre, la
-domestication des ferments nobles du levain et du caillé fromager, la
-géopolitique des trois corps gras fondateurs et la géographie des
-terroirs ancestraux confrontés aux métissages de la modernité culinaire.
-
-#figure(image("figures/nourriture/plateau_fromages_terroir.jpg", alt: "Le plateau de fromages de terroir : chef-d’œuvre de l’affinage enzymatique et du temps"),
-  caption: [
-    Le plateau de fromages de terroir : chef-d'œuvre de l'affinage
-    enzymatique et du temps
-  ]
-)
+= 04 --- Transformations sans Feu, Terroirs et Mémoire Culinaire
+<transformations-sans-feu-terroirs-et-mémoire-culinaire>
 
 #divider()
 
@@ -5724,12 +5741,8 @@ polymérisation de l'ovotransferrine et ré-émulsionne la phase liquide.
 
 #divider()
 
-= ANNEXES, FORMULAIRE ET RÉPERTOIRE CRITIQUE
+= 05 --- Annexes, Formulaire et Répertoire Critique
 <annexes-formulaire-et-répertoire-critique>
-#quote(block: true)[
-Références métrologiques, seuils critiques, formulaires énergétiques,
-glossaire physico-chimique interactif et bibliographie raisonnée.
-]
 
 #divider()
 
@@ -6615,7 +6628,7 @@ les colonies bactériennes dormantes.
 
 
 ==== ✓ Les Deux Seules Méthodes Salubres :
-<les-deux-seules-méthodes-salubres>
+<les-deux-seules-méthodes-salubres-1>
 + #strong[La Décongélation Lente au Froid
   ($0 upright(" à ") 2^compose upright(C)$) :] Poser la pièce congelée
   sur une assiette au bas du réfrigérateur pendant 12 à 24 heures. La
@@ -6636,7 +6649,7 @@ les colonies bactériennes dormantes.
 
 
 ==== ✗ L'Écueil Absolu : La Décongélation à Température Ambiante sur le Plan de Travail
-<lécueil-absolu-la-décongélation-à-température-ambiante-sur-le-plan-de-travail>
+<lécueil-absolu-la-décongélation-à-température-ambiante-sur-le-plan-de-travail-1>
 Abandonner un poulet ou du poisson surgelé sur le plan de travail de la
 cuisine à $20^compose upright(C)$ pendant quatre heures : la surface de
 la viande atteint $18^compose upright(C)$ en une heure alors que le cœur
@@ -6731,22 +6744,22 @@ de quatre mille descendants toxiques !
 
 
 // Ancres de navigation transversale invisibles
-#hide[] <recette-dahl-lentilles>
+#hide[] <recette-glace-sel>
+#hide[] <recette-ceviche-cabillaud>
+#hide[] <sec-emulsion>
+#hide[] <recette-fromage-frais>
 #hide[] <recette-pate-brisee>
-#hide[] <recette-pain-cocotte>
-#hide[] <recette-tofu-croustillant>
 #hide[] <chapitre-survie-parasites>
+#hide[] <recette-pain-cocotte>
+#hide[] <recette-dahl-lentilles>
 #hide[] <glossaire-synerese>
 #hide[] <glossaire-bliss-point>
-#hide[] <chapitre-oeuf-repos>
 #hide[] <recette-carbonara-traditionnelle>
-#hide[] <recette-moelleux-chocolat>
-#hide[] <sec-emulsion>
-#hide[] <sec-proteines-chair>
 #hide[] <chapitre-08--lenquete-des-additifs-alimentaires--decodage-yuka-nutri-score-et-codes-e-dangereux>
-#hide[] <recette-fromage-frais>
-#hide[] <recette-steak-fonte>
-#hide[] <recette-ceviche-cabillaud>
-#hide[] <recette-mousse-aquafaba>
+#hide[] <sec-proteines-chair>
 #hide[] <sec-leidenfrost>
-#hide[] <recette-glace-sel>
+#hide[] <recette-steak-fonte>
+#hide[] <chapitre-oeuf-repos>
+#hide[] <recette-tofu-croustillant>
+#hide[] <recette-mousse-aquafaba>
+#hide[] <recette-moelleux-chocolat>
