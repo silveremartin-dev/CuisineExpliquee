@@ -92,3 +92,52 @@ Lorsque vous faites fondre du chocolat noir, veillez à ce qu'aucune goutte d'ea
 #### 🛠️ Le Laboratoire de Sauvetage : Si la Crème a Grainé ($>86^\circ\mathrm{C}$)
 Vous avez été distrait une seconde et la crème s'est mise à bouillir : de petits grumeaux d'œufs brouillés apparaissent à la surface. Ne jetez rien ! Versez immédiatement la crème chaude dans une bouteille en verre propre fermée et secouez-la vigoureusement pendant 30 secondes, ou plongez un mixeur plongeant pendant 15 secondes. L'agitation mécanique violente pulvérise les agglomérats de protéines coagulées et redonne à la crème sa texture veloutée parfaite.
 :::
+
+
+---
+
+## 4. LES PRODIGES THERMIQUES INATTENDUS : L'OMELETTE NORVÉGIENNE ET L'INVERSION D'HERVÉ THIS
+
+La cuisine recèle des paradoxes physiques fascinants où l'intuition ordinaire est prise en défaut. Le plus célèbre est celui de l'**Omelette Norvégienne** (*Baked Alaska*), invention du physicien américain Benjamin Thompson (Comte de Rumford) en 1804, perfectionnée par Balzac et le chef Jean Giroix à l'Hôtel de Paris à Monaco.
+
+### A. La Physique de l'Omelette Norvégienne : L'Air comme Bouclier Thermique
+Comment est-il physiquement possible de poser un bloc de crème glacée à **$-18^\circ\mathrm{C}$** sur un biscuit, de le recouvrir de blancs d'œufs en neige sucrés, puis d'enfourner le tout dans un four chauffé à **$240^\circ\mathrm{C}$** (ou de l'arroser de rhum flamboyant à $800^\circ\mathrm{C}$) sans que la glace ne fonde d'un seul millimètre ?
+
+![Le bouclier thermique de la meringue dans l'Omelette Norvégienne](figures/livre_3/fig_omelette_norvegienne_bouclier.svg)``
+
+- **Le Pouvoir Isolant de l'Air :**
+  L'air immobile possède une conductivité thermique remarquablement basse :
+  $$k_{	ext{air}} pprox 0{,}026\,\mathrm{W/(m\cdot K)}$$
+  C'est l'un des isolants thermiques les plus efficaces de la nature (c'est le principe du duvet des oiseaux, de la laine polaire et du double vitrage).
+- **La Meringue comme Bouclier Spatial :**
+  La meringue est une émulsion de gaz dans un liquide : des milliards de microbulles d'air emprisonnées dans une cage de protéines dénaturées (ovalbumine) rigidifiée par le sucre. En passant au four chaud, la chaleur caramélise la surface extérieure en une croûte dorée croustillante, mais les calories sont incapables de traverser l'épaisseur d'air stagnant pour atteindre le cœur. La glace reste à $-18^\circ\mathrm{C}$ sous son manteau isolant.
+
+---
+
+### 🍳 Fiche Recette 13 : L'Omelette Norvégienne Minute Infaillible {#recette-omelette-norvegienne}
+
+*La démonstration de la thermodynamique : la rencontre du feu brûlant et de la glace sans compromis.*
+
+- **Temps de préparation :** 20 minutes | **Temps de cuisson :** 4 minutes au four à $240^\circ\mathrm{C}$
+- **Minimalisme Instrumental :** 1 batteur ou fouet manuel, 1 cul-de-poule, 1 plat allant au four, 1 spatule.
+- **Ingrédients pour 4 personnes :**
+  - Crème glacée artisanale ferme (vanille ou framboise) : $500	ext{ ml}$ (très froide, $-18^\circ\mathrm{C}$)
+  - Tranches de génoise, brioche rassie ou biscuits à la cuillère : $100	ext{ g}$
+  - Blancs d'œufs frais : 4 pièces ($120	ext{ g}$)
+  - Sucre semoule fin : $150	ext{ g}$
+  - Alcool pour flamber (Grand Marnier, Rhum vieux) : $40	ext{ ml}$ (facultatif)
+
+##### Protocole Pas à Pas :
+1. **Le Socle Isolant :** Disposer les tranches de génoise au fond du plat. Le biscuit agit comme un second isolant thermique par le bas.
+2. **Le Dôme Givré :** Démouler le bloc de crème glacée directement congelé sur le biscuit.
+3. **Le Montage de la Meringue Serrée :** Monter les 4 blancs en neige ferme dans un cul-de-poule propre. Dès qu'ils moussent, incorporer le sucre en trois fois jusqu'à obtenir une meringue brillante, dense et formant un bec d'oiseau rigide.
+4. **Le Masquage Hermétique (L'Étape Vitale) :** À l'aide de la spatule, recouvrir la glace et le biscuit d'une couche continue de meringue de **$2	ext{ cm}$ d'épaisseur minimale**. Veiller à ne laisser **aucun interstice ni trou d'air** : la moindre fissure laisserait pénétrer l'air brûlant du four et ferait fuir la glace.
+5. **Le Choc Thermique :** Enfourner immédiatement à four préchauffé à $240^\circ\mathrm{C}$ (position grill) pendant **3 à 4 minutes**. La meringue dore et croustille en surface.
+6. **L'Envoi Spectaculaire :** Sortir du four, verser l'alcool tiédi flambé à la cuillère sur le dôme et servir immédiatement. À la découpe, le contraste entre la meringue tiède dorée et le cœur de glace intact est saisissant.
+
+---
+
+### B. L'Omelette Norvégienne Inversée d'Hervé This
+Poussant le paradoxe plus loin au laboratoire du Collège de France, Hervé This a conçu l'**omelette norvégienne inversée** : un plat présentant un **cœur liquide chaud brûlant ($70^\circ\mathrm{C}$)** enfermé dans une enveloppe externe **glacée et croustillante** !
+- *Comment le réaliser sans machine de laboratoire ?*
+  On congèle une coque sphérique de crème anglaise ou de purée de fruits au congélateur. On creuse le centre pour y introduire un coulis de chocolat chaud ou une compote brûlante épaissie à l'amidon, puis on referme hermétiquement la coque avec de la glace râpée et on trempe la bille 10 secondes dans de l'azote liquide ou dans une friture éclair à $200^\circ\mathrm{C}$ enrobée d'une panure tempura. La lenteur de la diffusion thermique permet de servir une sphère glacée à l'extérieur qui explose en un torrent brûlant dès la première bouchée.

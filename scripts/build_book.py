@@ -434,7 +434,7 @@ PREAMBLE = """
 // ==========================================
 #align(center)[
   #text(size: 15pt, weight: "bold", fill: c-bordeaux, font: "Liberation Serif")[
-    🍳 Table des Vingt Recettes et Préparations Piliers
+    🍳 Table des Vingt-et-Une Recettes et Préparations Piliers
   ]
   #v(-4pt)
   #line(length: 60%, stroke: 0.8pt + c-bronze)
@@ -486,8 +486,9 @@ PREAMBLE = """
 
     #v(0.15cm)
     *6. Pâtisserie Matricielle & Contrôle de l'Amidon*
-    - #link(<recette-moelleux-chocolat>)[Le Moelleux au Chocolat Cœur Coulant (Gradient Thermique Étalonné)] --- _Chapitre 13_
-    - #link(<recette-pate-brisee>)[La Pâte Brisée Pur Beurre au Sablage Express (Inhibition du Gluten)] --- _Chapitre 13_
+    - #link(<recette-moelleux-chocolat>)[Le Moelleux au Chocolat Cœur Coulant (Gradient Thermique Étalonné)] --- _Chapitre 14_
+    - #link(<recette-pate-brisee>)[La Pâte Brisée Pur Beurre au Sablage Express (Inhibition du Gluten)] --- _Chapitre 14_
+    - #link(<recette-omelette-norvegienne>)[L'Omelette Norvégienne Minute Infaillible (Le Bouclier Thermique de la Meringue)] --- _Chapitre 14_
   ]
 ]
 #pagebreak()

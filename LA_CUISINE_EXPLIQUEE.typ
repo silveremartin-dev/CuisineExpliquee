@@ -392,7 +392,7 @@
 // ==========================================
 #align(center)[
   #text(size: 15pt, weight: "bold", fill: c-bordeaux, font: "Liberation Serif")[
-    🍳 Table des Vingt Recettes et Préparations Piliers
+    🍳 Table des Vingt-et-Une Recettes et Préparations Piliers
   ]
   #v(-4pt)
   #line(length: 60%, stroke: 0.8pt + c-bronze)
@@ -444,8 +444,9 @@
 
     #v(0.15cm)
     *6. Pâtisserie Matricielle & Contrôle de l'Amidon*
-    - #link(<recette-moelleux-chocolat>)[Le Moelleux au Chocolat Cœur Coulant (Gradient Thermique Étalonné)] --- _Chapitre 13_
-    - #link(<recette-pate-brisee>)[La Pâte Brisée Pur Beurre au Sablage Express (Inhibition du Gluten)] --- _Chapitre 13_
+    - #link(<recette-moelleux-chocolat>)[Le Moelleux au Chocolat Cœur Coulant (Gradient Thermique Étalonné)] --- _Chapitre 14_
+    - #link(<recette-pate-brisee>)[La Pâte Brisée Pur Beurre au Sablage Express (Inhibition du Gluten)] --- _Chapitre 14_
+    - #link(<recette-omelette-norvegienne>)[L'Omelette Norvégienne Minute Infaillible (Le Bouclier Thermique de la Meringue)] --- _Chapitre 14_
   ]
 ]
 #pagebreak()
@@ -995,6 +996,114 @@ maîtrisaient les transitions de phase par l'étalonnage de leurs sens :
 
 #divider()
 
+#divider()
+
+== 5. LA SCIENCE DES GESTES ÉVIDENTS : LA SALADE AU MICROSCOPE, TURGESCENCE ET CONSERVATION
+<la-science-des-gestes-évidents-la-salade-au-microscope-turgescence-et-conservation>
+Rien ne paraît plus anodin que de laver et conserver une pomme de
+salade. Pourtant, ce geste quotidien est un cas d'école de biologie
+cellulaire végétale.
+
+=== A. La Pression de Turgescence : L'Équation du Croquant
+<a.-la-pression-de-turgescence-léquation-du-croquant>
+Une feuille de salade est constituée à #strong[$95 thin %$ d'eau]. Sa
+rigidité croquante et son craquant sous la dent ne proviennent pas de
+fibres dures, mais de la #strong[pression de turgescence] : l'eau
+liquide remplit les vacuoles intracellulaires et pousse la membrane
+plasmique avec force contre la paroi rigide de pectocellulose. -
+#emph[Lorsque la salade est cueillie :] la feuille continue de respirer
+et de transpirer. Si l'air environnant est sec, l'eau s'échappe par les
+stomates : les vacuoles se dégonflent, la pression interne s'effondre à
+zéro, et la feuille devient molle et flasque comme un chiffon mouillé. -
+#emph[L'erreur fatale du sachet plastique détrempé :] Si vous enfermez
+une salade ruisselante d'eau libre dans un sachet plastique étanche,
+l'eau stagnante noie les tissus. Privées d'oxygène, les cellules entrent
+en asphyxie et meurent \; les bactéries anaérobies d'altération
+prolifèrent en 48 heures, liquéfiant les parois pectiques en une
+bouillie brunâtre visqueuse et nauséabonde.
+
+#positif[
+
+
+==== ✓ Le Protocole d'Or de Conservation (Croquante pendant 8 à 10 jours)
+<le-protocole-dor-de-conservation-croquante-pendant-8-à-10-jours>
++ #strong[L'Essorage Vigoureux :] Après trempage, essorer
+  scrupuleusement les feuilles pour éliminer chaque gouttelette d'eau
+  libre de surface.
++ #strong[Le Linge Humide Régulateur :] Envelopper la salade essorée
+  dans un grand torchon de coton propre (ou tapisser un récipient d'un
+  papier absorbant) très légèrement humidifié.
++ #strong[Le Stockage en Bac à Légumes
+  ($6 e x t à 8^compose upright(C)$) :] Le linge en coton maintient une
+  humidité relative ambiante saturée ($> 90 thin %$) qui bloque
+  l'évaporation sans jamais créer de flaque asphyxiante. La feuille
+  respire et conserve son croquant intact pendant dix jours.
++ #strong[Le Bain de Jouvence à l'Eau Glacée :] Si une salade a ramolli,
+  la plonger 15 minutes dans un saladier d'eau saturée de glaçons. L'eau
+  froide s'engouffre par osmose à travers les parois cellulaires pour
+  regonfler les vacuoles : la feuille redevient rigide et cassante comme
+  au premier jour.
+
+
+]
+
+=== B. Le Lavage Vinaigré ou Citronné : Pourquoi Acidifier l'Eau ?
+<b.-le-lavage-vinaigré-ou-citronné-pourquoi-acidifier-leau>
+Faut-il ajouter une cuillère de vinaigre blanc ou de jus de citron dans
+l'eau de trempage de la salade ? - #strong[L'Action Antiparasitaire :]
+Les limaces, pucerons, chenilles et petits insectes maraîchers sécrètent
+un mucus d'adhérence pour s'arrimer aux nervures des feuilles. Un milieu
+légèrement acidifié abaisse le pH de l'eau, déstabilise leur mucus et
+provoque leur décrochage mécanique instantané vers le fond de l'évier. -
+#strong[La Règle Temporelle Critique :] Le trempage acidifié ne doit pas
+dépasser 2 à 3 minutes, suivi d'un rinçage rapide à l'eau claire. Un
+trempage acide prolongé finirait par détruire la cuticule cireuse
+protectrice de la feuille. - #strong[Ne Jamais Assaisonner à l'Avance :]
+Si vous versez votre vinaigrette sur la salade 20 minutes avant de
+passer à table, le sel de l'assaisonnement attire instantanément toute
+l'eau cellulaire hors de la feuille par pression osmotique, tandis que
+l'acide transforme la chlorophylle vert éclatant en phéophytine olive
+terne : la salade s'effondre en quelques minutes.
+
+#divider()
+
+== 6. POURQUOI MET-ON DE L'ACIDE SUR LES ALIMENTS ?
+<pourquoi-met-on-de-lacide-sur-les-aliments>
+Au-delà de la destruction bactérienne, l'acidité (ions $upright(H)^(+)$)
+est l'outil chimique le plus polyvalent et le plus sous-estimé de la
+gastronomie :
+
++ #strong[Le Réflexe Salivaire Parotidien :] Les ions acides stimulent
+  puissamment les canaux récepteurs OTOP1 des bourgeons du goût,
+  provoquant une sécrétion réflexe massive de salive fluide par les
+  glandes parotides. Une bouche sèche ne perçoit que $20 thin %$ des
+  saveurs \; une bouche abondamment salivée dissout instantanément les
+  molécules sapides et les achemine vers les récepteurs sensoriels.
++ #strong[L'Amplification Rétro-Olfactif :] En dissolvant le film gras
+  et mucilagineux qui tapisse la langue, l'acidité libère les composés
+  aromatiques volatils qui remontent directement vers les récepteurs
+  olfactifs rétro-nasaux lors de la déglutition.
++ #strong[L'Effet « Coupe-Gras » et l'Équilibre Sensoriel :] Dans une
+  sauce riche (hollandaise, béarnaise, mayonnaise), une friture ou une
+  viande grasse, les lipides saturent les papilles et créent un
+  écœurement rapide. Quelques gouttes d'acide citrique (citron) ou
+  acétique (vinaigre) brisent cette inertie lipidique en stimulant la
+  salivation et en abaissant le seuil de détection des saveurs.
++ #strong[L'Inhibition du Brunissement Enzymatique (Antioxydant) :]
+  Lorsqu'on entaille une pomme, un avocat, un champignon ou un
+  artichaut, l'enzyme polyphénol-oxydase (PPO) réagit avec l'oxygène de
+  l'air pour transformer les polyphénols incolores en mélanines brunes.
+  En arrosant immédiatement de jus de citron, deux phénomènes agissent
+  en synergie : l'acide citrique abaisse le pH sous $4\,0$ (inhibant
+  l'enzyme), tandis que l'acide ascorbique (vitamine C) agit comme un
+  réducteur puissant qui neutralise l'oxygène avant qu'il ne détruise la
+  couleur.
++ #strong[La Dénaturation Protéique à Froid :] Les ions $upright(H)^(+)$
+  pénètrent entre les chaînes peptidiques des poissons et des viandes
+  fines, brisant les liaisons salines et hydrogène : la chair se
+  resserre et blanchit sans aucune source thermique, créant la texture
+  fondante du ceviche ou des marinades attendrissantes.
+
 === 🍳 Fiche Recette 7 : La Mayonnaise Maison Inratable au Fouet Manuel
 <recette-mayonnaise>
 #emph[La physique de l'émulsion froide : 1 jaune d'œuf peut disperser
@@ -1262,6 +1371,74 @@ ou deux cuillères de bois.
 
 
 ]
+
+#divider()
+
+== 3. LA TRILOGIE DES CUISSONS DOUCES AVEC UNE SIMPLE CASSEROLE : VAPEUR, ÉTOUFFÉE ET LE SECRET DU CARTOUCHE
+<la-trilogie-des-cuissons-douces-avec-une-simple-casserole-vapeur-étouffée-et-le-secret-du-cartouche>
+L'illusion moderne pousse à acheter des cuiseurs vapeur électriques
+encombrants ou des siphons programmables. Or, #strong[avec une unique
+casserole en inox et son couvercle], le cuisinier peut exécuter trois
+modes de cuissons douces d'une perfection absolue :
+
+=== A. La Vapeur Improvisée sans Panier Vapeur
+<a.-la-vapeur-improvisée-sans-panier-vapeur>
+Comment cuire à la vapeur pure sans posséder de cuiseur dédié ? -
+#strong[Le Montage Physique :] Verser $1\,5 e x t c m$ d'eau au fond de
+la casserole inox. Poser au centre un ramequin ou un petit bol en
+céramique/inox retourné à l'envers. Poser une petite assiette plate
+par-dessus (qui repose de façon stable au-dessus du niveau de l'eau).
+Déposer les légumes ou filets de poisson sur l'assiette et fermer avec
+le couvercle lourd. - #strong[Le Principe Thermodynamique :] L'eau bout
+à $100^compose upright(C)$. En se vaporisant, l'eau absorbe une quantité
+colossale d'énergie : sa #strong[chaleur latente de vaporisation
+($L_v = 2 thin 260 thin upright(k J\/k g)$)]. Dès que cette vapeur
+touche la surface froide de l'aliment, elle se condense instantanément
+en libérant d'un coup toute cette énergie calorique dans le tissu
+végétal. - #strong[Le Résultat :] L'aliment cuit cinq fois plus vite que
+dans un four à air chaud à même température, sans jamais tremper dans
+l'eau liquide : ses sels minéraux et ses vitamines hydrosolubles ne sont
+pas lessivés.
+
+=== B. La Cuisson à l'Étouffée (ou Étuvée) dans l'Eau de Constitution
+<b.-la-cuisson-à-létouffée-ou-étuvée-dans-leau-de-constitution>
+Certains végétaux (courgettes, poireaux, tomates, champignons) sont
+constitués de $90 e x t à 95 thin %$ d'eau. - #strong[Le Protocole :]
+Déposer les légumes taillés dans la casserole froide avec une simple
+noisette de beurre ou une cuillère d'huile d'olive et une pincée de sel
+fin. #strong[N'ajouter aucune goutte d'eau extérieure]. Poser le
+couvercle ajusté et allumer à feu très doux. - #strong[Le Cycle
+Hydrologique en Miniature :] Sous l'effet de la chaleur douce
+($80 e x t - - 90^compose upright(C)$) et de la pression osmotique du
+sel, les cellules végétales relâchent leur propre eau de constitution
+aromatisée. Cette vapeur monte, vient frapper la face interne du
+couvercle plus frais, s'y condense en gouttelettes et retombe en pluie
+continue sur les légumes. - #strong[La Concentration Aromatique :]
+L'aliment cuit dans son propre sérum naturel, sans dilution aqueuse
+parasite. Les arômes sont denses, le fondant est parfait.
+
+=== C. Le Secret Professionnel du Chef : Le « Cartouche » de Papier Sulfurisé
+<c.-le-secret-professionnel-du-chef-le-cartouche-de-papier-sulfurisé>
+Pourquoi les plus grandes brigades de cuisine placent-elles un disque de
+papier sulfurisé directement sur les légumes plutôt qu'un simple
+couvercle métallique ?
+
+#box(image("figures/livre_1/fig_cartouche_cuisson_douce.svg", alt: "Le cartouche de papier sulfurisé : régulation millimétrique de l’évaporation et glaçage à blanc"))\`\`
+
++ #strong[La Confection :] Plier une feuille carrée de papier cuisson en
+  triangle successifs, couper la pointe (pour créer une petite cheminée
+  d'échappement centrale de $1 e x t c m$) et découper l'arc de cercle
+  au diamètre exact de votre casserole. Beurrer légèrement la face
+  inférieure.
++ #strong[La Régulation Thermique Parfaite :] Posé au contact direct des
+  légumes frémissants, le cartouche empêche l'évaporation trop violente
+  (qui brûlerait le fond) tout en interdisant la retombée diluante des
+  grosses gouttes froides d'un couvercle en verre.
++ #strong[Le Glaçage Automatique :] L'eau s'évapore très lentement par
+  la cheminée centrale. Au fur et à mesure de la cuisson, le liquide se
+  concentre en un sirop soyeux constitué des sucres naturels du légume
+  et de la matière grasse émulsionnée, qui nappe et laque chaque morceau
+  d'un éclat brillant spectaculaire.
 
 #divider()
 
@@ -3327,6 +3504,89 @@ gouttelettes de beurre et le lait parfumé sans jamais filer.
 
 #divider()
 
+== 4. LE PROTOCOLE DU MONOPRODUIT AUX QUATRE VISAGES : L'EXEMPLE DE LA CAROTTE
+<le-protocole-du-monoproduit-aux-quatre-visages-lexemple-de-la-carotte>
+L'erreur du cuisinier amateur est de croire que pour diversifier ses
+repas, il faut acheter cinquante ingrédients exotiques. La gastronomie
+des principes premiers démontre exactement l'inverse : #strong[avec un
+unique produit brut du terroir, la maîtrise des paramètres physiques
+permet de créer quatre expériences sensorielles totalement distinctes],
+aux textures et aux profils organoleptiques opposés.
+
+Prenons la modeste carotte maraîchère (#emph[Daucus carota]) :
+
+#figure(
+  align(center)[#table(
+  stroke: 0.5pt + rgb("#dcd6ca"),
+  fill: (x, y) => if y == 0 { rgb("#f2ece1") } else if calc.odd(y) { rgb("#faf7f2") } else { none },
+  inset: 8pt,
+
+    columns: (20%, 20%, 20%, 20%, 20%),
+    align: (left,left,left,left,left,),
+    table.header([Les 4 Visages du Monoproduit], [Procédé Physique &
+      Température], [Comportement Moléculaire (Pectines &
+      Sucres)], [Texture Finale en Bouche], [Profil Aromatique
+      Développé],),
+    table.hline(),
+    [#strong[\1. Crue & Mandolinée (Rubans marinés)]], [Découpe
+    micrométrique froide ($20^compose upright(C)$), saumurage flash
+    acide (citron/sel 5 min).], [Pectines intactes et rigides, vacuoles
+    sous forte pression de turgescence.], [#strong[Croquante, vive,
+    juteuse et éclatante.]], [Saveur végétale verte, terpènes frais,
+    acidulé stimulant.],
+    [#strong[\2. Étuvée Glacée au Beurre sous Cartouche]], [Cuisson
+    confinée douce ($85 e x t - - 90^compose upright(C)$) en casserole
+    fermée avec beurre et eau de constitution.], [Gélatinisation ménagée
+    des protopectines sans rupture cellulaire
+    totale.], [#strong[Fondante, moelleuse, nappée et
+    soyeuse.]], [Rondeur beurrée, douceur douce, sucres naturels
+    concentrés.],
+    [#strong[\3. Rôtie au Four à Sec (Caramélisation
+    pure)]], [Convection sèche violente à $190^compose upright(C)$ sur
+    plaque sans eau pendant 35 min.], [Évaporation de $60 thin %$ de
+    l'eau libre, pyrolyse des sucres et réactions de
+    Maillard.], [#strong[Friable, croustillante en surface, chair serrée
+    dense.]], [Notes puissantes de noisette torréfiée, mélasse et
+    sous-bois.],
+    [#strong[\4. Purée Veloutée Émulsionnée au Beurre
+    Noisette]], [Ébullition prolongée à $100^compose upright(C)$,
+    éclatement mécanique au mixeur et émulsion chaude.], [Dissolution
+    totale du ciment pectique, libération des pectines solubles liant
+    les lipides.], [#strong[Crémeuse, aérienne, veloutée comme une
+    crème.]], [Douceur suave enveloppante, notes de noisette toastée.],
+  )]
+  , kind: table
+  )
+
+=== Les 4 Déclinaisons en Casserole et Four :
+<les-4-déclinaisons-en-casserole-et-four>
++ #strong[La Carotte 1 (Fraîcheur & Croquant) :] Tailler les carottes
+  crues en tagliatelles translucides à l'aide d'un économe. Saler à la
+  fleur de sel et presser un demi-citron avec un filet d'huile d'olive.
+  L'acide fige le croquant pectique en dissolvant le film gras : entrée
+  vivifiante en 3 minutes.
++ #strong[La Carotte 2 (Le Glaçage à Blanc sous Cartouche) :] Tronçonner
+  en biseaux de $2 e x t c m$. Déposer dans la casserole avec
+  $20 e x t g$ de beurre, $50 e x t m l$ d'eau et une pincée de sel.
+  Couvrir du cartouche de papier sulfurisé troué. Cuire 15 minutes à feu
+  moyen : l'eau s'évapore, le beurre nappe les carottes fondantes d'un
+  émail laqué brillant.
++ #strong[La Carotte 3 (Le Rôti Concentré) :] Fendre les carottes en
+  deux dans la longueur. Les badigeonner d'un voile d'huile, saupoudrer
+  de cumin et fleur de sel. Poser à plat sur plaque chaude et enfourner
+  35 minutes à $190^compose upright(C)$. La déshydratation concentre la
+  sucrosité et brunit les arrêtes par caramélisation sèche.
++ #strong[La Carotte 4 (L'Émulsion Veloutée sans Crème) :] Cuire les
+  carottes en rondelles dans une eau frémissante jusqu'à ce qu'une
+  pointe de couteau les traverse sans résistance. Égoutter en gardant
+  $100 e x t m l$ d'eau de cuisson. Mixer à chaud avec cette eau et
+  incorporer $40 e x t g$ de beurre noisette tiède : les pectines
+  végétales émulsionnent la matière grasse pour former une crème
+  onctueuse digne d'un trois étoiles, sans un seul gramme de crème
+  laitière !
+
+#divider()
+
 = CHAPITRE 13 --- Protéines Végétales, Légumineuses et Nutrition Végétale Rationnelle
 <chapitre-13-protéines-végétales-légumineuses-et-nutrition-végétale-rationnelle>
 #quote(block: true)[
@@ -4005,6 +4265,106 @@ la crème sa texture veloutée parfaite.
 
 #divider()
 
+== 4. LES PRODIGES THERMIQUES INATTENDUS : L'OMELETTE NORVÉGIENNE ET L'INVERSION D'HERVÉ THIS
+<les-prodiges-thermiques-inattendus-lomelette-norvégienne-et-linversion-dhervé-this>
+La cuisine recèle des paradoxes physiques fascinants où l'intuition
+ordinaire est prise en défaut. Le plus célèbre est celui de
+l'#strong[Omelette Norvégienne] (#emph[Baked Alaska]), invention du
+physicien américain Benjamin Thompson (Comte de Rumford) en 1804,
+perfectionnée par Balzac et le chef Jean Giroix à l'Hôtel de Paris à
+Monaco.
+
+=== A. La Physique de l'Omelette Norvégienne : L'Air comme Bouclier Thermique
+<a.-la-physique-de-lomelette-norvégienne-lair-comme-bouclier-thermique>
+Comment est-il physiquement possible de poser un bloc de crème glacée à
+#strong[$- 18^compose upright(C)$] sur un biscuit, de le recouvrir de
+blancs d'œufs en neige sucrés, puis d'enfourner le tout dans un four
+chauffé à #strong[$240^compose upright(C)$] (ou de l'arroser de rhum
+flamboyant à $800^compose upright(C)$) sans que la glace ne fonde d'un
+seul millimètre ?
+
+#box(image("figures/livre_3/fig_omelette_norvegienne_bouclier.svg", alt: "Le bouclier thermique de la meringue dans l’Omelette Norvégienne"))\`\`
+
+- #strong[Le Pouvoir Isolant de l'Air :] L'air immobile possède une
+  conductivité thermique remarquablement basse :
+  \$\$k\_{ ext{air}} pprox 0{,}026\\,\\mathrm{W/(m\\cdot K)}\$\$ C'est
+  l'un des isolants thermiques les plus efficaces de la nature (c'est le
+  principe du duvet des oiseaux, de la laine polaire et du double
+  vitrage).
+- #strong[La Meringue comme Bouclier Spatial :] La meringue est une
+  émulsion de gaz dans un liquide : des milliards de microbulles d'air
+  emprisonnées dans une cage de protéines dénaturées (ovalbumine)
+  rigidifiée par le sucre. En passant au four chaud, la chaleur
+  caramélise la surface extérieure en une croûte dorée croustillante,
+  mais les calories sont incapables de traverser l'épaisseur d'air
+  stagnant pour atteindre le cœur. La glace reste à
+  $- 18^compose upright(C)$ sous son manteau isolant.
+
+#divider()
+
+=== 🍳 Fiche Recette 13 : L'Omelette Norvégienne Minute Infaillible
+<recette-omelette-norvegienne>
+#emph[La démonstration de la thermodynamique : la rencontre du feu
+brûlant et de la glace sans compromis.]
+
+- #strong[Temps de préparation :] 20 minutes | #strong[Temps de cuisson
+  :] 4 minutes au four à $240^compose upright(C)$
+- #strong[Minimalisme Instrumental :] 1 batteur ou fouet manuel, 1
+  cul-de-poule, 1 plat allant au four, 1 spatule.
+- #strong[Ingrédients pour 4 personnes :]
+  - Crème glacée artisanale ferme (vanille ou framboise) :
+    $500 e x t m l$ (très froide, $- 18^compose upright(C)$)
+  - Tranches de génoise, brioche rassie ou biscuits à la cuillère :
+    $100 e x t g$
+  - Blancs d'œufs frais : 4 pièces ($120 e x t g$)
+  - Sucre semoule fin : $150 e x t g$
+  - Alcool pour flamber (Grand Marnier, Rhum vieux) : $40 e x t m l$
+    (facultatif)
+
+===== Protocole Pas à Pas :
+<protocole-pas-à-pas-7>
++ #strong[Le Socle Isolant :] Disposer les tranches de génoise au fond
+  du plat. Le biscuit agit comme un second isolant thermique par le bas.
++ #strong[Le Dôme Givré :] Démouler le bloc de crème glacée directement
+  congelé sur le biscuit.
++ #strong[Le Montage de la Meringue Serrée :] Monter les 4 blancs en
+  neige ferme dans un cul-de-poule propre. Dès qu'ils moussent,
+  incorporer le sucre en trois fois jusqu'à obtenir une meringue
+  brillante, dense et formant un bec d'oiseau rigide.
++ #strong[Le Masquage Hermétique (L'Étape Vitale) :] À l'aide de la
+  spatule, recouvrir la glace et le biscuit d'une couche continue de
+  meringue de #strong[$2 e x t c m$ d'épaisseur minimale]. Veiller à ne
+  laisser #strong[aucun interstice ni trou d'air] : la moindre fissure
+  laisserait pénétrer l'air brûlant du four et ferait fuir la glace.
++ #strong[Le Choc Thermique :] Enfourner immédiatement à four préchauffé
+  à $240^compose upright(C)$ (position grill) pendant #strong[3 à 4
+  minutes]. La meringue dore et croustille en surface.
++ #strong[L'Envoi Spectaculaire :] Sortir du four, verser l'alcool tiédi
+  flambé à la cuillère sur le dôme et servir immédiatement. À la
+  découpe, le contraste entre la meringue tiède dorée et le cœur de
+  glace intact est saisissant.
+
+#divider()
+
+=== B. L'Omelette Norvégienne Inversée d'Hervé This
+<b.-lomelette-norvégienne-inversée-dhervé-this>
+Poussant le paradoxe plus loin au laboratoire du Collège de France,
+Hervé This a conçu l'#strong[omelette norvégienne inversée] : un plat
+présentant un #strong[cœur liquide chaud brûlant
+($70^compose upright(C)$)] enfermé dans une enveloppe externe
+#strong[glacée et croustillante] ! - #emph[Comment le réaliser sans
+machine de laboratoire ?] On congèle une coque sphérique de crème
+anglaise ou de purée de fruits au congélateur. On creuse le centre pour
+y introduire un coulis de chocolat chaud ou une compote brûlante
+épaissie à l'amidon, puis on referme hermétiquement la coque avec de la
+glace râpée et on trempe la bille 10 secondes dans de l'azote liquide ou
+dans une friture éclair à $200^compose upright(C)$ enrobée d'une panure
+tempura. La lenteur de la diffusion thermique permet de servir une
+sphère glacée à l'extérieur qui explose en un torrent brûlant dès la
+première bouchée.
+
+#divider()
+
 = LIVRE IV --- Transformations sans Feu, Terroirs et Mémoire Culinaire
 <livre-iv-transformations-sans-feu-terroirs-et-mémoire-culinaire>
 #quote(block: true)[
@@ -4598,7 +4958,7 @@ tolérer 190°C sans noircir.]
   sel.
 
 ===== Protocole Pas à Pas :
-<protocole-pas-à-pas-7>
+<protocole-pas-à-pas-8>
 + #strong[La Découpe Régulière :] Éplucher et couper les pommes de terre
   en rondelles de $3 e x t m m$ d'épaisseur. Les rincer à l'eau froide
   pour enlever l'amidon de coupe, puis les #strong[sécher très
@@ -4629,7 +4989,7 @@ mucilages de l'ail et de l'huile d'olive.]
   de gros sel marin, quelques gouttes de jus de citron.
 
 ===== Protocole Pas à Pas :
-<protocole-pas-à-pas-8>
+<protocole-pas-à-pas-9>
 + #strong[Le Broyage Cellulaire :] Dégermer les gousses d'ail. Les
   placer dans le mortier avec le gros sel. Écraser au pilon par
   rotations fermes jusqu'à destruction totale des parois cellulaires et
@@ -5871,21 +6231,21 @@ de quatre mille descendants toxiques !
 
 
 // Ancres de navigation transversale invisibles
-#hide[] <recette-tofu-croustillant>
-#hide[] <recette-pate-brisee>
-#hide[] <recette-dahl-lentilles>
-#hide[] <glossaire-synerese>
-#hide[] <recette-carbonara-traditionnelle>
-#hide[] <glossaire-bliss-point>
-#hide[] <sec-proteines-chair>
-#hide[] <chapitre-survie-parasites>
-#hide[] <chapitre-oeuf-repos>
-#hide[] <sec-emulsion>
-#hide[] <recette-glace-sel>
-#hide[] <recette-fromage-frais>
-#hide[] <recette-pain-cocotte>
-#hide[] <sec-leidenfrost>
 #hide[] <recette-steak-fonte>
+#hide[] <chapitre-survie-parasites>
+#hide[] <recette-pate-brisee>
 #hide[] <recette-ceviche-cabillaud>
-#hide[] <recette-moelleux-chocolat>
+#hide[] <recette-dahl-lentilles>
+#hide[] <recette-glace-sel>
+#hide[] <sec-emulsion>
+#hide[] <glossaire-bliss-point>
+#hide[] <recette-pain-cocotte>
+#hide[] <chapitre-oeuf-repos>
+#hide[] <glossaire-synerese>
 #hide[] <recette-mousse-aquafaba>
+#hide[] <recette-tofu-croustillant>
+#hide[] <recette-carbonara-traditionnelle>
+#hide[] <sec-leidenfrost>
+#hide[] <recette-moelleux-chocolat>
+#hide[] <recette-fromage-frais>
+#hide[] <sec-proteines-chair>

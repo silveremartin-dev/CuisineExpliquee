@@ -92,6 +92,51 @@ Avant l'invention des thermocouples numériques, les cuisiniers maîtrisaient le
 
 ---
 
+
+
+---
+
+## 5. LA SCIENCE DES GESTES ÉVIDENTS : LA SALADE AU MICROSCOPE, TURGESCENCE ET CONSERVATION
+
+Rien ne paraît plus anodin que de laver et conserver une pomme de salade. Pourtant, ce geste quotidien est un cas d'école de biologie cellulaire végétale.
+
+### A. La Pression de Turgescence : L'Équation du Croquant
+Une feuille de salade est constituée à **$95\,\%$ d'eau**. Sa rigidité croquante et son craquant sous la dent ne proviennent pas de fibres dures, mais de la **pression de turgescence** : l'eau liquide remplit les vacuoles intracellulaires et pousse la membrane plasmique avec force contre la paroi rigide de pectocellulose. 
+- *Lorsque la salade est cueillie :* la feuille continue de respirer et de transpirer. Si l'air environnant est sec, l'eau s'échappe par les stomates : les vacuoles se dégonflent, la pression interne s'effondre à zéro, et la feuille devient molle et flasque comme un chiffon mouillé.
+- *L'erreur fatale du sachet plastique détrempé :* Si vous enfermez une salade ruisselante d'eau libre dans un sachet plastique étanche, l'eau stagnante noie les tissus. Privées d'oxygène, les cellules entrent en asphyxie et meurent ; les bactéries anaérobies d'altération prolifèrent en 48 heures, liquéfiant les parois pectiques en une bouillie brunâtre visqueuse et nauséabonde.
+
+::: positif
+#### ✓ Le Protocole d'Or de Conservation (Croquante pendant 8 à 10 jours)
+1. **L'Essorage Vigoureux :** Après trempage, essorer scrupuleusement les feuilles pour éliminer chaque gouttelette d'eau libre de surface.
+2. **Le Linge Humide Régulateur :** Envelopper la salade essorée dans un grand torchon de coton propre (ou tapisser un récipient d'un papier absorbant) très légèrement humidifié.
+3. **Le Stockage en Bac à Légumes ($6	ext{ à }8^\circ\mathrm{C}$) :** Le linge en coton maintient une humidité relative ambiante saturée ($>90\,\%$) qui bloque l'évaporation sans jamais créer de flaque asphyxiante. La feuille respire et conserve son croquant intact pendant dix jours.
+4. **Le Bain de Jouvence à l'Eau Glacée :** Si une salade a ramolli, la plonger 15 minutes dans un saladier d'eau saturée de glaçons. L'eau froide s'engouffre par osmose à travers les parois cellulaires pour regonfler les vacuoles : la feuille redevient rigide et cassante comme au premier jour.
+:::
+
+### B. Le Lavage Vinaigré ou Citronné : Pourquoi Acidifier l'Eau ?
+Faut-il ajouter une cuillère de vinaigre blanc ou de jus de citron dans l'eau de trempage de la salade ?
+- **L'Action Antiparasitaire :** Les limaces, pucerons, chenilles et petits insectes maraîchers sécrètent un mucus d'adhérence pour s'arrimer aux nervures des feuilles. Un milieu légèrement acidifié abaisse le pH de l'eau, déstabilise leur mucus et provoque leur décrochage mécanique instantané vers le fond de l'évier.
+- **La Règle Temporelle Critique :** Le trempage acidifié ne doit pas dépasser 2 à 3 minutes, suivi d'un rinçage rapide à l'eau claire. Un trempage acide prolongé finirait par détruire la cuticule cireuse protectrice de la feuille.
+- **Ne Jamais Assaisonner à l'Avance :** Si vous versez votre vinaigrette sur la salade 20 minutes avant de passer à table, le sel de l'assaisonnement attire instantanément toute l'eau cellulaire hors de la feuille par pression osmotique, tandis que l'acide transforme la chlorophylle vert éclatant en phéophytine olive terne : la salade s'effondre en quelques minutes.
+
+---
+
+## 6. POURQUOI MET-ON DE L'ACIDE SUR LES ALIMENTS ?
+
+Au-delà de la destruction bactérienne, l'acidité (ions $\mathrm{H}^+$) est l'outil chimique le plus polyvalent et le plus sous-estimé de la gastronomie :
+
+1. **Le Réflexe Salivaire Parotidien :**
+   Les ions acides stimulent puissamment les canaux récepteurs OTOP1 des bourgeons du goût, provoquant une sécrétion réflexe massive de salive fluide par les glandes parotides. Une bouche sèche ne perçoit que $20\,\%$ des saveurs ; une bouche abondamment salivée dissout instantanément les molécules sapides et les achemine vers les récepteurs sensoriels.
+2. **L'Amplification Rétro-Olfactif :**
+   En dissolvant le film gras et mucilagineux qui tapisse la langue, l'acidité libère les composés aromatiques volatils qui remontent directement vers les récepteurs olfactifs rétro-nasaux lors de la déglutition.
+3. **L'Effet « Coupe-Gras » et l'Équilibre Sensoriel :**
+   Dans une sauce riche (hollandaise, béarnaise, mayonnaise), une friture ou une viande grasse, les lipides saturent les papilles et créent un écœurement rapide. Quelques gouttes d'acide citrique (citron) ou acétique (vinaigre) brisent cette inertie lipidique en stimulant la salivation et en abaissant le seuil de détection des saveurs.
+4. **L'Inhibition du Brunissement Enzymatique (Antioxydant) :**
+   Lorsqu'on entaille une pomme, un avocat, un champignon ou un artichaut, l'enzyme polyphénol-oxydase (PPO) réagit avec l'oxygène de l'air pour transformer les polyphénols incolores en mélanines brunes. En arrosant immédiatement de jus de citron, deux phénomènes agissent en synergie : l'acide citrique abaisse le pH sous $4{,}0$ (inhibant l'enzyme), tandis que l'acide ascorbique (vitamine C) agit comme un réducteur puissant qui neutralise l'oxygène avant qu'il ne détruise la couleur.
+5. **La Dénaturation Protéique à Froid :**
+   Les ions $\mathrm{H}^+$ pénètrent entre les chaînes peptidiques des poissons et des viandes fines, brisant les liaisons salines et hydrogène : la chair se resserre et blanchit sans aucune source thermique, créant la texture fondante du ceviche ou des marinades attendrissantes.
+
+
 ### 🍳 Fiche Recette 7 : La Mayonnaise Maison Inratable au Fouet Manuel {#recette-mayonnaise}
 
 *La physique de l'émulsion froide : 1 jaune d'œuf peut disperser jusqu'à 200 ml d'huile grâce aux lécithines.*

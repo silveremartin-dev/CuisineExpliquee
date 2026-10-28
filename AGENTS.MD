@@ -126,3 +126,21 @@ Le livre doit rompre radicalement avec l'esthétique aride d'un article de reche
    - Toutes les entrées bibliographiques comportent un badge thématique explicatif (`[Traité historique fondateur]`, `[Gastronomie moléculaire]`, `[Grand classique de la cuisine familiale]`, `[Best-seller mondial]`, etc.).
    - Inclusion incontournable des références majeures comme *La Cuillère d'argent* (bible de la cuisine italienne ménagère).
    - Absence totale de numéros ISBN factices.
+
+
+---
+
+## 8. LA SCIENCE DES GESTES DU QUOTIDIEN, LE MONOPRODUIT ET LES PRODIGES THERMIQUES
+
+1. **La Science des Gestes Évidents (Exemple de la Salade) :**
+   - *Turgescence vs Eau libre :* Comprendre pourquoi une salade gorgée d'eau libre pourrit en 48 heures au réfrigérateur (asphyxie bactérienne anaérobie), tandis qu'une salade essorée enveloppée dans un linge légèrement humide conserve sa turgescence cellulaire pendant plus d'une semaine sans flétrir.
+   - *Le lavage vinaigré :* L'abaissement du pH décolle les petits parasites et insectes sans cuire les cloisons cellulosiques si le rinçage est prompt.
+2. **La Multi-Dimensionnalité de l'Acide en Cuisine :**
+   - Dépasser le simple rôle antiseptique : l'acide déclenche le réflexe salivaire parotidien, fluidifie le mucus lingual pour libérer les molécules volatiles vers les récepteurs rétro-olfactifs, contrebalance la lourdeur des corps gras (« coupe-gras »), inhibe les polyphénol-oxydases (anti-brunissement enzymatique des pommes et avocats) et régule la fermeté des pectines végétales.
+3. **La Triade des Cuissons Douces avec une Simple Casserole :**
+   - Démontrer qu'avec une simple casserole inox et son couvercle, le cuisinier maîtrise trois modes de cuisson d'une extrême précision : la vapeur improvisée sans panier (fond d'eau et coupelle inversée), la cuisson à l'étouffée dans l'eau de constitution du végétal, et la technique professionnelle du *cartouche* de papier sulfurisé troué au centre qui régule l'évaporation sans faire bouillir.
+4. **Le Protocole du « Monoproduit aux 4 Visages » :**
+   - Illustrer la puissance de la physique culinaire en déclinant un légume unique (ex. la carotte ou l'oignon) en 4 préparations aux profils de texture et de flaveur radicalement opposés (cru mariné croquant, étuvé glacé fondant sous cartouche, rôti caramélisé friable, velouté émulsionné soyeux).
+5. **Les Prodiges Thermiques Inattendus (La Physique Ludique) :**
+   - *L'Omelette Norvégienne (Baked Alaska) :* La démonstration éclatante du pouvoir isolant de l'air emprisonné dans les microbulles d'une meringue foisonnée ($\lambda \approx 0{,}026\ \mathrm{W/(m\cdot K)}$), permettant d'enfourner une crème glacée à $-18^\circ\mathrm{C}$ dans un four à $240^\circ\mathrm{C}$ sans la faire fondre.
+   - *L'Omelette Inversée d'Hervé This :* L'inversion conceptuelle de la gastronomie moléculaire enfermant un cœur liquide brûlant dans une coque givrée.
