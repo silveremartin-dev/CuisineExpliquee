@@ -46,48 +46,40 @@ PREAMBLE = """
   author: "Silvère-Martin Michiellot & Antigravity"
 )
 
-// Palette Chromatique "Haute Gastronomie & Matière Noble" (Sobriété éditoriale, zéro look manuel scolaire)
-#let c-ink = rgb("#1f1c1a")        // Encre noire noble et chaude
-#let c-charcoal = rgb("#2e2a27")   // Anthracite profond
-#let c-slate = rgb("#544e49")      // Gris ardoise tiède
-#let c-bordeaux = rgb("#4a141e")   // Bordeaux amarante sombre
-#let c-terracotta = rgb("#8a3928") // Terracotta / Brique noble
-#let c-bronze = rgb("#9e7a44")     // Bronze laiton vieilli
-#let c-sand = rgb("#f5f2eb")       // Fond crème lin doux
-#let c-olive = rgb("#3d5440")      // Vert olive / Laurier sombre
-#let c-rust = rgb("#823223")       // Brun rouille sobre
+// Palette Chromatique "Haute Gastronomie & Matière Noble" (Style 1 : Le Grand Traité Étoilé)
+#let c-ink = rgb("#242124")        // Encre noire noble et chaude
+#let c-charcoal = rgb("#383330")   // Anthracite profond
+#let c-slate = rgb("#5c5549")      // Brun ardoise tiède
+#let c-bordeaux = rgb("#701c1a")   // Bordeaux haute gastronomie
+#let c-terracotta = rgb("#a3432b") // Terracotta noble
+#let c-bronze = rgb("#d4a373")     // Or / Bronze laiton vieilli
+#let c-cream = rgb("#fffdfa")      // Fond papier crème doux
+#let c-sand = rgb("#f7f4eb")       // Lin doux
+#let c-olive = rgb("#5a6e54")      // Vert laurier sourd
+#let c-rust = rgb("#92400e")       // Ambre profond
 
 #set page(
   paper: "a4",
-  margin: (top: 2.6cm, bottom: 2.6cm, left: 2.2cm, right: 2.2cm),
+  margin: (top: 2.5cm, bottom: 2.5cm, left: 2.2cm, right: 2.2cm),
   header: context {
     let page-num = counter(page).get().first()
     if page-num > 4 [
       #let cur-h1 = query(selector(heading.where(level: 1)).before(here()))
       #let title-left = if cur-h1.len() > 0 { cur-h1.last().body } else { [LA CUISINE EXPLIQUÉE] }
-      #grid(
-        columns: (1fr, auto),
-        align: (left + horizon, right + horizon),
-        text(size: 8pt, fill: c-slate, font: "Liberation Sans", style: "italic")[#title-left],
-        text(size: 7.5pt, fill: c-bronze, font: "Liberation Sans", weight: "bold")[LA CUISINE EXPLIQUÉE]
-      )
+      #text(font: "Liberation Serif", size: 8.5pt, fill: c-bordeaux, tracking: 0.08em)[
+        #smallcaps[#title-left] #h(1fr) #emph[La Cuisine Expliquée]
+      ]
       #v(-4pt)
-      #line(length: 100%, stroke: 0.4pt + c-bronze)
+      #line(length: 100%, stroke: 0.5pt + c-bronze)
     ]
   },
   footer: context {
     let page-num = counter(page).get().first()
     if page-num > 2 [
-      #line(length: 100%, stroke: 0.4pt + rgb("#dfdacf"))
-      #v(3pt)
-      #grid(
-        columns: (1fr, 1fr),
-        align: (left + horizon, right + horizon),
-        text(size: 8pt, fill: c-slate, font: "Liberation Sans", style: "italic")[Silvère-Martin Michiellot & Antigravity],
-        text(size: 8.5pt, fill: c-ink, font: "Liberation Sans", weight: "bold")[Page #page-num]
-      )
+      #align(center)[#text(font: "Liberation Serif", size: 9pt, fill: c-bordeaux)[— #page-num —]]
     ]
-  }
+  },
+  fill: rgb(255, 253, 250)
 )
 
 #set text(
@@ -97,36 +89,44 @@ PREAMBLE = """
   lang: "fr"
 )
 
-#set par(justify: true, leading: 0.74em, first-line-indent: 0pt, spacing: 0.88em)
+#set par(justify: true, leading: 0.75em, first-line-indent: 0pt, spacing: 0.88em)
 
 #show heading: set text(hyphenate: false)
 #show figure.where(kind: table): set block(breakable: true)
 #show figure.caption: it => [
   #v(7pt)
-  #text(size: 8.8pt, style: "italic", fill: rgb("#5c5549"))[#it]
+  #text(size: 8.8pt, style: "italic", fill: c-slate, font: "Liberation Serif")[#it]
   #v(13pt)
 ]
 
 // Style des Hyperliens Interactifs
 #show link: it => text(fill: c-terracotta, weight: "medium")[#underline(stroke: 0.5pt + c-bronze, offset: 1.5pt)[#it]]
 
-// Niveaux de Titres Éditoriaux avec Protection Anti-Orphelines et Pagebreaks Automatiques
+// Niveaux de Titres : Portails de Livre en Style 5 (Minimalisme Nordique, Page 21) et Chapitres en Style 1 (Grand Traité Étoilé)
 #show heading.where(level: 1): it => {
   pagebreak(weak: true)
-  v(0.6cm)
-  block(
-    fill: rgb("#f6f3ec"),
-    stroke: (top: 1.2pt + c-bronze, bottom: 1.2pt + c-bronze),
-    inset: (y: 16pt, x: 16pt),
-    width: 100%,
-    breakable: false,
-    sticky: true
-  )[
-    #align(center)[
-      #text(size: 14pt, weight: "bold", fill: c-bordeaux, font: "Liberation Serif", tracking: 0.6pt)[#it.body]
+  let body_repr = repr(it.body)
+  if "LIVRE" in body_repr or "ANNEXE" in body_repr {
+    // STYLE 5 (PAGE 21) : MINIMALISME ÉDITORIAL NORDIQUE POUR LES ENTÊTES DE LIVRE
+    v(2.5cm)
+    text(size: 11pt, tracking: 0.25em, fill: rgb(100, 116, 139), font: "Liberation Sans", weight: "bold")[#smallcaps[Ouverture de Partie]]
+    v(0.8cm)
+    text(size: 28pt, weight: "light", fill: c-ink, tracking: 0.05em, font: "Liberation Serif")[#it.body]
+    v(1.0cm)
+    line(length: 15%, stroke: 1.5pt + c-bronze)
+    v(1.2cm)
+  } else {
+    // STYLE 1 : LE GRAND TRAITÉ ÉTOILÉ POUR LES CHAPITRES
+    v(1.0cm)
+    align(center)[
+      #text(size: 10pt, tracking: 0.25em, fill: c-bordeaux, weight: "bold", font: "Liberation Sans")[#smallcaps[Traité de Cuisine & de Physique Culinaire]]
+      #v(8pt)
+      #text(size: 20pt, weight: "bold", fill: c-ink, font: "Liberation Serif")[#it.body]
+      #v(10pt)
+      #line(length: 25%, stroke: 1pt + c-bronze)
+      #v(0.6cm)
     ]
-  ]
-  v(0.5cm)
+  }
 }
 
 #show heading.where(level: 2): it => block(
@@ -136,9 +136,9 @@ PREAMBLE = """
   spacing: 1.4em
 )[
   #v(0.4cm)
-  #text(size: 12.5pt, weight: "bold", fill: c-terracotta, font: "Liberation Sans")[#it.body]
-  #v(-3pt)
-  #line(length: 100%, stroke: 0.6pt + c-bronze)
+  #text(size: 12.5pt, weight: "bold", fill: c-bordeaux, font: "Liberation Serif")[#it.body]
+  #v(-2pt)
+  #line(length: 100%, stroke: 0.5pt + c-bronze)
   #v(0.2cm)
 ]
 
@@ -149,7 +149,7 @@ PREAMBLE = """
   spacing: 1.1em
 )[
   #v(0.2cm)
-  #text(size: 10.5pt, weight: "bold", fill: c-charcoal, font: "Liberation Sans")[#it.body]
+  #text(size: 11pt, weight: "bold", fill: c-terracotta, font: "Liberation Serif")[#it.body]
   #v(0.1cm)
 ]
 
@@ -161,7 +161,7 @@ PREAMBLE = """
   #text(size: 9.5pt, weight: "bold", fill: c-slate, font: "Liberation Sans")[#it.body]
 ]
 
-// Signalétique Didactique et Boîtes Culinaires Nobles (Teintes chaudes naturelles)
+// Signalétique Didactique et Boîtes Culinaires Nobles (Style 1 : Couleurs douces et harmonieuses)
 #let truc_de_chef(body) = block(
   fill: rgb("#faf7f0"),
   stroke: (left: 3pt + c-bronze),
@@ -171,84 +171,84 @@ PREAMBLE = """
   spacing: 1.2em,
   breakable: false
 )[
-  #set text(size: 9.5pt, fill: c-ink)
+  #set text(size: 9.5pt, fill: c-ink, font: "Liberation Serif")
   #set par(justify: true, leading: 0.74em)
   #body
 ]
 
 #let anecdote_historique(body) = block(
   fill: rgb("#f7f5ef"),
-  stroke: (left: 3pt + rgb("#7a6250")),
+  stroke: (left: 3pt + rgb("#a38c78")),
   inset: (left: 14pt, right: 12pt, top: 10pt, bottom: 10pt),
   radius: (right: 4pt),
   width: 100%,
   spacing: 1.2em,
   breakable: false
 )[
-  #set text(size: 9.5pt, fill: c-ink)
+  #set text(size: 9.5pt, fill: c-ink, font: "Liberation Serif")
   #set par(justify: true, leading: 0.74em)
   #body
 ]
 
 #let positif(body) = block(
-  fill: rgb("#f3f6f3"),
-  stroke: (left: 3pt + c-olive),
+  fill: rgb("#f4f6f4"),
+  stroke: (left: 3pt + rgb("#6e826b")),
   inset: (left: 14pt, right: 12pt, top: 10pt, bottom: 10pt),
   radius: (right: 4pt),
   width: 100%,
   spacing: 1.2em,
   breakable: false
 )[
-  #set text(size: 9.5pt, fill: c-ink)
+  #set text(size: 9.5pt, fill: c-ink, font: "Liberation Serif")
   #set par(justify: true, leading: 0.74em)
   #body
 ]
 
 #let negatif(body) = block(
-  fill: rgb("#faf4f2"),
-  stroke: (left: 3pt + c-rust),
+  fill: rgb("#fbf6f5"),
+  stroke: (left: 3pt + rgb("#b06d60")),
   inset: (left: 14pt, right: 12pt, top: 10pt, bottom: 10pt),
   radius: (right: 4pt),
   width: 100%,
   spacing: 1.2em,
   breakable: false
 )[
-  #set text(size: 9.5pt, fill: c-ink)
+  #set text(size: 9.5pt, fill: c-ink, font: "Liberation Serif")
   #set par(justify: true, leading: 0.74em)
   #body
 ]
 
 #let danger(body) = block(
-  fill: rgb("#fef2f2"),
-  stroke: (left: 3.5pt + rgb("#dc2626")),
+  fill: rgb("#faf3f2"),
+  stroke: (left: 3pt + c-bordeaux),
   inset: (left: 14pt, right: 12pt, top: 10pt, bottom: 10pt),
   radius: (right: 4pt),
   width: 100%,
   spacing: 1.2em,
   breakable: false
 )[
-  #set text(size: 9.5pt, fill: c-ink)
+  #set text(size: 9.5pt, fill: c-ink, font: "Liberation Serif")
   #set par(justify: true, leading: 0.74em)
   #body
 ]
 
 #let alerte(body) = danger(body)
 #let point_attention(body) = block(
-  fill: rgb("#faf6ed"),
-  stroke: (left: 3pt + rgb("#9e4e36")),
+  fill: rgb("#faf6ee"),
+  stroke: (left: 3pt + c-terracotta),
   inset: (left: 14pt, right: 12pt, top: 10pt, bottom: 10pt),
   radius: (right: 4pt),
   width: 100%,
   spacing: 1.2em,
   breakable: false
 )[
-  #set text(size: 9.5pt, fill: c-ink)
+  #set text(size: 9.5pt, fill: c-ink, font: "Liberation Serif")
   #set par(justify: true, leading: 0.74em)
   #body
 ]
 
 #let oeil_molecule(body) = block(
-  fill: rgb("#f5f4f2"),
+  fill: rgb("#f6f5f3"),
   stroke: (left: 3pt + c-slate),
   inset: (left: 14pt, right: 12pt, top: 10pt, bottom: 10pt),
   radius: (right: 4pt),
@@ -256,13 +256,13 @@ PREAMBLE = """
   spacing: 1.2em,
   breakable: false
 )[
-  #set text(size: 9.5pt, fill: c-ink)
+  #set text(size: 9.5pt, fill: c-ink, font: "Liberation Serif")
   #set par(justify: true, leading: 0.74em)
   #body
 ]
 
 #let cas_limite(body) = block(
-  fill: rgb("#f8f6f0"),
+  fill: rgb("#f8f6f1"),
   stroke: (left: 3pt + rgb("#8c7355")),
   inset: (left: 14pt, right: 12pt, top: 10pt, bottom: 10pt),
   radius: (right: 4pt),
@@ -270,21 +270,21 @@ PREAMBLE = """
   spacing: 1.2em,
   breakable: false
 )[
-  #set text(size: 9.5pt, fill: c-ink)
+  #set text(size: 9.5pt, fill: c-ink, font: "Liberation Serif")
   #set par(justify: true, leading: 0.74em)
   #body
 ]
 
 #let quote_box(body) = block(
-  fill: rgb("#fafaf9"),
-  stroke: (left: 3pt + rgb("#a8a29e")),
+  fill: rgb("#faf7f2"),
+  stroke: (left: 3pt + c-bronze),
   inset: (left: 12pt, y: 7pt),
   radius: (right: 4pt),
   width: 100%,
   spacing: 1.1em,
   breakable: false
 )[
-  #set text(style: "italic", fill: rgb("#292524"))
+  #set text(style: "italic", fill: rgb("#292524"), font: "Liberation Serif")
   #set par(justify: true, leading: 0.74em)
   #body
 ]
