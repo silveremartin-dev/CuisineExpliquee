@@ -1,4 +1,4 @@
-# CHAPITRE 09 — L'Œuf au Repos : Anatomie, Conservation et Biologie Pratique
+# CHAPITRE 10 — L'Œuf au Repos : Anatomie, Flottaison et Conservation
 
 > « L'œuf est le chef-d'œuvre de l'architecture biologique : une cellule unique de cinquante grammes capable de se faire roche, gelée, mousse ou colle selon la loi physique qu'on lui applique. »  
 > — Hervé This, *Les Secrets de la casserole*
@@ -53,16 +53,14 @@ En Europe (norme CE n° 589/2008), le lavage des œufs de table de classe A est 
 
 Un œuf ne pourrit pas instantanément : il subit une métamorphose physico-chimique continue au fil des jours.
 
-```
-       JOUR 1 (Ponte)                                  JOUR 28 (Âgé)
- ┌─────────────────────────┐                    ┌─────────────────────────┐
- │ Chambre à air < 3 mm    │                    │ Chambre à air > 9 mm    │
- │ pH de l'albumen ~ 7.6   │   Perte continue   │ pH de l'albumen ~ 9.2   │
- │ Albumen épais en dôme   │ ─────────────────> │ Albumen liquide étalé   │
- │ Jaune bombé au centre   │   d'eau et de CO₂  │ Jaune aplati fragile    │
- │ Flotte au fond de l'eau │                    │ Flotte verticalement    │
- └─────────────────────────┘                    └─────────────────────────┘
-```
+| Paramètre d'Évolution | Œuf Extra-Frais (Jour 1 à 9) | Œuf Intermédiaire (Jour 10 à 20) | Œuf Âgé / Limite (Jour 28+) |
+| :--- | :--- | :--- | :--- |
+| **Hauteur de la chambre à air** | $< 3\,\mathrm{mm}$ (Poche d'air minuscule) | $4\text{ à }6\,\mathrm{mm}$ (Pression modérée) | $> 9\,\mathrm{mm}$ (Poche d'air majeure) |
+| **Acidité de l'albumen (pH)** | $\mathrm{pH} \approx 7{,}6$ (Milieu tamponné) | $\mathrm{pH} \approx 8{,}4$ (Perte continue de $\mathrm{CO}_2$) | $\mathrm{pH} \approx 9{,}2$ (Fortement alcalin) |
+| **Cohésion de l'albumen** | En dôme ferme, ovomucine intacte | Étalement partiel du blanc fluide | Albumen totalement aqueux et délié |
+| **Tenue du vitellus (jaune)** | Sphérique, bombé, centré par chalazes | Légèrement affaissé mais résistant | Aplati, membrane vitelline fragilisée |
+| **Comportement dans l'eau** | Coule immédiatement à plat au fond | Se dresse à la verticale au fond | Flotte en surface (Ne pas consommer) |
+| **Destination culinaire idéale** | **Œuf poché, œuf au plat, coque** | Omelettes, crèmes, appareils à gâteaux | Œufs durs (écalage net et facile) |
 
 1. **L'Évaporation hydrique et le test de flottaison :**
    L'eau de l'albumen s'évapore lentement à travers les pores et est remplacée par de l'air. La chambre à air augmente de volume, diminuant la masse volumique globale de l'œuf :

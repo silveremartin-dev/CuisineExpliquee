@@ -1,4 +1,4 @@
-# CHAPITRE 06 — L'Anatomie du Goût, l'Évolution Culturelle et les Secrets du 3 Étoiles
+# CHAPITRE 05 — L'Anatomie du Goût, l'Évolution Culturelle et les Secrets du 3 Étoiles
 
 > « Le goût n'est pas une simple réaction chimique sur la langue : c'est un souvenir, une émotion et une symphonie de textures. Ce qui fait la grandeur d'un plat trois étoiles ne réside pas dans le cristal de la table, mais dans la rigueur invisible de ce qui se passe dans la casserole. »
 
@@ -60,7 +60,12 @@ Pour qu'une sauce ou une purée procure cette sensation de velours aristocratiqu
 
 ### E. Secret 5 : Le Quatuor Poly-Textural
 Une bouchée gastronomique n'est jamais monotone. Elle assemble obligatoirement quatre états mécaniques contrastés :
-$$\mathbf{\text{Croustillant (Croûte rôtie)}} + \mathbf{\text{Fondant (Cœur soyeux)}} + \mathbf{\text{Nappant (Sauce émulsionnée)}} + \mathbf{\text{Croquant (Élément végétal vif)}}$$
+$$\begin{aligned}
+\mathbf{\text{Bouchée Gastronomique}} = &\; \mathbf{\text{Croustillant}} \text{ (Croûte rôtie par Maillard)} \\
+&+ \mathbf{\text{Fondant}} \text{ (Cœur soyeux riche en eau libre)} \\
+&+ \mathbf{\text{Nappant}} \text{ (Sauce liée par émulsion ou collagène)} \\
+&+ \mathbf{\text{Croquant}} \text{ (Fraîcheur végétale vive sous la dent)}
+\end{aligned}$$
 Ce contraste perpétuel maintient l'attention du cerveau en éveil et empêche l'accoutumance sensorielle.
 
 ---

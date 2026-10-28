@@ -1,4 +1,4 @@
-# CHAPITRE 13 — La Matrice Universelle du Gâteau et l'Épreuve du Chocolat
+# CHAPITRE 14 — La Matrice Universelle du Gâteau et l'Épreuve du Chocolat
 
 > « Une recette de pâtisserie n'est pas un texte sacré à réciter : c'est une équation d'équilibre entre un agent de structure, un agent plastifiant, un agent d'aération et un flux thermique. Changez les variables, la loi demeure. »
 

@@ -1,4 +1,4 @@
-# CHAPITRE 12 — Protéines Végétales, Légumineuses et Végétarisme Rationnel
+# CHAPITRE 13 — Protéines Végétales, Légumineuses et Nutrition Végétale Rationnelle
 
 > « Le règne végétal ne manque pas de protéines : il attend simplement que le cuisinier comprenne la clé de ses liaisons chimiques et l'art séculaire des associations d'acides aminés. »
 
@@ -81,64 +81,17 @@ Ne cuisez jamais de haricots rouges crus dans une mijoteuse électrique réglée
 
 Au-delà de la graine brute, la cuisine dispose de trois transformations remarquables issues du génie millénaire de l'artisanat :
 
-```
-                  ┌──────────────────────────────┐
-                  │    MATRICES PROTÉIQUES       │
-                  └──────────────┬───────────────┘
-                                 │
-         ┌───────────────────────┼───────────────────────┐
-         ▼                       ▼                       ▼
-  ┌───────────────┐       ┌───────────────┐       ┌───────────────┐
-  │   LE TOFU     │       │   LE SEITAN   │       │   LE TEMPEH   │
-  │Coagulation du │       │Réseau élastique│       │Fermentation de│
-  │lait de soja   │       │de gluten lavé │       │graines nobles │
-  │(Similaire au  │       │(Texture fibre │       │par champignon │
-  │fromage animal)│       │très dense)    │       │(Biodisponible)│
-  └───────────────┘       └───────────────┘       └───────────────┘
-```
-
-1. **Le Tofu :** Obtenu par chauffage du lait de graines de soja puis [coagulation](#sec-coagulation) des protéines (glycinine) sous l'action d'un sel minéral, traditionnellement le *nigari* (chlorure de magnésium marin naturel) ou le sulfate de calcium. C'est l'équivalent parfait du fromage frais animal, sans le moindre cholestérol.
-2. **Le Seitan :** Né dans les monastères bouddhistes au VIe siècle en Chine. On prépare une pâte de farine de blé et d'eau, puis on la pétrit doucement sous un filet d'eau tiède : l'[amidon](#glossaire-amidon) se dissout et s'évacue dans l'eau blanche, laissant entre les mains une masse élastique, soyeuse et élastomère composée exclusivement de protéines de blé (la gliadine et la gluténine). Poché dans un bouillon d'algues et de sauce soja, il développe une mâche fibreuse spectaculaire.
-3. **Le Tempeh :** Originaire de Java en Indonésie. Les fèves de soja cuites sont ensemencées avec les spores d'un champignon noble (*Rhizopus oligosporus*). En 36 heures à $30^\circ\mathrm{C}$, le mycélium blanc tisse un réseau dense qui lie les graines en un gâteau compact. La fermentation décompose les oligosaccharides, rend les protéines ultra-digestes et génère des arômes de noisette, de sous-bois et de champignon de Paris.
-
----
-
-## 5. Trois Recettes Fondatrices Pas à Pas 100% Végétales
-
----
-
-#### 🍳 Fiche Recette 1 : Le Dahl Réconfortant de Lentilles Corail au Cumin Torréfié et Lait de Coco
-
-*Un plat complet ancestral, digeste, sans temps de trempage préalable, prêt en 25 minutes chrono.*
-
-- **Temps de préparation :** 5 minutes
-- **Temps de cuisson :** 20 minutes
-- **Minimalisme Instrumental :** 1 casserole en inox, 1 cuillère en bois, 1 couteau de chef.
-- **Ratios d'équilibre :**
-  - Lentilles corail rincées : $250\text{ g}$
-  - Lait de coco (riche en matières grasses) : $200\text{ ml}$
-  - Eau ou bouillon de légumes : $450\text{ ml}$
-  - Oignon jaune émincé : $1$ moyen ($120\text{ g}$)
-  - Gousses d'ail râpées : $2$
-  - Gingembre frais râpé : $15\text{ g}$ (1 noix)
-  - Épices : Cumin en graines ($1\text{ c. à café}$), Curcuma moulu ($1\text{ c. à café}$), Piment doux ($1/2\text{ c. à café}$)
-  - Huile neutre ou huile de coco : $2\text{ c. à soupe}$
-  - Sel fin : $5\text{ g}$ (1 cuillère à café rase)
-  - Jus de citron vert frais et coriandre fraîche pour l'envoi.
-
-```
-                  CHRONOLOGIE D'EXTRACTION DU DAHL
-                 
- [0 min]  Torréfaction des graines de cumin à sec (Libération du cuminaldéhyde)
-    │
- [2 min]  Ajout matière grasse + Oignons + Ail + Gingembre (Suer sans coloration)
-    │
- [6 min]  Ajout curcuma + Lentilles corail (Enrobage lipidique des grains)
-    │
- [8 min]  Mouillage (Eau + Lait de coco) -> Ébullition puis feu doux 15 min
-    │
-[23 min]  Délitement naturel des lentilles -> Saler & Acidifier (Jus de citron vert)
-```
+| Matrice Protéique | Origine & Procédé Physique | Propriétés Texturales | Biodisponibilité & Digestion | Destination Culinaire Idéale |
+| :--- | :--- | :--- | :--- | :--- |
+| **Le Tofu** | Lait de soja chauffé puis coagulé au *nigari* ($\mathrm{MgCl}_2$) | Gel tendre, neutre, forte porosité d'absorption | Taux protéique de 8 à \,\%$, zéro cholestérol | Rissolé croustillant, potages, marinades |
+| **Le Seitan** | Pâte de blé pétrie sous l'eau pour dissoudre l'amidon | Masse élastique, fibreuse et filandreuse | Concentré de gluten pur (\,\%$ de protéines) | Ragoûts mijotés, émincés sautés, brochettes |
+| **Le Tempeh** | Fèves de soja fermentées par le champignon *Rhizopus* | Gâteau dense, arômes de noisette et sous-bois | Prédigéré par le mycélium, digestibilité maximale | Tranches laquées à la poêle, salades tièdes || Horloge | Phase Opératoire | Action Physico-Chimique en Casserole | Repère Sensoriel Clé |
+| :---: | :--- | :--- | :--- |
+| **0 min** | **Torréfaction à sec** | Libération thermique des terpènes du cumin | Les graines crépitent et exhalent la noisette |
+| **2 min** | **Bain aromatique** | Dissolution des essences lipophiles dans l'huile | Oignons translucides, arômes suaves ail/gingembre |
+| **6 min** | **Enrobage lipidique** | Les grains de lentilles sont imperméabilisés au curcuma | Éclat orangé brillant de chaque lentille |
+| **8 min** | **Mouillage & mijotage** | Gélatinisation de l'amidon et dénaturation douce | Léger frémissement sous couvercle entrouvert |
+| **23 min** | **Finition & équilibrage** | Amidon délié en crème, réveil par l'acide citrique | Onctuosité veloutée sans mixeur, éclat en bouche |``
 
 ##### Étapes Pas à Pas :
 1. **La Torréfaction à Sec des Épices :** Poser la casserole inox sur feu moyen sans matière grasse. Jeter les graines de cumin. Dès qu'elles crépitent et dégagent une odeur chaude de noisette (environ 60 secondes), ajouter immédiatement les 2 cuillères d'huile pour stopper la torréfaction et fixer les composés aromatiques lipophiles dans la matière grasse.

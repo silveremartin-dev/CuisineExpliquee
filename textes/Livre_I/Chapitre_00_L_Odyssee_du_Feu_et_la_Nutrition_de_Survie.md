@@ -120,7 +120,7 @@ Pour maîtriser la cuisine contemporaine, il faut connaître les épaules de gé
 
 ---
 
-## 6. TABLEAU BIPOLAIRE MÉTHODOLOGIQUE : CE QU'IL FAUT FAIRE / CE QU'IL FAUT ÉVITER
+## 6. TABLEAU COMPARATIF : LE GESTE VERTUEUX vs L'ÉCUEIL CRITIQUE : CE QU'IL FAUT FAIRE / CE QU'IL FAUT ÉVITER
 
 | Domaine | ✓ Ce qu'il faut faire (Principe Vertueux) | ✗ Ce qu'il faut absolument éviter (Danger / Erreur) |
 | :--- | :--- | :--- |

@@ -1,4 +1,4 @@
-# CHAPITRE 04 — La Mécanique des Pâtes, l'Urgence du Feu Gras et la Survie du Frigo
+# CHAPITRE 18 — La Mécanique des Pâtes et l'Émulsion d'Or Jaune (Spaghetti alla Carbonara)
 
 > « Il n'y a pas de geste anodin en cuisine. Jeter cent grammes de blé dur dans de l'eau tiède est un désastre physique ; les jeter dans une eau saturée de bouillonnement est un triomphe de la gélatinisation. »
 

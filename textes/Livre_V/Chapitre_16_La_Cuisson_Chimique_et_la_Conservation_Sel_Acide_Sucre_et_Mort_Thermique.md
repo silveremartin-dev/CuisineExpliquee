@@ -1,4 +1,4 @@
-# CHAPITRE 14 — La Cuisson Chimique et la Conservation : Sel, Acide, Sucre et Mort Thermique
+# CHAPITRE 15 — La Cuisson Chimique et la Conservation : Sel, Acide, Sucre et Mort Thermique
 
 > « Le feu n'a pas le monopole de la cuisson. Le sel déshydrate par appel d'eau, l'acide déroule les protéines sans un watt d'énergie, et le sucre affame les bactéries en séquestrant l'eau libre. »
 

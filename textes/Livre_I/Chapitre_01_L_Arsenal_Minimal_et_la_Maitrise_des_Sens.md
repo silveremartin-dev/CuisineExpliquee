@@ -81,7 +81,7 @@ Avant l'invention des thermocouples numériques, les cuisiniers maîtrisaient le
 
 ---
 
-## 4. TABLEAU BIPOLAIRE DE L'ARSENAL : CE QU'IL FAUT FAIRE / CE QU'IL FAUT ÉVITER
+## 4. TABLEAU COMPARATIF DE L'ARSENAL : LE BON USAGE vs L'ERREUR COURANTE : CE QU'IL FAUT FAIRE / CE QU'IL FAUT ÉVITER
 
 | Outil | ✓ Le Geste Vertueux | ✗ Le Contre-Modèle à Bannir |
 | :--- | :--- | :--- |

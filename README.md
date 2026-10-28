@@ -17,7 +17,7 @@
 En s'appuyant sur les travaux pionniers de Richard Wrangham, Harold McGee, Nicholas Kurti, Hervé This, Heston Blumenthal, Ferran Adrià et J. Kenji López-Alt, cet ouvrage démontre comment manipuler et transformer les matières premières avec un **minimum absolu d'instruments** (une poêle en fonte/acier, une casserole inox, une planche de bois massif, un couteau de chef affûté et une cuillère en bois).
 
 ### 🎯 Les Six Piliers Didactiques
-1. **La forme bipolaire systématique :** chaque technique détaille le geste vertueux (ce qu'il faut faire) et le contre-modèle (ce qu'il faut absolument éviter).
+1. **La forme en dyade vertueuse / contre-modèle systématique :** chaque technique détaille le geste vertueux (ce qu'il faut faire) et le contre-modèle (ce qu'il faut absolument éviter).
 2. **Du geste sensible vers la molécule :** l'analogie mécanique concrète précède toujours l'explication microscopique (jamais d'arides listes chimiques déconnectées du réel).
 3. **La démystification agroalimentaire :** analyse rationnelle des codes E (de l'inoffensif E300 à l'additif problématique E250), des listes d'ingrédients industrielles et du concept neurobiologique de *Bliss Point*.
 4. **La psychologie des courses & de l'alimentation :** neurochimie de la faim (ghréline/leptine), méthodologie du panier par piliers nutritionnels fondamentaux, index glycémique et amidons résistants.

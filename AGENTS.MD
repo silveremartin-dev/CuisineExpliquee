@@ -22,7 +22,7 @@
 
 ## 2. LES SIX IMPÉRATIFS ÉPISTÉMOLOGIQUES ET MÉTHODOLOGIQUES MAJEURS
 
-### A. La Forme Bipolaire Systématique : Le Positif et le Négatif (Ce qu'il faut faire / Ce qu'il faut éviter)
+### A. La Forme en Diptyque Méthodologique Systématique : Le Positif et le Négatif (Ce qu'il faut faire / Ce qu'il faut éviter)
 Toute technique, tout principe de conservation, toute cuisson et tout geste doit être articulé de manière explicite et symétrique en deux volets indissociables :
 1. **Le Geste Vertueux (Ce qu'il faut faire) :** Les paramètres optimaux étayés par la thermodynamique et la cinétique chimique.
 2. **Le Contre-Modèle (Ce qu'il faut absolument éviter) :** Les erreurs courantes, les mythes persistants, les gestes dangereux (ex. projeter de l'eau sur une huile en flammes, recongeler un aliment cru décongelé, faire ses courses le ventre vide).
@@ -120,7 +120,7 @@ Le livre doit rompre radicalement avec l'esthétique aride d'un article de reche
 
 1. **La Densité Maximale d'Information :**
    - Chaque paragraphe doit apporter une valeur pratique ou scientifique directe : un ratio massique au gramme près, une cinétique thermique en secondes, un indice sensoriel net (son du crépitement, odeur de noisette du beurre, tension superficielle) ou une astuce de chef éprouvée. Zéro verbiage creux.
-2. **Le Découpage Pas-à-Pas Bipolaire :**
+2. **Le Découpage Pas-à-Pas en Diptyque Méthodologique :**
    - Chaque préparation pilier détaille la cinétique pas-à-pas, assortie de son bloc systématique « Ce qu'il faut faire » (points critiques) et « Ce qu'il faut éviter » (erreurs fréquentes et explications causales).
 3. **La Bibliographie Raisonnée et Évaluée :**
    - Toutes les entrées bibliographiques comportent un badge thématique explicatif (`[Traité historique fondateur]`, `[Gastronomie moléculaire]`, `[Grand classique de la cuisine familiale]`, `[Best-seller mondial]`, etc.).

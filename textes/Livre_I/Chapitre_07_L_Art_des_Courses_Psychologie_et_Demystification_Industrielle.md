@@ -1,4 +1,4 @@
-# CHAPITRE 08 — L'Art des Courses, la Psychologie du Caddie et la Démystification Industrielle
+# CHAPITRE 07 — L'Art des Courses, la Psychologie du Caddie et la Démystification Industrielle
 
 > « On ne cuisine pas dans le vide : le destin de votre santé et la qualité de vos assiettes se scellent dès le franchissement des portes du marché ou du supermarché. Comprendre la psychologie de l'achat et l'ingénierie agroalimentaire est le premier bouclier du cuisinier libre. »
 
@@ -70,7 +70,7 @@ Pour ne pas subir le marketing invasif des têtes de gondole :
 
 ---
 
-## 3. TABLEAU BIPOLAIRE : COMPORTEMENT DU CONSOMMATEUR ÉCLAIRÉ
+## 3. TABLEAU COMPARATIF : STRATÉGIES ÉCLAIRÉES vs PIÈGES DU SUPERMARCHÉ ÉCLAIRÉ
 
 | Étape de l'Achat | ✓ Ce qu'il faut faire (Le Geste Éclairé) | ✗ Ce qu'il faut absolument éviter (Le Piège Industriel) |
 | :--- | :--- | :--- |

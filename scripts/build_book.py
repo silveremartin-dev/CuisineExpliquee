@@ -433,30 +433,30 @@ PREAMBLE = """
 
     #v(0.3cm)
     *Pains, Levains & Fromagerie Autonome*
-    - #link(<recette-pain-cocotte>)[Le Pain Cocotte d'Autonomie sans Pétrissage (*No-Knead Bread*)] --- _Chapitre 15_
-    - #link(<recette-fromage-frais>)[Le Fromage Frais Maison en 15 Minutes (Caillage Acide sans Présure)] --- _Chapitre 15_
-    - #link(<recette-glace-sel>)[La Glace Express sans Sorbetière (Abaissement Cryoscopique du Sel)] --- _Chapitre 15_
+    - #link(<recette-pain-cocotte>)[Le Pain Cocotte d'Autonomie sans Pétrissage (*No-Knead Bread*)] --- _Chapitre 16_
+    - #link(<recette-fromage-frais>)[Le Fromage Frais Maison en 15 Minutes (Caillage Acide sans Présure)] --- _Chapitre 16_
+    - #link(<recette-glace-sel>)[La Glace Express sans Sorbetière (Abaissement Cryoscopique du Sel)] --- _Chapitre 16_
 
     #v(0.2cm)
     *Viandes, Poissons & Saisies à la Poêle*
     - #link(<recette-steak-fonte>)[Le Pavé de Bœuf en Poêle Fonte & Arrosage au Beurre Mousseux (*Basting*)] --- _Chapitre 03_
-    - #link(<recette-deglacage-minute>)[Le Déglaçage Minute & Sauce Montée au Beurre Émulsionnée] --- _Chapitre 06_
-    - #link(<recette-ceviche-cabillaud>)[Le Vrai Ceviche de Cabillaud Mariné au Citron Vert & Piment Doux] --- _Chapitre 14_
+    - #link(<recette-deglacage-minute>)[Le Déglaçage Minute & Sauce Montée au Beurre Émulsionnée] --- _Chapitre 05_
+    - #link(<recette-ceviche-cabillaud>)[Le Vrai Ceviche de Cabillaud Mariné au Citron Vert & Piment Doux] --- _Chapitre 15_
 
     #v(0.2cm)
     *Pâtes & Émulsions d'Or*
-    - #link(<recette-carbonara-traditionnelle>)[Les Vraies Spaghetti alla Carbonara (L'Émulsion d'Or Jaune sans Crème)] --- _Chapitre 04_
+    - #link(<recette-carbonara-traditionnelle>)[Les Vraies Spaghetti alla Carbonara (L'Émulsion d'Or Jaune sans Crème)] --- _Chapitre 18_
 
     #v(0.2cm)
     *Cuisine Végétale & Protéines Alternatives*
-    - #link(<recette-dahl-lentilles>)[Le Dahl Réconfortant de Lentilles Corail au Cumin Torréfié & Coco] --- _Chapitre 12_
-    - #link(<recette-tofu-croustillant>)[Le Tofu Doré Ultra-Croustillant & son Laquage Tamari-Sésame] --- _Chapitre 12_
-    - #link(<recette-mousse-aquafaba>)[La Mousse au Chocolat Aérienne à l'Aquafaba (Zéro Œuf, Zéro Crème)] --- _Chapitre 12_
+    - #link(<recette-dahl-lentilles>)[Le Dahl Réconfortant de Lentilles Corail au Cumin Torréfié & Coco] --- _Chapitre 13_
+    - #link(<recette-tofu-croustillant>)[Le Tofu Doré Ultra-Croustillant & son Laquage Tamari-Sésame] --- _Chapitre 13_
+    - #link(<recette-mousse-aquafaba>)[La Mousse au Chocolat Aérienne à l'Aquafaba (Zéro Œuf, Zéro Crème)] --- _Chapitre 13_
 
     #v(0.2cm)
     *Desserts & Maîtrise des Seuils Thermiques*
-    - #link(<recette-moelleux-chocolat>)[Le Moelleux au Chocolat Cœur Coulant (Gradient Thermique Calibré)] --- _Chapitre 13_
-    - #link(<recette-creme-anglaise>)[La Crème Anglaise Onctueuse Inratable (Seuil Critique de 83°C au Ruban)] --- _Chapitre 13_
+    - #link(<recette-moelleux-chocolat>)[Le Moelleux au Chocolat Cœur Coulant (Gradient Thermique Calibré)] --- _Chapitre 14_
+    - #link(<recette-creme-anglaise>)[La Crème Anglaise Onctueuse Inratable (Seuil Critique de 83°C au Ruban)] --- _Chapitre 14_
   ]
 ]
 
@@ -510,7 +510,7 @@ BACK_COVER = """
     ]
     #v(3pt)
     #text(size: 9pt, fill: rgb("#e7e5e4"), font: "Liberation Sans")[
-      • *15 Chapitres Fondamentaux* : De l'étincelle paléolithique à la science moléculaire.\\
+      • *18 Chapitres Fondamentaux* : De l'étincelle paléolithique à la géopolitique des terroirs.\\
       • *10 Recettes Piliers Pas à Pas* : Ratios universels, repères sensoriels et arbres de sauvetage.\\
       • *Guide de Survie & Protocoles d'Urgence* : Incendies d'huile, pannes de froid et intoxications.\\
       • *Cuisine Végétale Rationnelle* : Chimie des acides aminés et biodisponibilité des protéines.\\
@@ -561,10 +561,10 @@ def postprocess_typst(typ_content):
         typ_content
     )
     
-    # Améliorer les tableaux avec style gastronomique
+    # Améliorer les tableaux avec style gastronomique noble
     typ_content = typ_content.replace(
         '#table(',
-        '#table(\n  stroke: 0.5pt + rgb("#e7e5e4"),\n  fill: (x, y) => if y == 0 { rgb("#fef3c7") } else if calc.odd(y) { rgb("#fffbeb") } else { none },\n  inset: 7pt,\n'
+        '#table(\n  stroke: 0.5pt + rgb("#dcd6ca"),\n  fill: (x, y) => if y == 0 { rgb("#f2ece1") } else if calc.odd(y) { rgb("#faf7f2") } else { none },\n  inset: 8pt,\n'
     )
     
     # Reconvertir les balises d'appel didactiques
@@ -632,28 +632,31 @@ def run_build():
     print("=== Étape 1 : Assemblage et Préparation des Textes Markdown ===")
     
     sections = [
-        ("LIVRE I — L'HOMME, LE FEU ET LA SURVIE : HISTOIRE, ANTHROPOLOGIE ET NUTRITION", [
+        ("LIVRE I — L'HOMME, LE FEU ET LA RÈGLE DU FOYER", [
             "textes/Livre_I/Chapitre_00_L_Odyssee_du_Feu_et_la_Nutrition_de_Survie.md",
             "textes/Livre_I/Chapitre_01_L_Arsenal_Minimal_et_la_Maitrise_des_Sens.md",
             "textes/Livre_I/Chapitre_02_La_Thermodynamique_du_Feu_et_des_Cuissons.md",
-            "textes/Livre_I/Chapitre_03_L_Art_des_Pates_et_l_Urgence_du_Feu.md",
-            "textes/Livre_I/Chapitre_04_Consignes_de_Securite_et_Pannes_Critiques.md",
+            "textes/Livre_I/Chapitre_04_Consignes_de_Securite_et_Pannes_Critiques.md"
+        ]),
+        ("LIVRE II — L'ALCHIMIE DU VIVANT : PHYSIOLOGIE, ÉCOLOGIE ET VÉRITÉ DE L'ASSIETTE", [
             "textes/Livre_I/Chapitre_05_L_Anatomie_du_Gout_et_les_Secrets_du_3_Etoiles.md",
             "textes/Livre_I/Chapitre_06_Nourriture_Saine_Digestibilite_et_Prise_des_Repas.md",
-            "textes/Livre_I/Chapitre_07_L_Art_des_Courses_Psychologie_et_Demystification_Industrielle.md"
+            "textes/Livre_I/Chapitre_07_L_Art_des_Courses_Psychologie_et_Demystification_Industrielle.md",
+            "textes/Livre_II/Chapitre_08_L_Enquete_des_Additifs_et_Codes_E_Dangereux.md",
+            "textes/Livre_II/Chapitre_09_L_Ecologie_de_la_Matiere_Flux_et_Saisonnalite_Globale.md"
         ]),
-        ("LIVRE II — L'ŒUF : L'ARCHÉTYPE DE LA MATIÈRE CULINAIRE", [
+        ("LIVRE III — LA MATIÈRE ANIMALE ET VÉGÉTALE AUX FOURNEAUX", [
             "textes/Livre_II/Chapitre_05_L_Oeuf_au_Repos_Anatomie_et_Conservation.md",
-            "textes/Livre_II/Chapitre_06_La_Coagulation_Fractionnee_et_les_Seuils_Critiques.md"
-        ]),
-        ("LIVRE III — LE MONDE VÉGÉTAL ET LA DÉCONSTRUCTION DE LA RECETTE", [
+            "textes/Livre_II/Chapitre_06_La_Coagulation_Fractionnee_et_les_Seuils_Critiques.md",
             "textes/Livre_III/Chapitre_11_Le_Monde_Vegetal_et_le_Secret_de_Blumenthal.md",
             "textes/Livre_III/Chapitre_12_Proteines_Vegetales_Legumineuses_et_Veganisme_Rationnel.md",
             "textes/Livre_III/Chapitre_13_La_Matrice_du_Gateau_et_le_Chocolat.md"
         ]),
-        ("LIVRE IV — LA PRÉSERVATION ET LES TRANSFORMATIONS SANS FEU", [
+        ("LIVRE IV — TRANSFORMATIONS SANS FEU, TERROIRS ET MÉMOIRE CULINAIRE", [
             "textes/Livre_V/Chapitre_16_La_Cuisson_Chimique_et_la_Conservation_Sel_Acide_Sucre_et_Mort_Thermique.md",
-            "textes/Livre_V/Chapitre_17_Proliferation_Microbienne_Fermentations_et_Recettes_Fondatrices.md"
+            "textes/Livre_V/Chapitre_17_Proliferation_Microbienne_Fermentations_et_Recettes_Fondatrices.md",
+            "textes/Livre_IV/Chapitre_16_La_Geopolitique_du_Gout_Terroirs_et_Mondialisation.md",
+            "textes/Livre_I/Chapitre_03_L_Art_des_Pates_et_l_Urgence_du_Feu.md"
         ]),
         ("ANNEXES, FORMULAIRE ET RÉPERTOIRE CRITIQUE", [
             "textes/Annexes/Annexe_A_Tableau_des_Temperatures_Critiques.md",

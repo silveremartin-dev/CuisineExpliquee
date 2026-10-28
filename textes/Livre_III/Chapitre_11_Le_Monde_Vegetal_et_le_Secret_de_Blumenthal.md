@@ -1,4 +1,4 @@
-# CHAPITRE 11 — La Paroi Végétale, l'Amidon et la Purée d'Heston Blumenthal
+# CHAPITRE 12 — La Paroi Végétale, l'Amidon et la Purée d'Heston Blumenthal
 
 > « La pomme de terre est un coffre-fort d'amidon entouré d'une écorce d'arômes. Traitez-la avec brutalité mécanique et elle vous rendra de la colle ; traitez-la avec respect cellulaire et elle se fera velours. »  
 > — Heston Blumenthal, *In Search of Perfection*
@@ -57,7 +57,7 @@ Un simple presse-purée manuel en métal ou un moulin à légumes exerce une con
 
 ---
 
-## 3. CE QU'IL FAUT FAIRE ET CE QU'IL FAUT ÉVITER : TABLEAU BIPOLAIRE
+## 3. CE QU'IL FAUT FAIRE ET CE QU'IL FAUT ÉVITER : TABLEAU COMPARATIF : RÈGLE D'OR vs ERREUR CRITIQUE
 
 | Étape | ✓ Ce qu'il faut faire (Principe Vertueux) | ✗ Ce qu'il faut éviter (Erreur Critique) |
 | :--- | :--- | :--- |

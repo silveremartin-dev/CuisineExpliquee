@@ -1,4 +1,4 @@
-# CHAPITRE 05 — Consignes de Sécurité, Gestion des Accidents et Pannes Critiques
+# CHAPITRE 04 — Consignes de Sécurité, Gestion des Accidents et Pannes Critiques
 
 > « Dans un atelier où l'on manie des lames d'acier au fil rasoir, des récipients à trois cents degrés et des graisses inflammables, la sérénité du geste naît de la connaissance exacte du danger. »
 
@@ -80,7 +80,7 @@ Le couteau de chef est le prolongement de la main. Les coupures graves ne se pro
 
 ---
 
-## 4. TABLEAU BIPOLAIRE DE SÉCURITÉ : RÉFLEXES DE SURVIE
+## 4. TABLEAU SYNOPTIQUE DE SÉCURITÉ : LE RÉFLEXE VITAL vs L'ÉCUEIL MORTEL : RÉFLEXES DE SURVIE
 
 | Situation d'Urgence | ✓ Ce qu'il faut faire (Réflexe Vital) | ✗ Ce qu'il faut absolument éviter (Danger Mortel) |
 | :--- | :--- | :--- |

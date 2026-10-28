@@ -1,4 +1,4 @@
-# CHAPITRE 03 — La Thermodynamique du Feu et des Cuissons
+# CHAPITRE 03 — La Thermodynamique du Feu, des Cuissons et Réactions de Maillard
 
 > « Cuire, c'est orchestrer une collision contrôlée entre des photons, des électrons et des molécules d'eau. »
 

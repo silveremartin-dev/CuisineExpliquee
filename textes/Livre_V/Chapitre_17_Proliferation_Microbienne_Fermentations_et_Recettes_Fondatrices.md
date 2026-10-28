@@ -1,4 +1,4 @@
-# CHAPITRE 15 — Prolifération Microbienne, Fermentations et Recettes Fondatrices
+# CHAPITRE 16 — Prolifération Microbienne, Fermentations et Recettes Fondatrices
 
 > « Les micro-organismes sont les cuisiniers invisibles de la Terre. Savoir leur ouvrir la porte quand ils nous nourrissent et leur claquer la porte au nez quand ils veulent nous tuer est la frontière exacte entre la gastronomie et le poison. »
 
@@ -25,7 +25,7 @@ Entre **$+10^\circ\mathrm{C}$ et $+60^\circ\mathrm{C}$**, une bactérie pathogè
 - **Les Levures (*Saccharomyces cerevisiae*) :** Elles transforment les glucides en éthanol et en $\mathrm{CO}_2$ (vin, bière, pain au levain).
 - **Les Moisissures Nobles (*Penicillium roqueforti*, *Penicillium camemberti*) :** Leurs enzymes protéolytiques digèrent les caséines du lait pour donner l'onctuosité et les flaveurs d'un bleu ou d'un camembert au lait cru.
 
-![Fabrication traditionnelle du fromage : séparation du caillé et du petit-lait](figures/science/coagulation_lait_caillage.jpg)
+![Fabrication artisanale du fromage frais : caillé doux égoutté à l'étamine et petit-lait](figures/nourriture/fromage_frais_ricotta_artisan.jpg)
 
 ---
 
@@ -83,7 +83,7 @@ La dissolution du chlorure de sodium ($\mathrm{NaCl}$) dans la glace est un phé
 
 *Comment obtenir une miche de boulanger d'exception avec 1 gramme de levure et zéro pétrissage mécanique.*
 
-![Pain artisanal doré à croûte craquante et mie alvéolée cuit en cocotte en fonte](figures/nourriture/pain_artisan_croute.jpg)
+![Miche de pain artisanal au levain doré, croûte craquante et mie sauvage cuite en cocotte de fonte](figures/nourriture/pain_levain_artisan_dore.jpg)
 
 ::: anecdote_historique
 #### 🏛️ L'Anecdote Historique : L'Invention du Pain sans Pétrissage
