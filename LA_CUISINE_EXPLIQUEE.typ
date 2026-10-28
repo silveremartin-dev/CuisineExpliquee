@@ -16,27 +16,72 @@
 #let c-olive = rgb("#5a6e54")      // Vert laurier sourd
 #let c-rust = rgb("#92400e")       // Ambre profond
 
+// ==========================================
+// RÈGLES DE FOLIOTAGE (CHARTE TYPOGRAPHIQUE DE L'ÉDITION)
+// - La couverture (plats 1, 2, 3 et 4) n'est jamais comptée ni foliotée :
+//   le compteur démarre à 1 sur la première belle page du bloc intérieur (faux-titre).
+// - Pages impaires = recto (droite) ; pages paires = verso (gauche).
+// - Pages liminaires (1 faux-titre, 2 blanche, 3 grand titre, 4 mentions légales,
+//   5 exergue/dédicace, 6 blanche, puis sommaire et table des recettes) : comptées mais muettes.
+// - Toute ouverture de partie ou de chapitre se fait en belle page (impaire) et reste muette ;
+//   le premier folio visible apparaît sur la page qui suit l'ouverture de la Première Partie.
+// - Pages blanches : comptées dans l'ordre arithmétique, jamais de folio ni de titre courant.
+// - Folio centré en pied de page (jamais côté reliure / petit fond).
+// ==========================================
+
+// Saut vers la prochaine belle page (impaire) avec balisage des pages blanches intercalaires
+#let recto() = {
+  [#metadata("fin-section") <fin-section>]
+  pagebreak(weak: true, to: "odd")
+  [#metadata("debut-section") <debut-section>]
+}
+
+// Le folio (et le titre courant) n'est visible que sur les pages de texte courant :
+// ni liminaire, ni page d'ouverture, ni page blanche.
+#let folio-visible() = {
+  let p = here().page()
+  let debut = query(<debut-texte>)
+  if debut.len() == 0 or p <= debut.first().location().page() { return false }
+  let fins = query(<fin-section>)
+  let debuts = query(<debut-section>)
+  for (i, d) in debuts.enumerate() {
+    let dp = d.location().page()
+    if dp == p { return false }
+    if i < fins.len() and p < dp {
+      let m = fins.at(i).location()
+      let mp = m.page()
+      if mp < p { return false }
+      if mp == p and m.position().y < 2.75cm { return false }
+    }
+  }
+  true
+}
+
+#let entete-livre = context {
+  if folio-visible() {
+    let page-h1 = query(selector(heading.where(level: 1))).filter(h => h.location().page() == here().page())
+    let cur-h1 = if page-h1.len() > 0 { page-h1 } else { query(selector(heading.where(level: 1)).before(here())) }
+    let title-left = if cur-h1.len() > 0 { cur-h1.last().body } else { [LA CUISINE EXPLIQUÉE] }
+    text(font: "Liberation Serif", size: 8.5pt, fill: c-bordeaux, tracking: 0.08em)[
+      #smallcaps[#title-left] #h(1fr) #emph[La Cuisine Expliquée]
+    ]
+    v(-4pt)
+    line(length: 100%, stroke: 0.5pt + c-bronze)
+  }
+}
+
+#let pied-livre = context {
+  if folio-visible() {
+    let page-num = counter(page).get().first()
+    align(center)[#text(font: "Liberation Serif", size: 9pt, fill: c-bordeaux)[— #page-num —]]
+  }
+}
+
 #set page(
   paper: "a4",
   margin: (top: 2.5cm, bottom: 2.5cm, left: 2.2cm, right: 2.2cm),
-  header: context {
-    let page-num = counter(page).get().first()
-    if page-num > 4 [
-      #let cur-h1 = query(selector(heading.where(level: 1)).before(here()))
-      #let title-left = if cur-h1.len() > 0 { cur-h1.last().body } else { [LA CUISINE EXPLIQUÉE] }
-      #text(font: "Liberation Serif", size: 8.5pt, fill: c-bordeaux, tracking: 0.08em)[
-        #smallcaps[#title-left] #h(1fr) #emph[La Cuisine Expliquée]
-      ]
-      #v(-4pt)
-      #line(length: 100%, stroke: 0.5pt + c-bronze)
-    ]
-  },
-  footer: context {
-    let page-num = counter(page).get().first()
-    if page-num > 2 [
-      #align(center)[#text(font: "Liberation Serif", size: 9pt, fill: c-bordeaux)[— #page-num —]]
-    ]
-  },
+  header: entete-livre,
+  footer: pied-livre,
   fill: rgb(255, 253, 250)
 )
 
@@ -62,7 +107,8 @@
 
 // Niveaux de Titres : Portails de Livre en Style 5 (Page 21, alignés à gauche, sans couleur bleue) et Chapitres en Style 1 (en haut de page, alignés à gauche)
 #show heading.where(level: 1): it => {
-  pagebreak(weak: true)
+  // Ouverture systématique en belle page (impaire), page d'ouverture muette
+  recto()
   let body_repr = repr(it.body)
   let is_portal = (body_repr.contains("01") or body_repr.contains("02") or body_repr.contains("03") or body_repr.contains("04") or body_repr.contains("05")) and not body_repr.contains("CHAPITRE") and not body_repr.contains("ANNEXE") and not body_repr.contains("Sommaire")
   if is_portal {
@@ -103,7 +149,6 @@
         ]
       ]
     ]
-    pagebreak()
   } else {
     // STYLE 1 : LE GRAND TRAITÉ ÉTOILÉ POUR LES CHAPITRES (EN HAUT DE PAGE, ALIGNÉ À GAUCHE)
     v(0.3cm)
@@ -340,40 +385,52 @@
 ]
 
 #pagebreak()
+// Plat 2 (intérieur de couverture) : hors décompte, jamais folioté
+#box()
+
 #set page(
   paper: "a4",
   margin: (top: 2.5cm, bottom: 2.5cm, left: 2.2cm, right: 2.2cm),
-  header: context {
-    let page-num = counter(page).get().first()
-    if page-num > 4 {
-      let page-h1 = query(selector(heading.where(level: 1))).filter(h => h.location().page() == here().page())
-      let cur-h1 = if page-h1.len() > 0 { page-h1 } else { query(selector(heading.where(level: 1)).before(here())) }
-      let repr-h1 = if cur-h1.len() > 0 { repr(cur-h1.last().body) } else { "" }
-      let is-portal = (repr-h1.contains("01") or repr-h1.contains("02") or repr-h1.contains("03") or repr-h1.contains("04") or repr-h1.contains("05")) and not repr-h1.contains("CHAPITRE") and not repr-h1.contains("ANNEXE") and not repr-h1.contains("Sommaire")
-      if not is-portal {
-        let title-left = if cur-h1.len() > 0 { cur-h1.last().body } else { [LA CUISINE EXPLIQUÉE] }
-        text(font: "Liberation Serif", size: 8.5pt, fill: c-bordeaux, tracking: 0.08em)[
-          #smallcaps[#title-left] #h(1fr) #emph[La Cuisine Expliquée]
-        ]
-        v(-4pt)
-        line(length: 100%, stroke: 0.5pt + c-bronze)
-      }
-    }
-  },
-  footer: context {
-    let page-num = counter(page).get().first()
-    if page-num > 2 {
-      let page-h1 = query(selector(heading.where(level: 1))).filter(h => h.location().page() == here().page())
-      let cur-h1 = if page-h1.len() > 0 { page-h1 } else { query(selector(heading.where(level: 1)).before(here())) }
-      let repr-h1 = if cur-h1.len() > 0 { repr(cur-h1.last().body) } else { "" }
-      let is-portal = (repr-h1.contains("01") or repr-h1.contains("02") or repr-h1.contains("03") or repr-h1.contains("04") or repr-h1.contains("05")) and not repr-h1.contains("CHAPITRE") and not repr-h1.contains("ANNEXE") and not repr-h1.contains("Sommaire")
-      if not is-portal {
-        align(center)[#text(font: "Liberation Serif", size: 9pt, fill: c-bordeaux)[— #page-num —]]
-      }
-    }
-  }
+  header: entete-livre,
+  footer: pied-livre,
+  fill: rgb(255, 253, 250)
 )
+// Début du bloc intérieur : la première belle page est la page 1 (muette)
+#counter(page).update(1)
 
+// ==========================================
+// PAGE 1 (RECTO) — FAUX-TITRE (MUETTE)
+// ==========================================
+#align(center + horizon)[
+  #text(size: 22pt, weight: "bold", fill: c-ink, font: "Liberation Serif", tracking: 0.06em)[LA CUISINE EXPLIQUÉE]
+]
+#pagebreak()
+
+// PAGE 2 (VERSO) — PAGE BLANCHE (MUETTE)
+#box()
+#pagebreak()
+
+// ==========================================
+// PAGE 3 (RECTO) — GRAND TITRE (MUETTE)
+// ==========================================
+#align(center)[
+  #v(3.5cm)
+  #text(size: 12pt, weight: "bold", fill: c-bordeaux, tracking: 0.15em, font: "Liberation Sans")[SILVÈRE-MARTIN MICHIELLOT & ANTIGRAVITY]
+  #v(1.6cm)
+  #text(size: 32pt, weight: "bold", fill: c-ink, font: "Liberation Serif")[LA CUISINE EXPLIQUÉE]
+  #v(0.5cm)
+  #line(length: 30%, stroke: 0.5pt + c-bronze)
+  #v(0.5cm)
+  #text(size: 14pt, fill: c-terracotta, font: "Liberation Serif", style: "italic")[Principes Premiers, Maîtrise de la Matière#linebreak()et Minimalisme Instrumental]
+  #v(1fr)
+  #text(size: 10pt, fill: c-slate, font: "Liberation Sans", tracking: 0.1em)[ÉDITION INTÉGRALE DE RÉFÉRENCE — 2026]
+  #v(0.2cm)
+  #text(size: 9pt, fill: c-slate, font: "Liberation Sans")[Diffusion ouverte sous licence libre CC BY-SA 4.0]
+  #v(1.5cm)
+]
+#pagebreak()
+
+// PAGE 4 (VERSO) — MENTIONS LÉGALES (MUETTE)
 // ==========================================
 // 2. PAGE DE MENTIONS LÉGALES & LICENCE LIBRE
 // ==========================================
@@ -433,6 +490,12 @@
 
 #pagebreak()
 
+// PAGE 6 (VERSO) — PAGE BLANCHE (MUETTE)
+#box()
+#pagebreak()
+
+// PAGE 7 (RECTO) ET SUIVANTES — SOMMAIRE (LIMINAIRE, MUET)
+
 // ==========================================
 // 4. SOMMAIRE RAISONNÉ
 // ==========================================
@@ -442,7 +505,8 @@
   depth: 2
 )
 
-#pagebreak()
+// La table des recettes s'ouvre en belle page
+#recto()
 
 // ==========================================
 // 5. TABLE DES RECETTES & PRÉPARATIONS PILIERS
@@ -506,7 +570,9 @@
     - #link(<recette-omelette-norvegienne>)[L'Omelette Norvégienne Minute Infaillible (Le Bouclier Thermique de la Meringue)] --- _Chapitre 14_
   ]
 ]
-#pagebreak()
+
+// Fin des pages liminaires : le folio devient visible après l'ouverture de la Première Partie
+#metadata("debut-texte") <debut-texte>
 
 
 = 01 --- L'Homme, le Feu et la Règle du Foyer
@@ -7269,8 +7335,16 @@ de quatre mille descendants toxiques !
 ]
 
 
-#pagebreak()
+// Le bloc intérieur se termine sur un verso (page paire) : page blanche muette si nécessaire
+#metadata("fin-section") <fin-section>
+#pagebreak(to: "odd")
 #set page(margin: 0pt, header: none, footer: none)
+#metadata("debut-section") <debut-section>
+// Plat 3 (intérieur de couverture arrière) : hors décompte, jamais folioté
+#box()
+#pagebreak()
+
+// Plat 4 (quatrième de couverture) : jamais foliotée
 
 #block(
   fill: rgb("#1c1917"),
@@ -7351,22 +7425,22 @@ de quatre mille descendants toxiques !
 
 
 // Ancres de navigation transversale invisibles
-#hide[] <chapitre-survie-parasites>
-#hide[] <recette-ceviche-cabillaud>
-#hide[] <recette-glace-sel>
-#hide[] <glossaire-synerese>
 #hide[] <recette-dahl-lentilles>
-#hide[] <glossaire-bliss-point>
-#hide[] <recette-moelleux-chocolat>
-#hide[] <chapitre-oeuf-repos>
-#hide[] <recette-pate-brisee>
-#hide[] <recette-fromage-frais>
-#hide[] <recette-pain-cocotte>
-#hide[] <sec-proteines-chair>
-#hide[] <recette-tofu-croustillant>
-#hide[] <recette-carbonara-traditionnelle>
+#hide[] <recette-glace-sel>
 #hide[] <recette-mousse-aquafaba>
-#hide[] <sec-emulsion>
-#hide[] <sec-leidenfrost>
-#hide[] <chapitre-08--lenquete-des-additifs-alimentaires--decodage-yuka-nutri-score-et-codes-e-dangereux>
+#hide[] <recette-fromage-frais>
+#hide[] <recette-pate-brisee>
 #hide[] <recette-steak-fonte>
+#hide[] <chapitre-survie-parasites>
+#hide[] <chapitre-oeuf-repos>
+#hide[] <glossaire-synerese>
+#hide[] <sec-emulsion>
+#hide[] <recette-moelleux-chocolat>
+#hide[] <recette-carbonara-traditionnelle>
+#hide[] <recette-tofu-croustillant>
+#hide[] <recette-pain-cocotte>
+#hide[] <sec-leidenfrost>
+#hide[] <glossaire-bliss-point>
+#hide[] <chapitre-08--lenquete-des-additifs-alimentaires--decodage-yuka-nutri-score-et-codes-e-dangereux>
+#hide[] <recette-ceviche-cabillaud>
+#hide[] <sec-proteines-chair>
