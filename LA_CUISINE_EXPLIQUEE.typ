@@ -4,12 +4,24 @@
   author: "Silvère-Martin Michiellot & Antigravity"
 )
 
+// Palette Chromatique Haute Gastronomie
+#let c-bordeaux = rgb("#78350f")
+#let c-terracotta = rgb("#9a3412")
+#let c-gold = rgb("#b45309")
+#let c-dark = rgb("#1c1917")
+#let c-slate = rgb("#44403c")
+#let c-cream = rgb("#fffbeb")
+#let c-green = rgb("#15803d")
+#let c-red = rgb("#b91c1c")
+#let c-amber = rgb("#d97706")
+#let c-teal = rgb("#0f766e")
+
 #set page(
   paper: "a4",
-  margin: (top: 2.4cm, bottom: 2.4cm, left: 2.2cm, right: 2.2cm),
+  margin: (top: 2.5cm, bottom: 2.5cm, left: 2.2cm, right: 2.2cm),
   header: context {
     let page-num = counter(page).get().first()
-    if page-num > 4 [
+    if page-num > 3 [
       #let cur-h2 = query(heading.where(level: 2)).filter(h => h.location().page() == here().position().page)
       #let ch-title = if cur-h2.len() > 0 {
         cur-h2.first().body
@@ -27,23 +39,23 @@
       #grid(
         columns: (1fr, 1fr),
         align: (left, right),
-        text(size: 8pt, fill: rgb("#64748b"), font: "Liberation Sans", style: "italic")[#vol-title],
-        text(size: 8pt, fill: rgb("#0f172a"), font: "Liberation Sans", weight: "bold")[#ch-title]
+        text(size: 8pt, fill: c-terracotta, font: "Liberation Sans", style: "italic", weight: "medium")[#vol-title],
+        text(size: 8pt, fill: c-dark, font: "Liberation Sans", weight: "bold")[#ch-title]
       )
       #v(-4pt)
-      #line(length: 100%, stroke: 0.5pt + rgb("#cbd5e1"))
+      #line(length: 100%, stroke: 0.5pt + c-gold)
     ]
   },
   footer: context {
     let page-num = counter(page).get().first()
     if page-num > 2 [
-      #line(length: 100%, stroke: 0.5pt + rgb("#cbd5e1"))
+      #line(length: 100%, stroke: 0.5pt + rgb("#fcd34d"))
       #v(3pt)
       #grid(
         columns: (1fr, 1fr),
         align: (left, right),
-        text(size: 8pt, fill: rgb("#94a3b8"), font: "Liberation Sans", style: "italic")[LA CUISINE EXPLIQUÉE — Principes Premiers],
-        text(size: 8.5pt, fill: rgb("#0f172a"), font: "Liberation Sans", weight: "bold")[Page #page-num]
+        text(size: 8pt, fill: c-terracotta, font: "Liberation Sans", style: "italic")[LA CUISINE EXPLIQUÉE — Principes Premiers],
+        text(size: 8.5pt, fill: c-dark, font: "Liberation Sans", weight: "bold")[Page #page-num]
       )
     ]
   }
@@ -55,58 +67,100 @@
   lang: "fr"
 )
 
-#set par(justify: true, leading: 0.72em, first-line-indent: 0pt, spacing: 0.85em)
+#set par(justify: true, leading: 0.74em, first-line-indent: 0pt, spacing: 0.88em)
 
 #show heading: set text(hyphenate: false)
 #show heading: set block(sticky: true)
 #show figure: set block(breakable: false)
 
-// Palette Sémantique
-#let c-red = rgb("#dc2626")
-#let c-blue = rgb("#2563eb")
-#let c-green = rgb("#16a34a")
-#let c-amber = rgb("#d97706")
-#let c-dark = rgb("#0f172a")
-#let c-slate = rgb("#334155")
+// Style des Hyperliens Interactifs
+#show link: it => text(fill: c-terracotta, weight: "medium")[#underline(stroke: 0.5pt + c-gold, offset: 1.5pt)[#it]]
 
-// Design des Niveaux de Titres
+// Niveaux de Titres Éditoriaux
 #show heading.where(level: 1): it => {
   pagebreak()
-  v(1.2cm)
+  v(1.0cm)
   align(center)[
     #block(
-      fill: rgb("#f8fafc"),
-      stroke: 2.5pt + c-blue,
-      inset: 22pt,
-      radius: 8pt,
+      fill: rgb("#fffbeb"),
+      stroke: (top: 2.5pt + c-gold, bottom: 2.5pt + c-gold),
+      inset: (y: 20pt, x: 16pt),
       width: 100%
     )[
-      #text(size: 17pt, weight: "bold", fill: c-dark, font: "Liberation Sans")[#it.body]
+      #text(size: 16pt, weight: "bold", fill: c-bordeaux, font: "Liberation Sans", tracking: 0.5pt)[#it.body]
     ]
   ]
-  v(1.0cm)
+  v(0.8cm)
 }
 
 #show heading.where(level: 2): it => {
   v(0.6cm)
-  text(size: 14pt, weight: "bold", fill: c-blue, font: "Liberation Sans")[#it.body]
+  text(size: 13.5pt, weight: "bold", fill: c-bordeaux, font: "Liberation Sans")[#it.body]
   v(-3pt)
-  line(length: 100%, stroke: 1.5pt + c-blue)
-  v(0.3cm)
+  line(length: 100%, stroke: 1.2pt + c-gold)
+  v(0.25cm)
 }
 
-#show heading.where(level: 3): it => block(spacing: 1.2em)[
-  #v(0.2cm)
-  #text(size: 11.5pt, weight: "bold", fill: c-dark, font: "Liberation Sans")[#it.body]
-  #v(0.1cm)
+#show heading.where(level: 3): it => block(spacing: 1.1em)[
+  #v(0.15cm)
+  #text(size: 11pt, weight: "bold", fill: c-dark, font: "Liberation Sans")[#it.body]
+  #v(0.05cm)
 ]
 
-#show heading.where(level: 4): it => block(spacing: 0.9em)[
-  #text(size: 10.5pt, weight: "bold", fill: c-slate, font: "Liberation Sans")[#it.body]
+#show heading.where(level: 4): it => block(spacing: 0.8em)[
+  #text(size: 10pt, weight: "bold", fill: c-slate, font: "Liberation Sans")[#it.body]
 ]
 
-// Boîtes Didactiques Spécialisées
-#let positif(title: [✓ Ce qu'il faut faire], body) = block(
+// Signalétique Didactique et Boîtes Culinaire
+#let anecdote_historique(body) = block(
+  fill: rgb("#fffbeb"),
+  stroke: (left: 4pt + c-gold),
+  inset: (left: 14pt, right: 12pt, top: 10pt, bottom: 10pt),
+  radius: (right: 6pt),
+  width: 100%,
+  spacing: 1.2em,
+  breakable: false
+)[
+  #text(size: 9.5pt)[#body]
+]
+
+#let truc_de_chef(body) = block(
+  fill: rgb("#fefce8"),
+  stroke: (left: 4pt + rgb("#ca8a04")),
+  inset: (left: 14pt, right: 12pt, top: 10pt, bottom: 10pt),
+  radius: (right: 6pt),
+  width: 100%,
+  spacing: 1.2em,
+  breakable: false
+)[
+  #text(size: 9.5pt)[#body]
+]
+
+#let point_attention(body) = block(
+  fill: rgb("#fff1f2"),
+  stroke: (left: 4pt + rgb("#e11d48")),
+  inset: (left: 14pt, right: 12pt, top: 10pt, bottom: 10pt),
+  radius: (right: 6pt),
+  width: 100%,
+  spacing: 1.2em,
+  breakable: false
+)[
+  #text(size: 9.5pt)[#body]
+]
+
+#let oeil_molecule(body) = block(
+  fill: rgb("#f0fdfa"),
+  stroke: (left: 4pt + c-teal),
+  inset: (left: 14pt, right: 12pt, top: 10pt, bottom: 10pt),
+  radius: (right: 6pt),
+  width: 100%,
+  spacing: 1.2em,
+  breakable: false
+)[
+  #text(size: 9.5pt)[#body]
+]
+
+#let positif(body) = block(
   fill: rgb("#f0fdf4"),
   stroke: (left: 4pt + c-green),
   inset: (left: 14pt, right: 12pt, top: 10pt, bottom: 10pt),
@@ -115,14 +169,10 @@
   spacing: 1.2em,
   breakable: false
 )[
-  #block(sticky: true, width: 100%)[
-    #text(size: 10.5pt, weight: "bold", fill: c-green, font: "Liberation Sans")[#title]
-    #v(3pt)
-  ]
-  #body
+  #text(size: 9.5pt)[#body]
 ]
 
-#let negatif(title: [✗ Ce qu'il faut absolument éviter], body) = block(
+#let negatif(body) = block(
   fill: rgb("#fef2f2"),
   stroke: (left: 4pt + c-red),
   inset: (left: 14pt, right: 12pt, top: 10pt, bottom: 10pt),
@@ -131,14 +181,10 @@
   spacing: 1.2em,
   breakable: false
 )[
-  #block(sticky: true, width: 100%)[
-    #text(size: 10.5pt, weight: "bold", fill: c-red, font: "Liberation Sans")[#title]
-    #v(3pt)
-  ]
-  #body
+  #text(size: 9.5pt)[#body]
 ]
 
-#let cas_limite(title: [🛠️ Le Laboratoire des Cas Limites], body) = block(
+#let cas_limite(body) = block(
   fill: rgb("#fffbeb"),
   stroke: (left: 4pt + c-amber),
   inset: (left: 14pt, right: 12pt, top: 10pt, bottom: 10pt),
@@ -147,33 +193,27 @@
   spacing: 1.2em,
   breakable: false
 )[
-  #block(sticky: true, width: 100%)[
-    #text(size: 10.5pt, weight: "bold", fill: c-amber, font: "Liberation Sans")[#title]
-    #v(3pt)
-  ]
-  #body
+  #text(size: 9.5pt)[#body]
 ]
 
 #let quote_box(body) = block(
-  fill: rgb("#f8fafc"),
-  stroke: (left: 3pt + rgb("#94a3b8")),
+  fill: rgb("#fafaf9"),
+  stroke: (left: 3pt + rgb("#a8a29e")),
   inset: (left: 12pt, y: 7pt),
   radius: (right: 4pt),
   width: 100%,
   spacing: 1.1em,
   breakable: false
 )[
-  #text(style: "italic", fill: rgb("#334155"))[#body]
+  #text(style: "italic", fill: rgb("#292524"))[#body]
 ]
 
 // ==========================================
-// 1. COUVERTURE OFFICIELLE DE RÉFÉRENCE
+// 1. COUVERTURE GASTRONOMIQUE DE RÉFÉRENCE
 // ==========================================
-#set page(header: none, footer: none)
-
 #align(center + horizon)[
   #block(
-    fill: rgb("#0f172a"),
+    fill: rgb("#1c1917"),
     inset: 32pt,
     radius: 14pt,
     width: 95%
@@ -187,24 +227,24 @@
       LA CUISINE EXPLIQUÉE
     ]
     #v(0.3cm)
-    #text(size: 14pt, weight: "bold", fill: rgb("#93c5fd"), font: "Liberation Sans")[
+    #text(size: 14pt, weight: "bold", fill: rgb("#fed7aa"), font: "Liberation Sans")[
       Principes Premiers, Maîtrise de la Matière et Minimalisme Instrumental
     ]
     #v(0.8cm)
     #line(length: 60%, stroke: 2pt + rgb("#f59e0b"))
     #v(0.8cm)
-    #text(size: 10.5pt, fill: rgb("#e2e8f0"), font: "Liberation Serif", style: "italic")[
-      Traité de physique, de chimie et de gestuelle appliquée aux fourneaux.\
+    #text(size: 10.5pt, fill: rgb("#e7e5e4"), font: "Liberation Serif", style: "italic")[
+      Traité d'anthropologie, de biologie, de physique et de gestuelle appliquée aux fourneaux.\
       De l'étincelle paléolithique à la thermodynamique des émulsions et des chairs.\
       Apprendre à dompter le feu et les ingrédients avec cinq ustensiles fondamentaux.
     ]
     #v(1.2cm)
     #block(
-      fill: rgb("#1e293b"),
+      fill: rgb("#292524"),
       inset: (x: 18pt, y: 10pt),
       radius: 6pt
     )[
-      #text(size: 9.5pt, weight: "bold", fill: rgb("#38bdf8"), font: "Liberation Sans")[
+      #text(size: 9.5pt, weight: "bold", fill: rgb("#fcd34d"), font: "Liberation Sans")[
         ÉDITION INTÉGRALE DE RÉFÉRENCE — 2026
       ]
     ]
@@ -215,27 +255,28 @@
 #pagebreak()
 
 // ==========================================
-// 2. PAGE DE COPYRIGHT ET MENTIONS
+// 2. PAGE DE MENTIONS LÉGALES & LICENCE LIBRE
 // ==========================================
 #align(bottom)[
   #block(
-    fill: rgb("#f8fafc"),
-    stroke: 0.5pt + rgb("#cbd5e1"),
+    fill: rgb("#fafaf9"),
+    stroke: 0.5pt + rgb("#e7e5e4"),
     inset: 16pt,
     radius: 6pt,
     width: 100%
   )[
-    #text(size: 8.5pt, fill: rgb("#475569"))[
+    #text(size: 8.5pt, fill: rgb("#57534e"))[
       *LA CUISINE EXPLIQUÉE — Principes Premiers, Maîtrise de la Matière et Minimalisme Instrumental*\
       © 2026 Silvère-Martin Michiellot & Antigravity.\
       \
-      *Licence Libre :* Cet ouvrage est mis à disposition sous licence *Creative Commons Attribution - Partage dans les Mêmes Conditions 4.0 International (CC BY-SA 4.0)*.\
-      Vous êtes libre de partager, copier, distribuer et adapter ce traité sous réserve de citer expressément les auteurs et de diffuser l'œuvre dérivée sous une licence identique.\
+      *Licence Libre :* Cet ouvrage est mis à disposition selon les termes de la licence *Creative Commons Attribution - Partage dans les Mêmes Conditions 4.0 International (CC BY-SA 4.0)*.\
+      Vous êtes libre de copier, partager, distribuer et adapter ce traité sous réserve de créditer expressément les auteurs d'origine et de diffuser vos modifications sous une licence identique.\
       \
       *Conception didactique et scientifique :* Silvère-Martin Michiellot & Antigravity.\
       *Illustrations vectorielles :* Antigravity Visual Engine (norme SVG Byrne-Culinaire).\
-      *Typographie et composition :* Moteur Typst 0.15.1.\
-      *Dépôt officiel du code source et des figures :* Dépôt GitHub public.
+      *Gravures patrimoniales & photographies scientifiques :* Wikimedia Commons (Domaine Public & Creative Commons).\
+      *Composition typographique :* Typst v0.15.1, polices Liberation Serif & Sans.\
+      *Dépôt de code et figures sources :* Dépôt GitHub public sous licence CC BY-SA 4.0.
     ]
   ]
 ]
@@ -243,25 +284,25 @@
 #pagebreak()
 
 // ==========================================
-// 3. CITATION INAUGURALE
+// 3. CITATION INAUGURALE & DÉDICACE
 // ==========================================
 #align(center)[
   #v(4.0cm)
   #block(
-    fill: rgb("#f8fafc"),
+    fill: rgb("#fffbeb"),
     inset: 24pt,
     radius: 8pt,
-    stroke: 1pt + rgb("#e2e8f0"),
+    stroke: 1pt + rgb("#fde68a"),
     width: 85%
   )[
-    #text(size: 11pt, style: "italic", fill: rgb("#334155"))[
+    #text(size: 11pt, style: "italic", fill: rgb("#451a03"))[
       « La cuisine est le plus ancien des arts ; car Adam naquit à jeun, et le nouveau-né, à peine venu au monde, pousse des cris que le sein de sa nourrice peut seul apaiser. C'est de tous les arts celui qui nous rend les services les plus continus et les plus nécessaires à la vie. »
     ]
     #v(8pt)
-    #align(right)[#text(size: 9.5pt, weight: "bold", fill: c-blue)[— Jean Anthelme Brillat-Savarin, *Physiologie du goût* (1825)]]
+    #align(right)[#text(size: 9.5pt, weight: "bold", fill: c-terracotta)[— Jean Anthelme Brillat-Savarin, *Physiologie du goût* (1825)]]
   ]
   #v(2.5cm)
-  #text(size: 10.5pt, style: "italic", fill: rgb("#475569"))[
+  #text(size: 10.5pt, style: "italic", fill: rgb("#78716c"))[
     À toutes celles et ceux qui désirent s'affranchir de la tyrannie des recettes aveugles,\
     et retrouver la liberté souveraine de comprendre ce qu'ils font.
   ]
@@ -270,7 +311,7 @@
 #pagebreak()
 
 // ==========================================
-// 4. SOMMAIRE DÉTAILLÉ
+// 4. SOMMAIRE RAISONNÉ
 // ==========================================
 #outline(
   title: [Sommaire Général et Table Raisonnée],
@@ -533,8 +574,8 @@ de géants sur lesquelles nous sommes juchés :
 <tableau-bipolaire-méthodologique-ce-quil-faut-faire-ce-quil-faut-éviter>
 #figure(
   align(center)[#table(
-  stroke: 0.5pt + rgb("#cbd5e1"),
-  fill: (x, y) => if y == 0 { rgb("#f1f5f9") } else if calc.odd(y) { rgb("#f8fafc") } else { none },
+  stroke: 0.5pt + rgb("#e7e5e4"),
+  fill: (x, y) => if y == 0 { rgb("#fef3c7") } else if calc.odd(y) { rgb("#fffbeb") } else { none },
   inset: 7pt,
 
     columns: (33.33%, 33.33%, 33.33%),
@@ -600,16 +641,39 @@ la géométrie d'une pièce de viande s'écarte de la programmation de la
 machine, le cuisinier se retrouve désemparé.
 
 Or, la gastronomie de recherche --- d'Auguste Escoffier à Ferran Adrià,
-en passant par Nicholas Kurti et Hervé This --- démontre exactement
-l'inverse : #strong[la compréhension aiguë des états de la matière rend
-l'appareillage superflu]. Avec cinq outils élémentaires, bien choisis et
-indestructibles, et l'usage conscient de nos cinq sens biologiques, il
-est possible d'exécuter l'intégralité des transformations fondamentales
-de la cuisine universelle.
+en passant par Nicholas Kurti et #link(<glossaire-this>)[Hervé This] ---
+démontre exactement l'inverse : #strong[la compréhension aiguë des états
+de la matière rend l'appareillage superflu]. Avec cinq outils
+élémentaires, bien choisis et indestructibles, et l'usage conscient de
+nos cinq sens biologiques, il est possible d'exécuter l'intégralité des
+transformations fondamentales de la cuisine universelle.
 
 #figure(image("figures/livre_1/fig_01_arsenal_minimal.svg", alt: "L’Arsenal Minimal : Les 5 Organes Fondamentaux"),
   caption: [
     L'Arsenal Minimal : Les 5 Organes Fondamentaux
+  ]
+)
+
+#anecdote_historique[
+ \#\#\#\# 🏛️ L'Anecdote
+Historique : La Révolution des Outils de Bartolomeo Scappi (1570) En
+1570, Bartolomeo Scappi, cuisinier privé des papes Pie IV et Pie V au
+Vatican, publie son chef-d'œuvre #emph[Opera dell'arte del cucinare].
+Pour la première fois dans l'histoire de l'humanité, un traité culinaire
+n'est pas seulement une liste d'ingrédients princiers, mais un
+inventaire raisonné d'ingénierie mécanique. Scappi fait graver sur
+cuivre des dizaines de planches montrant des couteaux forgés à dos
+lourd, des roulettes à découper la pâte fraîche, des tamis de crin et
+des bassines en cuivre étamé. Cinq siècles plus tard, la forme de ces
+instruments fondamentaux n'a pas pris une ride : la biomécanique de la
+main humaine et la physique des fluides imposent toujours les mêmes
+contours d'efficacité optimale. 
+]
+
+#figure(image("figures/patrimoine/scappi_cuisine_renaissance.jpg", alt: "Instruments et ustensiles de découpe de pâte selon Bartolomeo Scappi (Opera, 1570)"),
+  caption: [
+    Instruments et ustensiles de découpe de pâte selon Bartolomeo Scappi
+    (Opera, 1570)
   ]
 )
 
@@ -630,8 +694,9 @@ syn-propanethial-S-oxyde, gaz lacrymogène volatil qui agresse les yeux.
 cisaillement pur, sans écraser les vacuoles : les composés aromatiques
 restent emprisonnés dans la cellule, l'oignon ne pleure pas et conserve
 son croquant. - #strong[Minimalisme du geste :] Un seul bon couteau de
-chef bien affûté sur pierre accomplit le travail de dix gadgets
-(hachoirs, mandolines en plastique, ciseaux à herbes, découpe-légumes).
+chef bien affûté sur pierre à aiguiser accomplit le travail de dix
+gadgets (hachoirs, mandolines en plastique, ciseaux à herbes,
+découpe-légumes).
 
 === B. La Poêle Lourde en Fonte Brute ou Inox Multi-plis (28 cm)
 <b.-la-poêle-lourde-en-fonte-brute-ou-inox-multi-plis-28-cm>
@@ -642,7 +707,8 @@ chef bien affûté sur pierre accomplit le travail de dix gadgets
   faible s'effondre immédiatement en dessous de
   $100^compose upright(C)$. L'eau superficielle de la viande ne peut
   plus s'évaporer instantanément \; elle bouillonne dans son jus,
-  ramollit la chair et interdit la réaction de Maillard.
+  ramollit la chair et interdit la
+  #link(<sec-maillard>)[réaction de Maillard].
 - Une poêle en fonte épaisse de 3 à 4 kg agit comme un
   #strong[accumulateur thermique massif] : son énergie cinétique
   accumulée absorbe le choc thermique sans faiblir, maintenant la
@@ -650,13 +716,43 @@ chef bien affûté sur pierre accomplit le travail de dix gadgets
   le film aqueux et déclenchant la caramélisation sèche des acides
   aminés.
 
+#truc_de_chef[
+ \#\#\#\# 💡 L'Astuce Invisible :
+Le Test de la Goutte d'Eau (L'Effet Leidenfrost) Comment savoir si votre
+poêle en inox ou en acier est à la température idéale pour saisir sans
+attacher, sans le moindre thermomètre laser ? Versez quelques gouttes
+d'eau froide dans la poêle chaude : 1. #emph[Si l'eau grésille et
+s'évapore instantanément :] la poêle est trop tiède
+($< 150^compose upright(C)$). Vos aliments vont coller au métal par
+ponts d'adhésion protéiques. 2. #emph[Si les gouttes se rassemblent en
+une bille parfaite qui flotte et glisse sans bruit à toute vitesse comme
+un palet d'aéroglisseur :] #strong[la température magique est atteinte
+($approx 190^compose upright(C)$)] ! C'est
+l'#link(<glossaire-leidenfrost>)[effet Leidenfrost] : une fine couche de
+vapeur isolante s'interpose entre le métal et le liquide. Vous pouvez
+essuyer la goutte, ajouter votre matière grasse et déposer votre aliment
+: il glissera librement sans jamais accrocher. 
+]
+
+#point_attention[
+ \#\#\#\# ⚠️ Point d'Attention :
+Le Piège des Revêtements Antiadhésifs Ébréchés Dès qu'une poêle
+antiadhésive présente une rayure ou commence à cloquer, jetez-la ou
+remplacez-la immédiatement. La surchauffe des polymères de PTFE au-delà
+de $260^compose upright(C)$ libère des vapeurs toxiques d'acide
+perfluorooctanoïque (PFOA/PFAS) cancérigènes et interférant avec le
+système endocrinien. Une poêle en fonte naturelle ou en acier au
+carbone, elle, se patine par polymérisation naturelle d'huile
+alimentaire (#emph[culottage]) et devient éternelle. 
+]
+
 === C. La Casserole Moyenne à Fond Sandwich (2 à 3 litres)
 <c.-la-casserole-moyenne-à-fond-sandwich-2-à-3-litres>
 Dotée d'un fond épais combinant inox et cœur en aluminium conducteur,
-elle répartit le flux de conduction sans créer de « points chauds » où
-les sucres et les protéines viendraient brûler par pyrolyse localisée.
-Elle régit tous les transferts par convection liquide : blanchiment,
-pochage, sauces montées et réductions.
+elle répartit le flux de #link(<sec-conduction>)[conduction] sans créer
+de « points chauds » où les sucres et les protéines viendraient brûler
+par pyrolyse localisée. Elle régit tous les transferts par convection
+liquide : blanchiment, pochage, sauces montées et réductions.
 
 === D. Le Cul-de-Poule en Inox et le Fouet Manuel Ballon
 <d.-le-cul-de-poule-en-inox-et-le-fouet-manuel-ballon>
@@ -664,7 +760,7 @@ La géométrie demi-sphérique continue du cul-de-poule élimine les angles
 morts où stagnent les dépôts. Associé au fouet manuel à fils multiples,
 il constitue une machine à émulsionner et à foisonner sans égale. Le
 battement manuel permet de moduler la vitesse en temps réel selon la
-viscosité du mélange, offrant un ressenti kinesthésique impossible à
+viscosité du mélange, offrant un ressenti tactile impossible à
 reproduire avec un robot électrique.
 
 === E. La Planche en Bois Massif de Bout (ou Bois Franc)
@@ -673,8 +769,8 @@ Contrairement au préjugé hygiéniste qui a favorisé les planches en
 plastique rayées --- véritables nids à microplastiques et à biofilms
 bactériens ---, le bois massif (chêne, hêtre, érable) possède des
 propriétés antibactériennes naturelles par action capillaire de
-dessiccation et présence de polyphénols taniques. Il amortit l'impact du
-fil d'acier sans désaffûter la lame.
+dessiccation et présence de polyphénols tanniques. Il amortit l'impact
+du fil d'acier sans désaffûter la lame.
 
 #divider()
 
@@ -695,50 +791,54 @@ maîtrisaient les transitions de phase par l'étalonnage de leurs sens :
 + #strong[L'Œil (Transition de phase et turbidité) :]
   - L'opacification d'un blanc d'œuf (passage du translucide au blanc
     laiteux) indique la dénaturation de l'ovotransferrine à
-    $62^compose upright(C)$.
+    $62^compose upright(C)$ (voir
+    #link(<chapitre-oeuf-repos>)[L'Œuf au Repos]).
   - Le miroitement ou « nappe » d'une sauce indique le point
     d'agrégation micellaire ($82 upright("–") 84^compose upright(C)$).
   - Le virage ambré doré signale les composés d'Amadori et de Heyns de
     la réaction de Maillard ($140 upright("–") 165^compose upright(C)$).
 + #strong[Le Toucher (Élasticité mécanique de rebond) :]
   - La résistance d'une pièce de viande sous la pulpe du doigt traduit
-    l'état de contraction des myofibrilles d'actomyosine.
-  - Mou et sans ressort : myosine intacte ($< 48^compose upright(C)$,
-    bleu).
-  - Souple avec reprise élastique : myosine dénaturée mais actine
-    intacte ($54 upright("–") 58^compose upright(C)$, saignant/à point).
-  - Rigide et ligneux : actine rétractée, jus expulsés
-    ($> 68^compose upright(C)$, trop cuit).
+    l'état de contraction des myofibrilles d'actomyosine (voir
+    #link(<sec-proteines-chair>)[L'Alchimie des Protéines]).
+  - #emph[Mou et sans ressort :] myosine intacte
+    ($< 48^compose upright(C)$, bleu).
+  - #emph[Souple avec reprise élastique immédiate :] myosine dénaturée
+    mais actine intacte ($54 upright("–") 58^compose upright(C)$,
+    saignant / à point).
+  - #emph[Rigide, ligneux et dur :] actine rétractée, jus expulsés
+    ($> 68^compose upright(C)$, semelle desséchée).
 
 #divider()
 
-== 4. FICHE RÉFLEXE : LES 5 CONTRÔLES SANS MACHINE
-<fiche-réflexe-les-5-contrôles-sans-machine>
+== 4. TABLEAU BIPOLAIRE DE L'ARSENAL : CE QU'IL FAUT FAIRE / CE QU'IL FAUT ÉVITER
+<tableau-bipolaire-de-larsenal-ce-quil-faut-faire-ce-quil-faut-éviter>
 #figure(
   align(center)[#table(
-  stroke: 0.5pt + rgb("#cbd5e1"),
-  fill: (x, y) => if y == 0 { rgb("#f1f5f9") } else if calc.odd(y) { rgb("#f8fafc") } else { none },
+  stroke: 0.5pt + rgb("#e7e5e4"),
+  fill: (x, y) => if y == 0 { rgb("#fef3c7") } else if calc.odd(y) { rgb("#fffbeb") } else { none },
   inset: 7pt,
 
     columns: (33.33%, 33.33%, 33.33%),
     align: (left,left,left,),
-    table.header([Signal Sensoriel], [Phénomène
-      Physico-Chimique], [Interprétation Pratique],),
+    table.header([Outil], [✓ Le Geste Vertueux], [✗ Le Contre-Modèle à
+      Bannir],),
     table.hline(),
-    [#strong[Son de friture aigu]], [Évaporation instantanée de l'eau
-    résiduelle], [Chaleur optimale pour réaction de Maillard],
-    [#strong[Son étouffé / liquide]], [Température tombée sous
-    $100^compose upright(C)$], [Trop de volume dans la poêle, risque de
-    bouillissage],
-    [#strong[Volutes de fumée bleue]], [Point de fumée lipidique
-    franchi], [Décomposition des triglycérides en acroléine toxique :
-    baisser le feu],
-    [#strong[Résistance élastique ferme]], [Coagulation de l'actine
-    musculaire], [Température à cœur $> 60^compose upright(C)$, retirer
-    du feu immédiatement],
-    [#strong[Nappe sur la cuillère]], [Formation d'un réseau protéique
-    stable], [Température de $82 upright("–") 84^compose upright(C)$
-    atteinte (crème anglaise liée)],
+    [#strong[Couteau]], [Aiguiser régulièrement sur pierre à eau grain
+    1000/3000 \; ranger sur barre aimantée ou dans un fourreau
+    sec.], [Jeter la lame en vrac dans un tiroir avec d'autres métaux \;
+    passer le couteau au lave-vaisselle (l'eau bouillante et les
+    détergents alcalins détruisent le fil).],
+    [#strong[Poêle fonte]], [Culotter avec une fine pellicule d'huile
+    polymérisée à chaud \; laver à l'eau chaude et essuyer immédiatement
+    sur le feu résiduel.], [Laisser tremper dans l'évier toute la nuit
+    (oxydation rouille immédiate) ou récurer au liquide vaisselle
+    agressif décapant la patine protectrice.],
+    [#strong[Planche à découper]], [Huiler le bois une fois par mois à
+    l'huile minérale ou de lin \; brosser au gros sel et au demi-citron
+    après chaque découpe.], [Utiliser du plastique blanc profondément
+    tailladé qui retient les micro-organismes dans les crevasses et
+    libère des microplastiques à chaque coup de lame.],
   )]
   , kind: table
   )
@@ -766,33 +866,31 @@ et l'intérieur de l'aliment via trois mécanismes physiques distincts.
   ]
 )
 
-=== A. La Conduction Solide : La Loi de Fourier
-<a.-la-conduction-solide-la-loi-de-fourier>
-La conduction s'opère par transmission directe de l'agitation thermique
-d'un atome à son voisin, sans déplacement de matière.
-$ arrow(q) = - k nabla T $ Où $q$ est la densité de flux thermique, $k$
-la conductivité thermique du matériau ($upright(W\/\(m dot.op K\))$) et
-$nabla T$ le gradient de température. - #strong[La conductivité des
-ustensiles :] - Cuivre pur : $390 thin upright(W\/\(m dot.op K\))$
-(réactivité quasi instantanée). - Aluminium :
-$220 thin upright(W\/\(m dot.op K\))$ (excellent conducteur mais faible
-inertie). - Fonte brute : $50 thin upright(W\/\(m dot.op K\))$
-(conduction modérée, mais très haute capacité thermique volumique). -
-Inox austénitique : $15 thin upright(W\/\(m dot.op K\))$ (mauvais
-conducteur seul, d'où la nécessité absolue des fonds multi-plis
-intégrant une âme d'aluminium ou de cuivre). - #strong[La diffusivité
-thermique $alpha$ des aliments :] La chair animale et les végétaux ont
-une conductivité minuscule
+[] <sec-conduction> \#\#\# A. La Conduction Solide : La
+Loi de Fourier La conduction s'opère par transmission directe de
+l'agitation thermique d'un atome à son voisin, sans déplacement de
+matière. $ arrow(q) = - k nabla T $ Où $q$ est la densité de flux
+thermique, $k$ la conductivité thermique du matériau
+($upright(W\/\(m dot.op K\))$) et $nabla T$ le gradient de température.
+\- #strong[La conductivité des ustensiles :] - Cuivre pur :
+$390 thin upright(W\/\(m dot.op K\))$ (réactivité quasi instantanée). -
+Aluminium : $220 thin upright(W\/\(m dot.op K\))$ (excellent conducteur
+mais faible inertie). - Fonte brute :
+$50 thin upright(W\/\(m dot.op K\))$ (conduction modérée, mais très
+haute capacité thermique volumique). - Inox austénitique :
+$15 thin upright(W\/\(m dot.op K\))$ (mauvais conducteur seul, d'où la
+nécessité absolue des fonds sandwich multi-plis). - #strong[La
+diffusivité thermique $alpha$ des aliments :] La chair animale et les
+végétaux ont une conductivité minuscule
 ($k approx 0\,5 thin upright(W\/\(m dot.op K\))$), proche de celle de
 l'eau immobile. La chaleur met un temps proportionnel au #strong[carré
 de l'épaisseur] pour atteindre le centre : $ t prop x^2 / alpha $
 Doubler l'épaisseur d'une pièce de viande ne double pas son temps de
 cuisson : cela le #strong[quadruple].
 
-=== B. La Convection Fluide : La Loi de Refroidissement / Réchauffement de Newton
-<b.-la-convection-fluide-la-loi-de-refroidissement-réchauffement-de-newton>
-La convection implique le mouvement d'un fluide caloporteur (eau, huile
-fondue, air pulsé).
+[] <sec-convection> \#\#\# B. La Convection Fluide : La
+Loi de Refroidissement de Newton La convection implique le mouvement
+d'un fluide caloporteur (eau, huile fondue, air pulsé).
 $ q = h\(T_(upright("fluide")) - T_(upright("surface"))\) $ -
 #strong[Eau liquide vs Air :] L'eau possède une capacité thermique
 volumique plus de $3000$ fois supérieure à celle de l'air. À
@@ -805,113 +903,151 @@ fine pellicule d'eau refroidie s'isole autour de l'aliment (couche
 limite laminaire). Remuer l'eau ou fouetter une sauce brise cette couche
 et multiplie par dix le coefficient de transfert thermique $h$.
 
-=== C. Le Rayonnement Électromagnétique : La Loi de Stefan-Boltzmann
-<c.-le-rayonnement-électromagnétique-la-loi-de-stefan-boltzmann>
-Le rayonnement thermique ne nécessite aucun intermédiaire matériel : il
-se propage dans le vide sous forme d'ondes infrarouges émises par les
-corps incandescents (braises de charbon de bois, résistances de
-salamandre ou grill, flamme nue). $ P = epsilon sigma S T^4 $ - La
+[] <sec-rayonnement> \#\#\# C. Le Rayonnement
+Électromagnétique : La Loi de Stefan-Boltzmann Le rayonnement thermique
+ne nécessite aucun intermédiaire matériel : il se propage sous forme
+d'ondes infrarouges émises par les corps incandescents (braises,
+résistances de grill, flamme nue). $ P = epsilon sigma S T^4 $ - La
 puissance émise croît avec la #strong[puissance quatrième de la
 température absolue ($T^4$)] ! Une braise rouge à
 $800^compose upright(C)$ ($1073 thin upright(K)$) rayonne une énergie
-colossale qui frappe la surface de l'aliment sans chauffer l'air
-intermédiaire. - Ce rayonnement est absorbé quasi instantanément sur les
-premiers micromètres de l'aliment : c'est l'outil par excellence pour
-déshydrater la croûte et provoquer la réaction de Maillard sans surcuire
-le cœur.
+colossale qui frappe la surface sans chauffer l'air intermédiaire. - Ce
+rayonnement est absorbé quasi instantanément sur les premiers
+micromètres de l'aliment : c'est l'outil par excellence pour déshydrater
+la croûte et provoquer la #link(<sec-maillard>)[réaction de Maillard]
+sans surcuire le cœur.
+
+#anecdote_historique[
+ \#\#\#\# 🏛️ L'Anecdote
+Historique : Brillat-Savarin et la Cuirasse de Friture Dans sa
+#emph[Physiologie du goût] (1825), Jean Anthelme Brillat-Savarin
+consacre une méditation entière à la friture, qu'il décrit comme un «
+baptême de feu liquide ». Il théorise que l'huile bouillante agit comme
+une cuirasse instantanée : en carbonisant l'eau de surface en un
+millième de seconde, elle scelle l'aliment dans une enveloppe
+croustillante imperméable. L'eau contenue à l'intérieur de l'aliment se
+vaporise alors sous pression, cuisant le cœur à la vapeur tout en
+empêchant le gras de pénétrer. Deux siècles plus tard, la
+thermodynamique moderne a confirmé point par point son intuition : une
+friture réussie ($180^compose upright(C)$) ne graisse pas l'aliment,
+elle le cuit à la vapeur interne ! 
+]
 
 #divider()
 
-== 2. LES MODES DE CHAUFFE COMPARÉS : GAZ, INDUCTION ET FONTE ÉLECTRIQUE
-<les-modes-de-chauffe-comparés-gaz-induction-et-fonte-électrique>
-#figure(
-  align(center)[#table(
-  stroke: 0.5pt + rgb("#cbd5e1"),
-  fill: (x, y) => if y == 0 { rgb("#f1f5f9") } else if calc.odd(y) { rgb("#f8fafc") } else { none },
-  inset: 7pt,
+[] <sec-maillard> \#\# 2. LA RÉACTION DE MAILLARD ET LE
+SECRET DES CHAIRS DORÉES
 
-    columns: (20%, 20%, 20%, 20%, 20%),
-    align: (left,left,left,left,left,),
-    table.header([Mode de Chauffe], [Vecteur Principal], [Inertie de
-      Source], [Réactivité], [Comportement Physique en Pratique],),
-    table.hline(),
-    [#strong[Gaz vif]], [Convection d'air brûlant +
-    Conduction], [Nulle], [Immédiate], [La flamme épouse les parois
-    latérales de la poêle (chauffe 3D enveloppante). Idéal pour le sauté
-    au wok et le flambage.],
-    [#strong[Induction]], [Conduction par courants de Foucault dans le
-    fond], [Nulle], [Millimétrique], [Chauffage direct du métal sans
-    déperdition. Rendement énergétique $> 85 thin %$. Attention : ne
-    chauffe que le fond plat, pas les parois.],
-    [#strong[Plaque Fonte / Radiant]], [Conduction de contact +
-    Rayonnement], [Très forte], [Lente], [Met 5 minutes à monter et 15
-    minutes à descendre. Doit être anticipée en coupant le feu par
-    anticipation pour utiliser l'énergie résiduelle.],
-    [#strong[Four à Convection naturelle]], [Rayonnement des parois +
-    Air chaud lent], [Forte], [Lente], [Cuisson douce et dessèchement
-    mesuré.],
-    [#strong[Four Chaleur Tournante]], [Convection forcée d'air
-    turbulent], [Moyenne], [Rapide], [Évacue la vapeur d'eau protectrice
-    de surface : accélère le croustillant mais peut dessécher
-    prématurément.],
-  )]
-  , kind: table
-  )
+Découverte en 1912 par le chimiste lorrain Louis-Camille Maillard, cette
+réaction n'est pas une simple caramélisation : c'est la condensation
+entre un #strong[acide aminé] (issu des protéines) et un #strong[sucre
+réducteur] (glucose, fructose, ribose naturel de la chair) sous l'effet
+d'une chaleur sèche supérieure à #strong[$140^compose upright(C)$].
+
+Elle génère des centaines de nouvelles molécules aromatiques volatiles
+(pyrazines aux notes de noisette grillée, furanones au goût de caramel
+brun, pyrroles aux accents de pain chaud).
+
+#truc_de_chef[
+ \#\#\#\# 💡 L'Astuce Invisible :
+Pourquoi Saler 45 Minutes Avant (ou au Dernier Moment), mais Jamais 10
+Minutes Avant ! C'est la règle d'or des grands rôtisseurs expliquée par
+l'osmose : 1. #emph[Si vous salez 10 minutes avant de poêler :] le sel
+attire l'eau cellulaire à la surface par pression osmotique. La viande
+se couvre d'un film d'eau liquide. Lorsque vous la posez dans la poêle,
+cette eau s'évapore en absorbant toute la chaleur
+($2257 upright(" kJ/kg")$) : la température chute sous
+$100^compose upright(C)$, la viande bout dans son jus grisâtre et ne
+dore pas. 2. #emph[Si vous salez 45 minutes avant :] le sel dissous dans
+le premier jus forme une saumure hypertonique qui est réabsorbée par les
+fibres musculaires. Les protéines se détendent et emprisonnent le jus.
+La surface redevient parfaitement sèche : la croûte de Maillard se forme
+instantanément. 3. #emph[À défaut de temps :] salez à la dernière
+seconde, juste au moment de poser la pièce sur le feu. 
+]
 
 #divider()
 
-== 3. LABORATOIRE DES CAS LIMITES : LA VIANDE QUI BOUT DANS SA POÊLE
-<laboratoire-des-cas-limites-la-viande-qui-bout-dans-sa-poêle>
-=== Le Problème
-<le-problème>
-Vous déposez deux gros steaks froids sortis du réfrigérateur dans une
-poêle moyenne. Au lieu d'entendre un crépitement sec et d'obtenir une
-croûte brune parfumée, la surface devient grisâtre et une mare de
-liquide trouble envahit la poêle : la viande est en train de « bouillir
-dans son jus ».
+== 3. RECETTE FONDATRICE PAS À PAS : LE PAVÉ DE BŒUF EN POÊLE FONTE & ARROSAGE AU BEURRE MOUSSEUX
+<recette-fondatrice-pas-à-pas-le-pavé-de-bœuf-en-poêle-fonte-arrosage-au-beurre-mousseux>
+#emph[L'archétype absolu de la saisie par conduction, de la réaction de
+Maillard et de la redistribution des sucs.]
 
-=== L'Explication Thermodynamique
-<lexplication-thermodynamique>
-+ #strong[L'effondrement de la capacité thermique :] La quantité de
-  chaleur $Q = m c Delta T$ stockée dans la poêle était insuffisante
-  pour compenser la masse d'eau froide apportée d'un coup.
-+ #strong[Le verrouillage de la chaleur latente de vaporisation :] Pour
-  transformer $1 thin upright(g)$ d'eau liquide à
-  $100^compose upright(C)$ en vapeur, il faut fournir
-  $2257 thin upright(j o u l e s)$ (alors qu'il ne faut que
-  $4\,18 thin upright(j o u l e s)$ pour élever $1 thin upright(g)$
-  d'eau de $1^compose upright(C)$).
-+ Dès que l'eau cellulaire commence à exsuder, toute l'énergie du feu
-  est engloutie par l'évaporation : la température de la poêle reste
-  bloquée à $100^compose upright(C)$. Or, la réaction de Maillard exige
-  au minimum $140^compose upright(C)$. Tant qu'il y a de l'eau liquide
-  libre, le brunissement est physiquement impossible.
+- #strong[Temps de préparation :] 5 minutes (dont 45 min de salage à
+  température ambiante)
+- #strong[Temps de cuisson :] 5 à 6 minutes
+- #strong[Temps de repos obligatoire :] 5 minutes
+- #strong[Minimalisme Instrumental :] 1 poêle lourde en fonte (26 ou 28
+  cm), 1 pince de cuisine, 1 cuillère à soupe en métal.
+- #strong[Ingrédients pour 1 personne :]
+  - 1 pavé de bœuf épais (faux-filet, rumsteak ou entrecôte de
+    $3 upright(" cm")$ d'épaisseur, environ $220 upright(" g")$)
+  - Gros sel marin de Guérande ou fleur de sel : $3 upright(" g")$
+  - Poivre noir en grains fraîchement concassé au pilon
+  - Huile neutre de cuisson haute température (pépins de raisin ou
+    arachide) : $1 upright(" c. à soupe")$
+  - Beurre doux de qualité ($82 %$ de matière grasse) :
+    $25 upright(" g")$
+  - Gousses d'ail en chemise écrasées d'un coup de plat de couteau : $2$
+  - Brin de thym frais ou de romarin : $1$
 
-=== L'Algorithme de Sauvetage et de Prévention
-<lalgorithme-de-sauvetage-et-de-prévention>
-```
-              [ DÉSIR DE SAISIR UNE PIÈCE DE VIANDE ]
-                                  │
-                                  ▼
-               [ Tamponner la surface au papier absorbant ]
-                    (Élimination du film aqueux libre)
-                                  │
-                                  ▼
-               [ Sortir la pièce 30 min avant à l'avance ]
-                     (Réduire le delta T initial)
-                                  │
-                                  ▼
-         [ Préchauffer une poêle LOURDE à feu vif jusqu'au frémissement ]
-                                  │
-                                  ▼
-               [ Ne jamais surcharger la surface : max 50% ]
-                ┌─────────────────┴─────────────────┐
-                ▼                                   ▼
-       [ Crépitement aigu vif ]             [ Présence d'eau liquide ]
-         -> Réaction de Maillard             -> Sortir la viande d'urgence,
-            croûte immédiate                    jeter le jus, essuyer la poêle,
-                                                réchauffer à blanc et réintroduire !
-```
+===== Protocole Étape par Étape :
+<protocole-étape-par-étape>
++ #strong[Le Chambrage et le Salage Précoce :] Sortir la viande du
+  réfrigérateur au moins 45 minutes avant la cuisson. #strong[Une viande
+  glacée plonge la poêle sous le point de Maillard]. Saler généreusement
+  toutes les faces avec la fleur de sel.
++ #strong[La Montée en Température de la Fonte :] Faire chauffer la
+  poêle en fonte à sec sur feu vif pendant 4 minutes. Vérifier la
+  température par le test de Leidenfrost (voir
+  #link(<sec-leidenfrost>)[Chapitre 01]). Verser la cuillère d'huile
+  neutre et l'étaler d'un mouvement de poignet.
++ #strong[Le Choc de Saisie (La Réaction de Maillard) :] Déposer
+  délicatement la viande. Un crépitement vif et continu doit retentir
+  immédiatement. Laisser dorer sans la déplacer pendant 90 secondes.
+  Retourner la viande à la pince : la première face doit arborer une
+  croûte acajou sombre, uniforme et croustillante. Dorer la seconde face
+  pendant 90 secondes.
++ #strong[L'Arrosage au Beurre Mousseux (#emph[Basting]) :] Baisser le
+  feu à moyen. Jeter le beurre, les gousses d'ail écrasées et le thym
+  dans la poêle. Le beurre fond, mousse abondamment et commence à
+  chanter (les protéines du lactosérum brunissent en arômes de noisette
+  à $130^compose upright(C)$). Incliner légèrement la poêle vers vous
+  et, à l'aide de la cuillère à soupe, puiser ce beurre bouillonnant et
+  parfumé pour en napper continuellement le dessus de la viande pendant
+  2 minutes. La chaleur se transmet par convection lipidique
+  enveloppante 3D sans brûler la chair.
++ #strong[Le Repos Thermodynamique Inviolable :] Retirer la viande de la
+  poêle et la déposer sur une grille tiède ou une assiette chaude
+  retournée. Couvrir d'un papier d'aluminium lâche sans serrer.
+  #strong[Laisser reposer pendant 5 minutes entières].
+
+#oeil_molecule[
+ \#\#\#\# 🔬 L'Œil de la Molécule
+: Pourquoi le Repos Après Cuisson est Obligatoire ? Sous l'effet brutal
+de la chaleur ($160^compose upright(C)$ en surface), les fibres
+musculaires périphériques se contractent violemment comme un ressort
+tendu, chassant toute l'eau cellulaire liquide vers le centre plus froid
+du morceau où la pression hydrostatique augmente considérablement. Si
+vous coupez le steak dès la sortie de la poêle, ce jus sous pression
+jaillit sur votre planche : la viande se vide de son eau et devient
+sèche en bouche. Pendant les 5 minutes de repos hors du feu, la
+température s'égalise par conduction lente ($55^compose upright(C)$ à
+cœur), les protéines se détendent et le jus visqueux se redistribue de
+manière homogène dans toute l'épaisseur de la pièce. À la découpe, pas
+une goutte ne s'échappe : la viande est gorgée de son propre suc.
+
+]
+
+#point_attention[
+ \#\#\#\# ⚠️ Point d'Attention :
+Ne Jamais Piquer la Viande avec une Fourchette ! Bannissez à jamais la
+fourchette pour retourner une viande sur le feu ! Chaque coup de dent
+perce l'enveloppe étanche formée par la croûte de Maillard et crée une
+brèche par laquelle s'échappent des millilitres précieux de jus
+cellulaire. Utilisez exclusivement une pince de cuisine ou deux
+cuillères de bois. 
+]
 
 #divider()
 
@@ -951,71 +1087,130 @@ les pâtes baignent dans une eau tiède, la surface se délite et l'amidon
 forme une colle pâteuse. Avec un litre d'eau bouillante, la chute
 thermique est négligeable et l'ébullition reprend en quelques secondes.
 \2. #emph[L'Espace physique et la dilution :] L'amidon de surface doit
-se gélatiniser sans saturer le milieu environnant, sous peine de voir
-les pâtes coller en un bloc compact. - Pourquoi saler l'eau dès le
-départ ? Le sel n'est pas là pour faire bouillir l'eau plus vite
-(l'élévation ébullioscopique de $10 thin upright(g)$ de sel par litre
-n'augmente le point d'ébullition que de $0\,17^compose upright(C)$, ce
-qui est négligeable). Le sel est là pour #strong[pénétrer la structure
-protéique de gluten et assaisonner la pâte à cœur] pendant son
-hydratation. Une pâte cuite dans une eau non salée reste fade à jamais,
-même noyée de sel en surface après coup.
+se #link(<glossaire-gelatinisation>)[gélatiniser] sans saturer le milieu
+environnant, sous peine de voir les pâtes coller en un bloc compact. -
+Pourquoi saler l'eau dès le départ ? Le sel n'est pas là pour faire
+bouillir l'eau plus vite (l'élévation ébullioscopique de
+$10 thin upright(g)$ de sel par litre n'augmente le point d'ébullition
+que de $0\,17^compose upright(C)$, ce qui est négligeable). Le sel est
+là pour #strong[pénétrer la structure protéique de gluten et assaisonner
+la pâte à cœur] pendant son hydratation. Une pâte cuite dans une eau non
+salée reste fade à jamais, même noyée de sel en surface après coup.
 
-=== B. Thermodynamique de l'Énergie : Le Couvercle et le Feu
-<b.-thermodynamique-de-lénergie-le-couvercle-et-le-feu>
-- #strong[Pour amener l'eau à ébullition :] Couvrir impérativement la
-  casserole. Le couvercle piège les molécules d'eau évaporées et recycle
-  la chaleur latente de condensation ($2257 thin upright(k J\/k g)$),
-  divisant par deux le temps de chauffe et la facture énergétique.
-- #strong[Une fois les pâtes jetées :] Couvrir 20 secondes pour relancer
-  l'ébullition vive, #strong[puis retirer le couvercle]. Pourquoi ?
-  L'amidon moussant forme une écume de bulles d'air stabilisées par les
-  protéines solubilisées qui déborde inévitablement si la casserole
-  reste close.
-- #strong[La cuisson au torchon (ou à feu éteint) :] Une fois
-  l'ébullition relancée avec les pâtes, vous pouvez couper le gaz ou la
-  plaque, couvrir hermétiquement et poser un torchon plié sur le
-  couvercle. L'eau stockée reste au-dessus de $85^compose upright(C)$
-  pendant 10 minutes : l'amidon gélatinise parfaitement sans consommer
-  un seul watt d'énergie supplémentaire !
+#figure(image("figures/patrimoine/pompei_fresque_boulangerie.jpg", alt: "Distribution de pain et céréales dans la Rome antique (Fresque de Pompéi)"),
+  caption: [
+    Distribution de pain et céréales dans la Rome antique (Fresque de
+    Pompéi)
+  ]
+)
 
-=== C. Ce qu'il faut faire et ce qu'il faut absolument éviter
-<c.-ce-quil-faut-faire-et-ce-quil-faut-absolument-éviter>
-#figure(
-  align(center)[#table(
-  stroke: 0.5pt + rgb("#cbd5e1"),
-  fill: (x, y) => if y == 0 { rgb("#f1f5f9") } else if calc.odd(y) { rgb("#f8fafc") } else { none },
-  inset: 7pt,
-
-    columns: (33.33%, 33.33%, 33.33%),
-    align: (left,left,left,),
-    table.header([Geste], [✓ Ce qu'il faut faire (Principe
-      Vertueux)], [✗ Ce qu'il faut éviter (Désastre Culinaire)],),
-    table.hline(),
-    [#strong[L'huile dans l'eau]], [#strong[Rien d'autre que de l'eau et
-    du sel.] L'huile est inutile dans l'eau de cuisson.], [Verser un
-    filet d'huile dans la casserole : l'huile flotte en surface, ne
-    touche pas les pâtes dans l'eau, puis se dépose sur elles à
-    l'égouttage, formant un film hydrophobe qui empêchera toute sauce de
-    s'accrocher !],
-    [#strong[L'égouttage]], [Égoutter rapidement en laissant les pâtes
-    légèrement luisantes et humides.], [Rincer les pâtes sous le robinet
-    d'eau froide : cela élimine l'amidon de surface qui sert de colle
-    naturelle pour la sauce et refroidit la pâte.],
-    [#strong[Le secret de la sauce]], [#strong[Conserver toujours 1
-    louche d'eau de cuisson] trouble et riche en amylose. Verser les
-    pâtes directement dans la poêle contenant la sauce chaude, ajouter
-    l'eau de cuisson et faire sauter vivement : l'amidon dissous forme
-    une émulsion soyeuse et brillante.], [Servir des pâtes blanches nues
-    dans une assiette et poser un tas de sauce froide par-dessus : la
-    sauce glisse au fond sans jamais enrober la pâte.],
-  )]
-  , kind: table
-  )
+#anecdote_historique[
+ \#\#\#\# 🏛️ L'Anecdote
+Historique : Les Charbonniers des Apennins et la Carbonara Contrairement
+à la légende contemporaine qui y voit l'intervention de la crème fraîche
+américaine en 1944, l'archétype des pâtes #emph[alla carbonara] plonge
+ses racines dans les montagnes des Apennins italiens. Les
+#emph[carbonari] (les bûcherons fabriquant le charbon de bois en forêt)
+emportaient avec eux des vivres de survie imputrescibles : des pâtes
+sèches de blé dur, du fromage de brebis affiné très salé (#emph[Pecorino
+Romano]), du poivre noir et de la bajoue de porc séchée
+(#emph[Guanciale]). L'œuf frais d'appoint apportait la liaison veloutée
+ultime. Le poivre noir concassé jeté en abondance sur l'assiette
+évoquait les poussières de charbon qui saupoudraient les mains des
+travailleurs. 
+]
 
 #divider()
 
-== 2. CAS LIMITE CRITIQUE : L'INCENDIE D'HUILE DANS LA POÊLE
+== 2. RECETTE FONDATRICE PAS À PAS : LES VRAIES SPAGHETTI ALLA CARBONARA
+<recette-fondatrice-pas-à-pas-les-vraies-spaghetti-alla-carbonara>
+#emph[L'émulsion d'or jaune : zéro crème fraîche, zéro matière grasse
+ajoutée, pure physique de l'œuf et de l'amidon.]
+
+- #strong[Temps de préparation :] 10 minutes
+- #strong[Temps de cuisson :] 10 minutes
+- #strong[Minimalisme Instrumental :] 1 casserole haute (eau des pâtes),
+  1 poêle en inox ou acier, 1 bol, 1 fourchette ou petit fouet, 1 pince
+  à pâtes.
+- #strong[Ingrédients pour 2 personnes :]
+  - Spaghetti de blé dur tréfilés au bronze (marque de rugosité de
+    surface) : $200 upright(" g")$
+  - Guanciale (bajoue de porc affinée au poivre) ou à défaut lard paysan
+    fumé : $120 upright(" g")$
+  - Jaunes d'œufs frais : $3$ gros jaunes + $1$ œuf entier
+  - Pecorino Romano AOP râpé très finement (comme de la neige) :
+    $50 upright(" g")$ (ou moitié Pecorino / moitié Parmigiano Reggiano)
+  - Poivre noir en grains : $1 upright(" c. à café")$ entière concassée
+    grossièrement
+  - Gros sel pour l'eau : $15 upright(" g")$ (modérer car le Pecorino et
+    le Guanciale sont déjà très salés)
+
+===== Protocole Étape par Étape :
+<protocole-étape-par-étape-1>
++ #strong[La Fonte Douce du Guanciale :] Tailler le guanciale en lardons
+  réguliers de $6 upright(" mm")$ d'épaisseur. Les déposer dans la poêle
+  froide #strong[sans ajouter la moindre goutte d'huile ni de beurre].
+  Allumer à feu moyen-doux. Le gras fond lentement, libérant un liquide
+  doré translucide tout en croustillant à l'extérieur
+  ($6 upright(" à ") 8 upright(" minutes")$). Retirer les morceaux
+  croustillants et les réserver sur une assiette \; laisser le gras
+  fondu chaud dans la poêle.
++ #strong[Le Bol d'Or (Le « Pastello ») :] Dans un bol, fouetter
+  énergiquement les jaunes d'œufs avec l'œuf entier, le pecorino râpé
+  fin et les deux tiers du poivre noir concassé. Vous devez obtenir une
+  pâte épaisse, crémeuse et jaune d'or.
++ #strong[La Cuisson Vivante des Spaghetti :] Plonger les spaghetti dans
+  l'eau bouillante salée. Cuire $2 upright(" minutes de moins")$ que le
+  temps indiqué sur le paquet (les pâtes doivent être franchement
+  #emph[al dente]).
++ #strong[Le Mariage à la Poêle :] À l'aide de la pince, transférer les
+  pâtes égouttées directement dans la poêle contenant le gras de
+  guanciale chaud. Ajouter #strong[une demi-louche d'eau de cuisson
+  riche en amidon]. Faire sauter vivement sur feu moyen pendant 1 minute
+  : l'eau et le gras de porc s'émulsionnent autour de la rugosité du
+  blé.
++ #strong[L'Étape Capitale : L'Émulsion Hors du Feu !] #strong[Couper
+  complètement le feu et retirer la poêle de la plaque chaude]. Attendre
+  30 secondes que la température descende sous
+  #strong[$65^compose upright(C)$]. Verser alors le mélange œufs/fromage
+  sur les pâtes. Remuer à toute vitesse avec la pince en décrivant des
+  huit.
++ #strong[Le Miracle Sensoriel :] Sous vos yeux, la chaleur résiduelle
+  fait épaissir le jaune d'œuf sans jamais le figer en grumeaux :
+  l'amidon de l'eau et la #link(<glossaire-lecithine>)[lécithine] du
+  jaune forment une sauce brillante, soyeuse, nappante comme une crème
+  liquide veloutée. Ajouter les morceaux de guanciale croustillants et
+  le reste de poivre noir. Servir dans des assiettes chaudes
+  immédiatement.
+
+#point_attention[
+ \#\#\#\# ⚠️ Point d'Attention
+Majeur : Pourquoi la Crème Fraîche est une Hérésie Physique Ajouter de
+la crème fraîche liquide dans une carbonara est un aveu d'échec
+technique. Les cuisiniers amateurs pressés y ajoutent de la crème parce
+qu'ils ne maîtrisent pas la température de coagulation de l'œuf
+($68^compose upright(C)$) : sur un feu trop vif, les œufs cuisent en
+omelette brouillée aux pâtes. La crème sert de tampon aqueux pour
+masquer ce défaut, mais elle étouffe les arômes de noisette du guanciale
+et alourdit la digestion. La véritable liaison est une #strong[émulsion
+aqueuse d'amidon et de phospholipides d'œuf]. 
+]
+
+#cas_limite[
+ \#\#\#\# 🛠️ Le Laboratoire de
+Sauvetage : Si la Sauce Commence à Grainer Si vous avez versé les œufs
+dans une poêle trop chaude et que vous apercevez les premières parcelles
+blanches de grumeaux de protéine coagulée : #strong[n'attendez pas une
+seconde !] Jetez immédiatement #strong[deux cuillères à soupe d'eau de
+cuisson tiède ou d'eau froide] dans la poêle et fouettez violemment hors
+du feu. L'abaissement thermique immédiat sous les
+$64^compose upright(C)$ stoppe la polymérisation de l'ovotransferrine et
+ré-émulsionne la phase liquide. 
+]
+
+#divider()
+
+== 3. CAS LIMITE CRITIQUE : L'INCENDIE D'HUILE DANS LA POÊLE
 <cas-limite-critique-lincendie-dhuile-dans-la-poêle>
 Vous avez oublié une poêle d'huile sur un feu vif. La température
 franchit le point de fumée ($200 upright("–") 250^compose upright(C)$),
@@ -1046,82 +1241,14 @@ grièvement l'opérateur.
 <le-seul-protocole-vital-de-survie-en-3-gestes>
 + #strong[Couper le feu immédiatement] (éteindre le brûleur à gaz ou
   disjoncter la plaque).
-+ #strong[Priver le feu de comburant :] Prendre un couvercle métallique
-  de taille adaptée ou une plaque de cuisson métallique, et la faire
-  glisser horizontalement sur la poêle pour étouffer l'apport d'oxygène
-  ($upright(O)_2$). À défaut de couvercle rigide, utiliser un torchon
-  épais, trempé dans l'eau mais #strong[très puissamment et totalement
-  essoré] (pour qu'aucune goutte d'eau libre ne tombe dans l'huile).
-+ #strong[Ne plus toucher :] Laisser la poêle couverte en place pendant
-  au moins 15 minutes sans soulever le couvercle. Si vous retirez le
-  couvercle trop tôt alors que l'huile est encore à
-  $360^compose upright(C)$, le nouvel afflux d'air provoquera une
-  ré-inflammation spontanée instantanée.
-
-#divider()
-
-== 3. L'ORGANISATION DU FRIGO ET LA GESTION DES DATES DE CONSERVATION
-<lorganisation-du-frigo-et-la-gestion-des-dates-de-conservation>
-Le réfrigérateur n'est pas un placard froid homogène : c'est un volume
-soumis à un gradient de convection d'air lourd.
-
-```
-                   THERMOMÉTRIE DU RÉFRIGÉRATEUR RATIONNEL
- ┌─────────────────────────────────────────────────────────────────┐
- │ ZONE SUPÉRIEURE (4°C à 6°C)                                     │
- │ Aliments cuits, restes en boîtes hermétiques, soupes, laitages  │
- ├─────────────────────────────────────────────────────────────────┤
- │ ZONE CENTRALE (3°C à 4°C)                                       │
- │ Œufs (dans leur boîte), fromages affinés, sauces ouvertes       │
- ├─────────────────────────────────────────────────────────────────┤
- │ ZONE LA PLUS FROIDE (0°C à 2°C) - Juste au-dessus du bac        │
- │ Viandes crues, volailles, poissons crus, charcuteries fraîches  │
- ├─────────────────────────────────────────────────────────────────┤
- │ BAC À LÉGUMES (6°C à 10°C)                                      │
- │ Légumes frais, herbes dans un linge humide, fruits fragiles     │
- ├─────────────────────────────────────────────────────────────────┤
- │ PORTE (6°C à 8°C - Zone des ouvertures thermiques)              │
- │ Boissons, eau, condiments stables, beurre fermé, moutardes      │
- └─────────────────────────────────────────────────────────────────┘
-```
-
-=== Dates Réelles vs Dates Notées : DLC contre DDM
-<dates-réelles-vs-dates-notées-dlc-contre-ddm>
-Il est capital de distinguer scientifiquement les deux mentions légales
-: - #strong[DLC (Date Limite de Consommation --- « À consommer jusqu'au…
-») :] Concerne les denrées microbiologiquement très périssables (viande
-hachée crue, poisson frais, charcuterie fraîche, produits de traiteur).
-\- #emph[Règle :] Ne pas consommer au-delà. Risque d'intoxication sévère
-par #emph[Listeria monocytogenes], #emph[Salmonella] ou
-#emph[Escherichia coli]. Une viande hachée périmée ne se « rattrape »
-pas par la cuisson, car certaines toxines bactériennes résistent à la
-chaleur. - #strong[DDM (Date de Durabilité Minimale --- « À consommer de
-préférence avant le… ») :] Anciennement DLUO. Concerne les conserves,
-produits secs (pâtes, riz, lentilles, farine), le chocolat, le café, le
-miel, les huiles végétales et les épices. - #emph[Règle :] Une fois la
-date dépassée, le produit ne présente #strong[aucun danger
-bactériologique]. Il peut simplement perdre un peu de son arôme, changer
-de texture ou blanchir (chocolat). Jeter des conserves ou des pâtes à la
-DDM dépassée est un pur gaspillage sans justification sanitaire.
-
-#divider()
-
-== 4. CUISINER EN CONDITIONS EXTRÊMES (MANQUE DE TEMPS, D'OUTILS OU D'INGRÉDIENTS)
-<cuisiner-en-conditions-extrêmes-manque-de-temps-doutils-ou-dingrédients>
-Que faire lorsque les ressources font défaut ? 1. #strong[Manque de
-temps (repas en 7 minutes) :] Miser sur les petites géométries. Une
-escalope de poulet ou un filet de poisson découpé en lamelles fines de 5
-mm cuit par conduction vive en 90 secondes dans une poêle brûlante. 2.
-#strong[Manque d'ustensiles (pas de four, pas de balance) :] Le volume
-d'une cuillère à soupe rase équivaut à environ $15 thin upright(m l)$
-($15 thin upright(g)$ d'eau/lait, $10 thin upright(g)$ de farine,
-$12 thin upright(g)$ de sucre, $14 thin upright(g)$ d'huile). Une poêle
-unique à couvercle remplit à la fois le rôle de poêle, de casserole à
-pâtes, de cuiseur vapeur et de mini-four. 3. #strong[Manque
-d'ingrédients :] Appliquer la décomposition matricielle (voir Chapitre
-13) pour substituer immédiatement les équivalents fonctionnels (eau +
-fécule pour remplacer un œuf liant, yaourt ou compote pour remplacer un
-corps gras, etc.).
++ #strong[Étouffer la flamme :] Glisser horizontalement un couvercle
+  métallique ajusté sur la poêle (ou une plaque de cuisson métallique,
+  ou un torchon humide soigneusement essoré). L'oxygène est consommé en
+  quelques secondes et la flamme s'éteint faute de comburant.
++ #strong[Ne plus toucher pendant 20 minutes :] Ne soulevez surtout pas
+  le couvercle pour vérifier ! L'huile reste à plus de
+  $300^compose upright(C)$ : le simple réafflux d'air frais provoquerait
+  une ré-inflammation explosive instantanée (#emph[backdraft]).
 
 #divider()
 
@@ -1294,8 +1421,8 @@ oignon) ou lorsque la main passive est mal positionnée.
 <tableau-bipolaire-de-sécurité-réflexes-de-survie>
 #figure(
   align(center)[#table(
-  stroke: 0.5pt + rgb("#cbd5e1"),
-  fill: (x, y) => if y == 0 { rgb("#f1f5f9") } else if calc.odd(y) { rgb("#f8fafc") } else { none },
+  stroke: 0.5pt + rgb("#e7e5e4"),
+  fill: (x, y) => if y == 0 { rgb("#fef3c7") } else if calc.odd(y) { rgb("#fffbeb") } else { none },
   inset: 7pt,
 
     columns: (33.33%, 33.33%, 33.33%),
@@ -1378,6 +1505,25 @@ extrême qui associe trois systèmes distincts :
   vin qui assèchent la salive) et surtout la #strong[texture mécanique]
   (le soyeux, le croustillant, le granuleux, le fondant).
 
+#figure(image("figures/patrimoine/brillat_savarin_portrait.jpg", alt: "Jean Anthelme Brillat-Savarin (1755-1826), auteur de la Physiologie du goût"),
+  caption: [
+    Jean Anthelme Brillat-Savarin (1755-1826), auteur de la Physiologie
+    du goût
+  ]
+)
+
+#anecdote_historique[
+ \#\#\#\# 🏛️ L'Anecdote
+Historique : L'Aphorisme Éternel de Brillat-Savarin Magistrat, député et
+épicurien éclairé, Jean Anthelme Brillat-Savarin écrit en 1825 dans son
+testament spirituel #emph[Physiologie du goût] des lignes qui n'ont
+jamais été dépassées : « Dis-moi ce que tu manges, je te dirai ce que tu
+es. » Brillat-Savarin a été le premier à dissocier la gloutonnerie
+bestiale de la gourmandise savante, qu'il définit comme une « préférence
+passionnée, raisonnée et habituelle pour les objets qui flattent le goût
+». 
+]
+
 #divider()
 
 == 2. POURQUOI EST-CE INCOMPARABLEMENT MEILLEUR DANS UN 3 ÉTOILES ?
@@ -1386,6 +1532,26 @@ L'expérience d'un grand restaurant gastronomique ne provient pas
 d'ingrédients magiques inaccessibles, mais de l'application maniaque de
 six lois physiques et chimiques fondamentales que tout cuisinier peut
 reproduire chez lui avec une casserole et un couteau :
+
+#figure(image("figures/patrimoine/auguste_escoffier_portrait.jpg", alt: "Auguste Escoffier (1846-1935), le législateur de la grande cuisine classique"),
+  caption: [
+    Auguste Escoffier (1846-1935), le législateur de la grande cuisine
+    classique
+  ]
+)
+
+#anecdote_historique[
+ \#\#\#\# 🏛️ L'Anecdote
+Historique : Escoffier et la Rigueur de la Brigade Militaire Au tournant
+du XXe siècle, Auguste Escoffier révolutionne le monde des fourneaux en
+réorganisant les cuisines du Savoy et du Ritz à Londres et Paris sur le
+modèle d'une batterie d'artillerie navale. Finis les cris, les vapeurs
+d'alcool et le désordre : la brigade est divisée en postes spécialisés
+(sauciers, rôtisseurs, entremétiers) fonctionnant comme les rouages
+d'une montre suisse. Escoffier simplifie les menus gigantesques du XIXe
+siècle pour se concentrer sur un principe premier : la vérité des goûts
+purs et la légèreté des réductions. 
+]
 
 === A. Secret 1 : L'Assaisonnement Multi-Strate (Le Sel qui Révèle)
 <a.-secret-1-lassaisonnement-multi-strate-le-sel-qui-révèle>
@@ -1442,93 +1608,67 @@ $ upright(bold(upright("Croustillant (Croûte rôtie)"))) + upright(bold(upright
 Ce contraste perpétuel maintient l'attention du cerveau en éveil et
 empêche l'accoutumance sensorielle.
 
-=== F. Secret 6 : La Température Millimétrique de Service
-<f.-secret-6-la-température-millimétrique-de-service>
-Un beurre ou un poisson froid ($10^compose upright(C)$) fige ses acides
-gras en blocs cireux qui tapissent la langue et étouffent le goût. Un
-plat brûlant ($> 70^compose upright(C)$) anesthésie les récepteurs
-sensoriels par douleur thermique. Le grand chef sert ses assiettes
-chaudes à #strong[$50 upright("–") 55^compose upright(C)$], seuil exact
-où les graisses sont fluides, les arômes volatils et la sensibilité des
-papilles à son apogée.
-
 #divider()
 
-== 3. L'ÉVOLUTION HISTORIQUE ET SOCIOLOGIQUE DU GOÛT
-<lévolution-historique-et-sociologique-du-goût>
-Le « bon » n'est pas une vérité biologique immuable : c'est une
-construction culturelle et temporelle :
+== 3. RECETTE FONDATRICE PAS À PAS : LE DÉGLAÇAGE MINUTE & SAUCE MONTÉE AU BEURRE
+<recette-fondatrice-pas-à-pas-le-déglaçage-minute-sauce-montée-au-beurre>
+#emph[Comment transformer les sucs caramélisés au fond de votre poêle en
+une sauce miroir de restaurant trois étoiles.]
 
-+ #strong[L'Époque Médiévale (Taillevent, XIVe siècle) : L'Aigre-Doux et
-  l'Épice Démonstrative :] Le goût aristocratique valorise les sauces
-  fluides sans matière grasse, fortement acidifiées au verjus et au
-  vinaigre, saturées d'épices d'Orient (gingembre, cannelle, safran).
-  Les épices prouvaient le rang social élevé et masquaient les viandes
-  faisandées.
-+ #strong[Le Grand Siècle (La Varenne, XVIIe siècle) : La Révolution du
-  Beurre et du Fond :] Rupture radicale : les épices sont rejetées. La
-  cuisine française invente le liant par excellence : le #strong[roux]
-  (beurre + farine cuits), les bouillons de viande corsés et le bouquet
-  garni (thym, laurier). Le gras devient le vecteur roi de la saveur.
-+ #strong[Le Siècle d'Escoffier (1900) : La Rigueur Classique et les
-  Sauces Mères :] Codification industrielle des brigades. Les sauces
-  deviennent magistrales (espagnole, béchamel, hollandaise, velouté). Le
-  goût est puissant, lourd, concentré, célébrant la bourgeoisie
-  triomphante.
-+ #strong[La Nouvelle Cuisine (1970, Bocuse, Guérard, Troisgros) :]
-  Allègement des matières grasses, abandon des farines de liaison,
-  cuisson courte des légumes croquants, cuisson rosée des canards et
-  poissons.
-+ #strong[La Révolution Moléculaire (2000, Adrià, Blumenthal) :]
-  Déconstruction des états de la matière : mousses aériennes,
-  sphérifications, jeu sur la mémoire de l'enfance et l'illusion
-  visuelle.
-+ #strong[L'Ère Contemporaine : Le Retour au Terroir, au Végétal et à la
-  Fermentation Vivante :] L'assiette moderne remet la nature brute, le
-  produit sans artifice et les fermentations ancestrales (koji,
-  lacto-fermentation, herbes sauvages) au cœur de la gastronomie.
+- #strong[Temps de préparation :] 2 minutes
+- #strong[Temps de cuisson :] 3 minutes
+- #strong[Minimalisme Instrumental :] Votre poêle de cuisson après
+  saisie d'une viande, 1 fouet manuel ou cuillère en bois, 1 petite
+  passoire étamine.
+- #strong[Ingrédients pour 2 personnes :]
+  - Les sucs bruns attachés au fond de la poêle
+  - Échalote finement ciselée : $1$ petite ($20 upright(" g")$)
+  - Liquide de déglaçage acide : $80 upright(" ml")$ de vin blanc sec
+    (ou bouillon de volaille + 1 cuillère à café de vinaigre de vin
+    vieux)
+  - Beurre doux très froid, coupé en petits dés de $1 upright(" cm")$ :
+    $30 upright(" g")$
+  - Poivre du moulin et une pointe de fleur de sel
 
-#divider()
+===== Protocole Étape par Étape :
+<protocole-étape-par-étape-2>
++ #strong[L'Évacuation du Gras Brûlé :] Dès que la viande cuite est
+  retirée pour reposer, jeter l'excédent de graisse liquide brûlée de la
+  poêle (ce gras n'a aucun goût noble). Conserver scrupuleusement les
+  dépôts bruns caramélisés collés au fond du métal.
++ #strong[Le Déglaçage Thermique :] Remettre la poêle sur feu vif.
+  Ajouter l'échalote ciselée, laisser blondir 30 secondes, puis verser
+  d'un coup le vin blanc froid. La vapeur jaillit : frotter
+  énergiquement le fond de la poêle avec la cuillère en bois. Les
+  composés d'Amadori et de Heyns de la réaction de Maillard, hautement
+  hydrosolubles, se détachent et se dissolvent instantanément dans le
+  liquide.
++ #strong[La Réduction Siropeuse :] Laisser bouillir à gros bouillons
+  jusqu'à ce que le liquide réduise des deux tiers et devienne sirupeux
+  (environ $2 upright(" cuillères à soupe")$ de liquide concentré
+  ambré).
++ #strong[Le Montage au Beurre Froid Hors du Feu :] Retirer la poêle du
+  feu. Attendre que le bouillonnement cesse (température entre
+  $55^compose upright(C)$ et $65^compose upright(C)$). Incorporer les
+  dés de beurre #strong[très froid] un par un en fouettant
+  continuellement d'un mouvement circulaire rapide.
++ #strong[Le Résultat Moléculaire :] Le beurre froid fond sans se
+  séparer en huile : l'eau du vin et les lipides du beurre forment une
+  #link(<sec-emulsion>)[émulsion] crémeuse, brillante, qui nappe le dos
+  d'une cuillère. Passer à la passoire fine pour une texture satinée.
+  Napper sur la viande reposée.
 
-== 4. TABLEAU BIPOLAIRE : MAGNIFIER LE GOÛT vs LE DÉTRUIRE
-<tableau-bipolaire-magnifier-le-goût-vs-le-détruire>
-#figure(
-  align(center)[#table(
-  stroke: 0.5pt + rgb("#cbd5e1"),
-  fill: (x, y) => if y == 0 { rgb("#f1f5f9") } else if calc.odd(y) { rgb("#f8fafc") } else { none },
-  inset: 7pt,
-
-    columns: (33.33%, 33.33%, 33.33%),
-    align: (left,left,left,),
-    table.header([Démarche Culinaire], [✓ Ce qu'il faut faire (Le
-      Principe Vertueux)], [✗ Ce qu'il faut éviter (L'Échec Sensoriel)],),
-    table.hline(),
-    [#strong[L'assaisonnement en sel]], [Saler avec modération mais à
-    chaque étape de la cuisson pour imbiber la fibre à cœur.], [Oublier
-    le sel pendant la cuisson et saler massivement au sel fin sur
-    l'assiette au moment de manger : goût piquant et agressif.],
-    [#strong[L'équilibre d'une sauce riche]], [Ajouter une touche
-    d'acidité (jus de citron, réduction de vin blanc, vinaigre
-    balsamique vieux) pour trancher le gras.], [Ajouter de la farine ou
-    de la fécule en excès pour « épaissir » une sauce fade : étouffe les
-    arômes et crée un goût plâtreux.],
-    [#strong[La température de dégustation]], [Servir les plats chauds
-    dans des assiettes préalablement tiédies pour maintenir la fluidité
-    des sucs à $50^compose upright(C)$.], [Dresser un aliment chaud dans
-    une assiette glacée : la graisse fige instantanément au contact de
-    la faïence en un film blanc cireux.],
-    [#strong[La texture des sauces]], [Filtrer systématiquement au
-    chinois fin pour une onctuosité parfaite sans particules
-    parasites.], [Laisser des peaux d'oignons brûlées ou des filaments
-    de viande dans un jus de réduction.],
-    [#strong[L'usage des herbes fraîches]], [Ajouter les herbes fragiles
-    (cerfeuil, ciboulette, basilic) #strong[hors du feu à la dernière
-    seconde] pour préserver les terpènes volatils.], [Faire bouillir des
-    herbes fraîches pendant 20 minutes : leurs molécules aromatiques
-    délicates s'évaporent et il ne reste qu'un foin amer.],
-  )]
-  , kind: table
-  )
+#point_attention[
+ \#\#\#\# ⚠️ Point d'Attention :
+Ne Jamais Monter au Beurre sur le Feu Vif ! Si vous incorporez votre
+beurre dans une sauce qui bout à plus de $85^compose upright(C)$,
+l'émulsion se brise immédiatement (#emph[la sauce tranche]) : le gras se
+sépare de l'eau et forme une flaque d'huile jaune disgracieuse et
+indigeste. L'émulsion exige une température modérée
+($55 upright("–") 65^compose upright(C)$) où les phospholipides naturels
+du beurre peuvent déployer leurs têtes polaires pour emprisonner les
+gouttelettes d'eau. 
+]
 
 #divider()
 
@@ -1654,8 +1794,8 @@ que vous paierez par une léthargie post-prandiale épuisante.
 <tableau-bipolaire-comportements-nutritionnels-digestes-vs-indigestes>
 #figure(
   align(center)[#table(
-  stroke: 0.5pt + rgb("#cbd5e1"),
-  fill: (x, y) => if y == 0 { rgb("#f1f5f9") } else if calc.odd(y) { rgb("#f8fafc") } else { none },
+  stroke: 0.5pt + rgb("#e7e5e4"),
+  fill: (x, y) => if y == 0 { rgb("#fef3c7") } else if calc.odd(y) { rgb("#fffbeb") } else { none },
   inset: 7pt,
 
     columns: (33.33%, 33.33%, 33.33%),
@@ -1767,8 +1907,8 @@ apprendre à trier le bon grain de l'ivraie :
 
 #figure(
   align(center)[#table(
-  stroke: 0.5pt + rgb("#cbd5e1"),
-  fill: (x, y) => if y == 0 { rgb("#f1f5f9") } else if calc.odd(y) { rgb("#f8fafc") } else { none },
+  stroke: 0.5pt + rgb("#e7e5e4"),
+  fill: (x, y) => if y == 0 { rgb("#fef3c7") } else if calc.odd(y) { rgb("#fffbeb") } else { none },
   inset: 7pt,
 
     columns: (25%, 25%, 25%, 25%),
@@ -1866,8 +2006,8 @@ ce stock ? »]. - Utilisez une liste partagée numérique fermée et
 <tableau-bipolaire-comportement-du-consommateur-éclairé>
 #figure(
   align(center)[#table(
-  stroke: 0.5pt + rgb("#cbd5e1"),
-  fill: (x, y) => if y == 0 { rgb("#f1f5f9") } else if calc.odd(y) { rgb("#f8fafc") } else { none },
+  stroke: 0.5pt + rgb("#e7e5e4"),
+  fill: (x, y) => if y == 0 { rgb("#fef3c7") } else if calc.odd(y) { rgb("#fffbeb") } else { none },
   inset: 7pt,
 
     columns: (33.33%, 33.33%, 33.33%),
@@ -2110,8 +2250,8 @@ succès ou de l'échec de la préparation.
 <fiche-réflexe-diagnostic-de-lœuf-en-un-coup-dœil>
 #figure(
   align(center)[#table(
-  stroke: 0.5pt + rgb("#cbd5e1"),
-  fill: (x, y) => if y == 0 { rgb("#f1f5f9") } else if calc.odd(y) { rgb("#f8fafc") } else { none },
+  stroke: 0.5pt + rgb("#e7e5e4"),
+  fill: (x, y) => if y == 0 { rgb("#fef3c7") } else if calc.odd(y) { rgb("#fffbeb") } else { none },
   inset: 7pt,
 
     columns: (33.33%, 33.33%, 33.33%),
@@ -2171,8 +2311,8 @@ spécifique :
 
 #figure(
   align(center)[#table(
-  stroke: 0.5pt + rgb("#cbd5e1"),
-  fill: (x, y) => if y == 0 { rgb("#f1f5f9") } else if calc.odd(y) { rgb("#f8fafc") } else { none },
+  stroke: 0.5pt + rgb("#e7e5e4"),
+  fill: (x, y) => if y == 0 { rgb("#fef3c7") } else if calc.odd(y) { rgb("#fffbeb") } else { none },
   inset: 7pt,
 
     columns: (20%, 20%, 20%, 20%, 20%),
@@ -2412,8 +2552,8 @@ gouttelettes de beurre et le lait parfumé sans jamais filer.
 <ce-quil-faut-faire-et-ce-quil-faut-éviter-tableau-bipolaire>
 #figure(
   align(center)[#table(
-  stroke: 0.5pt + rgb("#cbd5e1"),
-  fill: (x, y) => if y == 0 { rgb("#f1f5f9") } else if calc.odd(y) { rgb("#f8fafc") } else { none },
+  stroke: 0.5pt + rgb("#e7e5e4"),
+  fill: (x, y) => if y == 0 { rgb("#fef3c7") } else if calc.odd(y) { rgb("#fffbeb") } else { none },
   inset: 7pt,
 
     columns: (33.33%, 33.33%, 33.33%),
@@ -2453,6 +2593,469 @@ gouttelettes de beurre et le lait parfumé sans jamais filer.
 
 #divider()
 
+= Livre III --- L'Écosystème Vivant : Fermentations, Sécurité et Nutrition
+<livre-iii-lécosystème-vivant-fermentations-sécurité-et-nutrition>
+== Chapitre 12 --- L'Alimentation Végétale et la Chimie des Protéines : Compréhension Rationnelle, Digestibilité et Recettes Dédiées
+<chapitre-12-lalimentation-végétale-et-la-chimie-des-protéines-compréhension-rationnelle-digestibilité-et-recettes-dédiées>
+#figure(image("figures/science/legumineuses_proteines_vegetales.jpg", alt: "Assortiment de légumineuses et graines oléagineuses, réservoirs de protéines végétales"),
+  caption: [
+    Assortiment de légumineuses et graines oléagineuses, réservoirs de
+    protéines végétales
+  ]
+)
+
+=== 1. La Molécule de Protéine : Démystification Chimique et Besoins Réels
+<la-molécule-de-protéine-démystification-chimique-et-besoins-réels>
+Dans l'imaginaire populaire, la #link(<glossaire-proteine>)[protéine]
+est spontanément associée au muscle animal, au steak saignant ou à l'œuf
+du matin. Pourtant, sur le plan strictement biochimique, une protéine ne
+possède ni nationalité ni règne biologique. Qu'elle provienne d'une
+cuisse de poulet, d'un grain de blé ou d'une fève de soja, une protéine
+est invariablement #strong[un collier de perles chimiques appelées
+acides aminés], enroulé sur lui-même en une pelote tridimensionnelle
+complexe.
+
+L'organisme humain ne sait pas absorber une protéine entière : lors de
+la digestion gastrique et intestinale, sous l'action de l'acide
+chlorhydrique et des protéases, ce collier est démonté perle par perle.
+Le corps humain utilise ensuite ces acides aminés individuels pour
+forger ses propres tissus, ses enzymes, ses anticorps et ses
+neurotransmetteurs.
+
+Parmi les 20 acides aminés nécessaires au métabolisme, le corps adulte
+est incapable d'en synthétiser #strong[9], qualifiés
+d'#link(<glossaire-acides-amines>)[acides aminés essentiels] : -
+#emph[Leucine, Isoleucine, Valine] (acides aminés branchés pour la
+synthèse musculaire) - #emph[Lysine] (croissance tissulaire et
+absorption du calcium) - #emph[Méthionine] (métabolisme soufré et
+antioxydant) - #emph[Thréonine, Phénylalanine, Tryptophane] (précurseur
+de la sérotonine) - #emph[Histidine] (indispensable à la fonction
+immunitaire)
+
+#anecdote_historique[
+ \#\#\#\# 🏛️ L'Anecdote
+Historique : Le Régime des Gladiateurs Romains Les fouilles
+archéologiques d'Éphèse et l'analyse isotopique des squelettes de
+gladiateurs romains (#emph[hordearii], littéralement « les mangeurs
+d'orge ») ont révélé un fait saisissant : les combattants les plus
+puissants de l'Empire ne se nourrissaient pas de viandes rouges, mais
+d'une bouillie dense d'orge mondé et de fèves des marais, enrichie d'une
+boisson de cendres végétales riche en carbonate de calcium et strontium.
+Ce régime apportait une synthèse protéique maximale et une densité
+osseuse exceptionnelle pour un coût d'approvisionnement dérisoire.
+
+]
+
+#divider()
+
+=== 2. Le Facteur Limitant et l'Art Sacré des Complémentarités
+<le-facteur-limitant-et-lart-sacré-des-complémentarités>
+La critique la plus rigoureuse adressée aux végétaux concerne leur
+profil en acides aminés. Si les viandes, poissons, œufs et produits
+laitiers disposent d'un profil dit « complet », la plupart des végétaux
+présentent un #strong[acide aminé limitant], c'est-à-dire présent en
+proportion insuffisante pour permettre l'assimilation optimale de tous
+les autres :
+
+$ upright("Taux d’assimilation globale") = min\(upright("Ratio de chaque acide aminé essentiel")\) $
+
++ #strong[Les Céréales] (blé, riz, maïs, avoine, seigle) :
+  - #emph[Forces :] Riches en méthionine et cystéine.
+  - #emph[Faiblesse (Facteur limitant) :] #strong[Déficitaires en
+    lysine].
++ #strong[Les Légumineuses] (lentilles, pois chiches, haricots secs,
+  fèves, pois cassés) :
+  - #emph[Forces :] Extrêmement riches en #strong[lysine].
+  - #emph[Faiblesse (Facteur limitant) :] #strong[Déficitaires en
+    méthionine].
+
+De manière absolument remarquable, toutes les civilisations ancestrales
+ont résolu cette équation mathématique sans connaître la chimie moderne,
+en instaurant des couples alimentaires indissociables :
+
+#figure(
+  align(center)[#table(
+  stroke: 0.5pt + rgb("#e7e5e4"),
+  fill: (x, y) => if y == 0 { rgb("#fef3c7") } else if calc.odd(y) { rgb("#fffbeb") } else { none },
+  inset: 7pt,
+
+    columns: (25%, 25%, 25%, 25%),
+    align: (left,left,left,left,),
+    table.header([Aire Géoculturelle], [Céréale (Riche en
+      Méthionine)], [Légumineuse (Riche en Lysine)], [Résultat
+      Métabolique],),
+    table.hline(),
+    [#strong[Maghreb & Levant]], [Semoule de blé dur
+    (#emph[Couscous])], [Pois chiches], [Protéine 100% complète],
+    [#strong[Amérique Centrale]], [Tortilla de maïs], [Haricots noirs
+    (#emph[Frijoles])], [Protéine 100% complète],
+    [#strong[Asie du Sud (Inde)]], [Riz Basmati], [Dahl de lentilles /
+    Pois chiches], [Protéine 100% complète],
+    [#strong[Asie de l'Est]], [Riz blanc ou brun], [Soja (Tofu, Edamame,
+    Miso)], [Protéine 100% complète],
+    [#strong[Moyen-Orient]], [Pain pita (Blé)], [Houmous (Pois chiches)
+    & Fèves], [Protéine 100% complète],
+    [#strong[Italie Traditionnelle]], [Pâtes (#emph[Pasta e
+    fagioli])], [Haricots borlotti ou cannellini], [Protéine 100%
+    complète],
+  )]
+  , kind: table
+  )
+
+#truc_de_chef[
+ \#\#\#\# 💡 L'Astuce Invisible :
+La Synchronisation des Repas Déboulonnée Longtemps, la diététique a
+affirmé qu'il fallait consommer la céréale et la légumineuse #strong[au
+cours de la même bouchée]. La recherche contemporaine a démontré que le
+foie stocke un réservoir temporaire d'acides aminés libres sur une
+période de 24 heures. Vous pouvez parfaitement consommer des lentilles
+le midi et du pain au levain ou du riz le soir : votre métabolisme
+réalisera l'assemblage protéique de manière autonome. 
+]
+
+#divider()
+
+=== 3. Les Facteurs Anti-Nutritionnels : Pourquoi Cuire les Légumineuses est une Question de Survie
+<les-facteurs-anti-nutritionnels-pourquoi-cuire-les-légumineuses-est-une-question-de-survie>
+Les plantes n'ont aucun désir d'être dévorées : au cours de millions
+d'années d'évolution, elles ont développé un arsenal de défenses
+biochimiques pour dissuader les herbivores et préserver leurs graines :
+
++ #strong[L'Acide Phytique (Phytates) :] Présent dans l'enveloppe des
+  graines, l'acide phytique agit comme un chélateur féroce. Il se lie au
+  calcium, au fer, au zinc et au magnésium dans le tube digestif pour
+  former des complexes insolubles impossibles à absorber.
++ #strong[Les Lectines (dont la Phytohémagglutinine des haricots) :] Ces
+  glycoprotéines résistent aux sucs digestifs, se fixent sur la muqueuse
+  intestinale et provoquent des inflammations aiguës, voire de violentes
+  intoxications hématologiques si les graines sont consommées crues ou à
+  peine tiédies.
++ #strong[Les Oligosaccharides (Raffinose, Stachyose) :] Sucres
+  complexes non hydrolysables par nos enzymes intestinales. Ils arrivent
+  intacts dans le côlon où les bactéries fermentaires les dégradent en
+  produisant d'abondants gaz (méthane, dioxyde de carbone), responsables
+  des flatulences légendaires des légumineuses.
+
+#point_attention[
+ \#\#\#\# ⚠️ Point d'Attention
+Critique : Haricots Rouges et Mijoteuse Basse Température Ne cuisez
+jamais de haricots rouges crus dans une mijoteuse électrique réglée à
+$70^compose upright(C)$ ou $80^compose upright(C)$ ! À cette température
+modérée, la phytohémagglutinine n'est pas détruite : pire, sa toxicité
+est multipliée par cinq. Les haricots secs exigent impérativement
+#strong[au minimum 15 minutes d'ébullition franche à
+$100^compose upright(C)$] pour neutraliser définitivement la toxine.
+
+]
+
+#positif[
+ \#\#\#\# ✓ Le Protocole d'Or :
+L'Inactivation Totale des Anti-Nutriments 1. #strong[Le Trempage
+Prolongé (12 à 24 heures) :] Immerger les légumineuses dans un volume
+d'eau froide égal à quatre fois leur poids, idéalement avec une pincée
+de bicarbonate de sodium ($1 upright(" g/L")$). Le trempage réveille les
+enzymes internes (phytases) qui découpent l'acide phytique, solubilise
+les sucres flatulents et hydrate le cœur du grain. 2. #strong[Le Rinçage
+et Rejet de l'Eau de Trempage :] Jeter scrupuleusement l'eau de trempage
+chargée en composés indigestes. 3. #strong[La Cuisson Vivante à l'Eau
+Pure :] Cuire à feu frémissant avec aromates (laurier, thym, cumin,
+carvi pour stimuler la digestion gastrique). #strong[Ne saler l'eau
+qu'en toute fin de cuisson] : le sel précoce durcit la pellicule externe
+cellulosique de la graine et retarde le ramollissement de l'amidon.
+
+]
+
+#divider()
+
+=== 4. Les Trois Grandes Matrices Protéiques Végétales Modernes
+<les-trois-grandes-matrices-protéiques-végétales-modernes>
+Au-delà de la graine brute, la cuisine dispose de trois transformations
+remarquables issues du génie millénaire de l'artisanat :
+
+```
+                  ┌──────────────────────────────┐
+                  │    MATRICES PROTÉIQUES       │
+                  └──────────────┬───────────────┘
+                                 │
+         ┌───────────────────────┼───────────────────────┐
+         ▼                       ▼                       ▼
+  ┌───────────────┐       ┌───────────────┐       ┌───────────────┐
+  │   LE TOFU     │       │   LE SEITAN   │       │   LE TEMPEH   │
+  │Coagulation du │       │Réseau élastique│       │Fermentation de│
+  │lait de soja   │       │de gluten lavé │       │graines nobles │
+  │(Similaire au  │       │(Texture fibre │       │par champignon │
+  │fromage animal)│       │très dense)    │       │(Biodisponible)│
+  └───────────────┘       └───────────────┘       └───────────────┘
+```
+
++ #strong[Le Tofu :] Obtenu par chauffage du lait de graines de soja
+  puis #link(<sec-coagulation>)[coagulation] des protéines (glycinine)
+  sous l'action d'un sel minéral, traditionnellement le #emph[nigari]
+  (chlorure de magnésium marin naturel) ou le sulfate de calcium. C'est
+  l'équivalent parfait du fromage frais animal, sans le moindre
+  cholestérol.
++ #strong[Le Seitan :] Né dans les monastères bouddhistes au VIe siècle
+  en Chine. On prépare une pâte de farine de blé et d'eau, puis on la
+  pétrit doucement sous un filet d'eau tiède :
+  l'#link(<glossaire-amidon>)[amidon] se dissout et s'évacue dans l'eau
+  blanche, laissant entre les mains une masse élastique, soyeuse et
+  élastomère composée exclusivement de protéines de blé (la gliadine et
+  la gluténine). Poché dans un bouillon d'algues et de sauce soja, il
+  développe une mâche fibreuse spectaculaire.
++ #strong[Le Tempeh :] Originaire de Java en Indonésie. Les fèves de
+  soja cuites sont ensemencées avec les spores d'un champignon noble
+  (#emph[Rhizopus oligosporus]). En 36 heures à $30^compose upright(C)$,
+  le mycélium blanc tisse un réseau dense qui lie les graines en un
+  gâteau compact. La fermentation décompose les oligosaccharides, rend
+  les protéines ultra-digestes et génère des arômes de noisette, de
+  sous-bois et de champignon de Paris.
+
+#divider()
+
+=== 5. Trois Recettes Fondatrices Pas à Pas 100% Végétales
+<trois-recettes-fondatrices-pas-à-pas-100-végétales>
+
+#divider()
+
+==== 🍳 Fiche Recette 1 : Le Dahl Réconfortant de Lentilles Corail au Cumin Torréfié et Lait de Coco
+<fiche-recette-1-le-dahl-réconfortant-de-lentilles-corail-au-cumin-torréfié-et-lait-de-coco>
+#emph[Un plat complet ancestral, digeste, sans temps de trempage
+préalable, prêt en 25 minutes chrono.]
+
+- #strong[Temps de préparation :] 5 minutes
+- #strong[Temps de cuisson :] 20 minutes
+- #strong[Minimalisme Instrumental :] 1 casserole en inox, 1 cuillère en
+  bois, 1 couteau de chef.
+- #strong[Ratios d'équilibre :]
+  - Lentilles corail rincées : $250 upright(" g")$
+  - Lait de coco (riche en matières grasses) : $200 upright(" ml")$
+  - Eau ou bouillon de légumes : $450 upright(" ml")$
+  - Oignon jaune émincé : $1$ moyen ($120 upright(" g")$)
+  - Gousses d'ail râpées : $2$
+  - Gingembre frais râpé : $15 upright(" g")$ (1 noix)
+  - Épices : Cumin en graines ($1 upright(" c. à café")$), Curcuma moulu
+    ($1 upright(" c. à café")$), Piment doux
+    ($1\/2 upright(" c. à café")$)
+  - Huile neutre ou huile de coco : $2 upright(" c. à soupe")$
+  - Sel fin : $5 upright(" g")$ (1 cuillère à café rase)
+  - Jus de citron vert frais et coriandre fraîche pour l'envoi.
+
+```
+                  CHRONOLOGIE D'EXTRACTION DU DAHL
+                 
+ [0 min]  Torréfaction des graines de cumin à sec (Libération du cuminaldéhyde)
+    │
+ [2 min]  Ajout matière grasse + Oignons + Ail + Gingembre (Suer sans coloration)
+    │
+ [6 min]  Ajout curcuma + Lentilles corail (Enrobage lipidique des grains)
+    │
+ [8 min]  Mouillage (Eau + Lait de coco) -> Ébullition puis feu doux 15 min
+    │
+[23 min]  Délitement naturel des lentilles -> Saler & Acidifier (Jus de citron vert)
+```
+
+===== Étapes Pas à Pas :
+<étapes-pas-à-pas>
++ #strong[La Torréfaction à Sec des Épices :] Poser la casserole inox
+  sur feu moyen sans matière grasse. Jeter les graines de cumin. Dès
+  qu'elles crépitent et dégagent une odeur chaude de noisette (environ
+  60 secondes), ajouter immédiatement les 2 cuillères d'huile pour
+  stopper la torréfaction et fixer les composés aromatiques lipophiles
+  dans la matière grasse.
++ #strong[Le Lit Aromatique :] Ajouter l'oignon finement ciselé, l'ail
+  et le gingembre râpés. Faire suer doucement pendant 4 minutes jusqu'à
+  ce que l'oignon devienne translucide sans brunir.
++ #strong[L'Enrobage des Féculents :] Verser les lentilles corail
+  préalablement rincées à l'eau claire et égouttées. Mélanger pendant 1
+  minute sur feu vif avec le curcuma pour imprégner chaque grain de
+  corps gras parfumé.
++ #strong[La Cuisson Hydrique & Lipidique :] Verser l'eau et le lait de
+  coco. Porter à légère ébullition, puis baisser le feu au minimum,
+  couvrir aux trois quarts et laisser mijoter 15 minutes en remuant deux
+  ou trois fois.
++ #strong[La Finition Sensorielle :] Les lentilles corail se délient
+  naturellement pour former un velouté onctueux sans aucun mixeur.
+  Couper le feu. #strong[Ajouter le sel uniquement maintenant], mélanger
+  vigoureusement, puis presser le jus de citron vert frais. L'acidité
+  réveille instantanément la rondeur du lait de coco.
+
+#oeil_molecule[
+ \#\#\#\# 🔬 L'Œil de la Molécule
+: Pourquoi les Lentilles Corail Cuident-elles si Vite ? Contrairement
+aux lentilles vertes du Puy ou aux lentilles brunes, les lentilles
+corail ont été mécaniquement débarrassées de leur cuticule extérieure
+cellulosique (elles sont décortiquées). L'eau chaude pénètre directement
+au cœur de l'amidon et des vacuoles protéiques sans rencontrer la
+barrière étanche de l'enveloppe : la gélatinisation de l'amidon
+intervient dès $65^compose upright(C)$, permettant une cuisson
+ultra-rapide et une désagrégation veloutée spontanée. 
+]
+
+#divider()
+
+==== 🍳 Fiche Recette 2 : Le Tofu Doré Ultra-Croustillant et son Laquage Tamari-Sésame
+<fiche-recette-2-le-tofu-doré-ultra-croustillant-et-son-laquage-tamari-sésame>
+#emph[La méthode infaillible pour éliminer la texture spongieuse et
+obtenir un croustillant sonore sans friture profonde.]
+
+- #strong[Temps de préparation :] 15 minutes (dont 10 minutes de presse)
+- #strong[Temps de cuisson :] 10 minutes
+- #strong[Minimalisme Instrumental :] 1 poêle en fonte ou acier, 1
+  torchon propre, 1 assiette + un poids (casserole ou boîte de
+  conserve).
+- #strong[Ingrédients :]
+  - Tofu ferme ou extra-ferme nature : $400 upright(" g")$
+  - Fécule de maïs (Maïzena) ou fécule de pomme de terre :
+    $25 upright(" g")$ (2 cuillères à soupe)
+  - Huile de cuisson haute température (arachide, pépins de raisin ou
+    tournesol) : $2 upright(" c. à soupe")$
+  - Sauce soja Tamari (naturellement sans gluten) :
+    $2 upright(" c. à soupe")$ ($30 upright(" ml")$)
+  - Sirop d'érable ou miel : $1 upright(" c. à soupe")$
+    ($15 upright(" ml")$)
+  - Huile de sésame toasté : $1 upright(" c. à café")$
+  - Graines de sésame blanc et noir : $1 upright(" c. à soupe")$
+
+===== Étapes Pas à Pas :
+<étapes-pas-à-pas-1>
++ #strong[L'Expulsion de l'Eau Interstitielle (L'Étape Capitale) :] Le
+  tofu du commerce baigne dans l'eau. Si vous le jetez tel quel dans la
+  poêle, l'eau va bouillir, la température de surface plafonnera à
+  $100^compose upright(C)$, et le tofu deviendra caoutchouteux et mou.
+  Couper le bloc en cubes réguliers de $2 upright(" cm")$. Les disposer
+  sur un torchon propre plié en deux, replier le tissu par-dessus, poser
+  une assiette plate et la lester avec une boîte de conserve lourde
+  pendant 10 minutes.
++ #strong[L'Amure de Fécule :] Transférer les cubes égouttés dans un
+  saladier sec.~Saupoudrer la fécule de maïs. Remuer délicatement le bol
+  par rotations jusqu'à ce que chaque dé soit recouvert d'un voile blanc
+  translucide et poudreux. La fécule va absorber les dernières traces
+  d'humidité superficielle et former un film étanche.
++ #strong[La Saisie Thermique :] Faire chauffer la poêle en fonte à feu
+  vif avec les 2 cuillères d'huile. Attendre que l'huile miroite.
+  Déposer les cubes de tofu sans les chevaucher. Laisser dorer sans y
+  toucher pendant 3 minutes par face à feu moyen-vif. Les cubes doivent
+  former une carapace rigide, cloquée et dorée.
++ #strong[Le Laquage Instantané Hors du Feu :] Dans un petit bol,
+  fouetter le tamari, le sirop d'érable et l'huile de sésame.
+  #strong[Éteindre le feu], verser le mélange liquide directement sur
+  les cubes brûlants. La sauce réduit et caramélise en 10 secondes au
+  contact de la fonte chaude, enrobant chaque face d'une laque brillante
+  d'un brun profond. Parsemer de sésame et servir immédiatement.
+
+#divider()
+
+==== 🍳 Fiche Recette 3 : La Mousse au Chocolat Aérienne à l'Aquafaba
+<fiche-recette-3-la-mousse-au-chocolat-aérienne-à-laquafaba>
+#emph[Une prouesse physico-chimique : zéro œuf, zéro crème, deux
+ingrédients uniques pour une texture de nuage noir intense.]
+
+#figure(image("figures/science/gouttelettes_emulsion_microscope.jpg", alt: "Gouttelettes et micelles stabilisant les mousses et émulsions culinaires"),
+  caption: [
+    Gouttelettes et micelles stabilisant les mousses et émulsions
+    culinaires
+  ]
+)
+
+- #strong[Temps de préparation :] 15 minutes
+- #strong[Temps de repos au frais :] 3 heures minimum
+- #strong[Minimalisme Instrumental :] 1 casserole inox pour bain-marie,
+  1 saladier, 1 fouet ou batteur manuel, 1 maryse en silicone.
+- #strong[Ratios d'or :]
+  - Chocolat noir de dégustation ($65 %$ à $70 %$ de cacao) :
+    $150 upright(" g")$
+  - Aquafaba (le jus de trempage égoutté d'une boîte de conserve de pois
+    chiches nature) : $150 upright(" ml")$
+  - Jus de citron frais : $3 upright(" gouttes")$ (ou une pincée de
+    crème de tartre)
+  - Sucre glace (optionnel, selon l'amertume du chocolat) :
+    $15 upright(" g")$
+
+===== Étapes Pas à Pas :
+<étapes-pas-à-pas-2>
++ #strong[La Fonte Douce du Chocolat :] Hacher le chocolat noir en
+  petits morceaux réguliers. Les déposer dans un bol posé sur une
+  casserole d'eau frémissante (bain-marie) sans que le fond du bol ne
+  touche l'eau. Laisser fondre doucement sans remuer au début. La
+  température du chocolat ne doit pas dépasser $45^compose upright(C)$
+  pour ne pas brûler les polyphénols. Laisser tiédir à température
+  ambiante ($30^compose upright(C)$).
++ #strong[Le Montage de l'Écume :] Verser l'aquafaba froid dans un grand
+  récipient impeccable (zéro trace de gras). Ajouter les 3 gouttes de
+  jus de citron. Fouetter d'abord à vitesse modérée puis rapide. En 4 à
+  5 minutes, le liquide beige se transforme en une mousse blanche
+  éblouissante, volumineuse, ferme et formant un bec d'oiseau au bout du
+  fouet, rigoureusement indiscernable de blancs d'œufs montés en neige.
++ #strong[Le Mariage des Textures :] Ajouter un tiers de l'aquafaba
+  monté dans le chocolat fondu tiédi. Mélanger vivement au fouet pour
+  détendre la masse de chocolat sans crainte.
++ #strong[Le Geste Délicat à la Maryse :] Verser le reste de la mousse
+  en deux fois. Cette fois, manier la maryse en décrivant un mouvement
+  circulaire délicat de haut en bas, en soulevant la masse par le centre
+  pour incorporer les bulles d'air sans briser l'édifice protéique.
++ #strong[La Prise Thermique :] Répartir dans des ramequins et réserver
+  au réfrigérateur pendant au moins 3 heures. Le beurre de cacao
+  cristallise au froid, piégeant le réseau alvéolaire aérien pour
+  délivrer une mousse fondante, intense et d'une légèreté confondante.
+
+#oeil_molecule[
+ \#\#\#\# 🔬 L'Œil de la Molécule
+: Comment l'Eau des Pois Chiches Peut-elle Monter en Neige ? Lors de la
+cuisson sous pression des pois chiches en conserverie, deux familles de
+composés migrent massivement dans l'eau de cuisson : 1. #strong[Des
+protéines globulaires solubles] (albumines végétales) qui se déroulent
+sous l'action mécanique du fouet et viennent tapisser l'interface
+air/eau. 2. #strong[Des saponines], tensioactifs naturels amphotères qui
+diminuent drastiquement la tension superficielle de l'eau. Les 3 gouttes
+de jus de citron apportent de l'acide citrique qui abaisse le pH vers
+4,5, rapprochant les protéines de leur point isoélectrique : les charges
+électriques se neutralisent, permettant aux chaînes moléculaires de se
+lier étroitement pour former une membrane élastique ultra-résistante
+autour de chaque bulle d'air ! 
+]
+
+#divider()
+
+=== 6. Tableau Récapitulatif : Équivalences et Substitutions Protéiques Végétales
+<tableau-récapitulatif-équivalences-et-substitutions-protéiques-végétales>
+#figure(
+  align(center)[#table(
+  stroke: 0.5pt + rgb("#e7e5e4"),
+  fill: (x, y) => if y == 0 { rgb("#fef3c7") } else if calc.odd(y) { rgb("#fffbeb") } else { none },
+  inset: 7pt,
+
+    columns: (25%, 25%, 25%, 25%),
+    align: (left,left,left,left,),
+    table.header([Ingrédient Conventionnel], [Alternative Végétale
+      Équivalente], [Mécanisme Physico-Chimique en Jeu], [Précaution
+      Majeure],),
+    table.hline(),
+    [#strong[Œuf en liant (gâteau)]], [Compote de pommes
+    ($50 upright(" g")$) ou bananes écrasées], [Les
+    #link(<glossaire-pectine>)[pectines] et mucilages forment un gel
+    thermique], [Augmente l'humidité de la mie],
+    [#strong[Œuf en foisonnement
+    (neige)]], [#link(<glossaire-aquafaba>)[Aquafaba]
+    ($30 upright(" ml")$ par blanc)], [Tensioactifs naturels (saponines
+    \+ albumines végétales)], [Récipient strictement exempt de matière
+    grasse],
+    [#strong[Viande hachée / Chair]], [Lentilles vertes cuites al dente
+    \+ champignons rissolés], [Texture granuleuse riche en
+    #link(<glossaire-umami>)[umami] (glutamates naturels)], [Ne pas
+    surcuire pour éviter la bouillie],
+    [#strong[Crème fraîche liquide]], [Lait de coco ou crème de
+    soja], [Émulsion d'huile végétale et de protéines], [Point de fumée
+    et saveur propre à adapter],
+    [#strong[Fromage râpé gratineur]], [Levure maltée en flocons +
+    amandes en poudre], [La levure apporte l'umami glutamique et le doré
+    thermique], [Ne gratine pas par fonte lipidique, mais dore à la
+    chaleur],
+  )]
+  , kind: table
+  )
+
+#divider()
+
 = CHAPITRE 13 --- La Matrice Universelle du Gâteau et l'Épreuve du Chocolat
 <chapitre-13-la-matrice-universelle-du-gâteau-et-lépreuve-du-chocolat>
 #quote(block: true)[
@@ -2478,195 +3081,171 @@ $ upright(bold(upright("Corps Gras"))) + upright(bold(upright("Agent Sucrant")))
 )
 
 Chaque composant joue une partition physique précise : 1. #strong[Le
-Féculent (La Charpente) :] Apporte les grains d'amidon qui gélatinisent
-sous l'action combinée de l'eau et de la chaleur
-($> 65^compose upright(C)$) pour bâtir les murs solides des alvéoles. 2.
-#strong[Le Liant Protéique (Le Mortier) :] Les protéines (ovalbumine de
-l'œuf ou globulines végétales) se dénaturent et coagulent, formant un
-réseau gélifié qui emprisonne l'humidité et rigidifie la structure. 3.
-#strong[Le Corps Gras (Le Lubrifiant et Tendreur) :] Enrobe les
-molécules d'amidon et de gluten, s'interposant physiquement entre les
-chaînes pour empêcher la formation d'un réseau trop rigide. C'est le
-garant du moelleux et de la sensation de fondant. 4. #strong[L'Agent
-Sucrant (L'Hydrate et Caraméliseur) :] Hygroscopique, le sucre attire
-l'eau et retarde la coagulation prématurée des protéines, maintenant la
-pâte tendre. À la surface, il caramélise et nourrit les réactions de
-Maillard. 5. #strong[Le Gaz Expansif (Le Soufflet) :] Bulles d'air
-emprisonnées lors du crémage ou dioxyde de carbone ($upright(C O)_2$)
-libéré par la levure chimique sous l'effet de la chaleur, gonflant la
-mie.
+Féculent (La Charpente) :] Apporte les grains
+d'#link(<glossaire-amidon>)[amidon] qui gélatinisent sous l'action
+combinée de l'eau et de la chaleur ($> 65^compose upright(C)$) pour
+bâtir les murs solides des alvéoles. 2. #strong[Le Liant Protéique (Le
+Mortier) :] Les protéines (ovalbumine de l'œuf ou globulines végétales)
+se dénaturent et coagulent, formant un réseau gélifié qui emprisonne
+l'humidité et rigidifie la structure. 3. #strong[Le Corps Gras (Le
+Lubrifiant et Tendreur) :] Enrobe les molécules d'amidon et de gluten,
+s'interposant physiquement entre les chaînes pour empêcher la formation
+d'un réseau trop rigide. C'est le garant du moelleux et de la sensation
+de fondant. 4. #strong[L'Agent Sucrant (L'Hydrate et Caraméliseur) :]
+Hygroscopique, le sucre attire l'eau et retarde la coagulation
+prématurée des protéines, maintenant la pâte tendre. À la surface, il
+caramélise et nourrit les réactions de Maillard. 5. #strong[Le Gaz
+Expansif (Le Soufflet) :] Bulles d'air emprisonnées lors du crémage ou
+dioxyde de carbone ($upright(C O)_2$) libéré par la levure chimique sous
+l'effet de la chaleur, gonflant la mie.
+
+#truc_de_chef[
+ \#\#\#\# 💡 L'Astuce Invisible :
+Chemiser au Cacao Pur et Non à la Farine ! Lorsque vous beurrez un moule
+à gâteau au chocolat, ne saupoudrez jamais de farine blanche pour éviter
+que la pâte n'attache ! La farine cuite laisse des traces grises
+disgracieuses et farineuses sur la croûte sombre. Saupoudrez plutôt le
+moule beurré d'un voile de #strong[poudre de cacao amer 100%]. À la
+cuisson, le cacao fusionne avec la croûte, apporte un surcroît d'arômes
+torréfiés et offre un démoulage impeccable d'un brun profond satiné.
+
+]
 
 #divider()
 
-== 2. LA FORMULATION STANDARD DU GÂTEAU AU CHOCOLAT
-<la-formulation-standard-du-gâteau-au-chocolat>
-Voici les proportions canoniques de référence, à considérer non comme
-des chiffres absolus, mais comme un #strong[point d'équilibre modulaire]
-:
+== 2. RECETTE FONDATRICE 1 : LE MOELLEUX AU CHOCOLAT COEUR COULANT
+<recette-fondatrice-1-le-moelleux-au-chocolat-coeur-coulant>
+#emph[Le triomphe du gradient thermique : comment obtenir une croûte
+cuite et un cœur liquide dans le même moule.]
 
-- #strong[Le Cœur Aromatique :] $200 thin upright(g)$ de chocolat noir à
-  dessert (riche en beurre de cacao et pâte de cacao) ou
-  $60 thin upright(g)$ de poudre de cacao pur + $140 thin upright(g)$ de
-  gras d'appoint.
-- #strong[L'Agent Sucrant :] $100 thin upright(g)$ de sucre de canne non
-  raffiné (ou $80 thin upright(g)$ de miel d'acacia, ou équivalent
-  stévia selon le pouvoir sucrant).
-- #strong[Le Corps Gras :] $90 thin upright(g)$ de beurre doux (ou
-  $80 thin upright(g)$ d'huile végétale neutre : pépin de raisin, colza
-  ou coco désodorisée).
-- #strong[Le Féculent Sec :] $75 thin upright(g)$ de farine de blé type
-  T55 ou T65 (ou farine de riz, de maïs ou fécule de pomme de terre).
-- #strong[Le Liant Protéique :] $3$ œufs moyens tempérés (ou
-  $150 thin upright(g)$ de lait de soja riche en lécithine et protéines
-  végétales).
-- #strong[L'Additif d'Aération (Optionnel) :] $1$ cuillère à café de
-  levure chimique ou bicarbonate de sodium (facultatif si la texture
-  recherchée est un fondant dense).
-- #strong[Les Arômes Tertiaires (Optionnel) :] Zeste d'orange finement
-  râpé, fleur de sel, vanille ou cannelle.
+- #strong[Temps de préparation :] 10 minutes
+- #strong[Temps de cuisson précis :] 11 à 12 minutes à
+  $180^compose upright(C)$
+- #strong[Minimalisme Instrumental :] 1 bol résistant à la chaleur, 1
+  casserole (bain-marie), 1 fouet à main, 4 ramequins individuels en
+  céramique ou moules en inox.
+- #strong[Ratios d'or pour 4 ramequins :]
+  - Chocolat noir à $70 %$ de cacao : $120 upright(" g")$
+  - Beurre doux ($82 %$ MG) : $100 upright(" g")$
+  - Sucre de canne non raffiné : $60 upright(" g")$
+  - Œufs entiers tempérés : $3$ gros œufs
+  - Farine de blé T55 (ou fécule de maïs pour les intolérants au gluten)
+    : seulement $40 upright(" g")$ (2 cuillères à soupe rases)
+  - Pincée de fleur de sel : $1 upright(" g")$
 
-=== Les Déclinaisons Modulaires sans Faillir
-<les-déclinaisons-modulaires-sans-faillir>
-- #strong[Version Végétalienne (Vegan) :] Les œufs sont remplacés par du
-  lait de soja émulsionné ou de l'aquafaba (eau de cuisson des pois
-  chiches battue en neige riche en saponines et protéines). Le beurre
-  est remplacé par de l'huile ou du beurre végétal.
-- #strong[Version sans Cuisson (Pâtisserie Crue) :] On remplace la
-  farine cuite par des oléagineux broyés (amandes, noisettes riches en
-  gras et fibres) et le sucre par des dattes mixées. L'émulsion pâte de
-  cacao + dattes + huile de coco fige au réfrigérateur par simple
-  cristallisation des graisses solides à froid
-  ($< 15^compose upright(C)$), sans nécessiter de four !
+===== Protocole Étape par Étape :
+<protocole-étape-par-étape-3>
++ #strong[La Fonte en Douceur au Bain-Marie :] Couper le beurre et le
+  chocolat noir en petits morceaux réguliers. Les placer dans un bol
+  posé sur une casserole d'eau frémissante hors du contact direct de
+  l'eau. Laisser fondre doucement. Mélanger délicatement au fouet pour
+  lier l'émulsion lipides/cacao.
++ #strong[L'Aération Sucre/Œufs :] Dans un second cul-de-poule, fouetter
+  vivement les 3 œufs entiers avec le sucre et la pincée de sel pendant
+  90 secondes jusqu'à ce que le mélange blanchisse légèrement et
+  devienne mousseux.
++ #strong[L'Union des Masses :] Verser le chocolat fondu tiédi
+  ($35 upright("–") 40^compose upright(C)$) sur les œufs battus en
+  remuant au fouet.
++ #strong[La Charpente Minimale :] Tamiser la farine sur la pâte.
+  Mélanger brièvement à la cuillère ou maryse juste assez pour
+  incorporer les poudres sans développer le réseau élastique de gluten.
++ #strong[Le Chemisage et Remplissage :] Beurrer généreusement 4
+  ramequins, saupoudrer de cacao amer. Répartir la pâte aux trois
+  quarts.
++ #strong[Le Seuil Critique de Cuisson :] Enfourner à four préalablement
+  préchauffé à #strong[$180^compose upright(C)$ chaleur statique pendant
+  exactement 11 minutes].
++ #strong[La Vérification Sensorielle :] À la sortie, les bords du
+  gâteau sont bombés et fermes au toucher (coagulés à
+  $> 75^compose upright(C)$), tandis qu'un cercle central de
+  $2 upright(" cm")$ tremble encore doucement comme un liquide
+  emprisonné (température de cœur à $48^compose upright(C)$). Laisser
+  tiédir 2 minutes, passer la pointe d'un couteau sur le pourtour et
+  démouler délicatement sur une assiette. Le premier coup de cuillère
+  libère une lave de chocolat noir fumante.
 
-#divider()
+#point_attention[
+ \#\#\#\# ⚠️ Point d'Attention :
+L'Ennemi Mortel du Chocolat Fondu : Une Goutte d'Eau ! Lorsque vous
+faites fondre du chocolat noir, veillez à ce qu'aucune goutte d'eau ou
+de vapeur ne tombe dans le récipient ! Le chocolat fondu est une
+suspension de particules solides sèches (cacao, sucre) dans une phase
+continue de beurre de cacao liquide. Une seule gouttelette d'eau
+($0\,1 upright(" ml")$) suffit à dissoudre le sucre superficiel, créant
+un sirop collant qui agglomère instantanément toutes les particules : le
+chocolat « masse » en un bloc pâteux, dur et granuleux impossible à
+lisser. Si cela arrive, le seul sauvetage consiste à rajouter beaucoup
+d'eau bouillante ou de crème
+($2 upright(" à ") 3 upright(" cuillères à soupe")$) pour inverser la
+phase et transformer le chocolat en émulsion liquide (ganache).
 
-== 3. LA CONFRONTATION MÉTHODOLOGIQUE : MÉTHODE 1 vs MÉTHODE 2
-<la-confrontation-méthodologique-méthode-1-vs-méthode-2>
-C'est l'un des grands mystères expérimentaux évoqué par les cuisiniers
-curieux :
-
-=== A. Les Deux Voies de Préparation
-<a.-les-deux-voies-de-préparation>
-- #strong[Méthode 1 (Tout-en-un rapide --- 3 minutes) :] Mélanger les
-  œufs entiers avec le sucre, incorporer la farine, puis verser le
-  mélange beurre et chocolat fondus tièdes. Une seule spatule, un seul
-  cul-de-poule, réalisation éclair.
-- #strong[Méthode 2 (Séparation des blancs montés --- 15 minutes) :]
-  Blanchir les jaunes avec le sucre. Ajouter le beurre et chocolat
-  fondus, puis la farine. Monter les blancs d'œufs en neige ferme dans
-  un bol propre. Incorporer délicatement les blancs montés à la maryse
-  en soulevant la masse pour ne pas chasser l'air.
-
-=== B. Ce que Dit la Physico-Chimie Théorique vs Ce qu'on Constate en Bouche
-<b.-ce-que-dit-la-physico-chimie-théorique-vs-ce-quon-constate-en-bouche>
-Sur le papier, la méthode 2 apporte un volume immense de bulles d'air
-piégées dans un réseau d'ovalbumine, censées donner un biscuit beaucoup
-plus gonflé et alvéolé. - #strong[Pourquoi l'homme est incapable de
-faire la différence à l'aveugle une fois le gâteau cuit ?] 1. #emph[La
-charge pondérale du chocolat :] Le chocolat à dessert est composé de
-matière sèche lourde et de beurre de cacao dense ($200 thin upright(g)$)
-ainsi que de beurre ($90 thin upright(g)$). Cette masse lipidique dense
-et pesante écrase mécaniquement une grande partie des fragiles alvéoles
-des blancs en neige lors du mélange. 2. #emph[La coagulation des œufs
-entiers dans la Méthode 1 :] Dans la méthode 1, l'eau des œufs et le
-beurre créent de la vapeur d'eau lors de la cuisson au four. Si le four
-est bien chaud ($180^compose upright(C)$), cette micro-vapeur gonfle la
-pâte de l'intérieur, créant des micro-alvéoles naturelles très
-homogènes. 3. #emph[L'effondrement post-cuisson :] En refroidissant, les
-alvéoles de blancs d'œufs surchargées de gras s'affaissent
-partiellement, rejoignant la densité d'un gâteau tout-en-un. -
-#strong[Verdict pragmatique :] Pour un gâteau au chocolat fondant, la
-méthode 1 est non seulement infiniment plus rapide et économique en
-vaisselle, mais elle donne une texture fondante et une mâche humide
-souvent supérieure à la méthode 2 ! La méthode 2 ne se justifie que pour
-des génoises et biscuits soufflés pauvres en matières grasses.
+]
 
 #divider()
 
-== 4. LA THERMODYNAMIQUE DU FOUR : POURQUOI PRÉCHAUFFER À 180°C ?
-<la-thermodynamique-du-four-pourquoi-préchauffer-à-180c>
-Pourquoi tous les livres recommandent-ils d'enfourner à four préchauffé
-($180^compose upright(C)$) plutôt que de démarrer à four froid ? Quelle
-est la raison physique exacte ?
+== 3. RECETTE FONDATRICE 2 : LA CRÈME ANGLAISE ONCTUEUSE INRATABLE
+<recette-fondatrice-2-la-crème-anglaise-onctueuse-inratable>
+#emph[L'étalonnage millimétrique de la dénaturation de l'œuf à
+$83^compose upright(C)$.]
 
-=== A. Le Désastre du Démarrage à Four Froid
-<a.-le-désastre-du-démarrage-à-four-froid>
-Si vous glissez votre gâteau dans un four éteint et allumez à
-$180^compose upright(C)$ : 1. #strong[La fonte prématurée des graisses
-:] Entre $25^compose upright(C)$ et $40^compose upright(C)$, le beurre
-et le beurre de cacao fondent complètement. La pâte devient extrêmement
-liquide et s'étale au fond du moule. 2. #strong[La fuite des gaz sans
-résistance :] À $60 upright("–") 80^compose upright(C)$, la levure
-commence à libérer son gaz ($upright(C O)_2$), et les bulles d'air se
-dilatent. Mais à cette température tiède, #strong[ni les protéines de
-l'œuf ni l'amidon de la farine n'ont commencé à coaguler]. La pâte est
-une flaque liquide incapable de retenir le gaz : les bulles montent à la
-surface et crèvent dans l'air. Le gaz s'échappe inutilement. 3.
-#strong[Le résultat :] Lorsque le four atteint enfin
-$180^compose upright(C)$, il n'y a plus de gaz expansif disponible. Le
-gâteau cuit tassé, compact, lourd et huileux.
+- #strong[Temps de préparation :] 5 minutes
+- #strong[Temps de cuisson :] 8 minutes
+- #strong[Minimalisme Instrumental :] 1 casserole en inox à fond épais,
+  1 cul-de-poule, 1 cuillère en bois (pour le test du ruban), 1 fouet.
+- #strong[Ratios d'or :]
+  - Lait entier de ferme : $500 upright(" ml")$ (ou $400 upright(" ml")$
+    de lait $+ 100 upright(" ml")$ de crème pour plus de rondeur)
+  - Jaunes d'œufs frais : $4$
+  - Sucre en poudre : $70 upright(" g")$
+  - Gousse de vanille entière fendue en deux et grattée : $1$
 
-=== B. Le Triomphe Physique du Démarrage à Four Chaud
-<b.-le-triomphe-physique-du-démarrage-à-four-chaud>
-Lorsque le moule pénètre directement dans une enceinte saturée à
-$180^compose upright(C)$ : 1. #strong[Le choc thermique superficiel :]
-Le rayonnement intense des parois du four saisit immédiatement la
-périphérie du gâteau. Les protéines de l'œuf coagulent en surface
-($> 80^compose upright(C)$) et l'amidon forme une peau élastique
-étanche. 2. #strong[La surpression interne :] À l'intérieur, l'eau
-liquide résiduelle et le gaz $upright(C O)_2$ montent en pression
-thermodynamique par dilatation thermique ($P V = n R T$). Ne pouvant
-s'échapper à travers la périphérie qui fige, le gaz pousse la pâte vers
-le haut. 3. #strong[La gélification au sommet du dôme :] Juste au moment
-où les bulles atteignent leur volume maximal, le réseau de gluten et
-d'ovalbumine cuit à cœur et se rigidifie définitivement. Le gâteau
-conserve pour toujours son architecture aérienne et bombée !
+===== Protocole Étape par Étape :
+<protocole-étape-par-étape-4>
++ #strong[L'Infusion Aromatique :] Verser le lait dans la casserole avec
+  les grains et la gousse de vanille. Amener à frémissement doux
+  ($85^compose upright(C)$), couper le feu, couvrir et laisser infuser
+  10 minutes.
++ #strong[Le Blanchiment Protecteur :] Dans le cul-de-poule, fouetter
+  énergiquement les jaunes d'œufs avec le sucre. #strong[Ne jamais
+  laisser le sucre sur les jaunes sans fouetter immédiatement] : le
+  sucre hygroscopique absorbe l'eau des jaunes et « cuit » les protéines
+  par déshydratation chimique, formant des grumeaux jaunes durs
+  impossibles à dissoudre ensuite.
++ #strong[Le Tempérage :] Verser un tiers du lait chaud infusé sur les
+  jaunes sucrés en fouettant doucement. Cela réchauffe progressivement
+  les œufs sans les choquer thermiquement. Reverser ensuite la totalité
+  dans la casserole.
++ #strong[La Cuisson à la Nappe :] Remettre la casserole sur #strong[feu
+  très doux]. Remuer continuellement avec la cuillère en bois en
+  décrivant des huit au fond pour balayer toute la surface.
++ #strong[Le Signal Sensoriel Infaillible (La Nappe à
+  $83^compose upright(C)$) :]
+  - À $60^compose upright(C)$, la crème est très liquide et couverte
+    d'une écume blanche de petites bulles.
+  - À $75^compose upright(C)$, l'écume commence à disparaître et le
+    liquide s'épaissit.
+  - À #strong[$82 upright("–") 84^compose upright(C)$], l'écume a
+    totalement disparu : la crème devient brillante et nappe la cuillère
+    en bois. Retirer la cuillère et passer votre index sur le dos de la
+    cuillère : si le trait reste net et propre sans que la crème ne
+    recoule, #strong[la crème est prise ! Couper immédiatement le feu].
++ #strong[Le Choc de Refroidissement :] Transvaser immédiatement la
+  crème dans un saladier froid posé sur un lit de glaçons ou d'eau
+  froide pour stopper instantanément la cuisson par inertie du fond de
+  la casserole.
 
-#divider()
-
-== 5. CE QU'IL FAUT FAIRE ET CE QU'IL FAUT ÉVITER : PÂTISSERIE RATIONNELLE
-<ce-quil-faut-faire-et-ce-quil-faut-éviter-pâtisserie-rationnelle>
-#figure(
-  align(center)[#table(
-  stroke: 0.5pt + rgb("#cbd5e1"),
-  fill: (x, y) => if y == 0 { rgb("#f1f5f9") } else if calc.odd(y) { rgb("#f8fafc") } else { none },
-  inset: 7pt,
-
-    columns: (33.33%, 33.33%, 33.33%),
-    align: (left,left,left,),
-    table.header([Étape], [✓ Ce qu'il faut faire (Principe
-      Vertueux)], [✗ Ce qu'il faut éviter (Défaut de Geste)],),
-    table.hline(),
-    [#strong[Fonte du chocolat]], [Fondre au bain-marie doux
-    ($< 55^compose upright(C)$) ou avec le beurre tiède, en remuant
-    doucement.], [Chauffer le chocolat noir seul à sec ou à feu vif :
-    au-delà de $60^compose upright(C)$, les protéines résiduelles du
-    cacao brûlent et le chocolat « masse » en un bloc pâteux granuleux
-    irréversible.],
-    [#strong[Incorporation de la farine]], [Tamiser la farine et la
-    mélanger #strong[le plus brièvement possible] dès qu'elle est
-    incorporée.], [Fouetter furieusement la pâte pendant 5 minutes après
-    avoir mis la farine : cela développe le réseau de gluten par
-    étirement mécanique et transforme le gâteau en caoutchouc élastique
-    dur.],
-    [#strong[État du matériel pour les blancs]], [Cul-de-poule en inox
-    ou verre parfaitement dégraissé au vinaigre blanc et séché.], [Bol
-    gras ou traces de jaune dans les blancs : les phospholipides et
-    triglycérides s'interposent entre les bulles et empêchent
-    l'ovalbumine de foisonner en mousse.],
-    [#strong[Assaisonnement des blancs]], [Ajouter une goutte de jus de
-    citron ou de vinaigre (acide) pour stabiliser les liaisons
-    disulfures.], [Mettre une pincée de sel dès le début dans les blancs
-    : le sel est hygroscopique et favorise la synérèse (l'eau s'écoule
-    au fond du bol après 10 minutes).],
-    [#strong[Sortie du four]], [Attendre 10 minutes avant de démouler
-    pour laisser l'amidon rétrograder et les graisses se
-    raffermir.], [Démouler un gâteau brûlant dès la sortie du four : la
-    structure interne encore chaude est plastique et s'effondre en
-    bouillie sous son propre poids.],
-  )]
-  , kind: table
-  )
+#cas_limite[
+ \#\#\#\# 🛠️ Le Laboratoire de
+Sauvetage : Si la Crème a Grainé ($> 86^compose upright(C)$) Vous avez
+été distrait une seconde et la crème s'est mise à bouillir : de petits
+grumeaux d'œufs brouillés apparaissent à la surface. Ne jetez rien !
+Versez immédiatement la crème chaude dans une bouteille en verre propre
+fermée et secouez-la vigoureusement pendant 30 secondes, ou plongez un
+mixeur plongeant pendant 15 secondes. L'agitation mécanique violente
+pulvérise les agglomérats de protéines coagulées et redonne à la crème
+sa texture veloutée parfaite. 
+]
 
 #divider()
 
@@ -2685,8 +3264,9 @@ affame les bactéries en séquestrant l'eau libre. »
 
 #divider()
 
-== 1. LE POUVOIR DU SEL ET L'OSMOSE D'ÉQUILIBRE
-<le-pouvoir-du-sel-et-losmose-déquilibre>
+[] <sec-osmose> \#\# 1. LE POUVOIR DU SEL ET L'OSMOSE
+D'ÉQUILIBRE
+
 Le sel de table (chlorure de sodium, $upright(N a C l)$) est le réactif
 chimique le plus puissant de la cuisine quotidienne. Son action est
 régie par la loi physique de l'osmose.
@@ -2745,22 +3325,76 @@ opaque et ferme : la chair passe du gris translucide au blanc nacré
 opaque, et sa texture devient ferme sous la dent. C'est le principe du
 #strong[ceviche].
 
-=== B. Le Danger Sanitaire Absolu du Ceviche
-<b.-le-danger-sanitaire-absolu-du-ceviche>
-C'est une confusion fréquente et potentiellement mortelle : -
-#strong[L'acide n'est PAS de la chaleur :] S'il modifie la texture des
-protéines, l'acide du citron vert #strong[ne tue ni les larves de
-nématodes vivantes (#emph[Anisakis]) ni les bactéries sporulées]. -
-#strong[La règle impérative de sécurité :] Tout poisson sauvage destiné
-au ceviche, au carpaccio ou au sushi doit avoir subi une
-#strong[congélation assainissante préalable à $- 20^compose upright(C)$
-pendant au minimum 24 heures] (ou $- 35^compose upright(C)$ pendant 15
-heures) pour neutraliser les parasites avant marinage.
+#point_attention[
+ \#\#\#\# ⚠️ Point d'Attention
+Sanitaire Majeur : Le Danger Parasitaire du Ceviche C'est une confusion
+fréquente et potentiellement mortelle : - #strong[L'acide n'est PAS de
+la chaleur :] S'il modifie la texture des protéines, l'acide du citron
+vert #strong[ne tue ni les larves de nématodes vivantes
+(#emph[Anisakis]) ni les bactéries sporulées]. - #strong[La règle
+impérative de sécurité :] Tout poisson sauvage destiné au ceviche, au
+carpaccio ou au sushi doit avoir subi une #strong[congélation
+assainissante préalable à $- 20^compose upright(C)$ pendant au minimum
+24 heures] (ou $- 35^compose upright(C)$ pendant 15 heures) pour
+neutraliser les parasites avant marinage (voir
+#link(<chapitre-survie-parasites>)[Chapitre 00]). 
+]
 
 #divider()
 
-== 3. L'ACTIVITÉ DE L'EAU ($a_w$) ET LE POUVOIR DU SUCRE
-<lactivité-de-leau-a_w-et-le-pouvoir-du-sucre>
+== 3. RECETTE FONDATRICE PAS À PAS : LE VRAI CEVICHE DE CABILLAUD MARINÉ AU CITRON VERT
+<recette-fondatrice-pas-à-pas-le-vrai-ceviche-de-cabillaud-mariné-au-citron-vert>
+#emph[La chimie de l'acide à la minute près : pourquoi 15 minutes
+suffisent et pourquoi 2 heures ruinent le poisson.]
+
+- #strong[Temps de préparation :] 10 minutes
+- #strong[Temps de marinage précis :] 15 minutes
+- #strong[Minimalisme Instrumental :] 1 couteau bien affûté, 1 planche
+  en bois, 1 cul-de-poule en verre ou inox.
+- #strong[Ingrédients pour 2 personnes :]
+  - Dos de cabillaud frais (préalablement congelé 24h à
+    $- 20^compose upright(C)$) : $300 upright(" g")$
+  - Citrons verts bien juteux : $3$ (environ $60 upright(" ml")$ de jus
+    pur)
+  - Oignon rouge émincé en lamelles ultra-fines : $1\/2$ petit oignon
+    ($40 upright(" g")$)
+  - Piment rouge frais doux émincé (sans graines) : $1\/2$ piment
+  - Fleur de sel : $3 upright(" g")$
+  - Brins de coriandre fraîche ciselés
+  - Huile d'olive vierge extra : $1 upright(" c. à soupe")$
+
+===== Protocole Étape par Étape :
+<protocole-étape-par-étape-5>
++ #strong[La Découpe Cellulaire :] Essuyer le cabillaud décongelé avec
+  un papier absorbant. Avec votre couteau de chef bien affûté, tailler
+  la chair en dés réguliers de $1\,5 upright(" cm")$. Ne faites pas de
+  dés trop petits (ils deviendraient spongieux) ni trop gros (l'acide ne
+  pénétrerait pas au cœur).
++ #strong[Le Décapage Doux de l'Oignon :] Plonger les lamelles d'oignon
+  rouge dans un bol d'eau glacée pendant 5 minutes. Cela évacue le
+  soufre piquant et garantit un croquant éclatant. Égoutter.
++ #strong[Le Bain d'Acide (« Leche de Tigre ») :] Dans le cul-de-poule,
+  déposer les dés de cabillaud, l'oignon égoutté, le piment et la fleur
+  de sel. Presser le jus des citrons verts frais directement sur le
+  poisson. Mélanger délicatement avec une cuillère.
++ #strong[Le Chronométrage Moléculaire :] Laisser mariner au
+  réfrigérateur pendant #strong[exactement 15 minutes].
+  - #emph[À 5 minutes :] Seul l'extérieur ($1 upright(" mm")$) blanchit.
+  - #emph[À 15 minutes :] Les protéines externes ont coagulé en formant
+    une chair blanc perle nacrée, tandis que le cœur du dé reste tendre,
+    translucide et fondant. C'est l'équilibre parfait.
+  - #emph[Au-delà de 45 minutes :] L'acide hydrolyse complètement les
+    protéines : la chair se déshydrate, expulse toute son eau et devient
+    farineuse, sèche et friable sous la dent.
++ #strong[L'Envoi :] Ajouter la coriandre ciselée et le filet d'huile
+  d'olive (qui apporte une rondeur lipidique adoucissant l'acidité
+  citrique). Déguster immédiatement avec le jus aromatique à la
+  cuillère.
+
+#divider()
+
+== 4. L'ACTIVITÉ DE L'EAU ($a_w$) ET LA RÉVOLUTION D'APPERT
+<lactivité-de-leau-a_w-et-la-révolution-dappert>
 Pourquoi une confiture à $65 thin %$ de sucre se conserve-t-elle des
 années dans un bocal non réfrigéré sans pourrir, alors qu'une compote
 sans sucre fermente en trois jours ?
@@ -2769,98 +3403,39 @@ sans sucre fermente en trois jours ?
 <a.-leau-libre-vs-leau-liée-a_w>
 Les micro-organismes (bactéries, levures, moisissures) ont un besoin
 vital d'eau liquide disponible pour faire fonctionner leur machinerie
-enzymatique. Cette disponibilité est quantifiée par l'#strong[activité
-de l'eau] ($a_w$, #emph[water activity]), variant de $0$ (dessiccation
-absolue) à $1\,0$ (eau pure). - Bactéries pathogènes (#emph[Salmonella],
-#emph[Staphylococcus]) : prolifération bloquée à $a_w < 0\,91$. -
-Moisissures les plus résistantes : croissance bloquée à $a_w < 0\,60$.
+enzymatique. Cette disponibilité est quantifiée par
+l'#link(<glossaire-aw>)[activité de l'eau] ($a_w$, #emph[water
+activity]), variant de $0$ (dessiccation absolue) à $1\,0$ (eau pure). -
+Bactéries pathogènes (#emph[Salmonella], #emph[Staphylococcus]) :
+prolifération bloquée à $a_w < 0\,91$. - Moisissures les plus
+résistantes : croissance bloquée à $a_w < 0\,60$. Le sucre et le sel
+agissent en créant des liaisons hydrogène fortes avec les molécules
+d'eau : l'eau n'est plus « libre », les bactéries meurent littéralement
+de soif au milieu d'un pot de confiture.
 
-=== B. Comment le Sucre Séquestre la Matière
-<b.-comment-le-sucre-séquestre-la-matière>
-Le saccharose ($upright(C)_12 upright(H)_22 upright(O)_11$) possède huit
-groupes hydroxyle ($- upright(O H)$) capables de tisser des liaisons
-hydrogène extrêmement fortes avec les molécules d'eau. - À une
-concentration de $60 upright("–") 65 thin %$, chaque molécule de sucre
-emprisonne plusieurs molécules d'eau autour d'elle (cage d'hydratation).
-\- L'activité de l'eau de la confiture chute sous $a_w = 0\,80$. - Si
-une spore bactérienne tombe dans la confiture, elle ne peut pas absorber
-la moindre molécule d'eau : au contraire, l'eau intracellulaire de la
-bactérie est aspirée vers la confiture par osmose, et la bactérie meurt
-déshydratée !
+#figure(image("figures/patrimoine/nicolas_appert_conserve.jpg", alt: "Nicolas Appert (1749-1841), inventeur français de la conserve hermétique"),
+  caption: [
+    Nicolas Appert (1749-1841), inventeur français de la conserve
+    hermétique
+  ]
+)
 
-#divider()
-
-== 4. LA MORT THERMIQUE : PASTEURISATION vs STÉRILISATION
-<la-mort-thermique-pasteurisation-vs-stérilisation>
-#figure(
-  align(center)[#table(
-  stroke: 0.5pt + rgb("#cbd5e1"),
-  fill: (x, y) => if y == 0 { rgb("#f1f5f9") } else if calc.odd(y) { rgb("#f8fafc") } else { none },
-  inset: 7pt,
-
-    columns: (25%, 25%, 25%, 25%),
-    align: (left,left,left,left,),
-    table.header([Procédé], [Température & Temps], [Destruction
-      Cible], [Type de Conservation],),
-    table.hline(),
-    [#strong[Pasteurisation]], [$63^compose upright(C)$ / 30 min ou
-    $72^compose upright(C)$ / 15 s], [Détruit toutes les formes
-    végétatives bactériennes (#emph[Salmonella], #emph[Listeria],
-    coliformes). Ne détruit pas les spores.], [Nécessite impérativement
-    le maintien de la chaîne du froid ($< 4^compose upright(C)$) pour
-    empêcher la germination des spores. Durée limitée.],
-    [#strong[Stérilisation
-    (Appertisation)]], [#strong[$121^compose upright(C)$ sous pression]
-    \/ 20 à 30 min], [Détruit #strong[$100 thin %$ des micro-organismes
-    et leurs spores], y compris #emph[Clostridium
-    botulinum].], [Conservation à température ambiante pendant des
-    années sans aucun réfrigérateur.],
-  )]
-  , kind: table
-  )
-
-#divider()
-
-== 5. CE QU'IL FAUT FAIRE ET CE QU'IL FAUT ÉVITER : TABLEAU BIPOLAIRE
-<ce-quil-faut-faire-et-ce-quil-faut-éviter-tableau-bipolaire-1>
-#figure(
-  align(center)[#table(
-  stroke: 0.5pt + rgb("#cbd5e1"),
-  fill: (x, y) => if y == 0 { rgb("#f1f5f9") } else if calc.odd(y) { rgb("#f8fafc") } else { none },
-  inset: 7pt,
-
-    columns: (33.33%, 33.33%, 33.33%),
-    align: (left,left,left,),
-    table.header([Opération], [✓ Ce qu'il faut faire (Principe
-      Vertueux)], [✗ Ce qu'il faut éviter (Faute Sanitaire /
-      Culinaire)],),
-    table.hline(),
-    [#strong[Salage des viandes]], [Saler au moins 45 minutes avant ou
-    immédiatement au moment de la poêle.], [Saler la viande 5 à 10
-    minutes avant de la cuire : c'est le pire moment, car l'eau a exsudé
-    en surface et la saumure n'a pas encore eu le temps d'être
-    réabsorbée ! La viande bouillonne dans la poêle.],
-    [#strong[Marinades acides]], [Limiter le temps de marinage du
-    poisson à 15-20 minutes maximum dans le citron.], [Laisser mariner
-    du poisson cru toute une nuit dans du jus de citron : l'acide finit
-    par déshydrater totalement la chair, qui devient sèche, cotonneuse
-    et indigeste.],
-    [#strong[Cuisson des confitures]], [Atteindre
-    $104 upright("–") 105^compose upright(C)$ à l'ébullition (mesure de
-    la concentration en sucres $> 65 thin %$ et activation de la
-    pectine).], [Mettre trop peu de sucre ($< 50 thin %$) sans
-    pasteurisation hermétique : les moisissures et bactéries prolifèrent
-    en surface en quelques semaines.],
-    [#strong[Conserves ménagères de légumes]], [Utiliser impérativement
-    un autocuiseur montant à $120^compose upright(C)$ pour les haricots
-    verts, carottes ou viandes au naturel.], [Faire bouillir des bocaux
-    de légumes non acides dans une marmite classique à
-    $100^compose upright(C)$ : les spores de botulisme survivent à
-    $100^compose upright(C)$ et se développent en toxine mortelle dans
-    le bocal scellé !],
-  )]
-  , kind: table
-  )
+#anecdote_historique[
+ \#\#\#\# 🏛️ L'Anecdote
+Historique : Nicolas Appert et les Soldats de Napoléon En 1795, le
+Directoire français lance un défi assorti d'un prix de 12 000 francs or
+: trouver un moyen de conserver les vivres pour ravitailler les armées
+en campagne sans que le scorbut ou la dysenterie ne déciment les
+troupes. Le confiseur champenois Nicolas Appert relève le défi. Dans son
+atelier de Massy, il a une intuition géniale : enfermer des légumes,
+soupes et viandes dans des bouteilles de verre épais fermées
+hermétiquement par des bouchons de liège ficelés, puis les immerger dans
+des bains-marie d'eau bouillante pendant plusieurs heures. En 1810,
+Napoléon Ier lui remet en personne le prix. Appert publie son procédé
+sans déposer de brevet, par pur amour du bien public. Il avait découvert
+la stérilisation thermique moderne #strong[cinquante ans avant que Louis
+Pasteur n'explique l'existence des micro-organismes] ! 
+]
 
 #divider()
 
@@ -2899,9 +3474,9 @@ $64$ à 14h, et plus de #strong[$2 thin upright("millions")$ à 19h] ! -
 #emph[Par la chaleur ($> 75^compose upright(C)$) :] Les protéines
 bactériennes coagulent, la bactérie meurt. 3. #emph[Par le sel
 ($> 2 upright("–") 3 thin %$) ou le sucre ($> 65 thin %$) :] L'eau
-intracellulaire est aspirée par osmose. 4. #emph[Par l'acide
-($upright(p H) < 4\,2$) :] L'acidité dissout la membrane des bactéries
-d'altération.
+intracellulaire est aspirée par #link(<sec-osmose>)[osmose]. 4.
+#emph[Par l'acide ($upright(p H) < 4\,2$) :] L'acidité dissout la
+membrane des bactéries d'altération.
 
 === B. La Fermentation Noble (Ce qu'il faut chérir)
 <b.-la-fermentation-noble-ce-quil-faut-chérir>
@@ -2917,6 +3492,13 @@ $upright(C O)_2$ (vin, bière, pain au levain). - #strong[Les Moisissures
 Nobles (#emph[Penicillium roqueforti], #emph[Penicillium camemberti]) :]
 Leurs enzymes protéolytiques digèrent les caséines du lait pour donner
 l'onctuosité et les flaveurs d'un bleu ou d'un camembert au lait cru.
+
+#figure(image("figures/science/coagulation_lait_caillage.jpg", alt: "Fabrication traditionnelle du fromage : séparation du caillé et du petit-lait"),
+  caption: [
+    Fabrication traditionnelle du fromage : séparation du caillé et du
+    petit-lait
+  ]
+)
 
 #divider()
 
@@ -2941,134 +3523,157 @@ soudent en un gel blanc compact : c'est le #strong[caillage acide].
 
 === B. Le Protocole Pratique Étape par Étape
 <b.-le-protocole-pratique-étape-par-étape>
-+ #strong[L'Arsenal Minimal :] 1 casserole, 1 cuillère en bois, 1
+- #strong[L'Arsenal Minimal :] 1 casserole, 1 cuillère en bois, 1
   passoire, 1 torchon propre en coton fin (ou étamine).
-+ #strong[Ingrédients :]
-  - $1 thin upright(l i t r e)$ de lait entier de bonne qualité
-    (idéalement lait cru de ferme ou frais microfiltré \; éviter le lait
-    UHT écrémé qui caillé mal en raison de la dénaturation thermique
-    industrielle).
+- #strong[Ingrédients :]
+  - $1 thin upright(l i t r e)$ de lait entier de bonne qualité (lait
+    cru de ferme ou frais microfiltré \; éviter l'UHT écrémé).
   - $3 thin upright("cuillères à soupe")$ de jus de citron frais filtré
     (ou de vinaigre de cidre doux).
   - $1 thin upright("demi-cuillère à café")$ de sel marin fin.
-+ #strong[Le Geste :]
-  - Chauffer le lait dans la casserole jusqu'à
-    #strong[$82 upright("–") 85^compose upright(C)$] (au signal
-    sensoriel : une vapeur dense s'élève, de petites bulles perlent sur
-    le pourtour, mais l'eau ne bout pas encore à gros bouillons).
-  - Couper le feu. Verser le jus de citron d'un coup.
-  - Remuer #strong[une seule fois] très lentement avec la cuillère en
+- #strong[Le Geste :]
+  + Chauffer le lait dans la casserole jusqu'à
+    #strong[$82 upright("–") 85^compose upright(C)$] (vapeur dense,
+    petites bulles sur le pourtour, sans gros bouillons).
+  + Couper le feu. Verser le jus de citron d'un coup.
+  + Remuer #strong[une seule fois] très lentement avec la cuillère en
     bois pour diffuser l'acide, puis #strong[ne plus toucher pendant 10
     minutes].
-  - #emph[Observation :] Le miracle s'accomplit sous vos yeux. De gros
+  + #emph[Observation :] Le miracle s'accomplit sous vos yeux. De gros
     flocons blancs neigeux (le caillé) se détachent d'un liquide
-    translucide jaune-vert (le petit-lait ou lactosérum).
-  - Poser la passoire au-dessus d'un saladier, la tapisser avec le
-    torchon propre, et y verser délicatement le contenu de la casserole.
-+ #strong[La Maîtrise des Textures selon le Temps d'Égouttage :]
-  - #emph[Égouttage 15 minutes :] Vous obtenez une #strong[faisselle]
-    crémeuse, fraîche et fondante. Assaisonner de sel, poivre et
-    ciboulette.
-  - #emph[Égouttage 1 heure en pressant le torchon :] Vous obtenez une
-    #strong[ricotta] dense et soyeuse, idéale pour des farces ou sur du
-    pain grillé.
-  - #emph[Égouttage 2 heures avec un poids lourd dessus :] La masse se
-    compacte en un bloc solide que l'on peut démouler et découper en
-    cubes nets : c'est le #strong[paneer indien], que l'on peut faire
-    dorer à la poêle dans du beurre clarifié sans qu'il ne fonde !
+    jaune-vert translucide (le petit-lait ou lactosérum).
+  + Verser délicatement le contenu de la casserole dans la passoire
+    tapissée du torchon propre posée sur un saladier.
+  + Laisser égoutter 5 minutes pour une faisselle crémeuse, ou 20
+    minutes en pressant légèrement pour un fromage à trancher ferme
+    (type Paneer indien). Saler, poivrer, ajouter des herbes fraîches et
+    déguster.
 
 #divider()
 
-== 3. RECETTE FONDATRICE 2 : LA GLACE ONCTUEUSE SANS SORBETIÈRE PAR LE SEL ($- 18^compose upright(C)$)
-<recette-fondatrice-2-la-glace-onctueuse-sans-sorbetière-par-le-sel--18circmathrmc>
-Comment fabriquer une glace d'une finesse incomparable sans posséder de
-sorbetière électrique ? En utilisant un phénomène physique découvert au
-XVIe siècle : #strong[l'abaissement cryoscopique].
+== 3. RECETTE FONDATRICE 2 : LA GLACE EXPRESS SANS SORBETIÈRE PAR ABAISSEMENT CRYOSCOPIQUE
+<recette-fondatrice-2-la-glace-express-sans-sorbetière-par-abaissement-cryoscopique>
+Comment fabriquer une glace onctueuse en 10 minutes sans aucune machine
+électrique ? Par la thermodynamique de dissolution du sel de cuisine.
 
-=== A. La Physique de l'Abaissement Cryoscopique
-<a.-la-physique-de-labaissement-cryoscopique>
-Un mélange d'eau pure et de glaçons ne peut pas descendre en dessous de
-$0^compose upright(C)$. À cette température, la congélation d'une crème
-anglaise est beaucoup trop lente : l'eau de la crème forme d'immenses
-aiguilles de glace pointues qui crissent sous la dent comme du givre
-désagréable. - #strong[La réaction endothermique sel + glace :]
-Lorsqu'on verse du gros sel marin sur de la glace pilée, le chlorure de
-sodium force les molécules d'eau de la glace à rompre leur réseau
-cristallin pour dissoudre les ions $upright(N a)^(+)$ et
-$upright(C l)^(-)$. - Pour briser ces liaisons solides, la réaction a
-besoin d'énergie : elle #strong[aspire violemment la chaleur de
-l'environnement immédiat]. - En quelques secondes, la température du
-mélange liquide eau-glace-sel s'effondre jusqu'à
-#strong[$- 18^compose upright(C)$ à $- 21^compose upright(C)$], formant
-un bain frigorifique surpuissant sans aucun branchement électrique !
+=== A. Le Principe de Raoult et l'Abaissement Cryoscopique
+<a.-le-principe-de-raoult-et-labaissement-cryoscopique>
+La dissolution du chlorure de sodium ($upright(N a C l)$) dans la glace
+est un phénomène #strong[endothermique puissant] : la rupture du réseau
+cristallin de la glace par les ions sodium et chlorure absorbe de la
+chaleur dans le milieu environnant. - La température d'un mélange de
+glace et d'eau pure ne peut pas descendre sous $0^compose upright(C)$. -
+En revanche, en saturant des glaçons avec du gros sel marin
+($300 thin upright(g)$ de sel pour $1 thin upright(k g)$ de glace
+broyée), le point de fusion de la saumure chute spectaculairement à
+#strong[$- 18^compose upright(C)$ à $- 21^compose upright(C)$] !
 
-=== B. Le Protocole Pratique Étape par Étape
-<b.-le-protocole-pratique-étape-par-étape-1>
-+ #strong[L'Arsenal Minimal :]
-  - 1 grand saladier (en verre ou plastique).
-  - 1 petit cul-de-poule en inox (conducteur thermique parfait).
-  - 1 fouet manuel ou une spatule en bois.
+=== B. Le Protocole Pratique en 10 Minutes
+<b.-le-protocole-pratique-en-10-minutes>
++ #strong[L'Arsenal Minimal :] 1 grand saladier, 1 petit cul-de-poule ou
+  bol en inox (très conducteur), 1 fouet manuel, 1 torchon.
 + #strong[Ingrédients :]
-  - $1 thin upright(k g)$ de glaçons pilés.
-  - $250 thin upright(g)$ de gros sel de cuisine ordinaire.
-  - Votre préparation à glacer (ex. $250 thin upright(m l)$ de crème
-    anglaise à la vanille, ou un coulis de framboises sucré, bien
-    refroidi au préalable au frigo).
+  - Crème anglaise froide (voir
+    #link(<recette-creme-anglaise>)[Chapitre 13]) :
+    $250 thin upright(m l)$
+  - Glaçons : $1 thin upright(k g)$ grossièrement pilés
+  - Gros sel de cuisine : $300 thin upright(g)$
 + #strong[Le Geste :]
-  - Verser les glaçons et le sel dans le grand saladier. Remuer : de
-    l'eau glacée se forme immédiatement à $- 18^compose upright(C)$.
-  - Déposer le petit cul-de-poule inox au centre de ce lit de glace
-    salée.
-  - Verser la crème anglaise froide dans le cul-de-poule.
-  - #strong[L'action mécanique de raclage :] Fouetter énergiquement en
-    continu. Au contact des parois d'inox glacées à
-    $- 18^compose upright(C)$, un film de crème se solidifie en une
-    fraction de seconde. Le geste de fouettage permanent racle ce film
-    et disperse les cristaux microscopiques dans la masse tout en y
-    incorporant de l'air.
-  - En #strong[8 à 10 minutes chrono], la crème s'épaissit, foisonne et
-    prend la consistance onctueuse et ferme d'une glace d'artisan
-    glacier italien. Servir immédiatement !
+  - Remplir le grand saladier des glaçons pilés et les mélanger
+    intimement avec le gros sel. En quelques secondes, le saladier givre
+    à l'extérieur : la température du bain plonge à
+    #strong[$- 18^compose upright(C)$].
+  - Enfoncer le petit cul-de-poule en inox contenant la crème anglaise
+    au centre du bain de glace salée (veiller à ce qu'aucun grain de sel
+    ne tombe dans la crème).
+  - Fouetter énergiquement la crème anglaise à la main en raclant les
+    parois du bol toutes les 30 secondes : le froid extrême congèle
+    instantanément le film de crème sur le métal.
+  - Le battement continu casse les cristaux de glace dès leur naissance,
+    maintenant leur taille en dessous de
+    #strong[$20 thin upright(m i c r o m è t r e s)$] (seuil en dessous
+    duquel la langue ne perçoit pas les grains de glace).
+  - En moins de 10 minutes, vous obtenez une crème glacée dense, soyeuse
+    et onctueuse, prête à déguster immédiatement.
 
 #divider()
 
-== 4. TABLEAU BIPOLAIRE : MAÎTRISE MICROBIENNE ET FERMENTATIONS
-<tableau-bipolaire-maîtrise-microbienne-et-fermentations>
-#figure(
-  align(center)[#table(
-  stroke: 0.5pt + rgb("#cbd5e1"),
-  fill: (x, y) => if y == 0 { rgb("#f1f5f9") } else if calc.odd(y) { rgb("#f8fafc") } else { none },
-  inset: 7pt,
+== 4. RECETTE FONDATRICE 3 : LE PAIN COCOTTE SANS PÉTRISSAGE (#emph[NO-KNEAD BREAD])
+<recette-fondatrice-3-le-pain-cocotte-sans-pétrissage-no-knead-bread>
+#emph[Comment obtenir une miche de boulanger d'exception avec 1 gramme
+de levure et zéro pétrissage mécanique.]
 
-    columns: (33.33%, 33.33%, 33.33%),
-    align: (left,left,left,),
-    table.header([Domaine], [✓ Ce qu'il faut faire (Principe
-      Vertueux)], [✗ Ce qu'il faut absolument éviter (Danger
-      Sanitaire)],),
-    table.hline(),
-    [#strong[Fromage maison]], [Utiliser du lait entier pasteurisé frais
-    ou cru, et consommer le fromage frais dans les 3 à 4 jours au frigo
-    ($4^compose upright(C)$).], [Tenter de faire cailler du lait écrémé
-    ultra-haute température (UHT longue conservation) : la caséine est
-    dégradée, le caillé reste une poussière aqueuse informe.],
-    [#strong[Glace cryoscopique]], [Veiller scrupuleusement à ce
-    qu'aucune projection d'eau salée du grand saladier ne tombe dans
-    votre crème glacée !], [Laisser prendre la glace au congélateur sans
-    jamais la remuer : l'eau se sépare et forme de gros cristaux de
-    glace durs et immangeables.],
-    [#strong[Lacto-fermentation des légumes]], [Peser le sel à
-    #strong[$2 thin %$ du poids total] (légumes + eau) pour sélectionner
-    les bactéries lactiques et éliminer les pathogènes.], [Mettre moins
-    de $1 thin %$ de sel dans un bocal de légumes fermentés : risque de
-    putréfaction par prolifération de moisissures ou toxines.],
-    [#strong[Refroidissement des bouillons]], [Refroidir les grands
-    volumes de bouillon en plongeant la casserole dans un évier d'eau
-    froide avant de mettre au frigo.], [Laisser une grande marmite de
-    bouillon tiède sur le fourneau toute la nuit : incubateur parfait
-    pour #emph[Bacillus cereus] et toxines digestives.],
-  )]
-  , kind: table
-  )
+#figure(image("figures/patrimoine/diderot_encyclopedie_fournil.jpg", alt: "Planche de fournil et boulangerie artisanale (Encyclopédie de Diderot et d’Alembert)"),
+  caption: [
+    Planche de fournil et boulangerie artisanale (Encyclopédie de
+    Diderot et d'Alembert)
+  ]
+)
+
+#anecdote_historique[
+ \#\#\#\# 🏛️ L'Anecdote
+Historique : L'Invention du Pain sans Pétrissage En 2006, le boulanger
+new-yorkais Jim Lahey et le journaliste scientifique du #emph[New York
+Times] Mark Bittman ont stupéfié le monde gastronomique en révélant une
+méthode révolutionnaire : supprimer totalement le pétrissage laborieux
+de la pâte. En laissant une pâte très hydratée ($> 75 %$) reposer
+pendant 18 heures à température ambiante, les enzymes naturelles de la
+farine (protéases) et l'autolyse lente découpent et tissent le réseau de
+gluten de façon plus parfaite qu'un robot professionnel de 1000 watts.
+Cuite dans une cocotte en fonte fermée, la miche développe des alvéoles
+géantes et une croûte de verre qui craque sous les doigts. 
+]
+
+- #strong[Temps de préparation :] 5 minutes de mélange + 18 heures de
+  repos passif
+- #strong[Temps de cuisson :] 30 minutes cocotte fermée + 15 minutes
+  cocotte ouverte à $230^compose upright(C)$
+- #strong[Minimalisme Instrumental :] 1 grand saladier, 1 cuillère ou
+  fourchette, 1 cocotte en fonte avec couvercle.
+- #strong[Ratios d'or :]
+  - Farine de blé type T55 ou T65 : $400 upright(" g")$
+  - Eau tiède ($25^compose upright(C)$) : $320 upright(" ml")$ (soit
+    $80 %$ d'hydratation)
+  - Sel marin fin : $8 upright(" g")$ (1 cuillère à café bombée)
+  - Levure de boulanger déshydratée : seulement
+    #strong[$1 upright(" g")$] (un quart de cuillère à café !)
+
+===== Protocole Étape par Étape :
+<protocole-étape-par-étape-6>
++ #strong[Le Mélange Flash de 60 Secondes :] Dans le saladier, mélanger
+  la farine, le sel et le gramme de levure sèche. Verser l'eau tiède
+  d'un coup. Remuer à la fourchette juste assez pour humidifier toute la
+  farine (environ 45 secondes). Vous obtenez une pâte hirsute, très
+  collante et sans consistance noble. #strong[Ne pétrissez pas !]
++ #strong[Le Sommeil Fermentaire (18 heures) :] Couvrir le saladier d'un
+  film plastique ou d'une assiette. Laisser reposer à température
+  ambiante ($18 upright("–") 21^compose upright(C)$) pendant 18 heures
+  (par exemple du soir pour le lendemain après-midi).
++ #strong[Le Réveil des Gaz :] Après 18 heures, la pâte a doublé de
+  volume : elle est criblée de milliers de bulles gazeuses et exhale une
+  odeur douce de levain et d'alcool fruité.
++ #strong[Le Façonnage Sommaire :] Saupoudrer votre plan de travail de
+  farine. Transférer la pâte collante, replier les quatre coins vers le
+  centre avec les mains farinées pour former une boule sans chasser les
+  gaz. Déposer la boule sur une feuille de papier cuisson farinée,
+  couvrir d'un torchon et laisser détendre 1 heure.
++ #strong[Le Four et la Cocotte en Fonte :] Placer la cocotte en fonte
+  fermée avec son couvercle dans le four. Préchauffer le four à
+  #strong[$230^compose upright(C)$ pendant 30 minutes]. La fonte doit
+  emmagasiner une énergie thermique colossale.
++ #strong[L'Enfournement à l'Étouffée :] Sortir la cocotte brûlante avec
+  des gants. Retirer le couvercle. Soulever la pâte par les coins du
+  papier cuisson et la déposer directement au fond de la fonte brûlante.
+  #strong[Remettre le couvercle immédiatement] et enfourner pour
+  #strong[30 minutes à $230^compose upright(C)$].
++ #strong[La Libération de la Croûte :] Retirer le couvercle : le pain a
+  gonflé spectaculairement grâce à la vapeur piégée dans la cocotte
+  close. Poursuivre la cuisson #strong[15 minutes cocotte ouverte] à
+  $220^compose upright(C)$ pour dorer la croûte.
++ #strong[Le Signal Acoustique :] Déposer le pain sur une grille.
+  #strong[Écoutez-le : le pain « chante »]. En refroidissant, la croûte
+  ultra-fine se rétracte et se fissure en produisant un doux crépitement
+  cristallin.
 
 #divider()
 
@@ -3091,8 +3696,8 @@ en surface.
 <les-seuils-de-dénaturation-des-protéines-animales>
 #figure(
   align(center)[#table(
-  stroke: 0.5pt + rgb("#cbd5e1"),
-  fill: (x, y) => if y == 0 { rgb("#f1f5f9") } else if calc.odd(y) { rgb("#f8fafc") } else { none },
+  stroke: 0.5pt + rgb("#e7e5e4"),
+  fill: (x, y) => if y == 0 { rgb("#fef3c7") } else if calc.odd(y) { rgb("#fffbeb") } else { none },
   inset: 7pt,
 
     columns: (33.33%, 33.33%, 33.33%),
@@ -3136,8 +3741,8 @@ en surface.
 <les-seuils-de-lamidon-et-des-sucres>
 #figure(
   align(center)[#table(
-  stroke: 0.5pt + rgb("#cbd5e1"),
-  fill: (x, y) => if y == 0 { rgb("#f1f5f9") } else if calc.odd(y) { rgb("#f8fafc") } else { none },
+  stroke: 0.5pt + rgb("#e7e5e4"),
+  fill: (x, y) => if y == 0 { rgb("#fef3c7") } else if calc.odd(y) { rgb("#fffbeb") } else { none },
   inset: 7pt,
 
     columns: (33.33%, 33.33%, 33.33%),
@@ -3176,8 +3781,8 @@ en surface.
 <les-points-de-fumée-des-matières-grasses>
 #figure(
   align(center)[#table(
-  stroke: 0.5pt + rgb("#cbd5e1"),
-  fill: (x, y) => if y == 0 { rgb("#f1f5f9") } else if calc.odd(y) { rgb("#f8fafc") } else { none },
+  stroke: 0.5pt + rgb("#e7e5e4"),
+  fill: (x, y) => if y == 0 { rgb("#fef3c7") } else if calc.odd(y) { rgb("#fffbeb") } else { none },
   inset: 7pt,
 
     columns: (25%, 25%, 25%, 25%),
@@ -3213,21 +3818,23 @@ en surface.
 #quote(block: true)[
 Ce glossaire définit avec rigueur les concepts scientifiques
 indispensables à la compréhension transversale des phénomènes
-culinaires.
+culinaires. Chaque terme est lié interactivement aux chapitres et
+recettes de l'ouvrage.
 ]
 
 #divider()
 
 === Activité de l'eau ($a_w$)
-<activité-de-leau-a_w>
+<glossaire-aw>
 Rapport entre la pression de vapeur d'eau d'un aliment et la pression de
 vapeur de l'eau pure à même température. Elle quantifie la proportion
 d'eau « libre » disponible pour le métabolisme bactérien. Elle
 s'échelonne de 0 à 1,0. Sous $a_w = 0\,85$, la plupart des bactéries
-pathogènes cessent de se multiplier.
+pathogènes cessent de se multiplier. Utilisée pour la conservation par
+salage, confisage au sucre et séchage.
 
 === Actine & Myosine
-<actine-myosine>
+<glossaire-actomyosine>
 Les deux principales protéines myofibrillaires contractiles du muscle
 animal. La myosine dénature dès $45 upright("–") 50^compose upright(C)$,
 provoquant un léger resserrement favorable à la tendreté. L'actine
@@ -3236,56 +3843,83 @@ entraînant une contraction violente des fibres qui essore l'eau
 cellulaire hors du muscle, rendant la viande sèche si la cuisson se
 prolonge.
 
+=== Acides Aminés Essentiels
+<glossaire-acides-amines>
+Neuf acides aminés indispensables (leucine, isoleucine, valine, lysine,
+méthionine, thréonine, phénylalanine, tryptophane, histidine) que
+l'organisme humain adulte ne peut synthétiser et qui doivent
+impérativement être apportés par l'alimentation. Leur complémentarité
+régit l'équilibre entre céréales (déficitaires en lysine) et
+légumineuses (déficitaires en méthionine).
+
 === Alkylpyrazines
-<alkylpyrazines>
+<glossaire-alkylpyrazines>
 Composés organiques hétérocycliques azotés responsables des notes
 aromatiques de terre, de torréfaction et de pomme de terre cuite. Chez
 la pomme de terre, plus de $85 thin %$ des alkylpyrazines sont
 localisées dans les deux premiers millimètres situés directement sous la
-peau.
+peau (principe de Blumenthal).
 
 === Amidon (Amylose & Amylopectine)
-<amidon-amylose-amylopectine>
+<glossaire-amidon>
 Polyoside de réserve des végétaux, constitué de molécules de glucose
 agencées sous deux formes : l'amylose (chaîne linéaire hautement
 gélifiante) et l'amylopectine (chaîne ramifiée). Sous l'effet de l'eau
 chaude ($> 60^compose upright(C)$), les grains d'amidon subissent la
-gélatinisation, absorbant l'eau jusqu'à éclater.
+gélatinisation, absorbant l'eau jusqu'à éclater et libérer leur gel
+liant.
 
 === Appertisation
-<appertisation>
+<glossaire-appertisation>
 Procédé physique de stérilisation thermique inventé en 1810 par Nicolas
 Appert, consistant à enfermer des aliments dans des récipients
 hermétiques étanches (verre ou fer-blanc) et à les chauffer au-delà de
 $100^compose upright(C)$ (idéalement $121^compose upright(C)$ sous
 pression) afin de détruire tous les micro-organismes et leurs spores.
 
+=== Aquafaba
+<glossaire-aquafaba>
+Eau visqueuse de cuisson des graines de légumineuses (notamment pois
+chiches). Riche en protéines albuminoïdes solubles et en saponines
+tensioactives, elle possède la propriété physico-chimique unique de
+pouvoir être battue en neige ferme comme des blancs d'œufs, servant de
+base aux mousses et meringues végétales.
+
 === Botulisme (#emph[Clostridium botulinum])
-<botulisme-clostridium-botulinum>
+<glossaire-botulisme>
 Intoxication alimentaire gravissime causée par la toxine botulique,
-neurotoxine mortelle sécrétée par la bactérie anaérobie
+neurotoxine mortelle sécrétée par la bactérie anaérobie tellurique
 #emph[Clostridium botulinum]. Les spores résistent à l'ébullition simple
 à $100^compose upright(C)$. Leur destruction exige une cuisson sous
 pression à $121^compose upright(C)$ pendant 20 minutes ou un milieu
 acide à $upright(p H) < 4\,6$.
 
 === Capacité thermique volumique
-<capacité-thermique-volumique>
+<glossaire-capacite-thermique>
 Quantité d'énergie calorifique nécessaire pour élever d'un kelvin la
 température d'un mètre cube d'un matériau. La fonte brute et l'eau
 possèdent de fortes capacités thermiques, ce qui leur permet d'agir
 comme des tampons thermiques puissants contre les chutes brutales de
-température.
+température lors de la saisie des viandes.
+
+=== Caséine
+<glossaire-caseine>
+Famille de phosphoprotéines constituant la fraction majeure des
+protéines du lait ($80 %$). Regroupées en micelles sphériques
+stabilisées par la kappa-caséine hydrophile chargée négativement. La
+déstabilisation de cette barrière électrique par acidification
+($upright(p H) approx 4\,6$) ou voie enzymatique (présure) provoque la
+coagulation et la formation du caillé fromager.
 
 === Coalescence
-<coalescence>
+<glossaire-coalescence>
 Phénomène spontané au cours duquel deux ou plusieurs gouttelettes d'une
 phase dispersée (ex. gouttelettes d'huile dans l'eau) fusionnent pour
 former une goutte plus grosse, conduisant à la rupture de l'émulsion
 (sauce « tranchée »). Les tensioactifs s'opposent à la coalescence.
 
 === Collagène & Gélatine
-<collagène-gélatine>
+<glossaire-collagene>
 Protéine fibreuse en triple hélice formant le tissu conjonctif qui
 enveloppe les faisceaux musculaires des viandes de travail (paleron,
 jarret, queue). Insolubilisé à froid, le collagène s'hydrolyse lentement
@@ -3294,60 +3928,96 @@ gélatine soluble, conférant aux sauces et bouillons mijotés leur
 onctuosité et leur velouté.
 
 === Conduction, Convection, Rayonnement
-<conduction-convection-rayonnement>
-Les trois modes de transfert de l'énergie thermique : - #emph[Conduction
-:] Transfert d'atome à atome dans les solides (contact direct
-poêle-aliment, loi de Fourier). - #emph[Convection :] Transfert par
-déplacement macroscopique d'un fluide caloporteur (eau, huile, air
+<glossaire-transfert-thermique>
+Les trois modes fondamentaux de transfert de l'énergie thermique : -
+#emph[Conduction :] Transfert d'atome à atome dans les solides (contact
+direct poêle-aliment, loi de Fourier). - #emph[Convection :] Transfert
+par déplacement macroscopique d'un fluide caloporteur (eau, huile, air
 turbulent, loi de Newton). - #emph[Rayonnement :] Transfert par ondes
 électromagnétiques infrarouges émises par les corps chauds sans support
 matériel (braises, salamandre, loi de Stefan-Boltzmann).
 
 === Dénaturation
-<dénaturation>
+<glossaire-denaturation>
 Modification irréversible de la structure spatiale (tertiaire et
 quaternaire) d'une protéine sous l'action de la chaleur, de l'acidité
 (ions $upright(H)^(+)$), du sel ou de contraintes mécaniques, sans
 rupture des liaisons peptidiques principales. Les chaînes dépliées
 s'agrègent ensuite pour former un gel solide (coagulation).
 
+=== Effet Leidenfrost
+<glossaire-leidenfrost>
+Phénomène physique où un liquide en contact avec un métal chauffé bien
+au-delà de son point d'ébullition (vers $190^compose upright(C)$ pour
+l'eau sur l'acier) produit une fine couche de vapeur isolante sur
+laquelle la goutte glisse sans toucher le métal. Utilisé comme test
+empirique pour déterminer le moment idéal de saisie dans une poêle inox
+sans accrocher.
+
 === Émulsion
-<émulsion>
+<glossaire-emulsion>
 Mélange métastable de deux liquides non miscibles (généralement de l'eau
 et des lipides), où l'un est dispersé sous forme de gouttelettes
 microscopiques (phase dispersée) au sein de l'autre (phase continue),
-stabilisé par des molécules amphiphiles (tensioactifs).
+stabilisé par des molécules amphiphiles (tensioactifs). Exemples :
+mayonnaise, vinaigrette, sauce hollandaise, lait.
+
+=== Gélatinisation de l'Amidon
+<glossaire-gelatinisation>
+Gonflement irréversible et désagrégation des grains d'amidon insolubles
+dans l'eau chaude ($60 upright("–") 75^compose upright(C)$). Les chaînes
+d'amylose s'échappent et s'enchevêtrent dans la phase aqueuse,
+transformant le liquide en un gel visqueux et transparent.
 
 === Lécithine (Phosphatidylcholine)
-<lécithine-phosphatidylcholine>
+<glossaire-lecithine>
 Mélange naturel de phospholipides présent abondamment dans le jaune
 d'œuf et le soja. Molécule amphiphile par excellence : elle possède une
 tête polaire hydrophile orientée vers l'eau et deux queues d'acides gras
 lipophiles plongeant dans l'huile, formant une barrière protectrice
-contre la coalescence des gouttelettes.
+contre la coalescence des gouttelettes d'émulsion.
 
 === Lysozyme
-<lysozyme>
-Enzyme présente dans le blanc d'œuf et les larmes, capable d'hydrolyser
-les liaisons peptidoglycanes des parois cellulaires de nombreuses
-bactéries, agissant comme un conservateur biologique naturel.
+<glossaire-lysozyme>
+Enzyme antibactérienne présente dans le blanc d'œuf et les larmes,
+capable d'hydrolyser les liaisons peptidoglycanes des parois cellulaires
+bactériennes, agissant comme un agent de conservation biologique
+naturel.
 
 === Osmose
-<osmose>
+<glossaire-osmose>
 Diffusion d'un solvant (l'eau) à travers une membrane semi-perméable,
 depuis une solution diluée (hypotonique) vers une solution plus
 concentrée (hypertonique), jusqu'à équilibre des concentrations.
-Fondement du salage, du saumurage et de la conservation au sucre.
+Fondement du salage, du saumurage, du ceviche et de la conservation au
+sucre.
 
-=== Point de fumée
-<point-de-fumée>
+=== Pectine
+<glossaire-pectine>
+Polyoside acide structural présent dans les parois cellulaires des
+fruits (pommes, coings, agrumes). En milieu acide
+($upright(p H) approx 3\,2$) et en présence d'une forte concentration en
+sucre ($> 60 %$), les chaînes de pectine s'associent pour former le gel
+caractéristique des confitures et gelées.
+
+=== Point de Fumée
+<glossaire-point-fumee>
 Température à partir de laquelle une matière grasse se décompose
 thermiquement, émettant une fumée bleuâtre âcre due à la formation
 d'acroléine volatile irritante et cancérigène. Il marque la limite
-d'utilisation sécuritaire d'une huile de cuisson.
+d'utilisation sécuritaire d'une huile de cuisson
+($210^compose upright(C)$ pour l'huile d'arachide,
+$175^compose upright(C)$ pour le beurre non clarifié).
+
+=== Protéine
+<glossaire-proteine>
+Macromolécule biologique constituée d'une ou plusieurs chaînes d'acides
+aminés reliés par des liaisons peptidiques. Responsable de la charpente
+musculaire des viandes, de la coagulation des œufs, de l'élasticité du
+pain (gluten) et du foisonnement des émulsions.
 
 === Réaction de Maillard
-<réaction-de-maillard>
+<glossaire-maillard>
 Cascade complexe de réactions chimiques non enzymatiques se produisant
 entre le groupe carbonyle d'un sucre réducteur (glucose, fructose) et le
 groupe amine d'un acide aminé libre, à partir de
@@ -3356,20 +4026,21 @@ composés aromatiques volatils (pyrazines, furanes) et des polymères
 bruns (mélanoïdines), créant la saveur et la couleur des croûtes de
 viandes et de pains.
 
-=== Rétrogradation
-<rétrogradation>
-Processus spontané au cours duquel les chaînes d'amidon gélatinisées (en
-particulier l'amylose) se réalignent et reforment des zones cristallines
-insolubles lors du refroidissement. Responsable du rassissement du pain
-et de la formation d'amidon résistant bénéfique pour le microbiote
-colique.
+=== This (Hervé)
+<glossaire-this>
+Physico-chimiste français à l'INRAE, cofondateur en 1988 avec Nicholas
+Kurti de la gastronomie moléculaire et physique. Auteur de nombreuses
+découvertes majeures sur la rationalisation des tours de main culinaires
+et la déconstruction des dictons empiriques en cuisine.
 
-=== Synérèse
-<synérèse>
-Expulsion spontanée d'une phase liquide hors d'un gel gélifié ou
-coagulé, résultant d'une contraction excessive du réseau tridimensionnel
-de macromolécules (ex. œuf surcuit qui rend de l'eau, gelée qui exsude,
-fromage qui dégage du petit-lait).
+=== Umami
+<glossaire-umami>
+Cinquième saveur fondamentale identifiée en 1908 par le chimiste
+japonais Kikunae Ikeda, déclenchée par la liaison de l'acide glutamique
+(glutamate) ou de ribonucléotides (inosinate, guanylate) aux récepteurs
+gustatifs de la langue. Confère une sensation de plénitude, de rondeur
+et de sapidité savoureuse typique des viandes rôties, fromages affinés,
+champignons séchés, bouillons et sauce soja.
 
 #divider()
 
@@ -3497,3 +4168,13 @@ Brillat-Savarin, #emph[Physiologie du goût] (1825)
   descendent au fond ?] (2020). \ Ouvrages pédagogiques clairs
   démystifiant les erreurs courantes en cuisine ménagère avec humour et
   rigueur graphique.
+
+
+// Ancres de navigation transversale automatiques
+[] <sec-leidenfrost>
+[] <sec-coagulation>
+[] <chapitre-survie-parasites>
+[] <recette-creme-anglaise>
+[] <sec-emulsion>
+[] <chapitre-oeuf-repos>
+[] <sec-proteines-chair>

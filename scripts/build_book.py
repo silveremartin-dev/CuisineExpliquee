@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 """
-Master Book Builder pour LA CUISINE EXPLIQUÉE
+Master Culinary Book Builder pour LA CUISINE EXPLIQUÉE
 - Auteurs : Silvère-Martin Michiellot & Antigravity
-- Typst Engine : Typst 0.15.1
-- Pandoc Engine : Pandoc 3.12.1
-- Sommaire interactif cliquable depth 2
-- En-têtes vivants d'orientation et pieds de page
-- Charte chromatique fonctionnelle (vert positif, rouge négatif, ambre cas limites)
+- Moteur Typographique : Typst v0.15.1
+- Moteur de conversion : Pandoc 3.12.1
+- Direction Artistique : Haute Gastronomie Éditoriale (Terracotta, Bordeaux, Or Chaud)
+- En-têtes vivants et Pieds de page sur toutes les pages de lecture
+- Signalétique didactique complète (Anecdotes, Trucs de Chef, Points d'attention, Fiches Recettes)
 """
 
 import os
@@ -14,6 +14,12 @@ import glob
 import re
 import subprocess
 import sys
+
+# Forcer l'encodage UTF-8 pour Windows PowerShell / CMD
+if sys.stdout and hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8')
+if sys.stderr and hasattr(sys.stderr, 'reconfigure'):
+    sys.stderr.reconfigure(encoding='utf-8')
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEXTES_DIR = os.path.join(BASE_DIR, "textes")
@@ -28,7 +34,7 @@ FINAL_TYP = os.path.join(BASE_DIR, "LA_CUISINE_EXPLIQUEE.typ")
 FINAL_PDF = os.path.join(BASE_DIR, "LA_CUISINE_EXPLIQUEE.pdf")
 
 # ==============================================================================
-# PREAMBLE TYPST
+# PRÉAMBULE TYPST HAUTE GASTRONOMIE
 # ==============================================================================
 
 PREAMBLE = """
@@ -37,12 +43,24 @@ PREAMBLE = """
   author: "Silvère-Martin Michiellot & Antigravity"
 )
 
+// Palette Chromatique Haute Gastronomie
+#let c-bordeaux = rgb("#78350f")
+#let c-terracotta = rgb("#9a3412")
+#let c-gold = rgb("#b45309")
+#let c-dark = rgb("#1c1917")
+#let c-slate = rgb("#44403c")
+#let c-cream = rgb("#fffbeb")
+#let c-green = rgb("#15803d")
+#let c-red = rgb("#b91c1c")
+#let c-amber = rgb("#d97706")
+#let c-teal = rgb("#0f766e")
+
 #set page(
   paper: "a4",
-  margin: (top: 2.4cm, bottom: 2.4cm, left: 2.2cm, right: 2.2cm),
+  margin: (top: 2.5cm, bottom: 2.5cm, left: 2.2cm, right: 2.2cm),
   header: context {
     let page-num = counter(page).get().first()
-    if page-num > 4 [
+    if page-num > 3 [
       #let cur-h2 = query(heading.where(level: 2)).filter(h => h.location().page() == here().position().page)
       #let ch-title = if cur-h2.len() > 0 {
         cur-h2.first().body
@@ -60,23 +78,23 @@ PREAMBLE = """
       #grid(
         columns: (1fr, 1fr),
         align: (left, right),
-        text(size: 8pt, fill: rgb("#64748b"), font: "Liberation Sans", style: "italic")[#vol-title],
-        text(size: 8pt, fill: rgb("#0f172a"), font: "Liberation Sans", weight: "bold")[#ch-title]
+        text(size: 8pt, fill: c-terracotta, font: "Liberation Sans", style: "italic", weight: "medium")[#vol-title],
+        text(size: 8pt, fill: c-dark, font: "Liberation Sans", weight: "bold")[#ch-title]
       )
       #v(-4pt)
-      #line(length: 100%, stroke: 0.5pt + rgb("#cbd5e1"))
+      #line(length: 100%, stroke: 0.5pt + c-gold)
     ]
   },
   footer: context {
     let page-num = counter(page).get().first()
     if page-num > 2 [
-      #line(length: 100%, stroke: 0.5pt + rgb("#cbd5e1"))
+      #line(length: 100%, stroke: 0.5pt + rgb("#fcd34d"))
       #v(3pt)
       #grid(
         columns: (1fr, 1fr),
         align: (left, right),
-        text(size: 8pt, fill: rgb("#94a3b8"), font: "Liberation Sans", style: "italic")[LA CUISINE EXPLIQUÉE — Principes Premiers],
-        text(size: 8.5pt, fill: rgb("#0f172a"), font: "Liberation Sans", weight: "bold")[Page #page-num]
+        text(size: 8pt, fill: c-terracotta, font: "Liberation Sans", style: "italic")[LA CUISINE EXPLIQUÉE — Principes Premiers],
+        text(size: 8.5pt, fill: c-dark, font: "Liberation Sans", weight: "bold")[Page #page-num]
       )
     ]
   }
@@ -88,58 +106,100 @@ PREAMBLE = """
   lang: "fr"
 )
 
-#set par(justify: true, leading: 0.72em, first-line-indent: 0pt, spacing: 0.85em)
+#set par(justify: true, leading: 0.74em, first-line-indent: 0pt, spacing: 0.88em)
 
 #show heading: set text(hyphenate: false)
 #show heading: set block(sticky: true)
 #show figure: set block(breakable: false)
 
-// Palette Sémantique
-#let c-red = rgb("#dc2626")
-#let c-blue = rgb("#2563eb")
-#let c-green = rgb("#16a34a")
-#let c-amber = rgb("#d97706")
-#let c-dark = rgb("#0f172a")
-#let c-slate = rgb("#334155")
+// Style des Hyperliens Interactifs
+#show link: it => text(fill: c-terracotta, weight: "medium")[#underline(stroke: 0.5pt + c-gold, offset: 1.5pt)[#it]]
 
-// Design des Niveaux de Titres
+// Niveaux de Titres Éditoriaux
 #show heading.where(level: 1): it => {
   pagebreak()
-  v(1.2cm)
+  v(1.0cm)
   align(center)[
     #block(
-      fill: rgb("#f8fafc"),
-      stroke: 2.5pt + c-blue,
-      inset: 22pt,
-      radius: 8pt,
+      fill: rgb("#fffbeb"),
+      stroke: (top: 2.5pt + c-gold, bottom: 2.5pt + c-gold),
+      inset: (y: 20pt, x: 16pt),
       width: 100%
     )[
-      #text(size: 17pt, weight: "bold", fill: c-dark, font: "Liberation Sans")[#it.body]
+      #text(size: 16pt, weight: "bold", fill: c-bordeaux, font: "Liberation Sans", tracking: 0.5pt)[#it.body]
     ]
   ]
-  v(1.0cm)
+  v(0.8cm)
 }
 
 #show heading.where(level: 2): it => {
   v(0.6cm)
-  text(size: 14pt, weight: "bold", fill: c-blue, font: "Liberation Sans")[#it.body]
+  text(size: 13.5pt, weight: "bold", fill: c-bordeaux, font: "Liberation Sans")[#it.body]
   v(-3pt)
-  line(length: 100%, stroke: 1.5pt + c-blue)
-  v(0.3cm)
+  line(length: 100%, stroke: 1.2pt + c-gold)
+  v(0.25cm)
 }
 
-#show heading.where(level: 3): it => block(spacing: 1.2em)[
-  #v(0.2cm)
-  #text(size: 11.5pt, weight: "bold", fill: c-dark, font: "Liberation Sans")[#it.body]
-  #v(0.1cm)
+#show heading.where(level: 3): it => block(spacing: 1.1em)[
+  #v(0.15cm)
+  #text(size: 11pt, weight: "bold", fill: c-dark, font: "Liberation Sans")[#it.body]
+  #v(0.05cm)
 ]
 
-#show heading.where(level: 4): it => block(spacing: 0.9em)[
-  #text(size: 10.5pt, weight: "bold", fill: c-slate, font: "Liberation Sans")[#it.body]
+#show heading.where(level: 4): it => block(spacing: 0.8em)[
+  #text(size: 10pt, weight: "bold", fill: c-slate, font: "Liberation Sans")[#it.body]
 ]
 
-// Boîtes Didactiques Spécialisées
-#let positif(title: [✓ Ce qu'il faut faire], body) = block(
+// Signalétique Didactique et Boîtes Culinaire
+#let anecdote_historique(body) = block(
+  fill: rgb("#fffbeb"),
+  stroke: (left: 4pt + c-gold),
+  inset: (left: 14pt, right: 12pt, top: 10pt, bottom: 10pt),
+  radius: (right: 6pt),
+  width: 100%,
+  spacing: 1.2em,
+  breakable: false
+)[
+  #text(size: 9.5pt)[#body]
+]
+
+#let truc_de_chef(body) = block(
+  fill: rgb("#fefce8"),
+  stroke: (left: 4pt + rgb("#ca8a04")),
+  inset: (left: 14pt, right: 12pt, top: 10pt, bottom: 10pt),
+  radius: (right: 6pt),
+  width: 100%,
+  spacing: 1.2em,
+  breakable: false
+)[
+  #text(size: 9.5pt)[#body]
+]
+
+#let point_attention(body) = block(
+  fill: rgb("#fff1f2"),
+  stroke: (left: 4pt + rgb("#e11d48")),
+  inset: (left: 14pt, right: 12pt, top: 10pt, bottom: 10pt),
+  radius: (right: 6pt),
+  width: 100%,
+  spacing: 1.2em,
+  breakable: false
+)[
+  #text(size: 9.5pt)[#body]
+]
+
+#let oeil_molecule(body) = block(
+  fill: rgb("#f0fdfa"),
+  stroke: (left: 4pt + c-teal),
+  inset: (left: 14pt, right: 12pt, top: 10pt, bottom: 10pt),
+  radius: (right: 6pt),
+  width: 100%,
+  spacing: 1.2em,
+  breakable: false
+)[
+  #text(size: 9.5pt)[#body]
+]
+
+#let positif(body) = block(
   fill: rgb("#f0fdf4"),
   stroke: (left: 4pt + c-green),
   inset: (left: 14pt, right: 12pt, top: 10pt, bottom: 10pt),
@@ -148,14 +208,10 @@ PREAMBLE = """
   spacing: 1.2em,
   breakable: false
 )[
-  #block(sticky: true, width: 100%)[
-    #text(size: 10.5pt, weight: "bold", fill: c-green, font: "Liberation Sans")[#title]
-    #v(3pt)
-  ]
-  #body
+  #text(size: 9.5pt)[#body]
 ]
 
-#let negatif(title: [✗ Ce qu'il faut absolument éviter], body) = block(
+#let negatif(body) = block(
   fill: rgb("#fef2f2"),
   stroke: (left: 4pt + c-red),
   inset: (left: 14pt, right: 12pt, top: 10pt, bottom: 10pt),
@@ -164,14 +220,10 @@ PREAMBLE = """
   spacing: 1.2em,
   breakable: false
 )[
-  #block(sticky: true, width: 100%)[
-    #text(size: 10.5pt, weight: "bold", fill: c-red, font: "Liberation Sans")[#title]
-    #v(3pt)
-  ]
-  #body
+  #text(size: 9.5pt)[#body]
 ]
 
-#let cas_limite(title: [🛠️ Le Laboratoire des Cas Limites], body) = block(
+#let cas_limite(body) = block(
   fill: rgb("#fffbeb"),
   stroke: (left: 4pt + c-amber),
   inset: (left: 14pt, right: 12pt, top: 10pt, bottom: 10pt),
@@ -180,33 +232,27 @@ PREAMBLE = """
   spacing: 1.2em,
   breakable: false
 )[
-  #block(sticky: true, width: 100%)[
-    #text(size: 10.5pt, weight: "bold", fill: c-amber, font: "Liberation Sans")[#title]
-    #v(3pt)
-  ]
-  #body
+  #text(size: 9.5pt)[#body]
 ]
 
 #let quote_box(body) = block(
-  fill: rgb("#f8fafc"),
-  stroke: (left: 3pt + rgb("#94a3b8")),
+  fill: rgb("#fafaf9"),
+  stroke: (left: 3pt + rgb("#a8a29e")),
   inset: (left: 12pt, y: 7pt),
   radius: (right: 4pt),
   width: 100%,
   spacing: 1.1em,
   breakable: false
 )[
-  #text(style: "italic", fill: rgb("#334155"))[#body]
+  #text(style: "italic", fill: rgb("#292524"))[#body]
 ]
 
 // ==========================================
-// 1. COUVERTURE OFFICIELLE DE RÉFÉRENCE
+// 1. COUVERTURE GASTRONOMIQUE DE RÉFÉRENCE
 // ==========================================
-#set page(header: none, footer: none)
-
 #align(center + horizon)[
   #block(
-    fill: rgb("#0f172a"),
+    fill: rgb("#1c1917"),
     inset: 32pt,
     radius: 14pt,
     width: 95%
@@ -220,24 +266,24 @@ PREAMBLE = """
       LA CUISINE EXPLIQUÉE
     ]
     #v(0.3cm)
-    #text(size: 14pt, weight: "bold", fill: rgb("#93c5fd"), font: "Liberation Sans")[
+    #text(size: 14pt, weight: "bold", fill: rgb("#fed7aa"), font: "Liberation Sans")[
       Principes Premiers, Maîtrise de la Matière et Minimalisme Instrumental
     ]
     #v(0.8cm)
     #line(length: 60%, stroke: 2pt + rgb("#f59e0b"))
     #v(0.8cm)
-    #text(size: 10.5pt, fill: rgb("#e2e8f0"), font: "Liberation Serif", style: "italic")[
-      Traité de physique, de chimie et de gestuelle appliquée aux fourneaux.\\
+    #text(size: 10.5pt, fill: rgb("#e7e5e4"), font: "Liberation Serif", style: "italic")[
+      Traité d'anthropologie, de biologie, de physique et de gestuelle appliquée aux fourneaux.\\
       De l'étincelle paléolithique à la thermodynamique des émulsions et des chairs.\\
       Apprendre à dompter le feu et les ingrédients avec cinq ustensiles fondamentaux.
     ]
     #v(1.2cm)
     #block(
-      fill: rgb("#1e293b"),
+      fill: rgb("#292524"),
       inset: (x: 18pt, y: 10pt),
       radius: 6pt
     )[
-      #text(size: 9.5pt, weight: "bold", fill: rgb("#38bdf8"), font: "Liberation Sans")[
+      #text(size: 9.5pt, weight: "bold", fill: rgb("#fcd34d"), font: "Liberation Sans")[
         ÉDITION INTÉGRALE DE RÉFÉRENCE — 2026
       ]
     ]
@@ -248,27 +294,28 @@ PREAMBLE = """
 #pagebreak()
 
 // ==========================================
-// 2. PAGE DE COPYRIGHT ET MENTIONS
+// 2. PAGE DE MENTIONS LÉGALES & LICENCE LIBRE
 // ==========================================
 #align(bottom)[
   #block(
-    fill: rgb("#f8fafc"),
-    stroke: 0.5pt + rgb("#cbd5e1"),
+    fill: rgb("#fafaf9"),
+    stroke: 0.5pt + rgb("#e7e5e4"),
     inset: 16pt,
     radius: 6pt,
     width: 100%
   )[
-    #text(size: 8.5pt, fill: rgb("#475569"))[
+    #text(size: 8.5pt, fill: rgb("#57534e"))[
       *LA CUISINE EXPLIQUÉE — Principes Premiers, Maîtrise de la Matière et Minimalisme Instrumental*\\
       © 2026 Silvère-Martin Michiellot & Antigravity.\\
       \\
-      *Licence Libre :* Cet ouvrage est mis à disposition sous licence *Creative Commons Attribution - Partage dans les Mêmes Conditions 4.0 International (CC BY-SA 4.0)*.\\
-      Vous êtes libre de partager, copier, distribuer et adapter ce traité sous réserve de citer expressément les auteurs et de diffuser l'œuvre dérivée sous une licence identique.\\
+      *Licence Libre :* Cet ouvrage est mis à disposition selon les termes de la licence *Creative Commons Attribution - Partage dans les Mêmes Conditions 4.0 International (CC BY-SA 4.0)*.\\
+      Vous êtes libre de copier, partager, distribuer et adapter ce traité sous réserve de créditer expressément les auteurs d'origine et de diffuser vos modifications sous une licence identique.\\
       \\
       *Conception didactique et scientifique :* Silvère-Martin Michiellot & Antigravity.\\
       *Illustrations vectorielles :* Antigravity Visual Engine (norme SVG Byrne-Culinaire).\\
-      *Typographie et composition :* Moteur Typst 0.15.1.\\
-      *Dépôt officiel du code source et des figures :* Dépôt GitHub public.
+      *Gravures patrimoniales & photographies scientifiques :* Wikimedia Commons (Domaine Public & Creative Commons).\\
+      *Composition typographique :* Typst v0.15.1, polices Liberation Serif & Sans.\\
+      *Dépôt de code et figures sources :* Dépôt GitHub public sous licence CC BY-SA 4.0.
     ]
   ]
 ]
@@ -276,25 +323,25 @@ PREAMBLE = """
 #pagebreak()
 
 // ==========================================
-// 3. CITATION INAUGURALE
+// 3. CITATION INAUGURALE & DÉDICACE
 // ==========================================
 #align(center)[
   #v(4.0cm)
   #block(
-    fill: rgb("#f8fafc"),
+    fill: rgb("#fffbeb"),
     inset: 24pt,
     radius: 8pt,
-    stroke: 1pt + rgb("#e2e8f0"),
+    stroke: 1pt + rgb("#fde68a"),
     width: 85%
   )[
-    #text(size: 11pt, style: "italic", fill: rgb("#334155"))[
+    #text(size: 11pt, style: "italic", fill: rgb("#451a03"))[
       « La cuisine est le plus ancien des arts ; car Adam naquit à jeun, et le nouveau-né, à peine venu au monde, pousse des cris que le sein de sa nourrice peut seul apaiser. C'est de tous les arts celui qui nous rend les services les plus continus et les plus nécessaires à la vie. »
     ]
     #v(8pt)
-    #align(right)[#text(size: 9.5pt, weight: "bold", fill: c-blue)[— Jean Anthelme Brillat-Savarin, *Physiologie du goût* (1825)]]
+    #align(right)[#text(size: 9.5pt, weight: "bold", fill: c-terracotta)[— Jean Anthelme Brillat-Savarin, *Physiologie du goût* (1825)]]
   ]
   #v(2.5cm)
-  #text(size: 10.5pt, style: "italic", fill: rgb("#475569"))[
+  #text(size: 10.5pt, style: "italic", fill: rgb("#78716c"))[
     À toutes celles et ceux qui désirent s'affranchir de la tyrannie des recettes aveugles,\\
     et retrouver la liberté souveraine de comprendre ce qu'ils font.
   ]
@@ -303,7 +350,7 @@ PREAMBLE = """
 #pagebreak()
 
 // ==========================================
-// 4. SOMMAIRE DÉTAILLÉ
+// 4. SOMMAIRE RAISONNÉ
 // ==========================================
 #outline(
   title: [Sommaire Général et Table Raisonnée],
@@ -326,13 +373,62 @@ def postprocess_typst(typ_content):
         typ_content
     )
     
-    # Améliorer les tableaux
+    # Améliorer les tableaux avec style gastronomique
     typ_content = typ_content.replace(
         '#table(',
-        '#table(\n  stroke: 0.5pt + rgb("#cbd5e1"),\n  fill: (x, y) => if y == 0 { rgb("#f1f5f9") } else if calc.odd(y) { rgb("#f8fafc") } else { none },\n  inset: 7pt,\n'
+        '#table(\n  stroke: 0.5pt + rgb("#e7e5e4"),\n  fill: (x, y) => if y == 0 { rgb("#fef3c7") } else if calc.odd(y) { rgb("#fffbeb") } else { none },\n  inset: 7pt,\n'
     )
     
+    # Reconvertir les balises d'appel didactiques
+    def replace_callout_start(match):
+        tag = match.group(1).replace(r'\_', '_').replace('\\', '')
+        return f"#{tag}[\n"
+        
+    typ_content = re.sub(r'CALLOUTSTART([a-zA-Z0-9_\\]+)CALLOUTSTART', replace_callout_start, typ_content)
+    typ_content = typ_content.replace('CALLOUTEND', '\n]')
+    
+    # Reconvertir les ancres HTML en labels Typst [] <mon-label>
+    typ_content = re.sub(r'LABELSTART([a-zA-Z0-9_\-]+)LABELSTART', r'[] <\1>', typ_content)
+    
+    # Résolution résiliente des liens hypertexte Typst :
+    targeted_links = set(re.findall(r'#link\(<([a-zA-Z0-9_\-]+)>\)', typ_content))
+    defined_labels = set(re.findall(r'(?<!#link\()<([a-zA-Z0-9_\-]+)>', typ_content))
+    missing_labels = targeted_links - defined_labels
+    if missing_labels:
+        print(f"  [AUTO-RÉSOLUTION] {len(missing_labels)} étiquettes cibles créées automatiquement : {missing_labels}")
+        anchor_block = "\n\n// Ancres de navigation transversale automatiques\n"
+        for label in missing_labels:
+            anchor_block += f"[] <{label}>\n"
+        typ_content += anchor_block
+    
     return PREAMBLE + "\n\n" + typ_content
+
+# ==============================================================================
+# PREPROCESS MARKDOWN
+# ==============================================================================
+
+def preprocess_markdown(md_text):
+    # Convertir <a id="..."></a> en marqueur protégé pour Pandoc
+    md_text = re.sub(r'<a\s+id=[\'"]([a-zA-Z0-9_\-]+)[\'"]\s*>\s*</a>', r'LABELSTART\1LABELSTART', md_text)
+    
+    # Convertir ::: nom_boite en marqueur préservé par Pandoc
+    lines = md_text.split('\n')
+    out_lines = []
+    in_callout = False
+    
+    for line in lines:
+        m_start = re.match(r'^:::\s*([a-zA-Z0-9_]+)\s*$', line.strip())
+        if m_start:
+            tag = m_start.group(1)
+            out_lines.append(f"CALLOUTSTART{tag}CALLOUTSTART")
+            in_callout = True
+        elif line.strip() == ':::' and in_callout:
+            out_lines.append("CALLOUTEND")
+            in_callout = False
+        else:
+            out_lines.append(line)
+            
+    return '\n'.join(out_lines)
 
 # ==============================================================================
 # RUN BUILD
@@ -358,6 +454,7 @@ def run_build():
         ]),
         ("LIVRE III — LE MONDE VÉGÉTAL ET LA DÉCONSTRUCTION DE LA RECETTE", [
             "textes/Livre_III/Chapitre_11_Le_Monde_Vegetal_et_le_Secret_de_Blumenthal.md",
+            "textes/Livre_III/Chapitre_12_Proteines_Vegetales_Legumineuses_et_Veganisme_Rationnel.md",
             "textes/Livre_III/Chapitre_13_La_Matrice_du_Gateau_et_le_Chocolat.md"
         ]),
         ("LIVRE V — LA PRÉSERVATION ET LES TRANSFORMATIONS SANS FEU", [
@@ -379,8 +476,9 @@ def run_build():
             if os.path.exists(full_path):
                 print(f"  -> Lecture : {f}")
                 with open(full_path, "r", encoding="utf-8") as file:
-                    content = file.read()
-                all_md.append(content)
+                    raw_content = file.read()
+                cleaned_content = preprocess_markdown(raw_content)
+                all_md.append(cleaned_content)
             else:
                 print(f"  [ATTENTION] Fichier introuvable : {full_path}")
 

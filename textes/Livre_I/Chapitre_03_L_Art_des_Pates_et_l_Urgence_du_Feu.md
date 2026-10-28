@@ -16,27 +16,55 @@ Pour $100\,\mathrm{g}$ de pâtes sèches :
 - **$10\,\mathrm{g}$ de sel marin** (environ une cuillère à café bombée).
 - Pourquoi autant d'eau ?
   1. *L'Inertie thermique :* Lorsque vous plongez $100\,\mathrm{g}$ de pâtes froides ($20^\circ\mathrm{C}$), l'eau se refroidit. Si vous n'avez qu'un fond d'eau, l'ébullition s'arrête pendant deux minutes : les pâtes baignent dans une eau tiède, la surface se délite et l'amidon forme une colle pâteuse. Avec un litre d'eau bouillante, la chute thermique est négligeable et l'ébullition reprend en quelques secondes.
-  2. *L'Espace physique et la dilution :* L'amidon de surface doit se gélatiniser sans saturer le milieu environnant, sous peine de voir les pâtes coller en un bloc compact.
+  2. *L'Espace physique et la dilution :* L'amidon de surface doit se [gélatiniser](#glossaire-gelatinisation) sans saturer le milieu environnant, sous peine de voir les pâtes coller en un bloc compact.
 - Pourquoi saler l'eau dès le départ ?
   Le sel n'est pas là pour faire bouillir l'eau plus vite (l'élévation ébullioscopique de $10\,\mathrm{g}$ de sel par litre n'augmente le point d'ébullition que de $0{,}17^\circ\mathrm{C}$, ce qui est négligeable). Le sel est là pour **pénétrer la structure protéique de gluten et assaisonner la pâte à cœur** pendant son hydratation. Une pâte cuite dans une eau non salée reste fade à jamais, même noyée de sel en surface après coup.
 
-### B. Thermodynamique de l'Énergie : Le Couvercle et le Feu
-- **Pour amener l'eau à ébullition :** Couvrir impérativement la casserole. Le couvercle piège les molécules d'eau évaporées et recycle la chaleur latente de condensation ($2257\,\mathrm{kJ/kg}$), divisant par deux le temps de chauffe et la facture énergétique.
-- **Une fois les pâtes jetées :** Couvrir 20 secondes pour relancer l'ébullition vive, **puis retirer le couvercle**. Pourquoi ? L'amidon moussant forme une écume de bulles d'air stabilisées par les protéines solubilisées qui déborde inévitablement si la casserole reste close.
-- **La cuisson au torchon (ou à feu éteint) :**
-  Une fois l'ébullition relancée avec les pâtes, vous pouvez couper le gaz ou la plaque, couvrir hermétiquement et poser un torchon plié sur le couvercle. L'eau stockée reste au-dessus de $85^\circ\mathrm{C}$ pendant 10 minutes : l'amidon gélatinise parfaitement sans consommer un seul watt d'énergie supplémentaire !
+![Distribution de pain et céréales dans la Rome antique (Fresque de Pompéi)](figures/patrimoine/pompei_fresque_boulangerie.jpg)
 
-### C. Ce qu'il faut faire et ce qu'il faut absolument éviter
-
-| Geste | ✓ Ce qu'il faut faire (Principe Vertueux) | ✗ Ce qu'il faut éviter (Désastre Culinaire) |
-| :--- | :--- | :--- |
-| **L'huile dans l'eau** | **Rien d'autre que de l'eau et du sel.** L'huile est inutile dans l'eau de cuisson. | Verser un filet d'huile dans la casserole : l'huile flotte en surface, ne touche pas les pâtes dans l'eau, puis se dépose sur elles à l'égouttage, formant un film hydrophobe qui empêchera toute sauce de s'accrocher ! |
-| **L'égouttage** | Égoutter rapidement en laissant les pâtes légèrement luisantes et humides. | Rincer les pâtes sous le robinet d'eau froide : cela élimine l'amidon de surface qui sert de colle naturelle pour la sauce et refroidit la pâte. |
-| **Le secret de la sauce** | **Conserver toujours 1 louche d'eau de cuisson** trouble et riche en amylose. Verser les pâtes directement dans la poêle contenant la sauce chaude, ajouter l'eau de cuisson et faire sauter vivement : l'amidon dissous forme une émulsion soyeuse et brillante. | Servir des pâtes blanches nues dans une assiette et poser un tas de sauce froide par-dessus : la sauce glisse au fond sans jamais enrober la pâte. |
+::: anecdote_historique
+#### 🏛️ L'Anecdote Historique : Les Charbonniers des Apennins et la Carbonara
+Contrairement à la légende contemporaine qui y voit l'intervention de la crème fraîche américaine en 1944, l'archétype des pâtes *alla carbonara* plonge ses racines dans les montagnes des Apennins italiens. Les *carbonari* (les bûcherons fabriquant le charbon de bois en forêt) emportaient avec eux des vivres de survie imputrescibles : des pâtes sèches de blé dur, du fromage de brebis affiné très salé (*Pecorino Romano*), du poivre noir et de la bajoue de porc séchée (*Guanciale*). L'œuf frais d'appoint apportait la liaison veloutée ultime. Le poivre noir concassé jeté en abondance sur l'assiette évoquait les poussières de charbon qui saupoudraient les mains des travailleurs.
+:::
 
 ---
 
-## 2. CAS LIMITE CRITIQUE : L'INCENDIE D'HUILE DANS LA POÊLE
+## 2. RECETTE FONDATRICE PAS À PAS : LES VRAIES SPAGHETTI ALLA CARBONARA
+
+*L'émulsion d'or jaune : zéro crème fraîche, zéro matière grasse ajoutée, pure physique de l'œuf et de l'amidon.*
+
+- **Temps de préparation :** 10 minutes
+- **Temps de cuisson :** 10 minutes
+- **Minimalisme Instrumental :** 1 casserole haute (eau des pâtes), 1 poêle en inox ou acier, 1 bol, 1 fourchette ou petit fouet, 1 pince à pâtes.
+- **Ingrédients pour 2 personnes :**
+  - Spaghetti de blé dur tréfilés au bronze (marque de rugosité de surface) : $200\text{ g}$
+  - Guanciale (bajoue de porc affinée au poivre) ou à défaut lard paysan fumé : $120\text{ g}$
+  - Jaunes d'œufs frais : $3$ gros jaunes + $1$ œuf entier
+  - Pecorino Romano AOP râpé très finement (comme de la neige) : $50\text{ g}$ (ou moitié Pecorino / moitié Parmigiano Reggiano)
+  - Poivre noir en grains : $1\text{ c. à café}$ entière concassée grossièrement
+  - Gros sel pour l'eau : $15\text{ g}$ (modérer car le Pecorino et le Guanciale sont déjà très salés)
+
+##### Protocole Étape par Étape :
+1. **La Fonte Douce du Guanciale :** Tailler le guanciale en lardons réguliers de $6\text{ mm}$ d'épaisseur. Les déposer dans la poêle froide **sans ajouter la moindre goutte d'huile ni de beurre**. Allumer à feu moyen-doux. Le gras fond lentement, libérant un liquide doré translucide tout en croustillant à l'extérieur ($6\text{ à }8\text{ minutes}$). Retirer les morceaux croustillants et les réserver sur une assiette ; laisser le gras fondu chaud dans la poêle.
+2. **Le Bol d'Or (Le « Pastello ») :** Dans un bol, fouetter énergiquement les jaunes d'œufs avec l'œuf entier, le pecorino râpé fin et les deux tiers du poivre noir concassé. Vous devez obtenir une pâte épaisse, crémeuse et jaune d'or.
+3. **La Cuisson Vivante des Spaghetti :** Plonger les spaghetti dans l'eau bouillante salée. Cuire $2\text{ minutes de moins}$ que le temps indiqué sur le paquet (les pâtes doivent être franchement *al dente*).
+4. **Le Mariage à la Poêle :** À l'aide de la pince, transférer les pâtes égouttées directement dans la poêle contenant le gras de guanciale chaud. Ajouter **une demi-louche d'eau de cuisson riche en amidon**. Faire sauter vivement sur feu moyen pendant 1 minute : l'eau et le gras de porc s'émulsionnent autour de la rugosité du blé.
+5. **L'Étape Capitale : L'Émulsion Hors du Feu !** **Couper complètement le feu et retirer la poêle de la plaque chaude**. Attendre 30 secondes que la température descende sous **$65^\circ\mathrm{C}$**. Verser alors le mélange œufs/fromage sur les pâtes. Remuer à toute vitesse avec la pince en décrivant des huit.
+6. **Le Miracle Sensoriel :** Sous vos yeux, la chaleur résiduelle fait épaissir le jaune d'œuf sans jamais le figer en grumeaux : l'amidon de l'eau et la [lécithine](#glossaire-lecithine) du jaune forment une sauce brillante, soyeuse, nappante comme une crème liquide veloutée. Ajouter les morceaux de guanciale croustillants et le reste de poivre noir. Servir dans des assiettes chaudes immédiatement.
+
+::: point_attention
+#### ⚠️ Point d'Attention Majeur : Pourquoi la Crème Fraîche est une Hérésie Physique
+Ajouter de la crème fraîche liquide dans une carbonara est un aveu d'échec technique. Les cuisiniers amateurs pressés y ajoutent de la crème parce qu'ils ne maîtrisent pas la température de coagulation de l'œuf ($68^\circ\mathrm{C}$) : sur un feu trop vif, les œufs cuisent en omelette brouillée aux pâtes. La crème sert de tampon aqueux pour masquer ce défaut, mais elle étouffe les arômes de noisette du guanciale et alourdit la digestion. La véritable liaison est une **émulsion aqueuse d'amidon et de phospholipides d'œuf**.
+:::
+
+::: cas_limite
+#### 🛠️ Le Laboratoire de Sauvetage : Si la Sauce Commence à Grainer
+Si vous avez versé les œufs dans une poêle trop chaude et que vous apercevez les premières parcelles blanches de grumeaux de protéine coagulée : **n'attendez pas une seconde !** Jetez immédiatement **deux cuillères à soupe d'eau de cuisson tiède ou d'eau froide** dans la poêle et fouettez violemment hors du feu. L'abaissement thermique immédiat sous les $64^\circ\mathrm{C}$ stoppe la polymérisation de l'ovotransferrine et ré-émulsionne la phase liquide.
+:::
+
+---
+
+## 3. CAS LIMITE CRITIQUE : L'INCENDIE D'HUILE DANS LA POÊLE
 
 Vous avez oublié une poêle d'huile sur un feu vif. La température franchit le point de fumée ($200\text{--}250^\circ\mathrm{C}$), puis le point d'auto-inflammation ($360^\circ\mathrm{C}$) : **l'huile s'embrase violemment**.
 
@@ -48,52 +76,5 @@ Dans la panique, le premier réflexe humain est d'amener la poêle sous l'évier
 
 ### Le Seul Protocole Vital de Survie (en 3 gestes)
 1. **Couper le feu immédiatement** (éteindre le brûleur à gaz ou disjoncter la plaque).
-2. **Priver le feu de comburant :** Prendre un couvercle métallique de taille adaptée ou une plaque de cuisson métallique, et la faire glisser horizontalement sur la poêle pour étouffer l'apport d'oxygène ($\mathrm{O}_2$). À défaut de couvercle rigide, utiliser un torchon épais, trempé dans l'eau mais **très puissamment et totalement essoré** (pour qu'aucune goutte d'eau libre ne tombe dans l'huile).
-3. **Ne plus toucher :** Laisser la poêle couverte en place pendant au moins 15 minutes sans soulever le couvercle. Si vous retirez le couvercle trop tôt alors que l'huile est encore à $360^\circ\mathrm{C}$, le nouvel afflux d'air provoquera une ré-inflammation spontanée instantanée.
-
----
-
-## 3. L'ORGANISATION DU FRIGO ET LA GESTION DES DATES DE CONSERVATION
-
-Le réfrigérateur n'est pas un placard froid homogène : c'est un volume soumis à un gradient de convection d'air lourd.
-
-```
-                   THERMOMÉTRIE DU RÉFRIGÉRATEUR RATIONNEL
- ┌─────────────────────────────────────────────────────────────────┐
- │ ZONE SUPÉRIEURE (4°C à 6°C)                                     │
- │ Aliments cuits, restes en boîtes hermétiques, soupes, laitages  │
- ├─────────────────────────────────────────────────────────────────┤
- │ ZONE CENTRALE (3°C à 4°C)                                       │
- │ Œufs (dans leur boîte), fromages affinés, sauces ouvertes       │
- ├─────────────────────────────────────────────────────────────────┤
- │ ZONE LA PLUS FROIDE (0°C à 2°C) - Juste au-dessus du bac        │
- │ Viandes crues, volailles, poissons crus, charcuteries fraîches  │
- ├─────────────────────────────────────────────────────────────────┤
- │ BAC À LÉGUMES (6°C à 10°C)                                      │
- │ Légumes frais, herbes dans un linge humide, fruits fragiles     │
- ├─────────────────────────────────────────────────────────────────┤
- │ PORTE (6°C à 8°C - Zone des ouvertures thermiques)              │
- │ Boissons, eau, condiments stables, beurre fermé, moutardes      │
- └─────────────────────────────────────────────────────────────────┘
-```
-
-### Dates Réelles vs Dates Notées : DLC contre DDM
-Il est capital de distinguer scientifiquement les deux mentions légales :
-- **DLC (Date Limite de Consommation — « À consommer jusqu'au... ») :**
-  Concerne les denrées microbiologiquement très périssables (viande hachée crue, poisson frais, charcuterie fraîche, produits de traiteur). 
-  - *Règle :* Ne pas consommer au-delà. Risque d'intoxication sévère par *Listeria monocytogenes*, *Salmonella* ou *Escherichia coli*. Une viande hachée périmée ne se « rattrape » pas par la cuisson, car certaines toxines bactériennes résistent à la chaleur.
-- **DDM (Date de Durabilité Minimale — « À consommer de préférence avant le... ») :**
-  Anciennement DLUO. Concerne les conserves, produits secs (pâtes, riz, lentilles, farine), le chocolat, le café, le miel, les huiles végétales et les épices.
-  - *Règle :* Une fois la date dépassée, le produit ne présente **aucun danger bactériologique**. Il peut simplement perdre un peu de son arôme, changer de texture ou blanchir (chocolat). Jeter des conserves ou des pâtes à la DDM dépassée est un pur gaspillage sans justification sanitaire.
-
----
-
-## 4. CUISINER EN CONDITIONS EXTRÊMES (MANQUE DE TEMPS, D'OUTILS OU D'INGRÉDIENTS)
-
-Que faire lorsque les ressources font défaut ?
-1. **Manque de temps (repas en 7 minutes) :**
-   Miser sur les petites géométries. Une escalope de poulet ou un filet de poisson découpé en lamelles fines de 5 mm cuit par conduction vive en 90 secondes dans une poêle brûlante.
-2. **Manque d'ustensiles (pas de four, pas de balance) :**
-   Le volume d'une cuillère à soupe rase équivaut à environ $15\,\mathrm{ml}$ ($15\,\mathrm{g}$ d'eau/lait, $10\,\mathrm{g}$ de farine, $12\,\mathrm{g}$ de sucre, $14\,\mathrm{g}$ d'huile). Une poêle unique à couvercle remplit à la fois le rôle de poêle, de casserole à pâtes, de cuiseur vapeur et de mini-four.
-3. **Manque d'ingrédients :**
-   Appliquer la décomposition matricielle (voir Chapitre 13) pour substituer immédiatement les équivalents fonctionnels (eau + fécule pour remplacer un œuf liant, yaourt ou compote pour remplacer un corps gras, etc.).
+2. **Étouffer la flamme :** Glisser horizontalement un couvercle métallique ajusté sur la poêle (ou une plaque de cuisson métallique, ou un torchon humide soigneusement essoré). L'oxygène est consommé en quelques secondes et la flamme s'éteint faute de comburant.
+3. **Ne plus toucher pendant 20 minutes :** Ne soulevez surtout pas le couvercle pour vérifier ! L'huile reste à plus de $300^\circ\mathrm{C}$ : le simple réafflux d'air frais provoquerait une ré-inflammation explosive instantanée (*backdraft*).
