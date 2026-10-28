@@ -144,3 +144,41 @@ Le livre doit rompre radicalement avec l'esthétique aride d'un article de reche
 5. **Les Prodiges Thermiques Inattendus (La Physique Ludique) :**
    - *L'Omelette Norvégienne (Baked Alaska) :* La démonstration éclatante du pouvoir isolant de l'air emprisonné dans les microbulles d'une meringue foisonnée ($\lambda \approx 0{,}026\ \mathrm{W/(m\cdot K)}$), permettant d'enfourner une crème glacée à $-18^\circ\mathrm{C}$ dans un four à $240^\circ\mathrm{C}$ sans la faire fondre.
    - *L'Omelette Inversée d'Hervé This :* L'inversion conceptuelle de la gastronomie moléculaire enfermant un cœur liquide brûlant dans une coque givrée.
+
+
+---
+
+## 9. CHIMIE DE L'EAU, MATÉRIAUX SAINS, NEUROPHYSIOLOGIE ET AUTONOMIE LIQUIDE
+
+1. **La Chimie de l'Eau Domestique :**
+   - *Dureté calcique et pectines :* Les ions $\mathrm{Ca}^{2+}$ et $\mathrm{Mg}^{2+}$ verrouillent les cloisons pectocellulosiques des légumineuses en formant des ponts de pectate de calcium insolubles. Le bicarbonate de sodium ($\mathrm{NaHCO}_3$) permet l'échange ionique ($\mathrm{Na}^+$ chassant $\mathrm{Ca}^{2+}$) et l'alcalinisation douce ($pH \approx 8{,}0\text{--}8{,}5$), divisant le temps de cuisson par deux.
+   - *Extraction du thé et du café :* Les eaux trop dures précipitent les théarubigines en un film terne et écrasent l'acidité noble du café ; les eaux trop douces surextraient l'amertume astringente. Zone idéale d'extraction : $50\text{ à }120\ \mathrm{mg/L}$ d'extrait sec.
+   - *Le chlore municipal :* Biocide volatil destructeur des levures et lactobacilles. Dégazage passif impératif de 2 heures en carafe ouverte à température ambiante.
+2. **Toxicologie des Contenants et Économie Circulaire :**
+   - *Le péril du PTFE (Téflon) :* Pyrolyse au-delà de $260^\circ\mathrm{C}$ libérant des fumées de PFAS toxiques (« fièvre des polymères »). Proscription des revêtements ébréchés.
+   - *L'aluminium nu :* Migration des ions $\mathrm{Al}^{3+}$ en milieu acide ($pH < 4{,}5$). Exclusivité de l'aluminium aux cœurs sandwich encapsulés dans l'inox $18/10$.
+   - *Perturbateurs endocriniens du micro-ondes :* Migration massive des phtalates et bisphénols des films et barquettes plastiques au contact des graisses chaudes. Récipients en verre borosilicaté obligatoires.
+   - *Restauration d'une fonte de brocante pour moins de 15 € :* Décapage chimique doux au vinaigre blanc ($50/50$, $60\text{--}90\ \mathrm{min}$), séchage thermique immédiat et culottage par polymérisation d'huile de lin alimentaire à $230\text{--}240^\circ\mathrm{C}$ au four (3 passages).
+3. **La Neurophysiologie des Récepteurs Trigéminaux (Le Faux Goût) :**
+   - *Capsaïcine et canal TRPV1 :* Activation des thermorécepteurs de la brûlure ($>43^\circ\mathrm{C}$). Lipophilie stricte : apaisement exclusif par la caséine des laitages, inefficacité totale de l'eau.
+   - *Menthol et canal TRPM8 :* Illusion polaire rafraîchissante par abaissement du seuil thermique ($<26^\circ\mathrm{C}$).
+   - *Astringence des tanins :* Précipitation colloïdale mécanique des mucines et protéines salivaires lubrifiantes par les polyphénols (perte du pouvoir de glissement salivaire).
+   - *Pétillement du $\mathrm{CO}_2$ :* Stimulation nociceptive par conversion enzymatique en protons via l'anhydrase carbonique 4 (CA-IV).
+   - *Pipérine et isothiocyanates :* Activation du récepteur TRPA1 des irritants volatils (moutarde, wasabi).
+4. **La Juste Température Passive (L'Alternative de la Glacière) :**
+   - *Abolition du gradient thermique :* Égalisation complète cœur-surface sans anneau de surcuisson.
+   - *Pasteurisation multiparamétrique :* Équivalence léthale logarithmique (courbe $D$ et $z$ : $60^\circ\mathrm{C}$ pendant 12 minutes $= 70^\circ\mathrm{C}$ pendant 2 minutes).
+   - *Méthode zéro gadget de la glacière :* Isolation en polyuréthane ($\Delta T \approx -1^\circ\mathrm{C/h}$), sous-vide par poussée d'Archimède dans un sac étanche zippé, et saisie flash finale de 45 secondes en poêle de fonte.
+5. **Les Arbres de Sauvetage d'Urgence en 30 Secondes :**
+   - *Mayonnaise tranchée :* 1 cuillère d'eau tiède/moutarde + 1 cuillère de sauce pour recréer l'émulsion primaire, puis incorporation du reste au filet.
+   - *Crème anglaise grainée :* Choc thermique (glaçon/lait froid) + agitation mécanique au shaker/mixeur plongeant pendant 30 secondes.
+   - *Caramel massé :* 2 cuillères d'eau chaude + 3 gouttes de citron (inversion du saccharose) et refonte douce sans remuer.
+   - *Ganache dissociée :* 1 cuillère de lait chaud frictionnée en cercles concentriques au centre du bol.
+   - *Plat trop salé :* Neutralisation sensorielle combinant acide doux et corps gras froid.
+   - *Fond brûlé :* Transvasement immédiat des 80% supérieurs sans jamais racler le fond carbonisé.
+   - *Sauce trop acide :* Demi-cuillère de bicarbonate de sodium ($\mathrm{NaHCO}_3$) pour neutralisation acido-basique effervescente sans excès de sucre.
+6. **L'Autonomie Liquide : Les Boissons Fermentées Vivantes Domestiques :**
+   - *Kéfir d'eau et de lait :* Symbiose levures/lactobacilles, prise de mousse sous pression et prédigestion totale du lactose.
+   - *Kombucha :* Consortium SCOBY aérobie transformant le thé sucré en acides acétique, gluconique et glucuronique.
+   - *Ginger bug sauvage :* Capture des levures de la peau du rhizome pour gazéification spontanée de boissons épicées.
+   - *Vinaigre artisanal :* Oxydation acétique ménagée de fonds de vin ou cidre par la mère acétique (*Acetobacter aceti*) à l'obscurité.

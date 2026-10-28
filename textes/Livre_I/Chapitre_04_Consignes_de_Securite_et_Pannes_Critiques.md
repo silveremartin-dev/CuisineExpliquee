@@ -148,7 +148,28 @@ Abandonner un poulet ou du poisson surgelé sur le plan de travail de la cuisine
 
 ---
 
-## 6. L'ARBRE D'ACTION D'URGENCE ET NUMÉROS VITAUX
+## 6. SAUVETAGES CULINAIRES D'URGENCE EN 30 SECONDES : LA TROUSSE DE SECOURS DE LA CASSEROLE
+
+Lorsqu'un plat menace de tourner à la catastrophe sous vos yeux, la panique pousse souvent au mauvais geste (jeter la préparation ou aggraver l'erreur). Voici les protocoles de sauvetage immédiat fondés sur la physico-chimie :
+
+::: truc_de_chef
+#### 🚨 « Vous Venez de Rater ? Faites CECI en 30 Secondes » : Le Guide Anti-Panique
+1. **Le Plat Trop Salé :**
+   - *L'erreur fréquente :* Y plonger une pomme de terre crue (mythe inefficace qui n'absorbe pas sélectivement le sel).
+   - *Le geste salvateur en 30 secondes :* Si le plat ne peut être dilué par un ajout d'eau ou de liquide neutre, **neutraliser neurologiquement le sel** en ajoutant simultanément un trait d'acide (jus de citron frais ou vinaigre de cidre) et une cuillère de matière grasse douce (beurre froid non salé, crème fraîche ou purée d'amande). L'acide et les lipides saturent les papilles et court-circuitent les canaux sodiques $\mathrm{ENaC}$ sans altérer la texture.
+2. **Le Fond de Casserole qui Attache et Brûle :**
+   - *L'erreur fatale :* Gratter le fond avec la cuillère en bois pour « décoller les sucs » (vous diffusez instantanément l'amertume carbonisée et les goudrons pyrolytiques dans tout le plat).
+   - *Le geste salvateur en 30 secondes :* Couper le feu immédiatement. **Sans racler le fond**, transvaser délicatement les $80\%$ supérieurs sains du ragoût ou de la sauce dans une nouvelle casserole propre. Mettre immédiatement la casserole brûlée sous l'eau froide pour bloquer la diffusion des composés âcres. Votre plat est intact.
+3. **La Sauce ou la Tomate Trop Acide :**
+   - *L'erreur fréquente :* Verser des cuillères de sucre en poudre (le sucre masque le goût sur la langue mais ne modifie pas le pH abrasif dans l'estomac).
+   - *Le geste salvateur en 30 secondes :* Jeter **une demi-cuillère à café de bicarbonate de sodium ($\mathrm{NaHCO}_3$)**. Une effervescence blanche se produit : les ions bicarbonate neutralisent immédiatement l'excès d'acide citrique en libérant du $\mathrm{CO}_2$ gazeux neutre. L'acidité s'effondre en 10 secondes, le goût redevient rond et doux naturellement.
+4. **La Béchamel ou la Sauce Grumeleuse :**
+   - *Le geste salvateur en 30 secondes :* Retirer du feu. Donner un coup de mixeur plongeant à vitesse maximale pendant 15 secondes au fond de la casserole, ou verser une rasade de liquide froid tout en fouettant violemment : le cisaillement hydrodynamique pulvérise les agglomérats d'amidon et reconstitue le velouté instantanément.
+:::
+
+---
+
+## 7. L'ARBRE D'ACTION D'URGENCE ET NUMÉROS VITAUX
 
 Dans la panique d'un accident grave, la mémoire immédiate flanche. Affichez ces numéros à portée de regard dans votre cuisine :
 

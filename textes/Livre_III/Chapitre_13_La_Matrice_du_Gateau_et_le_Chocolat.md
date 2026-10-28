@@ -57,9 +57,26 @@ Lorsque vous beurrez un moule à gâteau au chocolat, ne saupoudrez jamais de fa
 6. **Le Seuil Critique de Cuisson :** Enfourner à four préalablement préchauffé à **$180^\circ\mathrm{C}$ chaleur statique pendant exactement 11 minutes**.
 7. **La Vérification Sensorielle :** À la sortie, les bords du gâteau sont bombés et fermes au toucher (coagulés à $>75^\circ\mathrm{C}$), tandis qu'un cercle central de $2\text{ cm}$ tremble encore doucement comme un liquide emprisonné (température de cœur à $48^\circ\mathrm{C}$). Laisser tiédir 2 minutes, passer la pointe d'un couteau sur le pourtour et démouler délicatement sur une assiette. Le premier coup de cuillère libère une lave de chocolat noir fumante.
 
-::: point_attention
-#### ⚠️ Point d'Attention : L'Ennemi Mortel du Chocolat Fondu : Une Goutte d'Eau !
-Lorsque vous faites fondre du chocolat noir, veillez à ce qu'aucune goutte d'eau ou de vapeur ne tombe dans le récipient ! Le chocolat fondu est une suspension de particules solides sèches (cacao, sucre) dans une phase continue de beurre de cacao liquide. Une seule gouttelette d'eau ($0{,}1\text{ ml}$) suffit à dissoudre le sucre superficiel, créant un sirop collant qui agglomère instantanément toutes les particules : le chocolat « masse » en un bloc pâteux, dur et granuleux impossible à lisser. Si cela arrive, le seul sauvetage consiste à rajouter beaucoup d'eau bouillante ou de crème ($2\text{ à }3\text{ cuillères à soupe}$) pour inverser la phase et transformer le chocolat en émulsion liquide (ganache).
+::: truc_de_chef
+#### 🚨 Vous Venez de Faire Masser Votre Caramel ? Sauvetage en 30 Secondes
+- **Le Symptôme :** Vous chauffiez votre sucre pour faire un caramel doré. Soudain, le liquide limpide se fige en une masse opaque, blanche, granuleuse et solide comme de la craie : le caramel a « massé ».
+- **Pourquoi c'est arrivé :** Une impureté sur la paroi de la casserole ou un coup de cuillère intempestif a brisé la métastabilité du sirop : des millions de molécules de saccharose ont recristallisé en chaîne autour de ce point de nucléation.
+- **Le Geste Salvateur en 30 Secondes :**
+  1. Ne jetez surtout pas la casserole !
+  2. Verser **2 cuillères à soupe d'eau bouillante** et ajouter **3 gouttes de jus de citron** (l'acide citrique hydrolyse une fraction du saccharose en glucose et fructose : ces sucres invertis bloquent physiquement la réorganisation des cristaux).
+  3. Remettre sur feu très doux **sans remuer avec aucun ustensile**. La chaleur et l'acide dissolvent le bloc blanc en quelques dizaines de secondes.
+  4. Dès que le liquide redevient limpide, laisser colorer doucement jusqu'à l'ambre souhaité.
+:::
+
+::: truc_de_chef
+#### 🚨 Votre Ganache au Chocolat a Tranché ? Sauvetage en 30 Secondes
+- **Le Symptôme :** En mélangeant votre chocolat fondu et votre crème, la masse lisse se désolidarise : le beurre de cacao se sépare en une huile sombre peu engageante surnageant sur des paquets denses et ternes.
+- **Pourquoi c'est arrivé :** La ganache est une émulsion d'huile (beurre de cacao) dans l'eau (apportée par la crème). Si la température était trop élevée ou le liquide insuffisant, l'émulsion s'est inversée.
+- **Le Geste Salvateur en 30 Secondes :**
+  1. Faire chauffer **1 cuillère à soupe de lait ou d'eau** (elle doit être chaude mais non bouillante, environ $50^\circ\mathrm{C}$).
+  2. Verser ce liquide chaud au centre exact du cul-de-poule.
+  3. Avec une petite cuillère ou une maryse, **frictionner énergiquement en traçant de minuscules cercles concentriques au centre**.
+  4. En 15 secondes, un « noyau » élastique, brillant et velouté se forme au milieu. Élargir progressivement les cercles vers l'extérieur pour réincorporer l'huile séparée : la ganache redevient un miroir chocolaté parfait.
 :::
 
 ---

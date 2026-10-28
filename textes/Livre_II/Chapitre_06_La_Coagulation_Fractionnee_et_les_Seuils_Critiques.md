@@ -57,19 +57,30 @@ La tradition culinaire recommande de verser un verre de vinaigre dans l'eau de p
 
 ---
 
-## 3. LABORATOIRE DES CAS LIMITES : LA CRÈME ANGLAISE TOURNÉE
+## 3. ARBRES DE SAUVETAGE EN CAS DE CRISE : ÉMULSIONS ET CRÈMES
 
-### Le Phénomène
-Vous préparez une crème anglaise ou une sauce béarnaise. Soudain, à force de chauffer, le liquide lisse se dissocie en une phase liquide transparente et des grumeaux granuleux : la crème a « grainé ».
+La peur de rater paralyse l'apprentissage. Or, en physique culinaire, une émulsion rompue ou une crème qui surchauffe ne sont pas perdues : les molécules sont toutes présentes, il suffit de rétablir les forces d'interface.
 
-### La Raison Moléculaire
-Au-delà de $83^\circ\mathrm{C}$, les protéines du jaune ont déployé trop de sites de liaison. Au lieu de former un réseau aéré retenant l'eau, elles se contractent violemment sur elles-mêmes en petites pelotes denses : c'est la **synérèse** (expulsion de l'eau retenue).
+::: truc_de_chef
+#### 🚨 Vous Venez de Rater Votre Crème Anglaise ? Sauvetage en 30 Secondes
+- **Le Symptôme :** Vous avez dépassé $83^\circ\mathrm{C}$ : la crème lisse se transforme en un liquide trouble parsemé de grumeaux jaunes comme des morceaux d'omelette (synérèse).
+- **Pourquoi c'est arrivé :** Les protéines du jaune se sont repliées en pelotes denses en expulsant l'eau libre.
+- **Le Geste Salvateur en 30 Secondes :**
+  1. *Stopper l'inertie :* Plonger immédiatement le fond de la casserole dans un évier rempli d'eau froide.
+  2. *Le choc thermique :* Jeter **deux glaçons** ou **une cuillère à soupe de lait très froid** dans la crème pour faire redescendre instantanément la température sous $72^\circ\mathrm{C}$.
+  3. *Le cisaillement hydrodynamique :* Verser dans un bocal en verre ou une gourde étanche et **secouer violemment comme un shaker pendant 30 secondes**, ou donner 10 secondes de mixeur plongeant. Les agrégats protéiques sont mécaniquement pulvérisés en micro-fragments colloïdaux invisibles : la crème anglaise redevient nacrée, veloutée et immaculée.
+:::
 
-### Le Sauvetage Mécanique Immédiat (60 secondes)
-Ne jetez rien !
-1. Retirer la casserole du feu instantanément et plonger le fond dans un évier d'eau froide pour stopper l'inertie thermique.
-2. Ajouter **2 glaçons ou une cuillère à soupe de lait glacé** (pour faire redescendre la température sous $75^\circ\mathrm{C}$).
-3. Transvaser dans une bouteille fermée et secouer violemment comme un shaker, ou fouetter énergiquement avec un fouet à fils fins dans un cul-de-poule : le cisaillement mécanique pulvérise les agrégats protéiques, et l'émulsion se reconstitue.
+::: truc_de_chef
+#### 🚨 Vous Venez de Rater Votre Mayonnaise (ou Hollandaise) ? Sauvetage en 30 Secondes
+- **Le Symptôme :** L'émulsion « tranche » : au lieu d'une pommade ferme, le mélange se sépare en une flaque d'huile jaune surnageant au-dessus d'un fond liquide terne.
+- **Pourquoi c'est arrivé :** Vous avez versé l'huile trop vite au début. La phase aqueuse a été saturée en gouttelettes lipidiques qui se sont touchées et ont coalescé en une phase continue (inversion de phase).
+- **Le Geste Salvateur en 30 Secondes :**
+  1. Prendre un bol propre et sec. Y déposer **une cuillère à café d'eau tiède** (ou une cuillère à café de moutarde fraîche).
+  2. Prélever **une seule cuillère à soupe de la mayonnaise tranchée**.
+  3. Fouetter vivement dans le nouveau bol : l'émulsion primaire prend en 5 secondes car l'eau est à nouveau excédentaire.
+  4. Continuer de fouetter tout en versant progressivement le reste de la mayonnaise tranchée en filet continu. Taux de réussite : **$100\%$ garanti par la physique des micelles**.
+:::
 
 
 ---
