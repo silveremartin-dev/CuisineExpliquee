@@ -112,7 +112,6 @@
 ]
 
 #show heading.where(level: 4): it => block(
-  width: 100%,
   breakable: false,
   sticky: true,
   spacing: 0.8em
@@ -130,7 +129,9 @@
   spacing: 1.2em,
   breakable: false
 )[
-  #text(size: 9.5pt, fill: c-ink)[#body]
+  #set text(size: 9.5pt, fill: c-ink)
+  #set par(justify: true, leading: 0.74em)
+  #body
 ]
 
 #let anecdote_historique(body) = block(
@@ -142,7 +143,9 @@
   spacing: 1.2em,
   breakable: false
 )[
-  #text(size: 9.5pt, fill: c-ink)[#body]
+  #set text(size: 9.5pt, fill: c-ink)
+  #set par(justify: true, leading: 0.74em)
+  #body
 ]
 
 #let positif(body) = block(
@@ -154,7 +157,9 @@
   spacing: 1.2em,
   breakable: false
 )[
-  #text(size: 9.5pt, fill: c-ink)[#body]
+  #set text(size: 9.5pt, fill: c-ink)
+  #set par(justify: true, leading: 0.74em)
+  #body
 ]
 
 #let negatif(body) = block(
@@ -166,7 +171,9 @@
   spacing: 1.2em,
   breakable: false
 )[
-  #text(size: 9.5pt, fill: c-ink)[#body]
+  #set text(size: 9.5pt, fill: c-ink)
+  #set par(justify: true, leading: 0.74em)
+  #body
 ]
 
 #let danger(body) = block(
@@ -178,7 +185,9 @@
   spacing: 1.2em,
   breakable: false
 )[
-  #text(size: 9.5pt, fill: c-ink)[#body]
+  #set text(size: 9.5pt, fill: c-ink)
+  #set par(justify: true, leading: 0.74em)
+  #body
 ]
 
 #let alerte(body) = danger(body)
@@ -191,10 +200,10 @@
   spacing: 1.2em,
   breakable: false
 )[
-  #text(size: 9.5pt, fill: c-ink)[#body]
+  #set text(size: 9.5pt, fill: c-ink)
+  #set par(justify: true, leading: 0.74em)
+  #body
 ]
-
-#let anecdote_historique(body) = point_attention(body)
 
 #let oeil_molecule(body) = block(
   fill: rgb("#f5f4f2"),
@@ -205,7 +214,9 @@
   spacing: 1.2em,
   breakable: false
 )[
-  #text(size: 9.5pt, fill: c-ink)[#body]
+  #set text(size: 9.5pt, fill: c-ink)
+  #set par(justify: true, leading: 0.74em)
+  #body
 ]
 
 #let cas_limite(body) = block(
@@ -217,7 +228,9 @@
   spacing: 1.2em,
   breakable: false
 )[
-  #text(size: 9.5pt, fill: c-ink)[#body]
+  #set text(size: 9.5pt, fill: c-ink)
+  #set par(justify: true, leading: 0.74em)
+  #body
 ]
 
 #let quote_box(body) = block(
@@ -229,7 +242,9 @@
   spacing: 1.1em,
   breakable: false
 )[
-  #text(style: "italic", fill: rgb("#292524"))[#body]
+  #set text(style: "italic", fill: rgb("#292524"))
+  #set par(justify: true, leading: 0.74em)
+  #body
 ]
 
 // ==========================================
@@ -342,6 +357,8 @@
       *Photographies culinaires & gravures :* Wikimedia Commons (Domaine Public & Creative Commons).\
       *Composition typographique :* Typst v0.15.1, polices Liberation Serif & Sans.\
       *Dépôt de code et figures sources :* Dépôt GitHub public sous licence CC BY-SA 4.0.\
+      *Avertissement d'homonymie éditoriale :* Le présent ouvrage est un traité d'investigation scientifique, anthropologique et pratique totalement indépendant. Il ne doit en aucun cas être confondu avec les manuels scolaires de formation professionnelle hôtelière (notamment le manuel éponyme de Gilles Charles aux éditions BPI).\
+      
       *Dépôt légal :* Octobre 2026 (Sans mention commerciale obligatoire).
     ]
   ]
@@ -429,7 +446,7 @@
     - #link(<recette-oeuf-mollet>)[L'Œuf Mollet Parfait en 6 Minutes & l'Œuf à 64°C (Gradient Thermique)] --- _Chapitre 06_
     - #link(<recette-creme-anglaise>)[La Crème Anglaise au Degré Près (Seuil Critique de 82°C au Ruban)] --- _Chapitre 06_
     - #link(<recette-sauce-hollandaise>)[La Sauce Hollandaise Émulsionnée Chaude au Bain-Marie (58°C)] --- _Chapitre 06_
-    - #link(<recette-grand-aioli>)[Le Grand Aïoli Provençal au Mortier de Marbre (Émulsion Pure à l'Ail)] --- _Chapitre 17_
+    - #link(<recette-grand-aioli>)[Le Grand Aïoli Provençal (Au Mortier ou au Système D)] --- _Chapitre 17_
 
     #v(0.15cm)
     *4. Pâtes & Féculents Fondateurs*
@@ -1126,15 +1143,113 @@ jusqu'à 200 ml d'huile grâce aux lécithines.]
   couronne de torchon, mélanger le jaune d'œuf, la moutarde, le sel et
   le vinaigre. Laisser reposer 1 minute pour que le sel dissolve
   légèrement la membrane des lipovitellines.
+
 + #strong[La Dispersion Goutte à Goutte :] Commencer à fouetter
   activement en versant l'huile gouttelette par gouttelette. Chaque
   goutte doit être cisaillée en millions de billes microscopiques avant
   d'en ajouter une autre.
+
 + #strong[Le Montage en Filet :] Dès que l'émulsion « prend » et prend
   une consistance nappante brillante, verser l'huile restante en mince
   filet continu tout en maintenant un battement circulaire rapide.
-+ #strong[Le Blocage Sensoriel :] La mayonnaise devient ferme, dense et
-  tient sur le fouet à l'envers. Rectifier en sel et acidité.
+
++ == #strong[Le Blocage Sensoriel :] La mayonnaise devient ferme, dense et tient sur le fouet à l'envers. Rectifier en sel et acidité.
+  <le-blocage-sensoriel-la-mayonnaise-devient-ferme-dense-et-tient-sur-le-fouet-à-lenvers.-rectifier-en-sel-et-acidité.>
+
+== 7. LE SYSTÈME D : DÉTOURNER LES OBJETS DU QUOTIDIEN POUR REMPLACER LES USTENSILES RARES
+<le-système-d-détourner-les-objets-du-quotidien-pour-remplacer-les-ustensiles-rares>
+L'industrie ménagère a bâti sa prospérité en inventant des centaines de
+gadgets hyperspécialisés conçus pour un usage unique : dénoyauteurs,
+presses-ail, mandolines fragiles, turbines coûteuses et mortiers massifs
+pesant cinq kilos.
+
+La démarche de #emph[La Cuisine Expliquée] enseigne que la compréhension
+de la physique mécanique et thermique permet de #strong[détourner les
+objets les plus banals du foyer] avec une efficacité souvent supérieure
+aux appareils du commerce :
+
+#figure(
+  align(center)[#table(
+  stroke: 0.5pt + rgb("#dcd6ca"),
+  fill: (x, y) => if y == 0 { rgb("#f2ece1") } else if calc.odd(y) { rgb("#faf7f2") } else { none },
+  inset: 8pt,
+
+    columns: (25%, 25%, 25%, 25%),
+    align: (left,left,left,left,),
+    table.header([Ustensile Rare ou Encombrant], [L'Équivalent « Système
+      D » Immédiat], [Le Mécanisme Physique Déclenché], [Précaution
+      Opératoire],),
+    table.hline(),
+    [#strong[Mortier & Pilon en Marbre]#emph[\(Pour aïoli, pesto, purées
+    d'ail)]], [#strong[Le plat du couteau de chef + gros sel] sur
+    planche en bois], [Le gros sel agit comme un abrasif granulaire dur
+    qui déchiquette les cellules végétales sous la pression latérale de
+    la lame.], [Maintenir la paume à plat sur le dos de la lame et
+    racler d'avant en arrière.],
+    [#strong[Pilon à Épices Dures]#emph[\(Poivre, coriandre,
+    cardamome)]], [#strong[Sac de congélation étanche + fond de
+    casserole ou bouteille]], [L'inertie massique de la casserole lourde
+    ou le roulement de la bouteille broie les graines sans aucune
+    projection volante.], [Chasser l'air du sac avant de fermer pour
+    éviter qu'il n'éclate sous la pression.],
+    [#strong[Rouleau à Pâtisserie]], [#strong[Bouteille de vin en verre
+    propre et lisse]], [Cylindre parfait, inertie thermique froide qui
+    évite de réchauffer le beurre de la pâte, masse idéale.], [Fariner
+    légèrement le verre pour empêcher la détrempe d'adhérer.],
+    [#strong[Chinois Étamine de Chef]#emph[\(Pour filtrer bouillons et
+    jus limpides)]], [#strong[Passoire classique tapissée d'un torchon
+    propre ou filtre à café]], [La trame serrée des fibres de coton ou
+    de cellulose retient les micro-particules de coagulat jusqu'à
+    quelques microns.], [Utiliser un torchon en coton pur lavé sans
+    adoucissant ni lessive parfumée.],
+    [#strong[Turbine à Glace / Sorbetière]], [#strong[Deux saladiers
+    emboîtés + glace pilée saturée de gros sel]], [#strong[Abaissement
+    cryoscopique endothermique] : la dissolution du sel dans la glace
+    abaisse la température du bain à
+    $- 18^compose upright(C)$.], [Fouetter énergiquement le récipient
+    intérieur pendant 10 minutes au contact du bain glacé.],
+    [#strong[Panier Vapeur Spécifique]], [#strong[Passoire inox sur
+    casserole + couvercle] (ou coupelle inversée)], [L'eau bout dans le
+    fond de la casserole ($2 upright(" cm")$), la vapeur saturée à
+    $100^compose upright(C)$ monte et cuit les aliments perchés
+    au-dessus.], [Veiller à ce que le niveau d'eau ne touche pas les
+    aliments pour éviter le lessivage.],
+    [#strong[Bain-Marie Professionnel]], [#strong[Bol en inox ou faïence
+    posé sur une casserole d'eau frémissante]], [Le fond du bol ne
+    touche pas l'eau : la vapeur régule la transmission calorifique avec
+    un plafond naturel sous les $90^compose upright(C)$.], [Ne pas
+    laisser le fond du récipient plonger dans l'eau bouillante (risque
+    de surchauffe locale).],
+    [#strong[Poids de Cuisson de Tarte]#emph[\(Billes
+    céramique)]], [#strong[Haricots secs, lentilles ou riz cru sur
+    papier sulfurisé]], [Transfert thermique par conduction granulaire
+    homogène qui empêche la pâte de cloquer ou de
+    s'affaisser.], [Conserver ces légumes secs dans un bocal dédié : ils
+    sont réutilisables des centaines de fois.],
+    [#strong[Emporte-Pièce Métallique]], [#strong[Verre à eau à col fin
+    ou boîte de conserve ouverte des deux côtés]], [Le tranchant
+    circulaire net sépare les pâtons sans étirer le réseau de
+    gluten.], [Fariner le col du verre avant chaque pression pour un
+    démoulage instantané.],
+  )]
+  , kind: table
+  )
+
+#truc_de_chef[
+
+
+==== 💡 Le Secret du Praticien Minimaliste
+<le-secret-du-praticien-minimaliste>
+Avant d'acheter le moindre ustensile culinaire vanté par une émission ou
+un catalogue, posez-vous toujours cette question : #emph[« Quelle est la
+contrainte physique réelle de cette opération (couper, écraser, filtrer,
+chauffer doucement, maintenir froid) ? »]. Dans $95 thin %$ des cas,
+votre tiroir contient déjà un objet simple en acier, en verre ou en bois
+capable de reproduire ce phénomène sans dépenser le moindre centime ni
+encombrer vos étagères.
+
+
+]
 
 #divider()
 
@@ -1442,21 +1557,23 @@ couvercle métallique ?
 
 #divider()
 
-= CHAPITRE 04 --- Consignes de Sécurité, Gestion des Accidents et Pannes Critiques
-<chapitre-04-consignes-de-sécurité-gestion-des-accidents-et-pannes-critiques>
+= CHAPITRE 04 --- Consignes de Sécurité, Premiers Secours et Pannes Critiques
+<chapitre-04-consignes-de-sécurité-premiers-secours-et-pannes-critiques>
 #quote(block: true)[
 « Dans un atelier où l'on manie des lames d'acier au fil rasoir, des
-récipients à trois cents degrés et des graisses inflammables, la
-sérénité du geste naît de la connaissance exacte du danger. »
+récipients à trois cents degrés, des gaz sous pression et des graisses
+inflammables, la sérénité du geste naît de la connaissance exacte du
+danger. »
 ]
 
 #divider()
 
-== 1. LA GESTION DES FLUX CALORIFIQUES : BRÛLURES ET FEUX GRAS
-<la-gestion-des-flux-calorifiques-brûlures-et-feux-gras>
+== 1. LA GESTION DES FLUX CALORIFIQUES : INCENDIES DE POÊLE ET FEUX GRAS
+<la-gestion-des-flux-calorifiques-incendies-de-poêle-et-feux-gras>
 La cuisine est l'espace domestique où se concentrent les énergies les
 plus denses de l'habitat. Savoir neutraliser un accident en trois
-secondes fait la différence entre un incident mineur et un drame.
+secondes fait la différence entre un incident maîtrisé et un drame
+irréversible.
 
 #figure(image("figures/livre_1/fig_securite_accidents_frigo_feu.svg", alt: "Sécurité en Cuisine : Les 4 Accidents Majeurs et leurs Parades"),
   caption: [
@@ -1468,172 +1585,345 @@ secondes fait la différence entre un incident mineur et un drame.
 <a.-la-poêle-en-feu-lincendie-de-corps-gras>
 Lorsque l'huile ou le beurre dépasse son point d'auto-inflammation
 ($360^compose upright(C)$ pour les huiles végétales), la nappe lipidique
-s'enflamme spontanément au contact de l'air. - #strong[Le Réflexe
-Meurtrier :] Jeter de l'eau sur la poêle. L'eau étant plus dense que
-l'huile chaude ($d = 1\,0$ vs $d = 0\,9$), elle plonge immédiatement au
-fond de la poêle métallique brûlante. En une fraction de seconde, elle
-se vaporise : #strong[$1 thin upright(l i t r e)$ d'eau liquide produit
-instantanément $1700 thin upright(l i t r e s)$ de vapeur d'eau]. Cette
-détente explosive pulvérise l'huile en un aérosol microscopique qui
-s'embrase dans l'air, créant une gigantesque colonne de flammes
-(#emph[boilover]) qui ravage la pièce. - #strong[Le Seul Geste Salvateur
-(en 3 gestes calmes) :] 1. #emph[Couper la source de chaleur :] Éteindre
-le brûleur à gaz ou désactiver la plaque à induction. 2. #emph[Étouffer
-l'oxygène :] Faire glisser horizontalement un couvercle métallique, une
-lèchefrite ou une plaque à pâtisserie sur la poêle. Sans oxygène
-($upright(O)_2$), la flamme s'éteint en deux secondes. À défaut, poser
-un torchon épais détrempé mais #strong[vigoureusement et totalement
-essoré]. 3. #emph[Attendre sans toucher :] Laisser reposer 15 minutes
-sans soulever le couvercle. Soulever trop vite réinjecterait de l'air
-frais sur une huile encore à $350^compose upright(C)$, provoquant une
-ré-inflammation instantanée.
+s'enflamme spontanément au contact de l'oxygène de l'air. - #strong[Le
+Réflexe Meurtrier :] Jeter de l'eau sur la poêle en flammes. L'eau
+liquide étant plus dense que l'huile chaude ($d = 1\,0$ vs $d = 0\,9$),
+elle plonge immédiatement au fond de la poêle métallique brûlante. En
+une fraction de seconde, elle entre en contact avec le métal surchauffé
+et se vaporise instantanément : #strong[$1 thin upright(l i t r e)$
+d'eau liquide produit $1700 thin upright(l i t r e s)$ de vapeur d'eau].
+Cette détente explosive pulvérise l'huile en un aérosol microscopique
+qui s'embrase dans l'air, créant une gigantesque colonne de flammes
+(#emph[boilover]) de 2 à 3 mètres de haut qui ravage la pièce et cause
+des brûlures au troisième degré. - #strong[Le Seul Geste Salvateur (en 3
+gestes calmes) :] 1. #emph[Couper la source d'énergie :] Éteindre
+immédiatement le brûleur à gaz ou désactiver la plaque à
+induction/vitrocéramique. 2. #emph[Étouffer l'oxygène :] Faire glisser
+horizontalement un couvercle métallique ajusté, une plaque de cuisson
+métallique ou une lèchefrite sur les parois de la poêle. Sans oxygène
+($upright(O)_2$), la flamme s'éteint en deux secondes faute de
+comburant. À défaut d'ustensile métallique, poser un torchon épais
+détrempé mais #strong[vigoureusement et totalement essoré]. 3. #emph[Ne
+plus toucher pendant 15 minutes :] Ne soulevez surtout pas le couvercle
+pour vérifier ! L'huile reste à plus de $300^compose upright(C)$ : le
+simple réafflux d'air frais provoquerait une ré-inflammation explosive
+instantanée (#emph[backdraft]). Ne déplacez jamais une poêle en feu vers
+l'évier.
 
-=== B. Les Brûlures Cutanées : La Règle des « Trois 15 »
-<b.-les-brûlures-cutanées-la-règle-des-trois-15>
-Face à une projection d'huile bouillante ou un contact avec une poêle en
-fonte : - #strong[Le protocole médical d'urgence :] Refroidir
-immédiatement la zone sous l'eau courante tempérée à
-#strong[$15^compose upright(C)$], pendant #strong[15 minutes] d'affilée,
-le membre placé à #strong[15 cm] sous le jet doux. - #emph[Pourquoi 15
-minutes ?] La peau humaine a une faible diffusivité thermique : la
-chaleur emmagasinée continue de se propager vers les couches profondes
-du derme (effet de cuisson résiduelle) pendant plusieurs minutes après
-le contact. Seul un flux d'eau continu évacue cette énergie latente et
-stoppe la nécrose des tissus. - #strong[Ce qu'il ne faut JAMAIS faire :]
-\- #strong[Ne jamais appliquer de glaçons :] Le froid extrême
-($0^compose upright(C)$) provoque une vasoconstriction violente qui
-prive la peau d'oxygène et aggrave la destruction cellulaire par gelure
-surajoutée. - #strong[Ne jamais appliquer de corps gras (beurre, huile,
-pommade grasse) :] Les lipides forment un manteau thermique imperméable
-qui emprisonne la chaleur dans la chair, empêchant l'évacuation
-calorifique et créant un milieu de prolifération bactérienne.
+=== B. Les Feux Électriques et Feux d'Appareils
+<b.-les-feux-électriques-et-feux-dappareils>
+Si un grille-pain, un robot ou un four commence à fumer ou à crépiter :
+\- Ne jamais jeter d'eau (risque d'électrocution mortelle par
+conductivité de l'eau). - Débrancher la prise murale ou couper le
+disjoncteur divisionnaire au tableau électrique général. - Étouffer les
+flammes à l'aide d'une couverture anti-feu ou d'un extincteur à poudre /
+$upright(C O)_2$ (classe B/C).
 
 #divider()
 
-== 2. LA RUPTURE DE LA CHAÎNE DU FROID : FRIGO ET CONGÉLATEUR EN PANNE
+== 2. LES BRÛLURES THERMIQUES : DU GESTE RÉFLEXE À L'APPEL D'URGENCE
+<les-brûlures-thermiques-du-geste-réflexe-à-lappel-durgence>
+Face à une projection d'huile bouillante, un contact accidentel avec une
+poêle en fonte ou un jet de vapeur sous pression, chaque seconde compte
+pour limiter la profondeur de la lésion tissulaire.
+
+=== A. Le Protocole Médical des « Trois 15 »
+<a.-le-protocole-médical-des-trois-15>
+Le seul geste scientifiquement validé par la médecine d'urgence
+hospitalière est le protocole des #strong[Trois 15] : 1. #strong[Eau à
+environ $15^compose upright(C)$ :] Utiliser de l'eau courante tempérée
+du robinet (ni glacée, ni chaude). 2. #strong[Pendant 15 minutes
+complètes :] Chronométrer 15 minutes de ruissellement continu sans
+interrompre le jet. 3. #strong[À 15 centimètres du robinet :] Placer la
+zone brûlée sous un jet doux, sans pression excessive qui risquerait de
+décoller l'épiderme fragilisé.
+
+#oeil_molecule[
+
+
+==== 🔬 Pourquoi Refroidir Pendant 15 Minutes Complètes ?
+<pourquoi-refroidir-pendant-15-minutes-complètes>
+La peau humaine possède une faible diffusivité thermique : lorsqu'elle
+est exposée à une température supérieure à $60^compose upright(C)$, la
+chaleur emmagasinée dans l'épiderme continue de se diffuser par
+conduction vers les couches profondes du derme et de l'hypoderme pendant
+plusieurs minutes après la fin du contact physique. C'est l'équivalent
+exact de la « cuisson résiduelle » d'un rôti retiré du four. Un
+ruissellement d'eau tempérée de 15 minutes est indispensable pour
+drainer l'énergie calorifique latente et stopper net la nécrose
+cellulaire en profondeur.
+
+
+]
+
+=== B. Les Deux Erreurs Courantes Majeures (À Bannir Absolument)
+<b.-les-deux-erreurs-courantes-majeures-à-bannir-absolument>
++ #strong[L'Erreur Fatale du Glaçon :] Appliquer un glaçon sur une
+  brûlure est une faute grave. Le froid extrême ($0^compose upright(C)$
+  ou négatif) provoque une violente vasoconstriction réflexe des
+  capillaires sanguins, privant les cellules déjà agressées d'oxygène et
+  de nutriments. Le froid intense détruit les membranes cellulaires par
+  formation de cristaux de glace intracellulaires : #strong[le glaçon
+  ajoute une nécrose par gelure par-dessus la brûlure thermique].
++ #strong[L'Interdiction Absolue des Corps Gras (Beurre, Huile, Pommade
+  Grasse) :] Enduire une brûlure fraîche de beurre, d'huile végétale ou
+  de dentifrice est un remède ancestral toxique. Les lipides constituent
+  un isolant thermique imperméable qui emprisonne la chaleur résiduelle
+  dans les tissus, accélérant la destruction dermique tout en
+  transformant la plaie en un bouillon de culture septique propice aux
+  infections bactériennes.
+
+=== C. Quand Faut-il Appeler les Urgences Médicales (15 ou 112) ?
+<c.-quand-faut-il-appeler-les-urgences-médicales-15-ou-112>
+Toutes les brûlures ne se valent pas : - #strong[Brûlure du 1er degré :]
+Simple rougeur douloureuse sans cloques (coup de soleil de cuisine,
+contact bref). Refroidissement 15 minutes, hydratation locale. -
+#strong[Brûlure du 2e degré :] Apparition de cloques remplies de liquide
+clair (#emph[phlyctènes]). Ne jamais percer les cloques (elles forment
+un pansement biologique stérile protégeant le derme à nu). -
+#strong[Critères de Gravité Imposant un Appel Immédiat aux Urgences :] -
+Cloques dont la surface totale dépasse #strong[la taille de la paume de
+la main de la victime]. - Toute brûlure localisée sur des zones
+fonctionnelles critiques : #strong[le visage, les yeux, le cou, les
+mains, les articulations ou le périnée]. - #strong[Brûlure du 3e degré
+:] Peau d'aspect cartonné, blanchâtre, cireuse ou carbonisée en noir,
+paradoxalement insensible au toucher car les terminaisons nerveuses ont
+été détruites. - Toute brûlure survenant chez un nourrisson, un jeune
+enfant ou une personne âgée. - Brûlure circulaire entourant complètement
+un membre ou un doigt (risque de compression ischémique).
+
+#divider()
+
+== 3. LES COUPURES, L'ACIER ET L'HÉMOSTASE D'URGENCE
+<les-coupures-lacier-et-lhémostase-durgence>
+Le couteau de chef est le premier instrument du cuisinier. Les accidents
+graves ne surviennent pas lorsque la lame est tranchante comme un
+rasoir, mais lorsqu'elle est émoussée (l'opérateur force, la lame ripe
+sur la peau cireuse d'un oignon ou d'une courge) ou lorsque la main
+passive n'est pas protégée.
+
+#figure(image("figures/livre_1/fig_posture_griffe_de_chat.svg", alt: "Sécurité du couteau : biomécanique de la prise en pince et protection en griffe de chat"),
+  caption: [
+    Sécurité du couteau : biomécanique de la prise en pince et
+    protection en griffe de chat
+  ]
+)
+
+=== A. La Biomécanique Préventive du Geste
+<a.-la-biomécanique-préventive-du-geste>
++ #strong[La Main Guide en « Griffe de Chat » :] Les pulpes et les
+  ongles des cinq doigts sont rigoureusement repliés vers l'intérieur de
+  la paume. La face latérale de la lame glisse le long de la
+  #strong[deuxième phalange] du majeur et de l'index. Le fil coupant se
+  trouvant plus bas que la jointure, il est géométriquement impossible
+  que la lame entaille les doigts.
++ #strong[La Prise de Lame (« Pinch Grip ») :] Pincer le talon d'acier
+  entre le pouce et l'index replié plutôt que d'agripper le manche loin
+  en arrière. Cette prise rapproche le centre d'inertie de l'axe de
+  rotation du poignet et offre un contrôle millimétrique.
+
+=== B. Protocole de Premiers Secours Face à une Coupure Franche
+<b.-protocole-de-premiers-secours-face-à-une-coupure-franche>
++ #strong[L'Hémostase par Compression Continue (La Règle des 5 Minutes)
+  :] Appliquer une compresse stérile ou un linge en coton propre
+  directement sur la plaie, et maintenir une #strong[compression ferme
+  et continue pendant 5 minutes complètes sans jamais relâcher]. Ne
+  soulevez pas le linge après 30 secondes pour « regarder si ça saigne
+  encore » : chaque levée décolle les filaments de fibrine et le caillot
+  de plaquettes naissant, relançant le saignement de zéro.
++ #strong[La Surélévation du Membre :] Maintenir la main blessée
+  au-dessus du niveau du cœur pour abaisser la pression hydrostatique
+  locale dans les vaisseaux.
++ #strong[Le Rinçage et la Désinfection :] Rincer sous un filet d'eau
+  froide pour éliminer d'éventuels débris organiques (jus d'oignon,
+  particules), désinfecter à la chlorhexidine aqueuse (ne jamais verser
+  d'alcool à $70^compose$ ou $90^compose$ sur une plaie ouverte :
+  l'alcool brûle les cellules saines et aggrave la nécrose).
+
+=== C. Quand Consulter pour des Points de Suture ?
+<c.-quand-consulter-pour-des-points-de-suture>
+Une plaie par couteau de cuisine doit impérativement être examinée aux
+urgences ou chez un médecin dans les #strong[6 heures] (au-delà, le
+risque d'infection bactérienne empêche une suture fermée directe) en
+présence de l'un des signaux d'alerte suivants : - #strong[Plaie béante
+:] Les berges de la coupure s'écartent spontanément de plus de 2 à 3
+millimètres. - #strong[Tissus sous-cutanés visibles :] On distingue la
+graisse jaune lobulée sous-cutanée, ou un tissu blanc nacré (tendon ou
+articulation). - #strong[Hémorragie pulsatile :] Le sang jaillit par
+pulsations rythmées au rythme cardiaque (section d'une artériole
+digitale). - #strong[Perte de sensibilité (Signe nerveux) :] Sensation
+d'engourdissement ou de carton sur la pulpe du doigt au-delà de la
+coupure (section d'un nerf collatéral digital). - #strong[Perte de
+motricité :] Impossibilité de plier ou d'étendre complètement le bout du
+doigt (section partielle ou totale d'un tendon fléchisseur ou
+extenseur).
+
+#divider()
+
+== 4. RISQUES GAZEUX, INTOXICATIONS CHIMIQUES ET VENTILATION
+<risques-gazeux-intoxications-chimiques-et-ventilation>
+L'atmosphère de la cuisine est le théâtre de combustions intenses et de
+stockages de produits ménagers puissants.
+
+=== A. La Fuite de Gaz et le Réflexe « Zéro Étincelle »
+<a.-la-fuite-de-gaz-et-le-réflexe-zéro-étincelle>
+Le gaz naturel (méthane) et les gaz en bouteille (butane/propane) sont
+naturellement inodores. Pour la sécurité publique, ils sont
+artificiellement odorisés par adjonction de traces de
+#strong[tétrahydrothiophène (THT)] ou de mercaptan, libérant une odeur
+caractéristique de soufre ou de chou pourri détectable à des
+concentrations infinitésimales (dès $0\,5 thin %$ dans l'air, bien en
+deçà de la limite inférieure d'explosivité de $5 thin %$) : - #strong[En
+cas d'odeur de gaz suspecte :] 1. #strong[N'actionnez AUCUN interrupteur
+électrique], ne touchez pas aux lampes, ne débranchez aucun appareil et
+n'utilisez pas de téléphone portable à l'intérieur : la moindre
+étincelle microscopique générée par un contacteur peut déclencher une
+déflagration instantanée. 2. Ouvrir immédiatement en grand portes et
+fenêtres pour créer un courant d'air massif. 3. Couper le robinet
+d'arrivée générale de gaz (vanne quart de tour sur le compteur ou le
+détendeur de bouteille). 4. Faire évacuer les occupants et composer le
+numéro d'urgence de sécurité gaz ou le 18 / 112 #strong[depuis
+l'extérieur de l'immeuble].
+
+=== B. Le Danger Invisible du Monoxyde de Carbone ($upright(C O)$)
+<b.-le-danger-invisible-du-monoxyde-de-carbone-mathrmco>
+Le monoxyde de carbone est un gaz toxique redoutable :
+#strong[strictement inodore, incolore et non irritant]. Il naît de la
+combustion incomplète des feux à gaz ou des poêles lorsque l'apport
+d'oxygène est insuffisant ou que les conduits d'évacuation sont
+encrassés. - Il se lie à l'hémoglobine sanguine avec une affinité 200
+fois supérieure à celle de l'oxygène, asphyxiant les organes vitaux. -
+#strong[Symptômes d'alerte :] Maux de tête pulsatiles, nausées, vertiges
+inexpliqués, fatigue subite touchant plusieurs occupants simultanément.
+\- #strong[Parade impérative :] Aérer immédiatement, évacuer les lieux
+et ne jamais obstruer les grilles d'aération basse et haute de la
+cuisine.
+
+=== C. L'Accident Chimique des Produits Ménagers : Le Poison du Chlore
+<c.-laccident-chimique-des-produits-ménagers-le-poison-du-chlore>
+Dans l'obsession de la désinfection du plan de travail : -
+#strong[L'INTERDICTION FORMELLE : Ne jamais mélanger de l'eau de Javel
+avec un acide (vinaigre blanc ou détartrant anticalcaire)]. -
+L'hypochlorite de sodium ($upright(N a C l O)$) en milieu acide subit
+une réaction d'oxydoréduction immédiate dégageant du #strong[dichlore
+gazeux ($upright(C l)_2$)] :
+$ upright(N a C l O) + 2 thin upright(C H)_3 upright(C O O H) arrow.r upright(C l)_2 arrow.t + upright(H)_2 upright(O) + 2 thin upright(C H)_3 upright(C O O N a) $
+\- Le dichlore est un gaz toxique suffocant redoutable (utilisé comme
+arme chimique lors de la Première Guerre mondiale) qui détruit les
+alvéoles pulmonaires, provoquant un œdème aigu du poumon foudroyant.
+
+#divider()
+
+== 5. LA RUPTURE DE LA CHAÎNE DU FROID : FRIGO ET CONGÉLATEUR EN PANNE
 <la-rupture-de-la-chaîne-du-froid-frigo-et-congélateur-en-panne>
 Une coupure de courant prolongée ou un compresseur en panne met
-immédiatement en péril la sécurité microbiologique de votre stock
-alimentaire.
+immédiatement en péril la sécurité microbiologique du foyer.
 
-=== A. La Chronologie d'une Panne de Froid
-<a.-la-chronologie-dune-panne-de-froid>
-+ #strong[Pendant les 4 à 6 premières heures :] Si vous #strong[gardez
-  la porte du réfrigérateur strictement fermée], l'isolation thermique
-  et l'inertie des aliments maintiennent la température intérieure en
-  dessous de $6^compose upright(C)$. Les denrées sont sauves.
-+ #strong[Entre 6 et 12 heures (Température $> 8^compose upright(C)$) :]
-  Les bactéries d'altération et pathogènes (#emph[Listeria
-  monocytogenes], #emph[Salmonella], #emph[Escherichia coli]) sortent de
-  leur état de dormance et entament une phase de multiplication
-  exponentielle : la population bactérienne double toutes les 20 minutes
-  !
-  - #emph[Le tri de survie :]
-    - #strong[À consommer immédiatement après cuisson à cœur
-      ($> 75^compose upright(C)$) ou à jeter :] Toutes les viandes
-      hachées, volailles crues, poissons frais, fruits de mer, fromages
-      frais au lait cru et restes cuisinés.
-    - #strong[Aliments saufs sans danger :] Les fromages à pâte dure
-      affinés (comté, parmesan), le beurre, les œufs en coquille
-      intacte, les condiments acides (moutarde, cornichons), les
-      confitures et les légumes non découpés.
+=== A. La Chronologie d'une Panne de Réfrigérateur
+<a.-la-chronologie-dune-panne-de-réfrigérateur>
++ #strong[Pendant les 4 à 6 premières heures :] Si vous
+  #strong[maintenez la porte strictement fermée], l'isolation thermique
+  et l'inertie massique des aliments préservent la température sous les
+  $6^compose upright(C)$. Le stock est intact.
++ #strong[Au-delà de 6 heures (Température intérieure
+  $> 8^compose upright(C)$) :] Les bactéries pathogènes d'altération
+  (#emph[Salmonella], #emph[Listeria], #emph[Campylobacter]) sortent de
+  dormance et entament une phase de prolifération exponentielle : la
+  population bactérienne double toutes les vingt minutes.
+  - #emph[Le tri de salubrité :]
+    - #strong[À cuire à cœur ($> 75^compose upright(C)$) immédiatement
+      ou à jeter :] Viandes hachées, volailles crues, abats, poissons
+      frais, fruits de mer, fromages frais au lait cru, plats cuisinés
+      contenant des sauces émulsionnées.
+    - #strong[Aliments saufs sans péril :] Fromages à pâte pressée cuite
+      (comté, parmesan), beurre salé, confitures, œufs en coquille
+      intacte, condiments acides (moutarde, cornichons), légumes racines
+      entiers.
 
 === B. L'Interdit Absolu : Recongeler un Aliment Décongelé Cru
 <b.-linterdit-absolu-recongeler-un-aliment-décongelé-cru>
-Pourquoi cet interdit est-il répété par tous les microbiologistes du
-monde ? - #strong[La mécanique cellulaire de la congélation :] Lorsque
-l'on congèle une viande crue, l'eau cellulaire forme des microcristaux
-de glace pointus qui perforent les parois des cellules musculaires. -
-Lors de la décongélation, l'eau s'échappe des cellules lacérées pour
-former un liquide extracellulaire tiède, saturé d'acides aminés, de
-vitamines et de minéraux : c'est un #strong[bouillon de culture idéal].
-\- Les bactéries présentes se multiplient à une vitesse fulgurante. Si
+Pourquoi cet interdit est-il répété par tous les hygiénistes du monde ?
+\- #strong[La mécanique cellulaire de la congélation :] Lorsque l'on
+congèle une viande crue, l'eau cellulaire forme des microcristaux de
+glace acérés qui déchirent les parois membranaires des cellules
+musculaires. - Lors de la décongélation, l'eau s'échappe des fibres
+lacérées sous forme d'un exsudat liquide tiède, saturé de protéines
+libres, de vitamines et de minéraux : c'est un bouillon de culture
+idéal. - Les bactéries présentes se multiplient à vitesse grand V. Si
 vous recongelez cet aliment cru sans l'avoir cuit, vous n'endormez pas
-une colonie de 1 000 bactéries, mais une colonie de #strong[10 millions
-de bactéries]. - Lors de la seconde décongélation, la production de
-toxines thermorésistantes (entérotoxines staphylococciques) devient
-foudroyante : vous risquez une septicémie ou une gastro-entérite aiguë
-gravissime. - #strong[La seule parade légitime :] Cuire intégralement à
-cœur l'aliment décongelé (la cuisson détruit les bactéries végétatives).
-Une fois le plat cuisiné (ex. un bœuf bourguignon mijoté à
-$100^compose upright(C)$), il est devenu une préparation
-microbiologiquement assainie que l'on peut alors recongeler en toute
-sécurité !
+une colonie de 1 000 bactéries, mais une armée de #strong[10 millions de
+bactéries]. - Lors de la seconde décongélation, la production
+d'entérotoxines thermostables (notamment staphylococciques, qui
+résistent même à la cuisson ultérieure) devient massive : vous risquez
+une intoxication alimentaire foudroyante. - #strong[La seule règle
+licite :] Cuire intégralement à cœur l'aliment décongelé (la cuisson
+thermique détruit les bactéries végétatives). Une fois le produit cuit
+et transformé (ex. un bœuf bourguignon mijoté à
+$100^compose upright(C)$), la préparation est redevenue
+microbiologiquement assainie : #strong[vous pouvez alors la recongeler
+sans danger].
 
 #divider()
 
-== 3. LES COUPURES ET LE COMPORTEMENT DE LA LAME
-<les-coupures-et-le-comportement-de-la-lame>
-Le couteau de chef est le prolongement de la main. Les coupures graves
-ne se produisent pas lorsque la lame est rasoir, mais lorsqu'elle est
-émoussée (la lame dérape sur la peau cireuse d'un poivron ou d'un
-oignon) ou lorsque la main passive est mal positionnée.
+== 6. L'ARBRE D'ACTION D'URGENCE ET NUMÉROS VITAUX
+<larbre-daction-durgence-et-numéros-vitaux>
+Dans la panique d'un accident grave, la mémoire immédiate flanche.
+Affichez ces numéros à portée de regard dans votre cuisine :
 
-#box(image("figures/livre_1/fig_posture_griffe_de_chat.svg", alt: "Sécurité du couteau : biomécanique de la prise en pince et protection en griffe de chat"))\`\`
-
-+ #strong[La Main Guide (La Griffe de Chat) :] Les extrémités des doigts
-  (pulpe et ongles) sont repliées vers l'intérieur de la paume. La face
-  plate de la lame du couteau vient s'appuyer légèrement contre la
-  #strong[deuxième phalange] des doigts. Le fil coupant se trouve 1
-  centimètre plus bas : il est géométriquement impossible que la lame
-  entaille la chair des doigts.
-+ #strong[La Prise de Lame (Pinch Grip) :] Ne tenez pas le couteau
-  uniquement par le manche en bois. Pincez le talon d'acier entre le
-  pouce et l'index replié. Cette prise rapproche le centre de gravité de
-  votre poignet et élimine tout mouvement de bascule parasite.
-+ #strong[Protocole en cas de coupure franche :]
-  - Ne pas sucer le doigt (la salive humaine héberge des streptocoques
-    buccaux pathogènes sur une plaie ouverte).
-  - Passer la plaie 30 secondes sous l'eau froide pour nettoyer les
-    débris.
-  - Désinfecter avec un antiseptique cutané non piquant.
-  - Comprimer la plaie fermement à l'aide d'une compresse stérile ou
-    d'un linge propre pendant #strong[5 minutes complètes sans relâcher]
-    (le temps que les plaquettes et la fibrine forment le caillot
-    hémostatique).
-
-#divider()
-
-== 4. TABLEAU SYNOPTIQUE DE SÉCURITÉ : LE RÉFLEXE VITAL vs L'ÉCUEIL MORTEL : RÉFLEXES DE SURVIE
-<tableau-synoptique-de-sécurité-le-réflexe-vital-vs-lécueil-mortel-réflexes-de-survie>
 #figure(
   align(center)[#table(
   stroke: 0.5pt + rgb("#dcd6ca"),
   fill: (x, y) => if y == 0 { rgb("#f2ece1") } else if calc.odd(y) { rgb("#faf7f2") } else { none },
   inset: 8pt,
 
-    columns: (33.33%, 33.33%, 33.33%),
-    align: (left,left,left,),
-    table.header([Situation d'Urgence], [✓ Ce qu'il faut faire (Réflexe
-      Vital)], [✗ Ce qu'il faut absolument éviter (Danger Mortel)],),
+    columns: (29.41%, 23.53%, 23.53%, 23.53%),
+    align: (center,left,left,left,),
+    table.header([Numéro], [Service Compétent], [Quand l'Appeler
+      ?], [Spécificité Opérationnelle],),
     table.hline(),
-    [#strong[Huile en feu dans la poêle]], [Couper la source de chaleur
-    et faire glisser un couvercle métallique plat sur la poêle pour
-    étouffer le foyer.], [Jeter de l'eau sur l'huile ou courir avec la
-    poêle en flammes vers l'évier : explosion géante et embrasement de
-    la cuisine.],
-    [#strong[Panne de congélateur]], [Cuire immédiatement à cœur toutes
-    les viandes décongelées et préparer un plat mijoté.], [Recongeler
-    directement la viande crue ramollie : prolifération bactérienne
-    exponentielle et intoxication staphylococcique.],
-    [#strong[Brûlure thermique aiguë]], [Appliquer l'eau courante à
-    $15^compose upright(C)$ pendant 15 minutes à 15 cm du robinet (règle
-    des trois 15).], [Mettre du beurre, de l'huile, du dentifrice ou de
-    la farine sur la plaie : emprisonne la chaleur et infecte les
-    tissus.],
-    [#strong[Coupure au couteau]], [Comprimer la plaie avec un linge
-    propre pendant 5 minutes sans regarder pour bloquer
-    l'hémorragie.], [Sucer le sang avec la bouche ou essuyer la lame sur
-    son tablier sale : risque d'infection bactérienne profonde.],
-    [#strong[Caramel brûlant ($> 160^compose upright(C)$)]], [Utiliser
-    une spatule à long manche et plonger immédiatement le cul de la
-    casserole dans l'eau froide pour stopper la pyrolyse.], [Toucher le
-    caramel avec les doigts pour le goûter ou verser de l'eau froide
-    d'un coup dans le sucre brûlant sans protection : éclaboussures
-    collantes dévastatrices.],
+    [#strong[15]], [#strong[SAMU] #emph[\(Service d'Aide Médicale
+    Urgente)]], [Détresse vitale, brûlure étendue, hémorragie non
+    contrôlée, perte de connaissance.], [Met en relation directe avec un
+    médecin régulateur qui guide les gestes seconde par seconde.],
+    [#strong[18]], [#strong[Sapeurs-Pompiers]], [Incendie domestique
+    déclaré, odeur de gaz, effondrement, sauvetage
+    physique.], [Déploiement d'engins feux et de secours à victimes
+    équipés de matériel de réanimation.],
+    [#strong[112]], [#strong[Numéro d'Urgence Européen
+    Universel]], [Valable partout en Europe depuis un téléphone
+    mobile.], [Accessible même sur un téléphone verrouillé, sans code
+    PIN et hors couverture de votre propre opérateur.],
+    [#strong[114]], [#strong[Urgence Sourds et Malentendants]], [Réservé
+    aux personnes dans l'incapacité d'entendre ou de
+    parler.], [Communication exclusive par #strong[SMS textuel ou
+    application dédiée].],
+    [#strong[Centres Antipoison]], [#strong[Permanence Téléphonique
+    Toxique]], [Ingestion accidentelle de produit nettoyant, ingestion
+    de champignon inconnu, intoxication au monoxyde.], [Évaluation
+    toxicologique 24h/24 par des spécialistes médicaux (recherche de
+    l'antidote).],
   )]
   , kind: table
   )
+
+=== Le Protocole de la Transmission d'Alerte (La Règle des 5 Réponses)
+<le-protocole-de-la-transmission-dalerte-la-règle-des-5-réponses>
+Lorsque vous composez le 15, le 18 ou le 112, parlez d'une voix posée et
+fournissez immédiatement ces informations dans l'ordre : 1. #strong[QUI
+:] Votre nom, prénom et le numéro de téléphone direct depuis lequel vous
+appelez (pour être rappelé si la ligne coupe). 2. #strong[OÙ :]
+L'adresse exacte, la commune, le code d'accès de l'immeuble, le
+bâtiment, l'étage et la porte. 3. #strong[QUOI :] La nature précise de
+l'incident (huile en feu, brûlure thermique d'huile, coupure profonde au
+couteau, suspicion de fuite de gaz). 4. #strong[L'ÉTAT DE LA VICTIME :]
+Le nombre de victimes, l'âge approximatif, son état de conscience
+(répond-elle aux questions ? respire-t-elle normalement ?) et la
+localisation de la blessure. 5. #strong[LES GESTES EFFECTUÉS :] Ce que
+vous avez déjà fait (membre refroidi sous l'eau depuis 10 minutes,
+compression directe maintenue, source de gaz coupée). 6. #strong[NE
+JAMAIS RACCROCHER LE PREMIER :] Attendez que l'opérateur régulateur vous
+donne formellement l'instruction de raccrocher et vous indique l'arrivée
+des secours.
 
 #divider()
 
@@ -2211,59 +2501,22 @@ absolue. - #emph[Vendre de l'eau au prix de la viande :] L'ajout de
 permet de retenir par chélation jusqu'à $30 thin %$ d'eau ajoutée dans
 les fibres musculaires.
 
-=== C. Le Vrai/Faux des Additifs Alimentaires (Codes E)
-<c.-le-vraifaux-des-additifs-alimentaires-codes-e>
-Il n'existe aucune malédiction inhérente à la lettre « E » (qui signifie
-simplement une homologation officielle par l'Union Européenne). Il faut
-apprendre à trier le bon grain de l'ivraie :
-
-#figure(
-  align(center)[#table(
-  stroke: 0.5pt + rgb("#dcd6ca"),
-  fill: (x, y) => if y == 0 { rgb("#f2ece1") } else if calc.odd(y) { rgb("#faf7f2") } else { none },
-  inset: 8pt,
-
-    columns: (25%, 25%, 25%, 25%),
-    align: (left,left,left,left,),
-    table.header([Additif], [Nom & Origine], [Statut Biologique
-      Réel], [Décision du Cuisinier],),
-    table.hline(),
-    [#strong[E300]], [Acide L-ascorbique], [#strong[Vitamine C pure.]
-    Antioxydant naturel indispensable prévenant le brunissement des
-    fruits.], [#strong[Inoffensif / Bénéfique.] Présent à haute dose
-    dans le citron.],
-    [#strong[E330]], [Acide citrique], [Présent naturellement dans tous
-    les agrumes. Régulateur d'acidité banal.], [#strong[Totalement
-    inoffensif.]],
-    [#strong[E322]], [Lécithines], [Phospholipides extraits du jaune
-    d'œuf ou du soja. Émulsifiant naturel.], [#strong[Inoffensif.] Clé
-    de voûte de la mayonnaise.],
-    [#strong[E440]], [Pectine], [Fibres gélifiantes extraites des pépins
-    et peaux de pommes ou d'agrumes.], [#strong[Inoffensif.] Ingrédient
-    séculaire des confitures.],
-    [#strong[E250]], [#strong[Nitrite de sodium]], [Conservateur
-    bactéricide contre le botulisme dans la
-    charcuterie.], [#strong[RISQUE RÉEL : À ÉVITER.] Réagit avec les
-    amines de la viande pour former des #strong[nitrosamines
-    cancérogènes] colorent artificiellement le jambon en rose bonbon.
-    Préférer le jambon gris sans nitrite.],
-    [#strong[E150d]], [#strong[Caramel au sulfite
-    d'ammonium]], [Colorant brun foncé de synthèse obtenu sous haute
-    pression et ammoniac.], [#strong[RISQUE : À ÉVITER.] Contient des
-    sous-produits de synthèse (4-méthylimidazole / 4-MEI) classés
-    potentiellement mutagènes.],
-    [#strong[E466 / E433]], [#strong[Carboxyméthylcellulose &
-    Polysorbates]], [Émulsifiants de synthèse ultra-puissants utilisés
-    pour stabiliser les glaces industrielles.], [#strong[RISQUE : À
-    ÉVITER.] Dégradent la barrière muqueuse de l'épithélium intestinal
-    et favorisent l'inflammation chronique du côlon.],
-    [#strong[E621]], [#strong[Glutamate monosodique]], [Exhausteur de
-    goût umami de synthèse.], [#strong[À LIMITER.] Non toxique en soi,
-    mais utilisé massivement pour masquer la piètre qualité de matières
-    premières insipides.],
-  )]
-  , kind: table
-  )
+=== C. Le Rôle Réel des Béquilles Chimiques dans le Caddie
+<c.-le-rôle-réel-des-béquilles-chimiques-dans-le-caddie>
+Pourquoi les industriels ajoutent-ils des béquilles chimiques à des
+aliments autrefois simples ? 1. #strong[L'illusion de texture à bas coût
+:] Remplacer du jaune d'œuf noble ou de la crème crue par de l'eau
+épaissie à la gomme de cellulose ou aux polyphosphates divise le coût de
+revient par quatre tout en conservant une onctuosité artificielle. 2.
+#strong[La prolongation démesurée de la Date Limite de Consommation
+(DLC) :] Permettre à un plat préparé de rester 18 mois sur une étagère à
+température ambiante sans rancir ni décanter impose des antioxydants et
+des conservateurs puissants. 3. #strong[Le décodage complet :] Pour une
+analyse toxicologique approfondie de l'intégralité des classes
+d'additifs, la liste exhaustive des codes E dangereux à bannir et
+l'examen critique des applications comme Yuka et du Nutri-Score, le
+lecteur se référera directement au grand dossier d'investigation du
+#link(<chapitre-08--lenquete-des-additifs-alimentaires--decodage-yuka-nutri-score-et-codes-e-dangereux>)[Chapitre 08].
 
 #divider()
 
@@ -2352,49 +2605,126 @@ ce stock ? »]. - Utilisez une liste partagée numérique fermée et
 
 #divider()
 
-= CHAPITRE 08 --- L'Enquête des Additifs Alimentaires : Décodage, Yuka, Nutri-Score et Codes E Dangereux
-<chapitre-08-lenquête-des-additifs-alimentaires-décodage-yuka-nutri-score-et-codes-e-dangereux>
+= CHAPITRE 08 --- L'Enquête des Additifs Alimentaires : Décodage Global, Yuka, Nutri-Score et Codes E
+<chapitre-08-lenquête-des-additifs-alimentaires-décodage-global-yuka-nutri-score-et-codes-e>
 #quote(block: true)[
 « L'industrie n'invente rien : elle copie la nature pour la stabiliser
 sur une étagère de supermarché pendant deux ans, puis elle ajoute des
-béquilles chimiques pour masquer la perte du goût et de la texture. »
+béquilles chimiques pour masquer la perte inévitable du goût et de la
+texture. »
 ]
 
 #divider()
 
-== 1. DÉMYSTIFICATION RATIONNELLE : LE CODE E N'EST PAS UN POISON EN SOI
-<démystification-rationnelle-le-code-e-nest-pas-un-poison-en-soi>
-Dans l'esprit du grand public nourri aux angoisses des réseaux sociaux,
-la simple présence de la lettre « E » suivie de trois chiffres est
-synonyme de danger toxique. Cette vision est scientifiquement fausse : -
-La lettre #strong[E] signifie simplement #strong[Europe] : c'est un
-système d'indexation harmonisé garantissant que l'ingrédient a fait
-l'objet d'une fiche d'évaluation par l'EFSA (Autorité Européenne de
-Sécurité des Aliments). - De nombreux additifs cotés E sont des
-molécules physiologiques fondamentales ou des extraits végétaux bruts
-que vous avez tous dans votre cuisine : - #strong[E300 :] L'acide
-ascorbique, c'est-à-dire la banale #strong[vitamine C] présente dans une
-orange. - #strong[E330 :] L'acide citrique, composant naturel du jus de
-citron. - #strong[E322 :] La lécithine (de soja ou d'œuf), émulsifiant
-naturel indispensable à une mayonnaise. - #strong[E440 :] La pectine de
-pomme, gélifiant universel des confitures de grand-mère. - #strong[E160a
-:] Le bêta-carotène qui donne sa couleur orangée à la carotte. -
-#strong[E100 :] La curcumine, pigment extrait de la racine brute de
-curcuma.
+== 1. QU'EST-CE QU'UN ADDITIF ALIMENTAIRE ? HISTOIRE, DÉFINITION ET CATÉGORIES
+<quest-ce-quun-additif-alimentaire-histoire-définition-et-catégories>
+Avant de diaboliser ou d'absoudre aveuglément les mentions des
+emballages, il est impératif d'adopter une démarche scientifique
+rigoureuse. Qu'est-ce qu'un additif alimentaire au regard de la
+biochimie et du droit ?
 
-Le véritable enjeu citoyen et nutritionnel ne réside pas dans le fait
-qu'un additif possède un matricule E, mais dans #strong[sa fonction
-réelle] : sert-il à empêcher le développement mortel du botulisme, ou
-sert-il à gorger un jambon de $30 thin %$ d'eau industrielle pour vous
-vendre de l'eau au prix du porc ?
+=== A. Définition Réglementaire et Différence avec l'Auxiliaire Technologique
+<a.-définition-réglementaire-et-différence-avec-lauxiliaire-technologique>
+Selon le #emph[Codex Alimentarius] et les règlements de l'Union
+Européenne (Règlement CE n° 1333/2008), un #strong[additif alimentaire]
+est toute substance qui n'est pas normalement consommée en tant que
+denrée alimentaire en soi, ni utilisée comme ingrédient caractéristique
+d'un aliment, mais qui est ajoutée intentionnellement dans un but
+technologique (conservation, émulsion, coloration, texture) lors de la
+fabrication, de la transformation, du conditionnement ou du stockage. -
+#strong[L'obligation d'étiquetage :] Tout additif présent dans le
+produit fini doit obligatoirement figurer sur la liste des ingrédients,
+soit sous son nom scientifique complet, soit sous son matricule européen
+(#strong[Code E]). - #strong[Le piège méconnu des « Auxiliaires
+Technologiques » (#emph[Processing Aids]) :] À l'inverse des additifs,
+les auxiliaires technologiques (enzymes de clarification des jus de
+fruits, solvants d'extraction des huiles, bentonite ou colle de poisson
+pour filtrer le vin) ne sont utilisés que pendant la fabrication et sont
+éliminés avant le conditionnement final. #strong[La loi n'impose pas de
+les mentionner sur l'étiquette], bien que des traces résiduelles
+infinitésimales puissent persister dans le produit fini.
+
+=== B. Trajectoire Historique : De la Salaison Ancestrale à la Pétrochimie
+<b.-trajectoire-historique-de-la-salaison-ancestrale-à-la-pétrochimie>
+L'humanité n'a pas attendu l'ère industrielle pour recourir aux additifs
+: 1. #strong[Les Béquilles Traditionnelles :] Le chlorure de sodium (sel
+marin), la fumée de bois noble (riche en phénols antiseptiques), le
+vinaigre d'alcool (acide acétique), le miel (hypertonique déshydratant)
+et la lacto-fermentation spontanée furent les premiers conservateurs
+inventés par l'homme dès le Néolithique pour différer la pourriture
+bactérienne. 2. #strong[Le Tournant du XIXe et XXe Siècle :] Avec
+l'explosion urbaine, l'éloignement des bassins agricoles et l'avènement
+de la grande distribution moderne, l'aliment n'est plus consommé dans
+les 48 heures suivant sa récolte ou son abattage. Il doit voyager des
+milliers de kilomètres et demeurer inaltérable sur un rayonnage sous un
+éclairage fluorescent pendant six à vingt-quatre mois. 3.
+#strong[L'Invasion de la Synthèse Chimique :] Pour atteindre cette
+stabilité extrême à coût dérisoire, les chimistes ont conçu des
+antioxydants dérivés du pétrole (BHA, BHT), des colorants azoïques issus
+des goudrons de houille et des émulsifiants de synthèse capables de
+contraindre l'eau et les graisses à cohabiter indéfiniment sans jamais
+se séparer.
 
 #divider()
 
-== 2. LA LISTE CRITIQUE DES ADDITIFS PROBLÉMATIQUES OU DANGEREUX
-<la-liste-critique-des-additifs-problématiques-ou-dangereux>
-Voici le tableau exhaustif des substances dont la toxicité, l'effet
-promoteur sur l'inflammation ou l'action cancérogène sont documentés par
-la recherche médicale indépendante :
+== 2. LES SEPT GRANDES FAMILLES FONCTIONNELLES DE L'INDUSTRIE
+<les-sept-grandes-familles-fonctionnelles-de-lindustrie>
+Pour décoder les étiquettes en un coup d'œil, il suffit de comprendre la
+nomenclature numérique européenne du code E :
+
+#figure(
+  align(center)[#table(
+  stroke: 0.5pt + rgb("#dcd6ca"),
+  fill: (x, y) => if y == 0 { rgb("#f2ece1") } else if calc.odd(y) { rgb("#faf7f2") } else { none },
+  inset: 8pt,
+
+    columns: (29.41%, 23.53%, 23.53%, 23.53%),
+    align: (center,left,left,left,),
+    table.header([Série], [Famille Fonctionnelle], [Rôle Technologique
+      Visé], [Équivalent Domestique Traditionnel],),
+    table.hline(),
+    [#strong[E100 à E199]], [#strong[Colorants]], [Rendre une teinte
+    flatteuse et uniforme à un aliment blanchi par les traitements
+    thermiques.], [Safran, curcuma, jus de betterave, chlorophylle
+    d'épinard.],
+    [#strong[E200 à E299]], [#strong[Conservateurs]], [Bloquer la
+    prolifération des bactéries pathogènes, des moisissures et des
+    levures.], [Sel marin, vinaigre de cidre, alcool pur, fumage au
+    bois.],
+    [#strong[E300 à E399]], [#strong[Antioxydants &
+    Acidifiants]], [Empêcher le rancissement des graisses et le
+    brunissement enzymatique des végétaux découpés.], [Jus de citron
+    frais (acide citrique & vitamine C).],
+    [#strong[E400 à E499]], [#strong[Émulsifiants, Épaississants &
+    Gélifiants]], [Maintenir des liaisons stables eau-huile ou gonfler
+    artificiellement le volume avec de l'eau.], [Jaune d'œuf
+    (lécithine), gélatine de bœuf/porc, pectine de pomme, amidon de
+    maïs.],
+    [#strong[E500 à E599]], [#strong[Régulateurs de pH &
+    Anti-agglomérants]], [Empêcher les poudres de motter à l'humidité ou
+    neutraliser l'acidité excessive.], [Bicarbonate de sodium, fécule
+    fine.],
+    [#strong[E600 à E699]], [#strong[Exhausteurs de Goût]], [Surstimuler
+    les récepteurs umami et salés de la langue pour compenser la fadeur
+    de bases déshydratées.], [Bouillon d'os mijoté, sauce soja
+    fermentée, parmesan affiné, champignons séchés.],
+    [#strong[E900 à E999]], [#strong[Édulcorants & Gaz
+    d'emballage]], [Imiter la sensation sucrée sans calories ou chasser
+    l'oxygène des sachets plastiques.], [Miel, sirop d'érable, sucre de
+    canne complet.],
+  )]
+  , kind: table
+  )
+
+#divider()
+
+== 3. LE GRAND TABLEAU CRITIQUE DES CODES E : DISTINGUER LE NOBLE DU TOXIQUE
+<le-grand-tableau-critique-des-codes-e-distinguer-le-noble-du-toxique>
+Il n'y a aucune malédiction inhérente au matricule « E » : la nature a
+inventé les molécules les plus stables bien avant les laboratoires. Le
+tableau suivant rassemble en une vision synthétique les additifs nobles
+et physiologiques inoffensifs, et les substances suspectes ou
+dangereuses documentées par la recherche biomédicale :
 
 #figure(
   align(center)[#table(
@@ -2404,77 +2734,95 @@ la recherche médicale indépendante :
 
     columns: (19.05%, 19.05%, 19.05%, 19.05%, 23.81%),
     align: (left,left,left,left,center,),
-    table.header([Code E & Nom], [Catégorie Fonctionnelle], [Produits
-      Typiques], [Risques Médicaux & Mécanisme Biologique], [Niveau de
-      Vigilance],),
+    table.header([Code E & Nom], [Famille], [Origine & Nature], [Rôle
+      Réel & Évaluation Médicale], [Statut Recommandé],),
     table.hline(),
+    [#strong[E300]\\], [], [], [], [],
+    [#emph[\(Acide ascorbique)]], [Antioxydant], [Vitamine C
+    pure], [Protège contre le rancissement et l'oxydation de l'air.
+    Vitamine physiologique essentielle.], [#strong[TOTALEMENT
+    INOFFENSIF]],
+    [#strong[E330]\\], [], [], [], [],
+    [#emph[\(Acide citrique)]], [Acidifiant], [Molécule naturelle des
+    agrumes], [Régulateur de pH biologique. Intermédiaire fondamental du
+    cycle cellulaire de Krebs.], [#strong[TOTALEMENT INOFFENSIF]],
+    [#strong[E322]\\], [], [], [], [],
+    [#emph[\(Lécithines)]], [Émulsifiant], [Extrait de jaune d'œuf ou de
+    graine de soja], [Phospholipide naturel permettant de lier l'eau et
+    l'huile. Composant clé des membranes
+    cellulaires.], [#strong[TOTALEMENT INOFFENSIF]],
+    [#strong[E440]\\], [], [], [], [],
+    [#emph[\(Pectine)]], [Gélifiant], [Fibres des pépins et peaux de
+    pommes/agrumes], [Polysaccharide végétal soluble formant un gel
+    stable en milieu acide et sucré. Excellente fibre
+    prébiotique.], [#strong[TOTALEMENT INOFFENSIF]],
+    [#strong[E410 / E412]\\], [], [], [], [],
+    [#emph[\(Farine de caroube / Gomme guar)]], [Épaississant], [Graines
+    d'arbres légumineux], [Fibres végétales naturelles solubles gonflant
+    dans l'eau. Bénéfique pour le transit à dose
+    modérée.], [#strong[INOFFENSIF]],
+    [#strong[E100 / E160a]\\], [], [], [], [],
+    [#emph[\(Curcumine / Bêta-carotène)]], [Colorant], [Extraits de
+    rhizome de curcuma ou de carottes], [Pigments végétaux antioxydants
+    puissants (provitamine A). Protecteurs
+    cellulaires.], [#strong[INOFFENSIF / BÉNÉFIQUE]],
     [#strong[E249 / E250]\\], [], [], [], [],
-    [#emph[\(Nitrites de potassium et de sodium)]], [Conservateur
-    antibactérien & fixateur de couleur rose], [Jambons blancs,
-    saucisses industrielles, charcuteries], [En milieu gastrique acide
-    et à la cuisson, réagissent avec les amines pour former des
-    #strong[nitrosamines hautement cancérogènes] (cancer
-    colorectal).], [#strong[À BANNIR ABSOLUMENT]],
+    [#emph[\(Nitrites de potassium et sodium)]], [Conservateur], [Sel
+    minéral de synthèse], [Utilisé pour colorer le jambon en rose et
+    empêcher le botulisme. #strong[Forme des nitrosamines cancérogènes]
+    (cancer colorectal avéré).], [#strong[À BANNIR ABSOLUMENT]],
     [#strong[E251 / E252]\\], [], [], [], [],
-    [#emph[\(Nitrates de sodium et de potassium)]], [Conservateur de
-    salaison longue], [Charcuteries sèches, certains fromages à pâte
-    pressée], [Réduits en nitrites par les bactéries buccales et
-    digestives, rejoignent le cycle de formation des
-    nitrosamines.], [#strong[À ÉVITER RIGOUREUSEMENT]],
+    [#emph[\(Nitrates de potassium et sodium)]], [Conservateur], [Sels
+    de salaison industrielle], [Métabolisés en nitrites par les enzymes
+    salivaires et digestives. Même toxicité à long terme.], [#strong[À
+    ÉVITER RIGOUREUSEMENT]],
     [#strong[E150c / E150d]\\], [], [], [], [],
-    [#emph[\(Caramels ammoniacal et au sulfite)]], [Colorant brun
-    foncé], [Sodas au cola, bières industrielles, sauces brunes toutes
-    prêtes], [Fabriqués par traitement du sucre avec de l'ammoniaque
-    sous haute pression. Contiennent du #strong[4-méthylimidazole
-    (4-MEI)], classé cancérigène possible par le CIRC.], [#strong[À
-    ÉVITER]],
+    [#emph[\(Caramels ammoniacal et au sulfite)]], [Colorant
+    brun], [Sucre traité à l'ammoniaque sous haute pression], [Utilisé
+    dans les colas, bières et sauces brunes. Contient du
+    4-méthylimidazole (4-MEI), promoteur de mutations
+    cellulaires.], [#strong[À PROSCRIRE]],
     [#strong[E220 à E228]\\], [], [], [], [],
-    [#emph[\(Sulfites et dérivés soufrés)]], [Conservateurs
-    antimicrobiens et antioxydants], [Vins industriels, fruits secs
-    réhydratés, moutardes, crevettes], [Détruisent la thiamine
-    ($upright(B)_1$), provoquent des réactions d'intolérance aiguë
-    (migraines violentes, crises d'asthme sévères chez les personnes
-    sensibles).], [#strong[VIGILANCE ÉLEVÉE]],
+    [#emph[\(Sulfites minéraux)]], [Conservateur], [Dérivés du dioxyde
+    de soufre], [Présents dans les vins industriels et fruits secs.
+    Détruisent la vitamine $upright(B)_1$. Déclenchent migraines et
+    crises d'asthme sévères.], [#strong[VIGILANCE / ÉVITER]],
     [#strong[E466]\\], [], [], [], [],
-    [#emph[\(Carboxyméthylcellulose / Gomme de
-    cellulose)]], [Épaississant et émulsifiant de synthèse], [Sauces
-    émulsionnées allégées, glaces industrielles, plats
-    cuisinés], [Dégrade la couche protectrice de mucus intestinal,
-    induit une dysbiose du microbiote, favorise les maladies
-    inflammatoires chroniques de l'intestin (MICI).], [#strong[À
-    BANNIR]],
+    [#emph[\(Carboxyméthylcellulose)]], [Émulsifiant], [Polymère
+    cellulosique modifié chimiquement], [Stabilisant des glaces et
+    sauces allégées. Dissout le mucus de protection intestinal, favorise
+    les MICI (maladie de Crohn).], [#strong[À BANNIR DU FOYER]],
     [#strong[E433]\\], [], [], [], [],
-    [#emph[\(Polysorbate 80)]], [Émulsifiant de synthèse], [Crèmes
-    glacées industrielles, desserts laitiers texturés], [Même action
-    délétère que le E466 : perméabilise la barrière de l'épithélium
-    intestinal et promeut le syndrome métabolique.], [#strong[À
-    BANNIR]],
+    [#emph[\(Polysorbate 80)]], [Émulsifiant], [Molécule amphiphile de
+    synthèse], [Dégrade la barrière épithéliale du côlon, favorise le
+    syndrome métabolique et le passage systémique
+    d'endotoxines.], [#strong[À BANNIR DU FOYER]],
+    [#strong[E407]\\], [], [], [], [],
+    [#emph[\(Carraghénanes dégradés)]], [Gélifiant], [Algues rouges
+    traitées à l'acide fort], [Utilisé dans les desserts laitiers et
+    crèmes légères. Provoque des ulcérations coliques et une forte
+    inflammation tissulaire.], [#strong[VIGILANCE ÉLEVÉE]],
     [#strong[E102, E110, E129]\\], [], [], [], [],
-    [#emph[\(Colorants azoïques : Tartrazine, Jaune orangé, Rouge
-    allura)]], [Colorants de synthèse pétrochimiques], [Bonbons,
-    confiseries d'enfants, sirops fluorescents], [Traversent la barrière
-    hémato-encéphalique : associés aux troubles du comportement, déficit
-    de l'attention et hyperactivité infantile (mention légale
-    obligatoire en UE).], [#strong[À PROSCRIRE (Enfants)]],
+    [#emph[\(Tartrazine, Jaune orangé, Rouge allura)]], [Colorants
+    azoïques], [Dérivés de fractions pétrochimiques], [Utilisés dans les
+    confiseries et sirops d'enfants. Associés aux troubles de
+    l'attention et à l'hyperactivité infantile (TDAH).], [#strong[À
+    INTERDIRE AUX ENFANTS]],
     [#strong[E320 / E321]\\], [], [], [], [],
-    [#emph[\(BHA et BHT)]], [Antioxydants de synthèse des corps
-    gras], [Huiles de friture industrielles, chips, céréales du
-    petit-déjeuner], [Suspectés de perturber le système endocrinien
-    (effets oestrogéniques) et de s'accumuler dans les tissus adipeux
-    profonds.], [#strong[À ÉVITER]],
+    [#emph[\(BHA et BHT)]], [Antioxydant], [Dérivés phénoliques de
+    synthèse], [Empêchent l'oxydation des huiles industrielles.
+    Perturbateurs endocriniens suspectés, accumulation dans le tissu
+    adipeux.], [#strong[À ÉVITER]],
     [#strong[E621]\\], [], [], [], [],
-    [#emph[\(Glutamate monosodique)]], [Exhausteur de goût
-    chimique], [Soupes déshydratées, chips aromatisées, plats asiatiques
-    de basse gamme], [N'est pas toxique à dose modérée mais sert
-    d'artifice neurologique pour #strong[masquer l'indigence de matières
-    premières de mauvaise qualité] et induit une surconsommation
-    addictive.], [#strong[VIGILANCE / MASQUAGE]],
+    [#emph[\(Glutamate monosodique)]], [Exhausteur de goût], [Sel de
+    sodium de l'acide glutamique], [Non toxique aigu en soi, mais sert à
+    tromper le palais sur des bouillons dénués d'ingrédients nobles et
+    favorise la boulimie.], [#strong[VIGILANCE / MASQUAGE]],
     [#strong[E951 / E955]\\], [], [], [], [],
-    [#emph[\(Aspartame et Sucralose)]], [Édulcorants intenses de
-    synthèse], [Sodas "Light" / "Zéro", yaourts allégés, édulcorants de
-    table], [Maintiennent l'addiction cérébrale au goût sucré, trompent
-    la signalisation de l'insuline et altèrent la flore bactérienne du
-    côlon.], [#strong[CONTRE-PRODUCTIF]],
+    [#emph[\(Aspartame / Sucralose)]], [Édulcorant], [Molécules de
+    synthèse hyper-sucrantes], [Maintiennent l'appétence addictive pour
+    le sucre, altèrent le microbiote intestinal et perturbent la
+    sensibilité à l'insuline.], [#strong[ILLUSION CHIMIQUE]],
   )]
   , kind: table
   )
@@ -2482,92 +2830,129 @@ la recherche médicale indépendante :
 #point_attention[
 
 
-==== ⚠️ La Fausse Couleur du Jambon : Le Scandale des Nitrites Décodé
-<la-fausse-couleur-du-jambon-le-scandale-des-nitrites-décodé>
-Pourquoi le jambon blanc sous plastique est-il d'un rose éclatant ? Dans
-la nature, un muscle de porc cuit à l'eau ou au bouillon prend une
-couleur gris-brun terne et naturelle (due à l'oxydation de la myoglobine
-en mémyoglobine). Les industriels injectent des nitrites de sodium
-(E250) non pas pour le goût, mais pour forger de la nitrosomyoglobine,
-un complexe chimique rose vif et inaltérable. L'argument sanitaire («
-pour éviter le botulisme ») est un paravent commode : les salaisons
-traditionnelles de Parme ou de San Daniele n'utilisent que du sel marin
-et du temps, avec un taux de botulisme rigoureusement nul.
+==== ⚠️ L'Énigme du « Jambon Sans Nitrites » du Commerce
+<lénigme-du-jambon-sans-nitrites-du-commerce>
+Certaines barquettes de la grande distribution arborent fièrement la
+mention tapageuse #emph[« Garanti sans nitrite ajouté »] tout en
+affichant une couleur rose vif insolite. Regardez la liste des
+ingrédients : vous y découvrirez souvent des #strong[« bouillons de
+légumes concentrés (céleri, blette) fermentés »]. Le céleri-branche est
+naturellement gorgé de nitrates du sol. En l'ensemençant en cuve avec
+des bactéries réductrices avant de l'injecter dans la viande,
+l'industriel introduit des nitrites naturels de contrebande ! La chimie
+finale est rigoureusement identique dans l'estomac : des nitrosamines se
+forment. Pour un vrai jambon blanc sain sans artifice, achetez un jambon
+artisanal cuit au bouillon sans aucun additif végétal nitraté : sa chair
+doit être d'une couleur gris-beige naturelle.
 
 
 ]
 
 #divider()
 
-== 3. L'EXAMEN CRITIQUE DES OUTILS D'ÉVALUATION : YUKA ET LE NUTRI-SCORE
-<lexamen-critique-des-outils-dévaluation-yuka-et-le-nutri-score>
-Face à la jungle des étiquettes et des additifs, des millions de
-citoyens se tournent vers des applications numériques (Yuka, Open Food
-Facts) ou vers l'étiquetage frontal officiel (Nutri-Score). Si ces
-outils ont marqué un progrès citoyen indéniable, ils présentent de
-redoutables #strong[angles morts cognitifs et méthodologiques].
+== 4. L'EFFET COCKTAIL ET LES LIMITES DE LA TOXICOLOGIE CLASSIQUE
+<leffet-cocktail-et-les-limites-de-la-toxicologie-classique>
+L'argument massue répété par les lobbies industriels repose sur la
+notion de #strong[Dose Journalière Admissible (DJA)] : chaque additif
+pris isolément ne dépasse pas le seuil légal de toxicité mesuré sur des
+rats en laboratoire.
 
-=== A. L'Application Yuka : Ses Victoires et ses Biais Algorithmiques
-<a.-lapplication-yuka-ses-victoires-et-ses-biais-algorithmiques>
-- #strong[Ce que Yuka fait de remarquable :]
-  + #emph[L'autonomisation du consommateur :] Traduire instantanément
-    une liste microscopique de 30 composants en un code couleur
-    compréhensible ($100 thin %$ des acheteurs ne savaient pas lire les
-    codes E auparavant).
-  + #emph[La pression salutaire sur les industriels :] La peur du
-    scandale du scan rouge a contraint de grands groupes à supprimer le
-    dioxyde de titane (E171) et à réduire les sels nitrités.
-- #strong[Ses faiblesses méthodologiques majeures :]
-  + #emph[L'absence de pondération de dose :] Yuka pénalise un produit
-    avec la même sévérité pour une trace infinitésimale d'additif que
-    pour une dose massive.
-  + #emph[La punition des matières premières nobles :] Scannez un beurre
-    cru fermier normand ($82 thin %$ de matière grasse) ou une sublime
-    huile d'olive vierge extra AOP de Provence. Yuka leur attribuera une
-    note médiocre ou rouge en raison de leur densité calorique et de
-    leur richesse en acides gras saturés ! L'algorithme confond un
-    ingrédient brut essentiel au cerveau avec une barre chocolatée
-    industrielle ultra-transformée.
+Mais ce modèle d'évaluation présente deux failles béantes : 1.
+#strong[L'Effet Cocktail (#emph[Cocktail Effect]) :] Dans la vie réelle,
+un individu consommant un plat préparé, une sauce toute faite, un
+dessert allégé et un soda absorbe entre 12 et 25 additifs différents
+dans la même journée. Les études de l'INSERM et de l'INRAE démontrent
+que l'association simultanée de deux émulsifiants de synthèse (E466 +
+E433) avec un conservateur nitrité multiplie par quatre la perméabilité
+de la muqueuse intestinale, là où chaque substance prise séparément
+paraissait inerte. 2. #strong[La Chrono-Toxicité et le Microbiote Humain
+:] Les tests réglementaires historiques mesuraient la mortalité
+immédiate ou l'apparition de tumeurs franches sur des périodes courtes.
+Or, l'impact le plus dévastateur des additifs modernes s'exerce sur le
+temps long via l'érosion progressive des 100 000 milliards de bactéries
+symbiotiques de notre microbiote. Lorsque le mucus intestinal est digéré
+par des détergents alimentaires de synthèse, les bactéries entrent en
+contact direct avec la paroi cellulaire de l'hôte, déclenchant un état
+d'inflammation de bas grade (#emph[silent inflammation]) impliqué dans
+l'obésité, le diabète de type 2 et les maladies auto-immunes.
 
-=== B. Le Nutri-Score : Les Impasses de la Comptabilité Arithmétique
-<b.-le-nutri-score-les-impasses-de-la-comptabilité-arithmétique>
-Conçu par l'équipe du professeur Hercberg, le Nutri-Score classe les
-aliments de A (vert) à E (rouge) en calculant une balance mathématique
-pour #strong[$100 upright(" g")$ d'aliment] :
-$ upright("Score") = upright("Points Négatifs (Calories, Sucres, Graisses saturées, Sodium)") - upright("Points Positifs (Fibres, Protéines, Végétaux)") $
+#divider()
 
-- #strong[Les Aberrations Structurantes du Nutri-Score :]
-  + #emph[L'aveuglement absolu au degré de transformation
-    (Classification NOVA) :] Le Nutri-Score ignore totalement les
-    procédés mécaniques et thermiques d'extrusion, de cracking d'amidon
-    et d'ultra-transformation. Des céréales soufflées pour enfants,
-    gorgées d'émulsifiants et d'arômes de synthèse mais enrichies
-    artificiellement en fibres d'avoine, peuvent décrocher un
-    #strong[Nutri-Score A] !
-  + #emph[La comparaison déloyale d'un produit brut et d'un soda
-    chimique :] Un soda édulcoré à l'aspartame (zéro calorie, zéro sucre
-    affiché) reçoit un Nutri-Score B, tandis qu'un fromage de chèvre AOP
-    au lait cru ou une boîte de sardines à l'huile d'olive (bourrée
-    d'oméga-3, de vitamine D et de calcium hautement assimilable) sera
-    puni d'un D ou d'un E.
-  + #emph[Le piège de la portion de 100 g :] Personne ne boit
-    $100 upright(" ml")$ d'huile d'olive à la cuillère, et personne ne
-    s'arrête à $30 upright(" g")$ de chips allégées. Le calcul
-    déconnecté des usages réels induit le consommateur en erreur.
+== 5. DÉCRYPTAGE CRITIQUE : YUKA ET LE NUTRI-SCORE FACE À LA VÉRITÉ DU FAIT-MAISON
+<décryptage-critique-yuka-et-le-nutri-score-face-à-la-vérité-du-fait-maison>
+Des millions de cuisiniers consultent quotidiennement des applications
+de scan de codes-barres ou s'en remettent aux pastilles colorées du
+Nutri-Score. Ces outils ont constitué un indéniable réveil citoyen, mais
+ils comportent des biais structurants majeurs qu'un esprit éclairé doit
+savoir déjouer.
+
+=== A. L'Application Yuka : L'Exploit Citoyen et les Biais de l'Algorithme
+<a.-lapplication-yuka-lexploit-citoyen-et-les-biais-de-lalgorithme>
+- #strong[Ses immenses mérites :]
+  + #emph[La démocratisation de l'investigation :] Yuka a rendu
+    intelligible au grand public le langage cryptique des industriels.
+  + #emph[Le pouvoir de rétorsion économique :] Craignant l'impact
+    commercial des « pastilles rouges » sur les ventes, de nombreuses
+    marques ont reformulé leurs recettes en supprimant le dioxyde de
+    titane (E171) ou en réduisant les sulfites.
+- #strong[Ses angles morts méthodologiques :]
+  + #emph[L'amalgamation du noble et du déchet calorique :] Scannez un
+    beurre cru fermier de baratte ($82 thin %$ de matière grasse
+    saturée) ou une huile d'olive vierge extra de première pression à
+    froid. L'algorithme leur attribue une note médiocre ou rouge en
+    raison de leur densité en lipides ! Yuka évalue mal les lipides
+    bruts vitaux pour le cerveau et la synthèse hormonale.
+  + #emph[Le problème de la dose réelle :] L'application note un produit
+    de manière binaire sans pondérer la fréquence d'usage : une pincée
+    de sel marin gris non raffiné est classée en « excès de sodium »,
+    oubliant que l'organisme en requiert pour la transmission
+    synaptique.
+
+=== B. Le Nutri-Score : Le Scandale de l'Aveuglement à l'Ultra-Transformation
+<b.-le-nutri-score-le-scandale-de-laveuglement-à-lultra-transformation>
+Mis en place par les autorités sanitaires européennes, le Nutri-Score
+calcule un solde arithmétique abstrait pour #strong[$100 upright(" g")$
+d'aliment], en opposant les nutriments à limiter (calories, sucres
+simples, acides gras saturés, sel) aux composants favorables (fibres,
+protéines, part de fruits et légumes).
+
+$ upright("Points Nutri-Score") = upright("Points Défavorables") - upright("Points Favorables") $
+
+- #strong[Les Dérives Majeures du Système :]
+  + #emph[L'aveuglement total aux procédés de cracking et d'extrusion :]
+    Le Nutri-Score ne sanctionne absolument pas le degré
+    d'ultra-transformation (selon la classification internationale
+    NOVA). Un paquet de céréales industrielles pour enfants, fabriqué à
+    base d'amidon de maïs hydrolysé sous haute pression, d'arômes de
+    synthèse et d'émulsifiants, décroche un #strong[Nutri-Score A] sous
+    prétexte que l'industriel y a rajouté une poignée de fibres d'avoine
+    isolées et de protéines de soja dénaturées !
+  + #emph[Le châtiment inique des trésors du patrimoine :] Les fleurons
+    ancestraux du terroir --- le roquefort au lait cru, le jambon sec de
+    montagne, les sardines à l'huile d'olive --- récoltent des scores D
+    ou E, pendant qu'un soda édulcoré aux produits de synthèse sans
+    calories obtient un B ou un C.
+  + #emph[Le trucage des recettes par les industriels :] Les
+    formulateurs agroalimentaires modifient subtilement les recettes non
+    pas pour la santé du consommateur, mais pour faire basculer le
+    produit d'un C à un B à coups d'isolats de fibres et d'édulcorants
+    invisibles.
 
 #truc_de_chef[
 
 
-==== 💡 La Règle d'Or de l'Autonomie Culinaire
-<la-règle-dor-de-lautonomie-culinaire>
-Ne déléguez jamais votre discernement à un smartphone ou à un logo
-étatique. Appliquez la #strong[Règle des 5 Ingrédients] du Dr Michael
-Pollan : si un aliment industriel contient plus de cinq ingrédients, si
-vous êtes incapable de trouver l'un d'eux dans votre propre placard (ex.
-maltodextrine, protéine de soja texturée, polyphosphates), ou si le
-produit porte une allégation santé tapageuse (« Enrichi en calcium ! »),
-remettez-le en rayon. Une pomme, une côte de porc et une courgette n'ont
-pas de liste d'ingrédients : ce sont les ingrédients.
+==== 💡 Le Manifeste de l'Ingrédient Unique : La Règle Infaillible
+<le-manifeste-de-lingrédient-unique-la-règle-infaillible>
+Pour nourrir sainement son corps et sa famille, il existe une règle qui
+surpasse tous les algorithmes de la Silicon Valley et toutes les
+pastilles ministérielles : #strong[achetez des ingrédients qui n'ont pas
+de liste d'ingrédients]. - Une carotte avec ses fanes, un maquereau
+frais, un sac de lentilles vertes du Puy, une bouteille d'huile d'olive
+vierge extra n'ont pas de code E, pas de Nutri-Score et pas de
+conservateurs. - Si vous cuisinez à partir de la matière première brute
+avec l'arsenal minimal décrit au Chapitre 01, la question des additifs
+s'évanouit d'elle-même : vous maîtrisez $100 thin %$ des molécules qui
+entrent dans votre casserole.
 
 
 ]
@@ -4014,6 +4399,149 @@ chaînes moléculaires de se lier étroitement pour former une membrane
 
 #divider()
 
+#divider()
+
+== 5. L'Alimentation Végétale et le « Bio » : Vérités Agronomiques, Polyphénols et Pièges Industriels
+<lalimentation-végétale-et-le-bio-vérités-agronomiques-polyphénols-et-pièges-industriels>
+Dans la quête d'une alimentation végétale équilibrée, la question du
+label biologique (#strong[AB] en France, #strong[Eurofeuille] dans
+l'Union Européenne) revient de manière récurrente. Faut-il tout acheter
+en bio ? Le surcoût financier est-il justifié sur le plan de la physique
+et de la santé humaine ?
+
+=== A. Le Cahier des Charges AB Décodé Sans Idéologie
+<a.-le-cahier-des-charges-ab-décodé-sans-idéologie>
+L'agriculture biologique repose sur un principe légal strict : -
+#strong[L'interdiction absolue des intrants de synthèse :] Aucun engrais
+azoté chimique minéral, aucun herbicide de synthèse (comme le
+glyphosate), aucun pesticide ni fongicide issu de la pétrochimie. -
+#strong[La proscription stricte des OGM] (organismes génétiquement
+modifiés). - #strong[Le contingentement des additifs :] Alors que
+l'industrie conventionnelle peut puiser dans un catalogue de plus de 330
+additifs autorisés, le cahier des charges biologique n'en autorise
+qu'une cinquantaine, presque tous d'origine végétale ou minérale simple
+(pectines, acide citrique, lécithines), en excluant formellement les
+colorants azoïques, les édulcorants intenses et les exhausteurs de goût
+de synthèse. - #strong[La limite agronomique réelle :] Le bio n'est pas
+une agriculture « sans traitement ». Pour protéger la vigne et les
+vergers contre le mildiou, l'agriculture biologique utilise la
+#emph[bouillie bordelaise] (sulfate de cuivre et chaux). Bien que
+naturelle, la molécule de cuivre ne se dégrade pas dans l'environnement
+et a tendance à s'accumuler dans la fraction minérale superficielle des
+sols à long terme.
+
+=== B. Ce que Révèle la Biochimie Végétale : L'Effet Bouclier des Polyphénols
+<b.-ce-que-révèle-la-biochimie-végétale-leffet-bouclier-des-polyphénols>
+Pourquoi un légume ou un fruit biologique présente-t-il souvent une
+saveur plus dense et un profil nutritionnel différent ? 1. #strong[La
+Plante en Survie Active :] En agriculture conventionnelle, la plante vit
+dans un confort artificiel permanent : les pesticides détruisent ses
+prédateurs à sa place, tandis que les engrais chimiques solubles
+perfusent ses racines d'azote sans qu'elle ait besoin d'étendre son
+réseau racinaire. Elle se gorge d'eau libre : ses cellules sont
+volumineuses, mais diluées en nutriments. 2. #strong[La Synthèse des
+Défenses Chimiques Naturelles :] En agriculture biologique, la plante
+est confrontée aux agressions naturelles (champignons, morsures
+d'insectes, variations climatiques). Pour cicatriser et se défendre sans
+aide extérieure, elle doit fabriquer ses propres armes chimiques : des
+#strong[métabolites secondaires protecteurs]. Ces molécules de défense
+sont les #strong[polyphénols, les anthocyanes, les flavonoïdes, le
+resvératrol et les tanins]. 3. #strong[Le Verdict des Méta-Analyses :]
+Les grandes synthèses scientifiques internationales (notamment les
+travaux de l'Université de Newcastle sur des centaines d'études
+comparatives) confirment que les végétaux biologiques contiennent
+#strong[entre 20 % et 40 % de polyphénols antioxydants en plus] que
+leurs homologues conventionnels. Ce sont précisément ces molécules qui
+confèrent aux légumes d'autrefois leur amertume subtile, leur fermeté en
+cuisson et leurs vertus protectrices contre le vieillissement
+cellulaire.
+
+=== C. Le Piège du « Bio Ultra-Transformé »
+<c.-le-piège-du-bio-ultra-transformé>
+L'une des erreurs les plus fréquentes commises par les consommateurs
+consiste à confondre #strong[biologique] et #strong[sain] : - Une boîte
+de biscuits industriels à base de farine blanche bio raffinée, de sucre
+de canne bio, d'huile de palme bio et de sel reste un désastre
+métabolique pour l'organisme, déclenchant les mêmes pics massifs
+d'insuline et le même stockage hépatique qu'un gâteau conventionnel. -
+De même, de nombreux « steaks végétaux » ou substituts de fromage
+labellisés bio font l'objet d'un intense fractionnement industriel
+(cracking de protéines, texturage thermique, ajout d'arômes et d'amidons
+modifiés). - #strong[Règle absolue :] Un aliment ultra-transformé reste
+néfaste pour le microbiote, qu'il porte le logo de l'agriculture
+biologique ou non. Le bio prend tout son sens #strong[uniquement sur des
+ingrédients bruts entiers].
+
+=== D. Le Guide Malin du Panier : Où Investir Son Budget ?
+<d.-le-guide-malin-du-panier-où-investir-son-budget>
+Parce que le budget alimentaire n'est pas infini, voici la matrice
+rationnelle fondée sur la perméabilité cuticulaire et la concentration
+des résidus :
+
+#figure(
+  align(center)[#table(
+  stroke: 0.5pt + rgb("#dcd6ca"),
+  fill: (x, y) => if y == 0 { rgb("#f2ece1") } else if calc.odd(y) { rgb("#faf7f2") } else { none },
+  inset: 8pt,
+
+    columns: (25%, 25%, 25%, 25%),
+    align: (left,left,left,left,),
+    table.header([Priorité d'Achat Bio (Investissement
+      Vital)], [Pourquoi le Bio est Incontournable], [Conventionnel
+      Acceptable (Économie Sereine)], [Pourquoi le Conventionnel
+      Suffit],),
+    table.hline(),
+    [#strong[Céréales complètes & Flocons]#emph[\(Riz complet, avoine,
+    farine T110 à T150)]], [Les pesticides de synthèse sont liposolubles
+    et s'accumulent à plus de $80 thin %$ dans le son et le germe
+    extérieur du grain. Consommer du complet conventionnel concentre les
+    toxiques.], [#strong[Céréales raffinées]#emph[\(Farine T45/T55, riz
+    blanc basmati)]], [Le grain a été mécaniquement décortiqué de ses
+    couches externes, éliminant la quasi-totalité des résidus de
+    pulvérisation.],
+    [#strong[Végétaux à peau fine consommée]#emph[\(Pommes, poires,
+    raisins, fraises, tomates, poivrons)]], [La peau concentre les
+    résidus superficiels impossibles à éliminer par un simple rinçage à
+    l'eau courante.], [#strong[Végétaux à écorce ou peau épaisse non
+    consommée]#emph[\(Avocats, bananes, ananas, pastèques, melons,
+    courges)]], [L'écorce épaisse agit comme une cuirasse mécanique
+    étanche empêchant la migration des molécules chimiques vers la
+    chair.],
+    [#strong[Légumes feuilles de surface]#emph[\(Épinards, salades,
+    blettes, céleri-branche)]], [Grande surface d'échange foliaire
+    exposée directement aux brouillards de
+    pulvérisation.], [#strong[Légumes protégés sous terre ou
+    pelés]#emph[\(Oignons, ail, betteraves pelées, maïs doux sous
+    spathe)]], [Les tuniques protectrices externes de l'oignon ou du
+    maïs sont retirées avant la préparation culinaire.],
+    [#strong[Légumineuses sèches avec cuticule]#emph[\(Lentilles vertes,
+    pois chiches, haricots secs)]], [La graine est cuite et ingérée dans
+    son intégralité avec son écorce cellulosique.], [#strong[Produits
+    laitiers et œufs de plein air]], [Si le bio est idéal, des œufs de
+    poules élevées en plein air (Code 1) sur parcours herbagé offrent
+    déjà une excellente balance en oméga-3.],
+  )]
+  , kind: table
+  )
+
+#truc_de_chef[
+
+
+==== 💡 L'Élimination Mécanique des Résidus sur le Conventionnel
+<lélimination-mécanique-des-résidus-sur-le-conventionnel>
+Si vous achetez des fruits ou légumes conventionnels, ne vous contentez
+pas de les passer sous un mince filet d'eau tiède : les molécules
+phytosanitaires sont formulées avec des surfactants gras pour adhérer
+aux feuilles même en cas de pluie torrentielle. Immergez vos végétaux
+pendant #strong[12 minutes dans une eau saturée de bicarbonate de
+sodium] ($10 e x t g\/L$, soit une cuillère à soupe par litre) : le
+milieu alcalin hydrolyse et décolle jusqu'à $80 thin %$ des résidus
+superficiels de pesticides (méthode validée par les chimistes de
+l'Université du Massachusetts). Rincez abondamment avant dégustation.
+
+
+]
+
 == 6. Tableau Récapitulatif : Équivalences et Substitutions Protéiques Végétales
 <tableau-récapitulatif-équivalences-et-substitutions-protéiques-végétales>
 #figure(
@@ -4976,31 +5504,44 @@ tolérer 190°C sans noircir.]
 
 #divider()
 
-=== 🍳 Fiche Recette 12 : L'Aïoli Provençal Traditionnel au Mortier de Marbre
+=== 🍳 Fiche Recette 12 : L'Aïoli Provençal Traditionnel (Au Mortier ou au Système D)
 <recette-grand-aioli>
 #emph[L'émulsion originelle sans œuf : le miracle mécanique des
 mucilages de l'ail et de l'huile d'olive.]
 
 - #strong[Temps de préparation :] 15 minutes
-- #strong[Minimalisme Instrumental :] 1 mortier en marbre ou grès lourd,
-  1 pilon en buis.
-- #strong[Ingrédients :] 6 gousses d'ail violet très frais,
-  $200 e x t m l$ d'huile d'olive vierge extra fruitée douce, 1 pincée
-  de gros sel marin, quelques gouttes de jus de citron.
+- #strong[Minimalisme Instrumental :] 1 mortier et pilon… OU son
+  #strong[équivalent système D du quotidien] (une planche de bois et un
+  grand couteau d'éminceur, ou un bol solide et le cul propre d'une
+  bouteille de vin).
+- #strong[Ingrédients :] 6 gousses d'ail violet très frais, 200 ml
+  d'huile d'olive vierge extra fruitée douce, 1 pincée de gros sel
+  marin, quelques gouttes de jus de citron frais.
 
 ===== Protocole Pas à Pas :
 <protocole-pas-à-pas-9>
-+ #strong[Le Broyage Cellulaire :] Dégermer les gousses d'ail. Les
-  placer dans le mortier avec le gros sel. Écraser au pilon par
-  rotations fermes jusqu'à destruction totale des parois cellulaires et
-  obtention d'une pommade translucide et collante.
++ #strong[Le Broyage Cellulaire (Au mortier OU au plat de couteau) :]
+  - #emph[Option Classique :] Dégermer les gousses d'ail. Les placer
+    dans le mortier avec le gros sel. Écraser au pilon par rotations
+    fermes jusqu'à destruction totale des parois cellulaires et
+    obtention d'une pommade translucide et collante.
+  - #emph[Option Système D (Sans mortier) :] Poser les gousses d'ail et
+    le gros sel marin sur une planche en bois. Écraser les gousses avec
+    le plat large d'un couteau de chef en appuyant fermement avec la
+    paume de la main, puis racler la lame d'avant en arrière à plusieurs
+    reprises. Les grains de sel agissent comme des meules abrasives
+    microscopiques qui déchiquettent les cellules en 90 secondes chrono,
+    formant une pâte d'ail soyeuse. On peut également utiliser le cul
+    propre et lourd d'une bouteille en verre dans un bol en faïence
+    épaisse.
 + #strong[L'Amorçage de l'Émulsion :] Ajouter une cuillère à café d'eau
-  tiède ou de jus de citron pour apporter la phase aqueuse nécessaire.
-+ #strong[Le Fil d'Huile au Pilon :] Tout en tournant le pilon de
-  manière ininterrompue contre les parois du mortier dans le même sens,
-  verser l'huile d'olive au goutte-à-goutte. L'émulsion se forme
-  spontanément, blanchissant et prenant la consistance d'un beurre
-  ferme. Le pilon doit tenir debout tout seul au centre du mortier.
+  tiède ou de jus de citron pour apporter la micro-phase aqueuse
+  indispensable à la dispersion des micelles.
++ #strong[Le Fil d'Huile :] Tout en tournant le pilon (ou en fouettant
+  vivement à la fourchette/petit fouet dans le bol), verser l'huile
+  d'olive au goutte-à-goutte très lent au début. Dès que l'émulsion «
+  mord », verser en mince filet continu. L'aïoli blanchit et épaissit
+  pour atteindre la consistance d'une pommade ferme et dense.
 
 #divider()
 
@@ -5021,9 +5562,10 @@ parfait de la physico-chimie appliquée. Pourtant, quatre-vingts pour
 cent des cuisiniers commettent des erreurs qui détruisent la texture et
 l'adhérence de la sauce.
 
-#figure(image("figures/livre_1/fig_pates_thermodynamique.svg", alt: "Le Geste au Microscope : Les Pâtes et l’Incendie d’Huile"),
+#figure(image("figures/livre_1/fig_pates_thermodynamique.svg", alt: "Le Geste au Microscope : La Thermodynamique des Pâtes et de l’Émulsion"),
   caption: [
-    Le Geste au Microscope : Les Pâtes et l'Incendie d'Huile
+    Le Geste au Microscope : La Thermodynamique des Pâtes et de
+    l'Émulsion
   ]
 )
 
@@ -5179,48 +5721,6 @@ polymérisation de l'ovotransferrine et ré-émulsionne la phase liquide.
 
 
 ]
-
-#divider()
-
-== 3. CAS LIMITE CRITIQUE : L'INCENDIE D'HUILE DANS LA POÊLE
-<cas-limite-critique-lincendie-dhuile-dans-la-poêle>
-Vous avez oublié une poêle d'huile sur un feu vif. La température
-franchit le point de fumée ($200 upright("–") 250^compose upright(C)$),
-puis le point d'auto-inflammation ($360^compose upright(C)$) :
-#strong[l'huile s'embrase violemment].
-
-=== Le Réflexe Meurtrier : Jeter de l'Eau
-<le-réflexe-meurtrier-jeter-de-leau>
-Dans la panique, le premier réflexe humain est d'amener la poêle sous
-l'évier ou de jeter un verre d'eau sur les flammes. C'est la cause
-numéro un des incendies domestiques mortels : 1. #strong[La différence
-de densité :] L'eau liquide est plus dense que l'huile chaude
-($d_(upright(e a u)) = 1\,0$ contre
-$d_(upright(h u i l e)) approx 0\,9$). L'eau plonge immédiatement au
-fond de la poêle brûlante sous l'huile. 2. #strong[L'explosion par
-vaporisation instantanée :] Au contact du fond métallique à
-$350^compose upright(C)$, l'eau liquide se transforme en vapeur en une
-fraction de milliseconde. Lors du passage liquide-gaz,
-#strong[$1 thin upright(v o l u m e)$ d'eau engendre
-$1700 thin upright(v o l u m e s)$ de vapeur]. 3. #strong[Le geyser et
-la boule de feu (#emph[Boilover]) :] La bulle de vapeur géante pulvérise
-toute l'huile brûlante en une pluie d'aérosol microscopique. Au contact
-de l'oxygène de la pièce, cet aérosol s'enflamme d'un coup, créant une
-boule de feu de 2 à 3 mètres de haut qui carbonise la cuisine et brûle
-grièvement l'opérateur.
-
-=== Le Seul Protocole Vital de Survie (en 3 gestes)
-<le-seul-protocole-vital-de-survie-en-3-gestes>
-+ #strong[Couper le feu immédiatement] (éteindre le brûleur à gaz ou
-  disjoncter la plaque).
-+ #strong[Étouffer la flamme :] Glisser horizontalement un couvercle
-  métallique ajusté sur la poêle (ou une plaque de cuisson métallique,
-  ou un torchon humide soigneusement essoré). L'oxygène est consommé en
-  quelques secondes et la flamme s'éteint faute de comburant.
-+ #strong[Ne plus toucher pendant 20 minutes :] Ne soulevez surtout pas
-  le couvercle pour vérifier ! L'huile reste à plus de
-  $300^compose upright(C)$ : le simple réafflux d'air frais provoquerait
-  une ré-inflammation explosive instantanée (#emph[backdraft]).
 
 #divider()
 
@@ -6192,9 +6692,9 @@ de quatre mille descendants toxiques !
     #v(3pt)
     #text(size: 9pt, fill: rgb("#e7e5e4"), font: "Liberation Sans")[
       • *18 Chapitres Fondamentaux* : De l'étincelle paléolithique à la géopolitique des terroirs.\
-      • *10 Recettes Piliers Pas à Pas* : Ratios universels, repères sensoriels et arbres de sauvetage.\
-      • *Guide de Survie & Protocoles d'Urgence* : Incendies d'huile, pannes de froid et intoxications.\
-      • *Cuisine Végétale Rationnelle* : Chimie des acides aminés et biodisponibilité des protéines.\
+      • *21 Recettes Piliers Pas à Pas* : Ratios universels, repères sensoriels et arbres de sauvetage.\
+      • *Guide de Sécurité & Premiers Secours* : Incendies d'huile, brûlures (règle des trois 15), coupures et pannes de froid.\
+      • *Cuisine Végétale & Vérité du Bio* : Synergie des acides aminés, polyphénols protecteurs et guide malin du panier.\
       • *Édition Ouverte & Pérenne* : Diffusée sous licence libre Creative Commons CC BY-SA 4.0.
     ]
   ]
@@ -6234,18 +6734,19 @@ de quatre mille descendants toxiques !
 #hide[] <recette-steak-fonte>
 #hide[] <chapitre-survie-parasites>
 #hide[] <recette-pate-brisee>
-#hide[] <recette-ceviche-cabillaud>
-#hide[] <recette-dahl-lentilles>
-#hide[] <recette-glace-sel>
-#hide[] <sec-emulsion>
-#hide[] <glossaire-bliss-point>
-#hide[] <recette-pain-cocotte>
-#hide[] <chapitre-oeuf-repos>
-#hide[] <glossaire-synerese>
-#hide[] <recette-mousse-aquafaba>
-#hide[] <recette-tofu-croustillant>
 #hide[] <recette-carbonara-traditionnelle>
-#hide[] <sec-leidenfrost>
+#hide[] <sec-emulsion>
+#hide[] <chapitre-08--lenquete-des-additifs-alimentaires--decodage-yuka-nutri-score-et-codes-e-dangereux>
 #hide[] <recette-moelleux-chocolat>
 #hide[] <recette-fromage-frais>
+#hide[] <recette-glace-sel>
+#hide[] <recette-mousse-aquafaba>
 #hide[] <sec-proteines-chair>
+#hide[] <sec-leidenfrost>
+#hide[] <recette-tofu-croustillant>
+#hide[] <glossaire-synerese>
+#hide[] <chapitre-oeuf-repos>
+#hide[] <recette-dahl-lentilles>
+#hide[] <recette-pain-cocotte>
+#hide[] <glossaire-bliss-point>
+#hide[] <recette-ceviche-cabillaud>

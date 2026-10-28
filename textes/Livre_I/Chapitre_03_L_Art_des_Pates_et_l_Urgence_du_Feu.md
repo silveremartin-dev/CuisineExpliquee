@@ -8,7 +8,7 @@
 
 La cuisson des pâtes sèches en semoule de blé dur est le cas d'école parfait de la physico-chimie appliquée. Pourtant, quatre-vingts pour cent des cuisiniers commettent des erreurs qui détruisent la texture et l'adhérence de la sauce.
 
-![Le Geste au Microscope : Les Pâtes et l'Incendie d'Huile](figures/livre_1/fig_pates_thermodynamique.svg)
+![Le Geste au Microscope : La Thermodynamique des Pâtes et de l'Émulsion](figures/livre_1/fig_pates_thermodynamique.svg)
 
 ### A. La Règle d'Or des Proportions
 Pour $100\,\mathrm{g}$ de pâtes sèches :
@@ -63,20 +63,3 @@ Ajouter de la crème fraîche liquide dans une carbonara est un aveu d'échec te
 #### 🛠️ Le Laboratoire de Sauvetage : Si la Sauce Commence à Grainer
 Si vous avez versé les œufs dans une poêle trop chaude et que vous apercevez les premières parcelles blanches de grumeaux de protéine coagulée : **n'attendez pas une seconde !** Jetez immédiatement **deux cuillères à soupe d'eau de cuisson tiède ou d'eau froide** dans la poêle et fouettez violemment hors du feu. L'abaissement thermique immédiat sous les $64^\circ\mathrm{C}$ stoppe la polymérisation de l'ovotransferrine et ré-émulsionne la phase liquide.
 :::
-
----
-
-## 3. CAS LIMITE CRITIQUE : L'INCENDIE D'HUILE DANS LA POÊLE
-
-Vous avez oublié une poêle d'huile sur un feu vif. La température franchit le point de fumée ($200\text{--}250^\circ\mathrm{C}$), puis le point d'auto-inflammation ($360^\circ\mathrm{C}$) : **l'huile s'embrase violemment**.
-
-### Le Réflexe Meurtrier : Jeter de l'Eau
-Dans la panique, le premier réflexe humain est d'amener la poêle sous l'évier ou de jeter un verre d'eau sur les flammes. C'est la cause numéro un des incendies domestiques mortels :
-1. **La différence de densité :** L'eau liquide est plus dense que l'huile chaude ($d_{\mathrm{eau}} = 1{,}0$ contre $d_{\mathrm{huile}} \approx 0{,}9$). L'eau plonge immédiatement au fond de la poêle brûlante sous l'huile.
-2. **L'explosion par vaporisation instantanée :** Au contact du fond métallique à $350^\circ\mathrm{C}$, l'eau liquide se transforme en vapeur en une fraction de milliseconde. Lors du passage liquide-gaz, **$1\,\mathrm{volume}$ d'eau engendre $1700\,\mathrm{volumes}$ de vapeur**.
-3. **Le geyser et la boule de feu (*Boilover*) :** La bulle de vapeur géante pulvérise toute l'huile brûlante en une pluie d'aérosol microscopique. Au contact de l'oxygène de la pièce, cet aérosol s'enflamme d'un coup, créant une boule de feu de 2 à 3 mètres de haut qui carbonise la cuisine et brûle grièvement l'opérateur.
-
-### Le Seul Protocole Vital de Survie (en 3 gestes)
-1. **Couper le feu immédiatement** (éteindre le brûleur à gaz ou disjoncter la plaque).
-2. **Étouffer la flamme :** Glisser horizontalement un couvercle métallique ajusté sur la poêle (ou une plaque de cuisson métallique, ou un torchon humide soigneusement essoré). L'oxygène est consommé en quelques secondes et la flamme s'éteint faute de comburant.
-3. **Ne plus toucher pendant 20 minutes :** Ne soulevez surtout pas le couvercle pour vérifier ! L'huile reste à plus de $300^\circ\mathrm{C}$ : le simple réafflux d'air frais provoquerait une ré-inflammation explosive instantanée (*backdraft*).

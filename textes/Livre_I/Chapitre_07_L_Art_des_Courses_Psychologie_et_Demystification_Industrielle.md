@@ -26,19 +26,11 @@ Un dogme répandu affirme que *« tout aliment dont la liste d'ingrédients dép
    - *L'acoustique du craquant :* Les chips sont formulées pour casser à une fréquence sonore précise (environ $300\,\mathrm{Hz}$), perçue inconsciemment par le cerveau comme un gage de fraîcheur végétale absolue.
    - *Vendre de l'eau au prix de la viande :* L'ajout de **polyphosphates (E450, E452)** dans les jambons cuits bas de gamme permet de retenir par chélation jusqu'à $30\,\%$ d'eau ajoutée dans les fibres musculaires.
 
-### C. Le Vrai/Faux des Additifs Alimentaires (Codes E)
-Il n'existe aucune malédiction inhérente à la lettre « E » (qui signifie simplement une homologation officielle par l'Union Européenne). Il faut apprendre à trier le bon grain de l'ivraie :
-
-| Additif | Nom & Origine | Statut Biologique Réel | Décision du Cuisinier |
-| :--- | :--- | :--- | :--- |
-| **E300** | Acide L-ascorbique | **Vitamine C pure.** Antioxydant naturel indispensable prévenant le brunissement des fruits. | **Inoffensif / Bénéfique.** Présent à haute dose dans le citron. |
-| **E330** | Acide citrique | Présent naturellement dans tous les agrumes. Régulateur d'acidité banal. | **Totalement inoffensif.** |
-| **E322** | Lécithines | Phospholipides extraits du jaune d'œuf ou du soja. Émulsifiant naturel. | **Inoffensif.** Clé de voûte de la mayonnaise. |
-| **E440** | Pectine | Fibres gélifiantes extraites des pépins et peaux de pommes ou d'agrumes. | **Inoffensif.** Ingrédient séculaire des confitures. |
-| **E250** | **Nitrite de sodium** | Conservateur bactéricide contre le botulisme dans la charcuterie. | **RISQUE RÉEL : À ÉVITER.** Réagit avec les amines de la viande pour former des **nitrosamines cancérogènes** colorent artificiellement le jambon en rose bonbon. Préférer le jambon gris sans nitrite. |
-| **E150d** | **Caramel au sulfite d'ammonium** | Colorant brun foncé de synthèse obtenu sous haute pression et ammoniac. | **RISQUE : À ÉVITER.** Contient des sous-produits de synthèse (4-méthylimidazole / 4-MEI) classés potentiellement mutagènes. |
-| **E466 / E433** | **Carboxyméthylcellulose & Polysorbates** | Émulsifiants de synthèse ultra-puissants utilisés pour stabiliser les glaces industrielles. | **RISQUE : À ÉVITER.** Dégradent la barrière muqueuse de l'épithélium intestinal et favorisent l'inflammation chronique du côlon. |
-| **E621** | **Glutamate monosodique** | Exhausteur de goût umami de synthèse. | **À LIMITER.** Non toxique en soi, mais utilisé massivement pour masquer la piètre qualité de matières premières insipides. |
+### C. Le Rôle Réel des Béquilles Chimiques dans le Caddie
+Pourquoi les industriels ajoutent-ils des béquilles chimiques à des aliments autrefois simples ? 
+1. **L'illusion de texture à bas coût :** Remplacer du jaune d'œuf noble ou de la crème crue par de l'eau épaissie à la gomme de cellulose ou aux polyphosphates divise le coût de revient par quatre tout en conservant une onctuosité artificielle.
+2. **La prolongation démesurée de la Date Limite de Consommation (DLC) :** Permettre à un plat préparé de rester 18 mois sur une étagère à température ambiante sans rancir ni décanter impose des antioxydants et des conservateurs puissants.
+3. **Le décodage complet :** Pour une analyse toxicologique approfondie de l'intégralité des classes d'additifs, la liste exhaustive des codes E dangereux à bannir et l'examen critique des applications comme Yuka et du Nutri-Score, le lecteur se référera directement au grand dossier d'investigation du [Chapitre 08](#chapitre-08--lenquete-des-additifs-alimentaires--decodage-yuka-nutri-score-et-codes-e-dangereux).
 
 ---
 

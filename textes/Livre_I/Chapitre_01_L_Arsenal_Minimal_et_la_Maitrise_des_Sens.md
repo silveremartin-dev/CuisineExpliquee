@@ -155,3 +155,27 @@ Au-delà de la destruction bactérienne, l'acidité (ions $\mathrm{H}^+$) est l'
 2. **La Dispersion Goutte à Goutte :** Commencer à fouetter activement en versant l'huile gouttelette par gouttelette. Chaque goutte doit être cisaillée en millions de billes microscopiques avant d'en ajouter une autre.
 3. **Le Montage en Filet :** Dès que l'émulsion « prend » et prend une consistance nappante brillante, verser l'huile restante en mince filet continu tout en maintenant un battement circulaire rapide.
 4. **Le Blocage Sensoriel :** La mayonnaise devient ferme, dense et tient sur le fouet à l'envers. Rectifier en sel et acidité.
+---
+
+## 7. LE SYSTÈME D : DÉTOURNER LES OBJETS DU QUOTIDIEN POUR REMPLACER LES USTENSILES RARES
+
+L'industrie ménagère a bâti sa prospérité en inventant des centaines de gadgets hyperspécialisés conçus pour un usage unique : dénoyauteurs, presses-ail, mandolines fragiles, turbines coûteuses et mortiers massifs pesant cinq kilos. 
+
+La démarche de *La Cuisine Expliquée* enseigne que la compréhension de la physique mécanique et thermique permet de **détourner les objets les plus banals du foyer** avec une efficacité souvent supérieure aux appareils du commerce :
+
+| Ustensile Rare ou Encombrant | L'Équivalent « Système D » Immédiat | Le Mécanisme Physique Déclenché | Précaution Opératoire |
+| :--- | :--- | :--- | :--- |
+| **Mortier & Pilon en Marbre***(Pour aïoli, pesto, purées d'ail)* | **Le plat du couteau de chef + gros sel** sur planche en bois | Le gros sel agit comme un abrasif granulaire dur qui déchiquette les cellules végétales sous la pression latérale de la lame. | Maintenir la paume à plat sur le dos de la lame et racler d'avant en arrière. |
+| **Pilon à Épices Dures***(Poivre, coriandre, cardamome)* | **Sac de congélation étanche + fond de casserole ou bouteille** | L'inertie massique de la casserole lourde ou le roulement de la bouteille broie les graines sans aucune projection volante. | Chasser l'air du sac avant de fermer pour éviter qu'il n'éclate sous la pression. |
+| **Rouleau à Pâtisserie** | **Bouteille de vin en verre propre et lisse** | Cylindre parfait, inertie thermique froide qui évite de réchauffer le beurre de la pâte, masse idéale. | Fariner légèrement le verre pour empêcher la détrempe d'adhérer. |
+| **Chinois Étamine de Chef***(Pour filtrer bouillons et jus limpides)* | **Passoire classique tapissée d'un torchon propre ou filtre à café** | La trame serrée des fibres de coton ou de cellulose retient les micro-particules de coagulat jusqu'à quelques microns. | Utiliser un torchon en coton pur lavé sans adoucissant ni lessive parfumée. |
+| **Turbine à Glace / Sorbetière** | **Deux saladiers emboîtés + glace pilée saturée de gros sel** | **Abaissement cryoscopique endothermique** : la dissolution du sel dans la glace abaisse la température du bain à $-18^\circ\mathrm{C}$. | Fouetter énergiquement le récipient intérieur pendant 10 minutes au contact du bain glacé. |
+| **Panier Vapeur Spécifique** | **Passoire inox sur casserole + couvercle** (ou coupelle inversée) | L'eau bout dans le fond de la casserole ($2\text{ cm}$), la vapeur saturée à $100^\circ\mathrm{C}$ monte et cuit les aliments perchés au-dessus. | Veiller à ce que le niveau d'eau ne touche pas les aliments pour éviter le lessivage. |
+| **Bain-Marie Professionnel** | **Bol en inox ou faïence posé sur une casserole d'eau frémissante** | Le fond du bol ne touche pas l'eau : la vapeur régule la transmission calorifique avec un plafond naturel sous les $90^\circ\mathrm{C}$. | Ne pas laisser le fond du récipient plonger dans l'eau bouillante (risque de surchauffe locale). |
+| **Poids de Cuisson de Tarte***(Billes céramique)* | **Haricots secs, lentilles ou riz cru sur papier sulfurisé** | Transfert thermique par conduction granulaire homogène qui empêche la pâte de cloquer ou de s'affaisser. | Conserver ces légumes secs dans un bocal dédié : ils sont réutilisables des centaines de fois. |
+| **Emporte-Pièce Métallique** | **Verre à eau à col fin ou boîte de conserve ouverte des deux côtés** | Le tranchant circulaire net sépare les pâtons sans étirer le réseau de gluten. | Fariner le col du verre avant chaque pression pour un démoulage instantané. |
+
+::: truc_de_chef
+#### 💡 Le Secret du Praticien Minimaliste
+Avant d'acheter le moindre ustensile culinaire vanté par une émission ou un catalogue, posez-vous toujours cette question : *« Quelle est la contrainte physique réelle de cette opération (couper, écraser, filtrer, chauffer doucement, maintenir froid) ? »*. Dans $95\,\%$ des cas, votre tiroir contient déjà un objet simple en acier, en verre ou en bois capable de reproduire ce phénomène sans dépenser le moindre centime ni encombrer vos étagères.
+:::

@@ -62,15 +62,17 @@ Au XXIe siècle, la mondialisation bien comprise n'est pas l'uniformisation insi
 
 ---
 
-### 🍳 Fiche Recette 12 : L'Aïoli Provençal Traditionnel au Mortier de Marbre {#recette-grand-aioli}
+### 🍳 Fiche Recette 12 : L'Aïoli Provençal Traditionnel (Au Mortier ou au Système D) {#recette-grand-aioli}
 
 *L'émulsion originelle sans œuf : le miracle mécanique des mucilages de l'ail et de l'huile d'olive.*
 
 - **Temps de préparation :** 15 minutes
-- **Minimalisme Instrumental :** 1 mortier en marbre ou grès lourd, 1 pilon en buis.
-- **Ingrédients :** 6 gousses d'ail violet très frais, $200	ext{ ml}$ d'huile d'olive vierge extra fruitée douce, 1 pincée de gros sel marin, quelques gouttes de jus de citron.
+- **Minimalisme Instrumental :** 1 mortier et pilon... OU son **équivalent système D du quotidien** (une planche de bois et un grand couteau d'éminceur, ou un bol solide et le cul propre d'une bouteille de vin).
+- **Ingrédients :** 6 gousses d'ail violet très frais, 200 ml d'huile d'olive vierge extra fruitée douce, 1 pincée de gros sel marin, quelques gouttes de jus de citron frais.
 
 ##### Protocole Pas à Pas :
-1. **Le Broyage Cellulaire :** Dégermer les gousses d'ail. Les placer dans le mortier avec le gros sel. Écraser au pilon par rotations fermes jusqu'à destruction totale des parois cellulaires et obtention d'une pommade translucide et collante.
-2. **L'Amorçage de l'Émulsion :** Ajouter une cuillère à café d'eau tiède ou de jus de citron pour apporter la phase aqueuse nécessaire.
-3. **Le Fil d'Huile au Pilon :** Tout en tournant le pilon de manière ininterrompue contre les parois du mortier dans le même sens, verser l'huile d'olive au goutte-à-goutte. L'émulsion se forme spontanément, blanchissant et prenant la consistance d'un beurre ferme. Le pilon doit tenir debout tout seul au centre du mortier.
+1. **Le Broyage Cellulaire (Au mortier OU au plat de couteau) :**
+   - *Option Classique :* Dégermer les gousses d'ail. Les placer dans le mortier avec le gros sel. Écraser au pilon par rotations fermes jusqu'à destruction totale des parois cellulaires et obtention d'une pommade translucide et collante.
+   - *Option Système D (Sans mortier) :* Poser les gousses d'ail et le gros sel marin sur une planche en bois. Écraser les gousses avec le plat large d'un couteau de chef en appuyant fermement avec la paume de la main, puis racler la lame d'avant en arrière à plusieurs reprises. Les grains de sel agissent comme des meules abrasives microscopiques qui déchiquettent les cellules en 90 secondes chrono, formant une pâte d'ail soyeuse. On peut également utiliser le cul propre et lourd d'une bouteille en verre dans un bol en faïence épaisse.
+2. **L'Amorçage de l'Émulsion :** Ajouter une cuillère à café d'eau tiède ou de jus de citron pour apporter la micro-phase aqueuse indispensable à la dispersion des micelles.
+3. **Le Fil d'Huile :** Tout en tournant le pilon (ou en fouettant vivement à la fourchette/petit fouet dans le bol), verser l'huile d'olive au goutte-à-goutte très lent au début. Dès que l'émulsion « mord », verser en mince filet continu. L'aïoli blanchit et épaissit pour atteindre la consistance d'une pommade ferme et dense.

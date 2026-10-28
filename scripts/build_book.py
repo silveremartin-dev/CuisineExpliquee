@@ -154,7 +154,6 @@ PREAMBLE = """
 ]
 
 #show heading.where(level: 4): it => block(
-  width: 100%,
   breakable: false,
   sticky: true,
   spacing: 0.8em
@@ -172,7 +171,9 @@ PREAMBLE = """
   spacing: 1.2em,
   breakable: false
 )[
-  #text(size: 9.5pt, fill: c-ink)[#body]
+  #set text(size: 9.5pt, fill: c-ink)
+  #set par(justify: true, leading: 0.74em)
+  #body
 ]
 
 #let anecdote_historique(body) = block(
@@ -184,7 +185,9 @@ PREAMBLE = """
   spacing: 1.2em,
   breakable: false
 )[
-  #text(size: 9.5pt, fill: c-ink)[#body]
+  #set text(size: 9.5pt, fill: c-ink)
+  #set par(justify: true, leading: 0.74em)
+  #body
 ]
 
 #let positif(body) = block(
@@ -196,7 +199,9 @@ PREAMBLE = """
   spacing: 1.2em,
   breakable: false
 )[
-  #text(size: 9.5pt, fill: c-ink)[#body]
+  #set text(size: 9.5pt, fill: c-ink)
+  #set par(justify: true, leading: 0.74em)
+  #body
 ]
 
 #let negatif(body) = block(
@@ -208,7 +213,9 @@ PREAMBLE = """
   spacing: 1.2em,
   breakable: false
 )[
-  #text(size: 9.5pt, fill: c-ink)[#body]
+  #set text(size: 9.5pt, fill: c-ink)
+  #set par(justify: true, leading: 0.74em)
+  #body
 ]
 
 #let danger(body) = block(
@@ -220,7 +227,9 @@ PREAMBLE = """
   spacing: 1.2em,
   breakable: false
 )[
-  #text(size: 9.5pt, fill: c-ink)[#body]
+  #set text(size: 9.5pt, fill: c-ink)
+  #set par(justify: true, leading: 0.74em)
+  #body
 ]
 
 #let alerte(body) = danger(body)
@@ -233,10 +242,10 @@ PREAMBLE = """
   spacing: 1.2em,
   breakable: false
 )[
-  #text(size: 9.5pt, fill: c-ink)[#body]
+  #set text(size: 9.5pt, fill: c-ink)
+  #set par(justify: true, leading: 0.74em)
+  #body
 ]
-
-#let anecdote_historique(body) = point_attention(body)
 
 #let oeil_molecule(body) = block(
   fill: rgb("#f5f4f2"),
@@ -247,7 +256,9 @@ PREAMBLE = """
   spacing: 1.2em,
   breakable: false
 )[
-  #text(size: 9.5pt, fill: c-ink)[#body]
+  #set text(size: 9.5pt, fill: c-ink)
+  #set par(justify: true, leading: 0.74em)
+  #body
 ]
 
 #let cas_limite(body) = block(
@@ -259,7 +270,9 @@ PREAMBLE = """
   spacing: 1.2em,
   breakable: false
 )[
-  #text(size: 9.5pt, fill: c-ink)[#body]
+  #set text(size: 9.5pt, fill: c-ink)
+  #set par(justify: true, leading: 0.74em)
+  #body
 ]
 
 #let quote_box(body) = block(
@@ -271,7 +284,9 @@ PREAMBLE = """
   spacing: 1.1em,
   breakable: false
 )[
-  #text(style: "italic", fill: rgb("#292524"))[#body]
+  #set text(style: "italic", fill: rgb("#292524"))
+  #set par(justify: true, leading: 0.74em)
+  #body
 ]
 
 // ==========================================
@@ -384,6 +399,8 @@ PREAMBLE = """
       *Photographies culinaires & gravures :* Wikimedia Commons (Domaine Public & Creative Commons).\\
       *Composition typographique :* Typst v0.15.1, polices Liberation Serif & Sans.\\
       *Dépôt de code et figures sources :* Dépôt GitHub public sous licence CC BY-SA 4.0.\\
+      *Avertissement d'homonymie éditoriale :* Le présent ouvrage est un traité d'investigation scientifique, anthropologique et pratique totalement indépendant. Il ne doit en aucun cas être confondu avec les manuels scolaires de formation professionnelle hôtelière (notamment le manuel éponyme de Gilles Charles aux éditions BPI).\\
+      
       *Dépôt légal :* Octobre 2026 (Sans mention commerciale obligatoire).
     ]
   ]
@@ -471,7 +488,7 @@ PREAMBLE = """
     - #link(<recette-oeuf-mollet>)[L'Œuf Mollet Parfait en 6 Minutes & l'Œuf à 64°C (Gradient Thermique)] --- _Chapitre 06_
     - #link(<recette-creme-anglaise>)[La Crème Anglaise au Degré Près (Seuil Critique de 82°C au Ruban)] --- _Chapitre 06_
     - #link(<recette-sauce-hollandaise>)[La Sauce Hollandaise Émulsionnée Chaude au Bain-Marie (58°C)] --- _Chapitre 06_
-    - #link(<recette-grand-aioli>)[Le Grand Aïoli Provençal au Mortier de Marbre (Émulsion Pure à l'Ail)] --- _Chapitre 17_
+    - #link(<recette-grand-aioli>)[Le Grand Aïoli Provençal (Au Mortier ou au Système D)] --- _Chapitre 17_
 
     #v(0.15cm)
     *4. Pâtes & Féculents Fondateurs*
@@ -542,9 +559,9 @@ BACK_COVER = """
     #v(3pt)
     #text(size: 9pt, fill: rgb("#e7e5e4"), font: "Liberation Sans")[
       • *18 Chapitres Fondamentaux* : De l'étincelle paléolithique à la géopolitique des terroirs.\\
-      • *10 Recettes Piliers Pas à Pas* : Ratios universels, repères sensoriels et arbres de sauvetage.\\
-      • *Guide de Survie & Protocoles d'Urgence* : Incendies d'huile, pannes de froid et intoxications.\\
-      • *Cuisine Végétale Rationnelle* : Chimie des acides aminés et biodisponibilité des protéines.\\
+      • *21 Recettes Piliers Pas à Pas* : Ratios universels, repères sensoriels et arbres de sauvetage.\\
+      • *Guide de Sécurité & Premiers Secours* : Incendies d'huile, brûlures (règle des trois 15), coupures et pannes de froid.\\
+      • *Cuisine Végétale & Vérité du Bio* : Synergie des acides aminés, polyphénols protecteurs et guide malin du panier.\\
       • *Édition Ouverte & Pérenne* : Diffusée sous licence libre Creative Commons CC BY-SA 4.0.
     ]
   ]
