@@ -56,12 +56,13 @@ L'ouvrage adopte une architecture séquentielle rigoureuse en **6 Livres majeurs
 6. **LIVRE VI — Le Temps Long : Nutrition Diachronique & Plaisir Durable (Chapitres 25 et 26) :**
    - *Chapitre 25 :* Sortir de la tyrannie des régimes, cinétique neuro-hormonale de la satiété (délai des 20 minutes) et densité nutritionnelle.
    - *Chapitre 26 :* Diachronie culinaire, amidon résistant RS3, règle des 30 végétaux et protocole de batch cooking.
-7. **ANNEXES & RÉPERTOIRES (Annexes A à E) :**
+7. **ANNEXES & RÉPERTOIRES (Annexes A à F) :**
    - *Annexe A :* Le cadran absolu des températures critiques au degré près.
    - *Annexe B :* Glossaire physico-chimique et culinaire exhaustif.
    - *Annexe C :* Bibliographie raisonnée et évaluée sans ISBN factices.
    - *Annexe D :* Guide d'achat de l'arsenal minimal, coûts énergétiques et durées standard.
    - *Annexe E :* Conservation au réfrigérateur, cartographie thermique et durées limites sanitaires.
+   - *Annexe F :* Répertoire exhaustif des crédits iconographiques et sources des illustrations (licences libres Wikimedia / BnF et attributions).
 
 ---
 
@@ -148,10 +149,12 @@ Toute illustration technique doit employer strictement la palette sémantique du
 | **Liaisons / Grille / Neutre** | `#94a3b8` (Gris ardoise) | `#cbd5e1` / `#e2e8f0` | Graduations de repère, séparateurs, grilles de fond |
 
 ### C. Dimensionnement des Images & Élimination des Sauts de Page Massifs
-Pour éviter que Typst ne repousse une illustration sur la page suivante en laissant la page précédente à moitié vide :
-1. **Photographies de recettes (`figures/nourriture/`) :** Hauteur maximale contrainte à **`23%`** de la page (environ 6 cm) avec `width: 85%` et `fit: "cover"`. Elles forment un élégant bandeau horizontal au-dessus des ingrédients sans encombrer la page.
-2. **Schémas vectoriels SVG :** Hauteur maximale contrainte à **`30% à 32%`** avec `fit: "contain"`.
-3. **Portraits et gravures historiques :** Hauteur maximale contrainte à **`35%`**.
+Pour garantir une intégration visuelle équilibrée et éviter les trous de page :
+1. **Photographies de recettes (`figures/nourriture/`) :** Dimensionnées à **`width: 90%`** et **`height: 35%`** avec `fit: "cover"` pour offrir une véritable vue centrée et appétissante du plat sans créer de saut de page indésirable.
+2. **Schémas vectoriels SVG :** Dimensionnés à **`width: 95%`** et **`height: 38%`** avec `fit: "contain"`.
+3. **Typographie des SVG :** Tailles de police calibrées pour rester lisibles une fois réduites dans la page (minimum `13-14px` pour les annotations, `16-18px` pour le corps de schéma, `20-24px` pour les titres).
+4. **Portraits et gravures historiques :** Hauteur maximale à **`36%`**.
+5. **Épuration des légendes & Annexe F :** Les légendes sous les illustrations restent courtes et sobres dans le corps de l'ouvrage ; l'ensemble des crédits détaillés, institutions et licences libres est répertorié dans l'**Annexe F**.
 
 ### D. Légendes Riches & Attribution Systématique des Crédits
 Aucune figure ne doit comporter de légende pauvre ou orpheline :

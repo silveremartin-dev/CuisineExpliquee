@@ -1,82 +1,85 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 430" width="100%" height="100%">
-  <rect width="800" height="430" rx="12" fill="#fcfbf7" stroke="#dfdacf" stroke-width="1.5"/>
-  <text x="400" y="36" font-family="Liberation Serif, Georgia, serif" font-size="18" font-weight="bold" fill="#701c1a" text-anchor="middle">L'ARSENAL MINIMAL : CINQ ORGANES FONDAMENTAUX DU CUISINIER</text>
-  <text x="400" y="58" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#5c5549" text-anchor="middle">La connaissance des lois physico-chimiques remplace l'amoncellement des gadgets.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 460" width="100%" height="100%">
+  <rect width="940" height="460" rx="14" fill="#fcfbf7" stroke="#cbd5e1" stroke-width="2"/>
+  
+  <text x="470" y="40" font-family="Liberation Sans, Arial, sans-serif" font-size="24" font-weight="bold" fill="#701C1A" text-anchor="middle">L'ARSENAL MINIMAL : LES CINQ ORGANES FONDAMENTAUX</text>
+  <text x="470" y="66" font-family="Liberation Sans, Arial, sans-serif" font-size="15" fill="#64748b" text-anchor="middle">Des outils indestructibles pour maîtriser 99% des transformations culinaires</text>
 
-  <!-- Outil 1 : Le Couteau de Chef -->
-  <g transform="translate(35, 82)">
-    <rect width="134" height="275" rx="8" fill="#faf7f2" stroke="#dfdacf" stroke-width="1.2"/>
-    <rect x="0" y="0" width="134" height="30" rx="8" fill="#701c1a"/>
-    <text x="67" y="20" font-family="Liberation Serif, Georgia, serif" font-size="11" font-weight="bold" fill="#fcfbf7" text-anchor="middle">1. LE TRANCHANT</text>
-    <path d="M 27 68 Q 77 73 107 125 L 37 125 Z" fill="#dcd6ca" stroke="#5c5549" stroke-width="1.8"/>
-    <rect x="27" y="125" width="15" height="68" rx="3" fill="#383330"/>
-    <circle cx="34.5" cy="140" r="2" fill="#d4a373"/>
-    <circle cx="34.5" cy="158" r="2" fill="#d4a373"/>
-    <circle cx="34.5" cy="176" r="2" fill="#d4a373"/>
-    <text x="67" y="218" font-family="Liberation Serif, Georgia, serif" font-size="12" font-weight="bold" fill="#242124" text-anchor="middle">Couteau de chef</text>
-    <text x="67" y="236" font-family="Liberation Sans, Arial, sans-serif" font-size="10" fill="#5c5549" text-anchor="middle">Lame forgée 20 cm</text>
-    <text x="67" y="253" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#701c1a" text-anchor="middle">Section cellulaire nette,</text>
-    <text x="67" y="267" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#701c1a" text-anchor="middle">zéro perte de jus.</text>
+  <!-- Outil 1 : Couteau de Chef -->
+  <g transform="translate(25, 90)">
+    <rect width="168" height="300" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+    <rect width="168" height="38" rx="8" fill="#0f172a"/>
+    <text x="84" y="25" font-family="Liberation Sans, Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">1. COUTEAU CHEF</text>
+    <text x="12" y="68" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#0f172a">• Lame 20 cm acier</text>
+    <text x="12" y="90" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#475569">Affûtage rasoir régulier</text>
+    <text x="12" y="118" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#0f172a">• Fonction physique :</text>
+    <text x="12" y="140" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#475569">Section cellulaire nette</text>
+    <text x="12" y="158" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#475569">sans écraser le suc</text>
+    <rect x="10" y="235" width="148" height="50" rx="6" fill="#f1f5f9"/>
+    <text x="84" y="256" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">Priorité absolue :</text>
+    <text x="84" y="274" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">Prise en pince ferme</text>
   </g>
 
-  <!-- Outil 2 : Poêle Fonte Épaisse -->
-  <g transform="translate(184, 82)">
-    <rect width="134" height="275" rx="8" fill="#faf7f2" stroke="#dfdacf" stroke-width="1.2"/>
-    <rect x="0" y="0" width="134" height="30" rx="8" fill="#a3432b"/>
-    <text x="67" y="20" font-family="Liberation Serif, Georgia, serif" font-size="11" font-weight="bold" fill="#fcfbf7" text-anchor="middle">2. L'INERTIE</text>
-    <ellipse cx="62" cy="112" rx="38" ry="22" fill="#5c5549" stroke="#242124" stroke-width="2.5"/>
-    <ellipse cx="62" cy="109" rx="32" ry="17" fill="#383330"/>
-    <path d="M 90 122 L 116 148" stroke="#242124" stroke-width="6" stroke-linecap="round"/>
-    <text x="67" y="218" font-family="Liberation Serif, Georgia, serif" font-size="12" font-weight="bold" fill="#242124" text-anchor="middle">Poêle lourde</text>
-    <text x="67" y="236" font-family="Liberation Sans, Arial, sans-serif" font-size="10" fill="#5c5549" text-anchor="middle">Fonte ou Inox 5 plis</text>
-    <text x="67" y="253" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#a3432b" text-anchor="middle">Tampon calorifique,</text>
-    <text x="67" y="267" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#a3432b" text-anchor="middle">croûte de Maillard.</text>
+  <!-- Outil 2 : Planche Bois Massif -->
+  <g transform="translate(205, 90)">
+    <rect width="168" height="300" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+    <rect width="168" height="38" rx="8" fill="#78350f"/>
+    <text x="84" y="25" font-family="Liberation Sans, Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">2. PLANCHE BOIS</text>
+    <text x="12" y="68" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#78350f">• Bois de bout / hêtre</text>
+    <text x="12" y="90" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#475569">Épaisseur minimum 3 cm</text>
+    <text x="12" y="118" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#78350f">• Fonction physique :</text>
+    <text x="12" y="140" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#475569">Stabilité au plan de travail,</text>
+    <text x="12" y="158" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#475569">préserve le tranchant</text>
+    <rect x="10" y="235" width="148" height="50" rx="6" fill="#fef3c7"/>
+    <text x="84" y="256" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#78350f" text-anchor="middle">Antibactérien naturel :</text>
+    <text x="84" y="274" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#92400e" text-anchor="middle">Dessèche les microbes</text>
   </g>
 
-  <!-- Outil 3 : Casserole Moyenne Fond Épais -->
-  <g transform="translate(333, 82)">
-    <rect width="134" height="275" rx="8" fill="#faf7f2" stroke="#dfdacf" stroke-width="1.2"/>
-    <rect x="0" y="0" width="134" height="30" rx="8" fill="#8c7355"/>
-    <text x="67" y="20" font-family="Liberation Serif, Georgia, serif" font-size="11" font-weight="bold" fill="#fcfbf7" text-anchor="middle">3. LE FLUIDE</text>
-    <rect x="26" y="88" width="58" height="40" rx="4" fill="#dcd6ca" stroke="#5c5549" stroke-width="1.8"/>
-    <ellipse cx="55" cy="88" rx="29" ry="9" fill="#f2ece1" stroke="#5c5549" stroke-width="1.8"/>
-    <path d="M 84 94 L 116 88" stroke="#383330" stroke-width="4.5" stroke-linecap="round"/>
-    <rect x="26" y="124" width="58" height="6" fill="#8c7355"/>
-    <text x="67" y="218" font-family="Liberation Serif, Georgia, serif" font-size="12" font-weight="bold" fill="#242124" text-anchor="middle">Casserole 2–3 L</text>
-    <text x="67" y="236" font-family="Liberation Sans, Arial, sans-serif" font-size="10" fill="#5c5549" text-anchor="middle">Fond sandwich épais</text>
-    <text x="67" y="253" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#5c5549" text-anchor="middle">Convection liquide,</text>
-    <text x="67" y="267" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#5c5549" text-anchor="middle">frémissement doux.</text>
+  <!-- Outil 3 : Poêle en Fonte Brute -->
+  <g transform="translate(385, 90)">
+    <rect width="168" height="300" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+    <rect width="168" height="38" rx="8" fill="#dc2626"/>
+    <text x="84" y="25" font-family="Liberation Sans, Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">3. POÊLE FONTE</text>
+    <text x="12" y="68" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#991b1b">• Fonte brute culottée</text>
+    <text x="12" y="90" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#475569">Masse lourde (2 à 3 kg)</text>
+    <text x="12" y="118" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#991b1b">• Fonction physique :</text>
+    <text x="12" y="140" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#475569">Inertie thermique immense,</text>
+    <text x="12" y="158" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#475569">croûte de Maillard flash</text>
+    <rect x="10" y="235" width="148" height="50" rx="6" fill="#fee2e2"/>
+    <text x="84" y="256" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#991b1b" text-anchor="middle">Anti-adhésion n°1 :</text>
+    <text x="84" y="274" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#b91c1c" text-anchor="middle">Polymère d'huile pure</text>
   </g>
 
-  <!-- Outil 4 : Cul-de-poule et Fouet -->
-  <g transform="translate(482, 82)">
-    <rect width="134" height="275" rx="8" fill="#faf7f2" stroke="#dfdacf" stroke-width="1.2"/>
-    <rect x="0" y="0" width="134" height="30" rx="8" fill="#92400e"/>
-    <text x="67" y="20" font-family="Liberation Serif, Georgia, serif" font-size="11" font-weight="bold" fill="#fcfbf7" text-anchor="middle">4. LA CINÉTIQUE</text>
-    <path d="M 24 90 A 43 43 0 0 0 110 90 Z" fill="#f2ece1" stroke="#5c5549" stroke-width="1.8"/>
-    <path d="M 76 62 L 56 108" stroke="#8c7355" stroke-width="2.5"/>
-    <ellipse cx="52" cy="98" rx="9" ry="15" fill="none" stroke="#92400e" stroke-width="1.6" transform="rotate(-25 52 98)"/>
-    <text x="67" y="218" font-family="Liberation Serif, Georgia, serif" font-size="12" font-weight="bold" fill="#242124" text-anchor="middle">Cul-de-poule inox</text>
-    <text x="67" y="236" font-family="Liberation Sans, Arial, sans-serif" font-size="10" fill="#5c5549" text-anchor="middle">+ Fouet manuel ballon</text>
-    <text x="67" y="253" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#92400e" text-anchor="middle">Émulsion mécanique,</text>
-    <text x="67" y="267" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#92400e" text-anchor="middle">foisonnement d'air.</text>
+  <!-- Outil 4 : Casserole Inox Épaisse -->
+  <g transform="translate(565, 90)">
+    <rect width="168" height="300" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+    <rect width="168" height="38" rx="8" fill="#2563eb"/>
+    <text x="84" y="25" font-family="Liberation Sans, Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">4. CASSEROLE INOX</text>
+    <text x="12" y="68" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#1e40af">• Inox 18/10 multicouche</text>
+    <text x="12" y="90" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#475569">Fond sandwich aluminium</text>
+    <text x="12" y="118" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#1e40af">• Fonction physique :</text>
+    <text x="12" y="140" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#475569">Chimiquement inerte,</text>
+    <text x="12" y="158" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#475569">cuisson acides sans danger</text>
+    <rect x="10" y="235" width="148" height="50" rx="6" fill="#eff6ff"/>
+    <text x="84" y="256" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e40af" text-anchor="middle">Zéro migration :</text>
+    <text x="84" y="274" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#3b82f6" text-anchor="middle">Bouillons &amp; réductions</text>
   </g>
 
-  <!-- Outil 5 : Planche Bois Franc -->
-  <g transform="translate(631, 82)">
-    <rect width="134" height="275" rx="8" fill="#faf7f2" stroke="#dfdacf" stroke-width="1.2"/>
-    <rect x="0" y="0" width="134" height="30" rx="8" fill="#5a6e54"/>
-    <text x="67" y="20" font-family="Liberation Serif, Georgia, serif" font-size="11" font-weight="bold" fill="#fcfbf7" text-anchor="middle">5. LE TERRAIN</text>
-    <rect x="22" y="75" width="90" height="56" rx="4" fill="#f2ece1" stroke="#8c7355" stroke-width="1.8"/>
-    <line x1="32" y1="86" x2="102" y2="86" stroke="#d4a373" stroke-width="1.2"/>
-    <line x1="32" y1="103" x2="102" y2="103" stroke="#d4a373" stroke-width="1.2"/>
-    <line x1="32" y1="120" x2="102" y2="120" stroke="#d4a373" stroke-width="1.2"/>
-    <text x="67" y="218" font-family="Liberation Serif, Georgia, serif" font-size="12" font-weight="bold" fill="#242124" text-anchor="middle">Planche en bois</text>
-    <text x="67" y="236" font-family="Liberation Sans, Arial, sans-serif" font-size="10" fill="#5c5549" text-anchor="middle">Bois de bout ou hêtre</text>
-    <text x="67" y="253" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#5a6e54" text-anchor="middle">Hygiène capillaire,</text>
-    <text x="67" y="267" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#5a6e54" text-anchor="middle">respect du tranchant.</text>
+  <!-- Outil 5 : Fouet & Spatule Incurvée -->
+  <g transform="translate(745, 90)">
+    <rect width="168" height="300" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+    <rect width="168" height="38" rx="8" fill="#16a34a"/>
+    <text x="84" y="25" font-family="Liberation Sans, Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">5. FOUET &amp; MARYSE</text>
+    <text x="12" y="68" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#15803d">• Fouet à fils inox fins</text>
+    <text x="12" y="90" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#475569">Spatule souple silicone</text>
+    <text x="12" y="118" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#15803d">• Fonction physique :</text>
+    <text x="12" y="140" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#475569">Cisaillement des gouttes,</text>
+    <text x="12" y="158" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#475569">raclage fond de poêle</text>
+    <rect x="10" y="235" width="148" height="50" rx="6" fill="#f0fdf4"/>
+    <text x="84" y="256" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d" text-anchor="middle">Émulsion parfaite :</text>
+    <text x="84" y="274" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#22c55e" text-anchor="middle">Mayonnaise &amp; sauces</text>
   </g>
 
-  <rect x="35" y="374" width="730" height="36" rx="6" fill="#f2ece1" stroke="#d4a373" stroke-width="1"/>
-  <text x="400" y="396" font-family="Liberation Serif, Georgia, serif" font-size="11.5" fill="#701c1a" text-anchor="middle" font-weight="bold">Règle d'or : Maîtriser le flux thermique et le geste mécanique surpasse tout investissement en robots.</text>
+  <!-- Ruban Conclusion -->
+  <rect x="100" y="410" width="740" height="34" rx="6" fill="#701C1A"/>
+  <text x="470" y="432" font-family="Liberation Sans, Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">RÈGLE MAÎTRESSE : CINQ INSTRUMENTS PURS COMPOSENT 99% DE TOUTES LES RECETTES DU MONDE</text>
 </svg>

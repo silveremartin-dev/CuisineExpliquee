@@ -22,21 +22,7 @@ Les protéines majeures du lait sont les **caséines** ($\alpha$, $\beta$, et su
 
 Pour fabriquer un fromage, il faut détruire ce bouclier répulsif afin que les protéines s'agglomèrent en un réseau solide : le **caillé**.
 
-```
-                ┌─────────────────────────────────┐
-                │          LAIT ENTIER            │
-                │ (Micelles de caséine chargées -)│
-                └────────────────┬────────────────┘
-                                 │
-                 ┌───────────────┴───────────────┐
-                 │                               │
-        Voie 1 : ACIDITÉ + CHALEUR       Voie 2 : ENZYMATIQUE (Présure)
-        (Citron/Vinaigre à 82°C)         (Chymosine à 35°C)
-                 │                               │
-                 ▼                               ▼
-        Caillé ferme et friable          Gel souple et élastique
-        (Ricotta, Paneer, Faisselle)     (Tommes, Comté, Camembert)
-```
+![Biomécanique du caillage du lait : rupture acide isoélectrique versus clivage enzymatique de la présure](figures/livre_4/fig_caillage_lait_caseine.svg)
 
 ### A. La Voie Acide et Thermique (Le Fromage Sans Matériel en 15 Minutes)
 - Si l'on chauffe du lait entier à **$82\text{--}85^\circ\mathrm{C}$** et que l'on verse une source d'acide doux (jus de citron frais ou vinaigre d'alcool blanc), les protons $\mathrm{H}^+$ inondent le liquide.

@@ -64,3 +64,17 @@ Un grand cuisinier n'est pas quelqu'un qui ne rate jamais : c'est quelqu'un qui 
 - Une viande qui bout dans la poêle n'est pas un mauvais morceau : c'est un accumulateur thermique trop froid ou une viande mal séchée au torchon.
 - Une crème qui graine n'est pas perdue : c'est une coagulation protéique excessive qu'une contrainte de cisaillement mécanique vigoureuse peut pulvériser.
 Chaque incident culinaire est une leçon de physique expérimentale.
+
+---
+
+### C. Le Protocole Minimaliste : La Cuisson dans une Glacière Ordinaire (Sans Matériel Électrique)
+Vous n'avez nullement besoin d'un thermoplongeur électrique à plusieurs centaines d'euros pour pratiquer la basse température à la perfection. Une simple glacière de pique-nique ordinaire ou un faitout épais enveloppé dans une couverture en laine constitue un isolant thermique passif remarquable :
+
+1. **L'Inertie Calorifique de la Glacière :** Grâce à ses parois de polyuréthane expansé, une glacière de 10 litres remplie d'eau chaude ne perd que **$1^\circ\mathrm{C}$ par heure** dans une cuisine tempérée.
+2. **Le Sous-Vide sans Machine (Le Principe d'Archimède) :**
+   - Assaisonner la viande ou le poisson d'aromates et d'un filet d'huile.
+   - Glisser la pièce dans un sac de congélation étanche zippé de qualité alimentaire.
+   - Immerger lentement le sac ouvert dans l'eau de votre évier : la pression hydrostatique de l'eau plaque instantanément le plastique contre la chair en refoulant tout l'air vers le haut.
+   - Fermer le zip au ras exact de la ligne de flottaison : le vide d'air est parfait, sans débourser un centime dans une machine sous vide.
+3. **L'Immersion Thermique :** Remplir la glacière avec de l'eau chaude à **$2^\circ\mathrm{C}$ au-dessus de votre cible** (ex. $56^\circ\mathrm{C}$ pour une cible à $54^\circ\mathrm{C}$, afin de compenser le refroidissement initial causé par l'introduction de la viande). Plonger le sac et fermer hermétiquement le couvercle de la glacière pendant 1 h 30.
+4. **La Finition Flash en Fonte (La Croûte Minute) :** À la sortie de la glacière, la chair est cuite à cœur avec une tendreté absolue, mais dépourvue de croûte dorée. Sécher soigneusement la surface avec un linge (pour éliminer l'eau libre), puis saisir la pièce **45 secondes par face** dans une poêle en fonte fumante au beurre moussant. Vous obtenez le contraste absolu de la haute cuisine : une croûte croustillante de Maillard d'un millimètre et un cœur juteux, rose et tiède d'un bord à l'autre.

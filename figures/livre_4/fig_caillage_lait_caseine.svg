@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 520" width="100%" height="100%">
+  <rect width="860" height="520" fill="#fcfbf7" rx="12"/>
+  
+  <!-- Titre -->
+  <text x="430" y="38" font-family="Liberation Sans, Arial, sans-serif" font-size="20" font-weight="bold" fill="#701C1A" text-anchor="middle">BIOMÉCANIQUE DU CAILLAGE : LES DEUX VOIES DE RUPTURE COLLOÏDALE</text>
+  <text x="430" y="60" font-family="Liberation Sans, Arial, sans-serif" font-size="13" fill="#64748b" text-anchor="middle">De la répulsion électrostatique des micelles à la prise en gel du caillé</text>
+
+  <!-- Bloc Racine : Lait Entier -->
+  <g transform="translate(255, 80)">
+    <rect width="350" height="75" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+    <text x="175" y="28" font-family="Liberation Sans, Arial, sans-serif" font-size="16" font-weight="bold" fill="#1e3a8a" text-anchor="middle">LAIT ENTIER FRAIS (pH 6,6)</text>
+    <text x="175" y="48" font-family="Liberation Sans, Arial, sans-serif" font-size="13" fill="#1d4ed8" text-anchor="middle">Suspension colloïdale stable de caséines</text>
+    <text x="175" y="65" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-style="italic" fill="#3b82f6" text-anchor="middle">Charges négatives de surface = répulsion mutuelle</text>
+  </g>
+
+  <!-- Ligne de bifurcation -->
+  <path d="M 430 155 L 430 185" stroke="#94a3b8" stroke-width="2.5"/>
+  <path d="M 230 185 L 630 185" stroke="#94a3b8" stroke-width="2.5"/>
+  <path d="M 230 185 L 230 205" stroke="#16a34a" stroke-width="2.5" marker-end="url(#arrow-green)"/>
+  <path d="M 630 185 L 630 205" stroke="#d97706" stroke-width="2.5" marker-end="url(#arrow-amber)"/>
+
+  <!-- Voie Gauche : Acide -->
+  <g transform="translate(60, 210)">
+    <rect width="340" height="85" rx="8" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+    <text x="170" y="26" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#166534" text-anchor="middle">VOIE 1 : CAILLAGE ACIDE</text>
+    <text x="170" y="46" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#15803d" text-anchor="middle">Citron, Vinaigre ou Ferment lactique (pH 4,6)</text>
+    <text x="170" y="66" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#14532d" text-anchor="middle">Point isoélectrique : neutralisation des charges</text>
+    <text x="170" y="80" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#4b5563" text-anchor="middle">Les micelles cessent de se repousser et s'agrègent</text>
+  </g>
+
+  <!-- Flèche gauche vers résultat -->
+  <path d="M 230 295 L 230 330" stroke="#16a34a" stroke-width="2.5"/>
+
+  <!-- Résultat Voie Gauche -->
+  <g transform="translate(60, 335)">
+    <rect width="340" height="135" rx="8" fill="#ffffff" stroke="#16a34a" stroke-width="2"/>
+    <rect width="340" height="28" rx="8" fill="#16a34a"/>
+    <text x="170" y="19" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">CAILLÉ ACIDE : PÂTE FRIABLE</text>
+    <text x="20" y="52" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#166534">Structure physique :</text>
+    <text x="20" y="70" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#334155">Réseau poreux fragile, rétention d'eau limitée.</text>
+    <text x="20" y="92" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#166534">Fromages obtenus :</text>
+    <text x="20" y="110" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#334155">Faisselle, Fromage blanc, Ricotta, Chèvre frais.</text>
+    <text x="20" y="128" font-family="Liberation Sans, Arial, sans-serif" font-size="11" font-style="italic" fill="#64748b">Égouttage rapide à l'étamine sans pressage lourd.</text>
+  </g>
+
+  <!-- Voie Droite : Présure -->
+  <g transform="translate(460, 210)">
+    <rect width="340" height="85" rx="8" fill="#fffbeb" stroke="#d97706" stroke-width="2"/>
+    <text x="170" y="26" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#92400e" text-anchor="middle">VOIE 2 : CAILLAGE ENZYMATIQUE</text>
+    <text x="170" y="46" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#b45309" text-anchor="middle">Présure animale (Chymosine à 32-35°C)</text>
+    <text x="170" y="66" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#78350f" text-anchor="middle">Clivage ciblé de la caséine kappa protectrice</text>
+    <text x="170" y="80" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#4b5563" text-anchor="middle">Ponts calciques transversaux très solides</text>
+  </g>
+
+  <!-- Flèche droite vers résultat -->
+  <path d="M 630 295 L 630 330" stroke="#d97706" stroke-width="2.5"/>
+
+  <!-- Résultat Voie Droite -->
+  <g transform="translate(460, 335)">
+    <rect width="340" height="135" rx="8" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
+    <rect width="340" height="28" rx="8" fill="#d97706"/>
+    <text x="170" y="19" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">GEL ENZYMATIQUE : CAILLÉ ÉLASTIQUE</text>
+    <text x="20" y="52" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#92400e">Structure physique :</text>
+    <text x="20" y="70" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#334155">Gel cohésif et élastique, synérèse puissante.</text>
+    <text x="20" y="92" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#92400e">Fromages obtenus :</text>
+    <text x="20" y="110" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#334155">Comté, Emmental, Tomme, Parmesan, Camembert.</text>
+    <text x="20" y="128" font-family="Liberation Sans, Arial, sans-serif" font-size="11" font-style="italic" fill="#64748b">Permet le tranchage en grains et le pressage sous meule.</text>
+  </g>
+
+  <!-- Définitions flèches -->
+  <defs>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#16a34a"/>
+    </marker>
+    <marker id="arrow-amber" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#d97706"/>
+    </marker>
+  </defs>
+</svg>

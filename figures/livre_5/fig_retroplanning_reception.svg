@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" width="100%" height="100%">
+  <rect width="960" height="360" fill="#fcfbf7" rx="12"/>
+  
+  <!-- Titre -->
+  <text x="480" y="36" font-family="Liberation Sans, Arial, sans-serif" font-size="20" font-weight="bold" fill="#701C1A" text-anchor="middle">LE RÉTROPLANNING DE RÉCEPTION : CHRONOGRAMME DU CUISINIER SEREIN</text>
+  <text x="480" y="58" font-family="Liberation Sans, Arial, sans-serif" font-size="13" fill="#64748b" text-anchor="middle">La dissociation temporelle entre la préparation technique et le plaisir partagé</text>
+
+  <!-- Étape 1 : J-2 / J-1 -->
+  <g transform="translate(30, 85)">
+    <rect width="205" height="235" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+    <rect width="205" height="36" rx="8" fill="#701C1A"/>
+    <text x="102" y="23" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">J - 2 / J - 1 : ANTICIPER</text>
+    
+    <text x="15" y="65" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#701C1A">• Courses complètes</text>
+    <text x="25" y="82" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#475569">Vérifier épices et sel</text>
+    
+    <text x="15" y="108" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#701C1A">• Pâtes &amp; Gâteaux</text>
+    <text x="25" y="125" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#475569">Fonds de tarte, biscuits</text>
+    
+    <text x="15" y="151" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#701C1A">• Sauces &amp; Glaces</text>
+    <text x="25" y="168" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#475569">Réductions collagéniques</text>
+    
+    <text x="15" y="194" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#701C1A">• Marinades &amp; Sel</text>
+    <text x="25" y="211" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#475569">Salage à cœur viandes</text>
+  </g>
+
+  <!-- Connecteur 1 -> 2 -->
+  <path d="M 238 200 L 268 200" stroke="#A3432B" stroke-width="2.5" marker-end="url(#arrow-retro)"/>
+
+  <!-- Étape 2 : Matin J -->
+  <g transform="translate(270, 85)">
+    <rect width="205" height="235" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+    <rect width="205" height="36" rx="8" fill="#A3432B"/>
+    <text x="102" y="23" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">MATIN J : STRUCTURER</text>
+    
+    <text x="15" y="65" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#A3432B">• Taillages végétaux</text>
+    <text x="25" y="82" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#475569">Éplucher, ciseler, parer</text>
+    
+    <text x="15" y="108" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#A3432B">• Pesées précises</text>
+    <text x="25" y="125" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#475569">Mise en place en bols</text>
+    
+    <text x="15" y="151" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#A3432B">• Dresser la table</text>
+    <text x="25" y="168" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#475569">Verres, couverts, carafes</text>
+    
+    <text x="15" y="194" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#A3432B">• Cuisine nette</text>
+    <text x="25" y="211" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#475569">Évier vide, poubelle vidée</text>
+  </g>
+
+  <!-- Connecteur 2 -> 3 -->
+  <path d="M 478 200 L 508 200" stroke="#d97706" stroke-width="2.5" marker-end="url(#arrow-retro)"/>
+
+  <!-- Étape 3 : H - 2 heures -->
+  <g transform="translate(510, 85)">
+    <rect width="205" height="235" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+    <rect width="205" height="36" rx="8" fill="#d97706"/>
+    <text x="102" y="23" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">H - 2 HEURES : CONDITIONNER</text>
+    
+    <text x="15" y="65" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">• Sortir les viandes</text>
+    <text x="25" y="82" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#475569">Tempérer à 20°C ambiant</text>
+    
+    <text x="15" y="108" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">• Préchauffer les plats</text>
+    <text x="25" y="125" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#475569">Four à 55°C (assiettes)</text>
+    
+    <text x="15" y="151" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">• Ouvrir &amp; Aérer les vins</text>
+    <text x="25" y="168" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#475569">Oxygénation des tanins</text>
+    
+    <text x="15" y="194" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">• Pause de l'hôte</text>
+    <text x="25" y="211" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#475569">Douche et détente</text>
+  </g>
+
+  <!-- Connecteur 3 -> 4 -->
+  <path d="M 718 200 L 748 200" stroke="#16a34a" stroke-width="2.5" marker-end="url(#arrow-retro)"/>
+
+  <!-- Étape 4 : À l'arrivée -->
+  <g transform="translate(750, 85)">
+    <rect width="185" height="235" rx="8" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+    <rect width="185" height="36" rx="8" fill="#16a34a"/>
+    <text x="92" y="23" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">L'ARRIVÉE : SAVOURER</text>
+    
+    <text x="12" y="65" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#166534">✓ Hôte détendu</text>
+    <text x="22" y="82" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#475569">Verre à la main</text>
+    
+    <text x="12" y="108" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#166534">✓ Zéro stress</text>
+    <text x="22" y="125" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#475569">Tout est calibré</text>
+    
+    <text x="12" y="151" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#166534">✓ Cuissons d'envoi</text>
+    <text x="22" y="168" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#475569">Saisie minute en fonte</text>
+    
+    <text x="12" y="194" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#166534">✓ Partage total</text>
+    <text x="22" y="211" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#475569">Présence avec les hôtes</text>
+  </g>
+
+  <defs>
+    <marker id="arrow-retro" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#d97706"/>
+    </marker>
+  </defs>
+</svg>

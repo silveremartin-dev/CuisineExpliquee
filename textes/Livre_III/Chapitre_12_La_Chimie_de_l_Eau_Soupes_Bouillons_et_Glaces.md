@@ -8,7 +8,7 @@
 
 L'erreur commune consiste à considérer l'eau du robinet comme un liquide neutre et inerte ($H_2O$). En réalité, l'eau courante est une solution chimique complexe chargée d'ions minéraux et de gaz dissous qui interagissent directement avec la matière organique.
 
-![Pot-au-feu traditionnel et extraction lente des sucs en bouillon frémissant (Wikimedia Commons, CC BY-SA 3.0)](figures/nourriture/pot_au_feu_bouillon.jpg)
+![Pot-au-feu traditionnel et extraction lente des sucs en bouillon frémissant](figures/nourriture/pot_au_feu_bouillon.jpg)
 
 ### A. La Dureté Calcaire et le Verrouillage des Parois
 La dureté de l'eau mesure sa concentration en ions calcium ($\mathrm{Ca}^{2+}$) et magnésium ($\mathrm{Mg}^{2+}$) :

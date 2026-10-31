@@ -8,7 +8,7 @@
 
 Une feuille de salade fraîche (*Lactuca sativa*) est constituée à **$95\,\%$ d'eau**. Sa rigidité croquante et son craquant sous la dent ne proviennent pas de fibres dures de bois, mais de la **pression de turgescence** : l'eau liquide remplit les vacuoles intracellulaires et pousse la membrane plasmique avec force contre la paroi rigide de pectocellulose.
 
-![Feuilles de salade fraîche et turgescence vacuolaire végétale (Wikimedia Commons, CC BY-SA 3.0)](figures/nourriture/salade_marche_fraiche.jpg)
+![Feuilles de salade fraîche et turgescence vacuolaire végétale](figures/nourriture/salade_marche_fraiche.jpg)
 
 ### A. La Perte Hydrique Post-Récolte
 Dès que la salade est récoltée, la feuille continue de respirer et de transpirer. Si l'air ambiant est sec, l'eau s'échappe par les stomates foliaires : les vacuoles se dégonflent, la pression interne s'effondre à zéro, et la feuille devient flasque et molle comme un linge détrempé.

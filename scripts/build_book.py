@@ -135,16 +135,28 @@ PREAMBLE = """
   ]
 ]
 
-#let portail_livre_recto(num_partie, titre, citation_texte) = [
-  #v(3.0cm)
+#let portail_livre_recto(num_partie, titre, sommaire_contenu) = [
+  #v(1.4cm)
   #align(left)[
-    #text(size: 11pt, tracking: 0.18em, fill: c-bordeaux, font: "Liberation Sans", weight: "bold")[#num_partie]
-    #v(0.8cm)
-    #text(size: 27pt, weight: "light", fill: c-ink, tracking: 0.03em, font: "Liberation Sans")[#titre]
-    #v(1.6cm)
-    #line(length: 35%, stroke: 1.2pt + c-bronze)
-    #v(1.4cm)
-    #par(leading: 1.2em)[#text(size: 11pt, fill: c-slate, font: "Liberation Sans", tracking: 0.04em)[#citation_texte]]
+    #text(size: 11pt, tracking: 0.22em, fill: c-bordeaux, font: "Liberation Sans", weight: "bold")[#smallcaps[#num_partie]]
+    #v(0.5cm)
+    #text(size: 22pt, weight: "bold", fill: c-ink, tracking: 0.02em, font: "Liberation Serif")[#titre]
+    #v(0.7cm)
+    #line(length: 35%, stroke: 1.5pt + c-bronze)
+    #v(0.7cm)
+    #text(size: 9.5pt, tracking: 0.16em, fill: c-bronze, font: "Liberation Sans", weight: "bold")[#smallcaps[Sommaire analytique des chapitres]]
+    #v(0.4cm)
+    #block(
+      width: 100%,
+      fill: rgb("#faf8f5"),
+      stroke: (left: 3pt + c-bordeaux),
+      inset: (left: 14pt, right: 12pt, top: 12pt, bottom: 12pt),
+      radius: (right: 4pt)
+    )[
+      #set text(size: 9.8pt, fill: c-ink, font: "Liberation Sans")
+      #set par(justify: false, leading: 0.78em)
+      #sommaire_contenu
+    ]
   ]
 ]
 
@@ -699,14 +711,14 @@ def postprocess_typst(typ_content):
     # Limiter la hauteur des photographies de recettes pour une intégration harmonieuse sans saut de page brutal
     typ_content = re.sub(
         r'image\("figures/nourriture/([^"]+)"(?:\s*,\s*alt:\s*"[^"]*")?\)',
-        r'image("figures/nourriture/\1", width: 85%, height: 23%, fit: "cover")',
+        r'image("figures/nourriture/\1", width: 90%, height: 35%, fit: "cover")',
         typ_content
     )
 
     # Limiter la hauteur des schémas SVG pour garantir une aération parfaite de la page
     typ_content = re.sub(
         r'image\("figures/((?:histoire|livre_[0-9]|croquis)/[^"]+\.svg)"(?:\s*,\s*alt:\s*"[^"]*")?\)',
-        r'image("figures/\1", width: 90%, height: 30%, fit: "contain")',
+        r'image("figures/\1", width: 95%, height: 38%, fit: "contain")',
         typ_content
     )
 
@@ -766,7 +778,7 @@ def run_build():
             "titre": "L'HOMME, L'ÉVOLUTION ET LA CIVILISATION DU GOÛT",
             "img": "figures/patrimoine/livre1_ouverture_feu_ancestral.jpg",
             "legende": "La conquête du feu paléolithique et l'externalisation de la digestion humaine.",
-            "citation": "L'étincelle primitive du premier foyer.#linebreak()La prédigestion externe et l'envol du cerveau.#linebreak()Les mémoires écrites de Mésopotamie, de Rome et d'Escoffier.#linebreak()La géographie universelle des trois graisses de terroir.",
+            "citation": "Chapitre 01 — L'Animal Culinaire : Anatomie, Feu et Nutrition §§§ Externalisation digestive, loi de Wrangham, encéphalisation et morphologie. @@ Chapitre 02 — L'Histoire Écrite de la Table : De la Mésopotamie à Nos Jours §§§ Des tablettes sumériennes et Apicius à Scappi, La Varenne, Brillat-Savarin et Escoffier. @@ Chapitre 03 — La Géopolitique des Saveurs : Terroirs et Mondialisation §§§ La triade des trois graisses fondatrices, révolution colombienne et unification des goûts.",
             "fichiers": [
                 "textes/Livre_I/Chapitre_01_L_Animal_Culinaire_Anatomie_Feu_Nutrition.md",
                 "textes/Livre_I/Chapitre_02_L_Histoire_Ecrite_de_la_Table_de_Mesopotamie_a_Aujourdhui.md",
@@ -778,7 +790,7 @@ def run_build():
             "titre": "LE FOYER MODERNE : ÉQUIPEMENTS, SÉCURITÉ ET ORGANISATION",
             "img": "figures/patrimoine/livre2_ouverture_cuisine_ordre.jpg",
             "legende": "L'arsenal ordonné de cuisine et la clarté du foyer bien gouverné (d'après Chardin).",
-            "citation": "Cinq outils indestructibles contre le piège des gadgets.#linebreak()La thermodynamique des fours, du froid et du magnétron.#linebreak()Le sang-froid salvateur face aux brûlures et aux feux d'huile.#linebreak()L'ordre invisible de la marche en avant et l'économie du foyer.",
+            "citation": "Chapitre 04 — L'Arsenal Minimal et les Équipements Fondamentaux §§§ Les 5 organes indispensables, fonte brute, toxicologie du PTFE et gros appareils. @@ Chapitre 05 — Consignes de Sécurité, Découpe et Pannes Critiques §§§ Incendie d'huile, coupure de froid, brûlures thermiques et tenue en griffe de chat. @@ Chapitre 06 — Économie du Foyer, Courses, Additifs et Saisonnalité §§§ Psychologie des supermarchés, Bliss Point, audit critique de Yuka et du Nutri-Score. @@ Chapitre 07 — L'Ordre Invisible : Marche en Avant, Restes et Plonge §§§ Gestion FIFO, valorisation des biodéchets et plonge efficace par capillarité.",
             "fichiers": [
                 "textes/Livre_II/Chapitre_04_L_Arsenal_Minimal_et_les_Equipements_Fondamentaux.md",
                 "textes/Livre_II/Chapitre_05_Consignes_de_Securite_et_Pannes_Critiques.md",
@@ -791,7 +803,7 @@ def run_build():
             "titre": "LA SCIENCE DE LA CASSEROLE : MATIÈRES PREMIÈRES, FLUIDES ET TRANSFORMATIONS",
             "img": "figures/nourriture/livre3_ouverture_marche_abondance.jpg",
             "legende": "L'abondance maraîchère des éléments bruts : la matière vivante avant la transformation.",
-            "citation": "L'étalonnage des cinq sens et la thermodynamique des échanges.#linebreak()La force du grain, l'amidon dompté et la turgescence de la feuille.#linebreak()La chimie vivante de l'eau, des bouillons d'or et des terpènes d'épices.#linebreak()La contraction du muscle animal et l'archétype de l'œuf.",
+            "citation": "Chapitres 08 à 10 — Sens, Féculents et Mécanique Végétale §§§ Thermodynamique, récepteurs trigéminaux, amidon, purée Blumenthal et étuvée. @@ Chapitres 11 à 13 — Écosystème Vert, Bouillons et Alchimie des Épices §§§ Turgescence de la feuille, extraction collagénique, glaces pures et terpènes. @@ Chapitres 14 à 16 — Règne Animal, L'Archétype de l'Œuf et Matrice §§§ Maillard en fonte, cuticule protectrice, émulsions mères et synoptique des transformations.",
             "fichiers": [
                 "textes/Livre_III/Chapitre_08_Cuisiner_avec_ses_Sens_et_Thermodynamique.md",
                 "textes/Livre_III/Chapitre_09_Feculents_Cereales_et_Legumineuses_Force_du_Grain.md",
@@ -809,7 +821,7 @@ def run_build():
             "titre": "LES MÉTAMORPHOSES SINGULIÈRES : FERMENTATIONS, PÂTISSERIE ET GRAND FROID",
             "img": "figures/nourriture/livre4_ouverture_fournil_levain.jpg",
             "legende": "Miches dorées au fournil artisanal : la résurrection noble du levain sauvage.",
-            "citation": "L'éveil noble des levains sauvages et des lactofermentations.#linebreak()L'alchimie du caillé acide et la fromagerie sans présure.#linebreak()L'équation matricielle du gâteau et les degrés du caramel.#linebreak()Le bouclier thermique de la meringue et la glace née du sel.",
+            "citation": "Chapitre 17 — La Révolution des Fermentations Végétales, Pains et Levains §§§ Levains sauvages, pain cocotte, pickles vivants, kéfir de fruits et kombucha. @@ Chapitre 18 — L'Alchimie Laitière et la Fromagerie Autonome §§§ Rupture colloïdale isoélectrique versus présure et fromage frais en 15 minutes. @@ Chapitres 19 à 21 — Glucides, Pâtisserie Matricielle et Grand Froid §§§ Pyrolyse du sucre, équation du gâteau, mousse aquafaba et sel cryoscopique.",
             "fichiers": [
                 "textes/Livre_IV/Chapitre_17_La_Revolution_des_Fermentations_Vegetales_Pains_et_Levains.md",
                 "textes/Livre_IV/Chapitre_18_L_Alchimie_Laitiere_et_la_Fromagerie_Autonome.md",
@@ -823,7 +835,7 @@ def run_build():
             "titre": "L'ART DU REPAS, DU PARTAGE ET DU SERVICE",
             "img": "figures/patrimoine/livre5_ouverture_banquet_table.jpg",
             "legende": "Table de banquet dressée : l'orfèvrerie des couverts et la noblesse du service partagé.",
-            "citation": "La sociologie du couvert et l'histoire séculaire de la fourchette.#linebreak()L'architecture d'un menu et la sérénité du rétroplanning.#linebreak()L'esthétique géométrique de l'assiette et le secret des températures.#linebreak()L'élégance du partage et la convivialité souveraine.",
+            "citation": "Chapitre 22 — Pourquoi une Fourchette ? Histoire et Sociologie de la Table §§§ Anthropologie du couvert, tabous du toucher et guerre du service à la française vs à la russe. @@ Chapitre 23 — L'Architecture du Menu, Rétroplanning et Art de Recevoir §§§ Chronogramme de réception sans stress de J-2 au service pour un hôte détendu. @@ Chapitre 24 — L'Esthétique de l'Assiette, Dressage et Températures §§§ Équilibre des formes, assiettes chauffées à 55°C et secrets de l'assiette 3 étoiles.",
             "fichiers": [
                 "textes/Livre_V/Chapitre_22_Pourquoi_une_Fourchette_Histoire_et_Sociologie_de_la_Table.md",
                 "textes/Livre_V/Chapitre_23_L_Architecture_du_Menu_Retroplanning_et_Art_de_Recevoir.md",
@@ -834,8 +846,8 @@ def run_build():
             "num": "SIXIÈME PARTIE",
             "titre": "LE TEMPS LONG : NUTRITION DIACHRONIQUE ET PLAISIR DURABLE",
             "img": "figures/nourriture/livre6_ouverture_potager_saisons.jpg",
-            "legende": "Le potager vivant au fil des saisons : la santé durable sur le temps long.",
-            "citation": "Sortir définitivement de la tyrannie stérile des régimes.#linebreak()La neurobiologie de la satiété et le respect du temps métabolique.#linebreak()Le secret de l'amidon résistant et le festin du microbiote.#linebreak()L'art du batch cooking et la mélodie des trente végétaux.",
+            "legende": "Le potager vivant au fil des saisons : diversité végétale et temps long.",
+            "citation": "Chapitre 25 — Sortir de la Tyrannie des Régimes : Physiologie du Poids §§§ Cinétique neuro-hormonale de la leptine, délai des 20 minutes et densité nutritive. @@ Chapitre 26 — La Diachronie Culinaire : Microbiote et Batch Cooking §§§ Amidon résistant RS3 rétrogradé, règle des 30 végétaux et protocoles hebdomadaires.",
             "fichiers": [
                 "textes/Livre_VI/Chapitre_25_Sortir_de_la_Tyrannie_des_Regimes_Physiologie_du_Poids.md",
                 "textes/Livre_VI/Chapitre_26_La_Diachronie_Culinaire_Microbiote_et_Batch_Cooking.md"
@@ -844,15 +856,16 @@ def run_build():
         {
             "num": "ANNEXES ET RÉPERTOIRES",
             "titre": "FORMULAIRE, GLOSSAIRE ET RÉPERTOIRE CRITIQUE",
-            "img": "figures/patrimoine/scappi_cuisine_renaissance.jpg",
-            "legende": "La gravure fondatrice de Bartolomeo Scappi (1570) : la rigueur des outils et des mesures.",
-            "citation": "Le cadran absolu des températures critiques en cuisine.#linebreak()Le glossaire physico-chimique et culinaire exhaustif.#linebreak()La bibliographie raisonnée et critique des penseurs fondateurs.#linebreak()Les guides pratiques d'achat et de conservation au froid.",
+            "img": "figures/patrimoine/diderot_encyclopedie_fournil.jpg",
+            "legende": "L'artisanat du fournil et la rigueur technique dans l'Encyclopédie de Diderot et d'Alembert (XVIIIe siècle).",
+            "citation": "Annexe A — Cadran Absolu des Températures Critiques en Cuisine §§§ Seuils de dénaturation, Maillard, coagulation et zones de danger microbien. @@ Annexe B — Glossaire Physico-Chimique et Culinaire Exhaustif §§§ Définitions rigoureuses de l'amylose au point de fumée et à la synérèse. @@ Annexes C à F — Bibliographie, Guides Pratiques et Crédits Iconographiques §§§ Ouvrages de référence, guide d'achat minimal, conservation au froid et sources libres.",
             "fichiers": [
                 "textes/Annexes/Annexe_A_Tableau_des_Temperatures_Critiques.md",
                 "textes/Annexes/Annexe_B_Glossaire_Physico_Chimique_et_Culinaire.md",
                 "textes/Annexes/Annexe_C_Bibliographie_Raisonnee.md",
                 "textes/Annexes/Annexe_D_Guide_Achat_Arsenal_Minimal_Couts_et_Durees_de_Cuisson.md",
-                "textes/Annexes/Annexe_E_Conservation_au_Froid_Zones_du_Refrigerateur_et_Durees_Limites.md"
+                "textes/Annexes/Annexe_E_Conservation_au_Froid_Zones_du_Refrigerateur_et_Durees_Limites.md",
+                "textes/Annexes/Annexe_F_Credits_Iconographiques_et_Sources.md"
             ]
         }
     ]

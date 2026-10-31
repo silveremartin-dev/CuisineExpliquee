@@ -35,15 +35,7 @@ Pourquoi tant de cuisiniers amateurs redoutent-ils d'inviter des amis à dîner 
 
 Pour que le dîner se déroule avec la fluidité d'un ballet sans stress :
 
-```
-J-1 (La Veille)      H-4 (Après-Midi)     H-1 (Avant Arrivée)   H-0 (Accueil)
-┌──────────────┐    ┌──────────────┐     ┌──────────────┐      ┌──────────────┐
-│ Courses      │    │ Découpes     │     │ Tempérer les │      │ Hôte détendu │
-│ Pâtes/Gâteaux│───>│ Tout pesé    │────>│ viandes      │─────>│ Verre à      │
-│ Desserts J-1 │    │ Table dressée│     │ Four tiède   │      │ la main      │
-│ Fonds/Sauces │    │ Évier propre │     │ Vins aérés   │      │ Zéro stress  │
-└──────────────┘    └──────────────┘     └──────────────┘      └──────────────┘
-```
+![Chronogramme du rétroplanning de réception : dissociation temporelle entre technique et convivialité](figures/livre_5/fig_retroplanning_reception.svg)
 
 - **La Veille (J-1) :**
   - Faire la totalité des courses au marché.

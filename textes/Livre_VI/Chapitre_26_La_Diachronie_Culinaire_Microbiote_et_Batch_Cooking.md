@@ -8,7 +8,7 @@
 
 Pourquoi un plat de pâtes ou de pommes de terre mangé brûlant à la sortie de la casserole a-t-il un impact métabolique totalement différent du même plat consommé le lendemain froid en salade ou réchauffé ?
 
-![L'amidon résistant de type 3 et la nourriture du microbiote](figures/nourriture/livre6_ouverture_potager_saisons.jpg)
+![L'amidon résistant de type 3 et la nourriture du microbiote : légumineuses préparées et rétrogradation de l'amidon](figures/science/legumineuses_proteines_vegetales.jpg)
 
 ### A. La Rétrogradation Moléculaire au Réfrigérateur
 Lors de la cuisson dans l'eau chaude ($>65^\circ\mathrm{C}$), les grains d'amidon absorbent de l'eau et gonflent : les chaînes linéaires d'**amylose** se dispersent dans le liquide. Si vous consommez le féculent chaud, vos enzymes salivaires et pancréatiques découpent ces chaînes en quelques minutes en glucose libre : le sucre dans le sang s'élève brutalement, déclenchant un pic d'insuline et le stockage des graisses.

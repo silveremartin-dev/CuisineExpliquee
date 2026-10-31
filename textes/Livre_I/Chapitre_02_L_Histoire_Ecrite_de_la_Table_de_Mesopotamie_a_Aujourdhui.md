@@ -79,7 +79,7 @@ Magistrat et gastronome humaniste, Brillat-Savarin fonde l'épistémologie de la
 - Il analyse le rôle de la **mastication**, de la **salivation** et de la **rétro-olfaction** dans la perception des arômes.
 - Il pose les premières observations scientifiques sur l'obésité causée par les farines raffinées et les féculents excédentaires, préfigurant avec un siècle d'avance les régimes à bas index glycémique.
 
-![Jean Anthelme Brillat-Savarin (1755–1826), magistrat et pionnier de la physiologie sensorielle du goût (gravure du XIXe siècle / Domaine Public)](figures/patrimoine/brillat_savarin_portrait.jpg)
+![Jean Anthelme Brillat-Savarin (1755–1826), magistrat et pionnier de la physiologie sensorielle du goût](figures/patrimoine/brillat_savarin_portrait.jpg)
 
 ---
 
@@ -93,7 +93,7 @@ Soixante ans avant que Louis Pasteur n'explique le rôle des micro-organismes vi
 ### B. Auguste Escoffier (*Le Guide Culinaire*, 1903) : L'Ingénierie de Brigade
 Escoffier applique aux cuisines d'hôtels de luxe les principes de l'organisation industrielle : division du travail en parties spécialisées (saucier, rôtisseur, entremétier, garde-manger), codification rigoureuse des fonds de veau et de volaille, et allègement des décors superflus.
 
-![Auguste Escoffier (1846–1935), codificateur de la haute cuisine moderne et créateur de la brigade rationnelle (photographie d'époque / Wikimedia Commons, Domaine Public)](figures/patrimoine/auguste_escoffier_portrait.jpg)
+![Auguste Escoffier (1846–1935), codificateur de la haute cuisine moderne et créateur de la brigade rationnelle](figures/patrimoine/auguste_escoffier_portrait.jpg)
 
 ### C. La Nouvelle Cuisine (Années 1970) puis la Révolution Moléculaire (1990-2010)
 - **La Nouvelle Cuisine (Michel Guérard, Paul Bocuse, les frères Troisgros) :** Réduction drastique des temps de cuisson des poissons et légumes, rejet des farines lourdes dans les sauces, valorisation de la fraîcheur brute du marché.
