@@ -1,46 +1,31 @@
-# ROADMAP & PROPOSITIONS DE TITRES — LA CUISINE EXPLIQUÉE
-## Feuille de Route Internationale (Version Française & Adaptation Anglophone)
+# ROADMAP & ADAPTATION INTERNATIONALE — LA CUISINE EXPLIQUÉE
+## Titre Officiel & Feuille de Route Internationale (Édition Française & Adaptation Anglophone)
 
-> Ce document consigne les propositions de titres pour l'édition princeps française et la future édition anglophone, ainsi que la matrice complète des conversions métriques/impériales et des adaptations culturelles indispensables.
-
----
-
-## 1. PROPOSITIONS DE TITRES & IDENTITÉ ÉDITORIALE
-
-Le titre doit refléter la promesse centrale de l'ouvrage : **s'émanciper de la recette aveugle grâce aux lois physiques de la matière, en cuisinant d'exception avec le strict minimum d'instruments.**
-
-### Option A — La Filiation Directe avec *La Voie du Nombre* (Élégant, Philosophique, Collection)
-- **Titre Français :** **LA VOIE DU FEU ET DU GESTE**
-- **Sous-titre :** *Principes Premiers, Maîtrise de la Matière et Minimalisme Culinaire*
-- **Titre Anglais (Équivalent) :** **THE WAY OF THE PAN** — *First Principles, Elemental Heat, and the Art of Minimalist Cooking*
-- **Pourquoi ça fonctionne :** Crée un effet de collection immédiat avec *La Voie du Nombre*. Évoque la rigueur de l'artisanat, la noblesse du geste ancestral et la simplicité absolue du dénuement technique.
-
-### Option B — La Clarté Cartésienne et Scientifique (Accessible, Pédagogique, Référence)
-- **Titre Français :** **LA CUISINE EXPLIQUÉE** *(Titre de travail plébiscité)*
-- **Sous-titre :** *Principes Premiers, Maîtrise de la Matière et Minimalisme Instrumental*
-- **Livre Compagnon :** *Le Guide du Praticien — Protocoles Expérimentaux, Arbres de Sauvetage et Science de la Casserole*
-- **Titre Anglais (Équivalent) :** **COOKING DECODED** — *Mastering Food Through First Principles, Pure Physics, and Minimalist Tools*
-- **Pourquoi ça fonctionne :** Évoque les grands traités d'initiation (*La Physique expliquée*, *L'Économie expliquée*). Rassurant, clair, sans prétention ésotérique, promet une compréhension rationnelle et définitive.
-
-### Option C — L'Éloge du Minimalisme et de la Matière (Moderne, Épuré, Percutant)
-- **Titre Français :** **L'ART DU PEU ET DE LA MATIÈRE**
-- **Sous-titre :** *Comprendre les Lois Invisibles de la Casserole pour Cuisiner avec Cinq Outils*
-- **Titre Anglais (Équivalent) :** **ELEMENTAL COOKING** — *How Understanding Food Science Frees You from Gadgets and Recipes*
-- **Pourquoi ça fonctionne :** Répond directement au ras-le-bol des cuisines encombrées de gadgets à usage unique. Met en valeur l'intelligence humaine face à la technologie.
-
-### Option D — Le Prisme de la Survie et de la Transformation (Audacieux, Évolutif, Vivant)
-- **Titre Français :** **LE FEU, LE SEL ET LA CELLULE**
-- **Sous-titre :** *Traité Fondamental de Cuisine et de Survie par les Lois Physico-Chimiques*
-- **Titre Anglais (Équivalent) :** **HEAT, SALT, AND THE CELL** — *The Molecular Survival Guide to the Everyday Kitchen*
-- **Pourquoi ça fonctionne :** Souligne l'ancrage dans l'anthropologie de la survie (Wrangham), la biologie de la digestion et la manipulation élémentaire du vivant.
+> Ce document consigne l'identité officielle de l'ouvrage pour l'édition de référence française et la future édition anglophone, ainsi que la matrice complète des conversions métriques/impériales, des typologies de produits et des adaptations culturelles indispensables.
 
 ---
 
-## 2. FEUILLE DE ROUTE DE L'ADAPTATION INTERNATIONALE (EDITION ANGLOPHONE)
+## 1. TITRE OFFICIEL & IDENTITÉ ÉDITORIALE ARRÊTÉE
+
+Le titre et le sous-titre officiels retenus sont définitivement fixés :
+
+- **Édition Française (Titre de Référence) :**
+  - **Titre :** **LA CUISINE EXPLIQUÉE**
+  - **Sous-titre :** *Principes Premiers, Maîtrise de la Matière et Minimalisme Instrumental*
+  - **Livre Compagnon :** *Le Guide du Praticien — Protocoles Expérimentaux, Arbres de Sauvetage et Science de la Casserole*
+- **Édition Anglophone (International Adaptation) :**
+  - **Title :** **COOKING DECODED**
+  - **Subtitle :** *First Principles, Pure Physics, and Minimalist Tools*
+  - **Companion Book :** *The Kitchen Lab Guide — Experimental Protocols, Rescue Decision Trees, and Pure Science*
+- **Positionnement Éditorial :** Traité de référence à la croisée de l'anthropologie, de la biologie, de la physique des transferts et de la biomécanique du geste. L'ouvrage libère le lecteur de la dépendance aux recettes-incantations et aux appareils superflus en enseignant les lois fondamentales de la transformation de la matière avec 5 instruments élémentaires.
+
+---
+
+## 2. MATRICE D'ADAPTATION INTERNATIONALE (EDITION ANGLOPHONE)
 
 L'exportation de l'ouvrage vers le monde anglo-saxon (États-Unis, Royaume-Uni, Canada, Australie) ne peut pas être une simple traduction mot à mot. Elle exige une **adaptation métrologique et culturelle systémique** :
 
-```
+```text
                                   MATRICE D'ADAPTATION INTERNATIONALE
                                                     │
         ┌───────────────────────────┬───────────────┴───────────────┬───────────────────────────┐
@@ -53,7 +38,7 @@ L'exportation de l'ouvrage vers le monde anglo-saxon (États-Unis, Royaume-Uni, 
 ```
 
 ### A. La Conversion Métrologique Bipolaire Continue
-Dans le texte de l'édition anglaise, chaque grandeur physique doit afficher sa double équivalence :
+Dans le texte de l'édition anglaise, chaque grandeur physique affiche sa double équivalence :
 1. **Températures :**
    - Eau frémissante : $85^\circ\mathrm{C}$ ($185^\circ\mathrm{F}$)
    - Ébullition : $100^\circ\mathrm{C}$ ($212^\circ\mathrm{F}$)
@@ -90,12 +75,12 @@ Dans le texte de l'édition anglaise, chaque grandeur physique doit afficher sa 
 
 ## 3. PHASAGE DU PROJET
 
-```
- PHASE 1 (En cours)           PHASE 2 (Stabilisation)        PHASE 3 (Internationalisation)
- ┌──────────────────────┐     ┌──────────────────────┐      ┌───────────────────────────────┐
- │ • Rédaction FR       │     │ • Relecture complète │      │ • Traduction & adaptation EN  │
- │ • 14 Figures SVG     │ ──> │ • Index croisé final │ ───> │ • Double système C°/F° & g/oz │
- │ • Compilation Typst  │     │ • Version brochée FR │      │ • Tableaux US/UK farines/gras │
- │ • 74 pages validées  │     │ • Validation lecteurs│      │ • Édition bilingue de réf.    │
- └──────────────────────┘     └──────────────────────┘      └───────────────────────────────┘
+```text
+ PHASE 1 (Achevée)               PHASE 2 (En cours - Stabilisation)  PHASE 3 (Internationalisation)
+ ┌──────────────────────┐        ┌──────────────────────┐           ┌───────────────────────────────┐
+ │ • Rédaction 6 Livres │        │ • Audit graphique HD │           │ • Traduction & adaptation EN  │
+ │ • 26 Chapitres       │ ───>   │ • Relecture croisée  │    ───>   │ • Double système C°/F° & g/oz │
+ │ • 26 Recettes Piliers│        │ • Tirage papier / PoD│           │ • Tableaux US/UK farines/gras │
+ │ • 190 pages PDF      │        │ • Diffusion CC BY-SA │           │ • Édition anglaise de réf.    │
+ └──────────────────────┘        └──────────────────────┘           └───────────────────────────────┘
 ```

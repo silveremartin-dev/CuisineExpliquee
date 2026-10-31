@@ -1,7 +1,7 @@
 # AGENTS.MD — MANIFESTE, OBJECTIFS ET DIRECTIVES DE CONCEPTION
 ## Projet : « LA CUISINE EXPLIQUÉE — Principes Premiers, Maîtrise de la Matière et Minimalisme Instrumental »
 
-> Ce document définit l'architecture intellectuelle, les impératifs épistémologiques, l'analyse des obstacles cognitifs et les protocoles opérationnels que tout agent (humain ou IA) doit rigoureusement respecter lors de la rédaction, de l'illustration et de la compilation de l'ouvrage.
+> Ce document définit l'architecture intellectuelle, les impératifs épistémologiques, l'analyse des obstacles cognitifs, les normes iconographiques SVG et les protocoles opérationnels que tout agent (humain ou IA) doit rigoureusement respecter lors de la rédaction, de l'illustration et de la compilation de l'ouvrage.
 
 ---
 
@@ -20,173 +20,172 @@
 
 ---
 
-## 2. LES SIX IMPÉRATIFS ÉPISTÉMOLOGIQUES ET MÉTHODOLOGIQUES MAJEURS
+## 2. STRUCTURE MAÎTRESSE EN SIX LIVRES & VINGT-SIX CHAPITRES
 
-### A. La Forme en Diptyque Méthodologique Systématique : Le Positif et le Négatif (Ce qu'il faut faire / Ce qu'il faut éviter)
+L'ouvrage adopte une architecture séquentielle rigoureuse en **6 Livres majeurs**, articulés du passé lointain de l'espèce jusqu'au temps long de la santé quotidienne :
+
+1. **LIVRE I — L'Animal Culinaire & l'Histoire du Goût (Chapitres 01 à 03) :**
+   - *Chapitre 01 :* Anthropologie du feu, Wrangham, Lévi-Strauss, morphogenèse humaine et encéphalisation.
+   - *Chapitre 02 :* Histoire écrite de la table (de la Mésopotamie et Apicius à Scappi, La Varenne et Escoffier).
+   - *Chapitre 03 :* Géopolitique des 3 graisses (beurre, canard/oie, huile d'olive) et mondialisation des saveurs.
+2. **LIVRE II — Le Foyer Moderne : Équipements, Sécurité & Organisation (Chapitres 04 à 07) :**
+   - *Chapitre 04 :* L'Arsenal minimal des 5 outils fondamentaux et gros appareils (four, frigo, micro-ondes).
+   - *Chapitre 05 :* Consignes de sécurité, prévention des brûlures, découpes et pannes critiques (huile, coupure de froid).
+   - *Chapitre 06 :* Économie du foyer, courses à ventre plein, décryptage des additifs E et calendrier de saisonnalité.
+   - *Chapitre 07 :* L'ordre invisible : marche en avant, gestion des restes (FIFO), plonge efficace et séchage libre.
+3. **LIVRE III — La Science de la Casserole : Matières Premières, Fluides et Transformations (Chapitres 08 à 16) :**
+   - *Chapitre 08 :* Étalonnage des cinq sens et thermodynamique des transferts (loi de Stefan-Boltzmann $T^4$, conduction au carré de l'épaisseur).
+   - *Chapitre 09 :* Féculents, céréales et légumineuses (Fiches 01 à 05 : Carbonara, Dahl, Tofu, Sarladaises, Aïoli).
+   - *Chapitre 10 :* Mécanique végétale, épluchage, taillage et étuvée sous cartouche (Fiches 06 et 07 : Purée Blumenthal, Carottes glacées).
+   - *Chapitre 11 :* Écosystème vert, salades, turgescence cellulaire et acide (Fiche 08 : Salade croquante).
+   - *Chapitre 12 :* Chimie de l'eau, bouillons limpides et glaces de viande (Fiches 09 et 10 : Grand bouillon d'or, Consommé clarifié).
+   - *Chapitre 13 :* Alchimie des épices, herbes fraîches et extraction aromatique.
+   - *Chapitre 14 :* Le règne animal, fibres musculaires, Maillard et déglaçage (Fiches 11 à 13 : Steak en fonte, Déglaçage minute, Ceviche).
+   - *Chapitre 15 :* L'archétype de l'œuf et les émulsions mères (Fiches 14 à 17 : Œuf mollet, Œuf poché, Mayonnaise, Hollandaise).
+   - *Chapitre 16 :* La matrice des transformations culinaires et tableau synoptique des modes suggérés (Fiche 18 : Sauce Béchamel).
+4. **LIVRE IV — Les Métamorphoses Singulières : Fermentations, Pâtisserie et Grand Froid (Chapitres 17 à 21) :**
+   - *Chapitre 17 :* Fermentations végétales, levains et pains sans pétrissage (Fiches 19 et 20 : Pain cocotte, Pickles).
+   - *Chapitre 18 :* Alchimie laitière et fromagerie autonome (Fiche 21 : Fromage frais en 15 minutes).
+   - *Chapitre 19 :* Travail des glucides, sirops, pyrolyse douce et caramélisation.
+   - *Chapitre 20 :* Pâtisserie matricielle et mécanique des pâtes (Fiches 22 à 24 : Moelleux au chocolat, Pâte brisée, Mousse aquafaba).
+   - *Chapitre 21 :* Prodiges thermiques, pouvoir isolant de l'air et grand froid (Fiches 25 et 26 : Omelette norvégienne, Glace au sel).
+5. **LIVRE V — L'Art du Repas, du Partage et du Service (Chapitres 22 à 24) :**
+   - *Chapitre 22 :* Histoire et sociologie du couvert (pourquoi la fourchette) et guerre des services au XIXe siècle (Service à la française vs Service à la russe).
+   - *Chapitre 23 :* Architecture du menu, rétroplanning serein de réception et gestion du temps.
+   - *Chapitre 24 :* Esthétique de l'assiette, dressage, températures de service et secrets de l'assiette trois étoiles.
+6. **LIVRE VI — Le Temps Long : Nutrition Diachronique & Plaisir Durable (Chapitres 25 et 26) :**
+   - *Chapitre 25 :* Sortir de la tyrannie des régimes, cinétique neuro-hormonale de la satiété (délai des 20 minutes) et densité nutritionnelle.
+   - *Chapitre 26 :* Diachronie culinaire, amidon résistant RS3, règle des 30 végétaux et protocole de batch cooking.
+7. **ANNEXES & RÉPERTOIRES (Annexes A à E) :**
+   - *Annexe A :* Le cadran absolu des températures critiques au degré près.
+   - *Annexe B :* Glossaire physico-chimique et culinaire exhaustif.
+   - *Annexe C :* Bibliographie raisonnée et évaluée sans ISBN factices.
+   - *Annexe D :* Guide d'achat de l'arsenal minimal, coûts énergétiques et durées standard.
+   - *Annexe E :* Conservation au réfrigérateur, cartographie thermique et durées limites sanitaires.
+
+---
+
+## 3. LES IMPÉRATIFS ÉPISTÉMOLOGIQUES ET PÉDAGOGIQUES
+
+### A. La Forme en Diptyque Méthodologique Systématique
 Toute technique, tout principe de conservation, toute cuisson et tout geste doit être articulé de manière explicite et symétrique en deux volets indissociables :
 1. **Le Geste Vertueux (Ce qu'il faut faire) :** Les paramètres optimaux étayés par la thermodynamique et la cinétique chimique.
 2. **Le Contre-Modèle (Ce qu'il faut absolument éviter) :** Les erreurs courantes, les mythes persistants, les gestes dangereux (ex. projeter de l'eau sur une huile en flammes, recongeler un aliment cru décongelé, faire ses courses le ventre vide).
 
-### B. Le Principe Pédagogique du « Geste Sensible vers la Molécule »
-Le grand public décroche rapidement devant une énumération aride de formules chimiques.
+### B. Le Principe du « Geste Sensible vers la Molécule »
+Le grand public décroche rapidement devant une énumération aride de formules mathématiques ou de termes chimiques abstraits.
 - **Règle absolue :** Ne jamais introduire un terme moléculaire (actine, amylose, lécithine, caséine) sans l'avoir d'abord incarné par une **analogie visuelle et mécanique concrète**.
-  - Exemple pour l'émulsion : d'abord décrire les milliards de petites billes d'huile enrobées par des « clés à deux têtes » qui agrippent l'eau d'une main et l'huile de l'autre, avant de donner le nom de phospholipide ou lécithine.
-  - Exemple pour la viande : parler des « câbles élastiques pleins d'eau » qui se resserrent et tordent la serviette pour expulser le jus, avant de nommer l'actomyosine.
+- **Allègement des formules :** Éviter les équations physiques complexes inutiles dans le corps du texte (ex. conductivité de l'air en $\mathrm{W/(m\cdot K)}$). Privilégier une explication intuitive limpide en français tout en citant les grands principes fondateurs (loi de Stefan-Boltzmann sur le rayonnement en $T^4$, loi du temps proportionnel au carré de l'épaisseur).
 - L'explication microscopique éclaire le geste pratique, elle ne doit jamais l'étouffer.
 
-### C. La Démystification de l'Industrie Agroalimentaire et des Additifs (Code E)
-L'ouvrage aborde sans tabou ni complotisme la réalité industrielle :
-1. **L'Illusion de la liste longue :** Démystifier pourquoi un plat industriel affiche parfois 20 lignes alors qu'à la maison la recette décomposée chimiquement contiendrait les mêmes constituants élémentaires (eau, lécithine, sel, acide citrique, pectine).
-2. **La Manipulation réelle du goût et de la satiété :** Le concept de *Bliss Point* (combinaison calculée sel/sucre/gras court-circuitant le rétrocontrôle de la satiété), le texturage artificiel (polyphosphates retenant l'eau dans le jambon), l'aromatisation masquante.
-3. **Le décryptage rationnel des additifs E :**
-   - *Inoffensifs / Naturels :* E300 (vitamine C), E330 (acide citrique du citron), E322 (lécithine d'œuf/soja), E440 (pectine de pomme), E410 (farine de caroube), E100 (curcumine).
-   - *Problématiques ou à fuir :* E250 (nitrite de sodium formant des nitrosamines cancérogènes), E150d (caramel ammoniacal contenant du 4-MEI), émulsifiants de synthèse perturbant le microbiote (E466 carboxyméthylcellulose, E433 polysorbates), E621 (glutamate monosodique surdosé pour masquer l'indigence des matières premières).
+### C. La Démystification Rationnelle de l'Agroalimentaire et des Additifs (Code E)
+1. **L'Illusion de la liste longue :** Démystifier pourquoi un plat industriel affiche parfois 20 lignes alors qu'à la maison la recette décomposée contiendrait les mêmes constituants élémentaires.
+2. **Le Bliss Point et la manipulation de la satiété :** Le calcul sel/sucre/gras court-circuitant la leptine.
+3. **Le tri raisonné des additifs :** Naturels/inoffensifs (E300, E330, E322, E440) vs problématiques (E250, E150d, E466, E621 surdosé).
 
-### D. La Psychologie du Comportement Alimentaire et des Courses
-L'alimentation commence sur le marché et au supermarché :
-- La neurobiologie des courses : pourquoi faire ses courses le ventre vide déclenche une sécrétion massive de ghréline qui pousse le cerveau reptilien vers les sucres rapides et les graisses saturées industrielles.
-- Méthodologie rationnelle de la liste de courses : bâtir son panier par piliers nutritionnels fondamentaux, avec ou sans assistance numérique (IA, tableurs), pour minimiser le gaspillage et maximiser l'autonomie.
-
-### E. Le Dépassement de « l'Obstacle de la Recette-Incantation » par la Recette Matricielle
+### D. La Recette Matricielle vs la Recette-Incantation
 Une recette n'est jamais présentée comme une liste figée d'ingrédients à suivre aveuglément, mais comme une **équation d'états de la matière** :
 $$\text{Corps Gras} + \text{Agent Sucrant} + \text{Féculent / Farine} + \text{Agent Liant Protéique} + \text{Énergie Thermique} = \text{Gâteau}$$
-- À partir de cette matrice, l'ouvrage démontre comment substituer les éléments à l'infini (farine de blé vs riz/maïs, œuf vs émulsion végétale, beurre vs huile, sucre raffiné vs miel/stévia).
-- L'ouvrage confronte les dogmes aux faits expérimentaux (gâteau au chocolat tout-en-un vs blancs montés en neige, préchauffage du four à 180°C expliqué par la cinétique gazeuse et la coagulation synchrone des parois).
+- Substitutions infinies démontrées expérimentalement (blé vs riz/maïs, œuf vs aquafaba/lécithine végétale).
+- Les tableaux synoptiques présentent des **modes de transformation suggérés ou exemplaires**, et non un dogme restrictif unique.
 
-### F. La Biologie de la Survie, de la Digestibilité et de l'Hygiène des Repas
-- **La digestibilité réelle :** Ce qui se digère vite et bien (graisses crues ou émulsionnées, amidons al dente, protéines modérément dénaturées) vs ce qui est lourd et inflammatoire (graisses surchauffées polymérisées en acroléine, viandes carbonisées, féculents surgélifiés).
-- **Le rythme et l'hygiène des repas :** La mastication (première usine enzymatique via la ptyaline salivaire), la régulation de la satiété (délais de 20 minutes pour les hormones leptine/ghréline), l'index glycémique et l'amidon résistant (féculents cuits puis refroidis).
-- **La prolifération microbienne maîtrisée :**
-  - *La fermentation noble :* Les bactéries lactiques et levures transforment les sucres en acides protecteurs, prédigèrent le lactose et les protéines, et créent des arômes denses.
-  - *La prolifération pathogène :* Toxines, cadavérine, putrescine, et le péril invisible du botulisme.
-
----
-
-## 3. PROTOCOLES D'URGENCE ET SÉCURITÉ EN CUISINE
-
-Chaque agent doit veiller à détailler les protocoles stricts de réaction aux pannes et dangers domestiques :
-1. **L'incendie de poêle (huile surchauffée) :** Pourquoi jeter de l'eau provoque un *boilover* explosif (l'eau plonge, se vaporise instantanément en multipliant son volume par 1700, pulvérisant l'huile brûlante en aérosol incandescent) et pourquoi le seul geste salvateur est d'étouffer la flamme avec un couvercle métallique ou un torchon humide essoré.
-2. **La panne de réfrigérateur / coupure de courant :**
-   - Règle des 4 heures : porte fermée, le froid persiste 4 à 6 heures. Au-delà de $8^\circ\mathrm{C}$ pendant plus de 2 heures, toutes les viandes hachées, poissons crus et plats cuisinés doivent être consommés immédiatement cuits à cœur ou jetés.
-   - **L'interdiction absolue de recongeler un produit décongelé cru :** La décongélation réveille les bactéries qui se multiplient à vitesse exponentielle dans l'eau cellulaire libérée ; recongeler ne fait qu'endormir une colonie mille fois plus nombreuse prête à exploser lors du second réchauffement.
-3. **Les brûlures thermiques :** Règle des « trois 15 » (eau à $15^\circ\mathrm{C}$, pendant 15 minutes, à 15 cm du robinet). **Ne jamais appliquer de beurre ou d'huile** sur une brûlure (les corps gras forment un isolant thermique qui emprisonne la chaleur dans la chair et aggrave la nécrose).
-4. **Les coupures franches :** Tenue du couteau en « pince » sur la lame, doigts de la main guide repliés en « griffe de chat ».
+### E. Protocoles d'Urgence et Sécurité Sanitaire
+Chaque volet pratique intègre les réflexes vitaux :
+1. **Incendie d'huile :** Étouffement par couvercle métallique ou linge humide essoré ; interdiction absolue de l'eau (boilover explosif pulvérisant l'huile par expansion volumique $\times 1700$).
+2. **Panne de réfrigérateur :** Règle des 4 heures ; interdiction formelle de recongeler un aliment cru décongelé.
+3. **Brûlures thermiques :** Règle des « trois 15 » (eau à $15^\circ\mathrm{C}$, 15 minutes, à 15 cm du robinet) ; jamais de corps gras sur une brûlure.
+4. **Coupures franches :** Tenue en pince sur la lame, doigts de la main guide en « griffe de chat ».
 
 ---
 
-## 4. L'ANATOMIE DU GOÛT ET LES SECRETS DE LA HAUTE GASTRONOMIE (L'ASSIETTE 3 ÉTOILES)
+## 4. DIRECTION ARTISTIQUE, TYPOGRAPHIE & MISE EN PAGE DU LIVRE
 
-Pourquoi un plat semble-t-il infiniment supérieur dans un grand restaurant étoilé ? Au-delà du décorum et du cérémonial, qu'y a-t-il réellement dans l'assiette ?
-1. **L'assaisonnement invisible à chaque strate :** Saler l'eau, saler le fond, saler la chair, saler la finition.
-2. **L'acidité d'équilibrage :** Un filet de jus de citron ou de vinaigre vieux dans une sauce riche pour « couper le gras » et stimuler la salivation sans donner de goût acide perceptible.
-3. **La concentration des sucs et l'umami décuplé :** Réductions de bouillons en glaces de viande soyeuses riches en collagène hydrolysé.
-4. **Le travail mécanique de filtration :** Passage systématique au chinois étamine fin pour éliminer toute fibre parasite et offrir un toucher de velours en bouche.
-5. **Le contraste poly-textural :** L'équation d'une bouchée parfaite réunit toujours : Croustillant + Moelleux + Fondant + Soyeux.
-6. **La température millimétrique de dégustation :** Un gras servi à $15^\circ\mathrm{C}$ est pâteux et masque les papilles ; le même gras à $45^\circ\mathrm{C}$ libère ses esters aromatiques et nappe le palais.
-
----
-
-## 5. RECETTES FONDATRICES SIMPLES SANS APPAREILLAGE
-
-L'ouvrage propose des réalisations concrètes démontrant la puissance des principes premiers :
-- **Le Fromage Frais Maison (Faisselle / Paneer / Ricotta) :** Lait entier + 2 cuillères de jus de citron ou de vinaigre blanc à $82^\circ\mathrm{C}$. Coagulation acide instantanée des caséines, égouttage à l'étamine. Zéro matériel sophistiqué, du fromage frais en 15 minutes.
-- **La Glace Onctueuse sans Sorbetière (L'Abaissement Cryoscopique du Sel) :** Crème anglaise placée dans un petit bol, lui-même immergé dans un grand bol de glaçons saturés de gros sel. La dissolution endothermique du sel dans la glace abaisse la température du bain à **$-18^\circ\mathrm{C}$**, permettant une prise de glace express avec un simple fouet manuel.
-
----
-
-## 6. DIRECTION ARTISTIQUE & DESIGN ÉDITORIAL DU LIVRE CULINAIRE
-
-Le livre doit rompre radicalement avec l'esthétique aride d'un article de recherche ou d'un manuel universitaire de mathématiques :
 1. **Palette et Typographie Gastronomique :**
-   - Palette chromatique chaude et organique : Terracotta (`#A3432B`), Bordeaux profond (`#701C1A`), Or chaleureux (`#D4A373`), Fond crème doux (`#FCFBF7`) et texte anthracite (`#242124`).
-   - Lignes de filet ultrafines ($0.5\,\mathrm{pt}$) pour aérer les blocs techniques sans alourdir la page.
-   - Proscription des titres froids et des encadrés d'allure purement académique.
-2. **Iconographie Vivante et Produits Frais :**
-   - Remplacement systématique des portraits historiques austères (ex. Nicolas Appert, pages de titre d'encyclopédie) par de véritables photographies culinaires en haute résolution : carottes maraîchères avec fanes, poireaux frais perlés de rosée, pain artisanal au levain à la croûte dorée alvéolée, steak saisi en poêle de fonte au beurre moussant, ceviche éclatant aux oignons rouges et zestes de lime.
-   - Les illustrations scientifiques (diagrammes SVG d'infusion, schémas de transfert thermique) doivent adopter des teintes harmonisées avec la charte graphique du livre.
-3. **Architecture et Couvertures Plein Format :**
-   - **Couverture Recto (Première de couverture) :** Pleine page photographique mettant en valeur la fraîcheur du marché, surmontée d'une typographie serif distinguée et de bandeaux d'accroche éditoriaux clairs.
-   - **Quatrième de Couverture (Verso) :** Conception éditoriale complète avec pitch percutant, 4 points saillants de la démarche, citation emblématique, bandeau de collection, crédits d'édition et badge de diffusion ouverte sous licence libre (CC BY-SA 4.0). Proscription formelle de mention tarifaire marchande ou de code-barres artificiel.
-   - **Interdiction formelle des faux codes ISBN :** Ne jamais générer de numéro ISBN fictif ou de faux code-barres.
-4. **Structure et Rythme de Lecture :**
-   - **Numérotation continue et naturelle :** Chapitres indexés de 1 à 15 (proscription absolue de l'appellation « Chapitre 00 »).
-   - **Table des Recettes et Préparations Piliers :** Insérée dès l'entrée du livre (juste après le Sommaire général) pour un repérage immédiat de toutes les réalisations pratiques.
-   - **Élimination des lignes orphelines/veuves et des pages blanches artificielles :** Pas de page blanche intercalaire inutile avant les grandes parties.
-   - **Hyperliens transversaux intégrés :** Navigation fluide entre la table des recettes, les chapitres de principes et les annexes techniques.
-5. **Foliotage éditorial (numérotation des pages) :**
-   - *Comptage vs affichage :* tout le bloc intérieur est compté, mais le folio n'est visible que sur les pages de texte courant.
-   - *Couverture hors décompte :* les plats 1, 2, 3 et 4 (première, intérieurs et quatrième de couverture) ne sont jamais comptés ni foliotés ; la couverture n'est **jamais** la page 1.
-   - *Page 1 = première belle page du bloc intérieur :* p. 1 faux-titre (recto), p. 2 blanche (verso), p. 3 grand titre, p. 4 mentions légales, p. 5 exergue/dédicace, p. 6 blanche, puis sommaire et table des recettes — toutes comptées mais **muettes**.
-   - *Recto/verso :* pages impaires à droite, paires à gauche. Toute ouverture de partie, de chapitre ou d'annexe se fait en belle page (impaire) et reste muette ; le premier folio visible apparaît sur la page suivante.
-   - *Pages blanches :* comptées dans l'ordre arithmétique, jamais de folio ni de titre courant.
-   - *Placement :* folio centré ou sur la marge extérieure (gauche sur les pages paires, droite sur les impaires), **jamais côté reliure (petit fond)**.
-   - *Fin de bloc :* le bloc intérieur se termine sur une page paire (verso), suivi des plats 3 et 4.
+   - Palette chromatique chaude et organique : Terracotta (`#A3432B`), Bordeaux profond (`#701C1A`), Bronze doré (`#966c3b`), Fond crème doux (`#FCFBF7`) et texte anthracite (`#242124`).
+   - Lignes de filet ultrafines ($0.5\,\mathrm{pt}$) pour aérer les blocs sans alourdir la page.
+   - Polices : *Liberation Serif* pour le corps de texte et titres classiques, *Liberation Sans* pour les bandeaux techniques.
+2. **Boîtes Culinaires et Didactiques :**
+   - Toutes les boîtes didactiques (`truc_de_chef`, `anecdote_historique`, `positif`, `negatif`, `danger`, `point_attention`, `oeil_molecule`, `quote_box`) sont paramétrées avec **`breakable: true`** pour éliminer les sauts de page massifs et les trous blancs.
+   - Taille de texte des boîtes calée à **`10pt`** (identique au texte courant) avec interligne confortable (`leading: 0.78em`) pour garantir une parfaite lisibilité sans caractères tassés.
+3. **Diptyque d'Ouverture de Livre Systématique :**
+   - Chaque grand Livre s'ouvre par une **page paire (verso) pleine illustration** sur fond noir anthracite (`#1c1917`), présentant une œuvre historique ou photographique noble avec cadrage respectueux (`fit: "contain"`, sans rognage du haut ni des côtés), surmontée d'un cartouche explicatif en dessous.
+   - En regard direct, la **page impaire (recto)** accueille le **portail textuel épuré** (titre de la Partie et sommaire thématique), sans aucun artéfact de saut de ligne (`#linebreak` formellement proscrit).
+4. **Foliotage Éditorial Rigoureux (Numérotation des Pages) :**
+   - *Couvertures hors décompte :* Les plats 1, 2, 3 et 4 ne sont jamais comptés ni foliotés ; la couverture n'est **jamais** la page 1.
+   - *Liminaires muets :* Page 1 faux-titre, page 2 blanche, page 3 grand titre, page 4 mentions légales, page 5 citation, page 6 blanche, sommaire et table des recettes : toutes comptées mais **muettes** (aucun folio visible).
+   - *Ouvertures de livres muettes :* Les deux pages d'ouverture de Livre (image et portail textuel) n'affichent ni en-tête ni folio.
+   - *Texte courant et débuts de chapitres/annexes numérotés :* Toutes les pages à partir du Chapitre 01 sont **numérotées** avec un folio centré en pied de page (`— X —`). Sur les pages de début de chapitre et d'annexe (titre H1), l'en-tête supérieur est masqué pour laisser respirer le grand titre, mais le **numéro de page en bas est obligatoirement visible**.
+5. **Absence Totale de Mentions Fictives :**
+   - Proscription absolue de faux codes ISBN ou de codes-barres artificiels. Mention exclusive de la licence libre Creative Commons CC BY-SA 4.0.
 
 ---
 
-## 7. DENSITÉ COGNITIVE, ÉPISTÉMOLOGIE DU GESTE ET BIBLIOGRAPHIE CRITIQUE
+## 5. CONSIGNES DE CONCEPTION DES FIGURES VECTORIELLES SVG & NORMES ICONOGRAPHIQUES
 
-1. **La Densité Maximale d'Information :**
-   - Chaque paragraphe doit apporter une valeur pratique ou scientifique directe : un ratio massique au gramme près, une cinétique thermique en secondes, un indice sensoriel net (son du crépitement, odeur de noisette du beurre, tension superficielle) ou une astuce de chef éprouvée. Zéro verbiage creux.
-2. **Le Découpage Pas-à-Pas en Diptyque Méthodologique :**
-   - Chaque préparation pilier détaille la cinétique pas-à-pas, assortie de son bloc systématique « Ce qu'il faut faire » (points critiques) et « Ce qu'il faut éviter » (erreurs fréquentes et explications causales).
-3. **La Bibliographie Raisonnée et Évaluée :**
-   - Toutes les entrées bibliographiques comportent un badge thématique explicatif (`[Traité historique fondateur]`, `[Gastronomie moléculaire]`, `[Grand classique de la cuisine familiale]`, `[Best-seller mondial]`, etc.).
-   - Inclusion incontournable des références majeures comme *La Cuillère d'argent* (bible de la cuisine italienne ménagère).
-   - Absence totale de numéros ISBN factices.
+*(Section fusionnée intégrant l'intégralité des directives graphiques de `CONSIGNES_FIGURES.md`)*
 
+### A. Exigence Vectorielle Absolue & Proscription de l'ASCII Art
+1. **Zéro dessin ASCII :** L'usage de caractères de traçage ou de boîtes en texte brut (`─ │ ┌ ▲ ► / \ ● ○ ■`) est **formellement interdit** dans le corps du livre. Tout schéma structurel, diagramme de flux ou matrice doit être un fichier SVG autonome ou un tableau Typst formaté avec élégance.
+2. **Autonomie et Compatibilité Typst des SVG :**
+   - Attributs obligatoires : `xmlns="http://www.w3.org/2000/svg"`, `viewBox="0 0 W H"`.
+   - Pas de balises `<foreignObject>`, pas de feuilles de styles CSS externes, pas de polices distantes.
+   - Polices système lisibles : `font-family="Liberation Sans, Arial, Helvetica, sans-serif"`.
+   - Tailles de police : minimum `11px` pour les légendes secondaires, `13-14px` pour le corps de schéma, `16-18px` pour les titres d'axes ou de blocs.
+   - Échappement rigoureux XML : `&` → `&amp;`, `<` → `&lt;`, `>` → `&gt;`.
+
+### B. Palette Chromatique Officielle des Schémas SVG
+
+Toute illustration technique doit employer strictement la palette sémantique du projet :
+
+| Rôle Sémantique | Code Hexadécimal | Variantes / Arrière-plans | Usage Culinaire |
+| :--- | :--- | :--- | :--- |
+| **Énergie Thermique / Chaleur** | `#dc2626` (Rouge) | `#ef4444` / Fond `#fef2f2` | Flamme, conduction, réaction de Maillard, protéines dénaturées, zone critique |
+| **Eau / Milieu Hydrique** | `#2563eb` (Bleu roi) | `#3b82f6` / Fond `#eff6ff` | Eau libre, vapeur, bouillons, émulsion phase continue aqueuse |
+| **Froid / Cristallisation** | `#0284c7` (Bleu cyan) | `#38bdf8` / Fond `#f0f9ff` | Réfrigérateur ($4^\circ\mathrm{C}$), glace ($0^\circ\mathrm{C}$), repos de viande, maintien du froid |
+| **Lipides / Caramélisation** | `#d97706` (Ambre) | `#f59e0b` / Fond `#fffbeb` | Huile, beurre clarifié, micelles hydrophobes, sucres caramélisés, croûte dorée |
+| **Acidité / Équilibre / Succès** | `#16a34a` (Vert émeraude) | `#22c55e` / Fond `#f0fdf4` | Acidité (citron/vinaigre), sel équilibré, lacto-fermentation saine, validation |
+| **Encre / Métal / Parois** | `#0f172a` (Ardoise sombre) | `#334155` / Fond `#f8fafc` | Casserole, couteau, boîte, flèches d'axe, contours structurants |
+| **Liaisons / Grille / Neutre** | `#94a3b8` (Gris ardoise) | `#cbd5e1` / `#e2e8f0` | Graduations de repère, séparateurs, grilles de fond |
+
+### C. Dimensionnement des Images & Élimination des Sauts de Page Massifs
+Pour éviter que Typst ne repousse une illustration sur la page suivante en laissant la page précédente à moitié vide :
+1. **Photographies de recettes (`figures/nourriture/`) :** Hauteur maximale contrainte à **`23%`** de la page (environ 6 cm) avec `width: 85%` et `fit: "cover"`. Elles forment un élégant bandeau horizontal au-dessus des ingrédients sans encombrer la page.
+2. **Schémas vectoriels SVG :** Hauteur maximale contrainte à **`30% à 32%`** avec `fit: "contain"`.
+3. **Portraits et gravures historiques :** Hauteur maximale contrainte à **`35%`**.
+
+### D. Légendes Riches & Attribution Systématique des Crédits
+Aucune figure ne doit comporter de légende pauvre ou orpheline :
+- Chaque légende doit préciser la nature de l'œuvre, sa datation, le lieu de conservation ou l'institution, et la source libre avec mention de licence (ex. *Musée archéologique national de Naples / Wikimedia Commons, Domaine Public* ou *CC BY-SA 3.0*).
+- Vérification stricte de la conformité du sujet (ex. s'assurer qu'un œuf mollet présente bien un jaune chaudement coulant et non un œuf dur).
+- **Proscription formelle des doublons d'images :** Une même photographie ne doit jamais figurer deux fois dans le même ouvrage (notamment entre l'en-tête d'un chapitre et sa recette associée).
+
+### E. Arborescence des Fichiers Graphiques
+```text
+figures/
+├── histoire/     (Évolution, appertisation, fresques antiques, gravures historiques)
+├── patrimoine/   (Portraits d'auteurs fondateurs, réceptions, arts de la table)
+├── nourriture/   (Photographies culinaires haute résolution des 26 recettes fondatrices)
+├── livre_1/      (Thermodynamique, conduction, convection, rayonnement, outils minimaux)
+├── livre_2/      (Œuf anatomie, coagulation fractionnée, émulsions micellaires)
+├── livre_3/      (Gâteau matriciel, purée Blumenthal, cartouche étuvée, bouclier meringue)
+├── livre_4/      (Carte des terroirs et des trois graisses fondatrices)
+└── livre_5/      (Osmose saline, marinade ceviche, cryoscopie du sel)
+```
+
+### F. Processus de Validation Technique des Figures
+1. **Validation syntaxique XML :** Analyse systématique via un parseur XML (`xml.etree.ElementTree` en Python) pour certifier l'absence d'erreurs de balises ou de caractères non échappés.
+2. **Validation des magic bytes :** Contrôle que chaque fichier `.jpg` débute strictement par `\xff\xd8` et chaque `.png` par `\x89PNG` (éviter toute confusion de conteneur d'image qui ferait planter le décodeur Typst).
+3. **Vérification de la compilation Typst :** Compilation complète avec code de retour 0 et inspection visuelle du rendu.
 
 ---
 
-## 8. LA SCIENCE DES GESTES DU QUOTIDIEN, LE MONOPRODUIT ET LES PRODIGES THERMIQUES
+## 6. LES SECRETS DE L'ASSIETTE TROIS ÉTOILES (RÉFÉRENTIEL DU CHEF)
 
-1. **La Science des Gestes Évidents (Exemple de la Salade) :**
-   - *Turgescence vs Eau libre :* Comprendre pourquoi une salade gorgée d'eau libre pourrit en 48 heures au réfrigérateur (asphyxie bactérienne anaérobie), tandis qu'une salade essorée enveloppée dans un linge légèrement humide conserve sa turgescence cellulaire pendant plus d'une semaine sans flétrir.
-   - *Le lavage vinaigré :* L'abaissement du pH décolle les petits parasites et insectes sans cuire les cloisons cellulosiques si le rinçage est prompt.
-2. **La Multi-Dimensionnalité de l'Acide en Cuisine :**
-   - Dépasser le simple rôle antiseptique : l'acide déclenche le réflexe salivaire parotidien, fluidifie le mucus lingual pour libérer les molécules volatiles vers les récepteurs rétro-olfactifs, contrebalance la lourdeur des corps gras (« coupe-gras »), inhibe les polyphénol-oxydases (anti-brunissement enzymatique des pommes et avocats) et régule la fermeté des pectines végétales.
-3. **La Triade des Cuissons Douces avec une Simple Casserole :**
-   - Démontrer qu'avec une simple casserole inox et son couvercle, le cuisinier maîtrise trois modes de cuisson d'une extrême précision : la vapeur improvisée sans panier (fond d'eau et coupelle inversée), la cuisson à l'étouffée dans l'eau de constitution du végétal, et la technique professionnelle du *cartouche* de papier sulfurisé troué au centre qui régule l'évaporation sans faire bouillir.
-4. **Le Protocole du « Monoproduit aux 4 Visages » :**
-   - Illustrer la puissance de la physique culinaire en déclinant un légume unique (ex. la carotte ou l'oignon) en 4 préparations aux profils de texture et de flaveur radicalement opposés (cru mariné croquant, étuvé glacé fondant sous cartouche, rôti caramélisé friable, velouté émulsionné soyeux).
-5. **Les Prodiges Thermiques Inattendus (La Physique Ludique) :**
-   - *L'Omelette Norvégienne (Baked Alaska) :* La démonstration éclatante du pouvoir isolant de l'air emprisonné dans les microbulles d'une meringue foisonnée ($\lambda \approx 0{,}026\ \mathrm{W/(m\cdot K)}$), permettant d'enfourner une crème glacée à $-18^\circ\mathrm{C}$ dans un four à $240^\circ\mathrm{C}$ sans la faire fondre.
-   - *L'Omelette Inversée d'Hervé This :* L'inversion conceptuelle de la gastronomie moléculaire enfermant un cœur liquide brûlant dans une coque givrée.
-
-
----
-
-## 9. CHIMIE DE L'EAU, MATÉRIAUX SAINS, NEUROPHYSIOLOGIE ET AUTONOMIE LIQUIDE
-
-1. **La Chimie de l'Eau Domestique :**
-   - *Dureté calcique et pectines :* Les ions $\mathrm{Ca}^{2+}$ et $\mathrm{Mg}^{2+}$ verrouillent les cloisons pectocellulosiques des légumineuses en formant des ponts de pectate de calcium insolubles. Le bicarbonate de sodium ($\mathrm{NaHCO}_3$) permet l'échange ionique ($\mathrm{Na}^+$ chassant $\mathrm{Ca}^{2+}$) et l'alcalinisation douce ($pH \approx 8{,}0\text{--}8{,}5$), divisant le temps de cuisson par deux.
-   - *Extraction du thé et du café :* Les eaux trop dures précipitent les théarubigines en un film terne et écrasent l'acidité noble du café ; les eaux trop douces surextraient l'amertume astringente. Zone idéale d'extraction : $50\text{ à }120\ \mathrm{mg/L}$ d'extrait sec.
-   - *Le chlore municipal :* Biocide volatil destructeur des levures et lactobacilles. Dégazage passif impératif de 2 heures en carafe ouverte à température ambiante.
-2. **Toxicologie des Contenants et Économie Circulaire :**
-   - *Le péril du PTFE (Téflon) :* Pyrolyse au-delà de $260^\circ\mathrm{C}$ libérant des fumées de PFAS toxiques (« fièvre des polymères »). Proscription des revêtements ébréchés.
-   - *L'aluminium nu :* Migration des ions $\mathrm{Al}^{3+}$ en milieu acide ($pH < 4{,}5$). Exclusivité de l'aluminium aux cœurs sandwich encapsulés dans l'inox $18/10$.
-   - *Perturbateurs endocriniens du micro-ondes :* Migration massive des phtalates et bisphénols des films et barquettes plastiques au contact des graisses chaudes. Récipients en verre borosilicaté obligatoires.
-   - *Restauration d'une fonte de brocante pour moins de 15 € :* Décapage chimique doux au vinaigre blanc ($50/50$, $60\text{--}90\ \mathrm{min}$), séchage thermique immédiat et culottage par polymérisation d'huile de lin alimentaire à $230\text{--}240^\circ\mathrm{C}$ au four (3 passages).
-3. **La Neurophysiologie des Récepteurs Trigéminaux (Le Faux Goût) :**
-   - *Capsaïcine et canal TRPV1 :* Activation des thermorécepteurs de la brûlure ($>43^\circ\mathrm{C}$). Lipophilie stricte : apaisement exclusif par la caséine des laitages, inefficacité totale de l'eau.
-   - *Menthol et canal TRPM8 :* Illusion polaire rafraîchissante par abaissement du seuil thermique ($<26^\circ\mathrm{C}$).
-   - *Astringence des tanins :* Précipitation colloïdale mécanique des mucines et protéines salivaires lubrifiantes par les polyphénols (perte du pouvoir de glissement salivaire).
-   - *Pétillement du $\mathrm{CO}_2$ :* Stimulation nociceptive par conversion enzymatique en protons via l'anhydrase carbonique 4 (CA-IV).
-   - *Pipérine et isothiocyanates :* Activation du récepteur TRPA1 des irritants volatils (moutarde, wasabi).
-4. **La Juste Température Passive (L'Alternative de la Glacière) :**
-   - *Abolition du gradient thermique :* Égalisation complète cœur-surface sans anneau de surcuisson.
-   - *Pasteurisation multiparamétrique :* Équivalence léthale logarithmique (courbe $D$ et $z$ : $60^\circ\mathrm{C}$ pendant 12 minutes $= 70^\circ\mathrm{C}$ pendant 2 minutes).
-   - *Méthode zéro gadget de la glacière :* Isolation en polyuréthane ($\Delta T \approx -1^\circ\mathrm{C/h}$), sous-vide par poussée d'Archimède dans un sac étanche zippé, et saisie flash finale de 45 secondes en poêle de fonte.
-5. **Les Arbres de Sauvetage d'Urgence en 30 Secondes :**
-   - *Mayonnaise tranchée :* 1 cuillère d'eau tiède/moutarde + 1 cuillère de sauce pour recréer l'émulsion primaire, puis incorporation du reste au filet.
-   - *Crème anglaise grainée :* Choc thermique (glaçon/lait froid) + agitation mécanique au shaker/mixeur plongeant pendant 30 secondes.
-   - *Caramel massé :* 2 cuillères d'eau chaude + 3 gouttes de citron (inversion du saccharose) et refonte douce sans remuer.
-   - *Ganache dissociée :* 1 cuillère de lait chaud frictionnée en cercles concentriques au centre du bol.
-   - *Plat trop salé :* Neutralisation sensorielle combinant acide doux et corps gras froid.
-   - *Fond brûlé :* Transvasement immédiat des 80% supérieurs sans jamais racler le fond carbonisé.
-   - *Sauce trop acide :* Demi-cuillère de bicarbonate de sodium ($\mathrm{NaHCO}_3$) pour neutralisation acido-basique effervescente sans excès de sucre.
-6. **L'Autonomie Liquide : Les Boissons Fermentées Vivantes Domestiques :**
-   - *Kéfir d'eau et de lait :* Symbiose levures/lactobacilles, prise de mousse sous pression et prédigestion totale du lactose.
-   - *Kombucha :* Consortium SCOBY aérobie transformant le thé sucré en acides acétique, gluconique et glucuronique.
-   - *Ginger bug sauvage :* Capture des levures de la peau du rhizome pour gazéification spontanée de boissons épicées.
-   - *Vinaigre artisanal :* Oxydation acétique ménagée de fonds de vin ou cidre par la mère acétique (*Acetobacter aceti*) à l'obscurité.
+L'ouvrage décompose minutieusement ce qui distingue une assiette gastronomique exceptionnelle :
+1. **L'Assaisonnement Multi-Strate :** Saler l'eau, le fond de poêle, la chair crue 45 min avant, et la finition.
+2. **L'Acide Invisible (« Le Coup de Ciseau ») :** Goutte de citron ou vinaigre vieux pour « couper le gras » et relancer la sécrétion salivaire.
+3. **La Réduction en Glace Pure :** Concentration naturelle du collagène dissous en gélatine sirupeuse nuançable, sans aucune fécule.
+4. **La Filtration au Chinois Étamine :** Élimination de toute impureté pour un toucher de velours aristocratique en bouche.
+5. **L'Extraction des Carapaces :** Rôtissage lipidique libérant l'astaxanthine lipophile rouge corail.
+6. **L'Équation Poly-Texturale :** Croustillant + Moelleux + Fondant + Croquant.
+7. **La Température Millimétrique :** Assiettes chauffées à $50\text{--}60^\circ\mathrm{C}$ pour les plats chauds (évite la chute de $25^\circ\mathrm{C}$ en 60 secondes qui fige le gras) ; assiettes givrées pour le cru.

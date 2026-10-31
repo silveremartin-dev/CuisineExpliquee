@@ -1,15 +1,15 @@
-# CONSIGNES DE CONCEPTION DES FIGURES VECTORIELLES SVG
-## Projet : « LA CUISINE EXPLIQUÉE »
+# CONSIGNES DE CONCEPTION DES FIGURES VECTORIELLES SVG & NORMES ICONOGRAPHIQUES
+## Projet : « LA CUISINE EXPLIQUÉE — Principes Premiers, Maîtrise de la Matière et Minimalisme Instrumental »
 
-Ce document régit la production, la normalisation et la vérification de toutes les illustrations graphiques de l'ouvrage.
+> **NOTE D'INTÉGRATION :** Ce document a été consolidé et fusionné directement au sein du manifeste maître **`AGENTS.MD`** (voir la **Section 5 : Consignes de Conception des Figures Vectorielles SVG & Normes Iconographiques**). Il est conservé ici comme mémento technique direct pour les opérations de génération et de vérification graphique.
 
 ---
 
-## 1. PRINCIPES GÉNÉRAUX ET EXIGENCE VECTORIELLE
+## 1. PRINCIPES GÉNÉRAUX & EXIGENCE VECTORIELLE
 
-1. **Aucun dessin en caractères ASCII ou boîte :** L'usage de caractères de traçage (`─ │ ┌ ▲ ► / \ ● ○ ■`) dans les blocs de texte est formellement interdit. Tout schéma, graphique thermique, diagramme de phase, structure moléculaire ou arbre décisionnel doit être un fichier SVG autonome.
+1. **Aucun dessin en caractères ASCII ou boîte :** L'usage de caractères de traçage (`─ │ ┌ ▲ ► / \ ● ○ ■`) dans les blocs de texte est formellement interdit. Tout schéma, graphique thermique, diagramme de phase, structure moléculaire ou arbre décisionnel doit être un fichier SVG autonome ou un tableau Typst structuré.
 2. **Autonomie et Compatibilité Typst :** Chaque fichier SVG doit être autonome :
-   - Attributs `xmlns="http://www.w3.org/2000/svg"`, `viewBox="0 0 W H"`.
+   - Attributs obligatoires : `xmlns="http://www.w3.org/2000/svg"`, `viewBox="0 0 W H"`.
    - Pas de balises `<foreignObject>`, pas de feuilles de styles CSS externes, pas de polices distantes.
    - Polices système lisibles : `font-family="Liberation Sans, Arial, Helvetica, sans-serif"`.
    - Tailles de police : minimum `11px` pour les légendes secondaires, `13-14px` pour le corps de schéma, `16-18px` pour les titres d'axes ou de blocs.
@@ -17,9 +17,9 @@ Ce document régit la production, la normalisation et la vérification de toutes
 
 ---
 
-## 2. PALETTE CHROMATIQUE OFFICIELLE
+## 2. PALETTE CHROMATIQUE OFFICIELLE DU PROJET
 
-Toute illustration doit employer strictement la palette sémantique du projet :
+Toute illustration technique doit employer strictement la palette sémantique du projet :
 
 | Rôle Sémantique | Code Hexadécimal | Variantes / Arrière-plans | Usage Culinaire |
 | :--- | :--- | :--- | :--- |
@@ -33,44 +33,18 @@ Toute illustration doit employer strictement la palette sémantique du projet :
 
 ---
 
-## 3. ARCHITECTURE DES RÉPERTOIRES GRAPHIQUES
+## 3. DIMENSIONNEMENT ET GESTION DES SAUTS DE PAGE
 
-Les figures sont organisées par Livre thématique :
-```text
-figures/
-├── livre_1/   (Thermodynamique, Outils minimaux, Flux de chaleur, Repos)
-├── livre_2/   (Œuf anatomie, Coagulation fractionnée, Émulsions, Mousses)
-├── livre_3/   (Cellules végétales, Pectine, Amidon, Caramélisation)
-├── livre_4/   (Structure musculaire, Maillard, Collagène, Lipides)
-├── livre_5/   (Osmose saline, Acidité ceviche, Activité eau aw, Pasteurisation)
-└── annexes/   (Arbres de diagnostic, Thermomètre absolu des cuissons)
-```
-
-Chaque fichier est nommé de façon explicite : `fig_<chapitre>_<sujet>.svg` (ex. `fig_05_oeuf_anatomie_barriere.svg`, `fig_06_coagulation_temperature.svg`, `fig_07_micelle_emulsion.svg`).
+Pour garantir un flux continu sans vides béants dans Typst :
+- **Photographies de recettes (`figures/nourriture/`) :** Hauteur maximale contrainte à **`23%`** de la hauteur de page (`width: 85%`, `fit: "cover"`).
+- **Schémas SVG :** Hauteur maximale contrainte à **`30% à 32%`** (`fit: "contain"`).
+- **Portraits historiques :** Hauteur maximale contrainte à **`35%`**.
+- **Images d'ouverture de Livre :** Présentation noble sans rognage (`width: 92%`, `height: 74%`, `fit: "contain"` sur fond noir `#1c1917`).
 
 ---
 
-## 4. TYPOLOGIE DES FIGURES ATTENDUES
+## 4. PROCESSUS DE VALIDATION TECHNIQUE
 
-1. **Diagrammes d'Énergie et Courbes Physico-Chimiques :**
-   - Évolution de la température à cœur selon la géométrie et l'épaisseur (gradient de conduction thermique).
-   - Cinétique de dénaturation des fractions protéiques de l'œuf en fonction de la température ($58^\circ\mathrm{C} \to 85^\circ\mathrm{C}$).
-   - Diagramme d'activité de l'eau ($a_w$) vs prolifération bactérienne.
-2. **Schémas Mécaniques et Moléculaires Didactiques :**
-   - Anatomie de l'œuf : cuticule perméable au gaz, coquille poreuse, chambre à air, chalazes, albumen épais/fluide, membrane vitelline.
-   - Micelle de lécithine : tête polaire hydrophile orientée vers l'eau, queue lipophile orientée vers la gouttelette d'huile.
-   - Dénaturation et réseau fibrillaire : pelote repliée $\to$ déploiement $\to$ emprisonnement d'eau $\to$ surcoagulation et expulsion d'eau (synérèse).
-3. **Arbres de Décision Opérationnels :**
-   - Échec d'émulsion : cause $\to$ état du cul-de-poule $\to$ geste correctif immédiat.
-   - Choix du mode de cuisson selon la teneur en collagène et le calibre de la pièce.
-4. **Schémas de Gestes et d'Instruments :**
-   - La prise en main ergonomique du couteau de chef (pincement de lame).
-   - Les transferts thermiques dans une poêle en fonte épaisse vs aluminium mince.
-
----
-
-## 5. PROCESSUS DE VALIDATION
-
-Tout SVG créé doit faire l'objet d'une double vérification :
-1. **Validation syntaxique XML :** Analyse avec un parseur XML (`xml.etree.ElementTree` en Python) pour garantir l'absence d'erreurs de syntaxe ou de caractères non échappés.
-2. **Validation par compilation Typst :** Intégration dans le moteur Typst sans avertissement ni débordement d'image.
+1. **Validation syntaxique XML :** Analyse avec un parseur XML (`xml.etree.ElementTree` en Python).
+2. **Validation des magic bytes :** Contrôle des en-têtes binaires (JPEG `\xff\xd8`, PNG `\x89PNG`).
+3. **Compilation Typst :** Vérification avec code de retour 0 du script `scripts/build_book.py`.

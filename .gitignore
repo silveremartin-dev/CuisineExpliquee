@@ -12,7 +12,8 @@ __pycache__/
 # Fichiers d'aperçu temporaires
 preview_*.png
 
-# Systèmes d'exploitation & logs
+# Dossiers personnels locaux
+cuisine/
 .DS_Store
 Thumbs.db
 *.log
