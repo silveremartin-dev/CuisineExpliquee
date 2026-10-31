@@ -96,25 +96,20 @@
 ]
 
 #let portail_livre_recto(num_partie, titre, sommaire_contenu) = [
-  #v(1.4cm)
+  #v(2.2cm)
   #align(left)[
-    #text(size: 11pt, tracking: 0.22em, fill: c-bordeaux, font: "Liberation Sans", weight: "bold")[#smallcaps[#num_partie]]
-    #v(0.5cm)
+    #text(size: 11pt, tracking: 0.25em, fill: c-bordeaux, font: "Liberation Sans", weight: "bold")[#smallcaps[#num_partie]]
+    #v(0.6cm)
     #text(size: 22pt, weight: "bold", fill: c-ink, tracking: 0.02em, font: "Liberation Serif")[#titre]
-    #v(0.7cm)
-    #line(length: 35%, stroke: 1.5pt + c-bronze)
-    #v(0.7cm)
-    #text(size: 9.5pt, tracking: 0.16em, fill: c-bronze, font: "Liberation Sans", weight: "bold")[#smallcaps[Sommaire analytique des chapitres]]
-    #v(0.4cm)
+    #v(0.8cm)
+    #line(length: 25%, stroke: 1.2pt + c-bronze)
+    #v(1.0cm)
     #block(
       width: 100%,
-      fill: rgb("#faf8f5"),
-      stroke: (left: 3pt + c-bordeaux),
-      inset: (left: 14pt, right: 12pt, top: 12pt, bottom: 12pt),
-      radius: (right: 4pt)
+      inset: (left: 8pt)
     )[
-      #set text(size: 9.8pt, fill: c-ink, font: "Liberation Sans")
-      #set par(justify: false, leading: 0.78em)
+      #set text(size: 11.5pt, fill: c-ink, font: "Liberation Serif")
+      #set par(justify: false, leading: 1.0em)
       #sommaire_contenu
     ]
   ]
@@ -514,14 +509,13 @@
 
 #pagebreak(weak: false, to: "odd")
 #set page(paper: "a4", margin: (top: 2.5cm, bottom: 2.5cm, left: 2.2cm, right: 2.2cm), header: none, footer: none, fill: rgb(255, 253, 250))
-#portail_livre_recto("PREMIÈRE PARTIE", "L'HOMME, L'ÉVOLUTION ET LA CIVILISATION DU GOÛT", [Chapitre 01 --- L'Animal Culinaire : Anatomie, Feu et Nutrition §§§ \
-Externalisation digestive, loi de Wrangham, encéphalisation et \
-morphologie. @@ Chapitre 02 --- L'Histoire Écrite de la Table : De la \
-Mésopotamie à Nos Jours §§§ Des tablettes sumériennes et Apicius à \
-Scappi, La Varenne, Brillat-Savarin et Escoffier. @@ Chapitre 03 --- \
-La Géopolitique des Saveurs : Terroirs et Mondialisation §§§ La triade \
-des trois graisses fondatrices, révolution colombienne et unification \
-des goûts.])
+#portail_livre_recto("PREMIÈRE PARTIE", "L'HOMME, L'ÉVOLUTION ET LA CIVILISATION DU GOÛT", [#text(size: 11.5pt, style: "italic")[— L'Animal Culinaire : Anatomie, Feu et Nutrition] \
+#v(0.38cm)
+#text(size: 11.5pt, style: "italic")[— L'Histoire Écrite
+de la Table : De la Mésopotamie à Nos Jours] \
+#v(0.38cm)
+#text(size: 11.5pt, style: "italic")[— La Géopolitique des
+Saveurs : Terroirs et Mondialisation]])
 
 #pagebreak(weak: false, to: "odd")
 #set page(header: entete-livre, footer: pied-livre)
@@ -731,6 +725,34 @@ par l'organisme humain).
     métabolisme azoté) et les métabolites hydrosolubles \; les matières
     fécales évacuent les résidus bactériens, les pigments biliaires et
     les solides non assimilables.
+
+=== C. Biologie Comparée de la Digestion : Cellulose des Ruminants et Toxicités Spécifiques
+<c.-biologie-comparée-de-la-digestion-cellulose-des-ruminants-et-toxicités-spécifiques>
+Ce qui nourrit une espèce peut en tuer une autre. La physiologie humaine
+est le résultat d'un arbitrage évolutif strict : - #strong[L'Incapacité
+Humaine à Digérer la Cellulose :] L'amidon et la cellulose sont tous
+deux de longues chaînes de glucose. Mais là où l'amidon est relié par
+des liaisons $alpha\(1 arrow.r 4\)$ que notre amylase salivaire et
+pancréatique brise en quelques secondes, la cellulose végétale est liée
+par des liaisons $beta\(1 arrow.r 4\)$. L'homme ne possède aucune enzyme
+capable de cliver cette liaison : l'herbe et les feuilles brutes
+traversent notre tube digestif sans nous apporter la moindre calorie.
+Les ruminants (vaches, moutons), en revanche, possèdent une cuve de
+fermentation anaérobie géante (le rumen) abritant des milliards de
+bactéries symbiotiques sécrétant des cellulases. Ils transforment la
+cellulose en acides gras volatils hautement énergétiques. - #strong[La
+Théobromine du Chocolat (Mortelle pour les Chiens et les Chats) :]
+L'homme métabolise la théobromine et la caféine du cacao en deux à trois
+heures grâce au cytochrome hépatique $upright(C Y P 1 A 2)$. Chez les
+canidés et les félins, cette voie enzymatique est quasi absente : la
+théobromine s'accumule pendant plus de 18 heures dans leur sang,
+provoquant tachycardie extrême, vasoconstriction coronaire, convulsions
+et arrêt cardiaque fatal pour une simple tablette de chocolat noir. -
+#strong[Les Thiosulfates de l'Ail et de l'Oignon :] Les composés
+organosulfurés qui font la noblesse aromatique du genre #emph[Allium] en
+cuisine humaine oxydent l'hémoglobine des chiens et des chats, formant
+des corps de Heinz et déclenchant une anémie hémolytique foudroyante. Ce
+qui protège notre système cardiovasculaire détruit le leur.
 
 = CHAPITRE 02 --- L'Histoire Écrite de la Table : De la Mésopotamie à Nos Jours
 <chapitre-02-lhistoire-écrite-de-la-table-de-la-mésopotamie-à-nos-jours>
@@ -1082,16 +1104,15 @@ en cuissons prolongées.
 
 #pagebreak(weak: false, to: "odd")
 #set page(paper: "a4", margin: (top: 2.5cm, bottom: 2.5cm, left: 2.2cm, right: 2.2cm), header: none, footer: none, fill: rgb(255, 253, 250))
-#portail_livre_recto("DEUXIÈME PARTIE", "LE FOYER MODERNE : ÉQUIPEMENTS, SÉCURITÉ ET ORGANISATION", [Chapitre 04 --- L'Arsenal Minimal et les Équipements \
-Fondamentaux §§§ Les 5 organes indispensables, fonte brute, toxicologie \
-du PTFE et gros appareils. @@ Chapitre 05 --- Consignes de Sécurité, \
-Découpe et Pannes Critiques §§§ Incendie d'huile, coupure de froid, \
-brûlures thermiques et tenue en griffe de chat. @@ Chapitre 06 --- \
-Économie du Foyer, Courses, Additifs et Saisonnalité §§§ Psychologie des \
-supermarchés, Bliss Point, audit critique de Yuka et du Nutri-Score. \
-@@ Chapitre 07 --- L'Ordre Invisible : Marche en Avant, Restes et \
-Plonge §§§ Gestion FIFO, valorisation des biodéchets et plonge efficace \
-par capillarité.])
+#portail_livre_recto("DEUXIÈME PARTIE", "LE FOYER MODERNE : ÉQUIPEMENTS, SÉCURITÉ ET ORGANISATION", [#text(size: 11.5pt, style: "italic")[— L'Arsenal Minimal et les Équipements Fondamentaux] \
+#v(0.38cm)
+#text(size: 11.5pt, style: "italic")[— Consignes de Sécurité, Découpe et Pannes Critiques] \
+#v(0.38cm)
+#text(size: 11.5pt, style: "italic")[— L'Économie du
+Foyer : Courses, Additifs et Saisonnalité] \
+#v(0.38cm)
+#text(size: 11.5pt, style: "italic")[— L'Ordre Invisible :
+Marche en Avant, Restes et Plonge]])
 
 #pagebreak(weak: false, to: "odd")
 #set page(header: entete-livre, footer: pied-livre)
@@ -1233,94 +1254,6 @@ vernissée sans plomb.
 
 #divider()
 
-== 4. ÉCONOMIE DOMESTIQUE : RESTAURER ET CULOTTER UNE FONTE DE BROCANTE
-<économie-domestique-restaurer-et-culotter-une-fonte-de-brocante>
-Une poêle en fonte centenaire rouillée et noircie par des décennies
-d'abandon n'est jamais morte : la rouille n'est qu'un oxyde de surface
-($upright(F e)_2 upright(O)_3$). La structure cristalline dense du fer
-coulé est intacte. En trois étapes simples, vous pouvez lui rendre un
-revêtement noir miroir supérieur à n'importe quelle poêle antiadhésive
-neuve :
-
-+ #strong[Le Décapage Doux au Vinaigre Blanc :] Immerger 60 minutes dans
-  un mélange 50/50 d'eau et de vinaigre blanc. Frotter à la paille de
-  fer fine pour décoller la rouille jusqu'au métal gris brut. Rincer
-  promptement.
-+ #strong[Le Séchage Thermique Immédiat :] Essuyer au torchon et poser 5
-  minutes sur feu doux pour chasser l'humidité microscopique des pores.
-+ #strong[Le Culottage par Réticulation d'Huile de Lin :] Déposer une
-  demi-cuillère à café d'huile de lin alimentaire. Étaler sur toute la
-  poêle, puis #strong[frotter avec un chiffon sec comme pour tout
-  retirer] (la poêle doit paraître presque sèche). Enfourner à l'envers
-  à #strong[$230 upright("–") 240^compose upright(C)$ pendant 1 heure].
-  Répéter 3 fois : le métal se pare d'un émail noir d'ébène polymérisé,
-  inusable et totalement antiadhésif.
-
-#divider()
-
-== 5. LES GROS APPAREILS DU FOYER : FONCTIONNEMENT, CHOIX ET MAINTENANCE
-<les-gros-appareils-du-foyer-fonctionnement-choix-et-maintenance>
-Au-delà de la poêle et de la casserole, la cuisine moderne s'appuie sur
-trois machines thermiques majeures :
-
-=== A. Le Four Domestique : Chaleur Statique vs Chaleur Tournante
-<a.-le-four-domestique-chaleur-statique-vs-chaleur-tournante>
-- #strong[Convection Naturelle (Chaleur Statique Sole / Voûte) :] L'air
-  chaud monte doucement depuis la résistance basse (sole) et redescend
-  le long des parois. C'est le mode idéal pour les pains, gâteaux et
-  soufflés : il ne dessèche pas la surface prématurément et permet un
-  développement volumique harmonieux des alvéoles.
-- #strong[Chaleur Tournante (Convection Forcée Pulsée) :] Un ventilateur
-  couplé à une résistance circulaire brasse l'air en permanence. Cela
-  homogénéise la température dans toute la cavité, mais accélère
-  l'évaporation de surface ($+ 30 thin %$ de perte hydrique). Idéal pour
-  les cuissons croustillantes (biscuits, gratins, légumes rôtis) mais à
-  proscrire pour les pâtisseries aériennes ou les viandes délicates.
-- #strong[Maintenance & Étalonnage :] La majorité des thermostats de
-  four affichent un écart de $plus.minus 15^compose upright(C)$ avec la
-  réalité. Investir dans un thermomètre mécanique suspendu en acier inox
-  ($10 upright(" €")$) permet d'étalonner la température réelle de la
-  cavité. Nettoyer les joints de porte pour éviter les fuites de
-  calories.
-
-=== B. Le Réfrigérateur et le Congélateur : La Physique du Gradient Froid
-<b.-le-réfrigérateur-et-le-congélateur-la-physique-du-gradient-froid>
-- #strong[La Stratification Verticale :] L'air froid étant plus dense,
-  il descend. La zone la plus froide
-  ($0 upright(" à ") 2^compose upright(C)$) se situe généralement tout
-  en bas, juste au-dessus du bac à légumes (destinée aux viandes hachées
-  et poissons crus). La zone médiane
-  ($4 upright(" à ") 5^compose upright(C)$) accueille les plats cuisinés
-  et laitages. Le bac à légumes
-  ($6 upright(" à ") 8^compose upright(C)$) protège les cellules
-  végétales du choc thermique. La porte
-  ($6 upright(" à ") 8^compose upright(C)$) est réservée aux condiments,
-  beurre et œufs.
-- #strong[Le Dégivrage :] Une couche de 2 mm de givre sur les parois du
-  congélateur agit comme un isolant thermique qui force le compresseur à
-  surconsommer de $20 thin %$ à $30 thin %$ d'électricité. Dégivrer deux
-  fois par an est un geste écologique et économique direct.
-
-=== C. Le Four à Micro-Ondes : Mythes, Vérités et Usage Rationnel
-<c.-le-four-à-micro-ondes-mythes-vérités-et-usage-rationnel>
-- #strong[La Physique de l'Agitation Dipolaire :] Le magnétron émet des
-  ondes électromagnétiques à la fréquence de
-  $2\,45 thin upright(G H z)$. Cette fréquence correspond au mouvement
-  de rotation des molécules d'eau, qui possèdent un pôle positif et un
-  pôle négatif (molécules dipolaires). En s'alignant sur le champ
-  oscillant deux milliards et demi de fois par seconde, les molécules
-  d'eau frottent entre elles, convertissant l'énergie électromagnétique
-  en agitation thermique (chaleur).
-- #strong[Ce que le Micro-Ondes Ne Fait Pas :] Il n'émet aucune
-  radiation ionisante et ne rend pas les aliments radioactifs. En
-  revanche, comme la température ne dépasse pas $100^compose upright(C)$
-  en milieu aqueux libre, il ne produit #strong[aucune réaction de
-  Maillard ni croûte croustillante].
-- #strong[L'Usage Malin :] Décongélation douce par impulsions pour ne
-  pas cuire les bords, réchauffage des liquides et cuisson vapeur rapide
-  sous cloche de verre borosilicaté. Bannir les contenants en plastique
-  au profit du verre.
-
 #divider()
 
 == 4. ÉCONOMIE DOMESTIQUE CIRCULAIRE : SAUVER ET CULOTTER UNE POÊLE EN FONTE DE BROCANTE POUR 15 €
@@ -1395,7 +1328,7 @@ d'huile inférieur à 15 euros.
 
 #divider()
 
-== 7. LE SYSTÈME D : DÉTOURNER LES OBJETS DU QUOTIDIEN POUR REMPLACER LES USTENSILES RARES
+== 5. LE SYSTÈME D : DÉTOURNER LES OBJETS DU QUOTIDIEN POUR REMPLACER LES USTENSILES RARES
 <le-système-d-détourner-les-objets-du-quotidien-pour-remplacer-les-ustensiles-rares>
 L'industrie ménagère a bâti sa prospérité en inventant des centaines de
 gadgets hyperspécialisés conçus pour un usage unique : dénoyauteurs,
@@ -1489,6 +1422,100 @@ encombrer vos étagères.
 
 
 ]
+
+#divider()
+
+== 6. LES GROS APPAREILS DU FOYER : FONCTIONNEMENT, CHOIX ET MAINTENANCE
+<les-gros-appareils-du-foyer-fonctionnement-choix-et-maintenance>
+Au-delà de la poêle et de la casserole, la cuisine moderne s'appuie sur
+trois machines thermiques majeures :
+
+=== A. Le Four Domestique : Chaleur Statique vs Chaleur Tournante
+<a.-le-four-domestique-chaleur-statique-vs-chaleur-tournante>
+- #strong[Convection Naturelle (Chaleur Statique Sole / Voûte) :] L'air
+  chaud monte doucement depuis la résistance basse (sole) et redescend
+  le long des parois. C'est le mode idéal pour les pains, gâteaux et
+  soufflés : il ne dessèche pas la surface prématurément et permet un
+  développement volumique harmonieux des alvéoles.
+- #strong[Chaleur Tournante (Convection Forcée Pulsée) :] Un ventilateur
+  couplé à une résistance circulaire brasse l'air en permanence. Cela
+  homogénéise la température dans toute la cavité, mais accélère
+  l'évaporation de surface ($+ 30 thin %$ de perte hydrique). Idéal pour
+  les cuissons croustillantes (biscuits, gratins, légumes rôtis) mais à
+  proscrire pour les pâtisseries aériennes ou les viandes délicates.
+- #strong[Maintenance & Étalonnage :] La majorité des thermostats de
+  four affichent un écart de $plus.minus 15^compose upright(C)$ avec la
+  réalité. Investir dans un thermomètre mécanique suspendu en acier inox
+  ($10 upright(" €")$) permet d'étalonner la température réelle de la
+  cavité. Nettoyer les joints de porte pour éviter les fuites de
+  calories.
+
+=== B. Le Réfrigérateur et le Congélateur : La Physique du Gradient Froid
+<b.-le-réfrigérateur-et-le-congélateur-la-physique-du-gradient-froid>
+- #strong[La Stratification Verticale :] L'air froid étant plus dense,
+  il descend. La zone la plus froide
+  ($0 upright(" à ") 2^compose upright(C)$) se situe généralement tout
+  en bas, juste au-dessus du bac à légumes (destinée aux viandes hachées
+  et poissons crus). La zone médiane
+  ($4 upright(" à ") 5^compose upright(C)$) accueille les plats cuisinés
+  et laitages. Le bac à légumes
+  ($6 upright(" à ") 8^compose upright(C)$) protège les cellules
+  végétales du choc thermique. La porte
+  ($6 upright(" à ") 8^compose upright(C)$) est réservée aux condiments,
+  beurre et œufs.
+- #strong[Le Dégivrage :] Une couche de 2 mm de givre sur les parois du
+  congélateur agit comme un isolant thermique qui force le compresseur à
+  surconsommer de $20 thin %$ à $30 thin %$ d'électricité. Dégivrer deux
+  fois par an est un geste écologique et économique direct.
+
+=== C. Le Four à Micro-Ondes : Mythes, Vérités et Usage Rationnel
+<c.-le-four-à-micro-ondes-mythes-vérités-et-usage-rationnel>
+- #strong[La Physique de l'Agitation Dipolaire :] Le magnétron émet des
+  ondes électromagnétiques à la fréquence de
+  $2\,45 thin upright(G H z)$. Cette fréquence correspond au mouvement
+  de rotation des molécules d'eau, qui possèdent un pôle positif et un
+  pôle négatif (molécules dipolaires). En s'alignant sur le champ
+  oscillant deux milliards et demi de fois par seconde, les molécules
+  d'eau frottent entre elles, convertissant l'énergie électromagnétique
+  en agitation thermique (chaleur).
+- #strong[Ce que le Micro-Ondes Ne Fait Pas :] Il n'émet aucune
+  radiation ionisante et ne rend pas les aliments radioactifs. En
+  revanche, comme la température ne dépasse pas $100^compose upright(C)$
+  en milieu aqueux libre, il ne produit #strong[aucune réaction de
+  Maillard ni croûte croustillante].
+- #strong[L'Usage Malin :] Décongélation douce par impulsions pour ne
+  pas cuire les bords, réchauffage des liquides et cuisson vapeur rapide
+  sous cloche de verre borosilicaté. Bannir les contenants en plastique
+  au profit du verre.
+
+#divider()
+
+=== D. L'Énigme du Four : Pourquoi Préchauffer Plutôt que Partir à Froid ?
+<d.-lénigme-du-four-pourquoi-préchauffer-plutôt-que-partir-à-froid>
+Une question hante de nombreux cuisiniers amateurs : pourquoi la
+quasi-totalité des recettes exige-t-elle un four préchauffé à
+$180^compose upright(C)$ plutôt que d'enfourner directement à froid en
+économisant de l'énergie ? - #strong[La thermodynamique de l'« Oven
+Spring » (La Poussée du Four) :] Dans une pâte à gâteau ou un pâton de
+pain, le volume et le moelleux dépendent de la détente brutale des
+microbulles de gaz ($upright(C O)_2$ de la levure ou vapeur d'eau
+piégée). Dans un four préalablement porté à
+$180 e x t - - 200^compose upright(C)$, le transfert d'énergie par
+convection et rayonnement est foudroyant : l'eau de surface et les gaz
+internes entrent immédiatement en ébullition et se dilatent
+exponentiellement, propulsant la pâte vers le haut. Cette expansion
+maximale doit impérativement se produire #strong[avant] que la croûte
+extérieure ne coagule et ne se fige sous l'effet de la chaleur. -
+#strong[Le piège du démarrage à four froid :] À l'inverse, lors d'un
+démarrage à froid, la température monte lentement
+($30^compose upright(C)$, $60^compose upright(C)$,
+$90^compose upright(C)$). À ces paliers tièdes, les matières grasses
+(beurre) fondent prématurément et s'écoulent hors de la mie avant que
+l'amidon n'ait gélatinisé pour les emprisonner. Les gaz s'échappent
+progressivement sans faire gonfler la pâte, et la surface s'assèche par
+évaporation lente. Résultat physique : un gâteau dense, plat, lourd et
+huileux. Le préchauffage n'est pas une coquetterie de chef, mais le
+déclencheur cinétique de la texture alvéolée.
 
 = CHAPITRE 05 --- Consignes de Sécurité, Premiers Secours et Pannes Critiques
 <chapitre-05-consignes-de-sécurité-premiers-secours-et-pannes-critiques>
@@ -1655,6 +1682,8 @@ passive n'est pas protégée.
 
 #divider()
 
+#divider()
+
 == 4. RISQUES GAZEUX ET INTOXICATIONS CHIMIQUES
 <risques-gazeux-et-intoxications-chimiques>
 === A. La Fuite de Gaz et le Réflexe « Zéro Étincelle »
@@ -1674,6 +1703,38 @@ avec un acide (vinaigre blanc ou détartrant anticalcaire)]. -
 L'hypochlorite de sodium ($upright(N a C l O)$) en milieu acide dégage
 instantanément du #strong[dichlore gazeux ($upright(C l)_2$)], gaz
 suffocant toxique qui détruit les alvéoles pulmonaires.
+
+#divider()
+
+=== B. Les Poisons Végétaux du Foyer : Solanine, Lectines et Cyanure
+<b.-les-poisons-végétaux-du-foyer-solanine-lectines-et-cyanure>
+Le règne végétal n'a pas conçu ses fruits et ses racines pour nous
+régaler, mais pour assurer sa propre survie face aux prédateurs : -
+#strong[La Solanine des Pommes de Terre Verdies :] Exposée à la lumière
+du soleil, la pomme de terre synthétise de la chlorophylle (verte) et,
+conjointement, un alcaloïde toxique amer : la #strong[solanine].
+Neurotoxique et irritante pour la muqueuse gastrique, la solanine est
+thermostable : la cuisson à l'eau ou la friture ne la détruit pas.
+#emph[Règle absolue :] éplucher largement ou jeter tout tubercule
+présentant des marbrures verdâtres sous la peau. - #strong[Le Danger
+Méconnu des Haricots Rouges Crus (La Phytohémagglutinine) :] Les graines
+de haricots rouges secs renferment une concentration massive de lectines
+toxiques, la #strong[phytohémagglutinine]. Ingérer une poignée de
+haricots rouges mal cuits suffit à déclencher des vomissements
+incoercibles et des hémorragies digestives par agglutination massive des
+cellules intestinales. Pour inactiver cette toxine, #strong[une
+ébullition franche à $100^compose upright(C)$ pendant 10 minutes minimum
+est indispensable]. Les cuissons lentes à basse température (mijoteuses
+électriques à $75 e x t - - 80^compose upright(C)$) sont
+particulièrement dangereuses : elles ne détruisent pas la toxine mais
+multiplient sa cytotoxicité par cinq ! - #strong[L'Amygdaline et le
+Cyanure des Amandes Amères :] Les amandes amères, les noyaux d'abricots,
+de cerises et de pêches renferment de l'hétéroside cyanogénétique
+(l'amygdaline). En présence d'eau et lors du broyage, des enzymes
+végétales libèrent du #strong[cyanure d'hydrogène] ($upright(H C N)$),
+poison respiratoire cellulaire foudroyant. La cuisson thermique évapore
+et dénature ce poison, rendant les préparations traditionnelles
+inoffensives lorsqu'elles sont chauffées.
 
 #divider()
 
@@ -1749,9 +1810,9 @@ suffocant toxique qui détruit les alvéoles pulmonaires.
 = CHAPITRE 06 --- L'Économie du Foyer : Courses Rationnelles, Additifs et Saisonnalité
 <chapitre-06-léconomie-du-foyer-courses-rationnelles-additifs-et-saisonnalité>
 #quote(block: true)[
-« L'acte culinaire ne commence pas devant la flamme de la cuisinière :
-il s'amorce au moment où la main franchit le seuil du marché et saisit
-le panier. »
+« Que ton aliment soit ta seule médecine. » --- Aphorisme attribué à
+Hippocrate « La cuisine commence bien avant la casserole : elle débute
+dans le choix sans concession de la matière brute. »
 ]
 
 #divider()
@@ -1803,12 +1864,10 @@ cidre, épices entières en grains.
 
 #divider()
 
-== 2. L'ENQUÊTE DES CODES E ET LA MANIPULATION INDUSTRIELLE
-<lenquête-des-codes-e-et-la-manipulation-industrielle>
-L'industrie agroalimentaire ne cherche pas à nourrir nos cellules : elle
-cherche à stimuler nos centres de récompense cérébraux pour déclencher
-la compulsion d'achat.
+#divider()
 
+== 2. LA MANIPULATION INDUSTRIELLE : LE BLISS POINT ET LES AUXILIAIRES
+<la-manipulation-industrielle-le-bliss-point-et-les-auxiliaires>
 === A. Le #emph[Bliss Point] (Le Point de Béatitude Cérébrale)
 <a.-le-bliss-point-le-point-de-béatitude-cérébrale>
 Théorisé par le biophysicien Howard Moskowitz pour les multinationales
@@ -1819,112 +1878,8 @@ satiété. Le cerveau sécrète un pic massif de dopamine sans jamais
 envoyer l'ordre à la leptine de stopper l'ingestion : on continue de
 manger le paquet même lorsque l'estomac est distendu.
 
-=== B. Le Décryptage des Codes E : Les Inoffensifs vs Les Dangereux
-<b.-le-décryptage-des-codes-e-les-inoffensifs-vs-les-dangereux>
-Tous les additifs ne sont pas des poisons chimiques. Un code E est
-simplement une codification administrative européenne :
-
-==== 1. Les Additifs Naturels et Totalement Inoffensifs
-<les-additifs-naturels-et-totalement-inoffensifs>
-- #strong[E300 (Acide L-ascorbique) :] Pure vitamine C antioxydante.
-- #strong[E330 (Acide citrique) :] L'acide naturel du citron régulant le
-  pH.
-- #strong[E322 (Lécithines de tournesol ou d'œuf) :] Phospholipides
-  naturels assurant la liaison des émulsions.
-- #strong[E440 (Pectines de pomme ou d'agrumes) :] Fibres solubles
-  formant un gel au contact de l'eau.
-- #strong[E100 (Curcumine) :] Pigment doré antioxydant extrait du
-  curcuma.
-
-==== 2. Les Additifs Toxiques ou Hautement Suspects à Bannir
-<les-additifs-toxiques-ou-hautement-suspects-à-bannir>
-- #strong[E250 (Nitrite de sodium) :] Utilisé pour teinter le jambon en
-  rose et allonger la DLC. En milieu gastrique acide, les nitrites
-  réagissent avec les amines de la viande pour former des
-  #strong[nitrosamines hautement cancérogènes] (facteur causal avéré du
-  cancer colorectal). Privilégier les charcuteries sans sel nitrité
-  (jambon gris naturel).
-- #strong[E150d (Caramel au sulfite d'ammonium) :] Colorant brun des
-  sodas et sauces, contenant du 4-méthylimidazole (4-MEI), molécule
-  classée cancérogène probable.
-- #strong[E466 (Carboxyméthylcellulose) et E433 (Polysorbates) :]
-  Émulsifiants de synthèse qui décapent le mucus protecteur de
-  l'intestin grêle, favorisant la perméabilité intestinale,
-  l'inflammation métabolique et la prolifération de maladies
-  auto-immunes.
-
 #divider()
 
-== 3. L'ÉCOLOGIE DE LA MATIÈRE ET L'EMPREINTE DE L'ASSIETTE
-<lécologie-de-la-matière-et-lempreinte-de-lassiette>
-Chaque aliment ingéré représente une dépense d'eau et d'énergie
-biologique :
-
-#figure(
-  align(center)[#table(
-  stroke: 0.5pt + rgb("#dcd6ca"),
-  fill: (x, y) => if y == 0 { rgb("#f2ece1") } else if calc.odd(y) { rgb("#faf7f2") } else { none },
-  inset: 8pt,
-
-    columns: (50%, 50%),
-    align: (left,left,),
-    table.header([Denrée Alimentaire], [Empreinte Hydrique (Litres d'Eau
-      \/ Kilogramme)],),
-    table.hline(),
-    [#strong[Légumes maraîchers de pleine
-    terre]], [$approx upright(bold(300 upright(" à ") 400 upright(" Litres")))$],
-    [#strong[Pommes de terre &
-    Tubercules]], [$approx upright(bold(300 upright(" Litres")))$],
-    [#strong[Céréales
-    complètes]], [$approx upright(bold(1 thin 200 upright(" à ") 1 thin 500 upright(" Litres")))$],
-    [#strong[Légumineuses sèches (Lentilles, pois
-    chiches)]], [$approx upright(bold(3 thin 000 upright(" à ") 4 thin 000 upright(" Litres")))$],
-    [#strong[Volaille
-    fermière]], [$approx upright(bold(4 thin 300 upright(" Litres")))$],
-    [#strong[Porc
-    fermier]], [$approx upright(bold(6 thin 000 upright(" Litres")))$],
-    [#strong[Bœuf de
-    pâturage]], [$approx upright(bold(15 thin 400 upright(" Litres")))$],
-  )]
-  , kind: table
-  )
-
-#divider()
-
-== 4. LA SAISONNALITÉ ÉTENDUE : LÉGUMES, VIANDES ET FROMAGES
-<la-saisonnalité-étendue-légumes-viandes-et-fromages>
-La saisonnalité ne concerne pas uniquement les fruits et légumes : les
-viandes et fromages suivent les cycles naturels du vivant :
-
-+ #strong[Le Printemps (Le Réveil Lacté et l'Herbe Nouvelle) :]
-  - #emph[Fromages de chèvre frais :] Les chèvres mettent bas en
-    février/mars \; leur lait de printemps gorgé des premières pousses
-    donne des fromages d'une acidité florale incomparable.
-  - #emph[L'Agneau de pré :] Nourri au lait maternel et à l'herbe
-    tendre.
-  - #emph[Végétaux :] Petits pois fins, fèves nouvelles, asperges, radis
-    croquants.
-+ #strong[L'Été (La Générosité Solaire) :]
-  - #emph[Tomates, courgettes, poivrons, aubergines :] Gorgés de
-    lycopène et de sucres par la photosynthèse estivale.
-  - #emph[Poissons bleus côtiers :] Sardines et maquereaux gras pêchés
-    au large.
-+ #strong[L'Automne (La Concentration des Sucres et des Graisses) :]
-  - #emph[Gibiers, champignons sylvestres, courges musquées,
-    châtaignes.]
-  - #emph[Fromages d'Alpage (Beaufort d'été, Comté) :] Affinés après la
-    transhumance estivale, leurs pâtes sont dorées par le bêta-carotène
-    des fleurs de montagne.
-+ #strong[L'Hiver (L'Énergie des Racines et des Bouillons) :]
-  - #emph[Légumes d'endurance :] Panais, poireaux, carottes de terre,
-    choux frisés.
-  - #emph[Les viandes à mijoter :] Paleron, gîte, queue de bœuf et
-    jarrets, sources de gélatine réconfortante.
-
-#divider()
-
-== 3. AUXILIAIRES TECHNOLOGIQUES ET ADDITIFS RÉSIDUELS
-<auxiliaires-technologiques-et-additifs-résiduels>
 === A. Définition Réglementaire et Différence avec l'Auxiliaire Technologique
 <a.-définition-réglementaire-et-différence-avec-lauxiliaire-technologique>
 Selon le #emph[Codex Alimentarius] et les règlements de l'Union
@@ -1969,8 +1924,10 @@ se séparer.
 
 #divider()
 
-== 2. LES SEPT GRANDES FAMILLES FONCTIONNELLES DE L'INDUSTRIE
-<les-sept-grandes-familles-fonctionnelles-de-lindustrie>
+#divider()
+
+=== C. Les Sept Grandes Familles Fonctionnelles de l'Industrie
+<c.-les-sept-grandes-familles-fonctionnelles-de-lindustrie>
 Pour décoder les étiquettes en un coup d'œil, il suffit de comprendre la
 nomenclature numérique européenne du code E :
 
@@ -2020,8 +1977,12 @@ nomenclature numérique européenne du code E :
 
 #divider()
 
-== 3. LE GRAND TABLEAU CRITIQUE DES CODES E : DISTINGUER LE NOBLE DU TOXIQUE
-<le-grand-tableau-critique-des-codes-e-distinguer-le-noble-du-toxique>
+#divider()
+
+== 3. L'ENQUÊTE CRITIQUE SUR LES ADDITIFS (CODES E)
+<lenquête-critique-sur-les-additifs-codes-e>
+=== A. Le Grand Tableau Critique des Codes E : Distinguer le Noble du Toxique
+<a.-le-grand-tableau-critique-des-codes-e-distinguer-le-noble-du-toxique>
 Il n'y a aucune malédiction inhérente au matricule « E » : la nature a
 inventé les molécules les plus stables bien avant les laboratoires. Le
 tableau suivant rassemble en une vision synthétique les additifs nobles
@@ -2152,8 +2113,10 @@ doit être d'une couleur gris-beige naturelle.
 
 #divider()
 
-== 4. L'EFFET COCKTAIL ET LES LIMITES DE LA TOXICOLOGIE CLASSIQUE
-<leffet-cocktail-et-les-limites-de-la-toxicologie-classique>
+#divider()
+
+=== B. L'Effet Cocktail et les Limites de la Toxicologie Classique
+<b.-leffet-cocktail-et-les-limites-de-la-toxicologie-classique>
 L'argument massue répété par les lobbies industriels repose sur la
 notion de #strong[Dose Journalière Admissible (DJA)] : chaque additif
 pris isolément ne dépasse pas le seuil légal de toxicité mesuré sur des
@@ -2180,8 +2143,10 @@ l'obésité, le diabète de type 2 et les maladies auto-immunes.
 
 #divider()
 
-== 5. DÉCRYPTAGE CRITIQUE : YUKA ET LE NUTRI-SCORE FACE À LA VÉRITÉ DU FAIT-MAISON
-<décryptage-critique-yuka-et-le-nutri-score-face-à-la-vérité-du-fait-maison>
+#divider()
+
+== 4. DÉCRYPTAGE CRITIQUE : YUKA ET LE NUTRI-SCORE FACE AU FAIT-MAISON
+<décryptage-critique-yuka-et-le-nutri-score-face-au-fait-maison>
 Des millions de cuisiniers consultent quotidiennement des applications
 de scan de codes-barres ou s'en remettent aux pastilles colorées du
 Nutri-Score. Ces outils ont constitué un indéniable réveil citoyen, mais
@@ -2261,84 +2226,77 @@ entrent dans votre casserole.
 
 #divider()
 
-== 5. DÉCRYPTAGE CRITIQUE : YUKA ET LE NUTRI-SCORE FACE À LA VÉRITÉ DU FAIT-MAISON
-<décryptage-critique-yuka-et-le-nutri-score-face-à-la-vérité-du-fait-maison-1>
-Des millions de cuisiniers consultent quotidiennement des applications
-de scan de codes-barres ou s'en remettent aux pastilles colorées du
-Nutri-Score. Ces outils ont constitué un indéniable réveil citoyen, mais
-ils comportent des biais structurants majeurs qu'un esprit éclairé doit
-savoir déjouer.
+#divider()
 
-=== A. L'Application Yuka : L'Exploit Citoyen et les Biais de l'Algorithme
-<a.-lapplication-yuka-lexploit-citoyen-et-les-biais-de-lalgorithme-1>
-- #strong[Ses immenses mérites :]
-  + #emph[La démocratisation de l'investigation :] Yuka a rendu
-    intelligible au grand public le langage cryptique des industriels.
-  + #emph[Le pouvoir de rétorsion économique :] Craignant l'impact
-    commercial des « pastilles rouges » sur les ventes, de nombreuses
-    marques ont reformulé leurs recettes en supprimant le dioxyde de
-    titane (E171) ou en réduisant les sulfites.
-- #strong[Ses angles morts méthodologiques :]
-  + #emph[L'amalgamation du noble et du déchet calorique :] Scannez un
-    beurre cru fermier de baratte ($82 thin %$ de matière grasse
-    saturée) ou une huile d'olive vierge extra de première pression à
-    froid. L'algorithme leur attribue une note médiocre ou rouge en
-    raison de leur densité en lipides ! Yuka évalue mal les lipides
-    bruts vitaux pour le cerveau et la synthèse hormonale.
-  + #emph[Le problème de la dose réelle :] L'application note un produit
-    de manière binaire sans pondérer la fréquence d'usage : une pincée
-    de sel marin gris non raffiné est classée en « excès de sodium »,
-    oubliant que l'organisme en requiert pour la transmission
-    synaptique.
+== 5. L'ÉCOLOGIE DE LA MATIÈRE ET LE CALENDRIER VIVANT DES SAISONS
+<lécologie-de-la-matière-et-le-calendrier-vivant-des-saisons>
+=== A. L'Empreinte Hydrique de l'Assiette
+<a.-lempreinte-hydrique-de-lassiette>
+Chaque aliment ingéré représente une dépense d'eau et d'énergie
+biologique :
 
-=== B. Le Nutri-Score : Le Scandale de l'Aveuglement à l'Ultra-Transformation
-<b.-le-nutri-score-le-scandale-de-laveuglement-à-lultra-transformation-1>
-Mis en place par les autorités sanitaires européennes, le Nutri-Score
-calcule un solde arithmétique abstrait pour #strong[$100 upright(" g")$
-d'aliment], en opposant les nutriments à limiter (calories, sucres
-simples, acides gras saturés, sel) aux composants favorables (fibres,
-protéines, part de fruits et légumes).
+#figure(
+  align(center)[#table(
+  stroke: 0.5pt + rgb("#dcd6ca"),
+  fill: (x, y) => if y == 0 { rgb("#f2ece1") } else if calc.odd(y) { rgb("#faf7f2") } else { none },
+  inset: 8pt,
 
-$ upright("Points Nutri-Score") = upright("Points Défavorables") - upright("Points Favorables") $
+    columns: (50%, 50%),
+    align: (left,left,),
+    table.header([Denrée Alimentaire], [Empreinte Hydrique (Litres d'Eau
+      \/ Kilogramme)],),
+    table.hline(),
+    [#strong[Légumes maraîchers de pleine
+    terre]], [$approx upright(bold(300 upright(" à ") 400 upright(" Litres")))$],
+    [#strong[Pommes de terre &
+    Tubercules]], [$approx upright(bold(300 upright(" Litres")))$],
+    [#strong[Céréales
+    complètes]], [$approx upright(bold(1 thin 200 upright(" à ") 1 thin 500 upright(" Litres")))$],
+    [#strong[Légumineuses sèches (Lentilles, pois
+    chiches)]], [$approx upright(bold(3 thin 000 upright(" à ") 4 thin 000 upright(" Litres")))$],
+    [#strong[Volaille
+    fermière]], [$approx upright(bold(4 thin 300 upright(" Litres")))$],
+    [#strong[Porc
+    fermier]], [$approx upright(bold(6 thin 000 upright(" Litres")))$],
+    [#strong[Bœuf de
+    pâturage]], [$approx upright(bold(15 thin 400 upright(" Litres")))$],
+  )]
+  , kind: table
+  )
 
-- #strong[Les Dérives Majeures du Système :]
-  + #emph[L'aveuglement total aux procédés de cracking et d'extrusion :]
-    Le Nutri-Score ne sanctionne absolument pas le degré
-    d'ultra-transformation (selon la classification internationale
-    NOVA). Un paquet de céréales industrielles pour enfants, fabriqué à
-    base d'amidon de maïs hydrolysé sous haute pression, d'arômes de
-    synthèse et d'émulsifiants, décroche un #strong[Nutri-Score A] sous
-    prétexte que l'industriel y a rajouté une poignée de fibres d'avoine
-    isolées et de protéines de soja dénaturées !
-  + #emph[Le châtiment inique des trésors du patrimoine :] Les fleurons
-    ancestraux du terroir --- le roquefort au lait cru, le jambon sec de
-    montagne, les sardines à l'huile d'olive --- récoltent des scores D
-    ou E, pendant qu'un soda édulcoré aux produits de synthèse sans
-    calories obtient un B ou un C.
-  + #emph[Le trucage des recettes par les industriels :] Les
-    formulateurs agroalimentaires modifient subtilement les recettes non
-    pas pour la santé du consommateur, mais pour faire basculer le
-    produit d'un C à un B à coups d'isolats de fibres et d'édulcorants
-    invisibles.
+#divider()
 
-#truc_de_chef[
+=== B. Le Calendrier Vivant : Légumes, Viandes et Fromages au Fil de l'Année
+<b.-le-calendrier-vivant-légumes-viandes-et-fromages-au-fil-de-lannée>
+La saisonnalité ne concerne pas uniquement les fruits et légumes : les
+viandes et fromages suivent les cycles naturels du vivant :
 
++ #strong[Le Printemps (Le Réveil Lacté et l'Herbe Nouvelle) :]
+  - #emph[Fromages de chèvre frais :] Les chèvres mettent bas en
+    février/mars \; leur lait de printemps gorgé des premières pousses
+    donne des fromages d'une acidité florale incomparable.
+  - #emph[L'Agneau de pré :] Nourri au lait maternel et à l'herbe
+    tendre.
+  - #emph[Végétaux :] Petits pois fins, fèves nouvelles, asperges, radis
+    croquants.
++ #strong[L'Été (La Générosité Solaire) :]
+  - #emph[Tomates, courgettes, poivrons, aubergines :] Gorgés de
+    lycopène et de sucres par la photosynthèse estivale.
+  - #emph[Poissons bleus côtiers :] Sardines et maquereaux gras pêchés
+    au large.
++ #strong[L'Automne (La Concentration des Sucres et des Graisses) :]
+  - #emph[Gibiers, champignons sylvestres, courges musquées,
+    châtaignes.]
+  - #emph[Fromages d'Alpage (Beaufort d'été, Comté) :] Affinés après la
+    transhumance estivale, leurs pâtes sont dorées par le bêta-carotène
+    des fleurs de montagne.
++ #strong[L'Hiver (L'Énergie des Racines et des Bouillons) :]
+  - #emph[Légumes d'endurance :] Panais, poireaux, carottes de terre,
+    choux frisés.
+  - #emph[Les viandes à mijoter :] Paleron, gîte, queue de bœuf et
+    jarrets, sources de gélatine réconfortante.
 
-==== 💡 Le Manifeste de l'Ingrédient Unique : La Règle Infaillible
-<le-manifeste-de-lingrédient-unique-la-règle-infaillible-1>
-Pour nourrir sainement son corps et sa famille, il existe une règle qui
-surpasse tous les algorithmes de la Silicon Valley et toutes les
-pastilles ministérielles : #strong[achetez des ingrédients qui n'ont pas
-de liste d'ingrédients]. - Une carotte avec ses fanes, un maquereau
-frais, un sac de lentilles vertes du Puy, une bouteille d'huile d'olive
-vierge extra n'ont pas de code E, pas de Nutri-Score et pas de
-conservateurs. - Si vous cuisinez à partir de la matière première brute
-avec l'arsenal minimal décrit au Chapitre 01, la question des additifs
-s'évanouit d'elle-même : vous maîtrisez $100 thin %$ des molécules qui
-entrent dans votre casserole.
-
-
-]
+#divider()
 
 = CHAPITRE 07 --- L'Ordre Invisible : La Marche en Avant, Savoir Mettre de Côté et la Plonge Efficace
 <chapitre-07-lordre-invisible-la-marche-en-avant-savoir-mettre-de-côté-et-la-plonge-efficace>
@@ -2426,8 +2384,12 @@ contenant hermétique et placer au froid.
 
 #divider()
 
-== 3. L'ÉCONOMIE CIRCULAIRE DU FOYER : ZÉRO DÉCHET UTILE
-<léconomie-circulaire-du-foyer-zéro-déchet-utile>
+#divider()
+
+== 3. LA DESTINÉE DE LA MATIÈRE : TRI DES DÉCHETS, COMPOST ET ÉCONOMIE CIRCULAIRE
+<la-destinée-de-la-matière-tri-des-déchets-compost-et-économie-circulaire>
+=== A. Les Réflexes Zéro Déchet en Cuisine
+<a.-les-réflexes-zéro-déchet-en-cuisine>
 === A. Le Bocal de Parures au Congélateur
 <a.-le-bocal-de-parures-au-congélateur>
 Gardez en permanence un bocal en verre ou un sachet étanche au
@@ -2453,58 +2415,10 @@ italienne.
 
 #divider()
 
-== 4. LA SCIENCE DE LA PLONGE ET DU RANGEMENT EFFICACE
-<la-science-de-la-plonge-et-du-rangement-efficace>
-Faire la vaisselle ne devrait jamais être une corvée accablante après un
-bon repas : c'est une opération de chimie colloïdale simple qui
-s'exécute avec fluidité si l'on applique les lois de la matière.
-
-=== A. Le Principe Professionnel du #emph[Clean As You Go] (Nettoyer au Fur et à Mesure)
-<a.-le-principe-professionnel-du-clean-as-you-go-nettoyer-au-fur-et-à-mesure>
-La brigade d'un palace ne laisse jamais un millimètre carré
-d'encombrement sur le plan de travail : - Pendant qu'un oignon sue à feu
-doux dans la cocotte ou que l'eau des pâtes monte à ébullition, vous
-disposez de 3 à 4 minutes libres : lavez immédiatement la planche, le
-couteau et le cul-de-poule utilisés. - Rangez immédiatement les
-ingrédients dont vous n'avez plus besoin (bouteille d'huile, pot de sel,
-sac de farine). - À l'instant précis où vous passez à table, la cuisine
-est déjà immaculée : il ne restera après le dîner que les assiettes des
-convives et les verres.
-
-=== B. La Thermodynamique du Lavage : L'Eau Chaude Dissout les Lipides
-<b.-la-thermodynamique-du-lavage-leau-chaude-dissout-les-lipides>
-- Les graisses alimentaires (beurre, graisses animales, huiles
-  végétales) se figent en dessous de
-  $35 upright("–") 40^compose upright(C)$.
-- Tenter de faire la vaisselle à l'eau tiède ou froide est une
-  aberration physique : les tensioactifs du savon ne peuvent pas
-  émulsionner des triglycérides solides et ne font qu'étaler une
-  pellicule poisseuse sur la vaisselle.
-- #strong[L'eau doit être à $45 upright("–") 50^compose upright(C)$]
-  pour liquéfier instantanément les corps gras et permettre aux micelles
-  savonneuses de les emprisonner.
-
-=== C. La Méthode à Deux Bacs vs Le Gâchis du Robinet Coulant
-<c.-la-méthode-à-deux-bacs-vs-le-gâchis-du-robinet-coulant>
-- Laisser couler l'eau chaude en continu pendant le savonnage d'une
-  assiette consomme entre 12 et 15 litres d'eau potable par minute !
-- La méthode rationnelle utilise deux zones :
-  + #emph[Bac 1 (Lavage) :] Un fond d'eau très chaude avec quelques
-    gouttes de liquide vaisselle concentré. On y brosse la vaisselle de
-    la moins grasse (verres, tasses) vers la plus grasse (poêles, plats
-    à four).
-  + #emph[Bac 2 (Rinçage) :] Un bain ou filet d'eau claire très chaude.
-- #strong[Le Séchage à l'Air Libre sur Égouttoir :] Rincée à l'eau très
-  chaude, la vaisselle emmagasine assez d'énergie calorifique pour
-  s'égoutter et sécher spontanément par évaporation en quelques minutes
-  sur un égouttoir aéré. Frotter la vaisselle propre avec un torchon
-  humide est déconseillé : le torchon de cuisine constitue l'un des plus
-  grands réservoirs bactériens du foyer.
-
 #divider()
 
-== 2. LA DESTINÉE RÉELLE DES DÉCHETS DE CUISINE : BIO-POUBELLE vs ORDURES RÉSIDUELLES
-<la-destinée-réelle-des-déchets-de-cuisine-bio-poubelle-vs-ordures-résiduelles>
+=== B. Bio-Poubelle vs Ordures Résiduelles : Le Désastre Énergétique du Sac Noir
+<b.-bio-poubelle-vs-ordures-résiduelles-le-désastre-énergétique-du-sac-noir>
 Dans un foyer occidental moyen, #strong[$30 thin %$ du poids de la
 poubelle] est constitué de matière organique humide (épluchures de
 légumes, os, marc de café, coquilles d'œufs, restes de repas). Le mode
@@ -2565,6 +2479,58 @@ acides toxiques qui polluent les nappes phréatiques.
 
 #divider()
 
+#divider()
+
+== 4. LA SCIENCE DE LA PLONGE ET DU RANGEMENT EFFICACE
+<la-science-de-la-plonge-et-du-rangement-efficace>
+Faire la vaisselle ne devrait jamais être une corvée accablante après un
+bon repas : c'est une opération de chimie colloïdale simple qui
+s'exécute avec fluidité si l'on applique les lois de la matière.
+
+=== A. Le Principe Professionnel du #emph[Clean As You Go] (Nettoyer au Fur et à Mesure)
+<a.-le-principe-professionnel-du-clean-as-you-go-nettoyer-au-fur-et-à-mesure>
+La brigade d'un palace ne laisse jamais un millimètre carré
+d'encombrement sur le plan de travail : - Pendant qu'un oignon sue à feu
+doux dans la cocotte ou que l'eau des pâtes monte à ébullition, vous
+disposez de 3 à 4 minutes libres : lavez immédiatement la planche, le
+couteau et le cul-de-poule utilisés. - Rangez immédiatement les
+ingrédients dont vous n'avez plus besoin (bouteille d'huile, pot de sel,
+sac de farine). - À l'instant précis où vous passez à table, la cuisine
+est déjà immaculée : il ne restera après le dîner que les assiettes des
+convives et les verres.
+
+=== B. La Thermodynamique du Lavage : L'Eau Chaude Dissout les Lipides
+<b.-la-thermodynamique-du-lavage-leau-chaude-dissout-les-lipides>
+- Les graisses alimentaires (beurre, graisses animales, huiles
+  végétales) se figent en dessous de
+  $35 upright("–") 40^compose upright(C)$.
+- Tenter de faire la vaisselle à l'eau tiède ou froide est une
+  aberration physique : les tensioactifs du savon ne peuvent pas
+  émulsionner des triglycérides solides et ne font qu'étaler une
+  pellicule poisseuse sur la vaisselle.
+- #strong[L'eau doit être à $45 upright("–") 50^compose upright(C)$]
+  pour liquéfier instantanément les corps gras et permettre aux micelles
+  savonneuses de les emprisonner.
+
+=== C. La Méthode à Deux Bacs vs Le Gâchis du Robinet Coulant
+<c.-la-méthode-à-deux-bacs-vs-le-gâchis-du-robinet-coulant>
+- Laisser couler l'eau chaude en continu pendant le savonnage d'une
+  assiette consomme entre 12 et 15 litres d'eau potable par minute !
+- La méthode rationnelle utilise deux zones :
+  + #emph[Bac 1 (Lavage) :] Un fond d'eau très chaude avec quelques
+    gouttes de liquide vaisselle concentré. On y brosse la vaisselle de
+    la moins grasse (verres, tasses) vers la plus grasse (poêles, plats
+    à four).
+  + #emph[Bac 2 (Rinçage) :] Un bain ou filet d'eau claire très chaude.
+- #strong[Le Séchage à l'Air Libre sur Égouttoir :] Rincée à l'eau très
+  chaude, la vaisselle emmagasine assez d'énergie calorifique pour
+  s'égoutter et sécher spontanément par évaporation en quelques minutes
+  sur un égouttoir aéré. Frotter la vaisselle propre avec un torchon
+  humide est déconseillé : le torchon de cuisine constitue l'un des plus
+  grands réservoirs bactériens du foyer.
+
+#divider()
+
 
 #pagebreak(weak: false, to: "even")
 #set page(margin: 0pt, header: none, footer: none)
@@ -2572,14 +2538,27 @@ acides toxiques qui polluent les nappes phréatiques.
 
 #pagebreak(weak: false, to: "odd")
 #set page(paper: "a4", margin: (top: 2.5cm, bottom: 2.5cm, left: 2.2cm, right: 2.2cm), header: none, footer: none, fill: rgb(255, 253, 250))
-#portail_livre_recto("TROISIÈME PARTIE", "LA SCIENCE DE LA CASSEROLE : MATIÈRES PREMIÈRES, FLUIDES ET TRANSFORMATIONS", [Chapitres 08 à 10 --- Sens, Féculents et Mécanique \
-Végétale §§§ Thermodynamique, récepteurs trigéminaux, amidon, purée \
-Blumenthal et étuvée. @@ Chapitres 11 à 13 --- Écosystème Vert, \
-Bouillons et Alchimie des Épices §§§ Turgescence de la feuille, \
-extraction collagénique, glaces pures et terpènes. @@ Chapitres 14 à \
-16 --- Règne Animal, L'Archétype de l'Œuf et Matrice §§§ Maillard en \
-fonte, cuticule protectrice, émulsions mères et synoptique des \
-transformations.])
+#portail_livre_recto("TROISIÈME PARTIE", "LA SCIENCE DE LA CASSEROLE : MATIÈRES PREMIÈRES, FLUIDES ET TRANSFORMATIONS", [#text(size: 10.5pt, style: "italic")[— Cuisiner avec ses Sens et Thermodynamique] \
+#v(0.22cm)
+#text(size: 10.5pt, style: "italic")[— Féculents, Céréales et Légumineuses : La Force du Grain] \
+#v(0.22cm)
+#text(size: 10.5pt, style: "italic")[— La
+Mécanique Végétale : Éplucher, Tailler et Dompter l'Amidon] \
+#v(0.22cm)
+#text(size: 10.5pt, style: "italic")[— L'Écosystème Vert : Salades, Turgescence et l'Acide] \
+#v(0.22cm)
+#text(size: 10.5pt, style: "italic")[— La Chimie de
+l'Eau : Soupes, Bouillons et Glaces] \
+#v(0.22cm)
+#text(size: 10.5pt, style: "italic")[— L'Alchimie des Épices, Herbes
+Fraîches et Arômes] \
+#v(0.22cm)
+#text(size: 10.5pt, style: "italic")[— Le Monde Animal : Muscle, Maillard et Déglaçage] \
+#v(0.22cm)
+#text(size: 10.5pt, style: "italic")[— L'Archétype de l'Œuf et les Émulsions Maîtresses] \
+#v(0.22cm)
+#text(size: 10.5pt, style: "italic")[— La Matrice
+des Grandes Transformations Culinaires]])
 
 #pagebreak(weak: false, to: "odd")
 #set page(header: entete-livre, footer: pied-livre)
@@ -4087,17 +4066,86 @@ de la température de l'eau :
   déchlorée et modérément minéralisée offre une clarté lumineuse et une
   longueur en bouche infiniment supérieure.
 
-= CHAPITRE 14 --- Le Règne Animal : Fibres Musculaires, Saisie de Maillard et Déglaçage
-<chapitre-14-le-règne-animal-fibres-musculaires-saisie-de-maillard-et-déglaçage>
+= CHAPITRE 14 --- Le Monde Animal : Muscle, Maillard et Déglaçage
+<chapitre-14-le-monde-animal-muscle-maillard-et-déglaçage>
 #quote(block: true)[
-« Saisir une viande, c'est ménager une frontière hermétique : dorer la
-périphérie par le feu ardent tout en protégeant l'eau cellulaire
-emprisonnée au cœur des fibres. »
+« La viande n'est pas une denrée inerte : c'est un tissu vivant sculpté
+par la thermodynamique. »
 ]
 
 #divider()
 
-== 1. L'ANATOMIE DU MUSCLE ET LES SEUILS THERMIQUES CRITIQUES
+== 1. L'EMPREINTE HYDRIQUE ET L'ENTONNOIR DE RENDEMENT DE LA MATIÈRE
+<lempreinte-hydrique-et-lentonnoir-de-rendement-de-la-matière>
+Lorsque vous posez un pavé de bœuf de $200 upright(" g")$ dans votre
+poêle, vous manipulez l'aboutissement d'un immense fleuve invisible de
+matière et d'énergie.
+
+=== A. L'Empreinte Hydrique Comparée au Kilogramme
+<a.-lempreinte-hydrique-comparée-au-kilogramme>
+Pour fabriquer un kilogramme d'aliment consommable, l'écosystème
+agricole mobilise des volumes d'eau considérables (eau de pluie absorbée
+par les fourrages, irrigation, abreuvement et nettoyage des
+installations) :
+
+#figure(
+  align(center)[#table(
+  stroke: 0.5pt + rgb("#dcd6ca"),
+  fill: (x, y) => if y == 0 { rgb("#f2ece1") } else if calc.odd(y) { rgb("#faf7f2") } else { none },
+  inset: 8pt,
+
+    columns: (33.33%, 33.33%, 33.33%),
+    align: (left,left,left,),
+    table.header([Denrée Alimentaire], [Empreinte Hydrique Moyenne
+      (Litres d'Eau / Kilogramme)], [Facteur Multiplicateur vs Légume],),
+    table.hline(),
+    [#strong[Légumes de pleine terre] (Carottes, poireaux,
+    choux)], [$approx upright(bold(300 upright(" à ") 400 upright(" Litres")))$], [Référence
+    $1 times$],
+    [#strong[Pommes de terre &
+    Tubercules]], [$approx upright(bold(300 upright(" Litres")))$], [$1 times$],
+    [#strong[Céréales brutes] (Blé, orge,
+    avoine)], [$approx upright(bold(1 thin 200 upright(" à ") 1 thin 500 upright(" Litres")))$], [$4 times$],
+    [#strong[Légumineuses sèches] (Lentilles, pois
+    chiches)], [$approx upright(bold(3 thin 000 upright(" à ") 4 thin 000 upright(" Litres")))$], [$10 times$
+    (Haute densité protéique)],
+    [#strong[Viande de
+    Porc]], [$approx upright(bold(6 thin 000 upright(" Litres")))$], [$17 times$],
+    [#strong[Viande de Volaille] (Poulet
+    fermier)], [$approx upright(bold(4 thin 300 upright(" Litres")))$], [$12 times$],
+    [#strong[Viande Bovine] (Bœuf de
+    pâturage)], [$approx upright(bold(15 thin 400 upright(" Litres")))$], [$upright(bold(45 times))$],
+  )]
+  , kind: table
+  )
+
+$ upright("Rendement Trophique") : 10 upright(" kg de matière végétale consommée") arrow.r 1 upright(" kg de gain de poids animal") $
+
+=== B. L'Entonnoir de Découpe : De la Bête Vivante à l'Assiette
+<b.-lentonnoir-de-découpe-de-la-bête-vivante-à-lassiette>
+Que devient un bœuf de race à viande de $700 upright(" kg")$ sur pied
+élevé pendant trois ans ? 1. #strong[L'Abattage et la Saignée :] La
+carcasse éviscérée, dépouillée de sa peau et de ses pattes ne représente
+que #strong[$55 upright(" à ") 60 thin %$ du poids vif] (soit environ
+$400 upright(" kg")$ de carcasse suspendue). 2. #strong[Le Désossage et
+le Parage du Boucher :] Le squelette osseux
+($15 upright(" à ") 18 thin %$), les tendons épais, les aponévroses
+dures et les excès de gras de couverture sont retirés. Il reste environ
+#strong[$280 upright(" kg")$ de viande nette consommable] ($40 thin %$
+du poids vif d'origine). 3. #strong[La Rétraction Thermique à la Cuisson
+:] Sous l'action de la chaleur ($> 60^compose upright(C)$),
+l'actomyosine se resserre comme une éponge et expulse
+#strong[$25 upright(" à ") 30 thin %$ d'eau cellulaire libre]. Les
+$280 upright(" kg")$ de viande crue donnent au final environ
+#strong[$195 upright(" kg")$ de viande cuite ingérée]. 4. #strong[La
+Responsabilité Culinaire :] Jeter un steak desséché ou le carboniser par
+inattention thermique n'est pas seulement un gâchis de trois euros :
+c'est l'anéantissement de milliers de litres d'eau et de plusieurs mois
+d'énergie biologique.
+
+#divider()
+
+== 2. L'ANATOMIE DU MUSCLE ET LES SEUILS THERMIQUES CRITIQUES
 <lanatomie-du-muscle-et-les-seuils-thermiques-critiques>
 Une pièce de viande n'est pas un bloc homogène : c'est un faisceau de
 câbles microscopiques (les myofibrilles) gorgés de #strong[$75 thin %$
@@ -4124,7 +4172,7 @@ sèche, fibreuse et dure sous la dent : c'est la semelle de surcuisson.
 
 #divider()
 
-== 2. LA SCIENCE DE LA SAISIE : DU TORCHON SEC AU BEURRE MOUSSEUX
+== 3. LA SCIENCE DE LA SAISIE : DU TORCHON SEC AU BEURRE MOUSSEUX
 <la-science-de-la-saisie-du-torchon-sec-au-beurre-mousseux>
 Pour réussir une cuisson parfaite sans machine sous vide :
 
@@ -4171,7 +4219,52 @@ la première bouchée, le jus reste à l'intérieur de la chair.
 
 #divider()
 
-== 3. LA CUISSON SANS FEU PAR L'ACIDE : LE CAS DU CEVICHE
+#divider()
+
+== 4. LA MÉCANIQUE DU POISSON ENTIER : ÉCAILLAGE, VIDAGE ET LEVÉE DES FILETS
+<la-mécanique-du-poisson-entier-écaillage-vidage-et-levée-des-filets>
+Le cuisinier autonome ne s'arrête pas au pavé sous barquette plastique :
+il sait affronter un poisson entier brut sorti de la criée.
+
+=== A. L'Écaillage Mécanique sans Percer la Peau
+<a.-lécaillage-mécanique-sans-percer-la-peau>
+- #strong[Le geste vertueux :] Tenir fermement la queue du poisson avec
+  un linge sec pour empêcher tout glissement. Avec le dos d'un couteau
+  ou un écailleur, gratter de la queue vers la tête par petits
+  mouvements saccadés en biais. Travailler dans un fond d'eau ou sous un
+  filet d'eau froide pour éviter la projection centrifuge des écailles
+  dans toute la cuisine.
+- #strong[La protection de la chair :] Ne jamais utiliser le fil
+  tranchant de la lame, qui entaillerait la peau et exposerait les
+  fibres délicates à la chaleur directe.
+
+=== B. Le Vidage Délicat sans Percer la Vésicule Biliaire
+<b.-le-vidage-délicat-sans-percer-la-vésicule-biliaire>
+- Insérer la pointe fine du couteau d'office dans l'orifice anal et
+  remonter le long de la ligne ventrale jusqu'aux ouïes, en maintenant
+  la lame inclinée vers le haut pour ne pas perforer les viscères.
+- #strong[Le danger de la vésicule biliaire :] Extraire les entrailles
+  d'un bloc avec les doigts. Si la petite poche vert sombre (le fiel)
+  venait à percer, la bile inonderait la chair d'une amertume chimique
+  indélébile. Rincer immédiatement l'intérieur de la cavité abdominale
+  sous l'eau froide et gratter la poche noire sanguine le long de
+  l'arête centrale avec la pointe du pouce.
+
+=== C. La Levée des Deux Filets sur l'Arête Centrale
+<c.-la-levée-des-deux-filets-sur-larête-centrale>
++ #strong[L'incision crânienne :] Poser le poisson à plat. Inciser en
+  biseau derrière l'ouïe jusqu'à buter fermement sur l'arête dorsale.
++ #strong[Le glissement horizontal :] Coucher la lame parallèlement au
+  plan de travail. Par un mouvement de va-et-vient régulier, glisser la
+  lame en raclant l'arête dorsale de la tête vers la queue, guidé par le
+  son sec du contact acier-os.
++ #strong[Le parage :] Retourner le poisson et répéter l'opération pour
+  le second filet. Éliminer la bande de graisse ventrale et retirer les
+  arêtes intramusculaires résiduelles à l'aide d'une pince à épiler.
+
+#divider()
+
+== 5. LA CUISSON SANS FEU PAR L'ACIDE : LE CAS DU CEVICHE
 <la-cuisson-sans-feu-par-lacide-le-cas-du-ceviche>
 Peut-on « cuire » un poisson sans le moindre apport de chaleur ? C'est
 le principe du #strong[ceviche] péruvien.
@@ -4195,7 +4288,7 @@ le principe du #strong[ceviche] péruvien.
 
 #divider()
 
-== 4. RECETTES FONDATRICES DU MONDE ANIMAL
+== 6. RECETTES FONDATRICES DU MONDE ANIMAL
 <recettes-fondatrices-du-monde-animal>
 
 #divider()
@@ -4369,76 +4462,6 @@ l'émulsion du « Lait de Tigre ».]
 
 #divider()
 
-== 1. L'EMPREINTE HYDRIQUE ET L'ENTONNOIR DE RENDEMENT DE LA MATIÈRE
-<lempreinte-hydrique-et-lentonnoir-de-rendement-de-la-matière>
-Lorsque vous posez un pavé de bœuf de $200 upright(" g")$ dans votre
-poêle, vous manipulez l'aboutissement d'un immense fleuve invisible de
-matière et d'énergie.
-
-=== A. L'Empreinte Hydrique Comparée au Kilogramme
-<a.-lempreinte-hydrique-comparée-au-kilogramme>
-Pour fabriquer un kilogramme d'aliment consommable, l'écosystème
-agricole mobilise des volumes d'eau considérables (eau de pluie absorbée
-par les fourrages, irrigation, abreuvement et nettoyage des
-installations) :
-
-#figure(
-  align(center)[#table(
-  stroke: 0.5pt + rgb("#dcd6ca"),
-  fill: (x, y) => if y == 0 { rgb("#f2ece1") } else if calc.odd(y) { rgb("#faf7f2") } else { none },
-  inset: 8pt,
-
-    columns: (33.33%, 33.33%, 33.33%),
-    align: (left,left,left,),
-    table.header([Denrée Alimentaire], [Empreinte Hydrique Moyenne
-      (Litres d'Eau / Kilogramme)], [Facteur Multiplicateur vs Légume],),
-    table.hline(),
-    [#strong[Légumes de pleine terre] (Carottes, poireaux,
-    choux)], [$approx upright(bold(300 upright(" à ") 400 upright(" Litres")))$], [Référence
-    $1 times$],
-    [#strong[Pommes de terre &
-    Tubercules]], [$approx upright(bold(300 upright(" Litres")))$], [$1 times$],
-    [#strong[Céréales brutes] (Blé, orge,
-    avoine)], [$approx upright(bold(1 thin 200 upright(" à ") 1 thin 500 upright(" Litres")))$], [$4 times$],
-    [#strong[Légumineuses sèches] (Lentilles, pois
-    chiches)], [$approx upright(bold(3 thin 000 upright(" à ") 4 thin 000 upright(" Litres")))$], [$10 times$
-    (Haute densité protéique)],
-    [#strong[Viande de
-    Porc]], [$approx upright(bold(6 thin 000 upright(" Litres")))$], [$17 times$],
-    [#strong[Viande de Volaille] (Poulet
-    fermier)], [$approx upright(bold(4 thin 300 upright(" Litres")))$], [$12 times$],
-    [#strong[Viande Bovine] (Bœuf de
-    pâturage)], [$approx upright(bold(15 thin 400 upright(" Litres")))$], [$upright(bold(45 times))$],
-  )]
-  , kind: table
-  )
-
-$ upright("Rendement Trophique") : 10 upright(" kg de matière végétale consommée") arrow.r 1 upright(" kg de gain de poids animal") $
-
-=== B. L'Entonnoir de Découpe : De la Bête Vivante à l'Assiette
-<b.-lentonnoir-de-découpe-de-la-bête-vivante-à-lassiette>
-Que devient un bœuf de race à viande de $700 upright(" kg")$ sur pied
-élevé pendant trois ans ? 1. #strong[L'Abattage et la Saignée :] La
-carcasse éviscérée, dépouillée de sa peau et de ses pattes ne représente
-que #strong[$55 upright(" à ") 60 thin %$ du poids vif] (soit environ
-$400 upright(" kg")$ de carcasse suspendue). 2. #strong[Le Désossage et
-le Parage du Boucher :] Le squelette osseux
-($15 upright(" à ") 18 thin %$), les tendons épais, les aponévroses
-dures et les excès de gras de couverture sont retirés. Il reste environ
-#strong[$280 upright(" kg")$ de viande nette consommable] ($40 thin %$
-du poids vif d'origine). 3. #strong[La Rétraction Thermique à la Cuisson
-:] Sous l'action de la chaleur ($> 60^compose upright(C)$),
-l'actomyosine se resserre comme une éponge et expulse
-#strong[$25 upright(" à ") 30 thin %$ d'eau cellulaire libre]. Les
-$280 upright(" kg")$ de viande crue donnent au final environ
-#strong[$195 upright(" kg")$ de viande cuite ingérée]. 4. #strong[La
-Responsabilité Culinaire :] Jeter un steak desséché ou le carboniser par
-inattention thermique n'est pas seulement un gâchis de trois euros :
-c'est l'anéantissement de milliers de litres d'eau et de plusieurs mois
-d'énergie biologique.
-
-#divider()
-
 = CHAPITRE 15 --- L'Archétype de l'Œuf et les Émulsions Maîtres
 <chapitre-15-larchétype-de-lœuf-et-les-émulsions-maîtres>
 #quote(block: true)[
@@ -4500,6 +4523,51 @@ dresse à la verticale sur sa pointe. 3. #emph[L'œuf périmé
 
 #divider()
 
+C'est l'un des paradoxes les plus frappants de la cuisine mondiale : aux
+États-Unis, les œufs sont obligatoirement vendus en rayon réfrigéré \;
+en France et dans toute l'Union Européenne, ils sont stockés à
+température ambiante dans les supermarchés. Pourquoi ?
+
+=== A. Le Paradigme Américain (Lavage chimique)
+<a.-le-paradigme-américain-lavage-chimique>
+Aux États-Unis (réglementation USDA), les œufs subissent immédiatement
+après la ponte un lavage industriel à l'eau chaude savonneuse et
+désinfectante pour éliminer les fientes. - #strong[La conséquence
+physique :] Le lavage dissout et décape intégralement la
+#strong[cuticule protectrice]. - Les 10 000 pores de la coquille se
+retrouvent grands ouverts sur l'atmosphère. Si l'œuf reste à température
+ambiante, la moindre bactérie de surface ou condensation pénètre par
+capillarité à l'intérieur en quelques heures. - #strong[Verdict :] Un
+œuf lavé #strong[doit impérativement rester au réfrigérateur
+($< 4^compose upright(C)$)] pour bloquer le métabolisme bactérien.
+
+=== B. Le Paradigme Européen (Intégrité de la cuticule)
+<b.-le-paradigme-européen-intégrité-de-la-cuticule>
+En Europe (norme CE n° 589/2008), le lavage des œufs de table de classe
+A est #strong[strictement interdit]. - #strong[La raison scientifique :]
+La cuticule naturelle reste intacte et imperméable. - Si un œuf froid
+est sorti du réfrigérateur et laissé dans une cuisine chaude, l'humidité
+ambiante se condense sur la coquille froide (phénomène du point de
+rosée). Cette eau liquide superficielle dissout les impuretés et fournit
+un canal aqueux permettant aux salmonelles de franchir les pores par
+pression capillaire. - Pour éviter ces cycles de condensation dangereux,
+l'Europe impose de conserver les œufs à température stable, idéalement
+entre $12^compose upright(C)$ et $18^compose upright(C)$, ou au
+réfrigérateur #strong[à condition de ne pas les faire transpirer].
+
+=== C. La Règle Pratique du Cuisinier
+<c.-la-règle-pratique-du-cuisinier>
+- #strong[À la maison :] Si votre cuisine oscille entre
+  $20^compose upright(C)$ et $25^compose upright(C)$ en été, placez vos
+  œufs au réfrigérateur (dans leur boîte carton fermée pour limiter les
+  échanges d'odeurs à travers les pores et absorber l'humidité).
+- #strong[Règle absolue d'utilisation :] Ne cuisinez jamais un œuf
+  sortant directement du frigo pour une cuisson douce ou une émulsion !
+  Laissez-le revenir à température ambiante
+  $20 upright("–") 30 thin upright(m i n u t e s)$ avant usage.
+
+#divider()
+
 == 2. LA COAGULATION FRACTIONNÉE ET LE THERMOMÈTRE DE L'OVALBUMINE
 <la-coagulation-fractionnée-et-le-thermomètre-de-lovalbumine>
 L'œuf ne possède pas une température unique de coagulation : c'est un
@@ -4554,6 +4622,29 @@ frémissement doux ($90^compose upright(C)$) pendant #strong[9 minutes
 maximum], et les plonger #strong[immédiatement dans un grand bol d'eau
 glacée]. Le choc thermique stoppe la cuisson et attire le gaz vers la
 coquille, préservant un jaune d'un orange éclatant.
+
+#divider()
+
+=== C. Le Protocole Physique du Tempérage dans un Liquide Chaud
+<c.-le-protocole-physique-du-tempérage-dans-un-liquide-chaud>
+- #strong[Le piège fatal :] Si vous versez des jaunes d'œufs crus
+  directement dans du lait frémissant à $85^compose upright(C)$ pour
+  faire une crème anglaise, la zone de contact subit un choc thermique
+  instantané. L'ovotransferrine ($62^compose upright(C)$) et les
+  lipovitellines coagulent en une fraction de seconde : vous obtenez une
+  soupe d'œufs brouillés sucrés.
+- #strong[Le protocole physique du Tempérage :]
+  + Verser #strong[un filet modéré de lait chaud] (environ $1\/3$ du
+    volume) sur les jaunes tout en fouettant vivement dans le
+    cul-de-poule froid.
+  + Pourquoi ça marche ? La grande masse des jaunes froids absorbe la
+    chaleur du petit filet de liquide. La température du mélange s'élève
+    doucement à $45 upright("–") 50^compose upright(C)$ sans jamais
+    atteindre le seuil de dénaturation ($62^compose upright(C)$).
+  + Une fois les jaunes ainsi « tempérés » et dilués, le réseau
+    protéique est espacé par l'eau et le sucre, ce qui repousse le seuil
+    de coagulation à plus de $82^compose upright(C)$. On peut alors
+    reverser le mélange dans la casserole en toute sécurité.
 
 #divider()
 
@@ -4762,76 +4853,6 @@ chaud à $58^compose upright(C)$.]
 
 #divider()
 
-== 2. POURQUOI UN ŒUF DOIT-IL (OU NON) ÊTRE AU FRIGO ?
-<pourquoi-un-œuf-doit-il-ou-non-être-au-frigo>
-C'est l'un des paradoxes les plus frappants de la cuisine mondiale : aux
-États-Unis, les œufs sont obligatoirement vendus en rayon réfrigéré \;
-en France et dans toute l'Union Européenne, ils sont stockés à
-température ambiante dans les supermarchés. Pourquoi ?
-
-=== A. Le Paradigme Américain (Lavage chimique)
-<a.-le-paradigme-américain-lavage-chimique>
-Aux États-Unis (réglementation USDA), les œufs subissent immédiatement
-après la ponte un lavage industriel à l'eau chaude savonneuse et
-désinfectante pour éliminer les fientes. - #strong[La conséquence
-physique :] Le lavage dissout et décape intégralement la
-#strong[cuticule protectrice]. - Les 10 000 pores de la coquille se
-retrouvent grands ouverts sur l'atmosphère. Si l'œuf reste à température
-ambiante, la moindre bactérie de surface ou condensation pénètre par
-capillarité à l'intérieur en quelques heures. - #strong[Verdict :] Un
-œuf lavé #strong[doit impérativement rester au réfrigérateur
-($< 4^compose upright(C)$)] pour bloquer le métabolisme bactérien.
-
-=== B. Le Paradigme Européen (Intégrité de la cuticule)
-<b.-le-paradigme-européen-intégrité-de-la-cuticule>
-En Europe (norme CE n° 589/2008), le lavage des œufs de table de classe
-A est #strong[strictement interdit]. - #strong[La raison scientifique :]
-La cuticule naturelle reste intacte et imperméable. - Si un œuf froid
-est sorti du réfrigérateur et laissé dans une cuisine chaude, l'humidité
-ambiante se condense sur la coquille froide (phénomène du point de
-rosée). Cette eau liquide superficielle dissout les impuretés et fournit
-un canal aqueux permettant aux salmonelles de franchir les pores par
-pression capillaire. - Pour éviter ces cycles de condensation dangereux,
-l'Europe impose de conserver les œufs à température stable, idéalement
-entre $12^compose upright(C)$ et $18^compose upright(C)$, ou au
-réfrigérateur #strong[à condition de ne pas les faire transpirer].
-
-=== C. La Règle Pratique du Cuisinier
-<c.-la-règle-pratique-du-cuisinier>
-- #strong[À la maison :] Si votre cuisine oscille entre
-  $20^compose upright(C)$ et $25^compose upright(C)$ en été, placez vos
-  œufs au réfrigérateur (dans leur boîte carton fermée pour limiter les
-  échanges d'odeurs à travers les pores et absorber l'humidité).
-- #strong[Règle absolue d'utilisation :] Ne cuisinez jamais un œuf
-  sortant directement du frigo pour une cuisson douce ou une émulsion !
-  Laissez-le revenir à température ambiante
-  $20 upright("–") 30 thin upright(m i n u t e s)$ avant usage.
-
-#divider()
-
-#divider()
-
-=== B. Règle 2 : L'Introduction dans un Liquide Chaud (Le « Tempérage »)
-<b.-règle-2-lintroduction-dans-un-liquide-chaud-le-tempérage>
-- #strong[Le piège fatal :] Si vous versez des jaunes d'œufs crus
-  directement dans du lait frémissant à $85^compose upright(C)$ pour
-  faire une crème anglaise, la zone de contact subit un choc thermique
-  instantané. L'ovotransferrine ($62^compose upright(C)$) et les
-  lipovitellines coagulent en une fraction de seconde : vous obtenez une
-  soupe d'œufs brouillés sucrés.
-- #strong[Le protocole physique du Tempérage :]
-  + Verser #strong[un filet modéré de lait chaud] (environ $1\/3$ du
-    volume) sur les jaunes tout en fouettant vivement dans le
-    cul-de-poule froid.
-  + Pourquoi ça marche ? La grande masse des jaunes froids absorbe la
-    chaleur du petit filet de liquide. La température du mélange s'élève
-    doucement à $45 upright("–") 50^compose upright(C)$ sans jamais
-    atteindre le seuil de dénaturation ($62^compose upright(C)$).
-  + Une fois les jaunes ainsi « tempérés » et dilués, le réseau
-    protéique est espacé par l'eau et le sucre, ce qui repousse le seuil
-    de coagulation à plus de $82^compose upright(C)$. On peut alors
-    reverser le mélange dans la casserole en toute sécurité.
-
 = CHAPITRE 16 --- La Matrice des Grandes Transformations Culinaires
 <chapitre-16-la-matrice-des-grandes-transformations-culinaires>
 #quote(block: true)[
@@ -5027,13 +5048,18 @@ chauffée dans le beurre ne forme jamais de grumeaux.]
 
 #pagebreak(weak: false, to: "odd")
 #set page(paper: "a4", margin: (top: 2.5cm, bottom: 2.5cm, left: 2.2cm, right: 2.2cm), header: none, footer: none, fill: rgb(255, 253, 250))
-#portail_livre_recto("QUATRIÈME PARTIE", "LES MÉTAMORPHOSES SINGULIÈRES : FERMENTATIONS, PÂTISSERIE ET GRAND FROID", [Chapitre 17 --- La Révolution des Fermentations Végétales, Pains et \
-Levains §§§ Levains sauvages, pain cocotte, pickles vivants, kéfir de \
-fruits et kombucha. @@ Chapitre 18 --- L'Alchimie Laitière et la \
-Fromagerie Autonome §§§ Rupture colloïdale isoélectrique versus présure \
-et fromage frais en 15 minutes. @@ Chapitres 19 à 21 --- Glucides, \
-Pâtisserie Matricielle et Grand Froid §§§ Pyrolyse du sucre, équation du \
-gâteau, mousse aquafaba et sel cryoscopique.])
+#portail_livre_recto("QUATRIÈME PARTIE", "LES MÉTAMORPHOSES SINGULIÈRES : FERMENTATIONS, PÂTISSERIE ET GRAND FROID", [#text(size: 11.5pt, style: "italic")[— La Révolution des Fermentations Végétales, Pains et Levains] \
+#v(0.38cm)
+#text(size: 11.5pt, style: "italic")[— L'Alchimie Laitière et la Fromagerie Autonome] \
+#v(0.38cm)
+#text(size: 11.5pt, style: "italic")[— Le Travail des
+Glucides : Pyrolyse, Sirops et Caramélisation] \
+#v(0.38cm)
+#text(size: 11.5pt, style: "italic")[— La Pâtisserie
+Matricielle et la Mécanique des Pâtes] \
+#v(0.38cm)
+#text(size: 11.5pt, style: "italic")[— Les Prodiges Thermiques du
+Grand Froid et du Feu Isolant]])
 
 #pagebreak(weak: false, to: "odd")
 #set page(header: entete-livre, footer: pied-livre)
@@ -5142,7 +5168,100 @@ minéraux du grain.
 
 #divider()
 
-== 5. RECETTES FONDATRICES DU LEVAIN ET DE LA FERMENTATION
+#divider()
+
+== 5. L'AUTONOMIE LIQUIDE : LES BOISSONS FERMENTÉES VIVANTES DOMESTIQUES
+<lautonomie-liquide-les-boissons-fermentées-vivantes-domestiques>
+L'art de la fermentation ne s'arrête pas au pain et au fromage : il
+permet de transformer des infusions d'eau, de thé ou de fruits en
+élixirs vivants naturellement pétillants, riches en acides organiques
+probiotiques et débarrassés de tout conservateur chimique.
+
+=== A. Le Kéfir de Fruits (Kéfir d'Eau) : L'Effervescence Sauvage
+<a.-le-kéfir-de-fruits-kéfir-deau-leffervescence-sauvage>
+Le kéfir de fruits repose sur des #strong[grains de kéfir], consortium
+symbiotique translucide de levures (#emph[Kluyveromyces],
+#emph[Saccharomyces]) et de bactéries lactiques (#emph[Lactobacillus
+hilgardii]) emprisonnées dans une matrice de dextrane gélatineux : -
+#strong[Le Protocole en 48 Heures :] 1. Dans un bocal en verre de 1
+litre à joint de caoutchouc, dissoudre #strong[$40 thin upright(g)$ de
+sucre blond bio] dans $1 thin upright("L")$ d'eau du robinet
+préalablement déchlorée (reposée 2 heures à l'air libre). 2. Ajouter
+#strong[$40 thin upright(g)$ de grains de kéfir d'eau], #strong[1 figue
+sèche bio] (ou datte) et #strong[une demi-rondelle de citron bio non
+traité]. 3. Fermer le bocal hermétiquement. Laisser fermenter à
+température ambiante ($20 upright("–") 24^compose upright(C)$). -
+#strong[Le Signal Visuel :] Après 24 à 48 heures, la figue gorgée de gaz
+remonte flotter à la surface : la première fermentation est accomplie. -
+#strong[La Mise en Bouteille (La Prise de Mousse) :] Filtrer à travers
+une passoire en plastique (éviter le métal nu qui altère les grains).
+Récupérer les grains pour la tournée suivante. Embouteiller le liquide
+dans une bouteille en verre à bouchon mécanique (#emph[bouteille de
+limonade]) pendant 24 heures supplémentaires : le $upright(C O)_2$
+dissous s'accumule sans s'échapper, créant un pétillement d'une extrême
+finesse.
+
+=== B. Le Kéfir de Lait : La Prédigestion du Lactose
+<b.-le-kéfir-de-lait-la-prédigestion-du-lactose>
+En plongeant des grains de kéfir de lait dans un lait entier frais : -
+Les bactéries lactiques et levures hydrolysent la quasi-totalité du
+#strong[lactose en acide lactique et galactose]. - Le lait s'épaissit en
+un yaourt à boire onctueux, digeste même pour les personnes intolérantes
+au lactose, saturé de dizaines de souches probiotiques vivantes qui
+colonisent et renforcent le microbiote intestinal.
+
+=== C. Le Kombucha et la Mère Symbiotique (SCOBY)
+<c.-le-kombucha-et-la-mère-symbiotique-scoby>
+Le kombucha est la fermentation aérobie d'un thé sucré par un disque
+gélatineux appelé #strong[SCOBY] (#emph[Symbiotic Culture of Bacteria
+and Yeast]) : - #strong[La Mécanique Biochimique en Deux Temps :] 1.
+#emph[Les Levures :] Consomment le saccharose du thé et le scindent en
+glucose et fructose, produisant une infime quantité d'éthanol
+($< 0\,5 %$). 2. #emph[Les Bactéries Acétiques (Acetobacter xylinum) :]
+En présence de l'oxygène traversant le tissu protecteur du bocal, elles
+oxydent l'alcool en #strong[acide acétique, acide gluconique et acide
+glucuronique], tout en tissant de nouvelles fibres de cellulose pure qui
+épaississent la « mère » en surface. - #strong[Le Résultat :] Après 7 à
+10 jours, le thé amer et sucré devient une boisson acidulée, cidrée,
+d'une grande fraîcheur digestive, aux vertus hépatoprotectrices
+démontrées.
+
+=== D. Le Ginger Bug (Levain de Gingembre) : Le Soda Artisanal sans Levure Commerciale
+<d.-le-ginger-bug-levain-de-gingembre-le-soda-artisanal-sans-levure-commerciale>
+Comment fabriquer une véritable bière de gingembre (#emph[ginger beer])
+pétillante sans acheter de levure ? En capturant les micro-organismes
+sauvages présents sur la peau du rhizome : 1. #strong[La Naissance du
+Levain :] Dans un bocal, mélanger #strong[$20 thin upright(g)$ de
+gingembre frais râpé bio avec sa peau], $20 thin upright(g)$ de sucre et
+$100 thin upright(m l)$ d'eau non chlorée. 2. #strong[Le Nourrissage
+Quotidien :] Chaque jour pendant 4 à 5 jours, ajouter
+$10 thin upright(g)$ de gingembre râpé et $10 thin upright(g)$ de sucre.
+Dès que des bulles crépitent en surface et qu'une odeur de bière fraîche
+s'échappe, votre #emph[ginger bug] est actif. 3. #strong[La
+Gazéification :] Prélever $50 thin upright(m l)$ de ce levain liquide
+filtré, le mélanger à $1 thin upright(l i t r e)$ de tisane de gingembre
+citronnée sucrée, embouteiller sous pression mécanique : en 48 heures,
+les levures sauvages produisent une boisson pétillante explosive et
+épicée.
+
+=== E. Le Vinaigre Noble par la Mère Acétique (#emph[Acetobacter aceti])
+<e.-le-vinaigre-noble-par-la-mère-acétique-acetobacter-aceti>
+Ne jetez plus jamais vos restes de bouteilles de bon vin ou de cidre
+brut : - #strong[Le Principe :] Les bactéries acétiques transforment
+l'éthanol en acide acétique en consommant l'oxygène de l'air :
+$ upright(C H)_3 upright(C H)_2 upright(O H) + upright(O)_2 arrow.r upright(C H)_3 upright(C O O H) + upright(H)_2 upright(O) $
+\- #strong[Le Vinaigrier Domestique :] Verser un reste de vin rouge
+naturel (non sulfité ou aéré) titrant entre $8$ et $10 %$ d'alcool dans
+un pot en grès à large col couvert d'un linge fin. Laisser à l'obscurité
+à #strong[$20 upright("–") 25^compose upright(C)$]. - En quelques
+semaines, un voile diaphane plissé se forme à la surface : c'est la
+#strong[mère de vinaigre]. Le liquide devient un vinaigre de vin vieux
+aux arômes profonds, infiniment supérieur aux vinaigres industriels
+pasteurisés et dévitalisés du commerce.
+
+#divider()
+
+== 6. RECETTES FONDATRICES DU LEVAIN ET DE LA FERMENTATION
 <recettes-fondatrices-du-levain-et-de-la-fermentation>
 
 #divider()
@@ -5268,95 +5387,6 @@ choux-fleurs et radis en condiments acidulés probiotiques.]
   en se bonifiant.
 
 #divider()
-
-== 5. L'AUTONOMIE LIQUIDE : LES BOISSONS FERMENTÉES VIVANTES DOMESTIQUES
-<lautonomie-liquide-les-boissons-fermentées-vivantes-domestiques>
-L'art de la fermentation ne s'arrête pas au pain et au fromage : il
-permet de transformer des infusions d'eau, de thé ou de fruits en
-élixirs vivants naturellement pétillants, riches en acides organiques
-probiotiques et débarrassés de tout conservateur chimique.
-
-=== A. Le Kéfir de Fruits (Kéfir d'Eau) : L'Effervescence Sauvage
-<a.-le-kéfir-de-fruits-kéfir-deau-leffervescence-sauvage>
-Le kéfir de fruits repose sur des #strong[grains de kéfir], consortium
-symbiotique translucide de levures (#emph[Kluyveromyces],
-#emph[Saccharomyces]) et de bactéries lactiques (#emph[Lactobacillus
-hilgardii]) emprisonnées dans une matrice de dextrane gélatineux : -
-#strong[Le Protocole en 48 Heures :] 1. Dans un bocal en verre de 1
-litre à joint de caoutchouc, dissoudre #strong[$40 thin upright(g)$ de
-sucre blond bio] dans $1 thin upright("L")$ d'eau du robinet
-préalablement déchlorée (reposée 2 heures à l'air libre). 2. Ajouter
-#strong[$40 thin upright(g)$ de grains de kéfir d'eau], #strong[1 figue
-sèche bio] (ou datte) et #strong[une demi-rondelle de citron bio non
-traité]. 3. Fermer le bocal hermétiquement. Laisser fermenter à
-température ambiante ($20 upright("–") 24^compose upright(C)$). -
-#strong[Le Signal Visuel :] Après 24 à 48 heures, la figue gorgée de gaz
-remonte flotter à la surface : la première fermentation est accomplie. -
-#strong[La Mise en Bouteille (La Prise de Mousse) :] Filtrer à travers
-une passoire en plastique (éviter le métal nu qui altère les grains).
-Récupérer les grains pour la tournée suivante. Embouteiller le liquide
-dans une bouteille en verre à bouchon mécanique (#emph[bouteille de
-limonade]) pendant 24 heures supplémentaires : le $upright(C O)_2$
-dissous s'accumule sans s'échapper, créant un pétillement d'une extrême
-finesse.
-
-=== B. Le Kéfir de Lait : La Prédigestion du Lactose
-<b.-le-kéfir-de-lait-la-prédigestion-du-lactose>
-En plongeant des grains de kéfir de lait dans un lait entier frais : -
-Les bactéries lactiques et levures hydrolysent la quasi-totalité du
-#strong[lactose en acide lactique et galactose]. - Le lait s'épaissit en
-un yaourt à boire onctueux, digeste même pour les personnes intolérantes
-au lactose, saturé de dizaines de souches probiotiques vivantes qui
-colonisent et renforcent le microbiote intestinal.
-
-=== C. Le Kombucha et la Mère Symbiotique (SCOBY)
-<c.-le-kombucha-et-la-mère-symbiotique-scoby>
-Le kombucha est la fermentation aérobie d'un thé sucré par un disque
-gélatineux appelé #strong[SCOBY] (#emph[Symbiotic Culture of Bacteria
-and Yeast]) : - #strong[La Mécanique Biochimique en Deux Temps :] 1.
-#emph[Les Levures :] Consomment le saccharose du thé et le scindent en
-glucose et fructose, produisant une infime quantité d'éthanol
-($< 0\,5 %$). 2. #emph[Les Bactéries Acétiques (Acetobacter xylinum) :]
-En présence de l'oxygène traversant le tissu protecteur du bocal, elles
-oxydent l'alcool en #strong[acide acétique, acide gluconique et acide
-glucuronique], tout en tissant de nouvelles fibres de cellulose pure qui
-épaississent la « mère » en surface. - #strong[Le Résultat :] Après 7 à
-10 jours, le thé amer et sucré devient une boisson acidulée, cidrée,
-d'une grande fraîcheur digestive, aux vertus hépatoprotectrices
-démontrées.
-
-=== D. Le Ginger Bug (Levain de Gingembre) : Le Soda Artisanal sans Levure Commerciale
-<d.-le-ginger-bug-levain-de-gingembre-le-soda-artisanal-sans-levure-commerciale>
-Comment fabriquer une véritable bière de gingembre (#emph[ginger beer])
-pétillante sans acheter de levure ? En capturant les micro-organismes
-sauvages présents sur la peau du rhizome : 1. #strong[La Naissance du
-Levain :] Dans un bocal, mélanger #strong[$20 thin upright(g)$ de
-gingembre frais râpé bio avec sa peau], $20 thin upright(g)$ de sucre et
-$100 thin upright(m l)$ d'eau non chlorée. 2. #strong[Le Nourrissage
-Quotidien :] Chaque jour pendant 4 à 5 jours, ajouter
-$10 thin upright(g)$ de gingembre râpé et $10 thin upright(g)$ de sucre.
-Dès que des bulles crépitent en surface et qu'une odeur de bière fraîche
-s'échappe, votre #emph[ginger bug] est actif. 3. #strong[La
-Gazéification :] Prélever $50 thin upright(m l)$ de ce levain liquide
-filtré, le mélanger à $1 thin upright(l i t r e)$ de tisane de gingembre
-citronnée sucrée, embouteiller sous pression mécanique : en 48 heures,
-les levures sauvages produisent une boisson pétillante explosive et
-épicée.
-
-=== E. Le Vinaigre Noble par la Mère Acétique (#emph[Acetobacter aceti])
-<e.-le-vinaigre-noble-par-la-mère-acétique-acetobacter-aceti>
-Ne jetez plus jamais vos restes de bouteilles de bon vin ou de cidre
-brut : - #strong[Le Principe :] Les bactéries acétiques transforment
-l'éthanol en acide acétique en consommant l'oxygène de l'air :
-$ upright(C H)_3 upright(C H)_2 upright(O H) + upright(O)_2 arrow.r upright(C H)_3 upright(C O O H) + upright(H)_2 upright(O) $
-\- #strong[Le Vinaigrier Domestique :] Verser un reste de vin rouge
-naturel (non sulfité ou aéré) titrant entre $8$ et $10 %$ d'alcool dans
-un pot en grès à large col couvert d'un linge fin. Laisser à l'obscurité
-à #strong[$20 upright("–") 25^compose upright(C)$]. - En quelques
-semaines, un voile diaphane plissé se forme à la surface : c'est la
-#strong[mère de vinaigre]. Le liquide devient un vinaigre de vin vieux
-aux arômes profonds, infiniment supérieur aux vinaigres industriels
-pasteurisés et dévitalisés du commerce.
 
 = CHAPITRE 18 --- L'Alchimie Laitière et la Fromagerie Autonome
 <chapitre-18-lalchimie-laitière-et-la-fromagerie-autonome>
@@ -6158,14 +6188,12 @@ simple bol et de la glace pilée.]
 
 #pagebreak(weak: false, to: "odd")
 #set page(paper: "a4", margin: (top: 2.5cm, bottom: 2.5cm, left: 2.2cm, right: 2.2cm), header: none, footer: none, fill: rgb(255, 253, 250))
-#portail_livre_recto("CINQUIÈME PARTIE", "L'ART DU REPAS, DU PARTAGE ET DU SERVICE", [Chapitre 22 --- Pourquoi une Fourchette ? Histoire et \
-Sociologie de la Table §§§ Anthropologie du couvert, tabous du toucher \
-et guerre du service à la française vs à la russe. @@ Chapitre 23 --- \
-L'Architecture du Menu, Rétroplanning et Art de Recevoir §§§ \
-Chronogramme de réception sans stress de J-2 au service pour un hôte \
-détendu. @@ Chapitre 24 --- L'Esthétique de l'Assiette, Dressage et \
-Températures §§§ Équilibre des formes, assiettes chauffées à 55°C et \
-secrets de l'assiette 3 étoiles.])
+#portail_livre_recto("CINQUIÈME PARTIE", "L'ART DU REPAS, DU PARTAGE ET DU SERVICE", [#text(size: 11.5pt, style: "italic")[— Pourquoi une Fourchette ? Histoire et Sociologie de
+la Table] \
+#v(0.38cm)
+#text(size: 11.5pt, style: "italic")[— L'Architecture du Menu, Rétroplanning et Art de Recevoir] \
+#v(0.38cm)
+#text(size: 11.5pt, style: "italic")[— L'Esthétique de l'Assiette, Dressage et Températures]])
 
 #pagebreak(weak: false, to: "odd")
 #set page(header: entete-livre, footer: pied-livre)
@@ -6593,12 +6621,11 @@ et chimiques accessibles à quiconque possède une casserole et un couteau
 
 #pagebreak(weak: false, to: "odd")
 #set page(paper: "a4", margin: (top: 2.5cm, bottom: 2.5cm, left: 2.2cm, right: 2.2cm), header: none, footer: none, fill: rgb(255, 253, 250))
-#portail_livre_recto("SIXIÈME PARTIE", "LE TEMPS LONG : NUTRITION DIACHRONIQUE ET PLAISIR DURABLE", [Chapitre \
-25 --- Sortir de la Tyrannie des Régimes : Physiologie du Poids §§§ \
-Cinétique neuro-hormonale de la leptine, délai des 20 minutes et densité \
-nutritive. @@ Chapitre 26 --- La Diachronie Culinaire : Microbiote et \
-Batch Cooking §§§ Amidon résistant RS3 rétrogradé, règle des 30 végétaux \
-et protocoles hebdomadaires.])
+#portail_livre_recto("SIXIÈME PARTIE", "LE TEMPS LONG : NUTRITION DIACHRONIQUE ET PLAISIR DURABLE", [#text(size: 11.5pt, style: "italic")[— Sortir
+de la Tyrannie des Régimes : Physiologie du Poids] \
+#v(0.38cm)
+#text(size: 11.5pt, style: "italic")[— La Diachronie
+Culinaire : Microbiote et Batch Cooking]])
 
 #pagebreak(weak: false, to: "odd")
 #set page(header: entete-livre, footer: pied-livre)
@@ -6715,6 +6742,35 @@ stimulent la synthèse musculaire et les minéraux comblent les récepteurs
 cellulaires. #strong[La satiété est stable, diffuse et persiste pendant
 4 à 5 heures sans coup de pompe.]
 
+#divider()
+
+=== B. Immunologie de l'Assiette : Allergies Vraies (IgE) versus Intolérances Enzymatiques
+<b.-immunologie-de-lassiette-allergies-vraies-ige-versus-intolérances-enzymatiques>
+La confusion entre allergie et intolérance empoisonne le débat
+nutritionnel contemporain : - #strong[L'Allergie Vraie (La Réaction
+Immunitaire Médiée par les IgE) :] Le système immunitaire identifie par
+erreur une protéine inoffensive (albumine de l'œuf, tropomyosine de la
+crevette, protéines de réserve de l'arachide) comme un parasite mortel.
+Les plasmocytes sécrètent des anticorps #strong[IgE] qui se fixent sur
+les mastocytes, libérant un flot massif d'histamine. La réaction est
+violente, immédiate et engage le pronostic vital (œdème de Quincke,
+bronchospasme, choc anaphylactique). Elle exige l'éviction absolue de la
+moindre trace moléculaire. - #strong[L'Intolérance Métabolique (Le
+Déficit en Outils Enzymatiques) :] L'intolérance au lactose n'est pas
+une maladie : c'est l'extinction programmée de la synthèse de
+#strong[lactase] après le sevrage, commune à 70% de la population
+mondiale adulte. Le sucre du lait ne pouvant être hydrolysé dans
+l'intestin grêle, il parvient intact dans le côlon où les bactéries le
+fermentent en gaz ($upright(H)_2$, $upright(C O)_2$) et en acides gras,
+provoquant ballonnements et diarrhée motrice. C'est un inconfort
+digestif mécanique, sans aucun risque vital ni réaction immunitaire. -
+#strong[La Maladie Cœliaque (L'Auto-Immunité Déclenchée par la Gliadine)
+:] Distincte de l'allergie et de la simple sensibilité digestive, la
+maladie cœliaque est une affection auto-immune génétique où la fraction
+gliadine du gluten provoque l'atrophie totale des villosités de
+l'intestin grêle, anéantissant l'absorption des nutriments (fer,
+calcium, vitamines).
+
 = CHAPITRE 26 --- La Diachronie Culinaire : Amidon Résistant, Microbiote et Plaisir Quotidien
 <chapitre-26-la-diachronie-culinaire-amidon-résistant-microbiote-et-plaisir-quotidien>
 #quote(block: true)[
@@ -6775,6 +6831,27 @@ génie :] Même si vous réchauffez vos pommes de terre ou vos pâtes le
 lendemain à la poêle ou au four doux, la structure cristalline ne se
 redissout pas totalement : #strong[l'amidon conserve ses vertus d'amidon
 résistant].
+
+#divider()
+
+=== C. La Mécanique de l'Élimination : Ballast des Fibres, Transit et Évacuation Métabolique
+<c.-la-mécanique-de-lélimination-ballast-des-fibres-transit-et-évacuation-métabolique>
+Bien manger implique de comprendre l'aboutissement inéluctable du cycle
+digestif : - #strong[Le Rôle de Ballast des Fibres Insolubles :] La
+cellulose et la lignine des parois végétales ne sont pas digérées, mais
+absorbent l'eau comme des éponges dans le côlon. En augmentant le volume
+et l'hydratation du bol fécal, elles exercent une pression mécanique sur
+les parois coliques, déclenchant les contractions réflexes du
+péristaltisme. Sans fibres insolubles, le bol se dessèche, stagne et
+ralentit le transit, exposant la muqueuse à des métabolites bactériens
+délétères. - #strong[L'Évacuation des Déchets Métaboliques et de l'Urée
+:] La défécation n'évacue pas seulement les restes d'aliments non
+absorbés : elle est l'émonctoire majeur par lequel le foie élimine les
+pigments biliaires dégradés (la stercobiline qui donne sa couleur aux
+selles), le cholestérol excédentaire et les métabolites neutralisés. Les
+reins complètent cette filtration continue en extrayant l'urée, résidu
+de la dégradation des acides aminés azotés, éliminée dans l'eau
+urinaire.
 
 #divider()
 
@@ -6855,14 +6932,23 @@ répétitive.
 
 #pagebreak(weak: false, to: "odd")
 #set page(paper: "a4", margin: (top: 2.5cm, bottom: 2.5cm, left: 2.2cm, right: 2.2cm), header: none, footer: none, fill: rgb(255, 253, 250))
-#portail_livre_recto("ANNEXES ET RÉPERTOIRES", "FORMULAIRE, GLOSSAIRE ET RÉPERTOIRE CRITIQUE", [Annexe A --- Cadran Absolu des \
-Températures Critiques en Cuisine §§§ Seuils de dénaturation, Maillard, \
-coagulation et zones de danger microbien. @@ Annexe B --- Glossaire \
-Physico-Chimique et Culinaire Exhaustif §§§ Définitions rigoureuses de \
-l'amylose au point de fumée et à la synérèse. @@ Annexes C à F --- \
-Bibliographie, Guides Pratiques et Crédits Iconographiques §§§ Ouvrages \
-de référence, guide d'achat minimal, conservation au froid et sources \
-libres.])
+#portail_livre_recto("ANNEXES ET RÉPERTOIRES", "FORMULAIRE, GLOSSAIRE ET RÉPERTOIRE CRITIQUE", [#text(size: 11.5pt, style: "italic")[— Annexe A --- Cadran Absolu des
+Températures Critiques en Cuisine] \
+#v(0.38cm)
+#text(size: 11.5pt, style: "italic")[— Annexe B --- Glossaire
+Physico-Chimique et Culinaire Exhaustif] \
+#v(0.38cm)
+#text(size: 11.5pt, style: "italic")[— Annexe C --- Bibliographie
+Raisonnée et Évaluée] \
+#v(0.38cm)
+#text(size: 11.5pt, style: "italic")[— Annexe D --- Guide d'Achat de l'Arsenal
+Minimal, Coûts et Durées] \
+#v(0.38cm)
+#text(size: 11.5pt, style: "italic")[— Annexe E --- Conservation au Froid, Zones
+et Durées Limites] \
+#v(0.38cm)
+#text(size: 11.5pt, style: "italic")[— Annexe F --- Répertoire des Crédits
+Iconographiques et Sources]])
 
 #pagebreak(weak: false, to: "odd")
 #set page(header: entete-livre, footer: pied-livre)
@@ -7778,14 +7864,13 @@ de quatre mille descendants toxiques !
 = ANNEXE F --- Répertoire des Crédits Iconographiques et Sources des Illustrations
 <annexe-f-répertoire-des-crédits-iconographiques-et-sources-des-illustrations>
 Le présent répertoire consigne l'ensemble des sources, attributions,
-dates et licences libres (Creative Commons ou Domaine Public) des
-documents iconographiques, gravures historiques, photographies
-culinaires et schémas scientifiques intégrés dans #emph[La Cuisine
-Expliquée].
+dates et licences libres (#emph[Creative Commons] ou #emph[Domaine
+Public]) des documents iconographiques, gravures historiques,
+photographies culinaires et schémas scientifiques de l'ouvrage.
 
 #divider()
 
-== 1. GRANDES OUVERTURES DE LIVRES (PLEINES PAGES VERSO)
+== 1. Grandes Ouvertures de Livres (Pleines Pages Verso)
 <grandes-ouvertures-de-livres-pleines-pages-verso>
 #figure(
   align(center)[#table(
@@ -7795,37 +7880,37 @@ Expliquée].
 
     columns: (20%, 20%, 20%, 20%, 20%),
     align: (left,left,left,left,left,),
-    table.header([Livre / Partie], [Sujet & Œuvre], [Auteur /
-      Institution], [Datation], [Licence Libre & Source],),
+    table.header([Emplacement], [Sujet & Œuvre], [Auteur /
+      Institution], [Datation], [Licence & Source],),
     table.hline(),
     [#strong[Livre I]], [#emph[La conquête du feu paléolithique et
-    l'externalisation de la digestion]], [John Collier / Collection
-    privée], [1892], [Domaine Public / Wikimedia Commons],
+    l'externalisation digestive]], [John Collier / Coll.
+    privée], [1892], [Domaine Public / Wikimedia],
     [#strong[Livre II]], [#emph[L'arsenal ordonné du foyer et la clarté
-    de la table]], [D'après Jean Siméon Chardin / Musée du
-    Louvre], [XVIIIe siècle], [Domaine Public / Wikimedia Commons],
+    de la table]], [D'après J.-S. Chardin / Musée du Louvre], [XVIIIe
+    s.], [Domaine Public / Wikimedia],
     [#strong[Livre III]], [#emph[Abondance maraîchère des éléments bruts
     avant transformation]], [Photographie maraîchère de plein
-    champ], [2024], [CC BY-SA 4.0 / Wikimedia Commons],
+    champ], [2024], [CC BY-SA 4.0 / Wikimedia],
     [#strong[Livre IV]], [#emph[Miches dorées au fournil artisanal et
-    levain sauvage]], [Photographie artisanale de
-    panification], [2024], [CC BY-SA 4.0 / Wikimedia Commons],
+    levain sauvage]], [Photographie de panification
+    artisanale], [2024], [CC BY-SA 4.0 / Wikimedia],
     [#strong[Livre V]], [#emph[Table de banquet dressée, orfèvrerie et
     service partagé]], [Gravure & estampe d'art de la table], [XIXe
-    siècle], [Domaine Public / Wikimedia Commons],
+    s.], [Domaine Public / Wikimedia],
     [#strong[Livre VI]], [#emph[Le potager vivant au fil des saisons et
     temps long]], [Photographie horticole et agronomique], [2024], [CC
-    BY-SA 4.0 / Wikimedia Commons],
+    BY-SA 4.0 / Wikimedia],
     [#strong[Annexes]], [#emph[L'artisanat du fournil et la rigueur
-    technique de l'Encyclopédie]], [Denis Diderot & Jean d'Alembert /
-    Robert Bénard], [1765], [Domaine Public / BnF Gallica],
+    technique de l'Encyclopédie]], [Diderot & d'Alembert / Robert
+    Bénard], [1765], [Domaine Public / BnF Gallica],
   )]
   , kind: table
   )
 
 #divider()
 
-== 2. PORTRAITS HISTORIQUES ET GRAVURES FONDATRICES
+== 2. Portraits Historiques et Gravures Fondatrices
 <portraits-historiques-et-gravures-fondatrices>
 #figure(
   align(center)[#table(
@@ -7839,36 +7924,35 @@ Expliquée].
       Date], [Licence Libre & Source],),
     table.hline(),
     [#strong[Chapitre 02]], [#emph[Vente de pain dans une boutique de
-    Pompéi] (Fresque murale romaine)], [Musée archéologique national de
-    Naples (Ier s. apr. J.-C.)], [Domaine Public / Wikimedia Commons],
+    Pompéi] (Fresque romaine)], [Musée archéologique de Naples (Ier
+    s.)], [Domaine Public / Wikimedia],
     [#strong[Chapitre 02]], [#emph[Scène de cuisine de la Renaissance et
-    brigade en action] (Bartolomeo Scappi)], [#emph[Opera dell'arte del
-    cucinare], Venise (1570) / BnF], [Domaine Public / Wikimedia
-    Commons],
+    brigade] (Scappi)], [#emph[Opera dell'arte del cucinare]
+    (1570)], [Domaine Public / BnF Gallica],
     [#strong[Chapitre 02]], [#emph[Portrait de Jean Anthelme
-    Brillat-Savarin] (Physiologie du goût)], [Gravure sur acier (XIXe
-    siècle)], [Domaine Public / Wikimedia Commons],
+    Brillat-Savarin]], [Gravure sur acier (XIXe siècle)], [Domaine
+    Public / Wikimedia],
     [#strong[Chapitre 02]], [#emph[Portrait de Nicolas Appert]
     (Inventeur de l'appertisation)], [Portrait officiel d'époque
-    (1810)], [Domaine Public / Wikimedia Commons],
+    (1810)], [Domaine Public / Wikimedia],
     [#strong[Chapitre 02]], [#emph[Portrait d'Auguste Escoffier] (Le
-    Guide Culinaire)], [Photographie de brigade (1903)], [Domaine Public
-    \/ Wikimedia Commons],
+    Guide Culinaire)], [Photographie d'époque (1903)], [Domaine Public /
+    Wikimedia],
     [#strong[Chapitre 22]], [#emph[Les arts de la table : disposition
-    harmonieuse des couverts et verres]], [Photographie documentaire du
-    service de table], [CC BY-SA 4.0 / Wikimedia Commons],
+    harmonieuse du couvert]], [Photographie documentaire de
+    service], [CC BY-SA 4.0 / Wikimedia],
   )]
   , kind: table
   )
 
 #divider()
 
-== 3. PHOTOGRAPHIES CULINAIRES DES 26 RECETTES FONDATRICES
+== 3. Photographies Culinaires des 26 Recettes Fondatrices
 <photographies-culinaires-des-26-recettes-fondatrices>
-Toutes les photographies culinaires illustrant les 26 recettes
-maîtresses de l'ouvrage sont diffusées sous licences libres certifiées
-(#strong[Creative Commons CC BY-SA 3.0 / 4.0] ou #strong[Domaine Public
-\/ CC0]) via le dépôt mondial #emph[Wikimedia Commons] :
+Toutes les photographies culinaires des 26 fiches pratiques sont
+diffusées sous licence libre certifiée (#strong[Creative Commons CC
+BY-SA 3.0 / 4.0] ou #strong[Domaine Public / CC0]) via le dépôt mondial
+#emph[Wikimedia Commons] :
 
 #figure(
   align(center)[#table(
@@ -7876,86 +7960,73 @@ maîtresses de l'ouvrage sont diffusées sous licences libres certifiées
   fill: (x, y) => if y == 0 { rgb("#f2ece1") } else if calc.odd(y) { rgb("#faf7f2") } else { none },
   inset: 8pt,
 
-    columns: (33.33%, 33.33%, 33.33%),
-    align: (left,left,left,),
-    table.header([Fiche Recette], [Intitulé de la Préparation
-      Culinaire], [Source & Licence Libre],),
+    columns: (25%, 25%, 25%, 25%),
+    align: (left,left,left,left,),
+    table.header([Fiche & Recette], [Licence & Dépôt], [Fiche &
+      Recette], [Licence & Dépôt],),
     table.hline(),
-    [#strong[Fiche 01]], [#emph[Spaghetti à la carbonara
-    traditionnelle]], [Wikimedia Commons / CC BY-SA 4.0],
-    [#strong[Fiche 02]], [#emph[Dahl réconfortant de lentilles corail au
-    lait de coco]], [Wikimedia Commons / CC BY-SA 4.0],
-    [#strong[Fiche 03]], [#emph[Tofu croustillant laqué au tamari et
-    graines de sésame]], [Wikimedia Commons / CC BY-SA 3.0],
-    [#strong[Fiche 04]], [#emph[Pommes sarladaises dorées à la graisse
-    de canard persillée]], [Wikimedia Commons / CC BY-SA 4.0],
-    [#strong[Fiche 05]], [#emph[Grand aïoli provençal monté au mortier
-    avec ail et huile d'olive]], [Wikimedia Commons / CC BY-SA 3.0],
-    [#strong[Fiche 06]], [#emph[Purée soyeuse selon Heston Blumenthal au
-    lait infusé]], [Wikimedia Commons / CC BY-SA 4.0],
-    [#strong[Fiche 07]], [#emph[Carottes glacées au beurre sous
-    cartouche de sulfurisé]], [Wikimedia Commons / CC BY-SA 4.0],
-    [#strong[Fiche 08]], [#emph[Salade maraîchère croquante arrosée de
-    sa vinaigrette]], [Wikimedia Commons / CC BY-SA 4.0],
-    [#strong[Fiche 09]], [#emph[Grand bouillon d'or frémissant et
-    réduction sirupeuse en glace]], [Wikimedia Commons / CC BY-SA 4.0],
-    [#strong[Fiche 10]], [#emph[Consommé limpide clarifié servi en bol
-    fin de porcelaine]], [Wikimedia Commons / CC BY-SA 3.0],
-    [#strong[Fiche 11]], [#emph[Pavé de bœuf épais saisi en fonte et
-    arrosé au beurre moussant]], [Wikimedia Commons / CC BY-SA 4.0],
-    [#strong[Fiche 12]], [#emph[Sauce miroitante issue d'un déglaçage
-    minute au vin rouge]], [Wikimedia Commons / CC BY-SA 4.0],
-    [#strong[Fiche 13]], [#emph[Ceviche éclatant de cabillaud mariné au
-    citron vert]], [Wikimedia Commons / CC BY-SA 4.0],
-    [#strong[Fiche 14]], [#emph[Œuf mollet parfait au jaune coulant
-    fondant]], [Wikimedia Commons / CC BY-SA 4.0],
-    [#strong[Fiche 15]], [#emph[Œuf poché d'une rondeur parfaite sur
-    toast doré]], [Wikimedia Commons / CC BY-SA 3.0],
-    [#strong[Fiche 16]], [#emph[Mayonnaise maison ferme et dorée montée
-    au fouet manuel]], [Wikimedia Commons / CC BY-SA 4.0],
-    [#strong[Fiche 17]], [#emph[Sauce hollandaise veloutée et onctueuse
-    nappant la cuillère]], [Wikimedia Commons / CC BY-SA 4.0],
-    [#strong[Fiche 18]], [#emph[Sauce béchamel soyeuse et veloutée sans
-    grumeaux]], [Wikimedia Commons / CC BY-SA 4.0],
-    [#strong[Fiche 19]], [#emph[Pain artisanal au levain doré à croûte
-    craquante en cocotte]], [Wikimedia Commons / CC BY-SA 4.0],
-    [#strong[Fiche 20]], [#emph[Bocaux de légumes lactofermentés
-    croquants en saumure vivante]], [Wikimedia Commons / CC BY-SA 4.0],
-    [#strong[Fiche 21]], [#emph[Fromage frais égoutté à l'étamine et
-    ricotta maison]], [Wikimedia Commons / CC BY-SA 3.0],
-    [#strong[Fiche 22]], [#emph[Moelleux au chocolat noir intense à cœur
-    fondant coulant]], [Wikimedia Commons / CC BY-SA 4.0],
-    [#strong[Fiche 23]], [#emph[Pâte brisée sablée pur beurre étalée
-    pour la garniture]], [Wikimedia Commons / CC BY-SA 4.0],
-    [#strong[Fiche 24]], [#emph[Mousse au chocolat aérienne et légère à
-    l'aquafaba]], [Wikimedia Commons / CC BY-SA 4.0],
-    [#strong[Fiche 25]], [#emph[Omelette norvégienne dorée et flambée au
-    cœur de glace intact]], [Wikimedia Commons / CC BY-SA 4.0],
-    [#strong[Fiche 26]], [#emph[Crème glacée onctueuse turbinée sans
-    sorbetière grâce au sel]], [Wikimedia Commons / CC BY-SA 4.0],
+    [#strong[\01. Spaghetti à la carbonara]], [CC BY-SA 4.0 /
+    Wikimedia], [#strong[\14. Œuf mollet parfait]], [CC BY-SA 4.0 /
+    Wikimedia],
+    [#strong[\02. Dahl de lentilles corail]], [CC BY-SA 4.0 /
+    Wikimedia], [#strong[\15. Œuf poché sur toast doré]], [CC BY-SA 3.0
+    \/ Wikimedia],
+    [#strong[\03. Tofu croustillant laqué tamari]], [CC BY-SA 3.0 /
+    Wikimedia], [#strong[\16. Mayonnaise ferme au fouet]], [CC BY-SA 4.0
+    \/ Wikimedia],
+    [#strong[\04. Pommes sarladaises canard]], [CC BY-SA 4.0 /
+    Wikimedia], [#strong[\17. Sauce hollandaise veloutée]], [CC BY-SA
+    4.0 / Wikimedia],
+    [#strong[\05. Grand aïoli provençal]], [CC BY-SA 3.0 /
+    Wikimedia], [#strong[\18. Sauce béchamel soyeuse]], [CC BY-SA 4.0 /
+    Wikimedia],
+    [#strong[\06. Purée selon Blumenthal]], [CC BY-SA 4.0 /
+    Wikimedia], [#strong[\19. Pain cocotte au levain]], [CC BY-SA 4.0 /
+    Wikimedia],
+    [#strong[\07. Carottes glacées au beurre]], [CC BY-SA 4.0 /
+    Wikimedia], [#strong[\20. Pickles et légumes fermentés]], [CC BY-SA
+    4.0 / Wikimedia],
+    [#strong[\08. Salade verte vinaigrette]], [CC BY-SA 4.0 /
+    Wikimedia], [#strong[\21. Fromage frais en 15 minutes]], [CC BY-SA
+    3.0 / Wikimedia],
+    [#strong[\09. Grand bouillon d'or et glace]], [CC BY-SA 4.0 /
+    Wikimedia], [#strong[\22. Moelleux au chocolat noir]], [CC BY-SA 4.0
+    \/ Wikimedia],
+    [#strong[\10. Consommé limpide clarifié]], [CC BY-SA 3.0 /
+    Wikimedia], [#strong[\23. Pâte brisée pur beurre]], [CC BY-SA 4.0 /
+    Wikimedia],
+    [#strong[\11. Pavé de bœuf saisi en fonte]], [CC BY-SA 4.0 /
+    Wikimedia], [#strong[\24. Mousse chocolat à l'aquafaba]], [CC BY-SA
+    4.0 / Wikimedia],
+    [#strong[\12. Déglaçage minute au vin rouge]], [CC BY-SA 4.0 /
+    Wikimedia], [#strong[\25. Omelette norvégienne flambée]], [CC BY-SA
+    4.0 / Wikimedia],
+    [#strong[\13. Ceviche de cabillaud lime]], [CC BY-SA 4.0 /
+    Wikimedia], [#strong[\26. Glace turbinée au sel]], [CC BY-SA 4.0 /
+    Wikimedia],
   )]
   , kind: table
   )
 
 #divider()
 
-== 4. SCHÉMAS VECTORIELS SVG ET FIGURES SCIENTIFIQUES
-<schémas-vectoriels-svg-et-figures-scientifiques>
+== 4. Schémas Vectoriels SVG et Figures Didactiques
+<schémas-vectoriels-svg-et-figures-didactiques>
 L'ensemble des diagrammes techniques, frises chronologiques, matrices de
 transformation et coupes anatomiques (Figures vectorielles SVG
-numérotées 1 à 48) ont été conçus et codés spécifiquement pour cet
-ouvrage dans le respect des normes du W3C. Ils sont placés sous licence
-libre #strong[Creative Commons Attribution -- Partage dans les Mêmes
+numérotées 1 à 48) ont été créés spécifiquement pour cet ouvrage dans le
+respect des normes du W3C. Ils sont placés sous licence libre
+#strong[Creative Commons Attribution -- Partage dans les Mêmes
 Conditions 4.0 International (CC BY-SA 4.0)] :
 
-- Conception graphique vectorielle : Équipe éditoriale de #emph[La
-  Cuisine Expliquée].
-- Typographie embarquée : #emph[Liberation Sans], #emph[Liberation
-  Serif] (polices libres Open Source).
-- Palette chromatique officielle : Rouge thermique (`#dc2626`), Bleu
-  aqueux (`#2563eb`), Ambre lipidique (`#d97706`), Vert acide/santé
-  (`#16a34a`), Cyan cryoscopique (`#0284c7`), Ardoise métallique
-  (`#0f172a`).
+- #strong[Conception graphique vectorielle :] Équipe éditoriale de
+  #emph[La Cuisine Expliquée].
+- #strong[Typographie embarquée :] Polices libres Open Source
+  #emph[Liberation Sans] et #emph[Liberation Serif].
+- #strong[Charte chromatique chaude officielle :] Bordeaux noble
+  (`#701C1A`), Terracotta (`#A3432B`), Ambre doré & caramel (`#B45309`),
+  Bistre boisé (`#6B4423`), Fond crème doux (`#FCFBF7`), Ardoise
+  métallique sombre (`#0f172a`).
 
 
 

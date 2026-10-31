@@ -67,6 +67,8 @@ Le couteau de chef est le premier instrument du cuisinier. Les accidents graves 
 
 ---
 
+---
+
 ## 4. RISQUES GAZEUX ET INTOXICATIONS CHIMIQUES
 
 ### A. La Fuite de Gaz et le Réflexe « Zéro Étincelle »
@@ -80,6 +82,19 @@ En cas d'odeur suspecte de gaz (tétrahydrothiophène au relent d'œuf pourri) :
 Dans l'obsession de la désinfection du plan de travail :
 - **L'INTERDICTION FORMELLE : Ne jamais mélanger de l'eau de Javel avec un acide (vinaigre blanc ou détartrant anticalcaire)**.
 - L'hypochlorite de sodium ($\mathrm{NaClO}$) en milieu acide dégage instantanément du **dichlore gazeux ($\mathrm{Cl}_2$)**, gaz suffocant toxique qui détruit les alvéoles pulmonaires.
+
+---
+
+
+### B. Les Poisons Végétaux du Foyer : Solanine, Lectines et Cyanure
+
+Le règne végétal n'a pas conçu ses fruits et ses racines pour nous régaler, mais pour assurer sa propre survie face aux prédateurs :
+- **La Solanine des Pommes de Terre Verdies :**
+  Exposée à la lumière du soleil, la pomme de terre synthétise de la chlorophylle (verte) et, conjointement, un alcaloïde toxique amer : la **solanine**. Neurotoxique et irritante pour la muqueuse gastrique, la solanine est thermostable : la cuisson à l'eau ou la friture ne la détruit pas. *Règle absolue :* éplucher largement ou jeter tout tubercule présentant des marbrures verdâtres sous la peau.
+- **Le Danger Méconnu des Haricots Rouges Crus (La Phytohémagglutinine) :**
+  Les graines de haricots rouges secs renferment une concentration massive de lectines toxiques, la **phytohémagglutinine**. Ingérer une poignée de haricots rouges mal cuits suffit à déclencher des vomissements incoercibles et des hémorragies digestives par agglutination massive des cellules intestinales. Pour inactiver cette toxine, **une ébullition franche à $100^\circ\mathrm{C}$ pendant 10 minutes minimum est indispensable**. Les cuissons lentes à basse température (mijoteuses électriques à $75	ext{--}80^\circ\mathrm{C}$) sont particulièrement dangereuses : elles ne détruisent pas la toxine mais multiplient sa cytotoxicité par cinq !
+- **L'Amygdaline et le Cyanure des Amandes Amères :**
+  Les amandes amères, les noyaux d'abricots, de cerises et de pêches renferment de l'hétéroside cyanogénétique (l'amygdaline). En présence d'eau et lors du broyage, des enzymes végétales libèrent du **cyanure d'hydrogène** ($\mathrm{HCN}$), poison respiratoire cellulaire foudroyant. La cuisson thermique évapore et dénature ce poison, rendant les préparations traditionnelles inoffensives lorsqu'elles sont chauffées.
 
 ---
 

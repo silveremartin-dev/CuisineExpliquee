@@ -29,6 +29,26 @@ L'œuf de poule (*Gallus gallus domesticus*) est un chef-d'œuvre de packaging b
 
 ---
 
+C'est l'un des paradoxes les plus frappants de la cuisine mondiale : aux États-Unis, les œufs sont obligatoirement vendus en rayon réfrigéré ; en France et dans toute l'Union Européenne, ils sont stockés à température ambiante dans les supermarchés. Pourquoi ?
+
+### A. Le Paradigme Américain (Lavage chimique)
+Aux États-Unis (réglementation USDA), les œufs subissent immédiatement après la ponte un lavage industriel à l'eau chaude savonneuse et désinfectante pour éliminer les fientes.
+- **La conséquence physique :** Le lavage dissout et décape intégralement la **cuticule protectrice**. 
+- Les 10 000 pores de la coquille se retrouvent grands ouverts sur l'atmosphère. Si l'œuf reste à température ambiante, la moindre bactérie de surface ou condensation pénètre par capillarité à l'intérieur en quelques heures.
+- **Verdict :** Un œuf lavé **doit impérativement rester au réfrigérateur ($<4^\circ\mathrm{C}$)** pour bloquer le métabolisme bactérien.
+
+### B. Le Paradigme Européen (Intégrité de la cuticule)
+En Europe (norme CE n° 589/2008), le lavage des œufs de table de classe A est **strictement interdit**.
+- **La raison scientifique :** La cuticule naturelle reste intacte et imperméable.
+- Si un œuf froid est sorti du réfrigérateur et laissé dans une cuisine chaude, l'humidité ambiante se condense sur la coquille froide (phénomène du point de rosée). Cette eau liquide superficielle dissout les impuretés et fournit un canal aqueux permettant aux salmonelles de franchir les pores par pression capillaire.
+- Pour éviter ces cycles de condensation dangereux, l'Europe impose de conserver les œufs à température stable, idéalement entre $12^\circ\mathrm{C}$ et $18^\circ\mathrm{C}$, ou au réfrigérateur **à condition de ne pas les faire transpirer**.
+
+### C. La Règle Pratique du Cuisinier
+- **À la maison :** Si votre cuisine oscille entre $20^\circ\mathrm{C}$ et $25^\circ\mathrm{C}$ en été, placez vos œufs au réfrigérateur (dans leur boîte carton fermée pour limiter les échanges d'odeurs à travers les pores et absorber l'humidité).
+- **Règle absolue d'utilisation :** Ne cuisinez jamais un œuf sortant directement du frigo pour une cuisson douce ou une émulsion ! Laissez-le revenir à température ambiante $20\text{--}30\,\mathrm{minutes}$ avant usage.
+
+---
+
 ## 2. LA COAGULATION FRACTIONNÉE ET LE THERMOMÈTRE DE L'OVALBUMINE
 
 L'œuf ne possède pas une température unique de coagulation : c'est un cocktail de protéines aux seuils thermiques décalés :
@@ -50,6 +70,16 @@ Pourquoi certains œufs durs présentent-ils un cercle vert-grisâtre peu engage
 - Dans l'albumen, les protéines riches en soufre (cystéine, méthionine) se décomposent sous une ébullition trop prolongée ($>100^\circ\mathrm{C}$), libérant du sulfure d'hydrogène gazeux ($\mathrm{H}_2\mathrm{S}$).
 - Ce gaz migre vers le jaune où il rencontre les ions fer ($\mathrm{Fe}^{2+}$) de la phosvitine pour former du **sulfure de fer ($\mathrm{FeS}$)**, composé vert-noir nauséabond.
 - **La Parade :** Cuire les œufs à frémissement doux ($90^\circ\mathrm{C}$) pendant **9 minutes maximum**, et les plonger **immédiatement dans un grand bol d'eau glacée**. Le choc thermique stoppe la cuisson et attire le gaz vers la coquille, préservant un jaune d'un orange éclatant.
+
+---
+
+### C. Le Protocole Physique du Tempérage dans un Liquide Chaud
+- **Le piège fatal :** Si vous versez des jaunes d'œufs crus directement dans du lait frémissant à $85^\circ\mathrm{C}$ pour faire une crème anglaise, la zone de contact subit un choc thermique instantané. L'ovotransferrine ($62^\circ\mathrm{C}$) et les lipovitellines coagulent en une fraction de seconde : vous obtenez une soupe d'œufs brouillés sucrés.
+- **Le protocole physique du Tempérage :**
+  1. Verser **un filet modéré de lait chaud** (environ $1/3$ du volume) sur les jaunes tout en fouettant vivement dans le cul-de-poule froid.
+  2. Pourquoi ça marche ? La grande masse des jaunes froids absorbe la chaleur du petit filet de liquide. La température du mélange s'élève doucement à $45\text{--}50^\circ\mathrm{C}$ sans jamais atteindre le seuil de dénaturation ($62^\circ\mathrm{C}$).
+  3. Une fois les jaunes ainsi « tempérés » et dilués, le réseau protéique est espacé par l'eau et le sucre, ce qui repousse le seuil de coagulation à plus de $82^\circ\mathrm{C}$. On peut alors reverser le mélange dans la casserole en toute sécurité.
+
 
 ---
 
@@ -152,34 +182,3 @@ Elles s'interposent entre les gouttelettes d'huile et la phase aqueuse, formant 
 5. **L'Assaisonnement d'Équilibre :** Ajouter le jus de citron (qui allège le gras sur la langue) et une pointe de piment de Cayenne. Servir immédiatement sur des asperges, des poissons pochés ou des œufs bénédictine.
 
 ---
-
-## 2. POURQUOI UN ŒUF DOIT-IL (OU NON) ÊTRE AU FRIGO ?
-
-C'est l'un des paradoxes les plus frappants de la cuisine mondiale : aux États-Unis, les œufs sont obligatoirement vendus en rayon réfrigéré ; en France et dans toute l'Union Européenne, ils sont stockés à température ambiante dans les supermarchés. Pourquoi ?
-
-### A. Le Paradigme Américain (Lavage chimique)
-Aux États-Unis (réglementation USDA), les œufs subissent immédiatement après la ponte un lavage industriel à l'eau chaude savonneuse et désinfectante pour éliminer les fientes.
-- **La conséquence physique :** Le lavage dissout et décape intégralement la **cuticule protectrice**. 
-- Les 10 000 pores de la coquille se retrouvent grands ouverts sur l'atmosphère. Si l'œuf reste à température ambiante, la moindre bactérie de surface ou condensation pénètre par capillarité à l'intérieur en quelques heures.
-- **Verdict :** Un œuf lavé **doit impérativement rester au réfrigérateur ($<4^\circ\mathrm{C}$)** pour bloquer le métabolisme bactérien.
-
-### B. Le Paradigme Européen (Intégrité de la cuticule)
-En Europe (norme CE n° 589/2008), le lavage des œufs de table de classe A est **strictement interdit**.
-- **La raison scientifique :** La cuticule naturelle reste intacte et imperméable.
-- Si un œuf froid est sorti du réfrigérateur et laissé dans une cuisine chaude, l'humidité ambiante se condense sur la coquille froide (phénomène du point de rosée). Cette eau liquide superficielle dissout les impuretés et fournit un canal aqueux permettant aux salmonelles de franchir les pores par pression capillaire.
-- Pour éviter ces cycles de condensation dangereux, l'Europe impose de conserver les œufs à température stable, idéalement entre $12^\circ\mathrm{C}$ et $18^\circ\mathrm{C}$, ou au réfrigérateur **à condition de ne pas les faire transpirer**.
-
-### C. La Règle Pratique du Cuisinier
-- **À la maison :** Si votre cuisine oscille entre $20^\circ\mathrm{C}$ et $25^\circ\mathrm{C}$ en été, placez vos œufs au réfrigérateur (dans leur boîte carton fermée pour limiter les échanges d'odeurs à travers les pores et absorber l'humidité).
-- **Règle absolue d'utilisation :** Ne cuisinez jamais un œuf sortant directement du frigo pour une cuisson douce ou une émulsion ! Laissez-le revenir à température ambiante $20\text{--}30\,\mathrm{minutes}$ avant usage.
-
----
-
----
-
-### B. Règle 2 : L'Introduction dans un Liquide Chaud (Le « Tempérage »)
-- **Le piège fatal :** Si vous versez des jaunes d'œufs crus directement dans du lait frémissant à $85^\circ\mathrm{C}$ pour faire une crème anglaise, la zone de contact subit un choc thermique instantané. L'ovotransferrine ($62^\circ\mathrm{C}$) et les lipovitellines coagulent en une fraction de seconde : vous obtenez une soupe d'œufs brouillés sucrés.
-- **Le protocole physique du Tempérage :**
-  1. Verser **un filet modéré de lait chaud** (environ $1/3$ du volume) sur les jaunes tout en fouettant vivement dans le cul-de-poule froid.
-  2. Pourquoi ça marche ? La grande masse des jaunes froids absorbe la chaleur du petit filet de liquide. La température du mélange s'élève doucement à $45\text{--}50^\circ\mathrm{C}$ sans jamais atteindre le seuil de dénaturation ($62^\circ\mathrm{C}$).
-  3. Une fois les jaunes ainsi « tempérés » et dilués, le réseau protéique est espacé par l'eau et le sucre, ce qui repousse le seuil de coagulation à plus de $82^\circ\mathrm{C}$. On peut alors reverser le mélange dans la casserole en toute sécurité.

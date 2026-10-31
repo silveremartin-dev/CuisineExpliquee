@@ -56,34 +56,6 @@ Lorsque des matières grasses chaudes entrent en contact avec du plastique à pl
 
 ---
 
-## 4. ÉCONOMIE DOMESTIQUE : RESTAURER ET CULOTTER UNE FONTE DE BROCANTE
-
-Une poêle en fonte centenaire rouillée et noircie par des décennies d'abandon n'est jamais morte : la rouille n'est qu'un oxyde de surface ($\mathrm{Fe}_2\mathrm{O}_3$). La structure cristalline dense du fer coulé est intacte. En trois étapes simples, vous pouvez lui rendre un revêtement noir miroir supérieur à n'importe quelle poêle antiadhésive neuve :
-
-1. **Le Décapage Doux au Vinaigre Blanc :** Immerger 60 minutes dans un mélange 50/50 d'eau et de vinaigre blanc. Frotter à la paille de fer fine pour décoller la rouille jusqu'au métal gris brut. Rincer promptement.
-2. **Le Séchage Thermique Immédiat :** Essuyer au torchon et poser 5 minutes sur feu doux pour chasser l'humidité microscopique des pores.
-3. **Le Culottage par Réticulation d'Huile de Lin :** Déposer une demi-cuillère à café d'huile de lin alimentaire. Étaler sur toute la poêle, puis **frotter avec un chiffon sec comme pour tout retirer** (la poêle doit paraître presque sèche). Enfourner à l'envers à **$230\text{--}240^\circ\mathrm{C}$ pendant 1 heure**. Répéter 3 fois : le métal se pare d'un émail noir d'ébène polymérisé, inusable et totalement antiadhésif.
-
----
-
-## 5. LES GROS APPAREILS DU FOYER : FONCTIONNEMENT, CHOIX ET MAINTENANCE
-
-Au-delà de la poêle et de la casserole, la cuisine moderne s'appuie sur trois machines thermiques majeures :
-
-### A. Le Four Domestique : Chaleur Statique vs Chaleur Tournante
-- **Convection Naturelle (Chaleur Statique Sole / Voûte) :** L'air chaud monte doucement depuis la résistance basse (sole) et redescend le long des parois. C'est le mode idéal pour les pains, gâteaux et soufflés : il ne dessèche pas la surface prématurément et permet un développement volumique harmonieux des alvéoles.
-- **Chaleur Tournante (Convection Forcée Pulsée) :** Un ventilateur couplé à une résistance circulaire brasse l'air en permanence. Cela homogénéise la température dans toute la cavité, mais accélère l'évaporation de surface ($+30\,\%$ de perte hydrique). Idéal pour les cuissons croustillantes (biscuits, gratins, légumes rôtis) mais à proscrire pour les pâtisseries aériennes ou les viandes délicates.
-- **Maintenance & Étalonnage :** La majorité des thermostats de four affichent un écart de $\pm 15^\circ\mathrm{C}$ avec la réalité. Investir dans un thermomètre mécanique suspendu en acier inox ($10\text{ €}$) permet d'étalonner la température réelle de la cavité. Nettoyer les joints de porte pour éviter les fuites de calories.
-
-### B. Le Réfrigérateur et le Congélateur : La Physique du Gradient Froid
-- **La Stratification Verticale :** L'air froid étant plus dense, il descend. La zone la plus froide ($0\text{ à }2^\circ\mathrm{C}$) se situe généralement tout en bas, juste au-dessus du bac à légumes (destinée aux viandes hachées et poissons crus). La zone médiane ($4\text{ à }5^\circ\mathrm{C}$) accueille les plats cuisinés et laitages. Le bac à légumes ($6\text{ à }8^\circ\mathrm{C}$) protège les cellules végétales du choc thermique. La porte ($6\text{ à }8^\circ\mathrm{C}$) est réservée aux condiments, beurre et œufs.
-- **Le Dégivrage :** Une couche de 2 mm de givre sur les parois du congélateur agit comme un isolant thermique qui force le compresseur à surconsommer de $20\,\%$ à $30\,\%$ d'électricité. Dégivrer deux fois par an est un geste écologique et économique direct.
-
-### C. Le Four à Micro-Ondes : Mythes, Vérités et Usage Rationnel
-- **La Physique de l'Agitation Dipolaire :** Le magnétron émet des ondes électromagnétiques à la fréquence de $2{,}45\,\mathrm{GHz}$. Cette fréquence correspond au mouvement de rotation des molécules d'eau, qui possèdent un pôle positif et un pôle négatif (molécules dipolaires). En s'alignant sur le champ oscillant deux milliards et demi de fois par seconde, les molécules d'eau frottent entre elles, convertissant l'énergie électromagnétique en agitation thermique (chaleur).
-- **Ce que le Micro-Ondes Ne Fait Pas :** Il n'émet aucune radiation ionisante et ne rend pas les aliments radioactifs. En revanche, comme la température ne dépasse pas $100^\circ\mathrm{C}$ en milieu aqueux libre, il ne produit **aucune réaction de Maillard ni croûte croustillante**.
-- **L'Usage Malin :** Décongélation douce par impulsions pour ne pas cuire les bords, réchauffage des liquides et cuisson vapeur rapide sous cloche de verre borosilicaté. Bannir les contenants en plastique au profit du verre.
-
 ---
 
 ## 4. ÉCONOMIE DOMESTIQUE CIRCULAIRE : SAUVER ET CULOTTER UNE POÊLE EN FONTE DE BROCANTE POUR 15 €
@@ -116,7 +88,7 @@ Vous voici propriétaire d'un instrument souverain, exempt de tout perturbateur 
 
 ---
 
-## 7. LE SYSTÈME D : DÉTOURNER LES OBJETS DU QUOTIDIEN POUR REMPLACER LES USTENSILES RARES
+## 5. LE SYSTÈME D : DÉTOURNER LES OBJETS DU QUOTIDIEN POUR REMPLACER LES USTENSILES RARES
 
 L'industrie ménagère a bâti sa prospérité en inventant des centaines de gadgets hyperspécialisés conçus pour un usage unique : dénoyauteurs, presses-ail, mandolines fragiles, turbines coûteuses et mortiers massifs pesant cinq kilos. 
 
@@ -138,3 +110,33 @@ La démarche de *La Cuisine Expliquée* enseigne que la compréhension de la phy
 #### 💡 Le Secret du Praticien Minimaliste
 Avant d'acheter le moindre ustensile culinaire vanté par une émission ou un catalogue, posez-vous toujours cette question : *« Quelle est la contrainte physique réelle de cette opération (couper, écraser, filtrer, chauffer doucement, maintenir froid) ? »*. Dans $95\,\%$ des cas, votre tiroir contient déjà un objet simple en acier, en verre ou en bois capable de reproduire ce phénomène sans dépenser le moindre centime ni encombrer vos étagères.
 :::
+
+---
+
+## 6. LES GROS APPAREILS DU FOYER : FONCTIONNEMENT, CHOIX ET MAINTENANCE
+
+Au-delà de la poêle et de la casserole, la cuisine moderne s'appuie sur trois machines thermiques majeures :
+
+### A. Le Four Domestique : Chaleur Statique vs Chaleur Tournante
+- **Convection Naturelle (Chaleur Statique Sole / Voûte) :** L'air chaud monte doucement depuis la résistance basse (sole) et redescend le long des parois. C'est le mode idéal pour les pains, gâteaux et soufflés : il ne dessèche pas la surface prématurément et permet un développement volumique harmonieux des alvéoles.
+- **Chaleur Tournante (Convection Forcée Pulsée) :** Un ventilateur couplé à une résistance circulaire brasse l'air en permanence. Cela homogénéise la température dans toute la cavité, mais accélère l'évaporation de surface ($+30\,\%$ de perte hydrique). Idéal pour les cuissons croustillantes (biscuits, gratins, légumes rôtis) mais à proscrire pour les pâtisseries aériennes ou les viandes délicates.
+- **Maintenance & Étalonnage :** La majorité des thermostats de four affichent un écart de $\pm 15^\circ\mathrm{C}$ avec la réalité. Investir dans un thermomètre mécanique suspendu en acier inox ($10\text{ €}$) permet d'étalonner la température réelle de la cavité. Nettoyer les joints de porte pour éviter les fuites de calories.
+
+### B. Le Réfrigérateur et le Congélateur : La Physique du Gradient Froid
+- **La Stratification Verticale :** L'air froid étant plus dense, il descend. La zone la plus froide ($0\text{ à }2^\circ\mathrm{C}$) se situe généralement tout en bas, juste au-dessus du bac à légumes (destinée aux viandes hachées et poissons crus). La zone médiane ($4\text{ à }5^\circ\mathrm{C}$) accueille les plats cuisinés et laitages. Le bac à légumes ($6\text{ à }8^\circ\mathrm{C}$) protège les cellules végétales du choc thermique. La porte ($6\text{ à }8^\circ\mathrm{C}$) est réservée aux condiments, beurre et œufs.
+- **Le Dégivrage :** Une couche de 2 mm de givre sur les parois du congélateur agit comme un isolant thermique qui force le compresseur à surconsommer de $20\,\%$ à $30\,\%$ d'électricité. Dégivrer deux fois par an est un geste écologique et économique direct.
+
+### C. Le Four à Micro-Ondes : Mythes, Vérités et Usage Rationnel
+- **La Physique de l'Agitation Dipolaire :** Le magnétron émet des ondes électromagnétiques à la fréquence de $2{,}45\,\mathrm{GHz}$. Cette fréquence correspond au mouvement de rotation des molécules d'eau, qui possèdent un pôle positif et un pôle négatif (molécules dipolaires). En s'alignant sur le champ oscillant deux milliards et demi de fois par seconde, les molécules d'eau frottent entre elles, convertissant l'énergie électromagnétique en agitation thermique (chaleur).
+- **Ce que le Micro-Ondes Ne Fait Pas :** Il n'émet aucune radiation ionisante et ne rend pas les aliments radioactifs. En revanche, comme la température ne dépasse pas $100^\circ\mathrm{C}$ en milieu aqueux libre, il ne produit **aucune réaction de Maillard ni croûte croustillante**.
+- **L'Usage Malin :** Décongélation douce par impulsions pour ne pas cuire les bords, réchauffage des liquides et cuisson vapeur rapide sous cloche de verre borosilicaté. Bannir les contenants en plastique au profit du verre.
+
+---
+
+### D. L'Énigme du Four : Pourquoi Préchauffer Plutôt que Partir à Froid ?
+
+Une question hante de nombreux cuisiniers amateurs : pourquoi la quasi-totalité des recettes exige-t-elle un four préchauffé à $180^\circ\mathrm{C}$ plutôt que d'enfourner directement à froid en économisant de l'énergie ?
+- **La thermodynamique de l'« Oven Spring » (La Poussée du Four) :** 
+  Dans une pâte à gâteau ou un pâton de pain, le volume et le moelleux dépendent de la détente brutale des microbulles de gaz ($\mathrm{CO}_2$ de la levure ou vapeur d'eau piégée). Dans un four préalablement porté à $180	ext{--}200^\circ\mathrm{C}$, le transfert d'énergie par convection et rayonnement est foudroyant : l'eau de surface et les gaz internes entrent immédiatement en ébullition et se dilatent exponentiellement, propulsant la pâte vers le haut. Cette expansion maximale doit impérativement se produire **avant** que la croûte extérieure ne coagule et ne se fige sous l'effet de la chaleur.
+- **Le piège du démarrage à four froid :**
+  À l'inverse, lors d'un démarrage à froid, la température monte lentement ($30^\circ\mathrm{C}$, $60^\circ\mathrm{C}$, $90^\circ\mathrm{C}$). À ces paliers tièdes, les matières grasses (beurre) fondent prématurément et s'écoulent hors de la mie avant que l'amidon n'ait gélatinisé pour les emprisonner. Les gaz s'échappent progressivement sans faire gonfler la pâte, et la surface s'assèche par évaporation lente. Résultat physique : un gâteau dense, plat, lourd et huileux. Le préchauffage n'est pas une coquetterie de chef, mais le déclencheur cinétique de la texture alvéolée.

@@ -29,6 +29,16 @@ Nos enzymes digestives sont physiquement incapables de sectionner ces cristaux d
 
 ---
 
+### C. La Mécanique de l'Élimination : Ballast des Fibres, Transit et Évacuation Métabolique
+
+Bien manger implique de comprendre l'aboutissement inéluctable du cycle digestif :
+- **Le Rôle de Ballast des Fibres Insolubles :**
+  La cellulose et la lignine des parois végétales ne sont pas digérées, mais absorbent l'eau comme des éponges dans le côlon. En augmentant le volume et l'hydratation du bol fécal, elles exercent une pression mécanique sur les parois coliques, déclenchant les contractions réflexes du péristaltisme. Sans fibres insolubles, le bol se dessèche, stagne et ralentit le transit, exposant la muqueuse à des métabolites bactériens délétères.
+- **L'Évacuation des Déchets Métaboliques et de l'Urée :**
+  La défécation n'évacue pas seulement les restes d'aliments non absorbés : elle est l'émonctoire majeur par lequel le foie élimine les pigments biliaires dégradés (la stercobiline qui donne sa couleur aux selles), le cholestérol excédentaire et les métabolites neutralisés. Les reins complètent cette filtration continue en extrayant l'urée, résidu de la dégradation des acides aminés azotés, éliminée dans l'eau urinaire.
+
+---
+
 ## 2. LA RÈGLE DES TRENTE VÉGÉTAUX PAR SEMAINE
 
 Les grandes études épidémiologiques contemporaines (notamment les découvertes de l'*American Gut Project*) démontrent que la santé humaine optimale et la longévité ne dépendent pas de l'exclusion dogmatique d'un aliment, mais de la **biodiversité végétale ingérée au fil de la semaine**.

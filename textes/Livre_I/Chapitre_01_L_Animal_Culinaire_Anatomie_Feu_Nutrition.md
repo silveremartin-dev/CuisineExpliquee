@@ -89,3 +89,14 @@ Nos papilles gustatives et nos neurones olfactifs ne sont pas de simples instrum
    - *Lest mécanique :* Elles captent l'eau, forment un bol fécal volumineux et stimulent le péristaltisme, garantissant une évacuation rapide des résidus.
    - *Épuration métabolique :* Elles piègent les acides biliaires oxydés, les toxines et le cholestérol excédentaire, empêchant leur réabsorption hépatique.
    - *Évacuation des toxiques :* L'urine évacue l'urée (déchet du métabolisme azoté) et les métabolites hydrosolubles ; les matières fécales évacuent les résidus bactériens, les pigments biliaires et les solides non assimilables.
+
+
+### C. Biologie Comparée de la Digestion : Cellulose des Ruminants et Toxicités Spécifiques
+
+Ce qui nourrit une espèce peut en tuer une autre. La physiologie humaine est le résultat d'un arbitrage évolutif strict :
+- **L'Incapacité Humaine à Digérer la Cellulose :** 
+  L'amidon et la cellulose sont tous deux de longues chaînes de glucose. Mais là où l'amidon est relié par des liaisons $\alpha(1\to4)$ que notre amylase salivaire et pancréatique brise en quelques secondes, la cellulose végétale est liée par des liaisons $\beta(1\to4)$. L'homme ne possède aucune enzyme capable de cliver cette liaison : l'herbe et les feuilles brutes traversent notre tube digestif sans nous apporter la moindre calorie. Les ruminants (vaches, moutons), en revanche, possèdent une cuve de fermentation anaérobie géante (le rumen) abritant des milliards de bactéries symbiotiques sécrétant des cellulases. Ils transforment la cellulose en acides gras volatils hautement énergétiques.
+- **La Théobromine du Chocolat (Mortelle pour les Chiens et les Chats) :**
+  L'homme métabolise la théobromine et la caféine du cacao en deux à trois heures grâce au cytochrome hépatique $\mathrm{CYP1A2}$. Chez les canidés et les félins, cette voie enzymatique est quasi absente : la théobromine s'accumule pendant plus de 18 heures dans leur sang, provoquant tachycardie extrême, vasoconstriction coronaire, convulsions et arrêt cardiaque fatal pour une simple tablette de chocolat noir.
+- **Les Thiosulfates de l'Ail et de l'Oignon :**
+  Les composés organosulfurés qui font la noblesse aromatique du genre *Allium* en cuisine humaine oxydent l'hémoglobine des chiens et des chats, formant des corps de Heinz et déclenchant une anémie hémolytique foudroyante. Ce qui protège notre système cardiovasculaire détruit le leur.

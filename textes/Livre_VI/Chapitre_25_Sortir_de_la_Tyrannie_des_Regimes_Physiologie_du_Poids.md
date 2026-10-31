@@ -45,3 +45,15 @@ Manger un repas en 7 minutes devant un écran de smartphone est une hérésie bi
 Toutes les calories ne se valent pas sur le plan métabolique :
 - **500 Calories Vides Industrielles (Un soda et un paquet de chips) :** Ce sont des sucres raffinés rapides et des graisses cuites dégradées dépourvues de fibres, de minéraux et de vitamines. Elles déclenchent un pic d'insuline massif qui stocke immédiatement les sucres sous forme de graisse hépatique, suivi d'une hypoglycémie réactionnelle 45 minutes plus tard : **vous avez de nouveau faim avant même d'avoir fini de digérer**.
 - **500 Calories de Matière Brute (Un pavé de poisson, des lentilles vertes et des carottes étuvées) :** Les fibres solubles et insolubles ralentissent l'absorption du glucose, les protéines complètes stimulent la synthèse musculaire et les minéraux comblent les récepteurs cellulaires. **La satiété est stable, diffuse et persiste pendant 4 à 5 heures sans coup de pompe.**
+
+---
+
+### B. Immunologie de l'Assiette : Allergies Vraies (IgE) versus Intolérances Enzymatiques
+
+La confusion entre allergie et intolérance empoisonne le débat nutritionnel contemporain :
+- **L'Allergie Vraie (La Réaction Immunitaire Médiée par les IgE) :**
+  Le système immunitaire identifie par erreur une protéine inoffensive (albumine de l'œuf, tropomyosine de la crevette, protéines de réserve de l'arachide) comme un parasite mortel. Les plasmocytes sécrètent des anticorps **IgE** qui se fixent sur les mastocytes, libérant un flot massif d'histamine. La réaction est violente, immédiate et engage le pronostic vital (œdème de Quincke, bronchospasme, choc anaphylactique). Elle exige l'éviction absolue de la moindre trace moléculaire.
+- **L'Intolérance Métabolique (Le Déficit en Outils Enzymatiques) :**
+  L'intolérance au lactose n'est pas une maladie : c'est l'extinction programmée de la synthèse de **lactase** après le sevrage, commune à 70% de la population mondiale adulte. Le sucre du lait ne pouvant être hydrolysé dans l'intestin grêle, il parvient intact dans le côlon où les bactéries le fermentent en gaz ($\mathrm{H}_2$, $\mathrm{CO}_2$) et en acides gras, provoquant ballonnements et diarrhée motrice. C'est un inconfort digestif mécanique, sans aucun risque vital ni réaction immunitaire.
+- **La Maladie Cœliaque (L'Auto-Immunité Déclenchée par la Gliadine) :**
+  Distincte de l'allergie et de la simple sensibilité digestive, la maladie cœliaque est une affection auto-immune génétique où la fraction gliadine du gluten provoque l'atrophie totale des villosités de l'intestin grêle, anéantissant l'absorption des nutriments (fer, calcium, vitamines).

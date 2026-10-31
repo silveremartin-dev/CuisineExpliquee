@@ -1,72 +1,75 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 480" width="100%" height="100%">
-  <rect width="920" height="480" rx="14" fill="#fcfbf7" stroke="#cbd5e1" stroke-width="2"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 500" width="100%" height="100%">
+  <rect width="940" height="500" rx="14" fill="#FCFBF7" stroke="#D1C7B7" stroke-width="1.5"/>
   
-  <text x="460" y="42" font-family="Liberation Sans, Arial, sans-serif" font-size="24" font-weight="bold" fill="#701C1A" text-anchor="middle">LES TROIS VECTEURS THERMODYNAMIQUES EN CUISINE</text>
-  <text x="460" y="70" font-family="Liberation Sans, Arial, sans-serif" font-size="15" fill="#64748b" text-anchor="middle">Comment l'énergie traverse la matière : conduction, convection et rayonnement</text>
+  <text x="470" y="38" font-family="Liberation Serif, Georgia, serif" font-size="22" font-weight="bold" fill="#701C1A" text-anchor="middle">LES TROIS VECTEURS THERMODYNAMIQUES EN CUISINE</text>
+  <text x="470" y="62" font-family="Liberation Sans, Arial, sans-serif" font-size="13" fill="#6B5E55" text-anchor="middle">Comment l'énergie traverse la matière : conduction, convection et rayonnement</text>
 
   <!-- Vecteur 1 : Conduction -->
-  <g transform="translate(35, 95)">
-    <rect width="265" height="350" rx="10" fill="#ffffff" stroke="#dc2626" stroke-width="2"/>
-    <rect width="265" height="45" rx="10" fill="#dc2626"/>
-    <text x="132" y="28" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" fill="#ffffff" text-anchor="middle">1. CONDUCTION</text>
+  <g transform="translate(30, 90)">
+    <rect width="270" height="370" rx="10" fill="#FAF6F0" stroke="#C8BAAA" stroke-width="1.5"/>
+    <rect width="270" height="42" rx="10" fill="#701C1A"/>
+    <text x="135" y="26" font-family="Liberation Sans, Arial, sans-serif" font-size="14.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">1. CONDUCTION</text>
     
-    <text x="15" y="75" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#991b1b">• Contact physique direct</text>
-    <text x="25" y="98" font-family="Liberation Sans, Arial, sans-serif" font-size="14" fill="#7f1d1d">De solide à solide</text>
-    <text x="25" y="118" font-family="Liberation Sans, Arial, sans-serif" font-size="13" fill="#64748b">Paroi poêle → aliment</text>
+    <text x="16" y="72" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#701C1A">• Contact physique direct</text>
+    <text x="26" y="93" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">De solide à solide</text>
+    <text x="26" y="111" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#5C5046">Paroi poêle → aliment</text>
     
-    <text x="15" y="150" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#991b1b">• Loi du carré de l'épaisseur :</text>
-    <text x="25" y="173" font-family="Liberation Sans, Arial, sans-serif" font-size="14" font-weight="bold" fill="#991b1b">Temps proportionnel à x²</text>
-    <text x="25" y="193" font-family="Liberation Sans, Arial, sans-serif" font-size="13" fill="#64748b">Épaisseur ×2 = Temps ×4 !</text>
+    <text x="16" y="145" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#701C1A">• Loi du carré de l'épaisseur :</text>
+    <text x="26" y="166" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#701C1A">Temps proportionnel à x²</text>
+    <text x="26" y="184" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#5C5046">Épaisseur ×2 = Temps ×4 !</text>
     
-    <text x="15" y="225" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#991b1b">• Rôle de la matière grasse :</text>
-    <text x="25" y="248" font-family="Liberation Sans, Arial, sans-serif" font-size="14" fill="#7f1d1d">Comble les micropores d'air</text>
-    <text x="25" y="268" font-family="Liberation Sans, Arial, sans-serif" font-size="13" fill="#64748b">Multiplie le transfert par 10</text>
+    <text x="16" y="218" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#701C1A">• Rôle du corps gras :</text>
+    <text x="26" y="239" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">Comble les micro-vides d'air</text>
+    <text x="26" y="257" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#5C5046">Multiplie le transfert par dix</text>
     
-    <rect x="15" y="295" width="235" height="40" rx="6" fill="#fee2e2"/>
-    <text x="132" y="320" font-family="Liberation Sans, Arial, sans-serif" font-size="14" font-weight="bold" fill="#991b1b" text-anchor="middle">Usage : Pavé de bœuf, crêpes, œufs</text>
+    <rect x="16" y="295" width="238" height="55" rx="6" fill="#F0E3DF"/>
+    <text x="135" y="320" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#701C1A" text-anchor="middle">Usage : Pavé de bœuf, crêpes,</text>
+    <text x="135" y="338" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#501413" text-anchor="middle">œufs au plat et saisie en fonte</text>
   </g>
 
   <!-- Vecteur 2 : Convection -->
-  <g transform="translate(325, 95)">
-    <rect width="270" height="350" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
-    <rect width="270" height="45" rx="10" fill="#2563eb"/>
-    <text x="135" y="28" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" fill="#ffffff" text-anchor="middle">2. CONVECTION</text>
+  <g transform="translate(335, 90)">
+    <rect width="270" height="370" rx="10" fill="#FAF5F0" stroke="#C8BAAA" stroke-width="1.5"/>
+    <rect width="270" height="42" rx="10" fill="#A3432B"/>
+    <text x="135" y="26" font-family="Liberation Sans, Arial, sans-serif" font-size="14.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">2. CONVECTION</text>
     
-    <text x="15" y="75" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#1e40af">• Fluide en mouvement</text>
-    <text x="25" y="98" font-family="Liberation Sans, Arial, sans-serif" font-size="14" fill="#1e3a8a">Eau, bouillon, huile, air chaud</text>
-    <text x="25" y="118" font-family="Liberation Sans, Arial, sans-serif" font-size="13" fill="#64748b">Brassage continu des molécules</text>
+    <text x="16" y="72" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#A3432B">• Fluide en mouvement</text>
+    <text x="26" y="93" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">Eau, bouillon, huile, air chaud</text>
+    <text x="26" y="111" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#5C5046">Brassage continu des molécules</text>
     
-    <text x="15" y="150" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#1e40af">• Enveloppe homogène :</text>
-    <text x="25" y="173" font-family="Liberation Sans, Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e40af">Température égale partout</text>
-    <text x="25" y="193" font-family="Liberation Sans, Arial, sans-serif" font-size="13" fill="#64748b">Zéro point chaud destructeur</text>
+    <text x="16" y="145" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#A3432B">• Enveloppe homogène :</text>
+    <text x="26" y="166" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">Température égale sur tout le pourtour</text>
+    <text x="26" y="184" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#5C5046">Zéro point chaud destructeur</text>
     
-    <text x="15" y="225" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#1e40af">• Liquide vs Vapeur :</text>
-    <text x="25" y="248" font-family="Liberation Sans, Arial, sans-serif" font-size="14" fill="#1e3a8a">L'eau transfère 25 fois plus vite</text>
-    <text x="25" y="268" font-family="Liberation Sans, Arial, sans-serif" font-size="13" fill="#64748b">la chaleur qu'un air sec à 100°C</text>
+    <text x="16" y="218" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#A3432B">• Liquide versus Vapeur :</text>
+    <text x="26" y="239" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">L'eau transfère 25 fois plus vite</text>
+    <text x="26" y="257" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#5C5046">la chaleur qu'un air sec à 100°C</text>
     
-    <rect x="15" y="295" width="240" height="40" rx="6" fill="#eff6ff"/>
-    <text x="135" y="320" font-family="Liberation Sans, Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e40af" text-anchor="middle">Usage : Bouillons, pochage, étuvée</text>
+    <rect x="16" y="295" width="238" height="55" rx="6" fill="#F4E8DC"/>
+    <text x="135" y="320" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#A3432B" text-anchor="middle">Usage : Bouillons, pochage doux,</text>
+    <text x="135" y="338" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#7A3220" text-anchor="middle">étuvée sous cartouche et friture</text>
   </g>
 
   <!-- Vecteur 3 : Rayonnement -->
-  <g transform="translate(620, 95)">
-    <rect width="265" height="350" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
-    <rect width="265" height="45" rx="10" fill="#d97706"/>
-    <text x="132" y="28" font-family="Liberation Sans, Arial, sans-serif" font-size="17" font-weight="bold" fill="#ffffff" text-anchor="middle">3. RAYONNEMENT</text>
+  <g transform="translate(640, 90)">
+    <rect width="270" height="370" rx="10" fill="#FAF6F0" stroke="#C8BAAA" stroke-width="1.5"/>
+    <rect width="270" height="42" rx="10" fill="#B45309"/>
+    <text x="135" y="26" font-family="Liberation Sans, Arial, sans-serif" font-size="14.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">3. RAYONNEMENT</text>
     
-    <text x="15" y="75" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#92400e">• Ondes électromagnétiques</text>
-    <text x="25" y="98" font-family="Liberation Sans, Arial, sans-serif" font-size="14" fill="#78350f">Infrarouges sans contact</text>
-    <text x="25" y="118" font-family="Liberation Sans, Arial, sans-serif" font-size="13" fill="#64748b">Braises, gril supérieur du four</text>
+    <text x="16" y="72" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#B45309">• Ondes électromagnétiques</text>
+    <text x="26" y="93" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">Infrarouges sans matière porteuse</text>
+    <text x="26" y="111" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#5C5046">Braises vives, gril supérieur</text>
     
-    <text x="15" y="150" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#92400e">• Loi de Stefan-Boltzmann :</text>
-    <text x="25" y="173" font-family="Liberation Sans, Arial, sans-serif" font-size="14" font-weight="bold" fill="#92400e">Énergie émise en T⁴</text>
-    <text x="25" y="193" font-family="Liberation Sans, Arial, sans-serif" font-size="13" fill="#64748b">Une braise à 600°C rayonne 16× plus</text>
+    <text x="16" y="145" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#B45309">• Loi de Stefan-Boltzmann :</text>
+    <text x="26" y="166" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#B45309">Énergie rayonnée en T⁴</text>
+    <text x="26" y="184" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#5C5046">Une braise à 600°C rayonne 16× plus</text>
     
-    <text x="15" y="225" font-family="Liberation Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#92400e">• Pénétration millimétrique :</text>
-    <text x="25" y="248" font-family="Liberation Sans, Arial, sans-serif" font-size="14" fill="#78350f">Saisit la surface immédiatement</text>
-    <text x="25" y="268" font-family="Liberation Sans, Arial, sans-serif" font-size="13" fill="#64748b">Déclenche Maillard sans dessécher</text>
+    <text x="16" y="218" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#B45309">• Pénétration superficielle :</text>
+    <text x="26" y="239" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">Saisit la surface immédiatement</text>
+    <text x="26" y="257" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#5C5046">Déclenche Maillard sans assécher</text>
     
-    <rect x="15" y="295" width="235" height="40" rx="6" fill="#fef3c7"/>
-    <text x="132" y="320" font-family="Liberation Sans, Arial, sans-serif" font-size="14" font-weight="bold" fill="#92400e" text-anchor="middle">Usage : Gril, rôtissoire, salamandre</text>
+    <rect x="16" y="295" width="238" height="55" rx="6" fill="#F4EADB"/>
+    <text x="135" y="320" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#B45309" text-anchor="middle">Usage : Gril, rôtissoire, broche,</text>
+    <text x="135" y="338" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#78350F" text-anchor="middle">salamandre et gratins dorés</text>
   </g>
 </svg>

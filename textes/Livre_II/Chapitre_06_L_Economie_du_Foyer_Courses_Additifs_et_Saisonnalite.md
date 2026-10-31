@@ -1,6 +1,7 @@
 # CHAPITRE 06 — L'Économie du Foyer : Courses Rationnelles, Additifs et Saisonnalité
 
-> « L'acte culinaire ne commence pas devant la flamme de la cuisinière : il s'amorce au moment où la main franchit le seuil du marché et saisit le panier. »
+> « Que ton aliment soit ta seule médecine. » — Aphorisme attribué à Hippocrate
+> « La cuisine commence bien avant la casserole : elle débute dans le choix sans concession de la matière brute. »
 
 ---
 
@@ -26,67 +27,14 @@ Pour nourrir un foyer sainement avec un budget divisé par deux, la règle est d
 
 ---
 
-## 2. L'ENQUÊTE DES CODES E ET LA MANIPULATION INDUSTRIELLE
+---
 
-L'industrie agroalimentaire ne cherche pas à nourrir nos cellules : elle cherche à stimuler nos centres de récompense cérébraux pour déclencher la compulsion d'achat.
+## 2. LA MANIPULATION INDUSTRIELLE : LE BLISS POINT ET LES AUXILIAIRES
 
 ### A. Le *Bliss Point* (Le Point de Béatitude Cérébrale)
 Théorisé par le biophysicien Howard Moskowitz pour les multinationales de l'alimentation, le *Bliss Point* est le ratio mathématique exact entre **sucre libre, matière grasse émulsionnée et chlorure de sodium (sel)** qui court-circuite le rétrocontrôle biologique de la satiété. Le cerveau sécrète un pic massif de dopamine sans jamais envoyer l'ordre à la leptine de stopper l'ingestion : on continue de manger le paquet même lorsque l'estomac est distendu.
 
-### B. Le Décryptage des Codes E : Les Inoffensifs vs Les Dangereux
-Tous les additifs ne sont pas des poisons chimiques. Un code E est simplement une codification administrative européenne :
-
-#### 1. Les Additifs Naturels et Totalement Inoffensifs
-- **E300 (Acide L-ascorbique) :** Pure vitamine C antioxydante.
-- **E330 (Acide citrique) :** L'acide naturel du citron régulant le pH.
-- **E322 (Lécithines de tournesol ou d'œuf) :** Phospholipides naturels assurant la liaison des émulsions.
-- **E440 (Pectines de pomme ou d'agrumes) :** Fibres solubles formant un gel au contact de l'eau.
-- **E100 (Curcumine) :** Pigment doré antioxydant extrait du curcuma.
-
-#### 2. Les Additifs Toxiques ou Hautement Suspects à Bannir
-- **E250 (Nitrite de sodium) :** Utilisé pour teinter le jambon en rose et allonger la DLC. En milieu gastrique acide, les nitrites réagissent avec les amines de la viande pour former des **nitrosamines hautement cancérogènes** (facteur causal avéré du cancer colorectal). Privilégier les charcuteries sans sel nitrité (jambon gris naturel).
-- **E150d (Caramel au sulfite d'ammonium) :** Colorant brun des sodas et sauces, contenant du 4-méthylimidazole (4-MEI), molécule classée cancérogène probable.
-- **E466 (Carboxyméthylcellulose) et E433 (Polysorbates) :** Émulsifiants de synthèse qui décapent le mucus protecteur de l'intestin grêle, favorisant la perméabilité intestinale, l'inflammation métabolique et la prolifération de maladies auto-immunes.
-
 ---
-
-## 3. L'ÉCOLOGIE DE LA MATIÈRE ET L'EMPREINTE DE L'ASSIETTE
-
-Chaque aliment ingéré représente une dépense d'eau et d'énergie biologique :
-
-| Denrée Alimentaire | Empreinte Hydrique (Litres d'Eau / Kilogramme) |
-| :--- | :--- |
-| **Légumes maraîchers de pleine terre** | $\approx \mathbf{300\text{ à }400\text{ Litres}}$ |
-| **Pommes de terre & Tubercules** | $\approx \mathbf{300\text{ Litres}}$ |
-| **Céréales complètes** | $\approx \mathbf{1\,200\text{ à }1\,500\text{ Litres}}$ |
-| **Légumineuses sèches (Lentilles, pois chiches)** | $\approx \mathbf{3\,000\text{ à }4\,000\text{ Litres}}$ |
-| **Volaille fermière** | $\approx \mathbf{4\,300\text{ Litres}}$ |
-| **Porc fermier** | $\approx \mathbf{6\,000\text{ Litres}}$ |
-| **Bœuf de pâturage** | $\approx \mathbf{15\,400\text{ Litres}}$ |
-
----
-
-## 4. LA SAISONNALITÉ ÉTENDUE : LÉGUMES, VIANDES ET FROMAGES
-
-La saisonnalité ne concerne pas uniquement les fruits et légumes : les viandes et fromages suivent les cycles naturels du vivant :
-
-1. **Le Printemps (Le Réveil Lacté et l'Herbe Nouvelle) :**
-   - *Fromages de chèvre frais :* Les chèvres mettent bas en février/mars ; leur lait de printemps gorgé des premières pousses donne des fromages d'une acidité florale incomparable.
-   - *L'Agneau de pré :* Nourri au lait maternel et à l'herbe tendre.
-   - *Végétaux :* Petits pois fins, fèves nouvelles, asperges, radis croquants.
-2. **L'Été (La Générosité Solaire) :**
-   - *Tomates, courgettes, poivrons, aubergines :* Gorgés de lycopène et de sucres par la photosynthèse estivale.
-   - *Poissons bleus côtiers :* Sardines et maquereaux gras pêchés au large.
-3. **L'Automne (La Concentration des Sucres et des Graisses) :**
-   - *Gibiers, champignons sylvestres, courges musquées, châtaignes.*
-   - *Fromages d'Alpage (Beaufort d'été, Comté) :* Affinés après la transhumance estivale, leurs pâtes sont dorées par le bêta-carotène des fleurs de montagne.
-4. **L'Hiver (L'Énergie des Racines et des Bouillons) :**
-   - *Légumes d'endurance :* Panais, poireaux, carottes de terre, choux frisés.
-   - *Les viandes à mijoter :* Paleron, gîte, queue de bœuf et jarrets, sources de gélatine réconfortante.
-
----
-
-## 3. AUXILIAIRES TECHNOLOGIQUES ET ADDITIFS RÉSIDUELS
 
 ### A. Définition Réglementaire et Différence avec l'Auxiliaire Technologique
 Selon le *Codex Alimentarius* et les règlements de l'Union Européenne (Règlement CE n° 1333/2008), un **additif alimentaire** est toute substance qui n'est pas normalement consommée en tant que denrée alimentaire en soi, ni utilisée comme ingrédient caractéristique d'un aliment, mais qui est ajoutée intentionnellement dans un but technologique (conservation, émulsion, coloration, texture) lors de la fabrication, de la transformation, du conditionnement ou du stockage.
@@ -102,7 +50,9 @@ L'humanité n'a pas attendu l'ère industrielle pour recourir aux additifs :
 
 ---
 
-## 2. LES SEPT GRANDES FAMILLES FONCTIONNELLES DE L'INDUSTRIE
+---
+
+### C. Les Sept Grandes Familles Fonctionnelles de l'Industrie
 
 Pour décoder les étiquettes en un coup d'œil, il suffit de comprendre la nomenclature numérique européenne du code E :
 
@@ -118,7 +68,11 @@ Pour décoder les étiquettes en un coup d'œil, il suffit de comprendre la nome
 
 ---
 
-## 3. LE GRAND TABLEAU CRITIQUE DES CODES E : DISTINGUER LE NOBLE DU TOXIQUE
+---
+
+## 3. L'ENQUÊTE CRITIQUE SUR LES ADDITIFS (CODES E)
+
+### A. Le Grand Tableau Critique des Codes E : Distinguer le Noble du Toxique
 
 Il n'y a aucune malédiction inhérente au matricule « E » : la nature a inventé les molécules les plus stables bien avant les laboratoires. Le tableau suivant rassemble en une vision synthétique les additifs nobles et physiologiques inoffensifs, et les substances suspectes ou dangereuses documentées par la recherche biomédicale :
 
@@ -167,7 +121,9 @@ Le céleri-branche est naturellement gorgé de nitrates du sol. En l'ensemençan
 
 ---
 
-## 4. L'EFFET COCKTAIL ET LES LIMITES DE LA TOXICOLOGIE CLASSIQUE
+---
+
+### B. L'Effet Cocktail et les Limites de la Toxicologie Classique
 
 L'argument massue répété par les lobbies industriels repose sur la notion de **Dose Journalière Admissible (DJA)** : chaque additif pris isolément ne dépasse pas le seuil légal de toxicité mesuré sur des rats en laboratoire. 
 
@@ -179,7 +135,9 @@ Mais ce modèle d'évaluation présente deux failles béantes :
 
 ---
 
-## 5. DÉCRYPTAGE CRITIQUE : YUKA ET LE NUTRI-SCORE FACE À LA VÉRITÉ DU FAIT-MAISON
+---
+
+## 4. DÉCRYPTAGE CRITIQUE : YUKA ET LE NUTRI-SCORE FACE AU FAIT-MAISON
 
 Des millions de cuisiniers consultent quotidiennement des applications de scan de codes-barres ou s'en remettent aux pastilles colorées du Nutri-Score. Ces outils ont constitué un indéniable réveil citoyen, mais ils comportent des biais structurants majeurs qu'un esprit éclairé doit savoir déjouer.
 
@@ -210,31 +168,42 @@ Pour nourrir sainement son corps et sa famille, il existe une règle qui surpass
 
 ---
 
-## 5. DÉCRYPTAGE CRITIQUE : YUKA ET LE NUTRI-SCORE FACE À LA VÉRITÉ DU FAIT-MAISON
+---
 
-Des millions de cuisiniers consultent quotidiennement des applications de scan de codes-barres ou s'en remettent aux pastilles colorées du Nutri-Score. Ces outils ont constitué un indéniable réveil citoyen, mais ils comportent des biais structurants majeurs qu'un esprit éclairé doit savoir déjouer.
+## 5. L'ÉCOLOGIE DE LA MATIÈRE ET LE CALENDRIER VIVANT DES SAISONS
 
-### A. L'Application Yuka : L'Exploit Citoyen et les Biais de l'Algorithme
-- **Ses immenses mérites :**
-  1. *La démocratisation de l'investigation :* Yuka a rendu intelligible au grand public le langage cryptique des industriels.
-  2. *Le pouvoir de rétorsion économique :* Craignant l'impact commercial des « pastilles rouges » sur les ventes, de nombreuses marques ont reformulé leurs recettes en supprimant le dioxyde de titane (E171) ou en réduisant les sulfites.
-- **Ses angles morts méthodologiques :**
-  1. *L'amalgamation du noble et du déchet calorique :* Scannez un beurre cru fermier de baratte ($82\,\%$ de matière grasse saturée) ou une huile d'olive vierge extra de première pression à froid. L'algorithme leur attribue une note médiocre ou rouge en raison de leur densité en lipides ! Yuka évalue mal les lipides bruts vitaux pour le cerveau et la synthèse hormonale.
-  2. *Le problème de la dose réelle :* L'application note un produit de manière binaire sans pondérer la fréquence d'usage : une pincée de sel marin gris non raffiné est classée en « excès de sodium », oubliant que l'organisme en requiert pour la transmission synaptique.
+### A. L'Empreinte Hydrique de l'Assiette
 
-### B. Le Nutri-Score : Le Scandale de l'Aveuglement à l'Ultra-Transformation
-Mis en place par les autorités sanitaires européennes, le Nutri-Score calcule un solde arithmétique abstrait pour **$100\text{ g}$ d'aliment**, en opposant les nutriments à limiter (calories, sucres simples, acides gras saturés, sel) aux composants favorables (fibres, protéines, part de fruits et légumes).
+Chaque aliment ingéré représente une dépense d'eau et d'énergie biologique :
 
-$$\text{Points Nutri-Score} = \text{Points Défavorables} - \text{Points Favorables}$$
+| Denrée Alimentaire | Empreinte Hydrique (Litres d'Eau / Kilogramme) |
+| :--- | :--- |
+| **Légumes maraîchers de pleine terre** | $\approx \mathbf{300\text{ à }400\text{ Litres}}$ |
+| **Pommes de terre & Tubercules** | $\approx \mathbf{300\text{ Litres}}$ |
+| **Céréales complètes** | $\approx \mathbf{1\,200\text{ à }1\,500\text{ Litres}}$ |
+| **Légumineuses sèches (Lentilles, pois chiches)** | $\approx \mathbf{3\,000\text{ à }4\,000\text{ Litres}}$ |
+| **Volaille fermière** | $\approx \mathbf{4\,300\text{ Litres}}$ |
+| **Porc fermier** | $\approx \mathbf{6\,000\text{ Litres}}$ |
+| **Bœuf de pâturage** | $\approx \mathbf{15\,400\text{ Litres}}$ |
 
-- **Les Dérives Majeures du Système :**
-  1. *L'aveuglement total aux procédés de cracking et d'extrusion :* Le Nutri-Score ne sanctionne absolument pas le degré d'ultra-transformation (selon la classification internationale NOVA). Un paquet de céréales industrielles pour enfants, fabriqué à base d'amidon de maïs hydrolysé sous haute pression, d'arômes de synthèse et d'émulsifiants, décroche un **Nutri-Score A** sous prétexte que l'industriel y a rajouté une poignée de fibres d'avoine isolées et de protéines de soja dénaturées !
-  2. *Le châtiment inique des trésors du patrimoine :* Les fleurons ancestraux du terroir — le roquefort au lait cru, le jambon sec de montagne, les sardines à l'huile d'olive — récoltent des scores D ou E, pendant qu'un soda édulcoré aux produits de synthèse sans calories obtient un B ou un C.
-  3. *Le trucage des recettes par les industriels :* Les formulateurs agroalimentaires modifient subtilement les recettes non pas pour la santé du consommateur, mais pour faire basculer le produit d'un C à un B à coups d'isolats de fibres et d'édulcorants invisibles.
+---
 
-::: truc_de_chef
-#### 💡 Le Manifeste de l'Ingrédient Unique : La Règle Infaillible
-Pour nourrir sainement son corps et sa famille, il existe une règle qui surpasse tous les algorithmes de la Silicon Valley et toutes les pastilles ministérielles : **achetez des ingrédients qui n'ont pas de liste d'ingrédients**.
-- Une carotte avec ses fanes, un maquereau frais, un sac de lentilles vertes du Puy, une bouteille d'huile d'olive vierge extra n'ont pas de code E, pas de Nutri-Score et pas de conservateurs.
-- Si vous cuisinez à partir de la matière première brute avec l'arsenal minimal décrit au Chapitre 01, la question des additifs s'évanouit d'elle-même : vous maîtrisez $100\,\%$ des molécules qui entrent dans votre casserole.
-:::
+### B. Le Calendrier Vivant : Légumes, Viandes et Fromages au Fil de l'Année
+
+La saisonnalité ne concerne pas uniquement les fruits et légumes : les viandes et fromages suivent les cycles naturels du vivant :
+
+1. **Le Printemps (Le Réveil Lacté et l'Herbe Nouvelle) :**
+   - *Fromages de chèvre frais :* Les chèvres mettent bas en février/mars ; leur lait de printemps gorgé des premières pousses donne des fromages d'une acidité florale incomparable.
+   - *L'Agneau de pré :* Nourri au lait maternel et à l'herbe tendre.
+   - *Végétaux :* Petits pois fins, fèves nouvelles, asperges, radis croquants.
+2. **L'Été (La Générosité Solaire) :**
+   - *Tomates, courgettes, poivrons, aubergines :* Gorgés de lycopène et de sucres par la photosynthèse estivale.
+   - *Poissons bleus côtiers :* Sardines et maquereaux gras pêchés au large.
+3. **L'Automne (La Concentration des Sucres et des Graisses) :**
+   - *Gibiers, champignons sylvestres, courges musquées, châtaignes.*
+   - *Fromages d'Alpage (Beaufort d'été, Comté) :* Affinés après la transhumance estivale, leurs pâtes sont dorées par le bêta-carotène des fleurs de montagne.
+4. **L'Hiver (L'Énergie des Racines et des Bouillons) :**
+   - *Légumes d'endurance :* Panais, poireaux, carottes de terre, choux frisés.
+   - *Les viandes à mijoter :* Paleron, gîte, queue de bœuf et jarrets, sources de gélatine réconfortante.
+
+---

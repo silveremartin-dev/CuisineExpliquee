@@ -136,25 +136,20 @@ PREAMBLE = """
 ]
 
 #let portail_livre_recto(num_partie, titre, sommaire_contenu) = [
-  #v(1.4cm)
+  #v(2.2cm)
   #align(left)[
-    #text(size: 11pt, tracking: 0.22em, fill: c-bordeaux, font: "Liberation Sans", weight: "bold")[#smallcaps[#num_partie]]
-    #v(0.5cm)
+    #text(size: 11pt, tracking: 0.25em, fill: c-bordeaux, font: "Liberation Sans", weight: "bold")[#smallcaps[#num_partie]]
+    #v(0.6cm)
     #text(size: 22pt, weight: "bold", fill: c-ink, tracking: 0.02em, font: "Liberation Serif")[#titre]
-    #v(0.7cm)
-    #line(length: 35%, stroke: 1.5pt + c-bronze)
-    #v(0.7cm)
-    #text(size: 9.5pt, tracking: 0.16em, fill: c-bronze, font: "Liberation Sans", weight: "bold")[#smallcaps[Sommaire analytique des chapitres]]
-    #v(0.4cm)
+    #v(0.8cm)
+    #line(length: 25%, stroke: 1.2pt + c-bronze)
+    #v(1.0cm)
     #block(
       width: 100%,
-      fill: rgb("#faf8f5"),
-      stroke: (left: 3pt + c-bordeaux),
-      inset: (left: 14pt, right: 12pt, top: 12pt, bottom: 12pt),
-      radius: (right: 4pt)
+      inset: (left: 8pt)
     )[
-      #set text(size: 9.8pt, fill: c-ink, font: "Liberation Sans")
-      #set par(justify: false, leading: 0.78em)
+      #set text(size: 11.5pt, fill: c-ink, font: "Liberation Serif")
+      #set par(justify: false, leading: 1.0em)
       #sommaire_contenu
     ]
   ]
@@ -677,10 +672,20 @@ def postprocess_typst(typ_content):
         img = match.group(3).strip().replace(r'\_', '_').replace('\\', '/').replace('//', '/')
         legende = " ".join(match.group(4).strip().replace(r'\_', '_').replace(r'\"', '"').replace('"', '\\"').split())
         
-        # Nettoyer intégralement la citation de tout parasite #linebreak ou échappement Pandoc
-        citation_raw = match.group(5).strip().replace(r'\#linebreak()', '\n').replace('#linebreak()', '\n').replace('\\', '')
-        citation_lines = [line.strip() for line in citation_raw.splitlines() if line.strip()]
-        citation_clean = " \\\n".join(citation_lines)
+        # Nettoyer intégralement les chapitres de tout parasite
+        citation_raw = match.group(5).strip().replace(r'\#linebreak()', '').replace('#linebreak()', '').replace('\\', '')
+        chapitres = [c.strip() for c in citation_raw.split('///') if c.strip()]
+        
+        if len(chapitres) > 6:
+            v_space = "0.22cm"
+            font_size = "10.5pt"
+        else:
+            v_space = "0.38cm"
+            font_size = "11.5pt"
+            
+        sommaire_lines = [f'#text(size: {font_size}, style: "italic")[— {c}]' for c in chapitres]
+        sep = f' \\\n#v({v_space})\n'
+        sommaire_clean = sep.join(sommaire_lines)
         
         return f'''
 #pagebreak(weak: false, to: "even")
@@ -689,12 +694,11 @@ def postprocess_typst(typ_content):
 
 #pagebreak(weak: false, to: "odd")
 #set page(paper: "a4", margin: (top: 2.5cm, bottom: 2.5cm, left: 2.2cm, right: 2.2cm), header: none, footer: none, fill: rgb(255, 253, 250))
-#portail_livre_recto("{partie}", "{titre}", [{citation_clean}])
+#portail_livre_recto("{partie}", "{titre}", [{sommaire_clean}])
 
 #pagebreak(weak: false, to: "odd")
 #set page(header: entete-livre, footer: pied-livre)
 '''
-
     typ_content = re.sub(
         r'OUVERTURESTART\s*\{([^}]+)\}\s*\{([^}]+)\}\s*\{([^}]+)\}\s*\{([^}]+)\}\s*\{([^}]+)\}\s*OUVERTUREEND',
         replace_ouverture,
@@ -778,7 +782,7 @@ def run_build():
             "titre": "L'HOMME, L'ÉVOLUTION ET LA CIVILISATION DU GOÛT",
             "img": "figures/patrimoine/livre1_ouverture_feu_ancestral.jpg",
             "legende": "La conquête du feu paléolithique et l'externalisation de la digestion humaine.",
-            "citation": "Chapitre 01 — L'Animal Culinaire : Anatomie, Feu et Nutrition §§§ Externalisation digestive, loi de Wrangham, encéphalisation et morphologie. @@ Chapitre 02 — L'Histoire Écrite de la Table : De la Mésopotamie à Nos Jours §§§ Des tablettes sumériennes et Apicius à Scappi, La Varenne, Brillat-Savarin et Escoffier. @@ Chapitre 03 — La Géopolitique des Saveurs : Terroirs et Mondialisation §§§ La triade des trois graisses fondatrices, révolution colombienne et unification des goûts.",
+            "citation": "L'Animal Culinaire : Anatomie, Feu et Nutrition /// L'Histoire Écrite de la Table : De la Mésopotamie à Nos Jours /// La Géopolitique des Saveurs : Terroirs et Mondialisation",
             "fichiers": [
                 "textes/Livre_I/Chapitre_01_L_Animal_Culinaire_Anatomie_Feu_Nutrition.md",
                 "textes/Livre_I/Chapitre_02_L_Histoire_Ecrite_de_la_Table_de_Mesopotamie_a_Aujourdhui.md",
@@ -790,7 +794,7 @@ def run_build():
             "titre": "LE FOYER MODERNE : ÉQUIPEMENTS, SÉCURITÉ ET ORGANISATION",
             "img": "figures/patrimoine/livre2_ouverture_cuisine_ordre.jpg",
             "legende": "L'arsenal ordonné de cuisine et la clarté du foyer bien gouverné (d'après Chardin).",
-            "citation": "Chapitre 04 — L'Arsenal Minimal et les Équipements Fondamentaux §§§ Les 5 organes indispensables, fonte brute, toxicologie du PTFE et gros appareils. @@ Chapitre 05 — Consignes de Sécurité, Découpe et Pannes Critiques §§§ Incendie d'huile, coupure de froid, brûlures thermiques et tenue en griffe de chat. @@ Chapitre 06 — Économie du Foyer, Courses, Additifs et Saisonnalité §§§ Psychologie des supermarchés, Bliss Point, audit critique de Yuka et du Nutri-Score. @@ Chapitre 07 — L'Ordre Invisible : Marche en Avant, Restes et Plonge §§§ Gestion FIFO, valorisation des biodéchets et plonge efficace par capillarité.",
+            "citation": "L'Arsenal Minimal et les Équipements Fondamentaux /// Consignes de Sécurité, Découpe et Pannes Critiques /// L'Économie du Foyer : Courses, Additifs et Saisonnalité /// L'Ordre Invisible : Marche en Avant, Restes et Plonge",
             "fichiers": [
                 "textes/Livre_II/Chapitre_04_L_Arsenal_Minimal_et_les_Equipements_Fondamentaux.md",
                 "textes/Livre_II/Chapitre_05_Consignes_de_Securite_et_Pannes_Critiques.md",
@@ -803,7 +807,7 @@ def run_build():
             "titre": "LA SCIENCE DE LA CASSEROLE : MATIÈRES PREMIÈRES, FLUIDES ET TRANSFORMATIONS",
             "img": "figures/nourriture/livre3_ouverture_marche_abondance.jpg",
             "legende": "L'abondance maraîchère des éléments bruts : la matière vivante avant la transformation.",
-            "citation": "Chapitres 08 à 10 — Sens, Féculents et Mécanique Végétale §§§ Thermodynamique, récepteurs trigéminaux, amidon, purée Blumenthal et étuvée. @@ Chapitres 11 à 13 — Écosystème Vert, Bouillons et Alchimie des Épices §§§ Turgescence de la feuille, extraction collagénique, glaces pures et terpènes. @@ Chapitres 14 à 16 — Règne Animal, L'Archétype de l'Œuf et Matrice §§§ Maillard en fonte, cuticule protectrice, émulsions mères et synoptique des transformations.",
+            "citation": "Cuisiner avec ses Sens et Thermodynamique /// Féculents, Céréales et Légumineuses : La Force du Grain /// La Mécanique Végétale : Éplucher, Tailler et Dompter l'Amidon /// L'Écosystème Vert : Salades, Turgescence et l'Acide /// La Chimie de l'Eau : Soupes, Bouillons et Glaces /// L'Alchimie des Épices, Herbes Fraîches et Arômes /// Le Monde Animal : Muscle, Maillard et Déglaçage /// L'Archétype de l'Œuf et les Émulsions Maîtresses /// La Matrice des Grandes Transformations Culinaires",
             "fichiers": [
                 "textes/Livre_III/Chapitre_08_Cuisiner_avec_ses_Sens_et_Thermodynamique.md",
                 "textes/Livre_III/Chapitre_09_Feculents_Cereales_et_Legumineuses_Force_du_Grain.md",
@@ -821,7 +825,7 @@ def run_build():
             "titre": "LES MÉTAMORPHOSES SINGULIÈRES : FERMENTATIONS, PÂTISSERIE ET GRAND FROID",
             "img": "figures/nourriture/livre4_ouverture_fournil_levain.jpg",
             "legende": "Miches dorées au fournil artisanal : la résurrection noble du levain sauvage.",
-            "citation": "Chapitre 17 — La Révolution des Fermentations Végétales, Pains et Levains §§§ Levains sauvages, pain cocotte, pickles vivants, kéfir de fruits et kombucha. @@ Chapitre 18 — L'Alchimie Laitière et la Fromagerie Autonome §§§ Rupture colloïdale isoélectrique versus présure et fromage frais en 15 minutes. @@ Chapitres 19 à 21 — Glucides, Pâtisserie Matricielle et Grand Froid §§§ Pyrolyse du sucre, équation du gâteau, mousse aquafaba et sel cryoscopique.",
+            "citation": "La Révolution des Fermentations Végétales, Pains et Levains /// L'Alchimie Laitière et la Fromagerie Autonome /// Le Travail des Glucides : Pyrolyse, Sirops et Caramélisation /// La Pâtisserie Matricielle et la Mécanique des Pâtes /// Les Prodiges Thermiques du Grand Froid et du Feu Isolant",
             "fichiers": [
                 "textes/Livre_IV/Chapitre_17_La_Revolution_des_Fermentations_Vegetales_Pains_et_Levains.md",
                 "textes/Livre_IV/Chapitre_18_L_Alchimie_Laitiere_et_la_Fromagerie_Autonome.md",
@@ -835,7 +839,7 @@ def run_build():
             "titre": "L'ART DU REPAS, DU PARTAGE ET DU SERVICE",
             "img": "figures/patrimoine/livre5_ouverture_banquet_table.jpg",
             "legende": "Table de banquet dressée : l'orfèvrerie des couverts et la noblesse du service partagé.",
-            "citation": "Chapitre 22 — Pourquoi une Fourchette ? Histoire et Sociologie de la Table §§§ Anthropologie du couvert, tabous du toucher et guerre du service à la française vs à la russe. @@ Chapitre 23 — L'Architecture du Menu, Rétroplanning et Art de Recevoir §§§ Chronogramme de réception sans stress de J-2 au service pour un hôte détendu. @@ Chapitre 24 — L'Esthétique de l'Assiette, Dressage et Températures §§§ Équilibre des formes, assiettes chauffées à 55°C et secrets de l'assiette 3 étoiles.",
+            "citation": "Pourquoi une Fourchette ? Histoire et Sociologie de la Table /// L'Architecture du Menu, Rétroplanning et Art de Recevoir /// L'Esthétique de l'Assiette, Dressage et Températures",
             "fichiers": [
                 "textes/Livre_V/Chapitre_22_Pourquoi_une_Fourchette_Histoire_et_Sociologie_de_la_Table.md",
                 "textes/Livre_V/Chapitre_23_L_Architecture_du_Menu_Retroplanning_et_Art_de_Recevoir.md",
@@ -847,7 +851,7 @@ def run_build():
             "titre": "LE TEMPS LONG : NUTRITION DIACHRONIQUE ET PLAISIR DURABLE",
             "img": "figures/nourriture/livre6_ouverture_potager_saisons.jpg",
             "legende": "Le potager vivant au fil des saisons : diversité végétale et temps long.",
-            "citation": "Chapitre 25 — Sortir de la Tyrannie des Régimes : Physiologie du Poids §§§ Cinétique neuro-hormonale de la leptine, délai des 20 minutes et densité nutritive. @@ Chapitre 26 — La Diachronie Culinaire : Microbiote et Batch Cooking §§§ Amidon résistant RS3 rétrogradé, règle des 30 végétaux et protocoles hebdomadaires.",
+            "citation": "Sortir de la Tyrannie des Régimes : Physiologie du Poids /// La Diachronie Culinaire : Microbiote et Batch Cooking",
             "fichiers": [
                 "textes/Livre_VI/Chapitre_25_Sortir_de_la_Tyrannie_des_Regimes_Physiologie_du_Poids.md",
                 "textes/Livre_VI/Chapitre_26_La_Diachronie_Culinaire_Microbiote_et_Batch_Cooking.md"
@@ -858,7 +862,7 @@ def run_build():
             "titre": "FORMULAIRE, GLOSSAIRE ET RÉPERTOIRE CRITIQUE",
             "img": "figures/patrimoine/diderot_encyclopedie_fournil.jpg",
             "legende": "L'artisanat du fournil et la rigueur technique dans l'Encyclopédie de Diderot et d'Alembert (XVIIIe siècle).",
-            "citation": "Annexe A — Cadran Absolu des Températures Critiques en Cuisine §§§ Seuils de dénaturation, Maillard, coagulation et zones de danger microbien. @@ Annexe B — Glossaire Physico-Chimique et Culinaire Exhaustif §§§ Définitions rigoureuses de l'amylose au point de fumée et à la synérèse. @@ Annexes C à F — Bibliographie, Guides Pratiques et Crédits Iconographiques §§§ Ouvrages de référence, guide d'achat minimal, conservation au froid et sources libres.",
+            "citation": "Annexe A — Cadran Absolu des Températures Critiques en Cuisine /// Annexe B — Glossaire Physico-Chimique et Culinaire Exhaustif /// Annexe C — Bibliographie Raisonnée et Évaluée /// Annexe D — Guide d'Achat de l'Arsenal Minimal, Coûts et Durées /// Annexe E — Conservation au Froid, Zones et Durées Limites /// Annexe F — Répertoire des Crédits Iconographiques et Sources",
             "fichiers": [
                 "textes/Annexes/Annexe_A_Tableau_des_Temperatures_Critiques.md",
                 "textes/Annexes/Annexe_B_Glossaire_Physico_Chimique_et_Culinaire.md",
