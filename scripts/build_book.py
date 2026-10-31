@@ -722,7 +722,21 @@ def postprocess_typst(typ_content):
     # Limiter la hauteur des schémas SVG pour garantir une aération parfaite de la page
     typ_content = re.sub(
         r'image\("figures/((?:histoire|livre_[0-9]|croquis)/[^"]+\.svg)"(?:\s*,\s*alt:\s*"[^"]*")?\)',
-        r'image("figures/\1", width: 95%, height: 38%, fit: "contain")',
+        r'image("figures/\1", width: 95%, height: 36%, fit: "contain")',
+        typ_content
+    )
+
+    # Limiter la hauteur des photographies scientifiques (Chapitres 18 et 26) pour éviter tout vide blanc en bas de page
+    typ_content = re.sub(
+        r'image\("figures/science/([^"]+)"(?:\s*,\s*alt:\s*"[^"]*")?\)',
+        r'image("figures/science/\1", width: 85%, height: 25%, fit: "cover")',
+        typ_content
+    )
+
+    # Limiter la hauteur des gravures et portraits historiques dans le corps des chapitres
+    typ_content = re.sub(
+        r'image\("figures/patrimoine/([^"]+)"\s*,\s*alt:\s*"[^"]*"\)',
+        r'image("figures/patrimoine/\1", width: 85%, height: 32%, fit: "contain")',
         typ_content
     )
 
@@ -861,7 +875,7 @@ def run_build():
             "num": "ANNEXES ET RÉPERTOIRES",
             "titre": "FORMULAIRE, GLOSSAIRE ET RÉPERTOIRE CRITIQUE",
             "img": "figures/patrimoine/diderot_encyclopedie_fournil.jpg",
-            "legende": "L'artisanat du fournil et la rigueur technique dans l'Encyclopédie de Diderot et d'Alembert (XVIIIe siècle).",
+            "legende": "Planche de l'Encyclopédie de Diderot et d'Alembert (1762) : four de brique, étuve et instruments d'office (Pl. II).",
             "citation": "Annexe A — Cadran Absolu des Températures Critiques en Cuisine /// Annexe B — Glossaire Physico-Chimique et Culinaire Exhaustif /// Annexe C — Bibliographie Raisonnée et Évaluée /// Annexe D — Guide d'Achat de l'Arsenal Minimal, Coûts et Durées /// Annexe E — Conservation au Froid, Zones et Durées Limites /// Annexe F — Répertoire des Crédits Iconographiques et Sources",
             "fichiers": [
                 "textes/Annexes/Annexe_A_Tableau_des_Temperatures_Critiques.md",

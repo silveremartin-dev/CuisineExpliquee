@@ -1,38 +1,50 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="100%" height="100%">
-  <rect width="800" height="420" rx="16" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
-  <text x="400" y="38" font-family="Liberation Sans, Arial, sans-serif" font-size="22.8" font-weight="bold" fill="#0f172a" text-anchor="middle">LA PURÉE PARFAITE SELON HESTON BLUMENTHAL</text>
-  <text x="400" y="62" font-family="Liberation Sans, Arial, sans-serif" font-size="16.9" fill="#64748b" text-anchor="middle">L'infusion aromatique des épluchures dans le lait et le respect mécanique des cellules d'amidon.</text>
-  <g transform="translate(40, 85)">
-    <rect width="345" height="300" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
-    <rect x="0" y="0" width="345" height="30" rx="12" fill="#d97706"/>
-    <text x="172" y="20" font-family="Liberation Sans, Arial, sans-serif" font-size="15.6" font-weight="bold" fill="#ffffff" text-anchor="middle">LE SECRET MOLÉCULAIRE : LA PEAU</text>
-    <ellipse cx="172" cy="105" rx="80" ry="50" fill="#fef3c7" stroke="#b45309" stroke-width="3"/>
-    <ellipse cx="172" cy="105" rx="72" ry="42" fill="#fffbeb" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="4,2"/>
-    <text x="172" y="105" font-family="Liberation Sans, Arial, sans-serif" font-size="14.3" fill="#92400e" text-anchor="middle">Chair centrale :</text>
-    <text x="172" y="119" font-family="Liberation Sans, Arial, sans-serif" font-size="14.0" fill="#b45309" text-anchor="middle">Amidon pur (neutre)</text>
-    <text x="172" y="180" font-family="Liberation Sans, Arial, sans-serif" font-size="13.7" font-weight="bold" fill="#78350f" text-anchor="middle">Sous-épiderme (0-2 mm) :</text>
-    <text x="172" y="196" font-family="Liberation Sans, Arial, sans-serif" font-size="14.0" fill="#78350f" text-anchor="middle">85% des molécules d'arômes volatils</text>
-    <text x="172" y="210" font-family="Liberation Sans, Arial, sans-serif" font-size="13.3" fill="#475569" font-style="italic">(Méthional, alkylpyrazines à goût de pomme de terre)</text>
-    <rect x="20" y="230" width="305" height="55" rx="6" fill="#fef3c7" stroke="#fcd34d" stroke-width="1"/>
-    <text x="172" y="248" font-family="Liberation Sans, Arial, sans-serif" font-size="13.7" font-weight="bold" fill="#92400e" text-anchor="middle">Le Geste Blumenthal :</text>
-    <text x="172" y="264" font-family="Liberation Sans, Arial, sans-serif" font-size="13.3" fill="#78350f" text-anchor="middle">Laver impeccablement les pelures et les faire infuser 30 min</text>
-    <text x="172" y="278" font-family="Liberation Sans, Arial, sans-serif" font-size="13.3" fill="#78350f" text-anchor="middle">dans le lait chaud avant de filtrer et monter la purée !</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 460" width="100%" height="100%">
+  <rect width="880" height="460" rx="14" fill="#FCFBF7" stroke="#DFDACF" stroke-width="2"/>
+  <text x="440" y="34" font-family="Liberation Serif, Georgia, serif" font-size="20" font-weight="bold" fill="#701C1A" text-anchor="middle">LA PURÉE PARFAITE SELON HESTON BLUMENTHAL</text>
+  <text x="440" y="55" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" fill="#5C5549" text-anchor="middle">L'infusion aromatique des épluchures dans le lait et le respect mécanique des cellules d'amidon.</text>
+
+  <!-- Panneau Gauche : Infusion des pelures -->
+  <g transform="translate(30, 75)">
+    <rect width="395" height="360" rx="10" fill="#FAF7F2" stroke="#B45309" stroke-width="1.5"/>
+    <rect width="395" height="32" rx="10" fill="#B45309"/>
+    <text x="197" y="21" font-family="Liberation Serif, Georgia, serif" font-size="13.5" font-weight="bold" fill="#FCFBF7" text-anchor="middle">1. LE SECRET MOLÉCULAIRE : LA PEAU</text>
+
+    <ellipse cx="197" cy="110" rx="95" ry="52" fill="#F2ECE1" stroke="#6B4423" stroke-width="3"/>
+    <ellipse cx="197" cy="110" rx="85" ry="43" fill="#FAF7F2" stroke="#B45309" stroke-width="1.5" stroke-dasharray="4,2"/>
+    <text x="197" y="106" font-family="Liberation Serif, Georgia, serif" font-size="13.5" font-weight="bold" fill="#6B4423" text-anchor="middle">Chair centrale :</text>
+    <text x="197" y="124" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" fill="#B45309" text-anchor="middle">Amidon pur (neutre)</text>
+
+    <text x="197" y="186" font-family="Liberation Sans, Arial, sans-serif" font-size="13.0" font-weight="bold" fill="#701C1A" text-anchor="middle">Sous-épiderme (0 à 2 mm sous la peau) :</text>
+    <text x="197" y="205" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" fill="#242124" text-anchor="middle">Concentre 85 % des molécules d'arômes volatils</text>
+    <text x="197" y="223" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#5C5549" font-style="italic" text-anchor="middle">(Méthional et pyrazines au parfum de terre chaude)</text>
+
+    <rect x="20" y="245" width="355" height="95" rx="6" fill="#F2ECE1" stroke="#B45309" stroke-width="1.2"/>
+    <text x="197" y="267" font-family="Liberation Serif, Georgia, serif" font-size="13.0" font-weight="bold" fill="#701C1A" text-anchor="middle">✓ Le Protocole d'Infusion Blumenthal :</text>
+    <text x="197" y="287" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124" text-anchor="middle">Brosser les tubercules, prélever les épluchures saines</text>
+    <text x="197" y="305" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124" text-anchor="middle">et les faire infuser 25 min dans le lait frémissant</text>
+    <text x="197" y="323" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" font-weight="bold" fill="#B45309" text-anchor="middle">avant de filtrer au chinois sur la pulpe écrasée !</text>
   </g>
-  <g transform="translate(415, 85)">
-    <rect width="345" height="300" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
-    <rect x="0" y="0" width="345" height="30" rx="12" fill="#16a34a"/>
-    <text x="172" y="20" font-family="Liberation Sans, Arial, sans-serif" font-size="15.6" font-weight="bold" fill="#ffffff" text-anchor="middle">MÉCANIQUE CELLULAIRE : PRESSE vs MIXEUR</text>
-    <rect x="20" y="45" width="305" height="110" rx="6" fill="#f0fdf4" stroke="#86efac" stroke-width="1"/>
-    <text x="35" y="65" font-family="Liberation Sans, Arial, sans-serif" font-size="14.3" font-weight="bold" fill="#166534">✓ PRESSE-PURÉE / MOULIN À LÉGUMES</text>
-    <text x="35" y="85" font-family="Liberation Sans, Arial, sans-serif" font-size="14.0" fill="#14532d">• Pression mécanique douce.</text>
-    <text x="35" y="100" font-family="Liberation Sans, Arial, sans-serif" font-size="14.0" fill="#14532d">• Les cellules végétales se séparent sans éclater.</text>
-    <text x="35" y="115" font-family="Liberation Sans, Arial, sans-serif" font-size="14.0" fill="#14532d">• L'amylose reste piégé à l'intérieur des cellules.</text>
-    <text x="35" y="135" font-family="Liberation Sans, Arial, sans-serif" font-size="14.0" font-weight="bold" fill="#15803d">Résultat : Texture légère, soyeuse et fondante.</text>
-    <rect x="20" y="170" width="305" height="110" rx="6" fill="#fef2f2" stroke="#fca5a5" stroke-width="1"/>
-    <text x="35" y="190" font-family="Liberation Sans, Arial, sans-serif" font-size="14.3" font-weight="bold" fill="#991b1b">✗ MIXEUR PLONGEANT / ROBOT À LAME</text>
-    <text x="35" y="210" font-family="Liberation Sans, Arial, sans-serif" font-size="14.0" fill="#7f1d1d">• Rotation à 10 000 tours/min cisaillant les parois.</text>
-    <text x="35" y="225" font-family="Liberation Sans, Arial, sans-serif" font-size="14.0" fill="#7f1d1d">• Éventration massive des cellules de pomme de terre.</text>
-    <text x="35" y="240" font-family="Liberation Sans, Arial, sans-serif" font-size="14.0" fill="#7f1d1d">• L'amylose libre se polymérise en colle d'amidon.</text>
-    <text x="35" y="260" font-family="Liberation Sans, Arial, sans-serif" font-size="14.0" font-weight="bold" fill="#b91c1c">Résultat : Purée gluante, élastique comme du mastic.</text>
+
+  <!-- Panneau Droit : Presse-purée vs Mixeur -->
+  <g transform="translate(455, 75)">
+    <rect width="395" height="360" rx="10" fill="#FAF7F2" stroke="#966C3B" stroke-width="1.5"/>
+    <rect width="395" height="32" rx="10" fill="#6B4423"/>
+    <text x="197" y="21" font-family="Liberation Serif, Georgia, serif" font-size="13.5" font-weight="bold" fill="#FCFBF7" text-anchor="middle">2. MÉCANIQUE CELLULAIRE : PRESSE vs MIXEUR</text>
+
+    <rect x="20" y="48" width="355" height="140" rx="6" fill="#F4F6F4" stroke="#5A6E54" stroke-width="1.2"/>
+    <text x="32" y="70" font-family="Liberation Sans, Arial, sans-serif" font-size="13.0" font-weight="bold" fill="#5A6E54">✓ PRESSE-PURÉE OU MOULIN À LÉGUMES</text>
+    <text x="32" y="92" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">• Cisaillement lent à basse pression mécanique.</text>
+    <text x="32" y="110" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">• Les cellules végétales se dissocient le long</text>
+    <text x="42" y="126" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">de leur lamelle pectique sans jamais éclater.</text>
+    <text x="32" y="144" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">• L'amylose reste confiné dans son sac cellulaire.</text>
+    <text x="32" y="168" font-family="Liberation Serif, Georgia, serif" font-size="12.5" font-weight="bold" fill="#5A6E54">→ Résultat : Texture nuageuse, courte et fondante.</text>
+
+    <rect x="20" y="202" width="355" height="140" rx="6" fill="#FBF6F5" stroke="#A3432B" stroke-width="1.2"/>
+    <text x="32" y="224" font-family="Liberation Sans, Arial, sans-serif" font-size="13.0" font-weight="bold" fill="#701C1A">✗ MIXEUR PLONGEANT OU ROBOT À LAME</text>
+    <text x="32" y="246" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">• Hélice tournant à 10 000 tours/minute.</text>
+    <text x="32" y="264" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">• Éventration mécanique des parois cellulaires.</text>
+    <text x="32" y="282" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">• L'amylose libéré dans l'eau s'entrelace en un</text>
+    <text x="42" y="298" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">réseau viscoélastique collant irréversible.</text>
+    <text x="32" y="322" font-family="Liberation Serif, Georgia, serif" font-size="12.5" font-weight="bold" fill="#701C1A">→ Résultat : Colle à papier peint élastique et gluante.</text>
   </g>
 </svg>

@@ -65,7 +65,6 @@ Un grand cuisinier n'est pas quelqu'un qui ne rate jamais : c'est quelqu'un qui 
 - Une crème qui graine n'est pas perdue : c'est une coagulation protéique excessive qu'une contrainte de cisaillement mécanique vigoureuse peut pulvériser.
 Chaque incident culinaire est une leçon de physique expérimentale.
 
----
 
 ### C. Le Protocole Minimaliste : La Cuisson dans une Glacière Ordinaire (Sans Matériel Électrique)
 Vous n'avez nullement besoin d'un thermoplongeur électrique à plusieurs centaines d'euros pour pratiquer la basse température à la perfection. Une simple glacière de pique-nique ordinaire ou un faitout épais enveloppé dans une couverture en laine constitue un isolant thermique passif remarquable :

@@ -68,10 +68,6 @@ Pourquoi ne doit-on **jamais** découper une viande immédiatement à la sortie 
 
 ---
 
-
-
----
-
 ## 4. LA MÉCANIQUE DU POISSON ENTIER : ÉCAILLAGE, VIDAGE ET LEVÉE DES FILETS
 
 Le cuisinier autonome ne s'arrête pas au pavé sous barquette plastique : il sait affronter un poisson entier brut sorti de la criée.
@@ -176,5 +172,3 @@ Peut-on « cuire » un poisson sans le moindre apport de chaleur ? C'est le prin
 4. **La Création du « Lait de Tigre » (*Leche de Tigre*) :** Verser le jus de citron vert sur le poisson salé. Ajouter le piment émincé et la moitié de la coriandre. Mélanger vivement pendant 60 secondes : le jus acide trouble s'émulsionne avec les protéines de poisson pour devenir blanc laiteux.
 5. **La Marinade Flash (5 à 7 minutes chrono) :** Laisser mariner au réfrigérateur pendant seulement 5 à 7 minutes. L'extérieur des cubes de poisson blanchit et devient ferme sous la dent, tandis que le cœur reste translucide, nacré et moelleux. (Une marinade de 30 minutes détruirait toute texture et rendrait le poisson pâteux et caoutchouteux).
 6. **La Finition Croquante :** Retirer le glaçon. Ajouter les lamelles d'oignon rouge égouttées et le reste de coriandre fraîche. Mélanger délicatement et dresser immédiatement dans des assiettes très froides.
-
----

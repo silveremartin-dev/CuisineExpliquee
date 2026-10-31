@@ -46,7 +46,6 @@ Toutes les calories ne se valent pas sur le plan métabolique :
 - **500 Calories Vides Industrielles (Un soda et un paquet de chips) :** Ce sont des sucres raffinés rapides et des graisses cuites dégradées dépourvues de fibres, de minéraux et de vitamines. Elles déclenchent un pic d'insuline massif qui stocke immédiatement les sucres sous forme de graisse hépatique, suivi d'une hypoglycémie réactionnelle 45 minutes plus tard : **vous avez de nouveau faim avant même d'avoir fini de digérer**.
 - **500 Calories de Matière Brute (Un pavé de poisson, des lentilles vertes et des carottes étuvées) :** Les fibres solubles et insolubles ralentissent l'absorption du glucose, les protéines complètes stimulent la synthèse musculaire et les minéraux comblent les récepteurs cellulaires. **La satiété est stable, diffuse et persiste pendant 4 à 5 heures sans coup de pompe.**
 
----
 
 ### B. Immunologie de l'Assiette : Allergies Vraies (IgE) versus Intolérances Enzymatiques
 

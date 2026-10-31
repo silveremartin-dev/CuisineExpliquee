@@ -1,44 +1,57 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="100%" height="100%">
-  <rect width="800" height="440" rx="16" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
-  <text x="400" y="38" font-family="Liberation Sans, Arial, sans-serif" font-size="22.8" font-weight="bold" fill="#0f172a" text-anchor="middle">LE GESTE AU MICROSCOPE : LES PÂTES ET L'INCENDIE D'HUILE</text>
-  <text x="400" y="62" font-family="Liberation Sans, Arial, sans-serif" font-size="16.9" fill="#64748b" text-anchor="middle">La physique du quotidien : gélatinisation de l'amidon et réaction d'urgence au feu gras.</text>
-  <g transform="translate(40, 85)">
-    <rect width="345" height="325" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
-    <rect x="0" y="0" width="345" height="30" rx="12" fill="#2563eb"/>
-    <text x="172" y="20" font-family="Liberation Sans, Arial, sans-serif" font-size="15.6" font-weight="bold" fill="#ffffff" text-anchor="middle">L'ÉQUATION DES PÂTES : 100 / 10 / 1</text>
-    <text x="20" y="55" font-family="Liberation Sans, Arial, sans-serif" font-size="14.3" fill="#1e3a8a"><tspan font-weight="bold">• Proportions :</tspan> 100 g de pâtes, 10 g de sel, 1 L d'eau.</text>
-    <text x="20" y="75" font-family="Liberation Sans, Arial, sans-serif" font-size="13.7" fill="#334155"><tspan font-weight="bold">• Pourquoi tant d'eau ?</tspan> Éviter la saturation en amidon dissous</text>
-    <text x="32" y="90" font-family="Liberation Sans, Arial, sans-serif" font-size="13.7" fill="#334155">qui rend l'eau collante et effondre la température au plongeon.</text>
-    <text x="20" y="115" font-family="Liberation Sans, Arial, sans-serif" font-size="14.3" fill="#15803d"><tspan font-weight="bold">✓ CE QU'IL FAUT FAIRE :</tspan></text>
-    <text x="25" y="132" font-family="Liberation Sans, Arial, sans-serif" font-size="14.0" fill="#166534">1. Jeter dans une eau à bouillon VIF (100°C).</text>
-    <text x="25" y="148" font-family="Liberation Sans, Arial, sans-serif" font-size="14.0" fill="#166534">2. Couvrir 30 secondes pour relancer l'ébullition puis ôter.</text>
-    <text x="25" y="164" font-family="Liberation Sans, Arial, sans-serif" font-size="14.0" fill="#166534">3. Cuire <tspan font-style="italic">al dente</tspan> (cœur légèrement résistant, index glycémique bas).</text>
-    <text x="25" y="180" font-family="Liberation Sans, Arial, sans-serif" font-size="14.0" fill="#166534">4. <tspan font-weight="bold">Garder 1 louche d'eau de cuisson</tspan> riche en amylose dissous !</text>
-    <text x="25" y="196" font-family="Liberation Sans, Arial, sans-serif" font-size="14.0" fill="#166534">5. Émulsionner la sauce directement avec l'eau des pâtes.</text>
-    <text x="20" y="224" font-family="Liberation Sans, Arial, sans-serif" font-size="14.3" fill="#b91c1c"><tspan font-weight="bold">✗ CE QU'IL FAUT ABSOLUMENT ÉVITER :</tspan></text>
-    <text x="25" y="242" font-family="Liberation Sans, Arial, sans-serif" font-size="14.0" fill="#991b1b">• <tspan font-weight="bold">Mettre de l'huile dans l'eau :</tspan> l'huile flotte en surface (inutile),</text>
-    <text x="35" y="256" font-family="Liberation Sans, Arial, sans-serif" font-size="13.3" fill="#7f1d1d">puis enrobe les pâtes à l'égouttage, empêchant la sauce d'adhérer !</text>
-    <text x="25" y="274" font-family="Liberation Sans, Arial, sans-serif" font-size="14.0" fill="#991b1b">• <tspan font-weight="bold">Rincer les pâtes cuites sous l'eau :</tspan> rince l'amidon de surface,</text>
-    <text x="35" y="288" font-family="Liberation Sans, Arial, sans-serif" font-size="13.3" fill="#7f1d1d">glace les pâtes et détruit toute liaison avec le condiment.</text>
-    <text x="25" y="306" font-family="Liberation Sans, Arial, sans-serif" font-size="14.0" fill="#991b1b">• <tspan font-weight="bold">Surcuire en pâte molle :</tspan> double l'index glycémique (pic d'insuline).</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 500" width="100%" height="100%">
+  <rect width="880" height="500" rx="14" fill="#FCFBF7" stroke="#DFDACF" stroke-width="2"/>
+  <text x="440" y="34" font-family="Liberation Serif, Georgia, serif" font-size="20" font-weight="bold" fill="#701C1A" text-anchor="middle">THERMODYNAMIQUE DES PÂTES ET ÉMULSION D'OR DE LA CARBONARA</text>
+  <text x="440" y="55" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" fill="#5C5549" text-anchor="middle">Gélatinisation de l'amidon, règle 100 / 10 / 1 et liaison colloïdale sans crème.</text>
+
+  <!-- Panneau Gauche : Règle 100 / 10 / 1 -->
+  <g transform="translate(30, 75)">
+    <rect width="395" height="400" rx="10" fill="#FAF7F2" stroke="#966C3B" stroke-width="1.5"/>
+    <rect width="395" height="32" rx="10" fill="#6B4423"/>
+    <text x="197" y="21" font-family="Liberation Serif, Georgia, serif" font-size="13.5" font-weight="bold" fill="#FCFBF7" text-anchor="middle">1. L'ÉQUATION DES PÂTES : 100 g / 10 g / 1 L</text>
+
+    <text x="16" y="54" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" fill="#242124"><tspan font-weight="bold" fill="#6B4423">• Ratio canonique :</tspan> 100 g de pâtes, 10 g de sel, 1 L d'eau.</text>
+    <text x="16" y="74" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#5C5549">Le grand volume d'eau assure l'inertie thermique à 100°C</text>
+    <text x="16" y="90" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#5C5549">au plongeon et dilue l'amidon pour éviter l'agglutination.</text>
+
+    <text x="16" y="118" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#5A6E54">✓ LE GESTE VERTUEUX :</text>
+    <text x="20" y="138" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">1. Plonger dans l'eau salée à bouillon vif (100°C).</text>
+    <text x="20" y="156" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">2. Remuer dès les 30 premières secondes critiques.</text>
+    <text x="20" y="174" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">3. Cuire <tspan font-style="italic">al dente</tspan> : cœur de gluten ferme (IG modéré).</text>
+    <text x="20" y="192" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" font-weight="bold" fill="#B45309">4. Prélever 1 louche d'eau de cuisson blanchie d'amylose</text>
+    <text x="34" y="208" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#5C5549">avant d'égoutter pour lier et émulsionner la sauce !</text>
+
+    <text x="16" y="240" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#701C1A">✗ LES TROIS ERREURS À BANNIR :</text>
+    <text x="20" y="260" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">• <tspan font-weight="bold" fill="#701C1A">Verser de l'huile dans l'eau :</tspan> elle flotte en surface,</text>
+    <text x="30" y="276" font-family="Liberation Sans, Arial, sans-serif" font-size="11.8" fill="#5C5549">puis imperméabilise la pâte à l'égouttage (la sauce glisse).</text>
+    <text x="20" y="298" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">• <tspan font-weight="bold" fill="#701C1A">Rincer les pâtes cuites à l'eau :</tspan> élimine le film</text>
+    <text x="30" y="314" font-family="Liberation Sans, Arial, sans-serif" font-size="11.8" fill="#5C5549">d'amidon superficiel indispensable à l'accroche du condiment.</text>
+    <text x="20" y="336" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">• <tspan font-weight="bold" fill="#701C1A">Surcuire :</tspan> effondre la trame protéique et double</text>
+    <text x="30" y="352" font-family="Liberation Sans, Arial, sans-serif" font-size="11.8" fill="#5C5549">la vitesse d'assimilation glycémique (pic d'insuline).</text>
   </g>
-  <g transform="translate(415, 85)">
-    <rect width="345" height="325" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
-    <rect x="0" y="0" width="345" height="30" rx="12" fill="#dc2626"/>
-    <text x="172" y="20" font-family="Liberation Sans, Arial, sans-serif" font-size="15.6" font-weight="bold" fill="#ffffff" text-anchor="middle">URGENCE : L'HUILE EN FLAMMES DANS LA POÊLE</text>
-    <rect x="25" y="45" width="295" height="95" rx="6" fill="#fef2f2" stroke="#fca5a5" stroke-width="1"/>
-    <text x="172" y="65" font-family="Liberation Sans, Arial, sans-serif" font-size="14.3" font-weight="bold" fill="#991b1b" text-anchor="middle">LE PIÈGE MORTEL DU VERRE D'EAU</text>
-    <text x="35" y="85" font-family="Liberation Sans, Arial, sans-serif" font-size="13.3" fill="#7f1d1d">1. L'eau (d=1,0) coule sous l'huile brûlante (d=0,92 à 300°C).</text>
-    <text x="35" y="100" font-family="Liberation Sans, Arial, sans-serif" font-size="13.3" fill="#7f1d1d">2. L'eau se vaporise instantanément : <tspan font-weight="bold">expansion x 1 700</tspan> !</text>
-    <text x="35" y="115" font-family="Liberation Sans, Arial, sans-serif" font-size="13.3" fill="#b91c1c" font-weight="bold">3. L'explosion pulvérise l'huile en aérosol : boule de feu de 2 mètres.</text>
-    <text x="20" y="160" font-family="Liberation Sans, Arial, sans-serif" font-size="14.3" fill="#15803d"><tspan font-weight="bold">✓ LE SEUL GESTE CORRECT (EN 3 SECONDES) :</tspan></text>
-    <text x="25" y="180" font-family="Liberation Sans, Arial, sans-serif" font-size="13.7" fill="#166534">1. <tspan font-weight="bold">Couper la source de chaleur</tspan> (gaz ou plaque immédiatement).</text>
-    <text x="25" y="198" font-family="Liberation Sans, Arial, sans-serif" font-size="13.7" fill="#166534">2. <tspan font-weight="bold">Faire glisser un couvercle métallique</tspan> ou une plaque sur la poêle.</text>
-    <text x="35" y="213" font-family="Liberation Sans, Arial, sans-serif" font-size="13.3" fill="#15803d">(À défaut : poser un torchon mouillé et TRÈS FORTEMENT essoré).</text>
-    <text x="25" y="231" font-family="Liberation Sans, Arial, sans-serif" font-size="13.7" fill="#166534">3. <tspan font-weight="bold">Ne plus toucher</tspan> et attendre 10 minutes que la température</text>
-    <text x="35" y="246" font-family="Liberation Sans, Arial, sans-serif" font-size="13.3" fill="#15803d">redescende sous le point d'auto-inflammation (360°C).</text>
-    <rect x="25" y="265" width="295" height="45" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
-    <text x="172" y="283" font-family="Liberation Sans, Arial, sans-serif" font-size="13.7" font-weight="bold" fill="#92400e" text-anchor="middle">Principe physique de neutralisation :</text>
-    <text x="172" y="299" font-family="Liberation Sans, Arial, sans-serif" font-size="13.3" fill="#78350f" text-anchor="middle">Supprimer le comburant (O₂) sans disperser le combustible (huile).</text>
+
+  <!-- Panneau Droit : Émulsion Carbonara -->
+  <g transform="translate(455, 75)">
+    <rect width="395" height="400" rx="10" fill="#FAF7F2" stroke="#B45309" stroke-width="1.5"/>
+    <rect width="395" height="32" rx="10" fill="#B45309"/>
+    <text x="197" y="21" font-family="Liberation Serif, Georgia, serif" font-size="13.5" font-weight="bold" fill="#FCFBF7" text-anchor="middle">2. LA CARBONARA : FENÊTRE THERMIQUE (62–65°C)</text>
+
+    <rect x="20" y="48" width="355" height="95" rx="6" fill="#F2ECE1" stroke="#B45309" stroke-width="1.2"/>
+    <text x="197" y="68" font-family="Liberation Serif, Georgia, serif" font-size="13" font-weight="bold" fill="#701C1A" text-anchor="middle">L'ÉQUATION COLLOÏDALE SANS CRÈME</text>
+    <text x="197" y="88" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124" text-anchor="middle">Jaunes d'œufs (Lécithine) + Pecorino râpé fin</text>
+    <text x="197" y="106" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124" text-anchor="middle">+ Graisse fondue du Guanciale + Eau amidonnée (64°C)</text>
+    <text x="197" y="126" font-family="Liberation Serif, Georgia, serif" font-size="12.5" font-weight="bold" fill="#B45309" text-anchor="middle">= Crème d'or veloutée nappant chaque brin</text>
+
+    <text x="16" y="168" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#5A6E54">✓ LE PROTOCOLE HORS DU FEU :</text>
+    <text x="20" y="188" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">1. Rissoler le guanciale à sec jusqu'à transparence ambrée.</text>
+    <text x="20" y="206" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">2. Fouetter jaunes + pecorino + poivre noir concassé</text>
+    <text x="34" y="222" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#5C5549">avec une cuillerée d'eau de cuisson tiédie.</text>
+    <text x="20" y="240" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" font-weight="bold" fill="#701C1A">3. Retirer la poêle du feu et attendre 30 secondes</text>
+    <text x="34" y="256" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#5C5549">que le métal descende sous le seuil critique de 68°C.</text>
+    <text x="20" y="274" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">4. Verser l'appareil aux jaunes et vanner énergiquement.</text>
+
+    <rect x="20" y="298" width="355" height="82" rx="6" fill="#FBF6F5" stroke="#A3432B" stroke-width="1"/>
+    <text x="197" y="318" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#701C1A" text-anchor="middle">✗ LE PIÈGE DE LA POÊLE SUR LE BRÛLEUR (&gt; 70°C) :</text>
+    <text x="197" y="338" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#242124" text-anchor="middle">Les protéines du jaune coagulent brutalement en</text>
+    <text x="197" y="354" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#242124" text-anchor="middle">grumeaux d'omelette sèche au lieu d'émulsionner.</text>
   </g>
 </svg>

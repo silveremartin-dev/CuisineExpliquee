@@ -91,7 +91,7 @@ Nos papilles gustatives et nos neurones olfactifs ne sont pas de simples instrum
    - *Évacuation des toxiques :* L'urine évacue l'urée (déchet du métabolisme azoté) et les métabolites hydrosolubles ; les matières fécales évacuent les résidus bactériens, les pigments biliaires et les solides non assimilables.
 
 
-### C. Biologie Comparée de la Digestion : Cellulose des Ruminants et Toxicités Spécifiques
+### D. Biologie Comparée de la Digestion : Cellulose des Ruminants et Toxicités Spécifiques
 
 Ce qui nourrit une espèce peut en tuer une autre. La physiologie humaine est le résultat d'un arbitrage évolutif strict :
 - **L'Incapacité Humaine à Digérer la Cellulose :** 

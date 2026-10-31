@@ -56,8 +56,6 @@ Lorsque des matières grasses chaudes entrent en contact avec du plastique à pl
 
 ---
 
----
-
 ## 4. ÉCONOMIE DOMESTIQUE CIRCULAIRE : SAUVER ET CULOTTER UNE POÊLE EN FONTE DE BROCANTE POUR 15 €
 
 La véritable élégance culinaire réside dans l'art de s'équiper pour la vie avec des matériaux de seconde main récupérés pour une somme dérisoire dans les brocantes, vide-greniers et ressourceries.
@@ -131,12 +129,10 @@ Au-delà de la poêle et de la casserole, la cuisine moderne s'appuie sur trois 
 - **Ce que le Micro-Ondes Ne Fait Pas :** Il n'émet aucune radiation ionisante et ne rend pas les aliments radioactifs. En revanche, comme la température ne dépasse pas $100^\circ\mathrm{C}$ en milieu aqueux libre, il ne produit **aucune réaction de Maillard ni croûte croustillante**.
 - **L'Usage Malin :** Décongélation douce par impulsions pour ne pas cuire les bords, réchauffage des liquides et cuisson vapeur rapide sous cloche de verre borosilicaté. Bannir les contenants en plastique au profit du verre.
 
----
-
 ### D. L'Énigme du Four : Pourquoi Préchauffer Plutôt que Partir à Froid ?
 
 Une question hante de nombreux cuisiniers amateurs : pourquoi la quasi-totalité des recettes exige-t-elle un four préchauffé à $180^\circ\mathrm{C}$ plutôt que d'enfourner directement à froid en économisant de l'énergie ?
 - **La thermodynamique de l'« Oven Spring » (La Poussée du Four) :** 
-  Dans une pâte à gâteau ou un pâton de pain, le volume et le moelleux dépendent de la détente brutale des microbulles de gaz ($\mathrm{CO}_2$ de la levure ou vapeur d'eau piégée). Dans un four préalablement porté à $180	ext{--}200^\circ\mathrm{C}$, le transfert d'énergie par convection et rayonnement est foudroyant : l'eau de surface et les gaz internes entrent immédiatement en ébullition et se dilatent exponentiellement, propulsant la pâte vers le haut. Cette expansion maximale doit impérativement se produire **avant** que la croûte extérieure ne coagule et ne se fige sous l'effet de la chaleur.
+  Dans une pâte à gâteau ou un pâton de pain, le volume et le moelleux dépendent de la détente brutale des microbulles de gaz ($\mathrm{CO}_2$ de la levure ou vapeur d'eau piégée). Dans un four préalablement porté à $180\text{--}200^\circ\mathrm{C}$, le transfert d'énergie par convection et rayonnement est foudroyant : l'eau de surface et les gaz internes entrent immédiatement en ébullition et se dilatent exponentiellement, propulsant la pâte vers le haut. Cette expansion maximale doit impérativement se produire **avant** que la croûte extérieure ne coagule et ne se fige sous l'effet de la chaleur.
 - **Le piège du démarrage à four froid :**
   À l'inverse, lors d'un démarrage à froid, la température monte lentement ($30^\circ\mathrm{C}$, $60^\circ\mathrm{C}$, $90^\circ\mathrm{C}$). À ces paliers tièdes, les matières grasses (beurre) fondent prématurément et s'écoulent hors de la mie avant que l'amidon n'ait gélatinisé pour les emprisonner. Les gaz s'échappent progressivement sans faire gonfler la pâte, et la surface s'assèche par évaporation lente. Résultat physique : un gâteau dense, plat, lourd et huileux. Le préchauffage n'est pas une coquetterie de chef, mais le déclencheur cinétique de la texture alvéolée.

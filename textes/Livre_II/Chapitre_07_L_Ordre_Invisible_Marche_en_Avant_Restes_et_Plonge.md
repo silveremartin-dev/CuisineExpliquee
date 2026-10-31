@@ -38,11 +38,7 @@ Lorsque vous terminez de cuire une cocotte de ragoût ou une soupe :
 
 ---
 
----
-
 ## 3. LA DESTINÉE DE LA MATIÈRE : TRI DES DÉCHETS, COMPOST ET ÉCONOMIE CIRCULAIRE
-
-### A. Les Réflexes Zéro Déchet en Cuisine
 
 ### A. Le Bocal de Parures au Congélateur
 Gardez en permanence un bocal en verre ou un sachet étanche au congélateur. Glissez-y au fur et à mesure :
@@ -57,22 +53,19 @@ Le pain dur n'est pas un déchet : c'est de l'amidon déshydraté prêt à capte
 - Coupé en cubes et sauté au beurre moussant à l'ail, il offre des croûtons dorés pour les soupes et salades.
 - Humidifié d'huile d'olive et de vinaigre de vin avec des tomates mûres, du basilic et des oignons rouges, il devient la fameuse **panzanella toscane**, chef-d'œuvre de l'économie paysanne italienne.
 
----
 
----
-
-### B. Bio-Poubelle vs Ordures Résiduelles : Le Désastre Énergétique du Sac Noir
+### C. Bio-Poubelle vs Ordures Résiduelles : Le Désastre Énergétique du Sac Noir
 
 Dans un foyer occidental moyen, **$30\,\%$ du poids de la poubelle** est constitué de matière organique humide (épluchures de légumes, os, marc de café, coquilles d'œufs, restes de repas). Le mode de tri transforme radicalement leur destin écologique.
 
 ![Le destin des déchets de cuisine : valorisation en poubelle bio versus hérésie du sac noir](figures/livre_2/fig_flux_dechets_cuisine.svg)
 
-### A. La Poubelle Noire (Ordures Ménagères Non Triées) : Le Désastre Énergétique
+#### 1. La Poubelle Noire (Ordures Ménagères Non Triées)
 Quand les biodéchets humides ($80\,\%$ d'eau) sont jetés dans le sac noir ordinaire :
 - **À l'Incinérateur :** Brûler de l'eau nécessite d'injecter du fioul ou du gaz de soutien pour maintenir la chambre de combustion à $850^\circ\mathrm{C}$. C'est une hérésie thermodynamique.
 - **En Décharge d'Enfouissement :** Privée d'oxygène sous des couches de plastique, la matière organique fermente de façon anaérobie fétide et génère du **méthane ($\mathrm{CH}_4$)**, gaz à effet de serre au pouvoir réchauffant **28 fois supérieur au $\mathrm{CO}_2$**, ainsi que des lixiviats acides toxiques qui polluent les nappes phréatiques.
 
-### B. La Poubelle Bio (Compost et Méthanisation) : La Boucle Vivante
+#### 2. La Poubelle Bio (Compost et Méthanisation) : La Boucle Vivante
 - **Le Compostage Maraîcher :** Les bactéries aérobies et les lombrics décomposent la cellulose et les protéines végétales en **humus stable riche en azote, phosphore et potassium**. Ce compost est retourné aux terres agricoles maraîchères, restaurant la capacité des sols à retenir l'eau sans engrais de synthèse.
 - **La Méthanisation Industrielle :** Les biodéchets sont digérés en cuve hermétique chaude : le méthane produit est purifié en biométhane réinjecté dans le réseau de gaz de ville pour chauffer les habitations ou alimenter les bus urbains. Le digestat liquide sert d'engrais organique.
 
@@ -81,8 +74,6 @@ Quand les biodéchets humides ($80\,\%$ d'eau) sont jetés dans le sac noir ordi
 1. *Le bocal de parures au congélateur :* Gardez un bocal hermétique au congélateur pour y glisser les épluchures de carottes propres, tiges de persil, vert de poireaux et trognons d'oignons. Quand le bocal est plein, immergez-le d'eau froide avec une feuille de laurier et faites frémir 40 minutes : vous obtenez le meilleur bouillon végétal du monde, sans débourser un centime.
 2. *Les os et carcasses :* Ne jetez jamais une carcasse de poulet rôti. Recuite à feu doux pendant 3 heures avec un filet de vinaigre de cidre (dont l'acidité extrait les minéraux et le collagène des os), elle se transforme en fond de volaille gélatineux doré digne des plus grands étoilés.
 :::
-
----
 
 ---
 
@@ -107,5 +98,3 @@ La brigade d'un palace ne laisse jamais un millimètre carré d'encombrement sur
   1. *Bac 1 (Lavage) :* Un fond d'eau très chaude avec quelques gouttes de liquide vaisselle concentré. On y brosse la vaisselle de la moins grasse (verres, tasses) vers la plus grasse (poêles, plats à four).
   2. *Bac 2 (Rinçage) :* Un bain ou filet d'eau claire très chaude.
 - **Le Séchage à l'Air Libre sur Égouttoir :** Rincée à l'eau très chaude, la vaisselle emmagasine assez d'énergie calorifique pour s'égoutter et sécher spontanément par évaporation en quelques minutes sur un égouttoir aéré. Frotter la vaisselle propre avec un torchon humide est déconseillé : le torchon de cuisine constitue l'un des plus grands réservoirs bactériens du foyer.
-
----

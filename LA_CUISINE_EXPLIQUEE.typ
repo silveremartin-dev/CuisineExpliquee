@@ -541,7 +541,7 @@ nature comme un chimpanzé (fruits sauvages très fibreux, feuilles
 coriaces amères, graines crues dures et viande crue d'animaux sauvages),
 il mourrait rapidement de dénutrition sévère ou d'infection parasitaire.
 
-#figure(image("figures/histoire/fig_histoire_evolution_feu.svg", width: 95%, height: 38%, fit: "contain"),
+#figure(image("figures/histoire/fig_histoire_evolution_feu.svg", width: 95%, height: 36%, fit: "contain"),
   caption: [
     L'Évolution du Feu et la Morphogenèse Humaine
   ]
@@ -654,7 +654,7 @@ terre.
 Pourquoi mangeons-nous, comment sélectionnons-nous nos aliments et
 comment notre corps gère-t-il l'absorption et les déchets métaboliques ?
 
-#figure(image("figures/histoire/fig_nutrition_digestion_survie.svg", width: 95%, height: 38%, fit: "contain"),
+#figure(image("figures/histoire/fig_nutrition_digestion_survie.svg", width: 95%, height: 36%, fit: "contain"),
   caption: [
     Physiologie de la Nutrition et Cycle de Survie
   ]
@@ -726,8 +726,8 @@ par l'organisme humain).
     fécales évacuent les résidus bactériens, les pigments biliaires et
     les solides non assimilables.
 
-=== C. Biologie Comparée de la Digestion : Cellulose des Ruminants et Toxicités Spécifiques
-<c.-biologie-comparée-de-la-digestion-cellulose-des-ruminants-et-toxicités-spécifiques>
+=== D. Biologie Comparée de la Digestion : Cellulose des Ruminants et Toxicités Spécifiques
+<d.-biologie-comparée-de-la-digestion-cellulose-des-ruminants-et-toxicités-spécifiques>
 Ce qui nourrit une espèce peut en tuer une autre. La physiologie humaine
 est le résultat d'un arbitrage évolutif strict : - #strong[L'Incapacité
 Humaine à Digérer la Cellulose :] L'amidon et la cellulose sont tous
@@ -843,7 +843,7 @@ bouillon chaud vinaigré, puis les pile au mortier avant de passer la
 purée à l'étamine. Les granules d'amidon rétrogradé du pain procurent un
 velouté parfait sans la moindre sensation de gras.
 
-#figure(image("figures/patrimoine/pompei_fresque_boulangerie.jpg", alt: "Vente de pain dans une boutique de Pompéi (fresque murale romaine du Ier siècle apr. J.-C., Musée archéologique national de Naples / Wikimedia Commons, Domaine Public)"),
+#figure(image("figures/patrimoine/pompei_fresque_boulangerie.jpg", width: 85%, height: 32%, fit: "contain"),
   caption: [
     Vente de pain dans une boutique de Pompéi (fresque murale romaine du
     Ier siècle apr. J.-C., Musée archéologique national de Naples /
@@ -994,7 +994,7 @@ localement]. C'est le corps gras qui détermine le point de fumée, le
 mode de transfert thermique et l'architecture aromatique d'un plat de
 terroir.
 
-#figure(image("figures/livre_4/fig_carte_trois_graisses_terroirs.svg", width: 95%, height: 38%, fit: "contain"),
+#figure(image("figures/livre_4/fig_carte_trois_graisses_terroirs.svg", width: 95%, height: 36%, fit: "contain"),
   caption: [
     La géopolitique des trois corps gras fondateurs : beurre du Nord,
     graisse de volaille du Sud-Ouest et huile d'olive méditerranéenne
@@ -1147,7 +1147,7 @@ l'appareillage superflu]. Avec cinq outils élémentaires, bien choisis et
 indestructibles, il est possible d'exécuter l'intégralité des
 transformations fondamentales de la cuisine universelle.
 
-#figure(image("figures/livre_1/fig_01_arsenal_minimal.svg", width: 95%, height: 38%, fit: "contain"),
+#figure(image("figures/livre_1/fig_01_arsenal_minimal.svg", width: 95%, height: 36%, fit: "contain"),
   caption: [
     L'Arsenal Minimal : Les 5 Organes Fondamentaux
   ]
@@ -1251,8 +1251,6 @@ molécules sont de puissants perturbateurs endocriniens. #strong[Règle
 absolue :] Ne jamais réchauffer un aliment gras dans du plastique \;
 utiliser exclusivement du verre borosilicaté (Pyrex) ou de la céramique
 vernissée sans plomb.
-
-#divider()
 
 #divider()
 
@@ -1488,8 +1486,6 @@ trois machines thermiques majeures :
   sous cloche de verre borosilicaté. Bannir les contenants en plastique
   au profit du verre.
 
-#divider()
-
 === D. L'Énigme du Four : Pourquoi Préchauffer Plutôt que Partir à Froid ?
 <d.-lénigme-du-four-pourquoi-préchauffer-plutôt-que-partir-à-froid>
 Une question hante de nombreux cuisiniers amateurs : pourquoi la
@@ -1500,7 +1496,7 @@ Spring » (La Poussée du Four) :] Dans une pâte à gâteau ou un pâton de
 pain, le volume et le moelleux dépendent de la détente brutale des
 microbulles de gaz ($upright(C O)_2$ de la levure ou vapeur d'eau
 piégée). Dans un four préalablement porté à
-$180 e x t - - 200^compose upright(C)$, le transfert d'énergie par
+$180 upright("–") 200^compose upright(C)$, le transfert d'énergie par
 convection et rayonnement est foudroyant : l'eau de surface et les gaz
 internes entrent immédiatement en ébullition et se dilatent
 exponentiellement, propulsant la pâte vers le haut. Cette expansion
@@ -1535,7 +1531,7 @@ plus denses de l'habitat. Savoir neutraliser un accident en trois
 secondes fait la différence entre un incident maîtrisé et un drame
 irréversible.
 
-#figure(image("figures/livre_1/fig_securite_accidents_frigo_feu.svg", width: 95%, height: 38%, fit: "contain"),
+#figure(image("figures/livre_1/fig_securite_accidents_frigo_feu.svg", width: 95%, height: 36%, fit: "contain"),
   caption: [
     Sécurité en Cuisine : Les 4 Accidents Majeurs et leurs Parades
   ]
@@ -1643,7 +1639,7 @@ rasoir, mais lorsqu'elle est émoussée (l'opérateur force, la lame ripe
 sur la peau cireuse d'un oignon ou d'une courge) ou lorsque la main
 passive n'est pas protégée.
 
-#figure(image("figures/livre_1/fig_posture_griffe_de_chat.svg", width: 95%, height: 38%, fit: "contain"),
+#figure(image("figures/livre_1/fig_posture_griffe_de_chat.svg", width: 95%, height: 36%, fit: "contain"),
   caption: [
     Sécurité du couteau : biomécanique de la prise en pince et
     protection en griffe de chat
@@ -1682,8 +1678,6 @@ passive n'est pas protégée.
 
 #divider()
 
-#divider()
-
 == 4. RISQUES GAZEUX ET INTOXICATIONS CHIMIQUES
 <risques-gazeux-et-intoxications-chimiques>
 === A. La Fuite de Gaz et le Réflexe « Zéro Étincelle »
@@ -1704,10 +1698,8 @@ L'hypochlorite de sodium ($upright(N a C l O)$) en milieu acide dégage
 instantanément du #strong[dichlore gazeux ($upright(C l)_2$)], gaz
 suffocant toxique qui détruit les alvéoles pulmonaires.
 
-#divider()
-
-=== B. Les Poisons Végétaux du Foyer : Solanine, Lectines et Cyanure
-<b.-les-poisons-végétaux-du-foyer-solanine-lectines-et-cyanure>
+=== C. Les Poisons Végétaux du Foyer : Solanine, Lectines et Cyanure
+<c.-les-poisons-végétaux-du-foyer-solanine-lectines-et-cyanure>
 Le règne végétal n'a pas conçu ses fruits et ses racines pour nous
 régaler, mais pour assurer sa propre survie face aux prédateurs : -
 #strong[La Solanine des Pommes de Terre Verdies :] Exposée à la lumière
@@ -1725,7 +1717,7 @@ incoercibles et des hémorragies digestives par agglutination massive des
 cellules intestinales. Pour inactiver cette toxine, #strong[une
 ébullition franche à $100^compose upright(C)$ pendant 10 minutes minimum
 est indispensable]. Les cuissons lentes à basse température (mijoteuses
-électriques à $75 e x t - - 80^compose upright(C)$) sont
+électriques à $75 upright("–") 80^compose upright(C)$) sont
 particulièrement dangereuses : elles ne détruisent pas la toxine mais
 multiplient sa cytotoxicité par cinq ! - #strong[L'Amygdaline et le
 Cyanure des Amandes Amères :] Les amandes amères, les noyaux d'abricots,
@@ -1823,7 +1815,7 @@ Pourquoi neuf personnes sur dix reviennent-elles du supermarché avec des
 placards remplis de paquets industriels ultratransformés et un sentiment
 diffus de culpabilité budgétaire ?
 
-#figure(image("figures/livre_1/fig_additifs_bliss_point_courses.svg", width: 95%, height: 38%, fit: "contain"),
+#figure(image("figures/livre_1/fig_additifs_bliss_point_courses.svg", width: 95%, height: 36%, fit: "contain"),
   caption: [
     La psychologie des courses et le Bliss Point industriel
   ]
@@ -1864,8 +1856,6 @@ cidre, épices entières en grains.
 
 #divider()
 
-#divider()
-
 == 2. LA MANIPULATION INDUSTRIELLE : LE BLISS POINT ET LES AUXILIAIRES
 <la-manipulation-industrielle-le-bliss-point-et-les-auxiliaires>
 === A. Le #emph[Bliss Point] (Le Point de Béatitude Cérébrale)
@@ -1878,10 +1868,8 @@ satiété. Le cerveau sécrète un pic massif de dopamine sans jamais
 envoyer l'ordre à la leptine de stopper l'ingestion : on continue de
 manger le paquet même lorsque l'estomac est distendu.
 
-#divider()
-
-=== A. Définition Réglementaire et Différence avec l'Auxiliaire Technologique
-<a.-définition-réglementaire-et-différence-avec-lauxiliaire-technologique>
+=== B. Définition Réglementaire et Différence avec l'Auxiliaire Technologique
+<b.-définition-réglementaire-et-différence-avec-lauxiliaire-technologique>
 Selon le #emph[Codex Alimentarius] et les règlements de l'Union
 Européenne (Règlement CE n° 1333/2008), un #strong[additif alimentaire]
 est toute substance qui n'est pas normalement consommée en tant que
@@ -1901,8 +1889,8 @@ pour filtrer le vin) ne sont utilisés que pendant la fabrication et sont
 les mentionner sur l'étiquette], bien que des traces résiduelles
 infinitésimales puissent persister dans le produit fini.
 
-=== B. Trajectoire Historique : De la Salaison Ancestrale à la Pétrochimie
-<b.-trajectoire-historique-de-la-salaison-ancestrale-à-la-pétrochimie>
+=== C. Trajectoire Historique : De la Salaison Ancestrale à la Pétrochimie
+<c.-trajectoire-historique-de-la-salaison-ancestrale-à-la-pétrochimie>
 L'humanité n'a pas attendu l'ère industrielle pour recourir aux additifs
 : 1. #strong[Les Béquilles Traditionnelles :] Le chlorure de sodium (sel
 marin), la fumée de bois noble (riche en phénols antiseptiques), le
@@ -1922,12 +1910,8 @@ des goudrons de houille et des émulsifiants de synthèse capables de
 contraindre l'eau et les graisses à cohabiter indéfiniment sans jamais
 se séparer.
 
-#divider()
-
-#divider()
-
-=== C. Les Sept Grandes Familles Fonctionnelles de l'Industrie
-<c.-les-sept-grandes-familles-fonctionnelles-de-lindustrie>
+=== D. Les Sept Grandes Familles Fonctionnelles de l'Industrie
+<d.-les-sept-grandes-familles-fonctionnelles-de-lindustrie>
 Pour décoder les étiquettes en un coup d'œil, il suffit de comprendre la
 nomenclature numérique européenne du code E :
 
@@ -1977,8 +1961,6 @@ nomenclature numérique européenne du code E :
 
 #divider()
 
-#divider()
-
 == 3. L'ENQUÊTE CRITIQUE SUR LES ADDITIFS (CODES E)
 <lenquête-critique-sur-les-additifs-codes-e>
 === A. Le Grand Tableau Critique des Codes E : Distinguer le Noble du Toxique
@@ -2000,92 +1982,83 @@ dangereuses documentées par la recherche biomédicale :
     table.header([Code E & Nom], [Famille], [Origine & Nature], [Rôle
       Réel & Évaluation Médicale], [Statut Recommandé],),
     table.hline(),
-    [#strong[E300]\\], [], [], [], [],
-    [#emph[\(Acide ascorbique)]], [Antioxydant], [Vitamine C
-    pure], [Protège contre le rancissement et l'oxydation de l'air.
+    [#strong[E300] #emph[\(Acide ascorbique)]], [Antioxydant], [Vitamine
+    C pure], [Protège contre le rancissement et l'oxydation de l'air.
     Vitamine physiologique essentielle.], [#strong[TOTALEMENT
     INOFFENSIF]],
-    [#strong[E330]\\], [], [], [], [],
-    [#emph[\(Acide citrique)]], [Acidifiant], [Molécule naturelle des
-    agrumes], [Régulateur de pH biologique. Intermédiaire fondamental du
-    cycle cellulaire de Krebs.], [#strong[TOTALEMENT INOFFENSIF]],
-    [#strong[E322]\\], [], [], [], [],
-    [#emph[\(Lécithines)]], [Émulsifiant], [Extrait de jaune d'œuf ou de
-    graine de soja], [Phospholipide naturel permettant de lier l'eau et
-    l'huile. Composant clé des membranes
+    [#strong[E330] #emph[\(Acide citrique)]], [Acidifiant], [Molécule
+    naturelle des agrumes], [Régulateur de pH biologique. Intermédiaire
+    fondamental du cycle cellulaire de Krebs.], [#strong[TOTALEMENT
+    INOFFENSIF]],
+    [#strong[E322] #emph[\(Lécithines)]], [Émulsifiant], [Extrait de
+    jaune d'œuf ou de graine de soja], [Phospholipide naturel permettant
+    de lier l'eau et l'huile. Composant clé des membranes
     cellulaires.], [#strong[TOTALEMENT INOFFENSIF]],
-    [#strong[E440]\\], [], [], [], [],
-    [#emph[\(Pectine)]], [Gélifiant], [Fibres des pépins et peaux de
-    pommes/agrumes], [Polysaccharide végétal soluble formant un gel
-    stable en milieu acide et sucré. Excellente fibre
+    [#strong[E440] #emph[\(Pectine)]], [Gélifiant], [Fibres des pépins
+    et peaux de pommes/agrumes], [Polysaccharide végétal soluble formant
+    un gel stable en milieu acide et sucré. Excellente fibre
     prébiotique.], [#strong[TOTALEMENT INOFFENSIF]],
-    [#strong[E410 / E412]\\], [], [], [], [],
-    [#emph[\(Farine de caroube / Gomme guar)]], [Épaississant], [Graines
-    d'arbres légumineux], [Fibres végétales naturelles solubles gonflant
-    dans l'eau. Bénéfique pour le transit à dose
-    modérée.], [#strong[INOFFENSIF]],
-    [#strong[E100 / E160a]\\], [], [], [], [],
-    [#emph[\(Curcumine / Bêta-carotène)]], [Colorant], [Extraits de
-    rhizome de curcuma ou de carottes], [Pigments végétaux antioxydants
-    puissants (provitamine A). Protecteurs
-    cellulaires.], [#strong[INOFFENSIF / BÉNÉFIQUE]],
-    [#strong[E249 / E250]\\], [], [], [], [],
-    [#emph[\(Nitrites de potassium et sodium)]], [Conservateur], [Sel
-    minéral de synthèse], [Utilisé pour colorer le jambon en rose et
-    empêcher le botulisme. #strong[Forme des nitrosamines cancérogènes]
-    (cancer colorectal avéré).], [#strong[À BANNIR ABSOLUMENT]],
-    [#strong[E251 / E252]\\], [], [], [], [],
-    [#emph[\(Nitrates de potassium et sodium)]], [Conservateur], [Sels
-    de salaison industrielle], [Métabolisés en nitrites par les enzymes
-    salivaires et digestives. Même toxicité à long terme.], [#strong[À
-    ÉVITER RIGOUREUSEMENT]],
-    [#strong[E150c / E150d]\\], [], [], [], [],
-    [#emph[\(Caramels ammoniacal et au sulfite)]], [Colorant
-    brun], [Sucre traité à l'ammoniaque sous haute pression], [Utilisé
-    dans les colas, bières et sauces brunes. Contient du
-    4-méthylimidazole (4-MEI), promoteur de mutations
+    [#strong[E410 / E412] #emph[\(Farine de caroube / Gomme
+    guar)]], [Épaississant], [Graines d'arbres légumineux], [Fibres
+    végétales naturelles solubles gonflant dans l'eau. Bénéfique pour le
+    transit à dose modérée.], [#strong[INOFFENSIF]],
+    [#strong[E100 / E160a] #emph[\(Curcumine /
+    Bêta-carotène)]], [Colorant], [Extraits de rhizome de curcuma ou de
+    carottes], [Pigments végétaux antioxydants puissants (provitamine
+    A). Protecteurs cellulaires.], [#strong[INOFFENSIF / BÉNÉFIQUE]],
+    [#strong[E249 / E250] #emph[\(Nitrites de potassium et
+    sodium)]], [Conservateur], [Sel minéral de synthèse], [Utilisé pour
+    colorer le jambon en rose et empêcher le botulisme. #strong[Forme
+    des nitrosamines cancérogènes] (cancer colorectal
+    avéré).], [#strong[À BANNIR ABSOLUMENT]],
+    [#strong[E251 / E252] #emph[\(Nitrates de potassium et
+    sodium)]], [Conservateur], [Sels de salaison
+    industrielle], [Métabolisés en nitrites par les enzymes salivaires
+    et digestives. Même toxicité à long terme.], [#strong[À ÉVITER
+    RIGOUREUSEMENT]],
+    [#strong[E150c / E150d] #emph[\(Caramels ammoniacal et au
+    sulfite)]], [Colorant brun], [Sucre traité à l'ammoniaque sous haute
+    pression], [Utilisé dans les colas, bières et sauces brunes.
+    Contient du 4-méthylimidazole (4-MEI), promoteur de mutations
     cellulaires.], [#strong[À PROSCRIRE]],
-    [#strong[E220 à E228]\\], [], [], [], [],
-    [#emph[\(Sulfites minéraux)]], [Conservateur], [Dérivés du dioxyde
-    de soufre], [Présents dans les vins industriels et fruits secs.
+    [#strong[E220 à E228] #emph[\(Sulfites
+    minéraux)]], [Conservateur], [Dérivés du dioxyde de
+    soufre], [Présents dans les vins industriels et fruits secs.
     Détruisent la vitamine $upright(B)_1$. Déclenchent migraines et
     crises d'asthme sévères.], [#strong[VIGILANCE / ÉVITER]],
-    [#strong[E466]\\], [], [], [], [],
-    [#emph[\(Carboxyméthylcellulose)]], [Émulsifiant], [Polymère
+    [#strong[E466]
+    #emph[\(Carboxyméthylcellulose)]], [Émulsifiant], [Polymère
     cellulosique modifié chimiquement], [Stabilisant des glaces et
     sauces allégées. Dissout le mucus de protection intestinal, favorise
     les MICI (maladie de Crohn).], [#strong[À BANNIR DU FOYER]],
-    [#strong[E433]\\], [], [], [], [],
-    [#emph[\(Polysorbate 80)]], [Émulsifiant], [Molécule amphiphile de
-    synthèse], [Dégrade la barrière épithéliale du côlon, favorise le
-    syndrome métabolique et le passage systémique
+    [#strong[E433] #emph[\(Polysorbate 80)]], [Émulsifiant], [Molécule
+    amphiphile de synthèse], [Dégrade la barrière épithéliale du côlon,
+    favorise le syndrome métabolique et le passage systémique
     d'endotoxines.], [#strong[À BANNIR DU FOYER]],
-    [#strong[E407]\\], [], [], [], [],
-    [#emph[\(Carraghénanes dégradés)]], [Gélifiant], [Algues rouges
-    traitées à l'acide fort], [Utilisé dans les desserts laitiers et
-    crèmes légères. Provoque des ulcérations coliques et une forte
-    inflammation tissulaire.], [#strong[VIGILANCE ÉLEVÉE]],
-    [#strong[E102, E110, E129]\\], [], [], [], [],
-    [#emph[\(Tartrazine, Jaune orangé, Rouge allura)]], [Colorants
-    azoïques], [Dérivés de fractions pétrochimiques], [Utilisés dans les
-    confiseries et sirops d'enfants. Associés aux troubles de
-    l'attention et à l'hyperactivité infantile (TDAH).], [#strong[À
-    INTERDIRE AUX ENFANTS]],
-    [#strong[E320 / E321]\\], [], [], [], [],
-    [#emph[\(BHA et BHT)]], [Antioxydant], [Dérivés phénoliques de
-    synthèse], [Empêchent l'oxydation des huiles industrielles.
-    Perturbateurs endocriniens suspectés, accumulation dans le tissu
-    adipeux.], [#strong[À ÉVITER]],
-    [#strong[E621]\\], [], [], [], [],
-    [#emph[\(Glutamate monosodique)]], [Exhausteur de goût], [Sel de
-    sodium de l'acide glutamique], [Non toxique aigu en soi, mais sert à
-    tromper le palais sur des bouillons dénués d'ingrédients nobles et
-    favorise la boulimie.], [#strong[VIGILANCE / MASQUAGE]],
-    [#strong[E951 / E955]\\], [], [], [], [],
-    [#emph[\(Aspartame / Sucralose)]], [Édulcorant], [Molécules de
-    synthèse hyper-sucrantes], [Maintiennent l'appétence addictive pour
-    le sucre, altèrent le microbiote intestinal et perturbent la
-    sensibilité à l'insuline.], [#strong[ILLUSION CHIMIQUE]],
+    [#strong[E407] #emph[\(Carraghénanes
+    dégradés)]], [Gélifiant], [Algues rouges traitées à l'acide
+    fort], [Utilisé dans les desserts laitiers et crèmes légères.
+    Provoque des ulcérations coliques et une forte inflammation
+    tissulaire.], [#strong[VIGILANCE ÉLEVÉE]],
+    [#strong[E102, E110, E129] #emph[\(Tartrazine, Jaune orangé, Rouge
+    allura)]], [Colorants azoïques], [Dérivés de fractions
+    pétrochimiques], [Utilisés dans les confiseries et sirops d'enfants.
+    Associés aux troubles de l'attention et à l'hyperactivité infantile
+    (TDAH).], [#strong[À INTERDIRE AUX ENFANTS]],
+    [#strong[E320 / E321] #emph[\(BHA et BHT)]], [Antioxydant], [Dérivés
+    phénoliques de synthèse], [Empêchent l'oxydation des huiles
+    industrielles. Perturbateurs endocriniens suspectés, accumulation
+    dans le tissu adipeux.], [#strong[À ÉVITER]],
+    [#strong[E621] #emph[\(Glutamate monosodique)]], [Exhausteur de
+    goût], [Sel de sodium de l'acide glutamique], [Non toxique aigu en
+    soi, mais sert à tromper le palais sur des bouillons dénués
+    d'ingrédients nobles et favorise la boulimie.], [#strong[VIGILANCE /
+    MASQUAGE]],
+    [#strong[E951 / E955] #emph[\(Aspartame /
+    Sucralose)]], [Édulcorant], [Molécules de synthèse
+    hyper-sucrantes], [Maintiennent l'appétence addictive pour le sucre,
+    altèrent le microbiote intestinal et perturbent la sensibilité à
+    l'insuline.], [#strong[ILLUSION CHIMIQUE]],
   )]
   , kind: table
   )
@@ -2110,10 +2083,6 @@ doit être d'une couleur gris-beige naturelle.
 
 
 ]
-
-#divider()
-
-#divider()
 
 === B. L'Effet Cocktail et les Limites de la Toxicologie Classique
 <b.-leffet-cocktail-et-les-limites-de-la-toxicologie-classique>
@@ -2140,8 +2109,6 @@ par des détergents alimentaires de synthèse, les bactéries entrent en
 contact direct avec la paroi cellulaire de l'hôte, déclenchant un état
 d'inflammation de bas grade (#emph[silent inflammation]) impliqué dans
 l'obésité, le diabète de type 2 et les maladies auto-immunes.
-
-#divider()
 
 #divider()
 
@@ -2226,8 +2193,6 @@ entrent dans votre casserole.
 
 #divider()
 
-#divider()
-
 == 5. L'ÉCOLOGIE DE LA MATIÈRE ET LE CALENDRIER VIVANT DES SAISONS
 <lécologie-de-la-matière-et-le-calendrier-vivant-des-saisons>
 === A. L'Empreinte Hydrique de l'Assiette
@@ -2264,8 +2229,6 @@ biologique :
   , kind: table
   )
 
-#divider()
-
 === B. Le Calendrier Vivant : Légumes, Viandes et Fromages au Fil de l'Année
 <b.-le-calendrier-vivant-légumes-viandes-et-fromages-au-fil-de-lannée>
 La saisonnalité ne concerne pas uniquement les fruits et légumes : les
@@ -2295,8 +2258,6 @@ viandes et fromages suivent les cycles naturels du vivant :
     choux frisés.
   - #emph[Les viandes à mijoter :] Paleron, gîte, queue de bœuf et
     jarrets, sources de gélatine réconfortante.
-
-#divider()
 
 = CHAPITRE 07 --- L'Ordre Invisible : La Marche en Avant, Savoir Mettre de Côté et la Plonge Efficace
 <chapitre-07-lordre-invisible-la-marche-en-avant-savoir-mettre-de-côté-et-la-plonge-efficace>
@@ -2384,12 +2345,8 @@ contenant hermétique et placer au froid.
 
 #divider()
 
-#divider()
-
 == 3. LA DESTINÉE DE LA MATIÈRE : TRI DES DÉCHETS, COMPOST ET ÉCONOMIE CIRCULAIRE
 <la-destinée-de-la-matière-tri-des-déchets-compost-et-économie-circulaire>
-=== A. Les Réflexes Zéro Déchet en Cuisine
-<a.-les-réflexes-zéro-déchet-en-cuisine>
 === A. Le Bocal de Parures au Congélateur
 <a.-le-bocal-de-parures-au-congélateur>
 Gardez en permanence un bocal en verre ou un sachet étanche au
@@ -2413,26 +2370,22 @@ tomates mûres, du basilic et des oignons rouges, il devient la fameuse
 #strong[panzanella toscane], chef-d'œuvre de l'économie paysanne
 italienne.
 
-#divider()
-
-#divider()
-
-=== B. Bio-Poubelle vs Ordures Résiduelles : Le Désastre Énergétique du Sac Noir
-<b.-bio-poubelle-vs-ordures-résiduelles-le-désastre-énergétique-du-sac-noir>
+=== C. Bio-Poubelle vs Ordures Résiduelles : Le Désastre Énergétique du Sac Noir
+<c.-bio-poubelle-vs-ordures-résiduelles-le-désastre-énergétique-du-sac-noir>
 Dans un foyer occidental moyen, #strong[$30 thin %$ du poids de la
 poubelle] est constitué de matière organique humide (épluchures de
 légumes, os, marc de café, coquilles d'œufs, restes de repas). Le mode
 de tri transforme radicalement leur destin écologique.
 
-#figure(image("figures/livre_2/fig_flux_dechets_cuisine.svg", width: 95%, height: 38%, fit: "contain"),
+#figure(image("figures/livre_2/fig_flux_dechets_cuisine.svg", width: 95%, height: 36%, fit: "contain"),
   caption: [
     Le destin des déchets de cuisine : valorisation en poubelle bio
     versus hérésie du sac noir
   ]
 )
 
-=== A. La Poubelle Noire (Ordures Ménagères Non Triées) : Le Désastre Énergétique
-<a.-la-poubelle-noire-ordures-ménagères-non-triées-le-désastre-énergétique>
+==== 1. La Poubelle Noire (Ordures Ménagères Non Triées)
+<la-poubelle-noire-ordures-ménagères-non-triées>
 Quand les biodéchets humides ($80 thin %$ d'eau) sont jetés dans le sac
 noir ordinaire : - #strong[À l'Incinérateur :] Brûler de l'eau nécessite
 d'injecter du fioul ou du gaz de soutien pour maintenir la chambre de
@@ -2444,8 +2397,8 @@ de façon anaérobie fétide et génère du #strong[méthane
 #strong[28 fois supérieur au $upright(C O)_2$], ainsi que des lixiviats
 acides toxiques qui polluent les nappes phréatiques.
 
-=== B. La Poubelle Bio (Compost et Méthanisation) : La Boucle Vivante
-<b.-la-poubelle-bio-compost-et-méthanisation-la-boucle-vivante>
+==== 2. La Poubelle Bio (Compost et Méthanisation) : La Boucle Vivante
+<la-poubelle-bio-compost-et-méthanisation-la-boucle-vivante>
 - #strong[Le Compostage Maraîcher :] Les bactéries aérobies et les
   lombrics décomposent la cellulose et les protéines végétales en
   #strong[humus stable riche en azote, phosphore et potassium]. Ce
@@ -2476,8 +2429,6 @@ acides toxiques qui polluent les nappes phréatiques.
 
 
 ]
-
-#divider()
 
 #divider()
 
@@ -2529,8 +2480,6 @@ convives et les verres.
   humide est déconseillé : le torchon de cuisine constitue l'un des plus
   grands réservoirs bactériens du foyer.
 
-#divider()
-
 
 #pagebreak(weak: false, to: "even")
 #set page(margin: 0pt, header: none, footer: none)
@@ -2580,7 +2529,7 @@ La cuisine consiste à créer un #strong[gradient thermique] entre
 l'extérieur et l'intérieur de l'aliment via trois mécanismes physiques
 distincts.
 
-#figure(image("figures/livre_1/fig_02_thermodynamique_transferts.svg", width: 95%, height: 38%, fit: "contain"),
+#figure(image("figures/livre_1/fig_02_thermodynamique_transferts.svg", width: 95%, height: 36%, fit: "contain"),
   caption: [
     Les Trois Vecteurs Thermodynamiques en Cuisine
   ]
@@ -2700,8 +2649,6 @@ thermique trop froid ou une viande mal séchée au torchon. - Une crème
 qui graine n'est pas perdue : c'est une coagulation protéique excessive
 qu'une contrainte de cisaillement mécanique vigoureuse peut pulvériser.
 Chaque incident culinaire est une leçon de physique expérimentale.
-
-#divider()
 
 === C. Le Protocole Minimaliste : La Cuisson dans une Glacière Ordinaire (Sans Matériel Électrique)
 <c.-le-protocole-minimaliste-la-cuisson-dans-une-glacière-ordinaire-sans-matériel-électrique>
@@ -2915,7 +2862,7 @@ thermodynamique millimétrique :
 
 $ upright(bold(100 upright(" g de Pâtes"))) quad arrow.l.r quad upright(bold(10 upright(" g de Sel Gros"))) quad arrow.l.r quad upright(bold(1 upright(" Litre d’Eau"))) $
 
-#figure(image("figures/livre_1/fig_pates_thermodynamique.svg", width: 95%, height: 38%, fit: "contain"),
+#figure(image("figures/livre_1/fig_pates_thermodynamique.svg", width: 95%, height: 36%, fit: "contain"),
   caption: [
     Thermodynamique des pâtes et équulsion d'or de la carbonara
   ]
@@ -3290,7 +3237,7 @@ propres et brossées dans le lait et la crème de la recette pour infuser
 ces arômes nobles, puis filtrer ce liquide parfumé avant de l'incorporer
 à la chair écrasée.
 
-#figure(image("figures/livre_3/fig_puree_blumenthal_infusion.svg", width: 95%, height: 38%, fit: "contain"),
+#figure(image("figures/livre_3/fig_puree_blumenthal_infusion.svg", width: 95%, height: 36%, fit: "contain"),
   caption: [
     La Purée Parfaite selon Heston Blumenthal
   ]
@@ -4219,8 +4166,6 @@ la première bouchée, le jus reste à l'intérieur de la chair.
 
 #divider()
 
-#divider()
-
 == 4. LA MÉCANIQUE DU POISSON ENTIER : ÉCAILLAGE, VIDAGE ET LEVÉE DES FILETS
 <la-mécanique-du-poisson-entier-écaillage-vidage-et-levée-des-filets>
 Le cuisinier autonome ne s'arrête pas au pavé sous barquette plastique :
@@ -4460,8 +4405,6 @@ l'émulsion du « Lait de Tigre ».]
   Mélanger délicatement et dresser immédiatement dans des assiettes très
   froides.
 
-#divider()
-
 = CHAPITRE 15 --- L'Archétype de l'Œuf et les Émulsions Maîtres
 <chapitre-15-larchétype-de-lœuf-et-les-émulsions-maîtres>
 #quote(block: true)[
@@ -4477,7 +4420,7 @@ dénaturation thermique et l'émulsifiant le plus parfait de la nature. »
 L'œuf de poule (#emph[Gallus gallus domesticus]) est un chef-d'œuvre de
 packaging biologique :
 
-#figure(image("figures/livre_2/fig_05_oeuf_anatomie_barriere.svg", width: 95%, height: 38%, fit: "contain"),
+#figure(image("figures/livre_2/fig_05_oeuf_anatomie_barriere.svg", width: 95%, height: 36%, fit: "contain"),
   caption: [
     Anatomie et thermométrie fractionnée de l'œuf
   ]
@@ -4521,15 +4464,13 @@ dresse à la verticale sur sa pointe. 3. #emph[L'œuf périmé
 ($> 28 upright(" jours")$) :] Flotte franchement à la surface de l'eau
 ($d < 1\,0$). #strong[À jeter impérativement.]
 
-#divider()
-
 C'est l'un des paradoxes les plus frappants de la cuisine mondiale : aux
 États-Unis, les œufs sont obligatoirement vendus en rayon réfrigéré \;
 en France et dans toute l'Union Européenne, ils sont stockés à
 température ambiante dans les supermarchés. Pourquoi ?
 
-=== A. Le Paradigme Américain (Lavage chimique)
-<a.-le-paradigme-américain-lavage-chimique>
+=== C. Le Paradigme Américain (Lavage Chimique et Réfrigération Obligatoire)
+<c.-le-paradigme-américain-lavage-chimique-et-réfrigération-obligatoire>
 Aux États-Unis (réglementation USDA), les œufs subissent immédiatement
 après la ponte un lavage industriel à l'eau chaude savonneuse et
 désinfectante pour éliminer les fientes. - #strong[La conséquence
@@ -4541,8 +4482,8 @@ capillarité à l'intérieur en quelques heures. - #strong[Verdict :] Un
 œuf lavé #strong[doit impérativement rester au réfrigérateur
 ($< 4^compose upright(C)$)] pour bloquer le métabolisme bactérien.
 
-=== B. Le Paradigme Européen (Intégrité de la cuticule)
-<b.-le-paradigme-européen-intégrité-de-la-cuticule>
+=== D. Le Paradigme Européen (Intégrité de la Cuticule)
+<d.-le-paradigme-européen-intégrité-de-la-cuticule>
 En Europe (norme CE n° 589/2008), le lavage des œufs de table de classe
 A est #strong[strictement interdit]. - #strong[La raison scientifique :]
 La cuticule naturelle reste intacte et imperméable. - Si un œuf froid
@@ -4555,8 +4496,8 @@ l'Europe impose de conserver les œufs à température stable, idéalement
 entre $12^compose upright(C)$ et $18^compose upright(C)$, ou au
 réfrigérateur #strong[à condition de ne pas les faire transpirer].
 
-=== C. La Règle Pratique du Cuisinier
-<c.-la-règle-pratique-du-cuisinier>
+=== E. La Règle Pratique du Cuisinier au Foyer
+<e.-la-règle-pratique-du-cuisinier-au-foyer>
 - #strong[À la maison :] Si votre cuisine oscille entre
   $20^compose upright(C)$ et $25^compose upright(C)$ en été, placez vos
   œufs au réfrigérateur (dans leur boîte carton fermée pour limiter les
@@ -4622,8 +4563,6 @@ frémissement doux ($90^compose upright(C)$) pendant #strong[9 minutes
 maximum], et les plonger #strong[immédiatement dans un grand bol d'eau
 glacée]. Le choc thermique stoppe la cuisson et attire le gaz vers la
 coquille, préservant un jaune d'un orange éclatant.
-
-#divider()
 
 === C. Le Protocole Physique du Tempérage dans un Liquide Chaud
 <c.-le-protocole-physique-du-tempérage-dans-un-liquide-chaud>
@@ -4850,8 +4789,6 @@ chaud à $58^compose upright(C)$.]
   allège le gras sur la langue) et une pointe de piment de Cayenne.
   Servir immédiatement sur des asperges, des poissons pochés ou des œufs
   bénédictine.
-
-#divider()
 
 = CHAPITRE 16 --- La Matrice des Grandes Transformations Culinaires
 <chapitre-16-la-matrice-des-grandes-transformations-culinaires>
@@ -5081,7 +5018,7 @@ Dès qu'un tissu végétal ou animal meurt, ses cellules cessent d'être
 irriguées et son immunité s'effondre. La matière organique est alors
 convoitée par deux armées microbiennes antagonistes :
 
-#figure(image("figures/histoire/fig_maturation_vs_putrefaction.svg", width: 95%, height: 38%, fit: "contain"),
+#figure(image("figures/histoire/fig_maturation_vs_putrefaction.svg", width: 95%, height: 36%, fit: "contain"),
   caption: [
     La bifurcation biologique : maturation contrôlée versus putréfaction
     bactérienne
@@ -5165,8 +5102,6 @@ molécule qui chélate le fer, le zinc et le calcium, empêchant leur
 absorption par notre intestin. L'acidité du levain active l'enzyme
 #strong[phytase], qui hydrolyse l'acide phytique et libère tous les
 minéraux du grain.
-
-#divider()
 
 #divider()
 
@@ -5386,8 +5321,6 @@ choux-fleurs et radis en condiments acidulés probiotiques.]
   fermentation. Les légumes se conservent ainsi pendant plus d'une année
   en se bonifiant.
 
-#divider()
-
 = CHAPITRE 18 --- L'Alchimie Laitière et la Fromagerie Autonome
 <chapitre-18-lalchimie-laitière-et-la-fromagerie-autonome>
 #quote(block: true)[
@@ -5404,7 +5337,7 @@ physique colloïdale : il est constitué à #strong[$87 thin %$ d'eau],
 $4 thin %$ de matières grasses émulsionnées en globules, $5 thin %$ de
 lactose (sucre) et $3\,5 thin %$ de protéines.
 
-#figure(image("figures/science/coagulation_lait_caillage.jpg", alt: "Structure colloïdale du lait et caillage acide"),
+#figure(image("figures/science/coagulation_lait_caillage.jpg", width: 85%, height: 25%, fit: "cover"),
   caption: [
     Structure colloïdale du lait et caillage acide
   ]
@@ -5429,7 +5362,7 @@ Pour fabriquer un fromage, il faut détruire ce bouclier répulsif afin
 que les protéines s'agglomèrent en un réseau solide : le
 #strong[caillé].
 
-#figure(image("figures/livre_4/fig_caillage_lait_caseine.svg", width: 95%, height: 38%, fit: "contain"),
+#figure(image("figures/livre_4/fig_caillage_lait_caseine.svg", width: 95%, height: 36%, fit: "contain"),
   caption: [
     Biomécanique du caillage du lait : rupture acide isoélectrique
     versus clivage enzymatique de la présure
@@ -5724,7 +5657,7 @@ une relation chimique invariante unissant cinq rôles fonctionnels :
 
 $ upright(bold(upright("Corps Gras"))) + upright(bold(upright("Agent Sucrant"))) + upright(bold(upright("Féculent / Farine"))) + upright(bold(upright("Agent Liant Protéique"))) + upright(bold(upright("Énergie Thermique"))) = upright(bold(upright("GÂTEAU"))) $
 
-#figure(image("figures/livre_3/fig_gateau_chocolat_matrice.svg", width: 95%, height: 38%, fit: "contain"),
+#figure(image("figures/livre_3/fig_gateau_chocolat_matrice.svg", width: 95%, height: 36%, fit: "contain"),
   caption: [
     La Matrice Universelle du Gâteau et la Rigueur du Four
   ]
@@ -5996,7 +5929,7 @@ meringue sucrée, puis d'enfourner le tout dans un four chauffé à
 #strong[$240^compose upright(C)$] sans que la glace ne fonde d'un seul
 millimètre ?
 
-#figure(image("figures/livre_3/fig_omelette_norvegienne_bouclier.svg", width: 95%, height: 38%, fit: "contain"),
+#figure(image("figures/livre_3/fig_omelette_norvegienne_bouclier.svg", width: 95%, height: 36%, fit: "contain"),
   caption: [
     Le bouclier thermique de la meringue dans l'Omelette Norvégienne
   ]
@@ -6049,7 +5982,7 @@ Comment fabriquer une glace onctueuse si l'on ne possède aucune
 sorbetière électrique ? Grâce à une loi thermodynamique découverte au
 XVIIIe siècle : #strong[l'abaissement cryoscopique].
 
-#figure(image("figures/livre_5/fig_fromage_glace_cryoscopie.svg", width: 95%, height: 38%, fit: "contain"),
+#figure(image("figures/livre_5/fig_fromage_glace_cryoscopie.svg", width: 95%, height: 36%, fit: "contain"),
   caption: [
     La dissolution endothermique du sel dans la glace
   ]
@@ -6214,7 +6147,7 @@ porte la nourriture à sa bouche révèle l'intimité de sa philosophie. »
 Pendant des millénaires, l'être humain n'a utilisé à table qu'un seul
 outil d'acier : son #strong[couteau personnel], porté à la ceinture.
 
-#figure(image("figures/patrimoine/art_table_couverts.jpg", alt: "Les arts de la table : disposition harmonieuse des couverts et verres"),
+#figure(image("figures/patrimoine/art_table_couverts.jpg", width: 85%, height: 32%, fit: "contain"),
   caption: [
     Les arts de la table : disposition harmonieuse des couverts et
     verres
@@ -6430,7 +6363,7 @@ fouetter une émulsion et surveiller un soufflé au four en même temps.
 <le-rétroplanning-du-jour-j-la-maîtrise-du-temps-en-brigade-ménagère>
 Pour que le dîner se déroule avec la fluidité d'un ballet sans stress :
 
-#figure(image("figures/livre_5/fig_retroplanning_reception.svg", width: 95%, height: 38%, fit: "contain"),
+#figure(image("figures/livre_5/fig_retroplanning_reception.svg", width: 95%, height: 36%, fit: "contain"),
   caption: [
     Chronogramme du rétroplanning de réception : dissociation temporelle
     entre technique et convivialité
@@ -6742,8 +6675,6 @@ stimulent la synthèse musculaire et les minéraux comblent les récepteurs
 cellulaires. #strong[La satiété est stable, diffuse et persiste pendant
 4 à 5 heures sans coup de pompe.]
 
-#divider()
-
 === B. Immunologie de l'Assiette : Allergies Vraies (IgE) versus Intolérances Enzymatiques
 <b.-immunologie-de-lassiette-allergies-vraies-ige-versus-intolérances-enzymatiques>
 La confusion entre allergie et intolérance empoisonne le débat
@@ -6787,7 +6718,7 @@ Pourquoi un plat de pâtes ou de pommes de terre mangé brûlant à la
 sortie de la casserole a-t-il un impact métabolique totalement différent
 du même plat consommé le lendemain froid en salade ou réchauffé ?
 
-#figure(image("figures/science/legumineuses_proteines_vegetales.jpg", alt: "L’amidon résistant de type 3 et la nourriture du microbiote : légumineuses préparées et rétrogradation de l’amidon"),
+#figure(image("figures/science/legumineuses_proteines_vegetales.jpg", width: 85%, height: 25%, fit: "cover"),
   caption: [
     L'amidon résistant de type 3 et la nourriture du microbiote :
     légumineuses préparées et rétrogradation de l'amidon
@@ -6831,8 +6762,6 @@ génie :] Même si vous réchauffez vos pommes de terre ou vos pâtes le
 lendemain à la poêle ou au four doux, la structure cristalline ne se
 redissout pas totalement : #strong[l'amidon conserve ses vertus d'amidon
 résistant].
-
-#divider()
 
 === C. La Mécanique de l'Élimination : Ballast des Fibres, Transit et Évacuation Métabolique
 <c.-la-mécanique-de-lélimination-ballast-des-fibres-transit-et-évacuation-métabolique>
@@ -6928,7 +6857,7 @@ répétitive.
 
 #pagebreak(weak: false, to: "even")
 #set page(margin: 0pt, header: none, footer: none)
-#portail_livre_verso("figures/patrimoine/diderot_encyclopedie_fournil.jpg", "L'artisanat du fournil et la rigueur technique dans l'Encyclopédie de Diderot et d'Alembert (XVIIIe siècle).")
+#portail_livre_verso("figures/patrimoine/diderot_encyclopedie_fournil.jpg", "Planche de l'Encyclopédie de Diderot et d'Alembert (1762) : four de brique, étuve et instruments d'office (Pl. II).")
 
 #pagebreak(weak: false, to: "odd")
 #set page(paper: "a4", margin: (top: 2.5cm, bottom: 2.5cm, left: 2.2cm, right: 2.2cm), header: none, footer: none, fill: rgb(255, 253, 250))
@@ -7884,34 +7813,34 @@ photographies culinaires et schémas scientifiques de l'ouvrage.
       Institution], [Datation], [Licence & Source],),
     table.hline(),
     [#strong[Livre I]], [#emph[La conquête du feu paléolithique et
-    l'externalisation digestive]], [John Collier / Coll.
-    privée], [1892], [Domaine Public / Wikimedia],
-    [#strong[Livre II]], [#emph[L'arsenal ordonné du foyer et la clarté
-    de la table]], [D'après J.-S. Chardin / Musée du Louvre], [XVIIIe
-    s.], [Domaine Public / Wikimedia],
+    l'externalisation digestive]], [Collections
+    archéologiques], [Paléolithique], [CC BY-SA 4.0 / Wikimedia],
+    [#strong[Livre II]], [#emph[L'arsenal ordonné du foyer : La
+    Pourvoyeuse / L'Écureuse]], [Jean Siméon Chardin /
+    Louvre], [1738], [Domaine Public / Wikimedia],
     [#strong[Livre III]], [#emph[Abondance maraîchère des éléments bruts
-    avant transformation]], [Photographie maraîchère de plein
-    champ], [2024], [CC BY-SA 4.0 / Wikimedia],
+    avant transformation]], [Joachim Beuckelaer /
+    Kunsthistorisches], [XVIe s.], [Domaine Public / Wikimedia],
     [#strong[Livre IV]], [#emph[Miches dorées au fournil artisanal et
     levain sauvage]], [Photographie de panification
     artisanale], [2024], [CC BY-SA 4.0 / Wikimedia],
     [#strong[Livre V]], [#emph[Table de banquet dressée, orfèvrerie et
-    service partagé]], [Gravure & estampe d'art de la table], [XIXe
-    s.], [Domaine Public / Wikimedia],
+    service partagé]], [Dressage de gala et arts de la
+    table], [Contemporain], [CC BY-SA 3.0 / Wikimedia],
     [#strong[Livre VI]], [#emph[Le potager vivant au fil des saisons et
-    temps long]], [Photographie horticole et agronomique], [2024], [CC
-    BY-SA 4.0 / Wikimedia],
-    [#strong[Annexes]], [#emph[L'artisanat du fournil et la rigueur
-    technique de l'Encyclopédie]], [Diderot & d'Alembert / Robert
-    Bénard], [1765], [Domaine Public / BnF Gallica],
+    temps long]], [Photographie horticole et
+    agronomique], [Contemporain], [Domaine Public / Wikimedia],
+    [#strong[Annexes]], [#emph[Confiseur, Étuve et Four (Pl. II de
+    l'Encyclopédie)]], [Diderot, d'Alembert, Goussier &
+    Bénard], [1762], [Domaine Public / Wikimedia],
   )]
   , kind: table
   )
 
 #divider()
 
-== 2. Portraits Historiques et Gravures Fondatrices
-<portraits-historiques-et-gravures-fondatrices>
+== 2. Portraits Historiques, Gravures et Photographies Scientifiques
+<portraits-historiques-gravures-et-photographies-scientifiques>
 #figure(
   align(center)[#table(
   stroke: 0.5pt + rgb("#dcd6ca"),
@@ -7926,9 +7855,9 @@ photographies culinaires et schémas scientifiques de l'ouvrage.
     [#strong[Chapitre 02]], [#emph[Vente de pain dans une boutique de
     Pompéi] (Fresque romaine)], [Musée archéologique de Naples (Ier
     s.)], [Domaine Public / Wikimedia],
-    [#strong[Chapitre 02]], [#emph[Scène de cuisine de la Renaissance et
-    brigade] (Scappi)], [#emph[Opera dell'arte del cucinare]
-    (1570)], [Domaine Public / BnF Gallica],
+    [#strong[Chapitre 02]], [#emph[Ustensiles et coutellerie de la
+    Renaissance] (Bartolomeo Scappi)], [#emph[Opera dell'arte del
+    cucinare] (1570)], [Domaine Public / Wikimedia],
     [#strong[Chapitre 02]], [#emph[Portrait de Jean Anthelme
     Brillat-Savarin]], [Gravure sur acier (XIXe siècle)], [Domaine
     Public / Wikimedia],
@@ -7938,9 +7867,15 @@ photographies culinaires et schémas scientifiques de l'ouvrage.
     [#strong[Chapitre 02]], [#emph[Portrait d'Auguste Escoffier] (Le
     Guide Culinaire)], [Photographie d'époque (1903)], [Domaine Public /
     Wikimedia],
+    [#strong[Chapitre 18]], [#emph[Séparation colloïdale du caillé et du
+    lactosérum en cuve]], [Photographie fromagère documentaire], [CC
+    BY-SA 2.0 / Wikimedia],
     [#strong[Chapitre 22]], [#emph[Les arts de la table : disposition
     harmonieuse du couvert]], [Photographie documentaire de
     service], [CC BY-SA 4.0 / Wikimedia],
+    [#strong[Chapitre 26]], [#emph[Diversité des légumineuses sèches et
+    amidon résistant]], [Photographie agronomique (#emph[Various
+    legumes])], [Domaine Public / Wikimedia],
   )]
   , kind: table
   )
@@ -7949,10 +7884,10 @@ photographies culinaires et schémas scientifiques de l'ouvrage.
 
 == 3. Photographies Culinaires des 26 Recettes Fondatrices
 <photographies-culinaires-des-26-recettes-fondatrices>
-Toutes les photographies culinaires des 26 fiches pratiques sont
-diffusées sous licence libre certifiée (#strong[Creative Commons CC
-BY-SA 3.0 / 4.0] ou #strong[Domaine Public / CC0]) via le dépôt mondial
-#emph[Wikimedia Commons] :
+L'intégralité des photographies illustrant les 26 fiches recettes de
+l'ouvrage provient du dépôt libre mondial #strong[Wikimedia Commons] et
+est diffusée sous licence #strong[Creative Commons (CC BY-SA 3.0 / 4.0)]
+ou #strong[Domaine Public (CC0)] :
 
 #figure(
   align(center)[#table(
@@ -7960,50 +7895,46 @@ BY-SA 3.0 / 4.0] ou #strong[Domaine Public / CC0]) via le dépôt mondial
   fill: (x, y) => if y == 0 { rgb("#f2ece1") } else if calc.odd(y) { rgb("#faf7f2") } else { none },
   inset: 8pt,
 
-    columns: (25%, 25%, 25%, 25%),
-    align: (left,left,left,left,),
-    table.header([Fiche & Recette], [Licence & Dépôt], [Fiche &
-      Recette], [Licence & Dépôt],),
+    columns: (50%, 50%),
+    align: (left,left,),
+    table.header([Fiches 01 à 13 (Livre III)], [Fiches 14 à 26 (Livres
+      III & IV)],),
     table.hline(),
-    [#strong[\01. Spaghetti à la carbonara]], [CC BY-SA 4.0 /
-    Wikimedia], [#strong[\14. Œuf mollet parfait]], [CC BY-SA 4.0 /
-    Wikimedia],
-    [#strong[\02. Dahl de lentilles corail]], [CC BY-SA 4.0 /
-    Wikimedia], [#strong[\15. Œuf poché sur toast doré]], [CC BY-SA 3.0
-    \/ Wikimedia],
-    [#strong[\03. Tofu croustillant laqué tamari]], [CC BY-SA 3.0 /
-    Wikimedia], [#strong[\16. Mayonnaise ferme au fouet]], [CC BY-SA 4.0
-    \/ Wikimedia],
-    [#strong[\04. Pommes sarladaises canard]], [CC BY-SA 4.0 /
-    Wikimedia], [#strong[\17. Sauce hollandaise veloutée]], [CC BY-SA
-    4.0 / Wikimedia],
-    [#strong[\05. Grand aïoli provençal]], [CC BY-SA 3.0 /
-    Wikimedia], [#strong[\18. Sauce béchamel soyeuse]], [CC BY-SA 4.0 /
-    Wikimedia],
-    [#strong[\06. Purée selon Blumenthal]], [CC BY-SA 4.0 /
-    Wikimedia], [#strong[\19. Pain cocotte au levain]], [CC BY-SA 4.0 /
-    Wikimedia],
-    [#strong[\07. Carottes glacées au beurre]], [CC BY-SA 4.0 /
-    Wikimedia], [#strong[\20. Pickles et légumes fermentés]], [CC BY-SA
-    4.0 / Wikimedia],
-    [#strong[\08. Salade verte vinaigrette]], [CC BY-SA 4.0 /
-    Wikimedia], [#strong[\21. Fromage frais en 15 minutes]], [CC BY-SA
-    3.0 / Wikimedia],
-    [#strong[\09. Grand bouillon d'or et glace]], [CC BY-SA 4.0 /
-    Wikimedia], [#strong[\22. Moelleux au chocolat noir]], [CC BY-SA 4.0
-    \/ Wikimedia],
-    [#strong[\10. Consommé limpide clarifié]], [CC BY-SA 3.0 /
-    Wikimedia], [#strong[\23. Pâte brisée pur beurre]], [CC BY-SA 4.0 /
-    Wikimedia],
-    [#strong[\11. Pavé de bœuf saisi en fonte]], [CC BY-SA 4.0 /
-    Wikimedia], [#strong[\24. Mousse chocolat à l'aquafaba]], [CC BY-SA
-    4.0 / Wikimedia],
-    [#strong[\12. Déglaçage minute au vin rouge]], [CC BY-SA 4.0 /
-    Wikimedia], [#strong[\25. Omelette norvégienne flambée]], [CC BY-SA
-    4.0 / Wikimedia],
-    [#strong[\13. Ceviche de cabillaud lime]], [CC BY-SA 4.0 /
-    Wikimedia], [#strong[\26. Glace turbinée au sel]], [CC BY-SA 4.0 /
-    Wikimedia],
+    [#strong[\01.] Spaghetti à la carbonara
+    traditionnelle], [#strong[\14.] Œuf mollet parfait au jaune coulant
+    fondant],
+    [#strong[\02.] Dahl réconfortant de lentilles corail au lait de
+    coco], [#strong[\15.] Œuf poché d'une rondeur parfaite sur toast
+    doré],
+    [#strong[\03.] Tofu croustillant laqué au tamari et
+    sésame], [#strong[\16.] Mayonnaise maison ferme montée au fouet
+    manuel],
+    [#strong[\04.] Pommes sarladaises dorées à la graisse de
+    canard], [#strong[\17.] Sauce hollandaise veloutée et onctueuse],
+    [#strong[\05.] Grand aïoli provençal monté au
+    mortier], [#strong[\18.] Sauce béchamel soyeuse et veloutée sans
+    grumeaux],
+    [#strong[\06.] Purée de pommes de terre soyeuse selon
+    Blumenthal], [#strong[\19.] Pain artisanal au levain doré en
+    cocotte],
+    [#strong[\07.] Carottes glacées au beurre sous
+    cartouche], [#strong[\20.] Bocaux de légumes lactofermentés en
+    saumure],
+    [#strong[\08.] Salade maraîchère croquante et
+    vinaigrette], [#strong[\21.] Fromage frais égoutté à l'étamine en 15
+    minutes],
+    [#strong[\09.] Grand bouillon d'or frémissant et réduction en
+    glace], [#strong[\22.] Moelleux au chocolat noir intense à cœur
+    coulant],
+    [#strong[\10.] Consommé limpide clarifié au radeau
+    d'albumine], [#strong[\23.] Pâte brisée sablée pur beurre étalée],
+    [#strong[\11.] Pavé de bœuf épais saisi en fonte au beurre
+    moussant], [#strong[\24.] Mousse au chocolat aérienne à l'aquafaba],
+    [#strong[\12.] Sauce miroitante issue d'un déglaçage minute au
+    vin], [#strong[\25.] Omelette norvégienne dorée au cœur de glace
+    intact],
+    [#strong[\13.] Ceviche éclatant de cabillaud mariné au citron
+    vert], [#strong[\26.] Crème glacée onctueuse turbinée au sel],
   )]
   , kind: table
   )
@@ -8013,11 +7944,10 @@ BY-SA 3.0 / 4.0] ou #strong[Domaine Public / CC0]) via le dépôt mondial
 == 4. Schémas Vectoriels SVG et Figures Didactiques
 <schémas-vectoriels-svg-et-figures-didactiques>
 L'ensemble des diagrammes techniques, frises chronologiques, matrices de
-transformation et coupes anatomiques (Figures vectorielles SVG
-numérotées 1 à 48) ont été créés spécifiquement pour cet ouvrage dans le
-respect des normes du W3C. Ils sont placés sous licence libre
-#strong[Creative Commons Attribution -- Partage dans les Mêmes
-Conditions 4.0 International (CC BY-SA 4.0)] :
+transformation et coupes anatomiques (Figures vectorielles SVG) a été
+conçu et codé spécifiquement pour cet ouvrage dans le respect des normes
+du W3C, sous licence libre #strong[Creative Commons Attribution --
+Partage dans les Mêmes Conditions 4.0 International (CC BY-SA 4.0)] :
 
 - #strong[Conception graphique vectorielle :] Équipe éditoriale de
   #emph[La Cuisine Expliquée].
@@ -8025,8 +7955,8 @@ Conditions 4.0 International (CC BY-SA 4.0)] :
   #emph[Liberation Sans] et #emph[Liberation Serif].
 - #strong[Charte chromatique chaude officielle :] Bordeaux noble
   (`#701C1A`), Terracotta (`#A3432B`), Ambre doré & caramel (`#B45309`),
-  Bistre boisé (`#6B4423`), Fond crème doux (`#FCFBF7`), Ardoise
-  métallique sombre (`#0f172a`).
+  Bistre boisé (`#6B4423`), Sauge sourde (`#5A6E54`), Fond crème doux
+  (`#FCFBF7`), Encre anthracite (`#242124`).
 
 
 

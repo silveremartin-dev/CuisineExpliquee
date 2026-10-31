@@ -45,8 +45,6 @@ Le levain naturel n'est pas un simple agent levant : c'est un écosystème symbi
 
 ---
 
----
-
 ## 5. L'AUTONOMIE LIQUIDE : LES BOISSONS FERMENTÉES VIVANTES DOMESTIQUES
 
 L'art de la fermentation ne s'arrête pas au pain et au fromage : il permet de transformer des infusions d'eau, de thé ou de fruits en élixirs vivants naturellement pétillants, riches en acides organiques probiotiques et débarrassés de tout conservateur chimique.
@@ -137,5 +135,3 @@ Ne jetez plus jamais vos restes de bouteilles de bon vin ou de cidre brut :
 3. **L'Immersion Anaérobie Totale :** Verser la saumure sur les légumes jusqu'à **$2\text{ cm}$ sous le rebord**. Tous les morceaux de légumes doivent impérativement être immergés sous la surface du liquide (ce qui dépasse de l'eau au contact de l'air moisirait ; ce qui est sous l'eau fermente noblement). Si nécessaire, poser un petit ramequin en verre lourd ou une feuille de chou pliée pour maintenir les morceaux immergés.
 4. **La Fermentation Active :** Fermer hermétiquement le bocal avec son joint de caoutchouc. Laisser à température ambiante ($20\text{--}22^\circ\mathrm{C}$) à l'abri du soleil direct pendant 5 à 7 jours. Dès le deuxième jour, des bulles de $\mathrm{CO}_2$ montent le long du verre et le liquide devient opalescent : c'est le signe éclatant de la vitalité des bactéries lactiques. Le joint permet au gaz de s'échapper sous pression sans laisser entrer l'air extérieur.
 5. **La Dégustation et Conservation :** Dès que le goût est acidulé, vif et croquant, placer le bocal au réfrigérateur ou dans une cave fraîche ($<12^\circ\mathrm{C}$) : le froid ralentit la fermentation. Les légumes se conservent ainsi pendant plus d'une année en se bonifiant.
-
----

@@ -27,7 +27,6 @@ Nos enzymes digestives sont physiquement incapables de sectionner ces cristaux d
   - Il exerce une puissante action anti-inflammatoire et renforce l'immunité globale.
 - **Le coup de génie :** Même si vous réchauffez vos pommes de terre ou vos pâtes le lendemain à la poêle ou au four doux, la structure cristalline ne se redissout pas totalement : **l'amidon conserve ses vertus d'amidon résistant**.
 
----
 
 ### C. La Mécanique de l'Élimination : Ballast des Fibres, Transit et Évacuation Métabolique
 

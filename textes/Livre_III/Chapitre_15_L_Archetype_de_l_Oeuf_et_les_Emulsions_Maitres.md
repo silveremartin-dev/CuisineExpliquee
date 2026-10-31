@@ -27,23 +27,21 @@ L'œuf de poule (*Gallus gallus domesticus*) est un chef-d'œuvre de packaging b
   2. *L'œuf frais ($14\text{ à }21\text{ jours}$) :* Reste au fond mais se dresse à la verticale sur sa pointe.
   3. *L'œuf périmé ($>28\text{ jours}$) :* Flotte franchement à la surface de l'eau ($d < 1{,}0$). **À jeter impérativement.**
 
----
-
 C'est l'un des paradoxes les plus frappants de la cuisine mondiale : aux États-Unis, les œufs sont obligatoirement vendus en rayon réfrigéré ; en France et dans toute l'Union Européenne, ils sont stockés à température ambiante dans les supermarchés. Pourquoi ?
 
-### A. Le Paradigme Américain (Lavage chimique)
+### C. Le Paradigme Américain (Lavage Chimique et Réfrigération Obligatoire)
 Aux États-Unis (réglementation USDA), les œufs subissent immédiatement après la ponte un lavage industriel à l'eau chaude savonneuse et désinfectante pour éliminer les fientes.
 - **La conséquence physique :** Le lavage dissout et décape intégralement la **cuticule protectrice**. 
 - Les 10 000 pores de la coquille se retrouvent grands ouverts sur l'atmosphère. Si l'œuf reste à température ambiante, la moindre bactérie de surface ou condensation pénètre par capillarité à l'intérieur en quelques heures.
 - **Verdict :** Un œuf lavé **doit impérativement rester au réfrigérateur ($<4^\circ\mathrm{C}$)** pour bloquer le métabolisme bactérien.
 
-### B. Le Paradigme Européen (Intégrité de la cuticule)
+### D. Le Paradigme Européen (Intégrité de la Cuticule)
 En Europe (norme CE n° 589/2008), le lavage des œufs de table de classe A est **strictement interdit**.
 - **La raison scientifique :** La cuticule naturelle reste intacte et imperméable.
 - Si un œuf froid est sorti du réfrigérateur et laissé dans une cuisine chaude, l'humidité ambiante se condense sur la coquille froide (phénomène du point de rosée). Cette eau liquide superficielle dissout les impuretés et fournit un canal aqueux permettant aux salmonelles de franchir les pores par pression capillaire.
 - Pour éviter ces cycles de condensation dangereux, l'Europe impose de conserver les œufs à température stable, idéalement entre $12^\circ\mathrm{C}$ et $18^\circ\mathrm{C}$, ou au réfrigérateur **à condition de ne pas les faire transpirer**.
 
-### C. La Règle Pratique du Cuisinier
+### E. La Règle Pratique du Cuisinier au Foyer
 - **À la maison :** Si votre cuisine oscille entre $20^\circ\mathrm{C}$ et $25^\circ\mathrm{C}$ en été, placez vos œufs au réfrigérateur (dans leur boîte carton fermée pour limiter les échanges d'odeurs à travers les pores et absorber l'humidité).
 - **Règle absolue d'utilisation :** Ne cuisinez jamais un œuf sortant directement du frigo pour une cuisson douce ou une émulsion ! Laissez-le revenir à température ambiante $20\text{--}30\,\mathrm{minutes}$ avant usage.
 
@@ -71,7 +69,6 @@ Pourquoi certains œufs durs présentent-ils un cercle vert-grisâtre peu engage
 - Ce gaz migre vers le jaune où il rencontre les ions fer ($\mathrm{Fe}^{2+}$) de la phosvitine pour former du **sulfure de fer ($\mathrm{FeS}$)**, composé vert-noir nauséabond.
 - **La Parade :** Cuire les œufs à frémissement doux ($90^\circ\mathrm{C}$) pendant **9 minutes maximum**, et les plonger **immédiatement dans un grand bol d'eau glacée**. Le choc thermique stoppe la cuisson et attire le gaz vers la coquille, préservant un jaune d'un orange éclatant.
 
----
 
 ### C. Le Protocole Physique du Tempérage dans un Liquide Chaud
 - **Le piège fatal :** Si vous versez des jaunes d'œufs crus directement dans du lait frémissant à $85^\circ\mathrm{C}$ pour faire une crème anglaise, la zone de contact subit un choc thermique instantané. L'ovotransferrine ($62^\circ\mathrm{C}$) et les lipovitellines coagulent en une fraction de seconde : vous obtenez une soupe d'œufs brouillés sucrés.
@@ -180,5 +177,3 @@ Elles s'interposent entre les gouttelettes d'huile et la phase aqueuse, formant 
 3. **Le Ruban Mousseux :** Vers **$55\text{ à }58^\circ\mathrm{C}$**, le sabayon s'épaissit et devient crémeux comme une crème fouettée. Lorsqu'un trait tracé au fouet laisse apparaître le fond du récipient pendant une seconde, **retirer le bol du bain-marie**.
 4. **L'Incorporation du Beurre Froid/Tiède :** Tout en fouettant énergiquement, verser le beurre fondu tiède en filet continu comme pour une mayonnaise. La sauce devient un velours onctueux, dense et brillant.
 5. **L'Assaisonnement d'Équilibre :** Ajouter le jus de citron (qui allège le gras sur la langue) et une pointe de piment de Cayenne. Servir immédiatement sur des asperges, des poissons pochés ou des œufs bénédictine.
-
----
