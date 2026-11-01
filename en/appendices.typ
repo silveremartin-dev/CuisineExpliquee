@@ -1069,11 +1069,4 @@ All technical diagrams, thermodynamic timelines, transformation matrices, and an
 
 - #strong[Vector Graphic Authoring:] Editorial & Technical Team of #emph[Cooking Decoded / La Cuisine Expliquée].
 - #strong[Embedded Open-Source Typography:] Clean system fonts #emph[Liberation Sans] and #emph[Liberation Serif].
-- #strong[Official Semantic Color Palette:]
-  - Thermal Energy / Heat: `#dc2626` (Red) / Background `#fef2f2`
-  - Water / Hydration / Steam: `#2563eb` (Royal Blue) / Background `#eff6ff`
-  - Cold / Sub-Zero / Cryoscopy: `#0284c7` (Cyan Blue) / Background `#f0f9ff`
-  - Lipids / Caramelization / Oil: `#d97706` (Amber Gold) / Background `#fffbeb`
-  - Acidity / Balance / Success: `#16a34a` (Emerald Green) / Background `#f0fdf4`
-  - Metals / Vessels / Coordinate Axes: `#0f172a` (Deep Slate) / Background `#f8fafc`
-  - Reference Grids / Baseline Borders: `#94a3b8` (Muted Grey) / Background `#f1f5f9`
+- #strong[Official Warm Color Palette:] Noble Bordeaux (`#701C1A`), Terracotta (`#A3432B`), Golden Amber & Caramel (`#B45309`), Woody Bistre (`#6B4423`), Muted Sage (`#5A6E54`), Soft Warm Cream (`#FCFBF7`), Charcoal Ink (`#242124`).
