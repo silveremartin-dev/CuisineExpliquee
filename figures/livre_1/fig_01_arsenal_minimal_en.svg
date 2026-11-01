@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" width="100%" height="100%">
+  <rect width="960" height="480" rx="14" fill="#FCFBF7" stroke="#D1C7B7" stroke-width="1.5"/>
+  
+  <text x="480" y="38" font-family="Liberation Serif, Georgia, serif" font-size="22" font-weight="bold" fill="#701C1A" text-anchor="middle">THE MINIMAL ARSENAL: FIVE ESSENTIAL TOOLS OF THE COOK</text>
+  <text x="480" y="62" font-family="Liberation Sans, Arial, sans-serif" font-size="13" fill="#6B5E55" text-anchor="middle">Five pure tools to achieve 99% of all the culinary preparations in the world</text>
+
+  <!-- Outil 1 : Couteau Chef -->
+  <g transform="translate(25, 85)">
+    <rect width="170" height="325" rx="8" fill="#FAF6F0" stroke="#C8BAAA" stroke-width="1.5"/>
+    <rect width="170" height="38" rx="8" fill="#701C1A"/>
+    <text x="85" y="24" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">1. CHEF'S KNIFE</text>
+    <text x="12" y="66" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#701C1A">• 20 cm (8 in) forged blade</text>
+    <text x="12" y="86" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">Razor-sharp hone</text>
+    <text x="12" y="112" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#701C1A">• Mechanical role:</text>
+    <text x="12" y="132" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">Slices plant &amp; muscle cells</text>
+    <text x="12" y="148" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">without crushing cell juices</text>
+    <rect x="10" y="245" width="150" height="60" rx="6" fill="#F0E3DF"/>
+    <text x="85" y="268" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#701C1A" text-anchor="middle">Grip technique:</text>
+    <text x="85" y="286" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#501413" text-anchor="middle">Pinch grip on the blade</text>
+  </g>
+
+  <!-- Outil 2 : Planche Bois -->
+  <g transform="translate(210, 85)">
+    <rect width="170" height="325" rx="8" fill="#FAF6F0" stroke="#C8BAAA" stroke-width="1.5"/>
+    <rect width="170" height="38" rx="8" fill="#A3432B"/>
+    <text x="85" y="24" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">2. WOOD CUTTING BOARD</text>
+    <text x="12" y="66" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#A3432B">• End-grain or dense hardwood</text>
+    <text x="12" y="86" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">Thickness 3 to 4 cm (1.5 in)</text>
+    <text x="12" y="112" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#A3432B">• Mechanical role:</text>
+    <text x="12" y="132" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">Surface stability,</text>
+    <text x="12" y="148" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">protects knife edge</text>
+    <rect x="10" y="245" width="150" height="60" rx="6" fill="#F4E8DC"/>
+    <text x="85" y="268" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#A3432B" text-anchor="middle">Active hygiene:</text>
+    <text x="85" y="286" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#7A3220" text-anchor="middle">Desiccates bacteria naturally</text>
+  </g>
+
+  <!-- Outil 3 : Poêle en Fonte -->
+  <g transform="translate(395, 85)">
+    <rect width="170" height="325" rx="8" fill="#FAF6F0" stroke="#C8BAAA" stroke-width="1.5"/>
+    <rect width="170" height="38" rx="8" fill="#6B4423"/>
+    <text x="85" y="24" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">3. CAST IRON SKILLET</text>
+    <text x="12" y="66" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#6B4423">• Pre-seasoned heavy iron</text>
+    <text x="12" y="86" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">Masse lourde (2 à 3 kg)</text>
+    <text x="12" y="112" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#6B4423">• Rôle thermique :</text>
+    <text x="12" y="132" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">Inertie calorifique pure,</text>
+    <text x="12" y="148" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">croûte de Maillard flash</text>
+    <rect x="10" y="245" width="150" height="60" rx="6" fill="#EFE8DE"/>
+    <text x="85" y="268" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#6B4423" text-anchor="middle">Anti-adhésion n°1 :</text>
+    <text x="85" y="286" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#5C5046" text-anchor="middle">Huile polymérisée</text>
+  </g>
+
+  <!-- Outil 4 : Casserole Inox -->
+  <g transform="translate(580, 85)">
+    <rect width="170" height="325" rx="8" fill="#FAF6F0" stroke="#C8BAAA" stroke-width="1.5"/>
+    <rect width="170" height="38" rx="8" fill="#8C6239"/>
+    <text x="85" y="24" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">4. CASSEROLE INOX</text>
+    <text x="12" y="66" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#8C6239">• Inox 18/10 sandwich</text>
+    <text x="12" y="86" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">Cœur alu conducteur</text>
+    <text x="12" y="112" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#8C6239">• Rôle chimique :</text>
+    <text x="12" y="132" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">Neutralité absolue,</text>
+    <text x="12" y="148" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">cuisson des acides sans risque</text>
+    <rect x="10" y="245" width="150" height="60" rx="6" fill="#F0EBE1"/>
+    <text x="85" y="268" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#8C6239" text-anchor="middle">Zéro migration :</text>
+    <text x="85" y="286" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#5C5046" text-anchor="middle">Bouillons &amp; sauces</text>
+  </g>
+
+  <!-- Outil 5 : Fouet & Maryse -->
+  <g transform="translate(765, 85)">
+    <rect width="170" height="325" rx="8" fill="#FAF6F0" stroke="#C8BAAA" stroke-width="1.5"/>
+    <rect width="170" height="38" rx="8" fill="#B45309"/>
+    <text x="85" y="24" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">5. FOUET &amp; MARYSE</text>
+    <text x="12" y="66" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#B45309">• Fouet ballon inox</text>
+    <text x="12" y="86" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">Spatule silicone souple</text>
+    <text x="12" y="112" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#B45309">• Rôle d'émulsion :</text>
+    <text x="12" y="132" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">Cisaillement des gouttes,</text>
+    <text x="12" y="148" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">raclage intégral des fonds</text>
+    <rect x="10" y="245" width="150" height="60" rx="6" fill="#F4EADB"/>
+    <text x="85" y="268" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#B45309" text-anchor="middle">Liaison parfaite :</text>
+    <text x="85" y="286" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#78350F" text-anchor="middle">Mayonnaise &amp; roux</text>
+  </g>
+
+  <!-- Ruban Conclusion -->
+  <rect x="70" y="425" width="820" height="38" rx="6" fill="#701C1A"/>
+  <text x="480" y="449" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">RÈGLE MAÎTRESSE : CINQ INSTRUMENTS PURS COMPOSENT 99% DE TOUTES LES RECETTES DU MONDE</text>
+</svg>

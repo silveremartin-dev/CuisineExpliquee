@@ -283,6 +283,8 @@
   #body
 ]
 
+#let case_cocher = box(width: 8pt, height: 8pt, stroke: 0.7pt + c-slate, radius: 1.5pt, baseline: 0.5pt)
+
 // ==========================================
 // 1. COUVERTURE PHOTOGRAPHIQUE GASTRONOMIQUE
 // ==========================================
@@ -6876,7 +6878,9 @@ Minimal, Coûts et Durées] \
 #text(size: 11.5pt, style: "italic")[— Annexe E --- Conservation au Froid, Zones
 et Durées Limites] \
 #v(0.38cm)
-#text(size: 11.5pt, style: "italic")[— Annexe F --- Répertoire des Crédits
+#text(size: 11.5pt, style: "italic")[— Annexe F --- Matériel d'Office, Consommables, Fond de Placard & Gabarit de Courses Saines] \
+#v(0.38cm)
+#text(size: 11.5pt, style: "italic")[— Annexe G --- Répertoire des Crédits
 Iconographiques et Sources]])
 
 #pagebreak(weak: false, to: "odd")
@@ -7790,8 +7794,606 @@ de quatre mille descendants toxiques !
 
 ]
 
-= ANNEXE F --- Répertoire des Crédits Iconographiques et Sources des Illustrations
-<annexe-f-répertoire-des-crédits-iconographiques-et-sources-des-illustrations>
+= ANNEXE F --- L'Arsenal d'Office, Consommables Domestiques, Fond de Placard & Gabarit Matriciel de Courses Saines
+<annexe-f-larsenal-doffice-consommables-domestiques-fond-de-placard-gabarit-matriciel-de-courses-saines>
+#quote(block: true)[
+« La liberté souveraine du cuisinier ne s'improvise pas devant une poêle vide ; elle repose sur la présence silencieuse, ordonnée et inébranlable des instruments d'office, des consommables fiables, d'un fond de placard durable et d'un panier de courses rationnel. »
+]
+
+#divider()
+
+== 1. L'ÉQUIPEMENT D'OFFICE & COUTELLERIE DU QUOTIDIEN (AU-DELÀ DES HUIT GRANDS INSTRUMENTS)
+<léquipement-doffice-coutellerie-du-quotidien-au-delà-des-huit-grands-instruments>
+Si l'#emph[Arsenal Minimal] (Annexe D) rassemble les huit pièces maîtresses massives de la cuisson (poêle en fonte, sauteuse inox multicouche, casserole, cul-de-poule, couteau de chef, planche de bout, maryse et thermomètre sonde), le quotidien d'une maison vivante exige une batterie de #strong[prolongements précis de la main]. Couteaux de petite taille, cuillères spécialisées, spatules de contact, fourchettes de maintien, pinces de préhension et instruments de mesure constituent la boîte à outils indispensable du praticien :
+
+#figure(
+  align(center)[#table(
+  stroke: 0.5pt + rgb("#dcd6ca"),
+  fill: (x, y) => if y == 0 { rgb("#f2ece1") } else if calc.odd(y) { rgb("#faf7f2") } else { none },
+  inset: 7pt,
+    columns: (22%, 26%, 26%, 26%),
+    align: (left, left, left, left),
+    table.header([Ustensile d'Office], [Caractéristiques & Rôle Mécanique], [Ce Qu'il Faut Choisir (Le Bon Choix)], [Ce Qu'il Faut Fuir Absolument]),
+    table.hline(),
+    [#strong[Le Couteau d'Office ($8 upright(" à ") 10 upright(" cm")$)]],
+    [Lame courte, droite et rigide en acier trempé enrichi en carbone. Indispensable pour éplucher, parer, châtrer, tailler les légumes en main levée et dénerver les viandes.],
+    [Soie pleine traversante rivetée, fil rasoir facile à réaffûter sur pierre, garde équilibrée.],
+    [Lames en tôle mince emboutie qui fléchissent sous la pression, manches plastiques moulés creux se fendant au lave-vaisselle.],
+
+    [#strong[Le Couteau à Pain Cranté ($20 upright(" à ") 24 upright(" cm")$)]],
+    [Lame longue et rigide dotée de dentures ondulées espacées. Permet de scier les croûtes de pain épaisses et les courges dures sans comprimer la mie alvéolée.],
+    [Denture profonde à profil festonné tranchant (et non écrasant), épaisseur de lame minimale de $1\,8 upright(" mm")$.],
+    [Lames molles qui dévient lors de la coupe, petites dentures d'appoint type scie à métaux arrachant la mie en miettes.],
+
+    [#strong[L'Éplucheur Rasoir en « Y » (Économe)]],
+    [Lame basculante pivotante ultra-affûtée montée sur arceau transversal en forme de Y. Ergonomie réduisant l'effort de poignet.],
+    [Lame en acier au carbone ou acier inoxydable trempé de haute dureté, avec ergot latéral pour ôter les yeux des pommes de terre.],
+    [Économes droits à manche rond glissant entre les doigts mouillés, lames émoussées dès la troisième utilisation.],
+
+    [#strong[La Grande Cuillère en Bois de Bout (Hêtre)]],
+    [Bois dur massif naturel non traité. Outil roi pour suer les alliacées, mélanger les risottos et incorporer sans rayer le métal.],
+    [Cuillère en hêtre, charme ou buis taillée dans la masse, à bout légèrement biseauté pour racler le fond plat des casseroles.],
+    [Cuillères en bois verni ou laqué dont les solvants migrent dans la nourriture chaude ; ustensiles en pin ou bois tendre pelucheux.],
+
+    [#strong[La Cuillère de Poule en Inox (Grande Cuillère d'Arrosage)]],
+    [Grande cuillère profonde en acier inoxydable $18\/10$ monobloc à manche long ($30 upright(" cm")$). Outil d'arrosage thermique par convection.],
+    [Cuilleron généreux permettant de prélever le beurre moussant pour napper viandes et poissons en continu lors de la réaction de Maillard.],
+    [Grandes cuillères fines en aluminium ployant sous le poids du liquide ; cuillères à manche collé piégeant les graisses.],
+
+    [#strong[Cuillère à Soupe & Cuillère de Dégustation]],
+    [Couverts de travail en inox massif épais. Outil d'évaluation organoleptique et de dosage volumétrique d'appoint ($15 upright(" ml")$ et $5 upright(" ml")$).],
+    [Inox forgé $18\/10$ lourd, cuilleron aux bords polis pour un passage agréable en bouche lors de l'étalonnage de l'assaisonnement.],
+    [Couverts bas de gamme légers aux rebords coupants ou présentant des décors gravés impossibles à désinfecter.],
+
+    [#strong[La Spatule Plate Rigide Biseautée]],
+    [Lame métallique très mince et rigide à bord avant biseauté. Décollement net de la croûte dorée sans arrachement.],
+    [Inox trempé élastique avec manche décalé athermique, pour glisser horizontalement sous un pavé de bœuf ou un pavé de saumon.],
+    [Spatules épaisses à bord arrondi butant contre l'aliment et déchirant la surface croustillante en formation.],
+
+    [#strong[La Spatule Souple Maryse en Silicone]],
+    [Tête en silicone élastique monobloc résistante à $250^compose upright(C)$. Raclage total des parois, zéro perte de matière.],
+    [Silicone platine sans jointure entre manche et tête, pour une hygiène bactériologique irréprochable et un lavage instantané.],
+    [Maryses anciennes à tête amovible en caoutchouc blanc durcissant avec le temps et accumulant les moisissures dans le manchon.],
+
+    [#strong[La Pince de Chef en Inox ($30 upright(" cm")$)]],
+    [Pince longue à ressort souple munie de mors striés. Manipule les aliments sans jamais percer la chair (zéro fuite de sucs).],
+    [Acier inox robuste avec anneau de verrouillage coulissant, tension douce évitant la fatigue de la main.],
+    [Pinces courtes exposant la main aux projections d'huile brûlante ; pinces dotées d'embouts plastiques fondant au contact de la fonte.],
+
+    [#strong[La Grande Fourchette de Chef (Diapason)]],
+    [Fourchette lourde à deux longues dents effilées et rigides. Maintien stable des rôtis et gigots chauds pendant la découpe.],
+    [Acier forgé monobloc massif assurant un guidage millimétrique de la tranche de viande sans écrasement.],
+    [Fourchettes légères à dents minces qui plient sous le poids des pièces carnées ou se déboîtent du manche.],
+
+    [#strong[L'Écumoire / Araignée Métallique]],
+    [Panier en fils d'inox croisés soudés sur un manche long. Sort les aliments des liquides bouillants sans retenir une goutte d'eau.],
+    [Maille très ajourée réduisant au néant la traînée hydrodynamique pour repêcher gnocchis, légumes blanchis, pâtes et beignets.],
+    [Écumoires à trous circulaires minuscules formant une cuillère qui emporte l'eau de cuisson et dilue les sauces.],
+
+    [#strong[La Louche Monobloc Emboutie ($120 upright(" ml")$)]],
+    [Acier inoxydable embouti d'une seule pièce sans aucune soudure. Transvasement des bouillons, potages et crêpes.],
+    [Bord verseur anti-goutte franc sur tout le pourtour, manche rigide avec crochet de suspension d'office.],
+    [Louches dont le manche est fixé par points de soudure électrique fragiles qui cassent après quelques mois de chauffe.],
+
+    [#strong[Le Fouet Ballon à Fils Fins (12 fils)]],
+    [Douze fils souples en corde à piano inox montés en goutte d'eau. Rôle : foisonnement et incorporation d'air dans les émulsions.],
+    [Manche étanche injecté de résine époxy sanitaire, fils élastiques épousant le fond hémisphérique du cul-de-poule.],
+    [Fouets rigides à 4 fils épais ressemblant à des fourches, inaptes à monter une mayonnaise ou des blancs en neige.],
+
+    [#strong[La Râpe Fine Micro-Dentée (Type Microplane)]],
+    [Feuille d'inox affûtée par photo-gravure chimique. Tranche les aliments au lieu de les écraser.],
+    [Lames ultra-vives prélevant l'épiderme superficiel des agrumes sans entamer le ziste amer ; pulvérise le parmesan en nuage.],
+    [Râpes à quatre faces traditionnelles en tôle emboutie émoussée qui déchiquettent les zestes et forment une pâte grasse.],
+
+    [#strong[La Passoire Fine / Chinois Tamis]],
+    [Cône ou demi-sphère grillagée en inox à trame ultra-serrée ($0\,5 upright(" mm")$). Tamisage et filtration de précision.],
+    [Structure rigide renforcée de fils arceaux, permet d'égoutter un œuf poché ou de filtrer une sauce sans laisser passer de grumeaux.],
+    [Passoires en plastique à trous grossiers fondant au contact des liquides chauds et laissant passer les impuretés.],
+
+    [#strong[La Balance Électronique au Gramme ($1 upright(" g") \/ 5 upright(" kg")$)]],
+    [Capteur à jauge de contrainte avec fonction tare instantanée. Mesure quantitative exacte des ratios de panification et salage.],
+    [Plateau lisse en verre ou inox facile à nettoyer d'un coup d'éponge, extinction automatique temporisée à plus de 2 minutes.],
+    [Balances mécaniques à ressort décalibrées d'origine ($\pm 20 upright(" g")$) ou balances digitales coupant l'affichage après 15 secondes.],
+
+    [#strong[Les Ciseaux de Cuisine Démontables à Crans]],
+    [Lames épaisses en inox trempé avec cran coupe-os et démontage instantané des deux branches sans outil.],
+    [Permet de découper les nageoires de poisson, fendre la cage thoracique des volailles, couper la ficelle et désinfecter à cœur.],
+    [Ciseaux de bureau détournés dont l'axe riveté non démontable piège sang, graisses et germes dans l'interstice inaccessible.]
+  )]
+  , caption: [L'arsenal d'office indispensable : 17 outils de main et instruments de mesure complétant les 8 pièces maîtresses.],
+  kind: table
+)
+
+#divider()
+
+== 2. LES CONSOMMABLES TECHNIQUES DU FOYER : THERMODYNAMIQUE, CONTACT ET SÉCURITÉ
+<les-consommables-techniques-du-foyer-thermodynamique-contact-et-sécurité>
+Un consommable culinaire n'est pas un déchet ménager passif : c'est un #strong[réactif mécanique et thermique] dont l'interaction avec l'aliment obéit aux lois strictes de la physique des matériaux et de la toxicologie alimentaire. Huit consommables et produits d'entretien vertueux doivent équiper le foyer :
+
+#figure(
+  align(center)[#table(
+  stroke: 0.5pt + rgb("#dcd6ca"),
+  fill: (x, y) => if y == 0 { rgb("#f2ece1") } else if calc.odd(y) { rgb("#faf7f2") } else { none },
+  inset: 7pt,
+    columns: (22%, 24%, 28%, 26%),
+    align: (left, left, left, left),
+    table.header([Consommable Technique], [Nature & Résistance Thermique], [Fonctions Culinaires Majeures], [Contre-Modèle & Risque Sanitaire]),
+    table.hline(),
+    [#strong[Papier Sulfoné / Cuisson Siliconé]],
+    [Papier cellulose pur non blanchi, imprégné de silicone végétal. Thermostable jusqu'à $220^compose upright(C)$, hydrophobe et oléophobe.],
+    [• Confection des cartouches d'étuvée (#emph[Chapitre 10]).\ • Chemisage anti-adhésif des plaques et cocottes à pain.\ • Cuisson en papillote douce à la vapeur.],
+    [#strong[Interdiction formelle sous le gril direct :] au-delà de $230^compose upright(C)$, pyrolyse immédiate du papier avec risque d'embrasement et fumées d'acroléine.],
+
+    [#strong[Papier d'Aluminium Épais Traiteur]],
+    [Feuille d'aluminium pur de calibre traiteur ($18 upright(" à ") 20\,\mu upright("m")$). Réflecteur thermique infrarouge à 95% ($T^4$).],
+    [• Bouclier thermique sur les arêtes fragiles de rôtis et volailles.\ • Enveloppe de repos post-cuisson des viandes pour équilibrer les pressions internes sans refroidissement.],
+    [#strong[DANGER SANITAIRE ABSOLU :] Ne jamais mettre au contact direct d'acides (citron, coulis de tomate, vinaigre, vin). L'acide dissout l'oxyde d'aluminium et libère des ions $"Al"^(3+)$ neurotoxiques.],
+
+    [#strong[Film Étirable Alimentaire Étanche]],
+    [Polyéthylène basse densité (PEBD) sans phtalates, sans bisphénol ni PVC. Barrière hermétique à la vapeur d'eau et aux gaz.],
+    [• Filmage « au contact » des crèmes et purées chaudes pour empêcher la dessiccation et la formation de croûte superficielle.\ • Ballottines et pochage doux à basse température ($< 85^compose upright(C)$).],
+    [Fuir les films industriels contenant du PVC chloré qui migrent dans les graisses chaudes. Ne jamais placer au four traditionnel ni en contact direct avec une flamme.],
+
+    [#strong[Ficelle de Boucher en Lin ou Coton Écru]],
+    [Fibres végétales pures non blanchies, non teintées, sans apprêt chimique. Forte résistance à la traction mécanique.],
+    [• Bridage des volailles pour plaquer les cuisses contre les suprêmes et homogénéiser la pénétration thermique.\ • Roulage des rôtis et confection des bouquets garnis retirables.],
+    [#strong[Fuir les ficelles plastiques ou synthétiques :] le polypropylène et le nylon fondent dès $80 upright(" à ") 120^compose upright(C)$ et libèrent des composés pétrochimiques toxiques dans la sauce.],
+
+    [#strong[Étamine en Coton / Gaze à Fromage]],
+    [Tissu de coton fin non blanchi à maillage micrométrique régulier. Lavable et réutilisable indéfiniment.],
+    [• Égouttage gravitationnel du caillé pour fromage frais en 15 minutes (#emph[Chapitre 18]).\ • Filtration colloïdale du grand bouillon d'or et des gelées limpides.],
+    [Ne jamais laver l'étamine avec un adoucissant de lessive parfumé : les cires et parfums synthétiques s'imprègnent dans les fibres et contaminent les préparations.],
+
+    [#strong[Papier Absorbant Kraft & Torchons de Lin]],
+    [Papier pure pâte de bois non gaufré, sans chlore, ou torchon 100% lin lourd lavé sans détergent parfumé.],
+    [• #strong[Séchage méticuleux des chairs :] essuyer l'humidité de surface des viandes, poissons et tofu avant la pose sur le feu. Élimine l'eau libre pour atteindre $140 upright(" à ") 165^compose upright(C)$ sans bouillir.],
+    [Essuie-tout parfumés ou imprimés d'encres colorées transférant des solvants sur la nourriture crue.],
+
+    [#strong[Sacs de Congélation Hermétiques à Zip]],
+    [Polyéthylène épais de qualité congélation hermétique avec double zip étanche. Résistance mécanique aux cristaux de glace.],
+    [• Protection des aliments contre les brûlures de congélation.\ • Technique de dépression d'Archimède : plonger le sac ouvert dans l'eau pour chasser l'air avant fermeture (mise sous vide passive).],
+    [Sacs à fermeture par lien métallique torsadé qui ne garantissent aucune étanchéité gazeuse et favorisent la sublimation de l'eau.],
+
+    [#strong[Bocaux en Verre à Joint en Caoutchouc]],
+    [Bocaux en verre épais recuit (type Le Parfait ou Weck) munis d'un joint en caoutchouc naturel orange et d'une armature à ressort.],
+    [• Fermentation lactique anaérobie (#emph[Chapitre 17]) : le joint souple fait office de clapet évacuant le $upright(C O)_2$ en surpression sans laisser entrer d'oxygène.\ • Stockage hermétique des bouillons et fonds.],
+    [Bocaux à couvercles métalliques à vis rouillés ou dont le vernis intérieur est rayé, libérant des oxydes métalliques au contact du sel.]
+  )]
+  , caption: [Les huit consommables techniques indispensables du foyer : caractéristiques et impératifs de sécurité.],
+  kind: table
+)
+
+#point_attention[
+#strong[La Règle d'Or du Séchage de Surface :] Une goutte d'eau liquide sur une pièce de viande absorbe $2\,260 upright(" J/g")$ d'énergie par chaleur latente de vaporisation. Tant que cette eau est présente, la surface de la viande reste captive du palier de $100^compose upright(C)$ : la réaction de Maillard ($140 upright(" à ") 165^compose upright(C)$) ne peut jamais démarrer. L'aliment bout dans son suintement au lieu de rôtir. Le papier absorbant ou le torchon propre est le garant physique du croustillant.
+]
+
+#divider()
+
+== 3. LE FOND DE PLACARD MATRICIEL : L'ÉPICERIE DE SURVIE SAINE (HORS FRIGO)
+<le-fond-de-placard-matriciel-lépicerie-de-survie-saine-hors-frigo>
+Le fond de placard ne désigne pas une accumulation désordonnée de produits industriels préfabriqués, mais un ensemble de #strong[matières premières stables à haute densité nutritive], capables de traverser les mois sans s'altérer et permettant de confectionner un repas gastronomique complet en toute circonstance :
+
+=== A. Les Matières Grasses Stables & Vinaigres d'Action
+- #strong[Huile d'olive vierge extra de première pression à froid :] base des cuissons douces ($< 180^compose upright(C)$), des assaisonnements à cru et des émulsions au mortier. Riche en acide oléique et polyphénols antioxydants.
+- #strong[Huile neutre à haut point de fumée (colza ou tournesol oléique) :] point de fumée supérieur à $215^compose upright(C)$, indispensable pour la saisie violente en fonte et le montage des mayonnaises fermes.
+- #strong[Vinaigre de cidre biologique non pasteurisé (avec mère) :] source vivante d'acide acétique doux et de probiotiques naturels.
+- #strong[Vinaigre de vin vieux ou balsamique traditionnel :] dégraissage des sucs de poêle lors du déglaçage minute (#emph[Chapitre 14]).
+
+=== B. Les Minéraux Piliers & Épices Entières
+- #strong[Gros sel gris de mer non raffiné :] teneur équilibrée en magnésium et oligo-éléments, calibré pour saler l'eau d'ébullition à $10 upright(" g/L")$.
+- #strong[Fleur de sel croquante de Guérande ou de Camargue :] cristaux пирамиdaux fragiles réservés à la finition sur table pour le contraste textural.
+- #strong[Poivre noir en grains entiers (Piper nigrum) en moulin réglable :] les huiles aromatiques et la pipérine s'oxydent en moins de quarante-huit heures une fois broyées. Ne jamais acheter de poivre moulu d'avance.
+- #strong[Épices entières fondamentales :] graines de cumin, graines de coriandre, curcuma en poudre, paprika doux et pimentón fumé, piment d'Espelette, noix de muscade entière à râper, cannelle de Ceylan.
+- #strong[Herbes sèches de garde :] laurier noble en feuilles entières et thym de garrigue séché à l'ombre.
+
+=== C. Féculents, Céréales & Légumineuses Protéiques
+- #strong[Farine de blé T65 biologique :] équilibre optimal entre teneur en gluten pour la panification et richesse en minéraux du son.
+- #strong[Pâtes sèches 100% semoule de blé dur de tréfilage au bronze :] rugosité microscopique retenant les sauces émulsionnées sans nécessiter de crème.
+- #strong[Riz basmati ou jasmin (grains longs) & Riz carnaroli (grains ronds) :] bases glucidiques neutres ou riches en amylopectine pour risottos.
+- #strong[Lentilles corail entières :] cuisson express en 12 minutes sans trempage, désagrégation naturelle en velouté réconfortant (Dahl du #emph[Chapitre 09]).
+- #strong[Lentilles vertes du Puy & Pois chiches secs :] protéines végétales denses, riches en amidon résistant RS3 après refroidissement.
+- #strong[Flocons d'avoine complets :] fibres solubles (bêta-glucanes) régulant la glycémie et liant les appareils à galettes.
+- #strong[Fécule de maïs (Maïzena) :] gélatinisation instantanée à $75^compose upright(C)$ pour lier les sauces en légèreté sans apport lipidique.
+
+=== D. Conserves Brutes de Haute Valeur & Oléagineux
+- #strong[Pulpe fine de tomates ou tomates pelées entières en bocal verre :] concentré d'acide glutamique libre (umami) et de lycopène biodisponible.
+- #strong[Petits poissons gras en boîte à l'huile d'olive (sardines entières, maquereaux) :] apport exceptionnel en acides gras oméga-3 à longue chaîne (EPA/DHA) et calcium assimilable (arêtes attendries par l'appertisation).
+- #strong[Lait de coco pur (60 à 80% d'extrait de coco sans épaississant) :] émulsion végétale stable pour sauces épicées.
+- #strong[Fruits oléagineux bruts non salés :] amandes entières, cerneaux de noix de Grenoble, noisettes, graines de courge et graines de lin brun.
+
+=== E. Alliacées & Tubercules de Garde (Garde-Manger à l'Ombre)
+- #strong[Ail sec en gousses :] allicine antibactérienne et fondation aromatique universelle.
+- #strong[Oignons jaunes de garde & oignons rouges :] quercétine et sucres libérés par caramélisation douce.
+- #strong[Échalotes traditionnelles :] finesse aromatique sulfurée pour sauces au vin et vinaigrettes.
+- #strong[Pommes de terre de conservation :] chair ferme (type Charlotte ou Amandine) et chair farineuse (type Bintje).
+
+#divider()
+
+== 4. LE FRAIS PERMANENT DU RÉFRIGÉRATEUR (LE « FOND DE FRIGO » TOUJOURS DISPONIBLE)
+<le-frais-permanent-du-réfrigérateur-le-fond-de-frigo-toujours-disponible>
+Au-delà des approvisionnements hebdomadaires de marché, le réfrigérateur du foyer moderne doit abriter en permanence #strong[neuf sentinelles du frais], dont la combinaison permet d'élaborer une assiette équilibrée en moins de quinze minutes :
+
+#figure(
+  align(center)[#table(
+  stroke: 0.5pt + rgb("#dcd6ca"),
+  fill: (x, y) => if y == 0 { rgb("#f2ece1") } else if calc.odd(y) { rgb("#faf7f2") } else { none },
+  inset: 7pt,
+    columns: (24%, 22%, 28%, 26%),
+    align: (left, left, left, left),
+    table.header([Ingrédient Permanent], [Emplacement dans le Frigo], [Pouvoir Culinaire & Geste Clé], [Durée Limite de Garde]),
+    table.hline(),
+    [#strong[Œufs Frais de Plein Air (0 ou 1)]],
+    [Étage intermédiaire ($4 upright(" à ") 6^compose upright(C)$) dans leur boîte d'origine.],
+    [Le caméléon protéique universel : mollet (6 min), poché (3 min), omelette baveuse, liant de sauce ou émulsion moussante.],
+    [28 jours après la ponte (date inscrite sur la coquille).],
+
+    [#strong[Bloc de Parmigiano Reggiano AOP]],
+    [Zone fraîche ($4 upright(" à ") 6^compose upright(C)$) emballé dans du papier sulfurisé.],
+    [Mine de glutamate libre et de cristaux de tyrosine : sel d'assaisonnement noble, exhausteur d'umami et liant de pâtes.],
+    [3 à 6 mois sans altération s'il respire dans le papier cuisson.],
+
+    [#strong[Beurre Doux de Baratte (82% MG)]],
+    [Zone fraîche ou beurrier de porte ($6 upright(" à ") 8^compose upright(C)$).],
+    [Montage des sauces au beurre moussant, glaçage des carottes sous cartouche, feuilletage des pâtes brisées.],
+    [3 à 4 semaines après ouverture ; congélation possible en portions.],
+
+    [#strong[Citrons Jaunes Biologiques]],
+    [Bac à légumes ou contre-porte fraîche.],
+    [L'acide invisible de chef : le zeste parfume en huiles essentielles, le jus dégraisse le palais et active la salivation.],
+    [3 à 4 semaines entiers ; 3 jours une fois entamés.],
+
+    [#strong[Trio Végétal : Carotte, Céleri, Poireau]],
+    [Bac à légumes ($6 upright(" à ") 8^compose upright(C)$).],
+    [La mirepoix universelle : base de tous les bouillons d'or, sauces brunes réduites et étuvées aromatiques.],
+    [2 à 3 semaines dans le bac sans perte de turgescence.],
+
+    [#strong[Moutarde Forte de Dijon Pure]],
+    [Contre-porte intermédiaire ($6 upright(" à ") 8^compose upright(C)$).],
+    [Agent tensioactif d'émulsion : ses mucilages naturels stabilisent les liaisons entre l'huile et le vinaigre.],
+    [6 mois au réfrigérateur après ouverture.],
+
+    [#strong[Yaourt Grec ou Fromage Blanc Entier]],
+    [Étage supérieur ou intermédiaire ($4^compose upright(C)$).],
+    [Ferments lactiques vivants, base de sauces fraîches minute au citron et herbes, attendrisseur de volaille.],
+    [2 à 3 semaines non ouvert ; 5 jours après ouverture.],
+
+    [#strong[Tofu Ferme Nature ou Pâte Miso]],
+    [Zone la plus froide ($2 upright(" à ") 4^compose upright(C)$).],
+    [Protéines végétales pures prêtes à dorer en cube croustillant, ou assaisonnement fermenté profond pour soupes minute.],
+    [Tofu : 1 semaine au frais dans un bol d'eau changée tous les 2 jours ; Miso : 12 mois.],
+
+    [#strong[Bouquet d'Herbes Fraîches (Persil)]],
+    [Contre-porte, tiges trempées dans $2 upright(" cm")$ d'eau.],
+    [Finition aromatique chlorophyllienne vive, antioxydants et fraîcheur immédiate dressée sur l'assiette chaude.],
+    [7 à 10 jours en changeant l'eau tous les deux jours.]
+  )]
+  , caption: [Les neuf piliers du frais permanent au réfrigérateur : conservation et potentiel culinaire immédiat.],
+  kind: table
+)
+
+#divider()
+
+== 5. LE GABARIT MATRICIEL DE COURSES SAINES (TRIPTYQUE SUR TROIS PAGES ENTIÈRES)
+<le-gabarit-matriciel-de-courses-saines-avec-cases-à-cocher>
+Faire ses courses de manière éclairée ne consiste pas à remplir un chariot au gré des stimulations publicitaires des têtes de gondole. Ce protocole applique les #strong[quatre principes cardinaux de l'approvisionnement souverain] :
+
+1. #strong[La Règle du Ventre Repu :] Ne jamais franchir les portes d'un marché ou d'un magasin l'estomac vide. La chute de leptine et la sécrétion de ghréline activent les réflexes ancestraux de recherche impulsive de calories simples (sucres raffinés et graisses saturées).
+2. #strong[La Règle du Pourtour 80/20 :] Dans toute surface marchande, consacrer 80% de son budget et de son panier au pourtour extérieur (étals des primeurs, boucheries artisanales, marées, produits laitiers bruts, farines en vrac). Fuir le cœur central des allées où s'empilent les produits ultra-transformés.
+3. #strong[La Règle des Cinq Ingrédients :] Si l'étiquette d'un aliment manufacturé énumère plus de cinq composants ou mentionne des agents introuvables dans une cuisine domestique (amidons modifiés, graisses hydrogénées, exhausteurs de goût), le produit n'a aucune place dans votre organisme.
+4. #strong[La Règle des Trente Végétaux Hebdomadaires :] Garantir la diversité de l'écosystème bactérien intestinal en cochant chaque semaine un panaché de légumes racines, feuilles vertes, graines, herbes aromatiques et légumineuses.
+
+Le gabarit ci-après a été conçu pour occuper #strong[trois pages entières indépendantes], immédiatement imprimables, détachables ou photographiables sur smartphone, sans aucun texte tronqué à cheval sur les pages.
+
+#pagebreak()
+
+// =========================================================================
+// GABARIT DE COURSES — PLEINE PAGE 1 / 3 : MARAÎCHAGE, RACINES & VRAC VITAL
+// =========================================================================
+
+#align(center)[
+  #text(size: 13pt, weight: "bold", fill: c-bordeaux)[GABARIT DE COURSES RATIONNELLES DU FOYER — FICHE 1 / 3] \
+  #v(1pt)
+  #text(size: 8.8pt, style: "italic", fill: c-slate)[Le Règne Végétal : Primeur, Maraîchage Vivant, Céréales & Vrac — Page autonome à détacher]
+]
+
+#v(0.2cm)
+
+#grid(
+  columns: (1fr, 1fr),
+  gutter: 12pt,
+  [
+    #block(
+      fill: rgb("#faf7f0"),
+      stroke: 0.5pt + rgb("#dfdacf"),
+      inset: 8pt,
+      radius: 4pt,
+      width: 100%,
+      spacing: 0.65em
+    )[
+      #text(weight: "bold", size: 9.8pt, fill: c-bordeaux)[1. PRIMEUR, RACINES & HERBORISTERIE]
+      #v(1pt)
+      #line(length: 100%, stroke: 0.5pt + c-bronze)
+      #v(3pt)
+      #set text(size: 8.8pt)
+      #set par(leading: 0.65em)
+      #case_cocher Carottes de garde (terre non lavée) \
+      #case_cocher Céleri branche ou céleri-rave \
+      #case_cocher Oignons jaunes de garde & oignons rouges \
+      #case_cocher Ail sec en têtes & échalotes grises \
+      #case_cocher Poireaux ou chou pommé (vert / rouge) \
+      #case_cocher Salade maraîchère croquante / pousses \
+      #case_cocher Citrons jaunes biologiques non traités \
+      #case_cocher Pommes de terre à chair ferme (Charlotte) \
+      #case_cocher Pommes de terre farineuses (Bintje / purée) \
+      #case_cocher Bouquet de persil plat ou coriandre fraîche \
+      #case_cocher Légumes-feuilles de saison (épinards, blettes) \
+      #case_cocher Légumes-fruits de saison (courgettes, tomates) \
+      #case_cocher Fruits frais bruts de saison (pommes, poires) \
+      #case_cocher Champignons frais de Paris ou de forêt \
+      #case_cocher Gingembre frais en racine \
+      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
+      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
+      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
+      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
+    ]
+  ],
+  [
+    #block(
+      fill: rgb("#faf7f0"),
+      stroke: 0.5pt + rgb("#dfdacf"),
+      inset: 8pt,
+      radius: 4pt,
+      width: 100%,
+      spacing: 0.65em
+    )[
+      #text(weight: "bold", size: 9.8pt, fill: c-bordeaux)[2. ÉPICERIE SÈCHE & VRAC VITAL]
+      #v(1pt)
+      #line(length: 100%, stroke: 0.5pt + c-bronze)
+      #v(3pt)
+      #set text(size: 8.8pt)
+      #set par(leading: 0.65em)
+      #case_cocher Farine de blé T65 biologique de meule \
+      #case_cocher Pâtes de semoule de blé dur au bronze \
+      #case_cocher Riz long basmati ou jasmin \
+      #case_cocher Riz rond pour risotto (Carnaroli / Arborio) \
+      #case_cocher Lentilles corail (cuisson 12 min sans trempage) \
+      #case_cocher Lentilles vertes du Puy ou lentilles brunes \
+      #case_cocher Pois chiches secs de ferme \
+      #case_cocher Haricots blancs secs (lingots / cocos) \
+      #case_cocher Flocons d'avoine complets (bêta-glucanes) \
+      #case_cocher Fécule de maïs (Maïzena) ou de pomme de terre \
+      #case_cocher Graines de lin brun & graines de courge \
+      #case_cocher Graines de sésame blond complet \
+      #case_cocher Cerneaux de noix de Grenoble & amandes brutes \
+      #case_cocher Sucre de canne complet (Rapadura / Muscovado) \
+      #case_cocher Miel brut artisanal d'apiculteur \
+      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
+      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
+      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
+      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
+    ]
+  ]
+)
+
+#v(0.2cm)
+
+#point_attention[
+#strong[Objectif Microbiote des 30 Végétaux :] Pour nourrir l'ensemble des phyla bactériens de votre côlon, variez les couleurs et les familles botaniques. Chaque case cochée dans les deux colonnes ci-dessus (alliacées, crucifères, ombellifères, légumineuses, graminées, graines et fruits oléagineux) apporte un profil distinct de fibres prébiotiques et de polyphénols protecteurs.
+]
+
+#pagebreak()
+
+// =========================================================================
+// GABARIT DE COURSES — PLEINE PAGE 2 / 3 : CRÈMERIE, PROTÉINES & CONSERVES
+// =========================================================================
+
+#align(center)[
+  #text(size: 13pt, weight: "bold", fill: c-bordeaux)[GABARIT DE COURSES RATIONNELLES DU FOYER — FICHE 2 / 3] \
+  #v(1pt)
+  #text(size: 8.8pt, style: "italic", fill: c-slate)[Le Frais Vivant, Boucherie, Marée & Conserves Nobles — Page autonome à détacher]
+]
+
+#v(0.2cm)
+
+#grid(
+  columns: (1fr, 1fr),
+  gutter: 12pt,
+  [
+    #block(
+      fill: rgb("#faf7f0"),
+      stroke: 0.5pt + rgb("#dfdacf"),
+      inset: 8pt,
+      radius: 4pt,
+      width: 100%,
+      spacing: 0.65em
+    )[
+      #text(weight: "bold", size: 9.8pt, fill: c-bordeaux)[3. CRÈMERIE, ŒUFS & FRAIS VIVANT]
+      #v(1pt)
+      #line(length: 100%, stroke: 0.5pt + c-bronze)
+      #v(3pt)
+      #set text(size: 8.8pt)
+      #set par(leading: 0.65em)
+      #case_cocher Œufs frais biologiques ou plein air (code 0 ou 1) \
+      #case_cocher Beurre doux de baratte (82% de matière grasse) \
+      #case_cocher Bloc de Parmigiano Reggiano AOP (24 à 30 mois) \
+      #case_cocher Yaourts grecs entiers au lait de brebis / vache \
+      #case_cocher Fromage blanc fermier au lait entier \
+      #case_cocher Crème liquide entière d'Isigny (35% MG) \
+      #case_cocher Lait entier pasteurisé de ferme \
+      #case_cocher Tofu ferme nature de soja biologique \
+      #case_cocher Pâte miso brune ou blanche de longue garde \
+      #case_cocher Fromage de garde au lait cru (Comté / Cantal) \
+      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
+      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
+    ]
+
+    #v(0.2cm)
+
+    #block(
+      fill: rgb("#faf7f0"),
+      stroke: 0.5pt + rgb("#dfdacf"),
+      inset: 8pt,
+      radius: 4pt,
+      width: 100%,
+      spacing: 0.65em
+    )[
+      #text(weight: "bold", size: 9.8pt, fill: c-bordeaux)[4. BOUCHERIE, VOLAILLE & MARÉE]
+      #v(1pt)
+      #line(length: 100%, stroke: 0.5pt + c-bronze)
+      #v(3pt)
+      #set text(size: 8.8pt)
+      #set par(leading: 0.65em)
+      #case_cocher Poulet fermier entier prêt à brider \
+      #case_cocher Pavé de bœuf épais à poêler (rumsteck, aloyau) \
+      #case_cocher Morceau collagénique à braiser (paleron, joue) \
+      #case_cocher Filets de poisson blanc de ligne (cabillaud, lieu) \
+      #case_cocher Petits poissons bleus frais (sardines, maquereaux) \
+      #case_cocher Graisse de canard pure du Sud-Ouest en bocal \
+      #case_cocher Os à moelle ou carcasse pour fond de volaille \
+      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
+      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
+    ]
+  ],
+  [
+    #block(
+      fill: rgb("#faf7f0"),
+      stroke: 0.5pt + rgb("#dfdacf"),
+      inset: 8pt,
+      radius: 4pt,
+      width: 100%,
+      spacing: 0.65em
+    )[
+      #text(weight: "bold", size: 9.8pt, fill: c-bordeaux)[5. CONDIMENTS, CONSERVES & SAUCES MÈRES]
+      #v(1pt)
+      #line(length: 100%, stroke: 0.5pt + c-bronze)
+      #v(3pt)
+      #set text(size: 8.8pt)
+      #set par(leading: 0.65em)
+      #case_cocher Huile d'olive vierge extra de première pression \
+      #case_cocher Huile de colza ou pépin de raisin (saisies vives) \
+      #case_cocher Vinaigre de cidre bio non pasteurisé avec mère \
+      #case_cocher Vinaigre de vin vieux ou balsamique traditionnel \
+      #case_cocher Moutarde de Dijon forte traditionnelle \
+      #case_cocher Sauce soja ou tamari naturellement fermenté \
+      #case_cocher Pulpe fine de tomates ou tomates pelées en boîte \
+      #case_cocher Conserves de sardines entières à l'huile d'olive \
+      #case_cocher Conserves de filets de maquereaux au naturel \
+      #case_cocher Lait de coco pur sans épaississant (guar/xanthane) \
+      #case_cocher Gros sel gris marin non raffiné (pour l'eau) \
+      #case_cocher Fleur de sel de Guérande (finition croquante) \
+      #case_cocher Poivre noir entier en grains (moulin réglable) \
+      #case_cocher Graines de cumin, de coriandre et curcuma pur \
+      #case_cocher Paprika fumé pimentón de la Vera & Espelette \
+      #case_cocher Noix de muscade entière avec sa coque protectrice \
+      #case_cocher Feuilles de laurier noble et thym de Provence \
+      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
+      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
+      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
+    ]
+  ]
+)
+
+#v(0.2cm)
+
+#point_attention[
+#strong[Sécurité Chaîne du Froid :] Au retour des courses, intégrer immédiatement les articles des sections 3 et 4 dans leurs bio-zones respectives selon la cartographie de l'Annexe E. Les poissons et viandes fraîches ($0 upright(" à ") 2^compose upright(C)$) ne tolèrent aucune attente sur le plan de travail.
+]
+
+#pagebreak()
+
+// =========================================================================
+// GABARIT DE COURSES — PLEINE PAGE 3 / 3 : DROGUERIE, OUTILLAGE & PROTOCOLE
+// =========================================================================
+
+#align(center)[
+  #text(size: 13pt, weight: "bold", fill: c-bordeaux)[GABARIT DE COURSES RATIONNELLES DU FOYER — FICHE 3 / 3] \
+  #v(1pt)
+  #text(size: 8.8pt, style: "italic", fill: c-slate)[Consommables, Outillage d'Office & Protocole de Marche — Page autonome à détacher]
+]
+
+#v(0.2cm)
+
+#grid(
+  columns: (1fr, 1fr),
+  gutter: 12pt,
+  [
+    #block(
+      fill: rgb("#faf7f0"),
+      stroke: 0.5pt + rgb("#dfdacf"),
+      inset: 8pt,
+      radius: 4pt,
+      width: 100%,
+      spacing: 0.65em
+    )[
+      #text(weight: "bold", size: 9.8pt, fill: c-bordeaux)[6. CONSOMMABLES & DROGUERIE DU FOYER]
+      #v(1pt)
+      #line(length: 100%, stroke: 0.5pt + c-bronze)
+      #v(3pt)
+      #set text(size: 8.8pt)
+      #set par(leading: 0.65em)
+      #case_cocher Rouleau de papier sulfurisé siliconé non blanchi \
+      #case_cocher Rouleau de papier d'aluminium épais traiteur \
+      #case_cocher Rouleau de film étirable alimentaire sans PVC \
+      #case_cocher Pelote de ficelle de boucher en lin ou coton écru \
+      #case_cocher Carrés d'étamine de coton pur / gaze à fromage \
+      #case_cocher Boîte de sacs congélation hermétiques à double zip \
+      #case_cocher Bocaux en verre avec joints en caoutchouc neufs \
+      #case_cocher Vinaigre blanc d'alcool à $12^compose$ (détartrage inox) \
+      #case_cocher Bicarbonate de soude technique alimentaire \
+      #case_cocher Pain de savon de Marseille ou savon noir liquide \
+      #case_cocher Tampons de laine d'acier 000 ou paille de fer fine \
+      #case_cocher Éponges végétales naturelles double face \
+      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
+      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
+    ]
+  ],
+  [
+    #block(
+      fill: rgb("#faf7f0"),
+      stroke: 0.5pt + rgb("#dfdacf"),
+      inset: 8pt,
+      radius: 4pt,
+      width: 100%,
+      spacing: 0.65em
+    )[
+      #text(weight: "bold", size: 9.8pt, fill: c-bordeaux)[7. OUTILLAGE D'OFFICE & COUTELLERIE]
+      #v(1pt)
+      #line(length: 100%, stroke: 0.5pt + c-bronze)
+      #v(3pt)
+      #set text(size: 8.8pt)
+      #set par(leading: 0.65em)
+      #case_cocher Couteau d'office court ($8 upright(" à ") 10 upright(" cm")$) \
+      #case_cocher Éplucheur rasoir en « Y » (lame carbone) \
+      #case_cocher Couteau à pain cranté rigide ($22 upright(" cm")$) \
+      #case_cocher Grande cuillère de poule en inox pour arroser \
+      #case_cocher Grande cuillère en bois de hêtre massif \
+      #case_cocher Spatule plate rigide biseautée (déglaçage / saisie) \
+      #case_cocher Spatule souple Maryse en silicone ($250^compose upright(C)$) \
+      #case_cocher Pince de chef en inox ($30 upright(" cm")$) \
+      #case_cocher Grande fourchette de chef à deux dents (diapason) \
+      #case_cocher Écumoire araignée en inox à fils croisés \
+      #case_cocher Louche monobloc emboutie sans soudure \
+      #case_cocher Fouet ballon à douze fils souples \
+      #case_cocher Râpe fine micro-dentée (zestes et parmesan) \
+      #case_cocher Ciseaux de cuisine démontables à crans osseux \
+      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
+    ]
+  ]
+)
+
+#v(0.2cm)
+
+#truc_de_chef[
+#strong[Protocole de Courses Hebdomadaires en 30 Minutes Chrono :]
+1. #strong[Revue du Fond de Placard (J-1) :] Ouvrir le garde-manger et le bac à légumes ; cocher sur le gabarit uniquement les éléments manquants des catégories 1 à 6.
+2. #strong[Le Parcours Linéaire au Marché :] Suivre l'ordre numérique strict (1 Primeur $arrow.r$ 2 Vrac $arrow.r$ 3 Crèmerie $arrow.r$ 4 Boucherie/Marée). Les produits fragiles et froids arrivent en dernier dans le cabas isotherme.
+3. #strong[Intégration Directe (FIFO) :] Au retour, ranger immédiatement le frais selon la cartographie thermique de l'Annexe E : viandes et poissons dans la zone la plus froide ($0 upright(" à ") 2^compose upright(C)$), crèmerie au milieu ($4^compose upright(C)$), légumes au bac ($6 upright(" à ") 8^compose upright(C)$).
+]
+
+#divider()
+
+= ANNEXE G --- Répertoire des Crédits Iconographiques et Sources des Illustrations
+<annexe-g-répertoire-des-crédits-iconographiques-et-sources-des-illustrations>
 Le présent répertoire consigne l'ensemble des sources, attributions,
 dates et licences libres (#emph[Creative Commons] ou #emph[Domaine
 Public]) des documents iconographiques, gravures historiques,

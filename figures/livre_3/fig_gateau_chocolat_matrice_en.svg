@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 520" width="100%" height="100%">
+  <rect width="880" height="520" rx="14" fill="#FCFBF7" stroke="#DFDACF" stroke-width="2"/>
+  <text x="440" y="34" font-family="Liberation Serif, Georgia, serif" font-size="20" font-weight="bold" fill="#701C1A" text-anchor="middle">LA MATRICE UNIVERSELLE DU GÂTEAU ET LA RIGUEUR DU FOUR</text>
+  <text x="440" y="55" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" fill="#5C5549" text-anchor="middle">L'équation fonctionnelle de la pâtisserie et la loi physique du préchauffage.</text>
+
+  <!-- Bandeau supérieur : Équation matricielle -->
+  <g transform="translate(30, 72)">
+    <rect width="820" height="62" rx="8" fill="#F2ECE1" stroke="#B45309" stroke-width="1.5"/>
+    <text x="410" y="25" font-family="Liberation Serif, Georgia, serif" font-size="14" font-weight="bold" fill="#701C1A" text-anchor="middle">L'ÉQUATION D'ÉTAT : LA RECETTE COMME SYSTÈME MODULAIRE</text>
+    <text x="410" y="47" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#6B4423" text-anchor="middle">Corps Gras (Beurre/Huile) + Agent Sucrant + Féculent (Farine/Riz) + Liant (Œuf/Aquafaba) + Chaleur = GÂTEAU</text>
+  </g>
+
+  <!-- Méthode 1 : Tout-en-un -->
+  <g transform="translate(30, 148)">
+    <rect width="395" height="175" rx="8" fill="#FAF7F2" stroke="#966C3B" stroke-width="1.5"/>
+    <rect width="395" height="30" rx="8" fill="#6B4423"/>
+    <text x="197" y="20" font-family="Liberation Serif, Georgia, serif" font-size="13.5" font-weight="bold" fill="#FCFBF7" text-anchor="middle">MÉTHODE 1 : ÉMULSION DIRECTE (RAPIDE)</text>
+    <text x="16" y="50" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">• Mélange direct : œufs entiers + sucre + chocolat</text>
+    <text x="26" y="66" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">et beurre fondus + farine tamisée en pluie.</text>
+    <text x="16" y="88" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">• Temps actif : 4 minutes. Une seule jatte à laver.</text>
+    <text x="16" y="110" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#5A6E54" font-weight="bold">✓ Texture obtenue : Fondant dense et humide,</text>
+    <text x="26" y="126" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#5C5549">idéal pour moelleux coulant, brownie et financier.</text>
+    <text x="16" y="150" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" font-weight="bold" fill="#701C1A">Règle : Ne jamais trop fouetter après ajout de la farine.</text>
+  </g>
+
+  <!-- Méthode 2 : Blancs montés -->
+  <g transform="translate(455, 148)">
+    <rect width="395" height="175" rx="8" fill="#FAF7F2" stroke="#B45309" stroke-width="1.5"/>
+    <rect width="395" height="30" rx="8" fill="#B45309"/>
+    <text x="197" y="20" font-family="Liberation Serif, Georgia, serif" font-size="13.5" font-weight="bold" fill="#FCFBF7" text-anchor="middle">MÉTHODE 2 : BLANCS MONTÉS EN NEIGE</text>
+    <text x="16" y="50" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">• Incorporation délicate de la mousse d'albumine</text>
+    <text x="26" y="66" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">à la maryse dans l'appareil chocolaté dense.</text>
+    <text x="16" y="88" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">• Dilatation thermique des microbulles d'air au four.</text>
+    <text x="16" y="110" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#6B4423" font-weight="bold">✓ Texture obtenue : Mie souple, aérienne et</text>
+    <text x="26" y="126" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#5C5549">alvéolée (biscuit de Savoie, génoise, soufflé).</text>
+    <text x="16" y="150" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" font-weight="bold" fill="#B45309">Substitut végétal : Aquafaba (eau de pois chiches).</text>
+  </g>
+
+  <!-- Bandeau inférieur : Pourquoi préchauffer le four -->
+  <g transform="translate(30, 340)">
+    <rect width="820" height="156" rx="8" fill="#FAF7F2" stroke="#701C1A" stroke-width="1.5"/>
+    <rect width="820" height="30" rx="8" fill="#701C1A"/>
+    <text x="410" y="20" font-family="Liberation Serif, Georgia, serif" font-size="13.5" font-weight="bold" fill="#FCFBF7" text-anchor="middle">POURQUOI ENFOURNER DANS UN FOUR PRÉCHAUFFÉ (180°C) PLUTÔT QUE FROID ?</text>
+
+    <text x="18" y="52" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" fill="#242124"><tspan font-weight="bold" fill="#5A6E54">1. L'Oven Spring (Poussée gazeuse synchronisée) :</tspan> Dans un four chaud à 180°C, la vapeur d'eau</text>
+    <text x="34" y="69" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#5C5549">et le CO₂ se dilatent brutalement dès l'enfournement, soulevant la pâte avant que la croûte ne fige.</text>
+
+    <text x="18" y="93" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" fill="#242124"><tspan font-weight="bold" fill="#5A6E54">2. La fixation de la charpente :</tspan> Les protéines de l'œuf coagulent (68–84°C) et l'amidon gélatinise</text>
+    <text x="34" y="110" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#5C5549">exactement au sommet de l'expansion gazeuse, verrouillant la structure spongieuse du gâteau.</text>
+
+    <text x="18" y="136" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" fill="#701C1A"><tspan font-weight="bold">✗ En départ four froid :</tspan> Le beurre fond dès 32°C, l'émulsion se brise et le gaz fuit avant coagulation → gâteau plat.</text>
+  </g>
+</svg>

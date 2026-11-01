@@ -1,194 +1,194 @@
-# AGENTS.MD — MANIFESTE, OBJECTIFS ET DIRECTIVES DE CONCEPTION
-## Projet : « LA CUISINE EXPLIQUÉE — Principes Premiers, Maîtrise de la Matière et Minimalisme Instrumental »
+# AGENTS.MD — MANIFESTO, OBJECTIVES, AND DESIGN DIRECTIVES
+## Project: "LA CUISINE EXPLIQUÉE / COOKING DECODED — First Principles, Pure Physics, and Minimalist Tools"
 
-> Ce document définit l'architecture intellectuelle, les impératifs épistémologiques, l'analyse des obstacles cognitifs, les normes iconographiques SVG et les protocoles opérationnels que tout agent (humain ou IA) doit rigoureusement respecter lors de la rédaction, de l'illustration et de la compilation de l'ouvrage.
-
----
-
-## 1. TITRE ET IDENTITÉ DE L'ŒUVRE
-
-- **Titre Officiel (Option de référence) :** *LA CUISINE EXPLIQUÉE* (ou alternative de collection : *LA VOIE DU FEU ET DU GESTE*)
-- **Sous-titre :** *Principes Premiers, Maîtrise de la Matière et Minimalisme Instrumental*
-- **Livre Compagnon :** *LE GUIDE DU PRATICIEN — Protocoles Expérimentaux, Arbres de Sauvetage et Science de la Casserole*
-- **Titre Prévu pour l'Édition Anglophone :** *COOKING DECODED* (ou *THE WAY OF THE PAN*) — *First Principles, Pure Physics, and Minimalist Tools*
-- **Roadmap & Internationalisation :** Se référer au document de synthèse `ROADMAP.md` consignant les conversions d'unités (Celsius/Fahrenheit, grammes/onces, millilitres/tasses), la typologie des farines (T45/T55/T65 vs Pastry/All-Purpose/Bread Flour), la composition des beurres (82% FR vs 80% US) et les découpes de boucherie comparées.
-- **Périmètre & Mission :** L'ouvrage n'est **pas un simple recueil de recettes**, mais un traité fondamental d'anthropologie, de biologie, de physique, de chimie et de mécanique du geste culinaire. L'objectif est d'enseigner la manipulation des ingrédients fondamentaux, la compréhension de la nutrition et de la survie, et la maîtrise des flux d'énergie avec un **minimum d'instruments**.
-- **Inspirations Historiques & Scientifiques :**
-  - *Les Penseurs de l'Évolution & de l'Anthropologie :* Richard Wrangham (*Catching Fire: How Cooking Made Us Human*), Claude Lévi-Strauss (*Le Cru et le Cuit*).
-  - *Les Traités Historiques Fondateurs :* Apicius (*De re coquinaria*, Rome impériale), *Le Viandier* de Guillaume Tirel dit Taillevent (XIVe siècle), *Le Ménagier de Paris* (1393), Maestro Martino (*Libro de Arte Coquinaria*), Bartolomeo Scappi (*Opera*, 1570), François Pierre de La Varenne (*Le Cuisinier François*, 1651), Jean Anthelme Brillat-Savarin (*Physiologie du goût*, 1825), Auguste Escoffier (*Le Guide Culinaire*, 1903).
-  - *La Science Moderne & la Révolution Moléculaire :* Nicholas Kurti & Hervé This (Gastronomie Moléculaire et Physique, *Les Secrets de la casserole*), Harold McGee (*On Food and Cooking: The Science and Lore of the Kitchen*), Heston Blumenthal (*The Fat Duck Cookbook*, recherche de l'extraction aromatique comme l'infusion des pelures de pommes de terre), Ferran Adrià & El Bulli (déconstruction des textures et états de la matière), J. Kenji López-Alt (*The Food Lab*), Nathan Myhrvold (*Modernist Cuisine*), Samin Nosrat (*Salt, Fat, Acid, Heat*).
+> This document defines the intellectual architecture, epistemological imperatives, cognitive obstacle analysis, SVG iconographic standards, and operational protocols that any agent (human or AI) must strictly observe when drafting, illustrating, and compiling this work.
 
 ---
 
-## 2. STRUCTURE MAÎTRESSE EN SIX LIVRES & VINGT-SIX CHAPITRES
+## 1. TITLE AND IDENTITY OF THE WORK
 
-L'ouvrage adopte une architecture séquentielle rigoureuse en **6 Livres majeurs**, articulés du passé lointain de l'espèce jusqu'au temps long de la santé quotidienne :
-
-1. **LIVRE I — L'Animal Culinaire & l'Histoire du Goût (Chapitres 01 à 03) :**
-   - *Chapitre 01 :* Anthropologie du feu, Wrangham, Lévi-Strauss, morphogenèse humaine et encéphalisation.
-   - *Chapitre 02 :* Histoire écrite de la table (de la Mésopotamie et Apicius à Scappi, La Varenne et Escoffier).
-   - *Chapitre 03 :* Géopolitique des 3 graisses (beurre, canard/oie, huile d'olive) et mondialisation des saveurs.
-2. **LIVRE II — Le Foyer Moderne : Équipements, Sécurité & Organisation (Chapitres 04 à 07) :**
-   - *Chapitre 04 :* L'Arsenal minimal des 5 outils fondamentaux et gros appareils (four, frigo, micro-ondes).
-   - *Chapitre 05 :* Consignes de sécurité, prévention des brûlures, découpes et pannes critiques (huile, coupure de froid).
-   - *Chapitre 06 :* Économie du foyer, courses à ventre plein, décryptage des additifs E et calendrier de saisonnalité.
-   - *Chapitre 07 :* L'ordre invisible : marche en avant, gestion des restes (FIFO), plonge efficace et séchage libre.
-3. **LIVRE III — La Science de la Casserole : Matières Premières, Fluides et Transformations (Chapitres 08 à 16) :**
-   - *Chapitre 08 :* Étalonnage des cinq sens et thermodynamique des transferts (loi de Stefan-Boltzmann $T^4$, conduction au carré de l'épaisseur).
-   - *Chapitre 09 :* Féculents, céréales et légumineuses (Fiches 01 à 05 : Carbonara, Dahl, Tofu, Sarladaises, Aïoli).
-   - *Chapitre 10 :* Mécanique végétale, épluchage, taillage et étuvée sous cartouche (Fiches 06 et 07 : Purée Blumenthal, Carottes glacées).
-   - *Chapitre 11 :* Écosystème vert, salades, turgescence cellulaire et acide (Fiche 08 : Salade croquante).
-   - *Chapitre 12 :* Chimie de l'eau, bouillons limpides et glaces de viande (Fiches 09 et 10 : Grand bouillon d'or, Consommé clarifié).
-   - *Chapitre 13 :* Alchimie des épices, herbes fraîches et extraction aromatique.
-   - *Chapitre 14 :* Le règne animal, fibres musculaires, Maillard et déglaçage (Fiches 11 à 13 : Steak en fonte, Déglaçage minute, Ceviche).
-   - *Chapitre 15 :* L'archétype de l'œuf et les émulsions mères (Fiches 14 à 17 : Œuf mollet, Œuf poché, Mayonnaise, Hollandaise).
-   - *Chapitre 16 :* La matrice des transformations culinaires et tableau synoptique des modes suggérés (Fiche 18 : Sauce Béchamel).
-4. **LIVRE IV — Les Métamorphoses Singulières : Fermentations, Pâtisserie et Grand Froid (Chapitres 17 à 21) :**
-   - *Chapitre 17 :* Fermentations végétales, levains et pains sans pétrissage (Fiches 19 et 20 : Pain cocotte, Pickles).
-   - *Chapitre 18 :* Alchimie laitière et fromagerie autonome (Fiche 21 : Fromage frais en 15 minutes).
-   - *Chapitre 19 :* Travail des glucides, sirops, pyrolyse douce et caramélisation.
-   - *Chapitre 20 :* Pâtisserie matricielle et mécanique des pâtes (Fiches 22 à 24 : Moelleux au chocolat, Pâte brisée, Mousse aquafaba).
-   - *Chapitre 21 :* Prodiges thermiques, pouvoir isolant de l'air et grand froid (Fiches 25 et 26 : Omelette norvégienne, Glace au sel).
-5. **LIVRE V — L'Art du Repas, du Partage et du Service (Chapitres 22 à 24) :**
-   - *Chapitre 22 :* Histoire et sociologie du couvert (pourquoi la fourchette) et guerre des services au XIXe siècle (Service à la française vs Service à la russe).
-   - *Chapitre 23 :* Architecture du menu, rétroplanning serein de réception et gestion du temps.
-   - *Chapitre 24 :* Esthétique de l'assiette, dressage, températures de service et secrets de l'assiette trois étoiles.
-6. **LIVRE VI — Le Temps Long : Nutrition Diachronique & Plaisir Durable (Chapitres 25 et 26) :**
-   - *Chapitre 25 :* Sortir de la tyrannie des régimes, cinétique neuro-hormonale de la satiété (délai des 20 minutes) et densité nutritionnelle.
-   - *Chapitre 26 :* Diachronie culinaire, amidon résistant RS3, règle des 30 végétaux et protocole de batch cooking.
-7. **ANNEXES & RÉPERTOIRES (Annexes A à F) :**
-   - *Annexe A :* Le cadran absolu des températures critiques au degré près.
-   - *Annexe B :* Glossaire physico-chimique et culinaire exhaustif.
-   - *Annexe C :* Bibliographie raisonnée et évaluée sans ISBN factices.
-   - *Annexe D :* Guide d'achat de l'arsenal minimal, coûts énergétiques et durées standard.
-   - *Annexe E :* Conservation au réfrigérateur, cartographie thermique et durées limites sanitaires.
-   - *Annexe F :* Répertoire exhaustif des crédits iconographiques et sources des illustrations (licences libres Wikimedia / BnF et attributions).
+- **Official French Title (Reference Edition):** *LA CUISINE EXPLIQUÉE* (Alternative collection subtitle: *La Voie du Feu et du Geste*)
+- **Subtitle:** *Principes Premiers, Maîtrise de la Matière et Minimalisme Instrumental*
+- **Companion Book:** *LE GUIDE DU PRATICIEN — Protocoles Expérimentaux, Arbres de Sauvetage et Science de la Casserole*
+- **Official English Title (International Edition):** *COOKING DECODED* (Alternative: *THE WAY OF THE PAN*)
+- **Subtitle:** *First Principles, Pure Physics, and Minimalist Tools*
+- **Companion Book:** *THE KITCHEN LAB GUIDE — Experimental Protocols, Rescue Decision Trees, and Pure Science*
+- **Roadmap & Internationalization:** Refer to `TRANSLATION_GUIDELINES.md` and `CONSIGNES_TRADUCTION.md` for complete unit conversion tables (Celsius/Fahrenheit, grams/ounces, milliliters/cups), flour typologies (T45/T55/T65 vs. Pastry/All-Purpose/Bread Flour), butter fat content (82% FR vs. 80% US), and butcher cuts comparison.
+- **Scope & Mission:** This work is **not a casual recipe collection**, but a foundational treatise spanning evolutionary anthropology, biology, physics, chemistry, and manual culinary mechanics. The core mission is to master the transformation of raw matter, understand nutritional survival, and control thermodynamic energy flows with a **minimal arsenal of tools**.
+- **Historical & Scientific Foundations:**
+  - *Evolutionary Thinkers & Anthropologists:* Richard Wrangham (*Catching Fire: How Cooking Made Us Human*), Claude Lévi-Strauss (*The Raw and the Cooked*).
+  - *Foundational Historical Treatises:* Apicius (*De re coquinaria*, Imperial Rome), Guillaume Tirel dit Taillevent (*Le Viandier*, 14th century), *Le Ménagier de Paris* (1393), Maestro Martino (*Libro de Arte Coquinaria*), Bartolomeo Scappi (*Opera*, 1570), François Pierre de La Varenne (*Le Cuisinier François*, 1651), Jean Anthelme Brillat-Savarin (*Physiology of Taste*, 1825), Auguste Escoffier (*Le Guide Culinaire*, 1903).
+  - *Modern Science & Molecular Gastronomy:* Nicholas Kurti & Hervé This (Molecular and Physical Gastronomy), Harold McGee (*On Food and Cooking: The Science and Lore of the Kitchen*), Heston Blumenthal (*The Fat Duck Cookbook*), Ferran Adrià & El Bulli, J. Kenji López-Alt (*The Food Lab*), Nathan Myhrvold (*Modernist Cuisine*), Samin Nosrat (*Salt, Fat, Acid, Heat*).
 
 ---
 
-## 3. LES IMPÉRATIFS ÉPISTÉMOLOGIQUES ET PÉDAGOGIQUES
+## 2. MASTER ARCHITECTURE IN SIX BOOKS & TWENTY-SIX CHAPTERS
 
-### A. La Forme en Diptyque Méthodologique Systématique
-Toute technique, tout principe de conservation, toute cuisson et tout geste doit être articulé de manière explicite et symétrique en deux volets indissociables :
-1. **Le Geste Vertueux (Ce qu'il faut faire) :** Les paramètres optimaux étayés par la thermodynamique et la cinétique chimique.
-2. **Le Contre-Modèle (Ce qu'il faut absolument éviter) :** Les erreurs courantes, les mythes persistants, les gestes dangereux (ex. projeter de l'eau sur une huile en flammes, recongeler un aliment cru décongelé, faire ses courses le ventre vide).
+The treatise is organized into a sequential structure spanning **6 major Books**, tracing human culinary evolution from prehistoric fire to long-term health:
 
-### B. Le Principe du « Geste Sensible vers la Molécule »
-Le grand public décroche rapidement devant une énumération aride de formules mathématiques ou de termes chimiques abstraits.
-- **Règle absolue :** Ne jamais introduire un terme moléculaire (actine, amylose, lécithine, caséine) sans l'avoir d'abord incarné par une **analogie visuelle et mécanique concrète**.
-- **Allègement des formules :** Éviter les équations physiques complexes inutiles dans le corps du texte (ex. conductivité de l'air en $\mathrm{W/(m\cdot K)}$). Privilégier une explication intuitive limpide en français tout en citant les grands principes fondateurs (loi de Stefan-Boltzmann sur le rayonnement en $T^4$, loi du temps proportionnel au carré de l'épaisseur).
-- L'explication microscopique éclaire le geste pratique, elle ne doit jamais l'étouffer.
-
-### C. La Démystification Rationnelle de l'Agroalimentaire et des Additifs (Code E)
-1. **L'Illusion de la liste longue :** Démystifier pourquoi un plat industriel affiche parfois 20 lignes alors qu'à la maison la recette décomposée contiendrait les mêmes constituants élémentaires.
-2. **Le Bliss Point et la manipulation de la satiété :** Le calcul sel/sucre/gras court-circuitant la leptine.
-3. **Le tri raisonné des additifs :** Naturels/inoffensifs (E300, E330, E322, E440) vs problématiques (E250, E150d, E466, E621 surdosé).
-
-### D. La Recette Matricielle vs la Recette-Incantation
-Une recette n'est jamais présentée comme une liste figée d'ingrédients à suivre aveuglément, mais comme une **équation d'états de la matière** :
-$$\text{Corps Gras} + \text{Agent Sucrant} + \text{Féculent / Farine} + \text{Agent Liant Protéique} + \text{Énergie Thermique} = \text{Gâteau}$$
-- Substitutions infinies démontrées expérimentalement (blé vs riz/maïs, œuf vs aquafaba/lécithine végétale).
-- Les tableaux synoptiques présentent des **modes de transformation suggérés ou exemplaires**, et non un dogme restrictif unique.
-
-### E. Protocoles d'Urgence et Sécurité Sanitaire
-Chaque volet pratique intègre les réflexes vitaux :
-1. **Incendie d'huile :** Étouffement par couvercle métallique ou linge humide essoré ; interdiction absolue de l'eau (boilover explosif pulvérisant l'huile par expansion volumique $\times 1700$).
-2. **Panne de réfrigérateur :** Règle des 4 heures ; interdiction formelle de recongeler un aliment cru décongelé.
-3. **Brûlures thermiques :** Règle des « trois 15 » (eau à $15^\circ\mathrm{C}$, 15 minutes, à 15 cm du robinet) ; jamais de corps gras sur une brûlure.
-4. **Coupures franches :** Tenue en pince sur la lame, doigts de la main guide en « griffe de chat ».
-
----
-
-## 4. DIRECTION ARTISTIQUE, TYPOGRAPHIE & MISE EN PAGE DU LIVRE
-
-1. **Palette et Typographie Gastronomique :**
-   - Palette chromatique chaude et organique : Terracotta (`#A3432B`), Bordeaux profond (`#701C1A`), Bronze doré (`#966c3b`), Fond crème doux (`#FCFBF7`) et texte anthracite (`#242124`).
-   - Lignes de filet ultrafines ($0.5\,\mathrm{pt}$) pour aérer les blocs sans alourdir la page.
-   - Polices : *Liberation Serif* pour le corps de texte et titres classiques, *Liberation Sans* pour les bandeaux techniques.
-2. **Boîtes Culinaires et Didactiques :**
-   - Toutes les boîtes didactiques (`truc_de_chef`, `anecdote_historique`, `positif`, `negatif`, `danger`, `point_attention`, `oeil_molecule`, `quote_box`) sont paramétrées avec **`breakable: true`** pour éliminer les sauts de page massifs et les trous blancs.
-   - Taille de texte des boîtes calée à **`10pt`** (identique au texte courant) avec interligne confortable (`leading: 0.78em`) pour garantir une parfaite lisibilité sans caractères tassés.
-3. **Diptyque d'Ouverture de Livre Systématique :**
-   - Chaque grand Livre s'ouvre par une **page paire (verso) pleine illustration** sur fond noir anthracite (`#1c1917`), présentant une œuvre historique ou photographique noble avec cadrage respectueux (`fit: "contain"`, sans rognage du haut ni des côtés), surmontée d'un cartouche explicatif en dessous.
-   - En regard direct, la **page impaire (recto)** accueille le **portail textuel épuré** (titre de la Partie et sommaire thématique), sans aucun artéfact de saut de ligne (`#linebreak` formellement proscrit).
-4. **Foliotage Éditorial Rigoureux (Numérotation des Pages) :**
-   - *Couvertures hors décompte :* Les plats 1, 2, 3 et 4 ne sont jamais comptés ni foliotés ; la couverture n'est **jamais** la page 1.
-   - *Liminaires muets :* Page 1 faux-titre, page 2 blanche, page 3 grand titre, page 4 mentions légales, page 5 citation, page 6 blanche, sommaire et table des recettes : toutes comptées mais **muettes** (aucun folio visible).
-   - *Ouvertures de livres muettes :* Les deux pages d'ouverture de Livre (image et portail textuel) n'affichent ni en-tête ni folio.
-   - *Texte courant et débuts de chapitres/annexes numérotés :* Toutes les pages à partir du Chapitre 01 sont **numérotées** avec un folio centré en pied de page (`— X —`). Sur les pages de début de chapitre et d'annexe (titre H1), l'en-tête supérieur est masqué pour laisser respirer le grand titre, mais le **numéro de page en bas est obligatoirement visible**.
-5. **Absence Totale de Mentions Fictives :**
-   - Proscription absolue de faux codes ISBN ou de codes-barres artificiels. Mention exclusive de la licence libre Creative Commons CC BY-SA 4.0.
+1. **BOOK I — The Culinary Animal & The History of Taste (Chapters 01 to 03):**
+   - *Chapter 01:* Anthropology of fire, Wrangham, Lévi-Strauss, human morphogenesis, external predigestion, and encephalization.
+   - *Chapter 02:* Written history of the dining table (from Mesopotamia and Apicius to Scappi, La Varenne, and Escoffier).
+   - *Chapter 03:* Geopolitics of the 3 foundational fats (butter, duck/goose fat, olive oil) and global flavor trade.
+2. **BOOK II — The Modern Hearth: Equipment, Safety & Kitchen Workflow (Chapters 04 to 07):**
+   - *Chapter 04:* The Minimal Arsenal of 5 indestructible tools and major appliances (oven, refrigerator, microwave).
+   - *Chapter 05:* Safety rules, burn management, safe cutting biomechanics, and critical failures (oil fires, power outages).
+   - *Chapter 06:* Household economics, shopping on a full stomach, decoding E-number additives, and perpetual seasonality.
+   - *Chapter 07:* The invisible order: clean linear progression (*marche en avant*), leftovers management (FIFO), efficient dishwashing, and air-drying.
+3. **BOOK III — The Science of the Pan: Raw Materials, Fluids & Transformations (Chapters 08 to 16):**
+   - *Chapter 08:* Calibrating the five senses and heat transfer thermodynamics (Stefan-Boltzmann $T^4$ radiation, square-of-thickness conduction).
+   - *Chapter 09:* Starches, grains, and legumes: the strength of the kernel (Recipe Sheets 01 to 05: Carbonara, Dahl, Tofu, Sarladaise Potatoes, Provençal Aïoli).
+   - *Chapter 10:* Plant mechanics: peeling, precision knife cuts, and cartouche braising (Recipe Sheets 06 and 07: Blumenthal Potato Purée, Glazed Carrots).
+   - *Chapter 11:* The green ecosystem: leafy greens, vacuole turgor pressure, and acidity (Recipe Sheet 08: Crisp Salad & Emulsion).
+   - *Chapter 12:* Water chemistry, clear stocks, and reduced meat glazes (Recipe Sheets 09 and 10: Golden Broth, Clarified Consommé).
+   - *Chapter 13:* Alchemy of spices, fresh herbs, and volatile aromatic extraction.
+   - *Chapter 14:* The animal kingdom: muscle fibers, Maillard browning, and pan deglazing (Recipe Sheets 11 to 13: Cast-Iron Seared Steak, Pan Deglazing, Citrus Ceviche).
+   - *Chapter 15:* The archetype of the egg and mother emulsions (Recipe Sheets 14 to 17: Soft-Boiled Egg, Poached Egg, Mayonnaise, Hollandaise).
+   - *Chapter 16:* Matrix of transformations and synoptic culinary transformation table (Recipe Sheet 18: Classic Béchamel).
+4. **BOOK IV — Singular Metamorphoses: Fermentations, Baking & Deep Cold (Chapters 17 to 21):**
+   - *Chapter 17:* Vegetable fermentations, wild sourdough, and no-knead bread (Recipe Sheets 19 and 20: Dutch Oven Bread, Quick Lacto-Pickles).
+   - *Chapter 18:* Dairy alchemy and autonomous home cheesemaking (Recipe Sheet 21: Fresh Farm Cheese in 15 Minutes).
+   - *Chapter 19:* Carbohydrate physics: sugar syrups, soft pyrolysis, and caramelization.
+   - *Chapter 20:* Matrix baking and dough mechanics (Recipe Sheets 22 to 24: Chocolate Lava Cake, Flaky Shortcrust Pastry, Aquafaba Chocolate Mousse).
+   - *Chapter 21:* Thermal wonders: the insulating power of air and deep cold cryoscopy (Recipe Sheets 25 and 26: Baked Alaska, Salt-Ice Churnless Ice Cream).
+5. **BOOK V — The Art of the Meal, Hospitality & Service (Chapters 22 to 24):**
+   - *Chapter 22:* History and sociology of table cutlery (why the fork) and the 19th-century service war (*Service à la française* vs. *Service à la russe*).
+   - *Chapter 23:* Menu architecture, stress-free reception scheduling, and time management.
+   - *Chapter 24:* Plating aesthetics, architectural elevation, service temperatures, and three-star plating secrets.
+6. **BOOK VI — The Long Horizon: Diachronic Nutrition & Sustainable Pleasure (Chapters 25 and 26):**
+   - *Chapter 25:* Escaping diet dogmas: neuro-hormonal satiety kinetics (the 20-minute leptin delay) and nutrient density.
+   - *Chapter 26:* Diachronic cooking: RS3 resistant retrograded starch, the 30-plant rule, and systematic batch cooking protocols.
+7. **APPENDICES & REFERENCE COMPENDIUM (Appendices A to G):**
+   - *Appendix A:* Master dial of critical culinary temperatures to the exact degree.
+   - *Appendix B:* Comprehensive physicochemical and culinary glossary.
+   - *Appendix C:* Annotated, critical bibliography (strictly validated sources, zero fictional ISBNs).
+   - *Appendix D:* Minimal arsenal buying guide, energy costs, and cooking durations.
+   - *Appendix E:* Refrigeration science, fridge thermal mapping, and microbiological limits.
+   - *Appendix F:* Pantry staples, household consumables, and the rational 3-page standalone grocery worksheet.
+   - *Appendix G:* Comprehensive iconographic catalog, museum sources, and open-access licensing credits.
 
 ---
 
-## 5. CONSIGNES DE CONCEPTION DES FIGURES VECTORIELLES SVG & NORMES ICONOGRAPHIQUES
+## 3. EPISTEMOLOGICAL AND PEDAGOGICAL IMPERATIVES
 
-*(Section fusionnée intégrant l'intégralité des directives graphiques de `CONSIGNES_FIGURES.md`)*
+### A. The Systematic Methodological Diptych
+Every technique, preservation principle, cooking method, and manual gesture must be articulated symmetrically in two distinct parts:
+1. **The Virtuous Gesture (What to do):** Optimal parameters justified by thermodynamics and chemical reaction kinetics.
+2. **The Counter-Model (What to avoid):** Common myths, fatal misconceptions, and dangerous errors (e.g., throwing water on burning oil, refreezing raw defrosted meat, grocery shopping on an empty stomach).
 
-### A. Exigence Vectorielle Absolue & Proscription de l'ASCII Art
-1. **Zéro dessin ASCII :** L'usage de caractères de traçage ou de boîtes en texte brut (`─ │ ┌ ▲ ► / \ ● ○ ■`) est **formellement interdit** dans le corps du livre. Tout schéma structurel, diagramme de flux ou matrice doit être un fichier SVG autonome ou un tableau Typst formaté avec élégance.
-2. **Autonomie et Compatibilité Typst des SVG :**
-   - Attributs obligatoires : `xmlns="http://www.w3.org/2000/svg"`, `viewBox="0 0 W H"`.
-   - Pas de balises `<foreignObject>`, pas de feuilles de styles CSS externes, pas de polices distantes.
-   - Polices système lisibles : `font-family="Liberation Sans, Arial, Helvetica, sans-serif"`.
-   - Tailles de police : minimum `11px` pour les légendes secondaires, `13-14px` pour le corps de schéma, `16-18px` pour les titres d'axes ou de blocs.
-   - Échappement rigoureux XML : `&` → `&amp;`, `<` → `&lt;`, `>` → `&gt;`.
+### B. The Principle of "Sensitive Gesture toward the Molecule"
+Readers disengage when confronted with dry lists of molecular terms or sterile equations.
+- **Absolute Rule:** Never introduce a microscopic or biochemical term (actin, amylose, lecithin, casein) without first illustrating it with an **intuitive mechanical or visual analogy** (e.g., "coiled elastic ropes squeezing water" before actomyosin; "two-headed keys with water-loving and fat-loving ends" before phospholipids).
+- **Formula Restraint:** Avoid heavy physical equations in the main body text (e.g., thermal conductivity values in $\mathrm{W/(m\cdot K)}$). Favor clear, intuitive explanations in plain language while citing foundational principles (Stefan-Boltzmann $T^4$ radiation law, diffusion time scaling with the square of thickness $t \propto x^2$).
+- Microscopic explanations must illuminate physical kitchen gestures, never overshadow them.
 
-### B. Palette Chromatique Officielle des Schémas SVG
+### C. Rational Demystification of Ultra-Processed Foods & Additives (E-Numbers)
+1. **The Illusion of Long Ingredient Lists:** Demystify why industrial labels display 20 lines when a home-cooked dish broken down into raw molecules contains the identical chemical constituents.
+2. **The Bliss Point & Satiety Manipulation:** Explain how calibrated sugar/salt/fat ratios bypass leptin and hypothalamic fullness signaling.
+3. **Rational Sorting of Additives:** Natural and safe additives (E300 Vitamin C, E330 Citric Acid, E322 Lecithin, E440 Pectin) vs. problematic compounds (E250 Sodium Nitrite, E150d Caramel IV, E466 CMC, excessive E621 MSG).
 
-Toute illustration technique doit employer strictement la palette sémantique du projet :
+### D. Matrix Recipes vs. Incantation Recipes
+Recipes are never presented as rigid lists of instructions to follow blindly, but as **physical equations of matter states**:
+$$\text{Fat Medium} + \text{Sweetening Agent} + \text{Starch / Flour} + \text{Protein Binding Agent} + \text{Thermal Energy} = \text{Cake}$$
+- Demonstrate infinite substitutions through physical principles (wheat vs. rice/corn starch, whole egg vs. aquafaba/plant lecithin).
+- Synoptic tables provide **suggested and exemplary transformation modes**, not dogmatic constraints.
 
-| Rôle Sémantique | Code Hexadécimal | Variantes / Arrière-plans | Usage Culinaire |
+### E. Emergency Protocols & Kitchen Safety
+Practical sections must integrate vital safety reflexes:
+1. **Cooking Oil Fires:** Smother mechanically with a metal lid or damp wrung cloth; strictly forbid pouring water (*boilover* explosion from $1,700\times$ steam volumetric expansion).
+2. **Fridge Power Failure:** The 4-hour rule; strict prohibition against refreezing raw thawed meat.
+3. **Thermal Scalds and Burns:** The "Rule of Three 15s" ($15^\circ\mathrm{C}$ tap water, 15 minutes, 15 cm distance); never apply butter or grease to fresh burns.
+4. **Knife Cuts:** Chef's knife pinch grip on the blade heel; non-cutting guide hand curled in a "cat's claw" (*griffe de chat*).
+
+---
+
+## 4. ART DIRECTION, TYPOGRAPHY & BOOK LAYOUT
+
+1. **Warm Gastronomic Palette & Typography:**
+   - Organic color palette: Terracotta (`#A3432B`), Deep Burgundy (`#701C1A`), Antique Bronze (`#966c3b`), Soft Warm Cream (`#FCFBF7`), and Dark Charcoal text (`#242124`).
+   - Ultra-thin hairline divider rules ($0.5\,\mathrm{pt}$) to structure content cleanly without page weight.
+   - Fonts: *Liberation Serif* for editorial body text and classical headings; *Liberation Sans* for technical headers and data callouts.
+2. **Didactic & Culinary Boxes:**
+   - All didactic boxes (`truc_de_chef`, `anecdote_historique`, `positif`, `negatif`, `danger`, `point_attention`, `oeil_molecule`, `quote_box`) are configured with **`breakable: true`** to eliminate massive white-space page ejection.
+   - Text size in callout boxes is set to **`10pt`** (matching body text) with comfortable leading (`0.78em`) to guarantee effortless legibility.
+3. **Systematic Book Opening Diptych:**
+   - Every major Book opens with an **even verso full-bleed illustration page** on deep charcoal black (`#1c1917`), presenting historical art or photography framed respectfully (`fit: "contain"`, no awkward top/side cropping) with an explanatory caption below.
+   - Facing directly on the **odd recto page**, an **uncluttered text portal** displays the Book title and thematic outline, free of artificial `#linebreak` artifacts.
+4. **Rigorous Page Numbering (Folio System):**
+   - *Covers excluded from counting:* Front, inner, and back covers are never counted or foliated. The cover is never page 1.
+   - *Silent preliminary pages:* Half-title (p. 1), blank (p. 2), main title (p. 3), legal credits (p. 4), epigraph (p. 5), blank (p. 6), Table of Contents, and Recipe Index: counted in the sequence but **silent** (no printed folio).
+   - *Silent book opening portals:* The two opening pages of each Book (verso art and recto portal) display neither header nor folio.
+   - *Body text and chapter/appendix openings numbered:* All pages starting from Chapter 01 feature a centered footer folio (`— X —`). On chapter and appendix opening pages (H1 title), running top headers are hidden to give breathing room to the title, but the **bottom page number remains mandatory and visible**.
+5. **No Fictional Metadata:**
+   - Absolute prohibition against fake ISBN numbers or simulated barcodes. The work is distributed under the Creative Commons CC BY-SA 4.0 International license.
+
+---
+
+## 5. VECTOR SVG FIGURES & ICONOGRAPHIC STANDARDS
+
+### A. Pure Vector Requirement & Prohibition of ASCII Art
+1. **Zero ASCII Art:** Box-drawing characters (`─ │ ┌ ▲ ► / \ ● ○ ■`) are strictly forbidden in the final book body. Every structural schematic, flow diagram, or matrix must be an autonomous SVG file or an elegantly styled Typst native table.
+2. **SVG Autonomy & Typst Compatibility:**
+   - Mandatory root attributes: `xmlns="http://www.w3.org/2000/svg"`, `viewBox="0 0 W H"`.
+   - No `<foreignObject>`, no external CSS sheets, no remote web fonts.
+   - Standard system fonts: `font-family="Liberation Sans, Arial, Helvetica, sans-serif"`.
+   - Font sizes: minimum `11px` for secondary annotations, `13-14px` for labels, `16-18px` for diagram headers.
+   - Strict XML entity escaping: `&` $\to$ `&amp;`, `<` $\to$ `&lt;`, `>` $\to$ `&gt;`.
+
+### B. Official Semantic Color Palette for Technical SVGs
+
+All technical diagrams must adhere strictly to the project's semantic palette:
+
+| Semantic Role | Hex Code | Variants / Backgrounds | Culinary Usage |
 | :--- | :--- | :--- | :--- |
-| **Énergie Thermique / Chaleur** | `#dc2626` (Rouge) | `#ef4444` / Fond `#fef2f2` | Flamme, conduction, réaction de Maillard, protéines dénaturées, zone critique |
-| **Eau / Milieu Hydrique** | `#2563eb` (Bleu roi) | `#3b82f6` / Fond `#eff6ff` | Eau libre, vapeur, bouillons, émulsion phase continue aqueuse |
-| **Froid / Cristallisation** | `#0284c7` (Bleu cyan) | `#38bdf8` / Fond `#f0f9ff` | Réfrigérateur ($4^\circ\mathrm{C}$), glace ($0^\circ\mathrm{C}$), repos de viande, maintien du froid |
-| **Lipides / Caramélisation** | `#d97706` (Ambre) | `#f59e0b` / Fond `#fffbeb` | Huile, beurre clarifié, micelles hydrophobes, sucres caramélisés, croûte dorée |
-| **Acidité / Équilibre / Succès** | `#16a34a` (Vert émeraude) | `#22c55e` / Fond `#f0fdf4` | Acidité (citron/vinaigre), sel équilibré, lacto-fermentation saine, validation |
-| **Encre / Métal / Parois** | `#0f172a` (Ardoise sombre) | `#334155` / Fond `#f8fafc` | Casserole, couteau, boîte, flèches d'axe, contours structurants |
-| **Liaisons / Grille / Neutre** | `#94a3b8` (Gris ardoise) | `#cbd5e1` / `#e2e8f0` | Graduations de repère, séparateurs, grilles de fond |
+| **Thermal Energy / Heat** | `#dc2626` (Red) | `#ef4444` / Bg `#fef2f2` | Flame, conduction, Maillard reaction, protein denaturation, danger zone |
+| **Water / Hydration** | `#2563eb` (Royal Blue) | `#3b82f6` / Bg `#eff6ff` | Free water, steam, broths, continuous aqueous phase in emulsions |
+| **Cold / Crystallization** | `#0284c7` (Cyan Blue) | `#38bdf8` / Bg `#f0f9ff` | Refrigerator ($4^\circ\mathrm{C}$), ice ($0^\circ\mathrm{C}$), meat resting, cold chain |
+| **Lipids / Caramelization**| `#d97706` (Amber) | `#f59e0b` / Bg `#fffbeb` | Oil, clarified butter, hydrophobic micelles, caramelized crust |
+| **Acidity / Balance / OK**  | `#16a34a` (Emerald Green)| `#22c55e` / Bg `#f0fdf4` | Acidity (lemon/vinegar), salt balance, lacto-fermentation, success |
+| **Ink / Metal / Vessels**   | `#0f172a` (Slate Dark) | `#334155` / Bg `#f8fafc` | Pans, chef's knives, storage boxes, coordinate axes, outlines |
+| **Bonds / Grid / Neutral**  | `#94a3b8` (Slate Gray) | `#cbd5e1` / `#e2e8f0` | Scale markers, grid lines, separators, baseline references |
 
-### C. Dimensionnement des Images & Élimination des Sauts de Page Massifs
-Pour garantir une intégration visuelle équilibrée et éviter les trous de page :
-1. **Photographies de recettes (`figures/nourriture/`) :** Dimensionnées à **`width: 90%`** et **`height: 35%`** avec `fit: "cover"` pour offrir une véritable vue centrée et appétissante du plat sans créer de saut de page indésirable.
-2. **Schémas vectoriels SVG :** Dimensionnés à **`width: 95%`** et **`height: 38%`** avec `fit: "contain"`.
-3. **Typographie des SVG :** Tailles de police calibrées pour rester lisibles une fois réduites dans la page (minimum `13-14px` pour les annotations, `16-18px` pour le corps de schéma, `20-24px` pour les titres).
-4. **Portraits et gravures historiques :** Hauteur maximale à **`36%`**.
-5. **Épuration des légendes & Annexe F :** Les légendes sous les illustrations restent courtes et sobres dans le corps de l'ouvrage ; l'ensemble des crédits détaillés, institutions et licences libres est répertorié dans l'**Annexe F**.
+### C. Image Sizing & Layout Stability
+To ensure balanced visual flow and avoid accidental page breaks:
+1. **Recipe Photographs (`figures/nourriture/`):** Sized at **`width: 90%`** and **`height: 35%`** with `fit: "cover"` to present an appetizing, centered view of the finished dish without triggering page overflows.
+2. **Vector SVG Diagrams:** Sized at **`width: 95%`** and **`height: 38%`** with `fit: "contain"`.
+3. **SVG Font Calibration:** Typography sized to remain crisp and readable when scaled into print layout.
+4. **Historical Portraits & Engravings:** Maximum height capped at **`36%`**.
+5. **Concise Captions & Appendix G:** In-text captions remain concise; full archival credits, institutions, museum accession numbers, and open licenses are compiled in **Appendix G**.
 
-### D. Légendes Riches & Attribution Systématique des Crédits
-Aucune figure ne doit comporter de légende pauvre ou orpheline :
-- Chaque légende doit préciser la nature de l'œuvre, sa datation, le lieu de conservation ou l'institution, et la source libre avec mention de licence (ex. *Musée archéologique national de Naples / Wikimedia Commons, Domaine Public* ou *CC BY-SA 3.0*).
-- Vérification stricte de la conformité du sujet (ex. s'assurer qu'un œuf mollet présente bien un jaune chaudement coulant et non un œuf dur).
-- **Proscription formelle des doublons d'images :** Une même photographie ne doit jamais figurer deux fois dans le même ouvrage (notamment entre l'en-tête d'un chapitre et sa recette associée).
+### D. Image Authenticity & Zero Duplicate Policy
+- Every caption identifies the work, dating, museum/institution, and open license (e.g., *National Archaeological Museum of Naples / Wikimedia Commons, Public Domain* or *CC BY-SA 3.0*).
+- Visual authenticity: verify that a soft-boiled egg displays a warm, liquid golden yolk rather than a hard-boiled yolk.
+- **Strict Anti-Duplicate Policy:** No image may appear more than once in the treatise (especially between chapter headers and recipe sheets).
 
-### E. Arborescence des Fichiers Graphiques
+### E. Graphic Asset Directory Structure
 ```text
 figures/
-├── histoire/     (Évolution, appertisation, fresques antiques, gravures historiques)
-├── patrimoine/   (Portraits d'auteurs fondateurs, réceptions, arts de la table)
-├── nourriture/   (Photographies culinaires haute résolution des 26 recettes fondatrices)
-├── livre_1/      (Thermodynamique, conduction, convection, rayonnement, outils minimaux)
-├── livre_2/      (Œuf anatomie, coagulation fractionnée, émulsions micellaires)
-├── livre_3/      (Gâteau matriciel, purée Blumenthal, cartouche étuvée, bouclier meringue)
-├── livre_4/      (Carte des terroirs et des trois graisses fondatrices)
-└── livre_5/      (Osmose saline, marinade ceviche, cryoscopie du sel)
+├── histoire/     (Evolution, canned food history, Roman frescoes, vintage engravings)
+├── patrimoine/   (Portraits of culinary masters, historic banquets, table service)
+├── nourriture/   (High-resolution culinary food photography for all 26 recipes)
+├── livre_1/      (Thermodynamics, heat transfer, minimal arsenal tools, safe cuts)
+├── livre_2/      (Egg anatomy, fractional coagulation, micellar emulsions)
+├── livre_3/      (Matrix chocolate cake, Blumenthal purée, cartouche braising, meringue shield)
+├── livre_4/      (Terroir map, fat geography, milk curdling, casein precipitation)
+└── livre_5/      (Salt osmosis, ceviche acid cure, salt cryoscopy, reception scheduling)
 ```
 
-### F. Processus de Validation Technique des Figures
-1. **Validation syntaxique XML :** Analyse systématique via un parseur XML (`xml.etree.ElementTree` en Python) pour certifier l'absence d'erreurs de balises ou de caractères non échappés.
-2. **Validation des magic bytes :** Contrôle que chaque fichier `.jpg` débute strictement par `\xff\xd8` et chaque `.png` par `\x89PNG` (éviter toute confusion de conteneur d'image qui ferait planter le décodeur Typst).
-3. **Vérification de la compilation Typst :** Compilation complète avec code de retour 0 et inspection visuelle du rendu.
+### F. Technical Figure Verification Protocol
+1. **XML Syntax Validation:** Automatic validation using Python `xml.etree.ElementTree` to verify zero unclosed tags or unescaped entities.
+2. **Magic Byte Integrity:** Confirm `.jpg` files start with `\xff\xd8` and `.png` with `\x89PNG` to prevent image decoder crashes during compilation.
+3. **Typst Build Cleanliness:** Compilation must exit with return code 0 and no visual clipping.
 
 ---
 
-## 6. LES SECRETS DE L'ASSIETTE TROIS ÉTOILES (RÉFÉRENTIEL DU CHEF)
+## 6. THE SECRETS OF THE THREE-STAR PLATE (CHEF'S COMPENDIUM)
 
-L'ouvrage décompose minutieusement ce qui distingue une assiette gastronomique exceptionnelle :
-1. **L'Assaisonnement Multi-Strate :** Saler l'eau, le fond de poêle, la chair crue 45 min avant, et la finition.
-2. **L'Acide Invisible (« Le Coup de Ciseau ») :** Goutte de citron ou vinaigre vieux pour « couper le gras » et relancer la sécrétion salivaire.
-3. **La Réduction en Glace Pure :** Concentration naturelle du collagène dissous en gélatine sirupeuse nuançable, sans aucune fécule.
-4. **La Filtration au Chinois Étamine :** Élimination de toute impureté pour un toucher de velours aristocratique en bouche.
-5. **L'Extraction des Carapaces :** Rôtissage lipidique libérant l'astaxanthine lipophile rouge corail.
-6. **L'Équation Poly-Texturale :** Croustillant + Moelleux + Fondant + Croquant.
-7. **La Température Millimétrique :** Assiettes chauffées à $50\text{--}60^\circ\mathrm{C}$ pour les plats chauds (évite la chute de $25^\circ\mathrm{C}$ en 60 secondes qui fige le gras) ; assiettes givrées pour le cru.
+The work deconstructs what elevates everyday cooking to three-star gastronomic excellence:
+1. **Multi-Stratum Seasoning:** Salting water, pan fond, raw meat 45 minutes in advance, and finishing salt (*fleur de sel*).
+2. **The Invisible Acid ("The Snip of the Shears"):** A drop of citrus or aged vinegar to cut through grease and trigger instant salivation.
+3. **Natural Glaze Reduction:** Concentrating dissolved collagen into a glossy, gelatinous coating without any artificial starches or roux.
+4. **Conical Chinois Sieve Straining:** Straining purées and broths through fine mesh for an aristocratic, velvety mouthfeel.
+5. **Shellfish Carapace Extraction:** Roasting shells in lipid media to extract fat-soluble coral-red astaxanthin.
+6. **The Poly-Textural Equation:** Crisp + Tender + Melt-in-mouth + Crunchy (*Croustillant + Moelleux + Fondant + Croquant*).
+7. **Millimetric Service Temperature:** Preheating plates to $50\text{--}60^\circ\mathrm{C}$ ($122\text{--}140^\circ\mathrm{F}$) for hot dishes (preventing the $25^\circ\mathrm{C}$ thermal drop that congeals animal fat within 60 seconds); serving crudos on chilled frost-dusted plates.

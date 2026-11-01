@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 510" width="100%" height="100%">
+  <rect width="880" height="510" rx="14" fill="#FCFBF7" stroke="#DFDACF" stroke-width="2"/>
+  <text x="440" y="34" font-family="Liberation Serif, Georgia, serif" font-size="20" font-weight="bold" fill="#701C1A" text-anchor="middle">BIOMÉCANIQUE DU CAILLAGE : LES DEUX VOIES DE RUPTURE COLLOÏDALE</text>
+  <text x="440" y="55" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" fill="#5C5549" text-anchor="middle">De la répulsion électrostatique des micelles de caséine à la prise en gel du fromage.</text>
+
+  <!-- Bloc Racine : Lait Entier -->
+  <g transform="translate(245, 72)">
+    <rect width="390" height="76" rx="8" fill="#FAF7F2" stroke="#966C3B" stroke-width="1.8"/>
+    <text x="195" y="26" font-family="Liberation Serif, Georgia, serif" font-size="15" font-weight="bold" fill="#701C1A" text-anchor="middle">LAIT ENTIER FRAIS (pH 6,6)</text>
+    <text x="195" y="46" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" fill="#242124" text-anchor="middle">Suspension colloïdale stable de micelles de caséine</text>
+    <text x="195" y="64" font-family="Liberation Sans, Arial, sans-serif" font-size="11.8" font-style="italic" fill="#5C5549" text-anchor="middle">Charges négatives de surface = répulsion électrostatique mutuelle</text>
+  </g>
+
+  <!-- Lignes de bifurcation -->
+  <path d="M 440 148 L 440 175" stroke="#966C3B" stroke-width="2.2"/>
+  <path d="M 227 175 L 652 175" stroke="#966C3B" stroke-width="2.2"/>
+  <path d="M 227 175 L 227 198" stroke="#5A6E54" stroke-width="2.2"/>
+  <polygon points="227,204 222,196 232,196" fill="#5A6E54"/>
+  <path d="M 652 175 L 652 198" stroke="#B45309" stroke-width="2.2"/>
+  <polygon points="652,204 647,196 657,196" fill="#B45309"/>
+
+  <!-- Voie Gauche : Acide -->
+  <g transform="translate(40, 206)">
+    <rect width="375" height="92" rx="8" fill="#F4F6F4" stroke="#5A6E54" stroke-width="1.5"/>
+    <text x="187" y="25" font-family="Liberation Serif, Georgia, serif" font-size="14" font-weight="bold" fill="#5A6E54" text-anchor="middle">VOIE 1 : COAGULATION ACIDE DIRECTE</text>
+    <text x="187" y="45" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#242124" text-anchor="middle">Citron, Vinaigre ou Ferments lactiques (pH 4,6)</text>
+    <text x="187" y="64" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#5C5549" text-anchor="middle">Point isoélectrique : les protons H⁺ annulent les charges.</text>
+    <text x="187" y="81" font-family="Liberation Sans, Arial, sans-serif" font-size="11.8" fill="#5C5549" text-anchor="middle">Les micelles déminéralisées floculent instantanément.</text>
+  </g>
+
+  <path d="M 227 298 L 227 325" stroke="#5A6E54" stroke-width="2.2"/>
+  <polygon points="227,331 222,323 232,323" fill="#5A6E54"/>
+
+  <g transform="translate(40, 333)">
+    <rect width="375" height="150" rx="8" fill="#FAF7F2" stroke="#5A6E54" stroke-width="1.5"/>
+    <rect width="375" height="30" rx="8" fill="#5A6E54"/>
+    <text x="187" y="20" font-family="Liberation Serif, Georgia, serif" font-size="13" font-weight="bold" fill="#FCFBF7" text-anchor="middle">CAILLÉ LACTIQUE : PÂTE FRAÎCHE FRIABLE</text>
+    <text x="18" y="52" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#5A6E54">• Architecture microscopique :</text>
+    <text x="28" y="70" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#242124">Réseau poreux court, fragile et très humide.</text>
+    <text x="18" y="94" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#5A6E54">• Applications au foyer :</text>
+    <text x="28" y="112" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#242124">Fromage frais en 15 min, Faisselle, Paneer, Ricotta.</text>
+    <text x="18" y="135" font-family="Liberation Sans, Arial, sans-serif" font-size="11.8" font-style="italic" fill="#5C5549">Égouttage doux par gravité dans une étamine de coton.</text>
+  </g>
+
+  <!-- Voie Droite : Présure -->
+  <g transform="translate(465, 206)">
+    <rect width="375" height="92" rx="8" fill="#F2ECE1" stroke="#B45309" stroke-width="1.5"/>
+    <text x="187" y="25" font-family="Liberation Serif, Georgia, serif" font-size="14" font-weight="bold" fill="#B45309" text-anchor="middle">VOIE 2 : COAGULATION ENZYMATIQUE</text>
+    <text x="187" y="45" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#242124" text-anchor="middle">Présure / Chymosine à tiédeur animale (32–35°C)</text>
+    <text x="187" y="64" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#5C5549" text-anchor="middle">Cisaillement sélectif des poils de caséine kappa.</text>
+    <text x="187" y="81" font-family="Liberation Sans, Arial, sans-serif" font-size="11.8" fill="#5C5549" text-anchor="middle">Soudure tridimensionnelle par ponts de calcium (Ca²⁺).</text>
+  </g>
+
+  <path d="M 652 298 L 652 325" stroke="#B45309" stroke-width="2.2"/>
+  <polygon points="652,331 647,323 657,323" fill="#B45309"/>
+
+  <g transform="translate(465, 333)">
+    <rect width="375" height="150" rx="8" fill="#FAF7F2" stroke="#B45309" stroke-width="1.5"/>
+    <rect width="375" height="30" rx="8" fill="#B45309"/>
+    <text x="187" y="20" font-family="Liberation Serif, Georgia, serif" font-size="13" font-weight="bold" fill="#FCFBF7" text-anchor="middle">GEL PRÉSURE : CAILLÉ SOUPLE DE GARDE</text>
+    <text x="18" y="52" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#B45309">• Architecture microscopique :</text>
+    <text x="28" y="70" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#242124">Gel élastique et imperméable à forte synérèse.</text>
+    <text x="18" y="94" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#B45309">• Fromages d'affinage :</text>
+    <text x="28" y="112" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#242124">Comté, Beaufort, Tomme de montagne, Camembert.</text>
+    <text x="18" y="135" font-family="Liberation Sans, Arial, sans-serif" font-size="11.8" font-style="italic" fill="#5C5549">Autorise le décaillage au sabre, le chauffage et le pressage.</text>
+  </g>
+</svg>
