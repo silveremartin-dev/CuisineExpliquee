@@ -4,58 +4,58 @@
   <text x="400" y="32" font-family="Liberation Serif, Georgia, serif" font-size="16.5" font-weight="bold" fill="#701c1a" text-anchor="middle">THE DESTINY OF KITCHEN WASTE: COMPOST BIN vs. TRASH</text>
   <text x="400" y="52" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#5c5549" text-anchor="middle">30% of household waste is organic: the fertile soil cycle vs. wasteful incineration.</text>
 
-  <!-- Bloc Central -->
+  <!-- Central Block -->
   <rect x="245" y="68" width="310" height="38" rx="6" fill="#f2ece1" stroke="#d4a373" stroke-width="1.5"/>
   <text x="400" y="92" font-family="Liberation Serif, Georgia, serif" font-size="11.5" font-weight="bold" fill="#242124" text-anchor="middle">PEELINGS &amp; FOOD SCRAPS (80% WATER CONTENT)</text>
 
-  <!-- Flux Gauche : Poubelle Bio -->
+  <!-- Left Flow: Bio Bin -->
   <path d="M 320 106 L 320 140 L 205 140 L 205 162" fill="none" stroke="#5a6e54" stroke-width="2.2"/>
   <polygon points="205,168 200,160 210,160" fill="#5a6e54"/>
 
-  <!-- Flux Droit : Poubelle Noire -->
+  <!-- Right Flow: Trash -->
   <path d="M 480 106 L 480 140 L 595 140 L 595 162" fill="none" stroke="#701c1a" stroke-width="2.2"/>
   <polygon points="595,168 590,160 600,160" fill="#701c1a"/>
 
-  <!-- Carte Gauche : Poubelle Bio -->
+  <!-- Left Card: Bio Bin -->
   <g transform="translate(38, 172)">
     <rect width="334" height="180" rx="8" fill="#faf7f2" stroke="#6e826b" stroke-width="1.2"/>
     <rect x="0" y="0" width="334" height="30" rx="8" fill="#5a6e54"/>
-    <text x="167" y="20" font-family="Liberation Serif, Georgia, serif" font-size="11.5" font-weight="bold" fill="#fcfbf7" text-anchor="middle">✓ POUBELLE BIO (BIODÉCHETS TRIÉS)</text>
+    <text x="167" y="20" font-family="Liberation Serif, Georgia, serif" font-size="11.5" font-weight="bold" fill="#fcfbf7" text-anchor="middle">✓ ORGANIC BIN (SORTED BIO-WASTE)</text>
 
-    <!-- Deux destinations -->
+    <!-- Two Destinations -->
     <rect x="16" y="42" width="143" height="60" rx="5" fill="#f4f6f4" stroke="#6e826b" stroke-width="1"/>
-    <text x="87.5" y="60" font-family="Liberation Serif, Georgia, serif" font-size="10.5" font-weight="bold" fill="#5a6e54" text-anchor="middle">Méthanisation</text>
-    <text x="87.5" y="76" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#383330" text-anchor="middle">Production de biogaz</text>
-    <text x="87.5" y="90" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#5c5549" text-anchor="middle">(énergie renouvelable)</text>
+    <text x="87.5" y="60" font-family="Liberation Serif, Georgia, serif" font-size="10.5" font-weight="bold" fill="#5a6e54" text-anchor="middle">Biomethanation</text>
+    <text x="87.5" y="76" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#383330" text-anchor="middle">Biogas production</text>
+    <text x="87.5" y="90" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#5c5549" text-anchor="middle">(Renewable energy)</text>
 
     <rect x="175" y="42" width="143" height="60" rx="5" fill="#f4f6f4" stroke="#6e826b" stroke-width="1"/>
-    <text x="246.5" y="60" font-family="Liberation Serif, Georgia, serif" font-size="10.5" font-weight="bold" fill="#5a6e54" text-anchor="middle">Compostage</text>
-    <text x="246.5" y="76" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#383330" text-anchor="middle">Humus fertile vivant</text>
-    <text x="246.5" y="90" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#5c5549" text-anchor="middle">(remplace engrais NPK)</text>
+    <text x="246.5" y="60" font-family="Liberation Serif, Georgia, serif" font-size="10.5" font-weight="bold" fill="#5a6e54" text-anchor="middle">Composting</text>
+    <text x="246.5" y="76" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#383330" text-anchor="middle">Living fertile humus</text>
+    <text x="246.5" y="90" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#5c5549" text-anchor="middle">(Replaces NPK fertilizer)</text>
 
-    <text x="16" y="124" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#242124"><tspan font-weight="bold" fill="#5a6e54">• Bilan énergétique :</tspan> Positif et régénératif.</text>
-    <text x="16" y="142" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#242124"><tspan font-weight="bold" fill="#5a6e54">• Mineral Cycle:</tspan> Direct return of nitrogen and carbon to soil.</text>
+    <text x="16" y="124" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#242124"><tspan font-weight="bold" fill="#5a6e54">• Energy Balance:</tspan> Positive and regenerative.</text>
+    <text x="16" y="142" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#242124"><tspan font-weight="bold" fill="#5a6e54">• Mineral Cycle:</tspan> Direct return of nitrogen &amp; carbon to soil.</text>
     <text x="16" y="162" font-family="Liberation Serif, Georgia, serif" font-size="10" font-weight="bold" fill="#5a6e54">→ Zero waste of living organic biomass.</text>
   </g>
 
-  <!-- Carte Droite : Poubelle Noire -->
+  <!-- Right Card: Black Trash -->
   <g transform="translate(428, 172)">
     <rect width="334" height="180" rx="8" fill="#faf7f2" stroke="#b06d60" stroke-width="1.2"/>
     <rect x="0" y="0" width="334" height="30" rx="8" fill="#701c1a"/>
-    <text x="167" y="20" font-family="Liberation Serif, Georgia, serif" font-size="11.5" font-weight="bold" fill="#fcfbf7" text-anchor="middle">✗ POUBELLE NOIRE (TOUT-VENANT)</text>
+    <text x="167" y="20" font-family="Liberation Serif, Georgia, serif" font-size="11.5" font-weight="bold" fill="#fcfbf7" text-anchor="middle">✗ LANDFILL TRASH (MIXED WASTE)</text>
 
-    <!-- Deux désastres -->
+    <!-- Two Disasters -->
     <rect x="16" y="42" width="143" height="60" rx="5" fill="#fbf6f5" stroke="#b06d60" stroke-width="1"/>
-    <text x="87.5" y="60" font-family="Liberation Serif, Georgia, serif" font-size="10.5" font-weight="bold" fill="#701c1a" text-anchor="middle">Incinération</text>
-    <text x="87.5" y="76" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#383330" text-anchor="middle">Brûler 80 % d'eau !</text>
-    <text x="87.5" y="90" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#5c5549" text-anchor="middle">Gaspillage de combustible</text>
+    <text x="87.5" y="60" font-family="Liberation Serif, Georgia, serif" font-size="10.5" font-weight="bold" fill="#701c1a" text-anchor="middle">Incineration</text>
+    <text x="87.5" y="76" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#383330" text-anchor="middle">Burning 80% water!</text>
+    <text x="87.5" y="90" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#5c5549" text-anchor="middle">Waste of auxiliary fuels</text>
 
     <rect x="175" y="42" width="143" height="60" rx="5" fill="#fbf6f5" stroke="#b06d60" stroke-width="1"/>
-    <text x="246.5" y="60" font-family="Liberation Serif, Georgia, serif" font-size="10.5" font-weight="bold" fill="#701c1a" text-anchor="middle">Enfouissement</text>
+    <text x="246.5" y="60" font-family="Liberation Serif, Georgia, serif" font-size="10.5" font-weight="bold" fill="#701c1a" text-anchor="middle">Landfill Burial</text>
     <text x="246.5" y="76" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#383330" text-anchor="middle">Anaerobic putrefaction</text>
-    <text x="246.5" y="90" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#5c5549" text-anchor="middle">Émission de méthane (CH₄)</text>
+    <text x="246.5" y="90" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#5c5549" text-anchor="middle">Methane emission (CH₄)</text>
 
-    <text x="16" y="124" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#242124"><tspan font-weight="bold" fill="#701c1a">• Bilan énergétique :</tspan> Déficitaire, perte nette de calories.</text>
+    <text x="16" y="124" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#242124"><tspan font-weight="bold" fill="#701c1a">• Energy Balance:</tspan> Severe deficit, net loss of energy.</text>
     <text x="16" y="142" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#242124"><tspan font-weight="bold" fill="#701c1a">• Pollution Impact:</tspan> Acidic leachate and soil impoverishment.</text>
     <text x="16" y="162" font-family="Liberation Serif, Georgia, serif" font-size="10" font-weight="bold" fill="#701c1a">→ Disruption of the agronomic cycle.</text>
   </g>

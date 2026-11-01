@@ -1403,9 +1403,10 @@ aux appareils du commerce :
     circulaire net sépare les pâtons sans étirer le réseau de
     gluten.], [Fariner le col du verre avant chaque pression pour un
     démoulage instantané.],
-  )]
-  , kind: table
-  )
+  )],
+  caption: [Détournement d'objets du quotidien et équivalences d'ustensiles techniques.],
+  kind: table
+)
 
 #truc_de_chef[
 
@@ -1797,9 +1798,10 @@ inoffensives lorsqu'elles sont chauffées.
     bicarbonate ou du vinaigre d'alcool pur séparément.], [Mélanger eau
     de Javel et vinaigre blanc : émanation instantanée de dichlore
     gazeux toxique pour les poumons.],
-  )]
-  , kind: table
-  )
+  )],
+  caption: [Protocoles de sécurité d'urgence face aux accidents majeurs du foyer.],
+  kind: table
+)
 
 = CHAPITRE 06 --- L'Économie du Foyer : Courses Rationnelles, Additifs et Saisonnalité
 <chapitre-06-léconomie-du-foyer-courses-rationnelles-additifs-et-saisonnalité>
@@ -1957,9 +1959,10 @@ nomenclature numérique européenne du code E :
     d'emballage]], [Imiter la sensation sucrée sans calories ou chasser
     l'oxygène des sachets plastiques.], [Miel, sirop d'érable, sucre de
     canne complet.],
-  )]
-  , kind: table
-  )
+  )],
+  caption: [Les sept familles fonctionnelles d'additifs dans l'industrie agroalimentaire.],
+  kind: table
+)
 
 #divider()
 
@@ -2061,9 +2064,10 @@ dangereuses documentées par la recherche biomédicale :
     hyper-sucrantes], [Maintiennent l'appétence addictive pour le sucre,
     altèrent le microbiote intestinal et perturbent la sensibilité à
     l'insuline.], [#strong[ILLUSION CHIMIQUE]],
-  )]
-  , kind: table
-  )
+  )],
+  caption: [Tableau critique des additifs alimentaires : composés nobles vs substances à proscrire.],
+  kind: table
+)
 
 #point_attention[
 
@@ -2227,9 +2231,10 @@ biologique :
     fermier]], [$approx upright(bold(6 thin 000 upright(" Litres")))$],
     [#strong[Bœuf de
     pâturage]], [$approx upright(bold(15 thin 400 upright(" Litres")))$],
-  )]
-  , kind: table
-  )
+  )],
+  caption: [Empreinte hydrique et coût environnemental comparé des grandes filières alimentaires.],
+  kind: table
+)
 
 === B. Le Calendrier Vivant : Légumes, Viandes et Fromages au Fil de l'Année
 <b.-le-calendrier-vivant-légumes-viandes-et-fromages-au-fil-de-lannée>
@@ -2794,9 +2799,10 @@ cellulaire.
     laitiers et œufs de plein air]], [Des œufs de poules élevées en
     plein air (Code 1) sur parcours herbagé offrent déjà une excellente
     balance en oméga-3.],
-  )]
-  , kind: table
-  )
+  )],
+  caption: [Arbitrage budgétaire raisonné : où investir pour une alimentation souveraine.],
+  kind: table
+)
 
 #truc_de_chef[
 
@@ -3330,9 +3336,10 @@ distinctes :
     ciment pectique, libération des pectines solubles liant les
     lipides.], [#strong[Crémeuse, aérienne, veloutée comme une
     crème.]], [Douceur suave enveloppante, notes toastées.],
-  )]
-  , kind: table
-  )
+  )],
+  caption: [Métamorphoses d'un monovégétal : l'exemple de la carotte sous quatre modes thermiques.],
+  kind: table
+)
 
 #divider()
 
@@ -4064,9 +4071,10 @@ installations) :
     fermier)], [$approx upright(bold(4 thin 300 upright(" Litres")))$], [$12 times$],
     [#strong[Viande Bovine] (Bœuf de
     pâturage)], [$approx upright(bold(15 thin 400 upright(" Litres")))$], [$upright(bold(45 times))$],
-  )]
-  , kind: table
-  )
+  )],
+  caption: [Empreinte hydrique comparée des viandes, poissons et légumineuses au kilogramme.],
+  kind: table
+)
 
 $ upright("Rendement Trophique") : 10 upright(" kg de matière végétale consommée") arrow.r 1 upright(" kg de gain de poids animal") $
 
@@ -4536,9 +4544,10 @@ cocktail de protéines aux seuils thermiques décalés :
     [#strong[Blanc
     épais]], [#strong[Ovalbumine]], [$54 thin %$], [#strong[$84^compose upright(C)$]
     (rigidification ferme et opaque)],
-  )]
-  , kind: table
-  )
+  )],
+  caption: [Seuils thermiques fractionnés de coagulation des protéines de l'œuf.],
+  kind: table
+)
 
 === A. L'Œuf à 64°C d'Hervé This (Sans Thermoplongeur)
 <a.-lœuf-à-64c-dhervé-this-sans-thermoplongeur>
@@ -4917,9 +4926,10 @@ plat abouti :
     [#strong[Grains d'amidon]], [Suspension dans un corps gras chaud
     (Roux)], [Gélatinisation contrôlée sans grumeaux], [Velouté nappant
     homogène],
-  )]
-  , kind: table
-  )
+  )],
+  caption: [Table synoptique des transformations culinaires et substitutions d'ingrédients.],
+  kind: table
+)
 
 #divider()
 
@@ -5548,9 +5558,10 @@ l'eau s'évapore, plus le point d'ébullition s'élève) :
     profond, amertume subtile], [Praliné, sauces au caramel],
     [#strong[Carbonisation]], [#strong[$> 190^compose upright(C)$]], [Décomposition], [Noir,
     fumée âcre, amertume acide], [Inconsommable (Acroléine toxique)],
-  )]
-  , kind: table
-  )
+  )],
+  caption: [Échelle thermique des stades de cuisson et de concentration du saccharose.],
+  kind: table
+)
 
 #divider()
 
@@ -6642,9 +6653,10 @@ notre tube digestif :
     [#strong[20 à 25 min]], [Arrivée des lipides et protéines dans le
     duodénum : pic de CCK, GLP-1 et PYY.], [L'hypothalamus coupe la faim
     : #strong[le signal de satiété est pleinement atteint].],
-  )]
-  , kind: table
-  )
+  )],
+  caption: [Cinétique neuro-hormonale de la satiété et impact de la vitesse d'ingestion.],
+  kind: table
+)
 
 === A. Le Rôle Vital de la Mastication
 <a.-le-rôle-vital-de-la-mastication>
@@ -6936,9 +6948,10 @@ en surface.
     $upright(H)_2 upright(S)$ et précipitation avec
     $upright(F e)^(2 +)$.], [Formation du sulfure de fer
     ($upright(F e S)$) : anneau gris-vert autour du jaune dur.],
-  )]
-  , kind: table
-  )
+  )],
+  caption: [Seuils critiques de dénaturation et de coagulation des protéines animales.],
+  kind: table
+)
 
 #divider()
 
@@ -6976,9 +6989,10 @@ en surface.
     [#strong[$> 190^compose upright(C)$]], [Pyrolyse
     carbonée.], [Amertume brûlée et formation de molécules indésirables
     (acroléine, HAP).],
-  )]
-  , kind: table
-  )
+  )],
+  caption: [Seuils de transformation et de dégradation thermique de l'amidon et des sucres.],
+  kind: table
+)
 
 #divider()
 
@@ -7012,9 +7026,10 @@ en surface.
     (Ghee)]], [#strong[$250^compose upright(C)$]], [Saisie à très haute
     température, sauces], [Protéines et eau éliminées : matière grasse
     pure $100 %$.],
-  )]
-  , kind: table
-  )
+  )],
+  caption: [Points de fumée et domaines d'utilisation culinaire des matières grasses.],
+  kind: table
+)
 
 = ANNEXE B --- Glossaire Physico-Chimique & Culinaire Exhaustif
 <annexe-b-glossaire-physico-chimique-culinaire-exhaustif>
@@ -7477,9 +7492,10 @@ pour une fraction de leur prix :
     (30 s de latence, fatale pour une crème anglaise à
     $82^compose upright(C)$).], [$15 upright(" €")$ à
     $35 upright(" €")$],
-  )]
-  , kind: table
-  )
+  )],
+  caption: [Critères de sélection et contrôle qualité de l'Arsenal Minimal du cuisinier.],
+  kind: table
+)
 
 #divider()
 
@@ -7525,9 +7541,10 @@ moyen pour la cuisson d'un repas familial :
     dipolaire)]], [#strong[$60 upright(" à ") 65 thin %$]], [$800 upright(" à ") 1 thin 000 upright(" W")$], [Réchauffage
     soupe ($300 upright(" ml")$) :
     $1 upright(" min ") 30 upright(" s")$], [$0\,025 upright(" kWh")$], [$0\,01 upright(" €")$],
-  )]
-  , kind: table
-  )
+  )],
+  caption: [Rendement énergétique, puissance et déperditions thermiques des modes de cuisson.],
+  kind: table
+)
 
 #oeil_molecule[
 
@@ -7602,9 +7619,10 @@ gaspilleur.
     $10 upright(" g/L")$], [$100^compose upright(C)$], [#strong[$9 upright(" min")$
     (#emph[al dente])]], [Point blanc microscopique d'amidon résistant
     au cœur du spaghetti brisé en deux.],
-  )]
-  , kind: table
-  )
+  )],
+  caption: [Tableau synoptique des durées de cuisson de référence et repères sensoriels.],
+  kind: table
+)
 
 = ANNEXE E --- Conservation au Froid, Zones du Réfrigérateur & Durées Limites Sanitaires
 <annexe-e-conservation-au-froid-zones-du-réfrigérateur-durées-limites-sanitaires>
@@ -7667,9 +7685,10 @@ de contamination croisée :
     (moutarde, cornichons, câpres).• Confitures ouvertes, jus de fruits
     entamés.], [Choc thermique répété provoquant la condensation d'eau
     liquide sur les coquilles d'œufs.],
-  )]
-  , kind: table
-  )
+  )],
+  caption: [Cartographie des bio-zones thermiques du réfrigérateur et répartition des denrées.],
+  kind: table
+)
 
 #danger[
 
@@ -7744,9 +7763,10 @@ congélation :
     [#strong[Légumes Verts Cuits / Soupes
     Légumes]], [$2 upright(" à ") 3 upright(" jours")$], [$8 upright(" à ") 10 upright(" mois")$], [Oxydation
     de la chlorophylle au brun cendre, goût acide d'amidon suri.],
-  )]
-  , kind: table
-  )
+  )],
+  caption: [Durées maximales de conservation sanitaire : réfrigérateur vs congélateur.],
+  kind: table
+)
 
 #divider()
 
@@ -8435,9 +8455,10 @@ photographies culinaires et schémas scientifiques de l'ouvrage.
     [#strong[Annexes]], [#emph[Confiseur, Étuve et Four (Pl. II de
     l'Encyclopédie)]], [Diderot, d'Alembert, Goussier &
     Bénard], [1762], [Domaine Public / Wikimedia],
-  )]
-  , kind: table
-  )
+  )],
+  caption: [Crédits et sources des grandes ouvertures de livres en pleine page verso.],
+  kind: table
+)
 
 #divider()
 
@@ -8478,9 +8499,10 @@ photographies culinaires et schémas scientifiques de l'ouvrage.
     [#strong[Chapitre 26]], [#emph[Diversité des légumineuses sèches et
     amidon résistant]], [Photographie agronomique (#emph[Various
     legumes])], [Domaine Public / Wikimedia],
-  )]
-  , kind: table
-  )
+  )],
+  caption: [Crédits des portraits historiques, gravures d'archives et photographies scientifiques.],
+  kind: table
+)
 
 #divider()
 
@@ -8537,9 +8559,10 @@ ou #strong[Domaine Public (CC0)] :
     intact],
     [#strong[\13.] Ceviche éclatant de cabillaud mariné au citron
     vert], [#strong[\26.] Crème glacée onctueuse turbinée au sel],
-  )]
-  , kind: table
-  )
+  )],
+  caption: [Répertoire des crédits photographiques des 26 recettes fondatrices.],
+  kind: table
+)
 
 #divider()
 

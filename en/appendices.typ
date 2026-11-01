@@ -1,7 +1,7 @@
 #import "../styles.typ": *
 
 #show heading.where(level: 1): it => {
-  pagebreak(weak: true)
+  pagebreak(weak: true, to: "odd")
   v(0.3cm)
   align(left)[
     #text(size: 9pt, tracking: 0.2em, fill: c-bordeaux, weight: "bold", font: "Liberation Sans")[#smallcaps[Treatise on Culinary Physics & First Principles]]
@@ -13,446 +13,506 @@
   ]
 }
 
-= APPENDIX A --- The Absolute Dial of Critical Culinary Temperatures
-<appendix-a-the-absolute-dial-of-critical-culinary-temperatures>
+#show heading.where(level: 2): it => block(
+  width: 100%,
+  breakable: false,
+  sticky: true,
+  spacing: 1.4em
+)[
+  #v(0.35cm)
+  #align(left)[
+    #text(size: 13pt, weight: "bold", fill: c-bordeaux, font: "Liberation Serif")[#it.body]
+    #v(4pt)
+    #line(length: 100%, stroke: 0.6pt + c-bronze)
+  ]
+  #v(0.15cm)
+]
 
+#show heading.where(level: 3): it => block(
+  width: 100%,
+  breakable: false,
+  sticky: true,
+  spacing: 1.1em
+)[
+  #v(0.2cm)
+  #align(left)[
+    #text(size: 11pt, weight: "bold", fill: c-terracotta, font: "Liberation Serif")[#it.body]
+  ]
+  #v(0.1cm)
+]
+
+#show heading.where(level: 4): it => block(
+  width: 100%,
+  breakable: false,
+  sticky: true,
+  spacing: 0.8em
+)[
+  #align(left)[
+    #text(size: 9.5pt, weight: "bold", fill: c-slate, font: "Liberation Sans")[#it.body]
+  ]
+]
+
+// =========================================================================
+// BOOK OPENING PORTAL: APPENDICES AND REFERENCE COMPENDIUM
+// =========================================================================
+
+#pagebreak(weak: false, to: "even")
+#set page(margin: 0pt, header: none, footer: none)
+#portail_livre_verso("/figures/patrimoine/diderot_encyclopedie_fournil.jpg", "Plate from Diderot and d'Alembert's Encyclopédie (1762): brick oven, proofing chamber, and kitchen instruments (Pl. II).")
+
+#pagebreak(weak: false, to: "odd")
+#set page(paper: "a4", margin: (top: 2.5cm, bottom: 2.5cm, left: 2.2cm, right: 2.2cm), header: none, footer: none, fill: rgb(255, 253, 250))
+#portail_livre_recto("APPENDICES AND REFERENCE COMPENDIUM", "TABLES, GLOSSARY, AND CRITICAL DIRECTORY", [#text(size: 11.5pt, style: "italic")[— Appendix A --- Absolute Dial of Critical Temperatures in the Kitchen] \
+#v(0.38cm)
+#text(size: 11.5pt, style: "italic")[— Appendix B --- Comprehensive Physicochemical and Culinary Glossary] \
+#v(0.38cm)
+#text(size: 11.5pt, style: "italic")[— Appendix C --- Critical and Evaluated Bibliography] \
+#v(0.38cm)
+#text(size: 11.5pt, style: "italic")[— Appendix D --- Buyer's Guide to the Minimal Arsenal, Energy Costs, and Cooking Durations] \
+#v(0.38cm)
+#text(size: 11.5pt, style: "italic")[— Appendix E --- Cold Preservation, Refrigerator Bio-Zones, and Food Safety Limits] \
+#v(0.38cm)
+#text(size: 11.5pt, style: "italic")[— Appendix F --- Prep Cutlery, Consumables, Dry Matrix Pantry & Clean Grocery Template] \
+#v(0.38cm)
+#text(size: 11.5pt, style: "italic")[— Appendix G --- Iconographic Catalog, Archival Sources, and Image Credits]])
+
+#pagebreak(weak: false, to: "odd")
+#set page(header: entete-livre, footer: pied-livre)
+
+// =========================================================================
+// APPENDIX A: CRITICAL CULINARY TEMPERATURE DIAL
+// =========================================================================
+
+= APPENDIX A --- The Absolute Dial of Critical Temperatures in the Kitchen
+<annexe-a-le-cadran-absolu-des-températures-critiques-en-cuisine>
 #quote(block: true)[
-"Heat is an energy vector, but temperature is the absolute threshold of molecular metamorphosis."
+This compendium synthesizes all the thermodynamic thresholds essential for mastering the transformations of matter at the core and on the surface.
 ]
 
 #divider()
 
 == 1. ANIMAL PROTEIN DENATURATION THRESHOLDS
-<animal-protein-denaturation-thresholds>
-Proteins do not respond continuously to heat: they denature at sharp, millimetric thermodynamic thresholds. The table below compiles the critical transition points for muscular and egg proteins:
-
+<les-seuils-de-dénaturation-des-protéines-animales>
 #figure(
   align(center)[#table(
-    stroke: 0.5pt + rgb("#dcd6ca"),
-    fill: (x, y) => if y == 0 { rgb("#f2ece1") } else if calc.odd(y) { rgb("#faf7f2") } else { none },
-    inset: 7pt,
-    columns: (18%, 20%, 32%, 30%),
-    align: (center, left, left, left),
-    table.header([Threshold (°C / °F)], [Target Molecule], [Physical Phenomenon], [Culinary Application & Sensory Impact]),
+  stroke: 0.5pt + rgb("#dcd6ca"),
+  fill: (x, y) => if y == 0 { rgb("#f2ece1") } else if calc.odd(y) { rgb("#faf7f2") } else { none },
+  inset: 8pt,
+
+    columns: (33.33%, 33.33%, 33.33%),
+    align: (left,left,left,),
+    table.header([Core Temperature], [Physicochemical Phenomenon], [Culinary Result & Sensory Aspect],),
     table.hline(),
-    [#strong[50°C / 122°F]], [Myosin (thick muscle filament)], [Denaturation of head and neck; gentle tightening into a tender gel.], [Rare beef core. Meat is juicy, elastic, and warm without moisture loss.],
-    [#strong[55°C / 131°F]], [Myoglobin (heme protein)], [Unfolding begins; red turns rosy pink.], [Medium-rare beef core; gentle salmon poaching temperature.],
-    [#strong[60°C / 140°F]], [Collagen (perimysium)], [Triple-helix unfolds; shortens by 30%, mild initial tension.], [Tender poultry and fish; meat holds shape without drying out.],
-    [#strong[62°C to 65°C / 144°F to 149°F]], [Ovotransferrin (egg white conalbumin)], [Unfolding into a delicate, milky, tender white gel.], [Soft-boiled (*mollet*) and poached eggs; set white around liquid yolk.],
-    [#strong[65°C to 68°C / 149°F to 154°F]], [Actin & Yolk Lipoproteins], [Actin contracts violently; yolk thickens into velvety custard.], [Water expelled from overcooked meat; ideal yolk texture for soft eggs.],
-    [#strong[70°C to 74°C / 158°F to 165°F]], [Collagen Hydrolysis (Gelatin)], [Prolonged thermal breakdown of collagen fibers into water-soluble gelatin.], [Slow-simmered beef shank (*pot-au-feu*), rich broths, succulent braises.],
-    [#strong[80°C to 84°C / 176°F to 183°F]], [Ovalbumin (54% of egg white)], [Firm coagulation of principal egg white albumin.], [Hard-boiled eggs, soufflé structure setting, meringue stabilization.],
-    [#strong[85°C to 90°C / 185°F to 194°F]], [Lactoglobulins & Milk Casein], [Whey proteins unfold, forming protective colloidal complexes.], [Gentle milk heating for yogurt cultures, farm cheese, and custards.]
+    [#strong[45°C - 50°C (113°F - 122°F)]], [Denaturation of myosin. Muscle fibers turn opaque.], [Blue-rare red meat; silky semi-cooked salmon.],
+    [#strong[52°C - 55°C (126°F - 131°F)]], [Transverse retraction of sarcomeres.], [Rare meat (*saignant*). Maximum tenderness, abundant free juices.],
+    [#strong[56°C - 60°C (133°F - 140°F)]], [Denaturation of myoglobin (shift to rose pink).], [Medium meat (*à point*). Onset of moderate moisture loss.],
+    [#strong[62°C (144°F)]], [Coagulation of ovotransferrin in egg white.], [Egg white sets into a soft, creamy, delicate gel.],
+    [#strong[65°C - 68°C (149°F - 154°F)]], [Sudden denaturation of actin and axial fiber contraction.], [Well-done meat (*bien cuit*). Cells violently expel intracellular moisture. Firm coagulation of egg yolk.],
+    [#strong[68°C - 72°C (154°F - 162°F)]], [Onset of hydrogen bond cleavage in connective collagen.], [Ideal thermodynamic zone to initiate slow gelatinization of stewing cuts.],
+    [#strong[80°C - 84°C (176°F - 183°F)]], [Coagulation of ovalbumin (54% of total egg white).], [Rigid, firm, fully opaque white.],
+    [#strong[> 85°C (185°F) prolonged]], [Release of $upright(H)_2 upright(S)$ gas and precipitation with $upright(F e)^(2+)$.], [Formation of iron sulfide ($upright(F e S)$): unsightly greenish-grey ring around hard-boiled egg yolk.],
   )],
-  caption: [Critical denaturation and coagulation thresholds of animal proteins.],
+  caption: [Critical denaturation and coagulation thresholds of animal muscle and egg proteins.],
   kind: table
 )
 
 #divider()
 
 == 2. STARCH AND SUGAR TRANSFORMATION THRESHOLDS
-<starch-and-sugar-transformation-thresholds>
-Carbohydrates transform through distinct physical states: gelatinization of starches and pyrolysis of sugars.
-
+<les-seuils-de-lamidon-et-des-sucres>
 #figure(
   align(center)[#table(
-    stroke: 0.5pt + rgb("#dcd6ca"),
-    fill: (x, y) => if y == 0 { rgb("#f2ece1") } else if calc.odd(y) { rgb("#faf7f2") } else { none },
-    inset: 7pt,
-    columns: (18%, 20%, 32%, 30%),
-    align: (center, left, left, left),
-    table.header([Threshold (°C / °F)], [Substance], [Physicochemical Reaction], [Culinary Result & Key Reflex]),
+  stroke: 0.5pt + rgb("#dcd6ca"),
+  fill: (x, y) => if y == 0 { rgb("#f2ece1") } else if calc.odd(y) { rgb("#faf7f2") } else { none },
+  inset: 8pt,
+
+    columns: (33.33%, 33.33%, 33.33%),
+    align: (left,left,left,),
+    table.header([Temperature], [Phenomenon], [Practical Kitchen Consequence],),
     table.hline(),
-    [#strong[60°C to 65°C / 140°F to 149°F]], [Potato & Wheat Starch], [Granules swell, absorb water, and begin amylose leaching.], [Initial sauce thickening; starches absorb cooking juices.],
-    [#strong[70°C to 75°C / 158°F to 167°F]], [Cornstarch (Maizena)], [Full rupture of starch granules into a viscous colloidal gel.], [Glossy sauce binding without dairy fats; rapid thickening.],
-    [#strong[80°C to 85°C / 176°F to 185°F]], [Rice Starch (Amylopectin)], [Maximal swelling and release of branched amylopectin chains.], [Creamy risotto starch mantecatura; cohesive sushi rice texture.],
-    [#strong[100°C / 212°F]], [Water / Boiling Phase], [Vigorous vaporization; steam bubbles disrupt delicate structures.], [Rapid pasta cooking; too turbulent for delicate fish poaching.],
-    [#strong[110°C to 120°C / 230°F to 248°F]], [Sugar Syrup (Thread to Soft Ball)], [Concentration of sucrose; water evaporation down to 10-15%.], [Italian meringue syrup, soft caramels, candied citrus peel.],
-    [#strong[140°C to 165°C / 284°F to 329°F]], [Maillard Reaction], [Carbonyl-amine condensation: hundreds of aroma melanoidins.], [Golden crust on seared steaks, roasted vegetables, and artisan breads.],
-    [#strong[160°C to 180°C / 320°F to 356°F]], [Pyrolysis & Caramelization], [Thermal fragmentation of pure sucrose without nitrogen.], [Amber to mahogany caramel, hazelnut aromas, bittersweet complexity.]
+    [#strong[60°C - 70°C (140°F - 158°F)]], [Gelatinization of wheat and potato starch.], [Starch granules swell and absorb free water (sauce thickening, bread baking crumb structure).],
+    [#strong[100°C (212°F)]], [Boiling of pure water at sea level.], [Absolute thermal plateau that cannot be exceeded as long as liquid water remains present.],
+    [#strong[104°C - 105°C (219°F - 221°F)]], [Jam setting point (65% sugar concentration).], [Osmotic equilibrium and natural pectin network gelling.],
+    [#strong[110°C - 115°C (230°F - 239°F)]], [Thread stage (*filet*) / sugar concentration.], [Initial sugar concentration for Italian meringues and marzipan paste.],
+    [#strong[140°C - 165°C (284°F - 329°F)]], [#strong[Maillard Reaction.]], [Carbonyl-amine condensation: birth of roasted pyrazine aromas and crisp golden crusts.],
+    [#strong[160°C - 180°C (320°F - 356°F)]], [#strong[Sucrose Caramelization.]], [Pure carbohydrate thermolysis without nitrogen: buttery hazelnut aromas and rich amber color.],
+    [#strong[> 190°C (374°F)]], [Carbonaceous Pyrolysis.], [Burnt acrid bitterness and formation of undesirable harmful compounds (acrolein, PAHs).],
   )],
-  caption: [Thermal transformation milestones of starches and carbohydrate sugars.],
+  caption: [Transformation and degradation thresholds of starches and carbohydrate sugars.],
   kind: table
 )
 
 #divider()
 
 == 3. SMOKE POINTS OF COOKING FATS
-<smoke-points-of-cooking-fats>
-When heated past its smoke point, a lipid degrades irreversibly, releasing acrid blue smoke and carcinogenic acrolein.
-
+<les-points-de-fumée-des-matières-grasses>
 #figure(
   align(center)[#table(
-    stroke: 0.5pt + rgb("#dcd6ca"),
-    fill: (x, y) => if y == 0 { rgb("#f2ece1") } else if calc.odd(y) { rgb("#faf7f2") } else { none },
-    inset: 7pt,
-    columns: (22%, 18%, 18%, 42%),
-    align: (left, center, center, left),
-    table.header([Cooking Fat / Lipid], [Smoke Point (°C)], [Smoke Point (°F)], [Culinary Recommendation & Kitchen Safety]),
+  stroke: 0.5pt + rgb("#dcd6ca"),
+  fill: (x, y) => if y == 0 { rgb("#f2ece1") } else if calc.odd(y) { rgb("#faf7f2") } else { none },
+  inset: 8pt,
+
+    columns: (25%, 25%, 25%, 25%),
+    align: (left,left,left,left,),
+    table.header([Cooking Fat], [Smoke Point], [Recommended Usage], [Precautions],),
     table.hline(),
-    [#strong[Unclarified Raw Butter]], [150°C to 175°C], [302°F to 347°F], [Milk solids burn quickly. Reserve for gentle sauces and low-heat finishing.],
-    [#strong[Extra-Virgin Olive Oil]], [190°C to 205°C], [374°F to 401°F], [Gentle sautéing, warm emulsions, raw dressings. Avoid hard pan searing.],
-    [#strong[Rendered Duck / Goose Fat]], [190°C to 200°C], [374°F to 392°F], [High monounsaturated stability. Ideal for roasting potatoes and confits.],
-    [#strong[Refined High-Oleic Rapeseed / Canola]], [210°C to 225°C], [410°F to 437°F], [Neutral flavor profile; dependable for deep frying and skillet searing.],
-    [#strong[Rendered Pork Lard]], [190°C to 205°C], [374°F to 401°F], [Traditional pastry fats, savory pies, and high-heat rustic searing.],
-    [#strong[Clarified Butter (Ghee)]], [250°C], [482°F], [Milk proteins and water removed. Exceptional stability for cast-iron searing.],
-    [#strong[Avocado Oil (Refined)]], [270°C], [520°F], [Highest smoke point in the kitchen. Professional high-heat searing.],
-    [#strong[Refined Peanut Oil]], [230°C], [446°F], [Heat-stable, classic choice for wok stir-frying and deep-fat frying.]
+    [#strong[Raw Unsalted Butter]], [150°C (302°F)], [Finishing, mounting, delicate low-heat pastry], [Do not overheat: whey milk proteins burn quickly into acrid black particles.],
+    [#strong[Extra-Virgin Olive Oil]], [190°C (374°F)], [Cold dressing, gentle to medium sautéing], [Avoid intense repeated deep-frying to preserve delicate polyphenols.],
+    [#strong[Duck / Goose Fat]], [190°C (374°F)], [Sarladaise potatoes, roasted root vegetables], [Outstanding culinary flavor, high thermal stability.],
+    [#strong[Peanut Oil]], [220°C (428°F)], [Deep-frying, high-heat pan searing], [Neutral flavor profile, strong resistance to thermal oxidation.],
+    [#strong[Clarified Butter (Ghee)]], [#strong[250°C (482°F)]], [Extreme high-heat searing, emulsified warm sauces], [Proteins and water fully eliminated: 100% pure lipid phase.],
   )],
-  caption: [Smoke point thresholds and operational temperature ranges for cooking fats.],
+  caption: [Smoke points and culinary operating zones of foundational culinary fats.],
   kind: table
 )
 
-= APPENDIX B --- Comprehensive Physicochemical & Culinary Glossary
-<appendix-b-comprehensive-physicochemical-and-culinary-glossary>
+#divider()
 
+// =========================================================================
+// APPENDIX B: COMPREHENSIVE GLOSSARY
+// =========================================================================
+
+= APPENDIX B --- Comprehensive Physicochemical & Culinary Glossary
+<annexe-b-glossaire-physico-chimique-et-culinaire-exhaustif>
 #quote(block: true)[
-"Naming things precisely is the first step toward mastering their physical laws."
+"Cooking is the art of transforming raw molecules into biological delight through heat, water, and mechanical force."
 ]
 
 #divider()
 
 === Water Activity ($a_w$)
-<glossaire-aw>
-The ratio between the vapor pressure of water in a food system and the vapor pressure of pure water at the identical temperature. It measures the proportion of "free" unbound water molecules available to fuel bacterial enzymatic metabolism. Values range from 0 to 1.0. Below $a_w = 0.85$, virtually all foodborne pathogens (*Staphylococcus aureus*, *Salmonella*, *Clostridium*) cease reproduction. Controlled drying, heavy salting, and sugar preserves act directly by reducing $a_w$.
+Dimensionless thermodynamic ratio between the vapor pressure of water in a food system ($p$) and the vapor pressure of pure water ($p_0$) at the identical temperature ($a_w = p / p_0$). Scales from 0 to 1.0. Fresh raw meat and produce have $a_w approx 0.99$. Microorganisms require free water to thrive: pathogenous bacteria halt proliferation below $a_w = 0.85$, while halophilic yeasts and osmophilic molds cease below $a_w = 0.60$. Salting, sugar concentration, and dehydration mechanically lock free water.
 
 === Actin & Myosin
-<glossaire-actomyosine>
-The two principal contractile myofibrillar proteins of animal skeletal muscle. Myosin denatures at gentle temperatures between 50°C and 55°C (122°F to 131°F), forming a juicy, tender, elastic protein gel. Actin denatures sharply between 66°C and 68°C (151°F to 154°F), contracting longitudinally like coiled springs and violently squeezing out trapped intracellular water. Overcooking meat dry is primarily the result of uncontrolled actin denaturation.
+The two primary contractile myofibrillar proteins composing skeletal muscle tissue. Myosin thick filaments denature and aggregate at 50°C (122°F), turning translucent pink flesh into opaque tender meat. Actin thin filaments contract axially at 65°C - 68°C (149°F - 154°F), wringing muscle sarcomeres like a sponge and expelling intracellular water into the pan fond.
 
 === Essential Amino Acids
-<glossaire-acides-amines>
-Nine amino acids (histidine, isoleucine, leucine, lysine, methionine, phenylalanine, threonine, tryptophan, valine) that the human adult body cannot synthesize endogenously and must ingest through dietary sources. Their biological complementarity governs ancestral culinary pairings: grains (deficient in lysine, rich in methionine) balanced with legumes (deficient in methionine, rich in lysine), as seen in lentils and rice, corn and beans, or couscous and chickpeas.
+The 9 amino acids that the human body cannot synthesize endogenously (leucine, isoleucine, valine, lysine, methionine, phenylalanine, threonine, tryptophan, histidine) and which must be acquired through diet. While animal muscle, eggs, and dairy provide all 9 in complete ratios, combining legumes (rich in lysine, deficient in methionine) with cereals (rich in methionine, deficient in lysine) yields an equivalent complete protein profile.
 
 === Alkylpyrazines
-<glossaire-alkylpyrazines>
-Heterocyclic nitrogen-containing volatile aromatic organic compounds formed during dry toasting, seed roasting, and high-heat Maillard reactions. In potatoes, over 85% of total alkylpyrazines are synthesized in the outermost 2 millimeters directly beneath the tuber skin. Heston Blumenthal's purée protocol extracts these molecules by gently simmering scrubbed peels in whole milk before infusing the purée.
+Heterocyclic aromatic compounds containing two nitrogen atoms in a six-membered carbon ring, synthesized during the advanced Maillard reaction between reducing sugars and free amino acids above 140°C (284°F). Responsible for the distinctive, mouth-watering roasted, nutty, popcorn, and crust notes found in seared steaks, roasted coffee, toasted bread, and roasted peanuts.
 
 === Starch (Amylose & Amylopectin)
-<glossaire-amidon>
-The primary polysaccharide energy reserve of plants, composed of glucose polymers arranged in two distinct macromolecular architectures: amylose (tight linear chains that gel firmly and retrograde readily upon cooling) and amylopectin (highly branched bush-like chains that absorb water rapidly and create high elasticity). When heated in water past 60°C (140°F), starch granules undergo gelatinization, swelling until they burst and release a binding colloidal network.
+The primary storage polysaccharide in plant grains and tubers. Composed of linear, tightly packed alpha-(1,4) chains of #strong[amylose] and highly branched alpha-(1,4) and alpha-(1,6) chains of #strong[amylopectin]. Amylose leaches into aqueous media at 60°C - 70°C (140°F - 158°F) to form firm gels; branched amylopectin produces glossy, elastic, creamy textures (as seen in risotto rice or mashed potatoes).
 
 === Appertization
-<glossaire-appertisation>
-The physical method of thermal food sterilization invented in 1810 by French confectioner Nicolas Appert. By sealing fresh food into hermetic glass jars or tinplate cans and heating them above 100°C (212°F)—and specifically to 121°C (250°F) under pressure—all vegetative microorganisms and heat-resistant bacterial endospores are permanently eradicated, allowing safe room-temperature preservation for years.
+Thermal sterilization process invented by Nicolas Appert in 1810: sealing foods inside hermetic containers (glass jars or metal tins) and subjecting them to sustained boiling water ($100^compose upright("C")$) or autoclaving ($121^compose upright("C")$) to destroy all vegetative pathogens and bacterial spores (*Clostridium botulinum*), enabling perpetual room-temperature shelf life without refrigeration.
 
 === Aquafaba
-<glossaire-aquafaba>
-The viscous aqueous cooking liquid of legumes (specifically chickpeas). Dense with water-soluble albumin proteins and amphiphilic saponin surfactants, it possesses the rare physicochemical capability of trapping atmospheric air into a stiff, glossy foam indistinguishable from whipped egg whites, serving as a clean plant-based matrix for vegan mousses and meringues.
+The viscous viscous cooking broth of chickpeas or other legumes. Rich in dissolved saponins, albuminous plant proteins, and soluble carbohydrates, aquafaba mimics the precise surface-tension reducing and film-forming properties of egg whites. When whipped with a whisk, it incorporates air into voluminous, stable molecular foams suitable for vegan chocolate mousses and meringues.
 
 === Botulism (_Clostridium botulinum_)
-<glossaire-botulisme>
-A life-threatening neuroparalytic foodborne intoxication caused by botulinum neurotoxins secreted by the obligate anaerobic spore-forming soil bacterium *Clostridium botulinum*. Its bacterial endospores withstand standard atmospheric boiling at 100°C (212°F). Their destruction demands sustained pressurized heating at 121°C (250°F) for at least 20 minutes in home canning, or an acidic food environment below pH 4.6, which permanently blocks spore germination.
+A lethal neurotoxic foodborne intoxication caused by ingestion of botulinum neurotoxin produced by the obligate anaerobic, spore-forming bacterium *Clostridium botulinum*. Its spores survive ordinary boiling at 100°C (212°F) and germinate in oxygen-deprived environments (oil preserves, canned vegetables, vacuum bags) where pH exceeds 4.6. Spores are destroyed only by pressurized autoclaving at 121°C (250°F) for 30 minutes, or the active neurotoxin is denatured by boiling above 85°C (185°F) for 10 minutes.
 
 === Volumetric Heat Capacity
-<glossaire-capacite-thermique>
-The amount of thermal energy required to raise the temperature of a unit volume of a given material by one degree Kelvin ($upright("J") / (upright("m")^3 dot upright("K"))$). Raw cast iron and liquid water boast exceptionally high volumetric heat capacities, enabling them to act as thermal energy reservoirs that buffer against sudden temperature drops when cold food contacts the pan.
+The amount of thermal energy required to raise the temperature of $1 upright(" m")^3$ of a substance by $1^compose upright("C")$ ($upright("J")/(upright("m")^3 dot upright("K"))$). Pure water possesses an exceptionally high volumetric heat capacity ($4.18 upright(" MJ")/(upright("m")^3 dot upright("K"))$), making broths and water baths immense thermal buffers. In contrast, dry air possesses a minuscule heat capacity ($0.0012 upright(" MJ")/(upright("m")^3 dot upright("K"))$), explaining why human skin can endure 100°C dry sauna air without scorching, but is instantly scalded by 100°C liquid water.
 
 === Casein
-<glossaire-caseine>
-The principal phosphoprotein family of mammalian milk (representing 80% of total bovine milk protein). Caseins assemble into spherical colloidal micelles stabilized by an outward-facing brush of negatively charged hydrophilic $kappa$-casein hairs. Neutralizing these electric charges with acid (pH 4.6) or shearing the $kappa$-hairs with chymosin enzymes (rennet) triggers spontaneous micellar aggregation into curd.
+The principal family of phosphoproteins representing 80% of total milk proteins. Grouped into sub-micellar spherical clusters held together by colloidal calcium phosphate. The protruding hydrophobic and negatively charged hairy layer of $kappa$-casein prevents micelle aggregation. When milk pH drops to 4.6 (acid curdling) or when chymosin cleaves $kappa$-casein (rennet curdling), electrostatic repulsion vanishes and caseins aggregate into curd.
 
 === Coalescence
-<glossaire-coalescence>
-The spontaneous thermodynamic phenomenon wherein two or more suspended droplets of an immiscible dispersed phase (such as oil droplets suspended in water) collide and merge into a single larger droplet, minimizing total interfacial surface energy. Left unchecked, coalescence leads to complete phase separation ("broken" mayonnaise or hollandaise). Surfactants prevent coalescence by forming repulsive interfacial barriers.
+The spontaneous thermodynamic collapse and fusion of two or more dispersed emulsion droplets (such as oil droplets in water) into a single larger droplet, driven by the drive to minimize interfacial free surface energy. If unchecked by surface-active emulsifiers (lecithin, proteins), continuous coalescence causes full phase separation (a broken mayonnaise or hollandaise).
 
 === Collagen & Gelatin
-<glossaire-collagene>
-A structural triple-helix fibrous protein that forms the connective tissue sheath (epimysium, perimysium, endomysium) binding animal muscle bundles. Insoluble in cold water, collagen slowly hydrolyzes in hot simmering liquid above 68°C to 74°C (154°F to 165°F), breaking down into soluble gelatin peptides that impart luxurious viscosity, unctuous mouthfeel, and glossy body to braises and broths.
+Collagen is the primary structural protein of connective tissue (tendons, epimysium, skin, bones), composed of an insoluble, tightly wound triple-helix of tropocollagen fibers rich in glycine, proline, and hydroxyproline. Between 68°C and 80°C (154°F - 176°F), heat and water disrupt hydrogen bonds, unraveling the triple-helix into water-soluble, succulent #strong[gelatin], which dissolves into cooking broths and sets into a wobble gel upon cooling below 15°C (59°F).
 
-=== Heat Transfer: Conduction, Convection, Radiation
-<glossaire-transfert-thermique>
-The three foundational modes of thermodynamic energy transfer in cooking:
-- *Conduction:* Atom-to-atom vibrational energy transfer through solid matter (direct physical contact between skillet and steak; governed by Fourier's law).
-- *Convection:* Energy transfer via the macroscopic circulation of a heated fluid medium, such as water, oil, or air (Newton's cooling/heating law).
-- *Radiation:* Energy transfer via infrared electromagnetic waves emitted by heated surfaces without physical contact (glowing embers, broiler filaments; governed by the Stefan-Boltzmann fourth-power law, $E prop T^4$).
+=== Conduction, Convection, Radiation
+The 3 fundamental modes of thermodynamic heat transfer in the kitchen:
+- #strong[Conduction:] Kinetic energy transfer through direct molecular contact (pan base touching a steak), governed by Fourier's law. Diffusion time scales quadratically with thickness ($t prop x^2$).
+- #strong[Convection:] Macroscopic fluid transport of heat via liquid or gas currents (simmering stock, forced-air convection oven).
+- #strong[Radiation:] Electromagnetic emission of infrared photons, scaling with absolute temperature to the fourth power according to the Stefan-Boltzmann law ($E prop T^4$). Found in glowing charcoal grills and overhead broilers.
 
 === Denaturation
-<glossaire-denaturation>
-The irreversible structural unfolding of a protein's delicate secondary, tertiary, and quaternary conformations caused by thermal agitation, acidic protonation, ionic salinity, or mechanical shear, without breaking primary peptide bonds. Once unfolded, exposed hydrophobic amino acid side-chains spontaneously cross-link with neighboring molecules, transforming liquid dispersions into solid coagulated gels.
+The structural unraveling of a protein's native three-dimensional conformation (quaternary, tertiary, secondary structures) caused by thermal energy, mechanical shearing, high salinity, or acidic pH, without cleaving primary covalent peptide bonds. Once unraveled, exposed hydrophobic amino acid side-chains cross-link with neighboring chains to form a rigid or tender cohesive protein gel (coagulation).
 
 === Leidenfrost Effect
-<glossaire-leidenfrost>
-A physical thermal phenomenon occurring when a liquid droplet touches a metal surface heated significantly beyond the liquid's boiling point (approximately 190°C / 374°F for water on stainless steel). The bottom surface of the droplet vaporizes instantly, generating a micro-cushion of insulating steam upon which the droplet skates frictionlessly. In culinary practice, it serves as the definitive empirical benchmark to verify a pan is hot enough to sear without sticking.
+A physical phenomenon occurring when a liquid droplet comes into contact with a solid surface heated significantly above the liquid's boiling point ($> 190^compose upright("C")$ for water). The droplet's bottom vaporizes instantaneously, creating a micro-layer of insulating steam ($0.1 upright(" mm")$) that suspends the droplet and prevents direct conduction. In cooking, water droplets skittering cleanly across a pan confirm that the steel has reached the optimal Maillard searing zone.
 
 === Emulsion
-<glossaire-emulsion>
-A metastable colloidal dispersion of two mutually immiscible liquids (typically oil and water), where one phase is fragmented into billions of microscopic droplets (dispersed phase) suspended within the other (continuous phase), stabilized against coalescence by amphiphilic surfactants. Examples include cold oil-in-water emulsions (mayonnaise, vinaigrette), warm emulsions (hollandaise, béarnaise), and water-in-oil matrices (butter).
+A thermodynamically unstable colloidal dispersion of two immiscible liquid phases, where one liquid is broken into microscopic droplets (dispersed phase) throughout the volume of the other (continuous phase). Examples include oil-in-water emulsions (mayonnaise, milk, hollandaise, vinaigrette) and water-in-oil emulsions (butter). Stability requires an amphiphilic surfactant.
 
 === Starch Gelatinization
-<glossaire-gelatinisation>
-The irreversible swelling, hydration, and structural collapse of semi-crystalline starch granules heated in aqueous media past 60°C to 75°C (140°F to 167°F). Intermolecular hydrogen bonds break, allowing amylose and amylopectin chains to untangle and hydrate, turning thin liquids into thick, viscous colloidal binding sauces.
+The irreversible swelling, hydration, and disruption of semicrystalline starch granules placed in excess water above 60°C - 70°C (140°F - 158°F). Water penetrates the amorphous regions of the granule, hydrogen bonds with hydroxyl groups, and causes amylose chains to leach out into the continuous liquid phase, resulting in a thick, velvety viscous sauce.
 
 === Lecithin (Phosphatidylcholine)
-<glossaire-lecithine>
-A natural phospholipid surfactant abundant in egg yolks and sunflower seeds. The molecule possesses a dual nature: a polar, hydrophilic (water-loving) phosphate head and two long non-polar, lipophilic (fat-loving) hydrocarbon fatty acid tails. By orienting itself at oil-water interfaces, lecithin forms a dense electro-steric shield that prevents suspended oil droplets from coalescing.
+An amphiphilic phospholipid naturally abundant in egg yolks, soybeans, and sunflower seeds. Features a hydrophilic (water-loving) polar head containing a negatively charged phosphate group and positively charged choline, attached to two long hydrophobic (fat-loving) fatty acid hydrocarbon tails. Forms micellar monolayers around oil droplets, preventing coalescence and stabilizing oil-in-water emulsions.
 
 === Lysozyme
-<glossaire-lysozyme>
-A protective antibacterial enzyme naturally present in egg whites and tears. It enzymatically hydrolyzes the beta-(1,4)-glycosidic bonds between N-acetylmuramic acid and N-acetylglucosamine in the peptidoglycan cell walls of Gram-positive bacteria, acting as a biological preservation barrier to protect the developing avian embryo.
+A 14.3 kDa antibacterial enzyme naturally present in egg whites (3.5% of total protein) and human tears. Hydrolyzes the $beta$-(1,4)-glycosidic bonds between N-acetylmuramic acid and N-acetylglucosamine in the peptidoglycan cell walls of Gram-positive bacteria, protecting the embryonic yolk from bacterial invasion during incubation.
 
 === Osmosis
-<glossaire-osmose>
-The spontaneous net migration of solvent molecules (water) across a semipermeable membrane from a region of low solute concentration (hypotonic) toward a region of high solute concentration (hypertonic) until thermodynamic equilibrium is attained. In the kitchen, osmosis governs meat dry-brining, ceviche tissue curing, lacto-fermentation brine draw, and sugar fruit maceration.
+The spontaneous net migration of water molecules across a semipermeable membrane from a region of lower solute concentration (hypotonic) toward a region of higher solute concentration (hypertonic), driven by the gradient in chemical potential. In culinary practice, salting draws intracellular moisture to the surface of aubergines and raw meats, while dense sugar brines pull liquid out of fruit cells during maceration.
 
 === Pectin
-<glossaire-pectine>
-A complex structural heteropolysaccharide polymer embedded within the primary cell walls and middle lamella of fruits (notably apples, quinces, and citrus peel). In the presence of high sucrose concentrations (> 60%) and an acidic environment (pH 2.8 to 3.4), carboxyl groups lose their negative charge, allowing neighboring pectin chains to intertwine into a rigid, transparent jelly network.
+A structural heteropolysaccharide found in the primary cell walls and middle lamella of fruits and terrestrial plants, rich in alpha-(1,4)-linked D-galacturonic acid units. In acidic media ($upright("pH") < 3.5$) and in the presence of concentrated sucrose ($> 60 %$), electrostatic carboxyl charges are neutralized and water is bound, allowing pectin chains to cross-link into a solid three-dimensional jam jelly.
 
 === Smoke Point
-<glossaire-point-fumee>
-The precise temperature at which a cooking lipid begins continuous thermal decomposition, emitting an acrid, bluish smoke visible to the naked eye. This indicates the breakdown of triglycerides into free fatty acids and glycerol, which further dehydrates into toxic, eye-irritating acrolein and polycyclic aromatic hydrocarbons (PAHs). It marks the absolute safety ceiling for any culinary fat.
+The exact temperature at which a heated culinary fat or oil begins to break down into visible bluish smoke, pungent volatile acrolein, and free fatty acids. Operating a fat beyond its smoke point denatures its flavor, degrades antioxidants, and generates carcinogenic polycyclic aromatic hydrocarbons (PAHs).
 
 === Protein
-<glossaire-proteine>
-A complex biological macromolecule assembled from long chains of amino acids connected by peptide bonds and folded into precise three-dimensional conformations. Proteins provide structural architecture to animal muscle fibers, enzymatic machinery to fruits, coagulation matrices to eggs, elastic networks to bread doughs (gluten), and colloidal foaming stabilization to meringues.
+A complex biological macromolecule assembled from linear chains of amino acids linked by covalent peptide bonds, folded into a unique three-dimensional conformation determined by hydrogen bonds, ionic salt bridges, disulfide bonds, and hydrophobic interactions. Denaturation and structural cross-linking of food proteins dictate the texture of roasted meats, set eggs, and curdled cheeses.
 
 === Maillard Reaction
-<glossaire-maillard>
-A complex, non-enzymatic chemical cascade occurring between the carbonyl group of reducing sugars (glucose, fructose, maltose) and the nucleophilic amino group of free amino acids, peptides, or proteins, initiating vigorously above 140°C (284°F) in low-moisture environments. It produces hundreds of volatile aroma compounds (pyrazines, furans, thiazoles) and brown polymeric pigments (melanoidins), creating the quintessential savory flavors of seared meats, toasted coffee, and golden bread crusts.
+A non-enzymatic cascade of chemical condensations between the carbonyl group of a reducing sugar and the free nucleophilic amino group of an amino acid or protein, initiated between 140°C and 165°C (284°F - 329°F). Produces glycosylamines, Amadori rearrangement intermediates, and ultimately hundreds of volatile aroma compounds (alkylpyrazines, furans, thiols) accompanied by high-molecular-weight brown pigments called #strong[melanoidins].
 
-=== Hervé This & Nicholas Kurti
-<glossaire-this>
-The British-Hungarian physicist Nicholas Kurti (1908–1998) and French physical chemist Hervé This (INRAE) who co-founded the academic discipline of Molecular and Physical Gastronomy in 1988. Their experimental investigations demystified empirical kitchen folklore, codified fractional egg cooking at 64°C, and established physical models for sauces, mousses, and culinary gels.
+=== This (Hervé) & Kurti (Nicholas)
+Co-founders of Molecular and Physical Gastronomy in 1988 at Oxford and Paris. Nicholas Kurti (1908–1998), Oxford cryophysicist, and Hervé This (born 1955), physical chemist at AgroParisTech/INRAE, introduced scientific rigor, precision temperature measurement, and chemical deconstruction to classical culinary folklore.
 
 === Umami
-<glossaire-umami>
-The fifth basic taste modality, identified scientifically in 1908 by Japanese chemist Kikunae Ikeda. It is triggered by the binding of free L-glutamate amino acids and 5'-ribonucleotides (inosinate, guanylate) to heterodimeric T1R1+T1R3 taste receptors on the tongue. Umami delivers a prolonged, savory, mouth-coating sensation of deliciousness abundant in aged cheeses (Parmigiano), cured meats, sun-dried tomatoes, roasted mushrooms, and reduced bone broths.
+The fifth basic human taste modality, identified in 1908 by Japanese chemist Kikunae Ikeda. Triggered primarily by the presence of free monosodium L-glutamate (MSG) and synergistically magnified tenfold by purine ribonucleotides (disodium 5'-inosinate and 5'-guanylate). Found in cured ham, aged Parmesan cheese, ripe tomatoes, dried shiitake mushrooms, kombu kelp, and slowly reduced meat glazes.
+
+#divider()
+
+// =========================================================================
+// APPENDIX C: EVALUATED BIBLIOGRAPHY
+// =========================================================================
 
 = APPENDIX C --- Critical & Evaluated Bibliography
-<appendix-c-critical-and-evaluated-bibliography>
-
+<annexe-c-bibliographie-raisonnée-et-répertoire-critique>
 #quote(block: true)[
-"The discovery of a new dish does more for human happiness than the discovery of a new star." \ --- Jean Anthelme Brillat-Savarin, #emph[The Physiology of Taste] (1825)
+"The discovery of a new dish confers more happiness on humanity than the discovery of a new star." \ --- Jean Anthelme Brillat-Savarin, #emph[Physiology of Taste] (1825)
 ]
 
 #divider()
 
 == 1. FOUNDATIONAL, HERITAGE & HISTORICAL TREATISES
-<foundational-heritage-and-historical-treatises>
+<traités-fondamentaux-patrimoniaux-et-historiques>
+- #strong[Marcus Gavius Apicius] --- #emph[De re coquinaria] (1st - 4th century AD). \ #emph[Critical Latin-English edition established and translated by J. André / C. Grocock & S. Grainger.] \ #emph[Critical Notice:] #strong[[Foundational Historical Treatise]] \ The founding written corpus of Imperial Roman dining. Documents the mastery of enzymatic autolysis through *garum* (the Roman predecessor to Southeast Asian fish sauce), food preservation through raw honey and vinegars, and heavy peppery seasoning anticipating modern umami.
 
-- #strong[Marcus Gavius Apicius] --- #emph[De re coquinaria] (1st–4th Century AD). \
-  #emph[Critical Latin-French/English edition translated and edited by Jacques André / Barbara Flower & Elisabeth Rosenbaum.] \
-  #emph[Critical Rating:] #strong[\[Foundational Historical Treatise\]] \
-  The principal surviving culinary canon of Imperial Rome. Documents the widespread use of enzymatic proteolysis through fermented fish sauce (*garum*, the Roman ancestor of modern Southeast Asian fish sauce), food preservation through honey and vinegar, and heavy spicing designed to evoke rich umami before the discovery of glutamate.
+- #strong[Guillaume Tirel dit Taillevent] --- #emph[Le Viandier] (c. 1380). \ #emph[Master reference edition based on the Bibliothèque Nationale de France manuscript.] \ #emph[Critical Notice:] #strong[[Foundational Historical Treatise]] \ The zenith of European medieval court cuisine. Codifies two-stage thermal cooking (initial water poaching followed by coal spit-roasting) and vibrant, fat-free sauces thickened with soaked stale bread and sharpened with tart grape verjuice.
 
-- #strong[Guillaume Tirel dit Taillevent] --- #emph[Le Viandier] (c. 1380). \
-  #emph[Reference critical edition from Bibliothèque nationale de France manuscripts.] \
-  #emph[Critical Rating:] #strong[\[Foundational Historical Treatise\]] \
-  The high watermark of medieval European noble gastronomy. Teaches multi-stage composite cooking methods (initial parboiling followed by open-hearth spit-roasting) and vibrant, fat-free sauces thickened with soaked stale bread crumbs and sharpened with acidic green grape verjuice (*verjus*).
+- #strong[Anonymous Bourgeois Parisian] --- #emph[Le Ménagier de Paris] (1393). \ #emph[Critical Notice:] #strong[[Domestic Kitchen Autonomy & Pantry Storage]] \ A remarkable medieval household guide written by an elder merchant for his young wife. Provides comprehensive instructions for running a home pantry, salt-curing whole meats, clarifying spoiled wines, and stocking food long before artificial refrigeration.
 
-- #strong[Anonymous Bourgeois of Paris] --- #emph[Le Ménagier de Paris] (1393). \
-  #emph[Critical Rating:] #strong[\[Domestic Kitchen Autonomy & Household Management\]] \
-  A remarkable 14th-century bourgeois household guide. An essential treatise on home autonomy, detailing meat curing, cellar preservation, wine clarification, and household food storage centuries before the advent of mechanical refrigeration.
+- #strong[Bartolomeo Scappi] --- #emph[Opera dell'arte del cucinare] (Venice, 1570). \ #emph[Critical Notice:] #strong[[Pioneer of Kitchen Knife Biomechanics & Arsenal Minimalism]] \ Private chef to Renaissance Popes Pius IV and Pius V in Rome. The first culinary treatise extensively illustrated with copperplate engravings of chef's knives, turnspits, and copper pots. Codified the double-boiler (*bain-marie*) for yolk-thickened sauces and distinguished cuts by muscle grain.
 
-- #strong[Bartolomeo Scappi] --- #emph[Opera dell'arte del cucinare] (Venice, 1570). \
-  #emph[Critical Rating:] #strong[\[Pioneer of Instrumental Minimalism & Kitchen Ergonomics\]] \
-  Private chef to Renaissance popes in the Vatican. The first culinary treatise illustrated with detailed copperplates of kitchen architecture, cutting tables, copper vessels, and specialized knives. Formalized the rational use of the double boiler (*bagnomaria*) and morphological meat butchery.
+- #strong[François Pierre de La Varenne] --- #emph[Le Cuisinier François] (1651). \ #emph[Critical Notice:] #strong[[The Birth of Classical French Cooking]] \ The decisive historical break from heavy medieval spices in favor of fresh sweet dairy butter, native aromatic herbs (tarragon, chervil, bay leaf), and the revolutionary invention of flour roux to thicken gravies.
 
-- #strong[François Pierre de La Varenne] --- #emph[Le Cuisinier François] (1651). \
-  #emph[Critical Rating:] #strong[\[The Birth Certificate of Classical French Cuisine\]] \
-  The definitive break with medieval exotic spice combinations in favor of fresh cultured butter, native aromatics (tarragon, chervil, bay leaf), and the foundational invention of the flour-and-butter roux to bind sauces and nappes.
+- #strong[Jean Anthelme Brillat-Savarin] --- #emph[The Physiology of Taste, or Meditations on Transcendental Gastronomy] (1825). \ #emph[Critical Notice:] #strong[[The Master Philosophical & Sensory Reference]] \ The most witty, profound, and lyrical volume ever written on the act of human eating. A pioneering exploration of oral physiology, retro-nasal olfaction, the thermodynamics of frying oil, and the social philosophy of the meal.
 
-- #strong[Jean Anthelme Brillat-Savarin] --- #emph[The Physiology of Taste, or Meditations on Transcendental Gastronomy] (1825). \
-  #emph[Critical Rating:] #strong[\[The Philosophical & Sensory Reference\]] \
-  The most witty, erudite, and profound meditation ever penned on the human act of eating. A brilliant precursor to sensory neurobiology, retronasal olfaction, the mechanics of thirst, and the thermodynamics of hot frying oil.
+- #strong[Auguste Escoffier] --- #emph[Le Guide Culinaire] (1903, with Philéas Gilbert and Émile Fétu). \ #emph[Critical Notice:] #strong[[The Bible of Kitchen Codification & Brigade Order]] \ The definitive legislative architecture of classical French cuisine. Established the military precision of the kitchen brigade, codified the five mother sauces (Espagnole, Velouté, Béchamel, Tomate, Hollandaise), and distilled culinary technique to pure essentials.
 
-- #strong[Auguste Escoffier] --- #emph[Le Guide Culinaire] (1903, with Philéas Gilbert and Émile Fétu). \
-  #emph[Critical Rating:] #strong[\[The Definitive Bible of Culinary Codification\]] \
-  The absolute legislative baseline of modern professional cuisine. Established the military brigade hierarchy, codified the five mother sauces (Espagnole, Velouté, Béchamel, Tomate, Hollandaise), and pruned away 19th-century superfluous architectural garnish in favor of speed and pure essence.
-
-- #strong[Editorial Collective Domus] --- #emph[The Silver Spoon] (*Il Cucchiaio d'Argento*, Editoriale Domus, Milan, 1950 / Phaidon Press). \
-  #emph[Critical Rating:] #strong[\[Universal Classic of Authentic Family Cooking\]] \
-  The definitive treasure of Italian domestic culinary culture. Transmits the dignity of humble kitchen gestures, fresh pasta dough mechanics, skillet heat mastery, and the unadorned truth of seasonal raw materials.
+- #strong[Domus Editorial Collective] --- #emph[The Silver Spoon] (#emph[Il Cucchiaio d'Argento], Editoriale Domus, Milan, 1950; Phaidon). \ #emph[Critical Notice:] #strong[[Universal Classic of Italian Domestic Cooking]] \ The timeless treasure of Italian home kitchens. Teaches the nobility of humble gestures, the art of hand-rolled egg pasta, pan-searing truth, and the raw beauty of unadorned seasonal produce.
 
 #divider()
 
 == 2. EVOLUTIONARY ANTHROPOLOGY & NUTRITIONAL BIOLOGY
-<evolutionary-anthropology-and-nutritional-biology>
+<anthropologie-évolutive-et-biologie-de-la-nutrition>
+- #strong[Richard Wrangham] --- #emph[Catching Fire: How Cooking Made Us Human] (Basic Books). \ #emph[Critical Notice:] #strong[[Revolutionary Anthropological Treatise]] \ Proves that the thermal mastery of fire preceded and drove the speciation of *Homo sapiens*: externalizing digestion through cooking drastically reduced the energy cost of the gut, freeing metabolic calories to fuel the tripling of human brain volume.
 
-- #strong[Richard Wrangham] --- #emph[Catching Fire: How Cooking Made Us Human] (Basic Books, 2009). \
-  #emph[Critical Rating:] #strong[\[Revolutionary Anthropology Landmark\]] \
-  Demonstrates scientifically that cooking by fire was not merely a cultural invention, but the biological catalyst that created *Homo sapiens*. Thermal externalization of digestion shrank the human gut by 60% and freed metabolic caloric energy to triple human brain volume.
-
-- #strong[Claude Lévi-Strauss] --- #emph[The Raw and the Cooked] (*Mythologiques*, Vol. 1, Plon, 1964). \
-  #emph[Critical Rating:] #strong[\[Structural Human Thinking Through Cuisine\]] \
-  The seminal anthropological formulation of the universal Culinary Triangle (the raw, the cooked, the rotted). Analyzes how food preparation serves as the foundational boundary between raw nature and human culture.
+- #strong[Claude Lévi-Strauss] --- #emph[The Raw and the Cooked] (#emph[Mythologiques], Vol. 1, Plon / University of Chicago Press, 1964). \ #emph[Critical Notice:] #strong[[Structural Anthropology of Human Diet]] \ The profound structural analysis of the universal culinary triangle (the Raw, the Cooked, and the Rotted). Illuminates how passing food through the domestic hearth transforms raw biology into human culture, kinship, and civilization.
 
 #divider()
 
 == 3. MOLECULAR GASTRONOMY & KITCHEN SCIENCE
-<molecular-gastronomy-and-kitchen-science>
+<gastronomie-moléculaire-et-science-de-la-casserole>
+- #strong[Harold McGee] --- #emph[On Food and Cooking: The Science and Lore of the Kitchen] (Scribner). \ #emph[Critical Notice:] #strong[[The Indispensable Global Scientific Masterwork]] \ The exhaustive bedside encyclopedia of modern chefs. Deconstructs atom by atom the physics and chemistry of emulsions, foams, animal myofibrillar proteins, plant cell walls, and fermentation dynamics.
 
-- #strong[Harold McGee] --- #emph[On Food and Cooking: The Science and Lore of the Kitchen] (Scribner, 1984; revised 2004). \
-  #emph[Critical Rating:] #strong[\[The Incontestable Global Reference\]] \
-  The ultimate scientific bedside bible for every thinking chef on Earth. Deconstructs molecule by molecule the physics of emulsions, meat roasting, bread baking, plant cellular turgor, and taste chemistry.
+- #strong[Nicholas Kurti & Hervé This] --- #emph[Les Secrets de la casserole] (Belin, 1993); #emph[Molecular Gastronomy: Exploring the Science of Flavor] (Columbia University Press, 2006). \ #emph[Critical Notice:] #strong[[Founding Molecular Gastronomy Corpus]] \ The originators of the discipline in 1988. Rigorous experimental deconstruction of grandmotherly culinary myths, discovery of fractional 64°C egg coagulation, and structural modeling of sauce emulsions.
 
-- #strong[Nicholas Kurti & Hervé This] --- #emph[Kitchen Mysteries: Revealing the Science of Cooking] (Columbia University Press) \
-  #emph[Critical Rating:] #strong[\[Original Molecular Gastronomy Foundations\]] \
-  The inventors of molecular and physical gastronomy in 1988. Rigorous laboratory deconstruction of grandmotherly kitchen myths, experimental discovery of precise 64°C egg coagulation, and the colloidal physics of mother sauces.
+- #strong[Heston Blumenthal] --- #emph[The Fat Duck Cookbook] (Bloomsbury); #emph[In Search of Perfection] (Bloomsbury). \ #emph[Critical Notice:] #strong[[Three-Star Sensory Excellence via Pure Scientific Method]] \ Relentless pursuit of aromatic volatile extraction (potato peel infusion for mashed potatoes), triple-cooked french fries, and multi-sensory flavor perception.
 
-- #strong[Heston Blumenthal] --- #emph[The Fat Duck Cookbook] (Bloomsbury) / #emph[In Search of Perfection] (Bloomsbury). \
-  #emph[Critical Rating:] #strong[\[Sensory Excellence Through Experimental Method\]] \
-  Relentless culinary experimentation: potato peel milk infusions to capture volatile pyrazines, triple-cooked chips, and the neurosensory integration of sound, aroma, and memory in fine dining.
+- #strong[Nathan Myhrvold, Chris Young & Maxime Bilet] --- #emph[Modernist Cuisine: The Art and Science of Cooking] (The Cooking Lab, 6 volumes). \ #emph[Critical Notice:] #strong[[The Monumental Technical Compendium of the 21st Century]] \ Cutaway macro-photography of vessels inside living fire, ultra-precision thermodynamics, rotary evaporation, and industrial hydrocolloids applied to culinary creativity.
 
-- #strong[Nathan Myhrvold, Chris Young & Maxime Bilet] --- #emph[Modernist Cuisine: The Art and Science of Cooking] (The Cooking Lab, 6 volumes, 2011). \
-  #emph[Critical Rating:] #strong[\[The 21st-Century Technical Monument\]] \
-  Revolutionary cutaway macro-photography of cookware in flames, ultracentrifuges, hydrocolloids, and millimetric thermal modeling that redefined cooking as pure physics.
+- #strong[J. Kenji López-Alt] --- #emph[The Food Lab: Better Home Cooking Through Science] (W. W. Norton). \ #emph[Critical Notice:] #strong[[The Best Contemporary Practical Kitchen Manual]] \ Brilliant application of the empirical experimental method to everyday home cooking: 45-minute advance dry brining of steaks, heavy cast-iron searing physics, and the ultimate smashed burger.
 
-- #strong[J. Kenji López-Alt] --- #emph[The Food Lab: Better Home Cooking Through Science] (W. W. Norton, 2015). \
-  #emph[Critical Rating:] #strong[\[The Best Practical Contemporary Manual\]] \
-  Brilliant application of scientific method to daily home cooking: the 45-minute dry-salting rule, smash burgers, reverse searing, and cast-iron skillet maintenance.
+- #strong[Samin Nosrat] --- #emph[Salt, Fat, Acid, Heat: Mastering the Elements of Good Cooking] (Simon & Schuster). \ #emph[Critical Notice:] #strong[[Global Best-Selling Intuitive Primer]] \ Luminous and universal synthesis of the 4 foundational pillars of cooking, enabling home cooks to season instinctively without being held captive by recipes.
 
-- #strong[Samin Nosrat] --- #emph[Salt, Fat, Acid, Heat: Mastering the Elements of Good Cooking] (Simon & Schuster, 2017). \
-  #emph[Critical Rating:] #strong[\[Global Best-Selling Didactic Synthesis\]] \
-  An intuitive, elegant synthesis deconstructing kitchen competence into four universal pillars, freeing the home cook forever from rigid recipe subservience.
+#divider()
 
-= APPENDIX D --- Buyer's Guide, Energy Costs & Cooking Time Dial
-<appendix-d-buyers-guide-energy-costs-and-cooking-time-dial>
+// =========================================================================
+// APPENDIX D: BUYER'S GUIDE, POWER & COOKING TIMES
+// =========================================================================
 
+= APPENDIX D --- Buyer's Guide to the Minimal Arsenal, Energy Costs & Cooking Time Dial
+<annexe-d-guide-dachat-de-larsenal-minimal-coûts-et-durées>
 #quote(block: true)[
-"Give me a ten-inch bare cast-iron skillet, a keen carbon steel knife, and a heavy end-grain board, and I will feed an army with the dignity of a prince."
+"A true cook needs few tools, but requires those tools to be indestructible, thermodynamically dense, and balanced in the hand."
 ]
 
 #divider()
 
 == 1. THE PRACTITIONER'S MINIMAL ARSENAL: BUYER'S GUIDE & QUALITY DETECTION
-<the-practitioners-minimal-arsenal-buyers-guide-and-quality-detection>
-Modern culinary marketing pushes consumers toward accumulating fragile, monofunctional electric appliances and cheap disposable cookware. Authentic professional cooking relies instead on #strong[eight indestructible, universal instruments], which can be purchased new or hunted secondhand at estate sales for a fraction of their retail price:
+<larsenal-minimal-du-praticien-guide-dachat-détection-du-bon-matériel>
+
+Selecting kitchen tools is an investment for life. A poor pan warps under heat, creates scorching hotspots, and wastes energy; an authentic instrument improves with age:
 
 #figure(
   align(center)[#table(
     stroke: 0.5pt + rgb("#dcd6ca"),
     fill: (x, y) => if y == 0 { rgb("#f2ece1") } else if calc.odd(y) { rgb("#faf7f2") } else { none },
-    inset: 7pt,
-    columns: (18%, 20%, 22%, 22%, 18%),
-    align: (left, left, left, left, center),
-    table.header([Foundational Tool], [Required Physical Specs], [What to Look For (The Right Choice)], [Red Flags to Avoid], [Estimated Cost (Used / New)]),
+    inset: 8pt,
+    columns: (22%, 22%, 28%, 28%),
+    align: (left, left, left, left),
+    table.header([Instrument], [Recommended Material], [Physical Hallmark of Quality], [Pitfalls to Reject]),
     table.hline(),
-    [#strong[Chef's Knife (8-inch / 20 cm)]],
-    [High-carbon stainless steel ($upright("X50CrMoV15")$) or Japanese carbon steel; full through-tang with three solid compression rivets.],
-    [Neutral balance point right at the bolster/heel; forged single-piece blade; even razor edge ($15° upright(" to ") 20°$ angle).],
-    [Hollow welded plastic handles, stamped serrated utility blades, fragile ceramic knives that chip on the first bone.],
-    [\$25 to \$70 \ (Used: \$15 to \$35)],
-
-    [#strong[End-Grain Cutting Board]],
-    [Hardwood end-grain (hornbeam, rock maple, beech, or solid bamboo); minimum thickness $1.5 upright(" to ") 2 upright(" in")$ ($3.5 upright(" to ") 5 upright(" cm")$); weight $> 5 upright(" lb")$ ($> 2.3 upright(" kg")$).],
-    [High mass stability; self-healing vertical wood fibers that cushion knife strikes without rolling the cutting edge.],
-    [Thin, flexible plastic mats that slip dangerously on wet counters; glass or marble slabs (destroy razor edges in 3 strokes).],
-    [\$20 to \$55 \ (Used: \$10 to \$25)],
-
-    [#strong[Raw Cast-Iron Skillet (10-inch / 26 cm)]],
-    [Heavy unenameled grey cast iron; wall thickness $0.18 upright(" to ") 0.20 upright(" in")$ ($4.5 upright(" to ") 5 upright(" mm")$); mass approx. $5.5 upright(" lb")$ ($2.5 upright(" kg")$).],
-    [Colossal thermal mass reservoir; natural hydrophobic polymer non-stick seasoning built with oil and heat.],
-    [Flimsy thin aluminum pans with PTFE (Teflon) coatings that degrade and off-gas fluorinated vapors at $500°F$ ($260°C$).],
-    [\$20 to \$45 \ (Used / flea market: \$10 to \$20)],
-
-    [#strong[Tri-Ply Stainless Sauté Pan (9.5-in / 24 cm with Lid)]],
-    [18/10 stainless interior with heavy aluminum or copper core extending up the sides (3-ply or 5-ply cladding).],
-    [Absolute chemical neutrality (tolerates white wine, vinegar, tomato acids); even conduction; tall vertical walls.],
-    [Cheap impact-bonded disc-bottom pans (aluminum disc only on the bottom) that separate under thermal shock.],
-    [\$35 to \$90 \ (Used: \$20 to \$40)],
-
-    [#strong[Heavy Stainless Saucepan (2-Quart / 2 L with Lid)]],
-    [Heavy-gauge stainless steel (minimum $1.2 upright(" mm")$ wall thickness); riveted stay-cool handle; internal etched markings.],
-    [Heavy tight-fitting stainless lid without glass seams (which trap dishwater grease and rancid fats).],
-    [Flimsy thin-bottom pots that scorch sauces in the center; loose screw-on phenolic plastic handles.],
-    [\$25 to \$55 \ (Used: \$12 to \$25)],
-
-    [#strong[Stainless Mixing Bowl / Cul-de-Poule (9.5-in)]],
-    [Heavy-gauge 18/10 stainless steel with a seamless, spherical rounded bottom and zero dead angles.],
-    [Hemispherical shape allows whisk wires to sweep every millimeter without stalling; ideal for double-boiler sabayons.],
-    [Flat-bottomed metal bowls with angular seams, or plastic bowls that absorb rancid grease and scratch under whisks.],
-    [\$12 to \$25 \ (Used: \$6 to \$12)],
-
-    [#strong[Seamless Silicone Spatula (Maryse)]],
-    [One-piece molded platinum silicone head rated to withstand $480°F$ ($250°C$) without flexing or melting.],
-    [Flexible beveled tip scrapes bowls and pans cleanly with zero waste; hygienic one-piece construction.],
-    [Two-piece spatulas with glued heads or stiff rubber blades on wood dowels (trap black mold inside the socket).],
-    [\$6 to \$14],
-
-    [#strong[Instant-Read Digital Probe Thermometer]],
-    [Digital thermocouple sensor with ultra-fast reading response $< 3 upright(" s")$ and precision $\pm 0.9°F$ ($\pm 0.5°C$).],
-    [Recalibratable, water-resistant, wide measurement range from $-58°F$ to $+572°F$ ($-50°C$ to $+300°C$).],
-    [Slow analog bimetallic dial thermometers (30-second latency—fatal when shooting for 180°F (82°C) custard).],
-    [\$18 to \$40]
+    [#strong[1. Chef's Knife (20 cm / 8 in)]], [High-carbon steel or AUS-10 / VG-10 stainless], [Full-tang blade forged from a single billet; neutral balance point right at bolster.], [Welded bolster, thin stamped sheet metal, hollow plastic handle.],
+    [#strong[2. Cast-Iron Skillet (26 cm / 10 in)]], [Raw cast iron or heavy carbon steel (2.5 - 3 mm)], [Heavy weight ($> 2 upright(" kg")$ / 4.4 lb), thick thermal bottom for immense heat retention.], [Thin non-stick coatings (PTFE) that blister and degrade above 200°C (392°F).],
+    [#strong[3. Dutch Oven (5.5 L / 6 qt)]], [Heavy enameled cast iron], [Dense tight-fitting lid with moisture-recirculating interior spikes; thick flat base.], [Lightweight stamped aluminum, plastic lid knobs that melt in hot ovens.],
+    [#strong[4. Stainless Sauté Pan (24 cm)]], [Tri-ply stainless steel (18/10 stainless + aluminum core)], [Aluminum core encapsulated continuously up the entire sidewalls (full clad).], [Thin disc-bottom bonded only to base with thermal discontinuity at edges.],
+    [#strong[5. Large Stockpot (8 - 10 L)]], [18/10 surgical stainless steel], [Sturdy riveted handles, wide diameter for evaporation, thick base.], [Thin walls that dent easily; spot-welded hollow handles that snap.],
+    [#strong[6. End-Grain Cutting Board]], [Hardwood (Rock Maple, Walnut, Beech)], [Thick end-grain wood fibers ($4 - 5 upright(" cm")$ / 1.5 - 2 in) that absorb knife impact without dulling blade.], [Glass, granite, or bamboo boards that chip steel cutting edges instantly.],
+    [#strong[7. Digital Thermometer]], [Fast-response thermocouple needle], [Reading speed $< 2 upright(" seconds")$, millimetric thin probe, accuracy $plus.minus 0.5^compose upright("C")$.], [Slow dial bi-metal gauges with wide thermal hysteresis and uncalibrated readings.],
+    [#strong[8. Fine Mesh Chinois]], [Conical woven stainless mesh], [Fine woven wire cone with welded protective outer ribs and sturdy hanging loop.], [Coarse perforated sheet metal strainers that let sediment and fiber through.]
   )],
-  caption: [The Practitioner's Minimal Arsenal: Buyer's Guide and Quality Detection.],
+  caption: [Buyer's guide and quality evaluation criteria for the Minimal Eight Arsenal.],
   kind: table
 )
 
 #divider()
 
 == 2. COMPARATIVE THERMODYNAMICS OF COOKING MODES: EFFICIENCY, POWER & ENERGY COST
-<comparative-thermodynamics-of-cooking-modes-efficiency-power-and-energy-cost>
-How much energy does it actually take to bring a quart of water to a rolling boil or roast a whole chicken? The table below compares the real thermal efficiency, nominal power, and operating energy cost across standard kitchen cooking methods:
+<thermodynamique-comparée-des-modes-de-cuisson-rendement-puissance-coût-en-énergie>
+
+The primary function of a kitchen heat source is the transfer of thermodynamic energy into the food mass. However, each cooking medium exhibits vastly different energetic efficiencies:
 
 #figure(
   align(center)[#table(
     stroke: 0.5pt + rgb("#dcd6ca"),
     fill: (x, y) => if y == 0 { rgb("#f2ece1") } else if calc.odd(y) { rgb("#faf7f2") } else { none },
-    inset: 7pt,
-    columns: (18%, 16%, 16%, 18%, 16%, 16%),
-    align: (left, center, center, center, center, center),
-    table.header([Cooking Mode / Heat Source], [Real Thermal Efficiency], [Typical Power Rating], [Time to Boil 1 Qt (1 L) Water], [Measured Energy Consumption], [Operating Cost / Hour (Avg)]),
+    inset: 8pt,
+    columns: (22%, 22%, 28%, 28%),
+    align: (left, center, center, left),
+    table.header([Heat Source / Appliance], [Nominal Power (Watts)], [Energetic Efficiency (%)], [Physical Vector & Heat Loss]),
     table.hline(),
-    [#strong[Induction Cooktop (Electromagnetic)]], [#strong[85% to 90%]], [2,000 to 3,500 W (Booster)], [#strong[2 min 45 s]], [0.11 kWh], [\$0.18 / hr],
-    [#strong[Gas Range (High-Output Burner)]], [#strong[40% to 45%]], [3,000 W (10,500 BTU/hr)], [#strong[6 min 30 s]], [0.25 kWh equiv.], [\$0.12 / hr],
-    [#strong[Ceramic / Halogen Radiant Cooktop]], [#strong[65% to 70%]], [1,800 to 2,200 W], [#strong[5 min 15 s]], [0.16 kWh], [\$0.24 / hr],
-    [#strong[Electric Convection Oven]], [#strong[50% to 60%]], [2,200 to 2,800 W], [Preheat to 350°F (180°C): 8 min], [0.90 kWh/hr], [\$0.15 / hr],
-    [#strong[Pressure Cooker / Instant Pot (250°F / 121°C)]], [#strong[85% (Cooking time cut 3×)]], [1,500 W, then 500 W maintain], [Pressurization: 7 min], [0.35 kWh total], [#strong[65% savings vs. open braise]],
-    [#strong[Microwave Oven (Dipolar Agitation)]], [#strong[60% to 65%]], [800 to 1,000 W], [Reheat soup (10 oz / 300 ml): 1 min 30 s], [0.025 kWh], [\$0.01 / cycle]
+    [#strong[Induction Cooktop]], [1,800 to 3,500 W], [#strong[85% to 90%]], [Direct magnetic eddy current generation inside pan steel. Almost zero ambient heat loss.],
+    [#strong[Microwave Oven]], [800 to 1,000 W], [#strong[65% to 70%]], [Direct 2.45 GHz dielectric rotation of polar water molecules. Very efficient for small reheating volumes.],
+    [#strong[Ceramic / Radiant Hob]], [1,500 to 2,200 W], [60% to 65%], [Slow conduction through glass-ceramic surface. Substantial residual heat loss.],
+    [#strong[Forced-Air Convection Oven]], [2,000 to 2,500 W], [15% to 20%], [Heats an entire cavity of low-density air ($0.0012 upright(" J/(cm")^3 upright("·K)")$) with high wall losses.],
+    [#strong[Standard Domestic Gas Burner]], [1,500 to 3,500 W], [35% to 40%], [Open methane combustion flame: 60% of thermal heat escapes laterally into kitchen air.]
   )],
-  caption: [Comparative energy efficiency, boiling speed, and operating costs of cooking appliances.],
+  caption: [Comparative energetic efficiency and power consumption across kitchen heating vectors.],
   kind: table
 )
 
-#oeil_molecule[
 ==== 🔬 The Physics of Induction Efficiency: Eddy Currents & Joule Heating
-<the-physics-of-induction-efficiency>
-On a gas cooktop, more than half of the thermal energy escapes uselessly around the sides of the pan into the kitchen air via hot buoyant convection currents. In induction cooking, a copper coil beneath the ceramic glass surface generates a #strong[high-frequency alternating magnetic field (20 to 50 kHz)]. This field does not heat the glass: it penetrates the ferromagnetic base of the cookware, inducing #strong[microscopic Foucault eddy currents directly within the pan's iron lattice]. The cookware itself becomes the primary heat generator through Joule heating, eliminating wasteful intermediary thermal steps.
-]
+Induction cooktops do not generate heat. A high-frequency alternating electrical current (20 to 50 kHz) flows through a copper coil beneath the glass-ceramic plate, generating a fluctuating magnetic field. When a ferromagnetic vessel (cast iron, 18/10 stainless steel) is placed within this field, the magnetic flux induces circular electrical currents—#strong[Foucault eddy currents]—inside the pan's metallic base. Heat is synthesized directly within the metal itself via resistance (Joule heating: $P = R dot I^2$). Because the cooktop surface remains cool except for contact feedback, energetic losses are virtually non-existent.
 
 #divider()
 
 == 3. SYNOPTIC MASTER COOKING TIMES BY METHOD & FOOD
-<synoptic-master-cooking-times-by-method-and-food>
+<tableau-synoptique-des-durées-de-cuisson-standard-par-méthode-aliment>
+
+Cooking times cannot be calculated purely by weight; they depend fundamentally on the food's geometry, water content, and heat transfer method (conduction through metal, water convection, or air radiation):
+
 #figure(
   align(center)[#table(
     stroke: 0.5pt + rgb("#dcd6ca"),
     fill: (x, y) => if y == 0 { rgb("#f2ece1") } else if calc.odd(y) { rgb("#faf7f2") } else { none },
     inset: 7pt,
-    columns: (16%, 16%, 16%, 18%, 18%, 16%),
-    align: (left, left, left, center, center, left),
-    table.header([Food Item], [Portion / Caliber], [Optimal Method], [Medium Temperature], [Precise Cooking Duration], [Sensory Landmark to Stop]),
+    columns: (22%, 24%, 26%, 28%),
+    align: (left, left, left, left),
+    table.header([Food Category], [Ideal Thermal Threshold], [Standard Cooking Mode], [Calibrated Duration & Landmark Sensory Test]),
     table.hline(),
-    [#strong[Soft-Boiled Egg (*Mollet*)]], [Large (2 oz / 60 g)], [Salted rolling boil], [100°C / 212°F], [#strong[6 min 00 s]], [Plunge immediately into ice water; tender white, warm liquid yolk (136°F / 58°C).],
-    [#strong[Hard-Boiled Egg (Tender)]], [Large (2 oz / 60 g)], [Gentle simmer], [95°C / 203°F], [#strong[9 min 30 s]], [Tender white without sulfur odor; golden yolk with zero grey ferrous sulfide ring.],
-    [#strong[Beef Ribeye / NY Strip]], [1 in (2.5 cm) thick], [Smoking cast-iron skillet], [200°C / 392°F], [#strong[2 min / side + 5 min rest]], [Crisp Maillard crust; core at 125°F to 130°F (52°C to 54°C); actomyosin relaxed.],
-    [#strong[Fresh Cod / Whitefish Fillet]], [0.8 in (2 cm) thick (5 oz / 150 g)], [Gentle steam or covered pan], [85°C / 185°F], [#strong[6 to 7 min]], [Flesh turns from translucent to opalescent pearl white; flakes gently under fingertip.],
-    [#strong[Steamed Potatoes]], [Medium (3 oz / 80 g)], [Steam basket over water], [100°C / 212°F], [#strong[22 to 25 min]], [Paring knife blade glides into the core with zero mechanical resistance.],
-    [#strong[Split Red Lentils]], [Unhulled dry seeds], [Gentle water simmer (unsalted)], [95°C / 203°F], [#strong[12 to 15 min]], [Starch walls burst spontaneously into a rich, creamy, comforting velvet dahl.],
-    [#strong[Whole Roast Chicken]], [3.3 lb (1.5 kg) whole], [Convection oven], [180°C / 356°F], [#strong[1 hr 15 min]], [Juices running from thigh cavity run crystal clear without pink; probe reads 165°F (74°C).],
-    [#strong[Dry Durum Wheat Pasta]], [Spaghetti No. 5], [Rolling salted boil (10 g/L)], [100°C / 212°F], [#strong[9 min (*al dente*)]], [Microscopic white starch dot visible at center of snapped noodle; resilient chew.]
+    [#strong[Thick Beef Steak (3.5 cm / 1.5 in)]], [54°C (129°F) core (rare)], [Very hot cast-iron skillet ($> 200^compose upright("C")$)], [2 min per side + 5 min basting with foaming butter. Firm thumb-spring bounce.],
+    [#strong[Whole Chicken (1.5 kg / 3.3 lb)]], [74°C (165°F) thigh joint], [Convection oven at 190°C (374°F)], [1 hr to 1 hr 15 min. Clear juices running from cavity, crisp crackling skin.],
+    [#strong[Collagen Beef Shank / Stew]], [85°C to 90°C (185°F - 194°F) liquid], [Gentle simmer in Dutch oven], [3 to 4 hours under tight lid. Meat yields under fork with zero resistance.],
+    [#strong[White Fish Fillet (Cod, 150 g)]], [50°C to 52°C (122°F - 126°F) core], [Gentle water poaching or parchment packet], [6 to 8 minutes at 80°C (176°F). Myotome flakes separate under slight blade pressure.],
+    [#strong[Large Whole Egg (60 g)]], [63°C white / 65°C yolk], [Rolling boiling water ($100^compose upright("C")$)], [#strong[Soft-Boiled (*mollet*):] exactly 6 min; #strong[Hard-Boiled:] 9 min in cold water plunge.],
+    [#strong[Potatoes (medium whole)]], [88°C to 90°C (190°F - 194°F) core], [Cold water start, gentle simmer], [20 to 25 minutes. Paring knife blade slides in and out without lifting tuber.],
+    [#strong[Dried Legumes (soaked)]], [Full starch swelling ($> 95^compose upright("C")$)], [Slow steady simmer in stockpot], [45 min (Lentils) to 1 hr 30 min (Chickpeas). Butter-soft core, intact outer skins.]
   )],
-  caption: [Synoptic master cooking durations, medium temperatures, and sensory benchmarks.],
+  caption: [Synoptic master cooking durations, internal temperatures, and sensory readiness tests.],
   kind: table
 )
 
-= APPENDIX E --- Cold Chain Storage, Refrigerator Zones & Food Safety Limits
-<appendix-e-cold-chain-storage-refrigerator-zones-and-food-safety-limits>
+#divider()
 
+// =========================================================================
+// APPENDIX E: REFRIGERATION & FOOD PRESERVATION
+// =========================================================================
+
+= APPENDIX E --- Cold Chain Storage, Refrigerator Zones & Food Safety Limits
+<annexe-e-conservation-au-froid-zones-du-réfrigérateur-durées-limites-sanitaires>
 #quote(block: true)[
-"A refrigerator is not a magical time-suspension chamber, but a kinetic brake that temporarily slows bacterial metabolism."
+"Cold does not kill bacteria: it slows their enzymatic metabolism. Mastering the cold chain is the invisible frontier of kitchen survival."
 ]
 
 #divider()
 
 == 1. REFRIGERATOR THERMAL MAPPING: A BIO-ZONE ON EVERY SHELF
-<refrigerator-thermal-mapping-a-bio-zone-on-every-shelf>
-Cold air is denser than warm air: in a standard domestic refrigerator operating under natural convection (static cooling), the coldest air sinks toward the bottom directly above the crisper. Forced-air or frost-free refrigerators homogenize temperatures, but distinct thermal microclimates persist near cooling vents.
+<cartographie-thermique-du-réfrigérateur-à-chaque-étage-sa-bio-zone>
 
-Here is the indispensable food safety arrangement to eliminate all risks of cross-contamination:
+A domestic refrigerator is not a thermally uniform volume. Because cold air is denser than warm air ($rho prop 1/T$), air naturally settles downward via natural convection. In static refrigerators, vertical temperature deltas can reach $6^compose upright("C")$. Each shelf corresponds to a distinct ecological biological niche:
+
+#figure(
+  align(center)[#table(
+    stroke: 0.5pt + rgb("#dcd6ca"),
+    fill: (x, y) => if y == 0 { rgb("#f2ece1") } else if calc.odd(y) { rgb("#faf7f2") } else { none },
+    inset: 8pt,
+    columns: (22%, 22%, 28%, 28%),
+    align: (left, center, left, left),
+    table.header([Refrigerator Level / Compartment], [Internal Temperature], [Foods to Store Exclusively], [Physical & Biological Rationale]),
+    table.hline(),
+    [#strong[Extra-Cold Zone (Lower Shelf above crisper)]], [#strong[0°C to 2°C (32°F to 36°F)]], [Raw meats, ground beef, fresh fish, shellfish, thawed raw poultry.], [Halts proliferation of psychrotrophic pathogens (*Listeria monocytogenes*). Keeps moisture from weeping.],
+    [#strong[Intermediate Cold Zone (Middle Shelves)]], [#strong[3°C to 4°C (37°F to 39°F)]], [Cooked leftovers, homemade broths, artisan dairy, farm cheeses, open preserves.], [Stable cold environment. Minimizes enzymatic degradation of cooked proteins and dairy.],
+    [#strong[Upper Shelf (Top Level)]], [#strong[5°C to 6°C (41°F to 43°F)]], [Pastries, packaged cooked ham, commercial yogurts, fermented butter.], [Gentle cold preserving delicate emulsified fats without hardening butter excessively.],
+    [#strong[Vegetable Crisper Drawer]], [#strong[6°C to 8°C (43°F to 46°F)]], [Fresh leafy greens, crucifers, root vegetables, ripe stone fruits.], [Higher relative humidity (85 - 90%) prevents cellular transpirational wilting; prevents cold-burn.],
+    [#strong[Refrigerator Door Racks]], [#strong[6°C to 9°C (43°F to 48°F)]], [Condiments, Dijon mustard, natural vinegars, pasteurized milk bottles, eggs in shell.], [Most thermally vulnerable zone: subjected to repetitive room-air thermal shocks on opening.]
+  )],
+  caption: [Refrigerator thermal bio-zones and calibrated ingredient positioning.],
+  kind: table
+)
+
+==== ⚠️ Critical Food Safety Error: Never Store Raw Meat Above Cooked Dishes
+Never place raw meats, poultry, or draining seafood on upper shelves above ready-to-eat cooked leftovers or fresh greens. Raw protein weeping contains high microbial loads (*Salmonella enterica*, *Campylobacter jejuni*, *E. coli*). A single drop falling into a cooked dish consumed without subsequent high-heat re-boiling causes instant acute food intoxication.
+
+#divider()
+
+== 2. COMPREHENSIVE SANITARY STORAGE DURATIONS: REFRIGERATOR VS. FREEZER
+<tableau-exhaustif-des-durées-de-conservation-sanitaires-frigo-vs-congélateur>
+
+#figure(
+  align(center)[#table(
+    stroke: 0.5pt + rgb("#dcd6ca"),
+    fill: (x, y) => if y == 0 { rgb("#f2ece1") } else if calc.odd(y) { rgb("#faf7f2") } else { none },
+    inset: 7pt,
+    columns: (28%, 24%, 24%, 24%),
+    align: (left, center, center, left),
+    table.header([Ingredient / Food System], [Refrigerator (0°C to 4°C / 32°F to 39°F)], [Freezer (-18°C / 0°F)], [Key Spoilage Marker & Safety Reflex]),
+    table.hline(),
+    [#strong[Ground Beef / Raw Steak Tartare]], [#strong[12 to 24 hours max]], [3 to 4 months], [Extreme bacterial surface area. Consume same day as ground.],
+    [#strong[Fresh White Fish & Raw Shrimp]], [#strong[24 to 48 hours max]], [3 to 6 months], [Fast enzymatic proteolysis. Flesh softens, sweet ammonia smell emerges.],
+    [#strong[Whole Chicken / Poultry Cuts]], [2 to 3 days], [9 to 12 months], [Surface slime, sulfur odor. Wrap tightly in airtight containers.],
+    [#strong[Thick Beef Steaks / Roasts]], [3 to 4 days], [8 to 12 months], [Deep red oxidation is harmless; discard if sticky or foul-smelling.],
+    [#strong[Cooked Dishes, Soups & Broths]], [3 to 4 days], [3 months], [Reheat thoroughly to boiling ($> 85^compose upright("C")$) before serving.],
+    [#strong[Raw Shell Eggs in Carton]], [28 to 30 days], [Do not freeze in shell], [Washed shells lose cuticle; float test reveals internal air expansion.],
+    [#strong[Open Pasteurized Milk / Cream]], [4 to 5 days], [Not recommended], [Lactic souring; fat globules separate upon thawing.]
+  )],
+  caption: [Microbiological food safety storage limits: Refrigerator vs. Deep Freezer.],
+  kind: table
+)
+
+#divider()
+
+== 3. RAPID SAFE THAWING PROTOCOL WITHOUT BACTERIAL RISK
+<protocole-expéditif-de-décongélation-sans-risque-bactérien>
+
+==== ✓ The Only Safe Thawing Methods:
+1. #strong[Slow Refrigerator Thawing (Safest Gold Standard):] Place frozen meat on a rimmed plate in the coldest zone ($0^compose upright(" to ") 2^compose upright("C")$) for 12 to 24 hours. The food remains entirely outside the danger zone ($4^compose upright(" to ") 60^compose upright("C")$).
+2. #strong[Submerged Cold Water Bath (Fast & Safe):] Seal food tightly inside an airtight leakproof bag and submerge completely in a bowl of cold tap water ($< 15^compose upright("C")$), changing the water every 30 minutes. Water's high thermal conductivity thaws food within 45 to 60 minutes.
+3. #strong[Direct-to-Pan Cooking for Thin Cuts:] Steaks under $2 upright(" cm")$ can be seared directly from frozen in a screaming-hot cast-iron pan, then finished under gentle oven heat.
+
+==== ✗ The Fatal Mistake: Ambient Countertop Thawing
+Leaving raw poultry or meat to thaw at room temperature on the kitchen counter is a dangerous biohazard. While the core remains frozen solid for hours, the outer surface reaches $20^compose upright("C")$ within 45 minutes, creating explosive exponential bacterial growth ($2^n$ doubling every 20 minutes) across the exterior tissue.
+
+#divider()
+
+// =========================================================================
+// APPENDIX F: PREP CUTLERY, CONSUMABLES & GROCERY TEMPLATE
+// =========================================================================
+
+= APPENDIX F --- Prep Cutlery, Household Consumables, Matrix Pantry & Clean Grocery Template
+<larsenal-doffice-consommables-domestiques-fond-de-placard-gabarit-matriciel-de-courses-saines>
+#quote(block: true)[
+"The kitchen is a laboratory of sovereign autonomy: equip it with essentials, banish disposable plastics, and govern your pantry with order."
+]
+
+#divider()
+
+== 1. DAILY PREP CUTLERY & KITCHEN UTENSILS (BEYOND THE MINIMAL EIGHT)
+<léquipement-doffice-coutellerie-du-quotidien-au-delà-des-huit-grands-instruments>
+
+While the Minimal Eight tools manage 90% of culinary transformations, secondary prep utensils provide mechanical precision and speed:
 
 #figure(
   align(center)[#table(
@@ -460,363 +520,139 @@ Here is the indispensable food safety arrangement to eliminate all risks of cros
     fill: (x, y) => if y == 0 { rgb("#f2ece1") } else if calc.odd(y) { rgb("#faf7f2") } else { none },
     inset: 7pt,
     columns: (22%, 22%, 28%, 28%),
-    align: (left, center, left, left),
-    table.header([Refrigerator Shelf / Zone], [Measured Temperature], [Mandatory Foods to Store], [Major Sanitary Hazard if Misplaced]),
-    table.hline(),
-    [#strong[Very Cold Zone] \ #emph[(Bottom glass shelf above crisper in static; top shelf in forced-air)]],
-    [#strong[0°C to 2°C / 32°F to 36°F]],
-    [• Raw meats, minced beef, poultry.\ • Fresh raw fish, shellfish, oysters.\ • Chilled home-cooked leftovers.\ • Items actively thawing.],
-    [Exponential growth of *Listeria monocytogenes*, a psychrotrophic bacterium capable of multiplying at +4°C (+39°F).],
-
-    [#strong[Fresh Intermediate Zone] \ #emph[(Middle shelves)]],
-    [#strong[4°C to 6°C / 39°F to 43°F]],
-    [• Opened dairy (cream, yogurt, soft cheese).\ • Cooked sliced deli meats under wrap.\ • Fresh pasta, cream pastries, cooked dishes.],
-    [Premature milk souring, lipid rancidity, and surface mold proliferation.],
-
-    [#strong[Vegetable Crisper Drawer] \ #emph[(Closed bottom compartment)]],
-    [#strong[6°C to 10°C / 43°F to 50°F]],
-    [• Fresh market vegetables and roots.\ • Delicate fruits (berries, figs).\ • Ripening artisanal cheeses wrapped in parchment.],
-    [Sub-zero frost damage (< 0°C (32°F)) which ruptures plant cell walls, turning greens black and slimy.],
-
-    [#strong[Door Shelves / Door Bins] \ #emph[(Warmest zone subject to repeated air openings)]],
-    [#strong[6°C to 8°C / 43°F to 46°F]],
-    [• Butter in covered dish.\ • Fresh eggs in closed carton.\ • High-acid condiments (mustard, pickles).\ • Jams, open natural wine, fruit juices.],
-    [Thermal cycling that causes water condensation on eggshells, washing away protective cuticles.]
-  )],
-  caption: [Refrigerator thermal zoning: sanitary storage allocation by temperature.],
-  kind: table
-)
-
-#danger[
-==== ⚠️ Critical Food Safety Error: Never Store Raw Meat Above Cooked Dishes
-<critical-food-safety-error-never-store-raw-meat-above-cooked-dishes>
-Raw meat and poultry inevitably release micro-droplets of intracellular purge liquid loaded with *Salmonella*, *Campylobacter*, and pathogenic *E. coli*. Storing raw poultry or steaks on an upper shelf allows gravity-driven drippings to contaminate ready-to-eat salads, cheeses, or leftovers below. #strong[Rule of Law: Always place raw animal proteins on the lowest shelf inside a rimmed tray or sealed leakproof container.]
-]
-
-#divider()
-
-== 2. COMPREHENSIVE SANITARY STORAGE DURATIONS: REFRIGERATOR VS. FREEZER
-<comprehensive-sanitary-storage-durations-refrigerator-vs-freezer>
-#figure(
-  align(center)[#table(
-    stroke: 0.5pt + rgb("#dcd6ca"),
-    fill: (x, y) => if y == 0 { rgb("#f2ece1") } else if calc.odd(y) { rgb("#faf7f2") } else { none },
-    inset: 7pt,
-    columns: (22%, 24%, 24%, 30%),
-    align: (left, center, center, left),
-    table.header([Food Category], [Refrigerator (32°F to 36°F / 0°C to 2°C)], [Freezer (0°F / -18°C)], [Sanitary Preservation Imperatives]),
-    table.hline(),
-    [#strong[Ground / Minced Meat]], [#strong[24 hours maximum]], [#strong[2 to 3 months]], [Enormous surface area exposed to oxygen and grinder blades; consume immediately.],
-    [#strong[Fresh Steaks, Chops & Roasts]], [#strong[3 to 5 days]], [#strong[6 to 12 months]], [Store unwrapped on a wire rack over a plate to allow dry protective pellicle formation.],
-    [#strong[Whole Raw Poultry]], [#strong[2 to 3 days]], [#strong[12 months]], [Rinse never; pat dry with clean paper towels before refrigeration.],
-    [#strong[Cut Poultry Pieces]], [#strong[1 to 2 days]], [#strong[6 to 9 months]], [High moisture and salmonella risk; freeze promptly if not cooked within 48 hours.],
-    [#strong[Fresh White Fish Fillets]], [#strong[1 to 2 days]], [#strong[4 to 6 months]], [Keep covered in contact with crushed ice inside a perforated pan.],
-    [#strong[Oily Fish (Salmon, Mackerel)]], [#strong[1 to 2 days]], [#strong[2 to 3 months]], [High polyunsaturated fat content susceptible to oxidative rancidity even frozen.],
-    [#strong[Cooked Leftovers, Soups & Braises]], [#strong[3 to 4 days]], [#strong[2 to 3 months]], [Chill from 140°F to 40°F (60°C to 4°C) within 2 hours before placing in fridge.],
-    [#strong[Cured Bacon & Salted Charcuterie]], [#strong[2 to 3 weeks]], [#strong[1 to 2 months]], [Nitrites and high salt retard microbes; wrap in butcher paper to prevent moisture pooling.],
-    [#strong[Unpasteurized Raw-Milk Cheeses]], [#strong[2 to 4 weeks]], [#strong[Freezing discouraged]], [Freezing ruptures protein casein matrix, irreversibly turning cheese grainy upon thawing.]
-  )],
-  caption: [Sanitary storage time limits: Refrigerator vs. Sub-zero Freezer.],
-  kind: table
-)
-
-#divider()
-
-== 3. RAPID SAFE THAWING PROTOCOL WITHOUT BACTERIAL RISK
-<rapid-safe-thawing-protocol-without-bacterial-risk>
-Food thawing is thermodynamically asymmetric: because ice conducts heat four times faster than liquid water ($k_"ice" = 2.22 upright(" W/(m·K)") upright(" vs. ") k_"water" = 0.58 upright(" W/(m·K)")$), the outer layer of melting food warms quickly into the bacterial danger zone while the core remains a frozen block.
-
-==== ✓ The Only Safe Thawing Methods:
-1. #strong[Slow Refrigerator Thawing (The Gold Standard):] Place frozen food on the lowest refrigerator shelf at 36°F (2°C) inside a rimmed dish 24 to 48 hours in advance. Meat retains moisture and never enters the danger zone.
-2. #strong[Cold Running Water Bath (Rapid 30-Minute Protocol):] Seal meat inside a leakproof heavy zip bag and submerge it under cold tap water (< 60°F (15°C)) with a gentle trickle. Water convection speeds thermal transfer 25× faster than air.
-
-==== ✗ The Fatal Mistake: Ambient Countertop Thawing
-Leaving raw poultry or frozen beef on the kitchen counter at 70°F (21°C) for several hours allows surface bacteria (*Staphylococcus*, *Bacillus cereus*) to multiply exponentially and secrete heat-stable enterotoxins that survive subsequent cooking.
-
-= APPENDIX F --- Prep Cutlery, Household Consumables, Matrix Pantry & Clean Grocery Template
-<appendix-f-prep-cutlery-household-consumables-matrix-pantry-and-clean-grocery-template>
-
-#quote(block: true)[
-"The sovereign freedom of the cook is not improvised before an empty stove; it rests upon the silent, orderly presence of dependable prep tools, technical consumables, an incorruptible pantry, and a rational shopping basket."
-]
-
-#divider()
-
-== 1. DAILY PREP CUTLERY & KITCHEN UTENSILS (BEYOND THE MINIMAL EIGHT)
-<daily-prep-cutlery-and-kitchen-utensils-beyond-the-minimal-eight>
-While the Minimal Arsenal (Appendix D) gathers the heavy pieces of thermal transformation, everyday cooking demands a fleet of #strong[precise physical extensions of the hand]. Small knives, specialized spoons, contact spatulas, and measuring tools form the practitioner's indispensable everyday toolkit:
-
-#figure(
-  align(center)[#table(
-    stroke: 0.5pt + rgb("#dcd6ca"),
-    fill: (x, y) => if y == 0 { rgb("#f2ece1") } else if calc.odd(y) { rgb("#faf7f2") } else { none },
-    inset: 7pt,
-    columns: (22%, 26%, 26%, 26%),
     align: (left, left, left, left),
-    table.header([Everyday Prep Tool], [Physical Specs & Mechanical Role], [What to Look For (The Right Choice)], [Red Flags to Avoid]),
+    table.header([Utensil], [Recommended Material], [Culinary Role & Physics], [Quality Hallmark]),
     table.hline(),
-    [#strong[Paring Knife (3 to 4 in / 8 to 10 cm)]],
-    [Short, rigid blade in high-carbon steel. Essential for paring, coring, trimming, hand-peeling, and boning work.],
-    [Full through-tang with compression rivets, easy to hone on whetstone, neutral balance.],
-    [Flimsy stamped blades that flex under thumb pressure; cheap hollow plastic handles.],
-
-    [#strong[Serrated Bread Knife (8 to 10 in / 20 to 24 cm)]],
-    [Long rigid blade with spaced scallop teeth. Slices tough sourdough crusts and hard squashes without crushing crumb.],
-    [Deep scalloped profile that slices cleanly rather than tearing; blade thickness $\ge 1.8 upright(" mm")$.],
-    [Soft flexible blades that wander off track during cutting; tiny teeth that shred bread into crumbs.],
-
-    [#strong[Y-Peeler (Swiss Peeler)]],
-    [Ultra-sharp swiveling carbon steel blade mounted on a wide Y-frame. Minimizes wrist fatigue.],
-    [Hardened carbon steel or surgical stainless blade; integrated side potato eye-remover.],
-    [Straight peelers with round slippery handles; dull blades that slip on wet vegetables.],
-
-    [#strong[Large Beechwood Spoon]],
-    [Solid untreated hardwood. King of sweating alliums, stirring risottos, and folding without scratching metal.],
-    [Carved from a solid block of beech, boxwood, or hornbeam with a slightly beveled flat front edge to scrape pans.],
-    [Lacquered or varnished spoons whose synthetic chemicals leach into hot food; soft splintery pine.],
-
-    [#strong[Stainless Basting Spoon (12 in / 30 cm)]],
-    [One-piece 18/10 stainless long spoon (*cuillère de poule*). Convective fluid basting tool.],
-    [Generous bowl to scoop foaming butter and continuously baste searing steaks and roasting poultry.],
-    [Thin stamped aluminum spoons that bend under liquid weight; glued handles that trap grease.],
-
-    [#strong[Tasting & Measuring Spoons (15 ml / 5 ml)]],
-    [Heavy gauge stainless work spoons for flavor calibration and rapid volumetric dosing.],
-    [Forged 18/10 heavy steel with smooth polished rims for comfortable mouth contact during tasting.],
-    [Flimsy thin spoons with sharp stamped edges or engraved crevices impossible to sanitize.],
-
-    [#strong[Rigid Beveled Metal Spatula]],
-    [Ultra-thin, stiff stainless blade with sharp beveled front edge. Releases seared crusts cleanly without tearing.],
-    [Tempered spring stainless steel with offset heat-resistant handle; glides flat beneath burgers and fish.],
-    [Thick, rounded spatulas that plow into food and tear developing Maillard crusts apart.],
-
-    [#strong[Seamless Silicone Spatula (Maryse)]],
-    [One-piece heat-resistant silicone rated to 480°F (250°C). Sweeps bowl walls with zero food waste.],
-    [Platinum food-grade silicone without joints between handle and head for flawless bacterial hygiene.],
-    [Old two-piece spatulas with removable rubber heads that harbor black mold inside the socket.],
-
-    [#strong[Stainless Chef's Tongs (12 in / 30 cm)]],
-    [Long spring tongs with scalloped gripping tips. Handles food firmly without piercing flesh (zero juice loss).],
-    [Heavy stainless steel with locking ring; gentle spring tension that prevents hand fatigue.],
-    [Short tongs that expose hands to splattering hot oil; plastic tips that melt against cast iron.],
-
-    [#strong[Carving Fork (Diapason)]],
-    [Heavy two-pronged rigid steel fork. Anchors hot roasts, poultry, and briskets firmly during precision carving.],
-    [Solid forged construction providing rock-solid stabilization without tearing muscle bundles.],
-    [Flimsy stamped forks whose thin tines bend under the weight of large meats or pull free from handles.],
-
-    [#strong[Wire Spider Skimmer]],
-    [Wide basket of woven stainless steel wires on a long handle. Lifts food from hot liquids without retaining water.],
-    [Open mesh design that creates zero hydrodynamic drag when scooping gnocchi, pasta, and blanched vegetables.],
-    [Solid perforated skimmers with tiny pinholes that act like spoons, trapping cooking water and diluting sauces.],
-
-    [#strong[One-Piece Pressed Ladle (4 oz / 120 ml)]],
-    [Seamless stamped 18/10 stainless steel without welds. Transports stocks, soups, and pancake batter cleanly.],
-    [Clean drip-free pouring rim around the entire perimeter; rigid handle with hanging hook.],
-    [Two-piece ladles spot-welded at the bowl neck that snap under repeated thermal fatigue.],
-
-    [#strong[12-Wire Balloon Whisk]],
-    [Twelve flexible piano-wire loops forming a teardrop balloon. Maximum air aeration and emulsification.],
-    [Sanitary sealed handle filled with waterproof epoxy resin; elastic wires sweeping curved bowl contours.],
-    [Stiff 4-wire thick whisks resembling pitchforks, incapable of whipping egg whites or mayonnaise.],
-
-    [#strong[Micro-Etched Rasp Zester (Microplane)]],
-    [Photo-etched surgical stainless steel sheet. Slices raw zest and hard cheese instead of crushing them.],
-    [Micro-teeth that cleanly shave aromatic citrus epidermis without digging into bitter white pith; turns parmesan into snow.],
-    [Traditional stamped 4-sided box graters with dull holes that tear zest and produce wet greasy mush.],
-
-    [#strong[Fine Conical Chinois Sieve (0.5 mm mesh)]],
-    [Rigid conical or hemispherical stainless mesh basket. Precision filtration and silky puree refinement.],
-    [Reinforced outer frame supporting heavy wooden pestle work to strain sauces into velvety mirror glazes.],
-    [Porous plastic strainers with coarse holes that melt in hot broths and let grittiness pass through.],
-
-    [#strong[Digital Kitchen Scale (1 g / 0.05 oz precision)]],
-    [Strain-gauge sensor with instant tare function up to 11 lb (5 kg). Quantitative precision for baking and salting.],
-    [Smooth flat glass or stainless platform easily wiped clean; auto-off timer delayed past 2 minutes.],
-    [Inaccurate spring scales ($\pm 20 upright(" g")$ error) or digital units that shut down after 15 seconds.],
-
-    [#strong[Take-Apart Heavy Kitchen Shears]],
-    [Thick tempered stainless blades with bone notch; blades separate instantly without tools for thorough washing.],
-    [Cuts poultry backbones, trims fish fins, snips butcher twine; sanitizes completely in dishwasher.],
-    [Household office scissors whose riveted pivot traps blood, raw chicken juices, and pathogenic bacteria.]
+    [#strong[Short Paring Knife (8 - 10 cm)]], [Carbon or stainless steel], [Precision peeling, coring, trimming, garlic mincing.], [Rigid blade, fine sharp tip, comfortable pinch grip.],
+    [#strong[Y-Peeler (Razor Peeler)]], [Carbon steel blade], [Removes sub-millimetric vegetable skins without wasting flesh.], [Swiveling carbon blade, far sharper than dull stainless.],
+    [#strong[Serrated Bread Knife (22 cm)]], [Stiff stainless steel], [Slices through crackling crusts without crushing crumb.], [Deep scalloped serrations, zero lateral blade flex.],
+    [#strong[Solid Stainless Spoon]], [18/10 stainless steel], [Basting steaks with foaming butter; stirring pan sauces.], [Deep bowl, long rigid handle that does not heat up.],
+    [#strong[Solid Beech Wooden Spoon]], [Solid untreated beechwood], [Stirring roux, deglazing pan fond without scratching iron.], [Flat-edged spatula corner to scrape pan corners clean.],
+    [#strong[Offset Metal Spatula]], [Spring stainless steel], [Deglazing, flipping burgers, scraping searing fond.], [Beveled ground front edge, firm spring resistance.],
+    [#strong[Silicone Spatula (Maryse)]], [High-heat silicone (250°C)], [Zero-waste scraping of bowls; gentle foam folding.], [Seamless one-piece silicone molding, flexible tip.],
+    [#strong[Precision Chef's Tongs (30 cm)]], [18/10 stainless steel], [Delicate placement, turning meats without piercing fibers.], [Firm spring tension, scalloped gripping tips.],
+    [#strong[Two-Prong Meat Carving Fork]], [Forged stainless steel], [Anchoring roasts during carving; testing braised doneness.], [Long tapered rigid prongs, forged bolster.],
+    [#strong[Stainless Wire Spider Skimmer]], [Crossed stainless wire], [Retrieving gnocchi, deep-fried foods, blanching greens.], [Open woven wire mesh that drains liquid instantaneously.],
+    [#strong[One-Piece Soup Ladle]], [Seamless stamped stainless], [Serving broths, transferring stocks without drips.], [Zero welded seams between handle and bowl.],
+    [#strong[12-Wire Balloon Whisk]], [Spring stainless steel], [Beating egg whites, emulsifying mayonnaise, silky sauces.], [Flexible wires anchored in sealed resin handle.],
+    [#strong[Microplane Fine Grater]], [Photo-etched stainless steel], [Zesting citrus without white bitter pith, grating Parmigiano.], [Razor-sharp etched teeth that slice instead of tearing.],
+    [#strong[Heavy Kitchen Shears]], [Take-apart stainless steel], [Snipping poultry bones, trimming herb stems, fish fins.], [Center joint uncouples completely for thorough sanitization.]
   )],
-  caption: [The indispensable everyday prep cutlery toolkit: 17 manual instruments completing the minimal eight.],
+  caption: [Comprehensive guide to secondary prep cutlery and kitchen utensils.],
   kind: table
 )
 
 #divider()
 
 == 2. HOUSEHOLD TECHNICAL CONSUMABLES: SAFETY AND CONTACT
-<household-technical-consumables-safety-and-contact>
-A kitchen consumable is not passive waste: it is a #strong[mechanical and thermal reagent] whose contact with food is governed by strict laws of material physics and toxicology. Eight virtuous consumables must equip the rational home:
+<les-consommables-techniques-du-foyer-thermodynamique-contact-et-sécurité>
+
+Household consumables are not passive packaging: they participate directly in thermodynamic heat exchange and chemical surface contact:
 
 #figure(
   align(center)[#table(
     stroke: 0.5pt + rgb("#dcd6ca"),
     fill: (x, y) => if y == 0 { rgb("#f2ece1") } else if calc.odd(y) { rgb("#faf7f2") } else { none },
     inset: 7pt,
-    columns: (22%, 24%, 28%, 26%),
+    columns: (22%, 22%, 28%, 28%),
     align: (left, left, left, left),
-    table.header([Technical Consumable], [Nature & Heat Resistance], [Major Culinary Functions], [Counter-Model & Health Hazard]),
+    table.header([Technical Consumable], [Material & Limits], [Virtuous Operating Gesture], [Dangerous Misuse to Reject]),
     table.hline(),
-    [#strong[Parchment Paper (Silicone-Coated)]],
-    [Pure unbleached cellulose paper impregnated with plant-based silicone. Heat-stable up to 430°F (220°C); greaseproof and waterproof.],
-    [• Cutting cartouche lids for braising vegetables (Chapter 10).\ • Lining bread Dutch ovens and baking sheets.\ • Gentle en papillote steam baking.],
-    [#strong[Strict prohibition under direct broiler:] above 450°F (230°C), parchment paper pyrolyzes and ignites, releasing acrolein fumes.],
-
-    [#strong[Heavy Foodservice Aluminum Foil]],
-    [Pure aluminum foil of heavy gauge ($18 upright(" to ") 20\,\mu upright("m")$). 95% infrared radiation thermal reflector ($T^4$).],
-    [• Heat shield over fragile roast edges and poultry breasts.\ • Resting tent for cooked steaks to equalize pressure without cooling.],
-    [#strong[ABSOLUTE SANITARY HAZARD:] Never place in contact with acidic foods (lemon, tomato sauce, vinegar, wine). Acid dissolves aluminum into toxic neurotoxic $"Al"^(3+)$ ions.],
-
-    [#strong[BPA-Free Food-Grade Cling Film]],
-    [Low-density polyethylene (LDPE) free of phthalates, bisphenol-A, and PVC. Hermetic moisture and gas barrier.],
-    [• Wrapping pastry doughs and meat rolls.\ • Direct surface wrapping (*au contact*) on warm creams and purees to stop skin formation.],
-    [Avoid industrial plastic films containing chlorinated PVC that migrate into hot fats. Never expose to open flames or hot ovens.],
-
-    [#strong[Unbleached Butcher's Twine (Linen/Cotton)]],
-    [Pure natural unbleached plant fibers without chemical finishes. High mechanical tensile strength.],
-    [• Trussing poultry to keep breasts moist and uniform.\ • Tying rolled roasts and securing bouquet garni bundles.],
-    [#strong[Avoid synthetic or plastic strings:] nylon and polypropylene melt between 175°F and 250°F (80°C to 120°C), releasing petrochemical toxins.],
-
-    [#strong[Unbleached Cotton Cheesecloth (*Étamine*)]],
-    [Fine unbleached woven cotton mesh with uniform micron weave. Washable and reusable indefinitely.],
-    [• Gravity draining of fresh curd for 15-minute farmer's cheese.\ • Colloidal clarification of golden broths and consommé.],
-    [Never wash with scented laundry fabric softeners: synthetic perfumes bind to cotton fibers and permanently contaminate food.],
-
-    [#strong[Unbleached Kraft Paper & Pure Linen Towels]],
-    [Pure wood pulp unbleached paper towels, or 100% heavy linen towels washed without fragrant detergents.],
-    [• #strong[Meticulous surface drying:] patting raw steaks, fish fillets, and tofu dry before pan searing to reach 300°F (150°C) without boiling.],
-    [Scented or printed paper towels that transfer chemical solvents and synthetic dyes onto raw ingredients.],
-
-    [#strong[Heavy-Duty Double-Zip Freezer Bags]],
-    [Puncture-resistant polyethylene with airtight double zipper seal. Mechanical defense against ice crystals.],
-    [• Protecting food against freezer burn.\ • Archimedes water displacement: submerge open bag in water to force out air before sealing (passive vacuum).],
-    [Cheap twist-tie sandwich bags that permit moisture sublimation, resulting in severe freezer burn and rancidity.],
-
-    [#strong[Heavy Glass Canning Jars with Rubber Gaskets]],
-    [Annealed thick glass jars (Weck or Le Parfait type) with reusable natural rubber sealing rings and steel clamps.],
-    [• Safe lacto-fermentation of seasonal pickles (Chapter 17).\ • Long-term storage of dry grains, beans, and flours away from pantry moths.],
-    [Thin decorative glassware with rusted screw caps that lack hermetic seal integrity against oxygen infiltration.]
+    [#strong[Unbleached Parchment Paper]], [Siliconized cellulose (heat safe to 220°C / 428°F)], [Baking pan lining, parchment cartouche lids for glazed vegetables, en papillote packets.], [Never expose to open broiler element ($> 250^compose upright("C")$); paper chars and catches fire.],
+    [#strong[Heavy Aluminum Foil]], [Pure metal alloy ($18 - 25 upright(" µm")$ thickness)], [Heat-shield wrapping for resting roasts; tight lid seal for long oven braises.], [#strong[Strictly avoid contact with acidic foods] (tomatoes, lemon, vinegars); acid leaches ionic aluminum into food.],
+    [#strong[100% Cotton Kitchen Twine]], [Pure unbleached natural cotton], [Trussing whole chickens for uniform roasting; binding rolled roasts and herb bouquets garni.], [Never use synthetic nylon cords: plastics melt and decompose into toxic compounds under heat.],
+    [#strong[Cheesecloth & Fine Linen]], [Fine unbleached cotton mesh], [Draining fresh farm curd in 15 min; straining broths and consommés to mirror clarity.], [Wash exclusively with unscented neutral soap; scented detergents ruin food flavors.],
+    [#strong[Heavy Paper Towels & Clean Cloths]], [High-absorption pure cellulose], [#strong[The absolute golden rule of surface drying:] drying steaks before pan searing.], [Never attempt to sear damp meat: surface moisture wastes $2,260 upright(" J/g")$ in steam, halting Maillard reaction.]
   )],
-  caption: [Household technical consumables: thermodynamics, food contact, and safety.],
+  caption: [Household technical consumables, thermodynamic contact rules, and safety boundaries.],
   kind: table
 )
+
+#point_attention[
+#strong[The Golden Physical Rule of Surface Drying:]
+A single droplet of water on the surface of raw meat absorbs $2,260 upright(" J/g")$ of heat through latent heat of vaporization. As long as liquid moisture is present, the surface remains trapped at the 100°C (212°F) boiling plateau. The Maillard reaction ($140^compose upright(" to ") 165^compose upright("C")$) can never ignite: the meat boils in its own sweat instead of crisping. A clean paper towel is the physical guarantee of golden crust.
+]
 
 #divider()
 
 == 3. THE MATRIX DRY PANTRY: HEALTHY SHELF-STABLE STAPLES
-<the-matrix-dry-pantry-healthy-shelf-stable-staples>
-A true pantry is not a cluttered dump of industrial ultra-processed packages, but a curated reserve of #strong[nutrient-dense, stable raw materials] capable of lasting months to assemble complete gastronomic meals at a moment's notice:
+<le-fond-de-placard-matriciel-lépicerie-de-survie-saine-hors-frigo>
 
 === A. Stable Cooking Fats & Culinary Acids
-- #strong[Extra-virgin first cold-pressed olive oil:] Foundation for low-heat cooking (< 350°F (180°C)), raw dressings, and mortar emulsions. Rich in oleic acid and polyphenols.
-- #strong[Neutral high-smoke-point oil (high-oleic sunflower or refined rapeseed):] Smoke point > 410°F (210°C), essential for cast-iron searing and firm homemade mayonnaise.
-- #strong[Unpasteurized raw apple cider vinegar (with the mother):] Living source of gentle acetic acid and beneficial prebiotic enzymes.
-- #strong[Aged wine vinegar or traditional balsamic:] Essential for pan deglazing to balance rich pan juices with immediate acid brightness (Chapter 14).
+- #strong[Extra-virgin olive oil:] first cold pressed, high polyphenol count for salads and gentle cooking.
+- #strong[Neutral high-heat oil:] refined peanut oil or high-oleic sunflower oil for high-heat searing.
+- #strong[Rendered animal fat:] pure duck or goose fat preserved in glass jars for roasting potatoes.
+- #strong[Traditional wine vinegar:] aged red or white wine vinegar for deglazing pan sauces.
+- #strong[Raw apple cider vinegar:] unfiltered with active bacterial mother for vinaigrettes and pickles.
 
 === B. Essential Minerals & Whole Spices
-- #strong[Coarse unrefined grey sea salt (*Sel de Guérande*):] Rich in trace minerals and magnesium; calibrated for pasta water at 10 g/L (1.3 oz per gallon).
-- #strong[Crunchy finishing sea salt flakes (*Fleur de sel*):] Delicate pyramidal crystals reserved for table finishing to add textural crunch.
-- #strong[Whole black tellicherry peppercorns (*Piper nigrum*):] Grind fresh per order; volatile piperine aromatics oxidize within 48 hours once pre-ground.
-- #strong[Fundamental whole spices:] Whole cumin seeds, coriander seeds, ground turmeric, smoked Spanish paprika (*pimentón*), whole nutmeg, Ceylon cinnamon sticks.
-- #strong[Dry heritage herbs:] Whole bay leaves (*Laurus nobilis*) and shade-dried wild garrigue thyme.
+- #strong[Coarse gray sea salt:] unrefined Atlantic sea salt for salting pasta and blanching water.
+- #strong[Fleur de sel:] delicate finishing sea salt crystals for seasoned meats and salads.
+- #strong[Black peppercorns in mill:] whole tellicherry black peppercorns ground fresh at service.
+- #strong[Whole spices:] cumin seeds, coriander seeds, cardamom pods, cinnamon sticks, whole cloves.
 
 === C. Grains, Flours & Protein Legumes
-- #strong[Unbleached organic all-purpose flour (T65 / 11.5% protein):] Optimal balance between gluten strength for hearth breads and tender crumb pastry.
-- #strong[Dry bronze-die durum wheat semolina pasta:] Microscopic rough surface that clings to emulsified sauces without requiring cream.
-- #strong[Long-grain Jasmine/Basmati rice & Carnaroli risotto rice:] Neutral amylose-rich side grains or amylopectin-dense grains for creamy risottos.
-- #strong[Split red lentils:] Rapid 12-minute cooking without soaking; bursts into velvety soup (Chapter 09 Dahl).
-- #strong[Puy green lentils & dry chickpeas:] Dense plant protein, rich in prebiotic fiber and Type-3 resistant starch (RS3) once cooled.
-- #strong[Rolled whole oats:] Soluble beta-glucan fibers that stabilize blood glucose and bind savory vegetable patties.
-- #strong[Cornstarch (Maizena):] Pure starch thickening at 167°F (75°C) to lighten sauces without added fat.
+- #strong[Organic wheat flour (T65 / Bread Flour):] unbleached stone-ground flour for bread and doughs.
+- #strong[Bronze-die dry pasta:] durum wheat semolina with rough matte surface for sauce mantecatura.
+- #strong[Long-grain rice (Basmati / Jasmine):] fragrant dry grains for steaming and pilafs.
+- #strong[Round risotto rice (Carnaroli / Arborio):] rich in surface amylopectin for creamy binding.
+- #strong[Red coral lentils:] cook tender in 12 minutes without advance soaking for instant dahl.
+- #strong[Green or brown lentils:] French Puy lentils holding firm shape for salads and stews.
+- #strong[Dried chickpeas & white beans:] dense source of complex starches and plant proteins.
+- #strong[Rolled whole oats:] rich in soluble beta-glucan fibers for breakfasts and crumbs.
 
 === D. High-Value Canned Goods & Raw Nuts
-- #strong[Whole peeled San Marzano canned plum tomatoes (in glass or BPA-free cans):] Pure concentrate of free glutamic acid (umami) and bioavailable lycopene.
-- #strong[Tinned oily fish in extra-virgin olive oil (sardines, mackerel):] Exceptional supply of long-chain omega-3 fatty acids (EPA/DHA) and bioavailable calcium.
-- #strong[Pure unsweetened coconut milk (60% to 80% coconut extract):] Stable plant lipid emulsion for savory curries.
-- #strong[Raw unsalted whole nuts and seeds:] Whole almonds, walnuts, hazelnuts, raw pumpkin seeds, and brown flaxseeds.
+- #strong[Whole canned San Marzano tomatoes:] picked ripe in juice, far superior to pale winter hothouse tomatoes.
+- #strong[Double-concentrated tomato paste in tube:] deep umami base for braises and pan sauces.
+- #strong[Canned chickpeas & white beans:] quick cooked legumes; chickpea liquid provides aquafaba.
+- #strong[Solid canned tuna / sardines:] preserved in pure extra-virgin olive oil for emergency protein.
+- #strong[Raw nuts & seeds:] whole walnuts, raw almonds, pumpkin seeds, golden flaxseeds, sesame seeds.
 
 === E. Cellar Alliums & Storage Roots (Cool, Dark Storage)
-- #strong[Dry garlic heads:] Antibacterial allicin and universal savory aromatic foundation.
-- #strong[Yellow storage onions & red salad onions:] Quercetin flavonoids and caramelized natural sugars.
-- #strong[Traditional shallots:] Refined sulfur compounds for pan reductions and vinaigrettes.
-- #strong[Storage potatoes:] Firm-fleshed waxy varieties (Yukon Gold, Charlotte) and floury starchy varieties (Russet, Bintje).
+- #strong[Yellow storage onions:] foundational aromatic base for mirepoix, stocks, and sauces.
+- #strong[Dry garlic bulbs:] firm purple or white garlic stored in breathable basket.
+- #strong[Traditional shallots:] refined sulfurous aromatic nuances for pan sauces and dressings.
+- #strong[Storage potatoes:] firm waxy tubers (Charlotte) and starchy baking tubers (Bintje/Russet).
 
 #divider()
 
 == 4. PERMANENT REFRIGERATOR FRESH ESSENTIALS (THE NINE COLD SENTINELS)
-<permanent-refrigerator-fresh-essentials-the-nine-cold-sentinels>
-Beyond weekly market purchases, the rational home refrigerator must permanently house #strong[nine cold sentinels], whose combination allows the creation of a balanced, three-star meal in under fifteen minutes:
+<le-frais-permanent-du-réfrigérateur-le-fond-de-frigo-toujours-disponible>
 
 #figure(
   align(center)[#table(
     stroke: 0.5pt + rgb("#dcd6ca"),
     fill: (x, y) => if y == 0 { rgb("#f2ece1") } else if calc.odd(y) { rgb("#faf7f2") } else { none },
     inset: 7pt,
-    columns: (22%, 24%, 30%, 24%),
+    columns: (22%, 22%, 28%, 28%),
     align: (left, left, left, left),
-    table.header([Permanent Ingredient], [Refrigerator Shelf / Bio-Zone], [Culinary Power & Key Manual Gesture], [Safe Storage Limit]),
+    table.header([Cold Sentinel], [Recommended Type], [Preservation Life], [Culinary Transformation Role]),
     table.hline(),
-    [#strong[Pastured Fresh Eggs (Grade AA/A)]],
-    [Middle shelf (39°F to 43°F / 4°C to 6°C) inside their original carton.],
-    [Universal protein chameleon: soft-boiled (6 min), poached (3 min), tender scramble, sauce binder, or foaming foam.],
-    [28 days from laying date (stamped on egg carton).],
-
-    [#strong[Block of Parmigiano Reggiano PDO]],
-    [Fresh zone (39°F to 43°F / 4°C to 6°C) wrapped in parchment paper.],
-    [Goldmine of free glutamate and crunchy tyrosine crystals: noble seasoning salt, umami enhancer, and pasta binder.],
-    [3 to 6 months without degradation when wrapped in breathable parchment.],
-
-    [#strong[Cultured Raw / Unsalted Butter (82% Fat)]],
-    [Fresh zone or door butter bin (43°F to 46°F / 6°C to 8°C).],
-    [Mounting glossy pan sauces off heat, glazing carrots under cartouche, laminating flaky shortcrust doughs.],
-    [3 to 4 weeks after opening; freeze extra blocks for up to 9 months.],
-
-    [#strong[Organic Unwaxed Lemons]],
-    [Crisper drawer or door shelf.],
-    [Chef's invisible acid: zest perfumes with essential oils, juice cuts heavy grease and triggers salivation.],
-    [3 to 4 weeks whole; 3 days once cut open.],
-
-    [#strong[Aromatic Trio: Carrots, Celery, Leeks]],
-    [Vegetable crisper drawer (43°F to 46°F / 6°C to 8°C).],
-    [The universal mirepoix: aromatic foundation for all golden broths, reduced brown sauces, and braises.],
-    [2 to 3 weeks in crisper drawer without loss of turgor.],
-
-    [#strong[Sharp Authentic Dijon Mustard]],
-    [Middle door shelf (43°F to 46°F / 6°C to 8°C).],
-    [Surfactant emulsion stabilizer: natural mucilages bond vinegar and oil molecules into permanent vinaigrette.],
-    [6 months in refrigerator after opening.],
-
-    [#strong[Whole Greek Yogurt or Plain Quark / Fromage Blanc]],
-    [Top or middle shelf (39°F / 4°C).],
-    [Active living probiotics, foundation for instant lemon-herb sauces, meat marinade tenderizer.],
-    [2 to 3 weeks unopened; 5 days after opening.],
-
-    [#strong[Firm Plain Tofu or Traditional Miso Paste]],
-    [Coldest zone (36°F to 39°F / 2°C to 4°C).],
-    [Pure plant protein ready to sear into crispy cubes, or deeply fermented savory seasoning for instant broths.],
-    [Tofu: 1 week submerged in fresh cold water changed every 2 days; Miso: 12 months.],
-
-    [#strong[Fresh Herb Bundle (Flat-Leaf Parsley)]],
-    [Door shelf, stems submerged in 1 in (2 cm) fresh water.],
-    [Vibrant green chlorophyll finish, antioxidants, and immediate freshness sprinkled over hot plates.],
-    [7 to 10 days changing water every two days.]
+    [#strong[1. Fresh Organic Eggs]], [Free-range (Grade A)], [28 to 30 days], [Emulsions (mayo), structure (cakes), standalone poached/soft-boiled proteins.],
+    [#strong[2. European Butter]], [Unsalted (82% fat minimum)], [30 to 45 days], [Mounting sauces, pastry laminations, pan fond basting.],
+    [#strong[3. Parmigiano Reggiano]], [AOP aged 24 to 30 months], [2 to 3 months (in wax paper)], [Concentrated glutamate umami, sauce binding, finishing salads.],
+    [#strong[4. Plain Whole Yogurt]], [Greek whole milk with live cultures], [15 to 20 days], [Acid marinades (tenderizes chicken), sauces, dressings, digestive health.],
+    [#strong[5. Whole Heavy Cream]], [Pasteurized liquid (30 - 35% fat)], [7 to 10 days], [Sauce velvet coats, whipped foams, pastry ganache.],
+    [#strong[6. Fresh Lemons]], [Organic untreated lemons], [15 to 21 days], [Culinary acid balance: drops cut fat and brighten meat jus instantaneously.],
+    [#strong[7. Dijon Mustard]], [Traditional sharp seed mustard], [6 months (refrigerated)], [Emulsifying agent for vinaigrettes, crust seasoning for roasted poultry.],
+    [#strong[8. Celery & Carrots]], [Unwashed fresh bunches], [14 to 21 days (crisper)], [Mirepoix aromatic trio (onion-carrot-celery), broths, crisp crudités.],
+    [#strong[9. Fresh Flat-Leaf Parsley]], [Fresh bunches in water glass], [7 to 10 days], [Fresh finishing chlorophyll, herb stems for bouquet garni.]
   )],
-  caption: [The nine permanent cold sentinels: preservation and immediate gastronomic utility.],
+  caption: [The Nine Permanent Refrigerator Sentinels for instant culinary autonomy.],
   kind: table
 )
 
 #divider()
 
 == 5. THE RATIONAL CLEAN GROCERY TEMPLATE (THREE STANDALONE FULL PAGES)
-<gabarit-matriciel-de-courses-saines>
-Shopping wisely is not a matter of wandering aisles guided by marketing stimuli on endcaps. This protocol enforces the #strong[four cardinal rules of sovereign household provisioning]:
+<le-gabarit-matriciel-de-courses-saines-avec-cases-à-cocher>
 
-1. #strong[The Rule of the Full Stomach:] Never enter a food store or farmers' market hungry. A drop in leptin and surge in ghrelin triggers ancestral foraging reflexes that compel impulsive purchases of refined sugars and hyper-palatable fats.
-2. #strong[The Perimeter-First Trajectory:] Spend 80% of your shopping time along the outer perimeter of the market (fresh vegetables, living produce, butcher, fishmonger, bakery) where living, perishable, single-ingredient whole foods reside. Avoid interior center aisles dedicated to shelf-stable ultra-processed food packages.
-3. #strong[The Five-Ingredient Ceiling:] When purchasing any packaged or canned food, verify the ingredient label: reject any product containing more than 5 ingredients, artificial food flavorings, hydrogenated trans fats, or industrial texturizers (E407, E466, high-fructose corn syrup).
-4. #strong[First In, First Out (FIFO) Storage on Arrival:] Never place newly purchased groceries directly in front of existing food. Systematically rotate older items forward and store new purchases behind, maintaining flawless visibility and zero food waste.
+Shopping with enlightenment is not about roaming aisles reacting to industrial packaging. This protocol implements the #strong[four cardinal rules of sovereign food provisioning]:
+
+1. #strong[The Full-Stomach Rule:] Never enter a market or grocery store hungry. Dropping leptin and surging ghrelin trigger primitive impulses to seek refined fast sugars and saturated industrial fats.
+2. #strong[The 80/20 Perimeter Rule:] In any supermarket, allocate 80% of your budget and cart to the outer perimeter (fresh produce, butchers, fishmongers, raw dairy, bulk whole grains). Avoid the center aisles packed with ultra-processed foods.
+3. #strong[The Five-Ingredient Rule:] If a packaged item lists more than five components or includes additives not found in a domestic kitchen (modified starches, hydrogenated fats, synthetic flavor enhancers), it has no place in your body.
+4. #strong[The Weekly 30-Plant Rule:] Protect gut microbiome biodiversity by checking off a wide variety of root vegetables, leafy greens, bulk seeds, fresh herbs, and protein legumes every week.
 
 The following template has been engineered to occupy #strong[three complete standalone pages], designed to be detached, photocopied, or photographed on a smartphone without text breaks across page boundaries:
 
@@ -827,7 +663,7 @@ The following template has been engineered to occupy #strong[three complete stan
 // =========================================================================
 
 #align(center)[
-  #text(size: 13pt, weight: "bold", fill: c-bordeaux)[RATIONAL CLEAN GROCERY TEMPLATE — SHEET 1 / 3] [#metadata("sheet-1") <sheet-1>] \
+  #text(size: 13pt, weight: "bold", fill: c-bordeaux)[RATIONAL CLEAN GROCERY TEMPLATE — SHEET 1 / 3] \
   #v(1pt)
   #text(size: 8.8pt, style: "italic", fill: c-slate)[The Plant Kingdom: Fresh Greens, Roots, Cereals & Bulk Whole Grains — Standalone Page to Detach]
 ]
@@ -844,47 +680,33 @@ The following template has been engineered to occupy #strong[three complete stan
       inset: 8pt,
       radius: 4pt,
       width: 100%,
-      spacing: 0.8em
+      spacing: 0.65em
     )[
-      #text(weight: "bold", fill: c-bordeaux, size: 9.5pt)[1. ALLIUMS & BULB CELLAR (Darkness)] \
-      #v(2pt)
-      #case_cocher Yellow Onions (storage) #h(1fr) #case_cocher Red Onions (raw/salads) \
-      #case_cocher Purple/White Garlic bulbs #h(1fr) #case_cocher Traditional Shallots \
-      #case_cocher Fresh Leeks (soup/braise) #h(1fr) #case_cocher Fresh Scallions/Chives \
-      #case_cocher Fresh Ginger root #h(1fr) #case_cocher Fresh Turmeric root
-    ]
-    #v(0.15cm)
-    #block(
-      fill: rgb("#faf7f0"),
-      stroke: 0.5pt + rgb("#dfdacf"),
-      inset: 8pt,
-      radius: 4pt,
-      width: 100%,
-      spacing: 0.8em
-    )[
-      #text(weight: "bold", fill: c-bordeaux, size: 9.5pt)[2. FRESH GREENS & SALADS (High Turgor)] \
-      #v(2pt)
-      #case_cocher Romaine / Oakleaf lettuce #h(1fr) #case_cocher Wild Arugula (peppery) \
-      #case_cocher Baby Spinach (raw/sauté) #h(1fr) #case_cocher Swiss Chard / Kale \
-      #case_cocher Watercress / Lamb's lettuce #h(1fr) #case_cocher Fresh Flat-Leaf Parsley \
-      #case_cocher Fresh Cilantro / Basil #h(1fr) #case_cocher Fresh Mint / Dill / Thyme
-    ]
-    #v(0.15cm)
-    #block(
-      fill: rgb("#faf7f0"),
-      stroke: 0.5pt + rgb("#dfdacf"),
-      inset: 8pt,
-      radius: 4pt,
-      width: 100%,
-      spacing: 0.8em
-    )[
-      #text(weight: "bold", fill: c-bordeaux, size: 9.5pt)[3. ROOTS, TUBERS & CRUCIFERS] \
-      #v(2pt)
-      #case_cocher Firm Potatoes (Charlotte/Gold) #h(1fr) #case_cocher Starchy Russet/Bintje \
-      #case_cocher Orange/Heirloom Carrots #h(1fr) #case_cocher Breakfast Radishes \
-      #case_cocher Celeriac / Celery ribs #h(1fr) #case_cocher Parsnips / Turnips \
-      #case_cocher Broccoli / Cauliflower #h(1fr) #case_cocher Green or Red Cabbage \
-      #case_cocher Beetroots (raw/roasted) #h(1fr) #case_cocher Seasonal Winter Squash
+      #text(weight: "bold", size: 9.8pt, fill: c-bordeaux)[1. FRESH GREENS, ROOTS & HERBAL PANTRY]
+      #v(1pt)
+      #line(length: 100%, stroke: 0.5pt + c-bronze)
+      #v(3pt)
+      #set text(size: 8.8pt)
+      #set par(leading: 0.65em)
+      #case_cocher Storage Carrots (unwashed soil) \
+      #case_cocher Celery stalk or celeriac root \
+      #case_cocher Yellow storage onions & red onions \
+      #case_cocher Dry garlic bulbs & gray shallots \
+      #case_cocher Leeks or head cabbage (green / red) \
+      #case_cocher Crisp market salad greens / baby shoots \
+      #case_cocher Organic unwaxed lemons \
+      #case_cocher Waxy firm potatoes (Charlotte / Yukon Gold) \
+      #case_cocher Starchy baking potatoes (Bintje / Russet) \
+      #case_cocher Fresh flat-leaf parsley or fresh cilantro \
+      #case_cocher Seasonal leafy greens (spinach, chard) \
+      #case_cocher Seasonal fruit-vegetables (zucchini, tomatoes) \
+      #case_cocher Raw seasonal fruits (apples, pears) \
+      #case_cocher Fresh button or wild mushrooms \
+      #case_cocher Fresh ginger root \
+      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
+      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
+      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
+      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
     ]
   ],
   [
@@ -894,47 +716,33 @@ The following template has been engineered to occupy #strong[three complete stan
       inset: 8pt,
       radius: 4pt,
       width: 100%,
-      spacing: 0.8em
+      spacing: 0.65em
     )[
-      #text(weight: "bold", fill: c-bordeaux, size: 9.5pt)[4. PULSES & LEGUMES (Proteins)] \
-      #v(2pt)
-      #case_cocher Split Red Lentils (Dahl) #h(1fr) #case_cocher Green French Lentils \
-      #case_cocher Dried Chickpeas (soaking) #h(1fr) #case_cocher Red Kidney Beans \
-      #case_cocher White Cannellini Beans #h(1fr) #case_cocher Black Turtle Beans \
-      #case_cocher Split Green Peas #h(1fr) #case_cocher Organic Firm Tofu block
-    ]
-    #v(0.15cm)
-    #block(
-      fill: rgb("#faf7f0"),
-      stroke: 0.5pt + rgb("#dfdacf"),
-      inset: 8pt,
-      radius: 4pt,
-      width: 100%,
-      spacing: 0.8em
-    )[
-      #text(weight: "bold", fill: c-bordeaux, size: 9.5pt)[5. WHOLE GRAINS & BULK CEREALS] \
-      #v(2pt)
-      #case_cocher Bronze-Die Durum Spaghetti #h(1fr) #case_cocher Short Rigatoni / Penne \
-      #case_cocher Fragrant Basmati Rice #h(1fr) #case_cocher Brown Whole Rice (RS3) \
-      #case_cocher Rolled Whole Oats #h(1fr) #case_cocher Quinoa / Pearled Farro \
-      #case_cocher Unbleached Bread Flour #h(1fr) #case_cocher Whole Wheat / Rye Flour \
-      #case_cocher Cornstarch / Arrowroot #h(1fr) #case_cocher Golden Polenta / Semolina
-    ]
-    #v(0.15cm)
-    #block(
-      fill: rgb("#faf7f0"),
-      stroke: 0.5pt + rgb("#dfdacf"),
-      inset: 8pt,
-      radius: 4pt,
-      width: 100%,
-      spacing: 0.8em
-    )[
-      #text(weight: "bold", fill: c-bordeaux, size: 9.5pt)[6. SEEDS, NUTS & LOW-GLYCEMIC FRUITS] \
-      #v(2pt)
-      #case_cocher Raw Walnuts (Omega-3) #h(1fr) #case_cocher Whole Almonds / Hazelnuts \
-      #case_cocher Flaxseeds / Chia seeds #h(1fr) #case_cocher Pumpkin / Sesame seeds \
-      #case_cocher Fresh Lemons / Limes #h(1fr) #case_cocher Seasonal Apples / Pears \
-      #case_cocher Wild Blueberries / Berries #h(1fr) #case_cocher Avocados (oleic acid)
+      #text(weight: "bold", size: 9.8pt, fill: c-bordeaux)[2. DRY PANTRY & BULK WHOLE GRAINS]
+      #v(1pt)
+      #line(length: 100%, stroke: 0.5pt + c-bronze)
+      #v(3pt)
+      #set text(size: 8.8pt)
+      #set par(leading: 0.65em)
+      #case_cocher Organic stone-ground wheat flour (T65 / Bread) \
+      #case_cocher Bronze-cut durum wheat pasta \
+      #case_cocher Long-grain Basmati or Jasmine rice \
+      #case_cocher Risotto rice (Carnaroli / Arborio) \
+      #case_cocher Red coral lentils (12-min quick cook) \
+      #case_cocher French green Puy lentils or brown lentils \
+      #case_cocher Dried farm chickpeas \
+      #case_cocher Dried white beans (cannellini / navy) \
+      #case_cocher Rolled whole oats (beta-glucans) \
+      #case_cocher Cornstarch (Maizena) or potato starch \
+      #case_cocher Brown flaxseeds & raw pumpkin seeds \
+      #case_cocher Whole golden sesame seeds \
+      #case_cocher Raw walnut halves & raw unroasted almonds \
+      #case_cocher Whole unrefined cane sugar (Muscovado) \
+      #case_cocher Raw artisanal beekeeper honey \
+      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
+      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
+      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
+      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
     ]
   ]
 )
@@ -942,7 +750,7 @@ The following template has been engineered to occupy #strong[three complete stan
 #v(0.2cm)
 
 #point_attention[
-#strong[Microbiome Target of 30 Weekly Plants:] To nourish all bacterial phyla in your colon, vary botanical families and vibrant colors. Every box checked across the two columns above provides distinct prebiotic fiber polymers, polyphenols, and essential protective phytonutrients.
+#strong[Microbiome Target: The 30 Weekly Plants:] To feed the diverse bacterial phyla of your colon, vary botanical families and colors. Every box checked across the two columns above (alliums, brassicas, apiaceous roots, legumes, grasses, seeds, and nuts) delivers a unique profile of prebiotic fibers and protective polyphenols.
 ]
 
 #pagebreak()
@@ -952,9 +760,9 @@ The following template has been engineered to occupy #strong[three complete stan
 // =========================================================================
 
 #align(center)[
-  #text(size: 13pt, weight: "bold", fill: c-bordeaux)[RATIONAL CLEAN GROCERY TEMPLATE — SHEET 2 / 3] [#metadata("sheet-2") <sheet-2>] \
+  #text(size: 13pt, weight: "bold", fill: c-bordeaux)[RATIONAL CLEAN GROCERY TEMPLATE — SHEET 2 / 3] \
   #v(1pt)
-  #text(size: 8.8pt, style: "italic", fill: c-slate)[The Living Cold: Dairy, Fresh Proteins & Noble Preserves — Standalone Page to Detach]
+  #text(size: 8.8pt, style: "italic", fill: c-slate)[Living Cold, Butcher, Seafood & Noble Preserves — Standalone Page to Detach]
 ]
 
 #v(0.2cm)
@@ -969,36 +777,51 @@ The following template has been engineered to occupy #strong[three complete stan
       inset: 8pt,
       radius: 4pt,
       width: 100%,
-      spacing: 0.8em
+      spacing: 0.65em
     )[
-      #text(weight: "bold", fill: c-bordeaux, size: 9.5pt)[7. ARTISAN DAIRY & POULTRY (Cold Zone)] \
-      #v(2pt)
-      #case_cocher Fresh Large Eggs (organic/free-range) \
-      #case_cocher Unsalted Butter (82% fat / European style) \
-      #case_cocher Plain Whole Milk Yogurt (live probiotic cultures) \
-      #case_cocher Whole Fresh Milk (pasteurized, for fresh cheese) \
-      #case_cocher Heavy Whipping Cream (30-35% fat, additive-free) \
-      #case_cocher Parmigiano Reggiano PDO (wedge with rind) \
-      #case_cocher Pecorino Romano PDO (for Carbonara/cacio) \
-      #case_cocher Aged Comté or Gruyère (raw milk cheese)
+      #text(weight: "bold", size: 9.8pt, fill: c-bordeaux)[3. DAIRY, EGGS & LIVING COLD]
+      #v(1pt)
+      #line(length: 100%, stroke: 0.5pt + c-bronze)
+      #v(3pt)
+      #set text(size: 8.8pt)
+      #set par(leading: 0.65em)
+      #case_cocher Organic free-range fresh eggs (Grade A) \
+      #case_cocher Unsalted churned butter (82% fat) \
+      #case_cocher Parmigiano Reggiano PDO wedge (24-30 mo) \
+      #case_cocher Plain whole Greek yogurt (sheep/cow milk) \
+      #case_cocher Fresh farm cottage cheese (fromage blanc) \
+      #case_cocher Heavy liquid cream (35% fat) \
+      #case_cocher Pasteurized whole fresh milk \
+      #case_cocher Firm plain organic soy tofu \
+      #case_cocher Aged brown or white miso paste \
+      #case_cocher Aged raw milk cheese (Comté / Gruyère) \
+      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
+      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
     ]
-    #v(0.15cm)
+
+    #v(0.2cm)
+
     #block(
       fill: rgb("#faf7f0"),
       stroke: 0.5pt + rgb("#dfdacf"),
       inset: 8pt,
       radius: 4pt,
       width: 100%,
-      spacing: 0.8em
+      spacing: 0.65em
     )[
-      #text(weight: "bold", fill: c-bordeaux, size: 9.5pt)[8. SUSTAINABLE MARITIME CATCH (0° to 2°C)] \
-      #v(2pt)
-      #case_cocher Ultra-Fresh White Fish (Cod/Haddock, for Ceviche) \
-      #case_cocher Wild Oily Fish (Fresh Sardines / Mackerel fillets) \
-      #case_cocher Wild Salmon fillet (line-caught) \
-      #case_cocher Fresh Mussels or Clams (alive, tightly closed) \
-      #case_cocher Raw Shell-On Shrimp (reserve shells for astaxanthin) \
-      #case_cocher Salted Anchovy fillets in pure olive oil
+      #text(weight: "bold", size: 9.8pt, fill: c-bordeaux)[4. BUTCHER, POULTRY & SEAFOOD]
+      #v(1pt)
+      #line(length: 100%, stroke: 0.5pt + c-bronze)
+      #v(3pt)
+      #set text(size: 8.8pt)
+      #set par(leading: 0.65em)
+      #case_cocher Whole free-range chicken ready to truss \
+      #case_cocher Thick beef steak for searing (ribeye, sirloin) \
+      #case_cocher Collagen braising cut (chuck, beef cheek) \
+      #case_cocher Line-caught fresh white fish (cod, haddock) \
+      #case_cocher Fresh oily small fish (sardines, mackerel) \
+      #case_cocher Raw shell-on shrimp (shells for broth) \
+      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
     ]
   ],
   [
@@ -1008,37 +831,32 @@ The following template has been engineered to occupy #strong[three complete stan
       inset: 8pt,
       radius: 4pt,
       width: 100%,
-      spacing: 0.8em
+      spacing: 0.65em
     )[
-      #text(weight: "bold", fill: c-bordeaux, size: 9.5pt)[9. ARTISAN BUTCHER & COLLAGEN (0° to 2°C)] \
-      #v(2pt)
-      #case_cocher Thick Beef Ribeye / Strip Steak (3.5 cm / 1.5 in) \
-      #case_cocher Veal or Beef Knuckle Marrow Bones (for Glace) \
-      #case_cocher Free-Range Chicken (whole, for multi-use roasting) \
-      #case_cocher Authentic Guanciale or Pancetta (cured pork jowl) \
-      #case_cocher Beef Chuck or Shank (for slow collagen braising) \
-      #case_cocher Rendered Duck or Goose Fat (for Sarladaise)
-    ]
-    #v(0.15cm)
-    #block(
-      fill: rgb("#faf7f0"),
-      stroke: 0.5pt + rgb("#dfdacf"),
-      inset: 8pt,
-      radius: 4pt,
-      width: 100%,
-      spacing: 0.8em
-    )[
-      #text(weight: "bold", fill: c-bordeaux, size: 9.5pt)[10. NOBLE PANTRY STAPLES & PRESERVES] \
-      #v(2pt)
-      #case_cocher Italian Whole Canned San Marzano Tomatoes \
-      #case_cocher Double-Concentrated Tomato Paste in tube \
-      #case_cocher Canned Chickpeas (liquid reserved for Aquafaba) \
-      #case_cocher Solid Light Tuna in Extra Virgin Olive Oil \
-      #case_cocher Unsweetened Coconut Milk (minimum 60% extract) \
-      #case_cocher Tamari Soy Sauce (gluten-free, non-GMO) \
-      #case_cocher French Traditional Dijon Mustard (pure seed) \
-      #case_cocher Raw Apple Cider Vinegar (unfiltered, with mother) \
-      #case_cocher High-Cocoa Dark Chocolate (70% to 85% cocoa)
+      #text(weight: "bold", size: 9.8pt, fill: c-bordeaux)[5. NOBLE PRESERVES & CELLAR STAPLES]
+      #v(1pt)
+      #line(length: 100%, stroke: 0.5pt + c-bronze)
+      #v(3pt)
+      #set text(size: 8.8pt)
+      #set par(leading: 0.65em)
+      #case_cocher Whole canned peeled San Marzano tomatoes \
+      #case_cocher Double-concentrated tomato paste in tube \
+      #case_cocher Canned chickpeas (water for aquafaba) \
+      #case_cocher Canned white beans in water \
+      #case_cocher Solid white tuna in extra-virgin olive oil \
+      #case_cocher Sardines in extra-virgin olive oil \
+      #case_cocher Salted anchovies in olive oil \
+      #case_cocher Canned unsweetened pure coconut milk \
+      #case_cocher Dark baking chocolate ($> 70 %$ cocoa) \
+      #case_cocher Pure cocoa powder (unsweetened) \
+      #case_cocher Traditional active dry baker's yeast \
+      #case_cocher Glass jars of cooked chestnuts \
+      #case_cocher Pure roasted nut paste (tahini, peanut) \
+      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
+      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
+      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
+      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
+      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
     ]
   ]
 )
@@ -1046,23 +864,22 @@ The following template has been engineered to occupy #strong[three complete stan
 #v(0.2cm)
 
 #danger[
-#strong[Cold Chain Security at the Market:]
-Always purchase categories 7, 8, and 9 (dairy, seafood, meats) at the very end of your shopping circuit. Place them immediately inside an insulated cooler bag. Return directly to the home kitchen to unpack into cold zones ($0^compose upright(" to ") 2^compose upright("C")$) without lingering in warm car trunks.
+#strong[Cold Chain & Food Safety Reflex:] Always purchase categories 3 and 4 (dairy, poultry, meat, fish) at the very end of your shopping trip. Place them immediately inside an insulated cooler bag. Once home, unpack straight into calibrated refrigerator bio-zones (0°C to 2°C / 32°F to 36°F).
 ]
 
 #pagebreak()
 
 // =========================================================================
-// GROCERY TEMPLATE — STANDALONE FULL PAGE 3 / 3: CONSUMABLES & PROTOCOL
+// GROCERY TEMPLATE — STANDALONE FULL PAGE 3 / 3: CONDIMENTS & CUTLERY
 // =========================================================================
 
 #align(center)[
-  #text(size: 13pt, weight: "bold", fill: c-bordeaux)[RATIONAL CLEAN GROCERY TEMPLATE — SHEET 3 / 3] [#metadata("sheet-3") <sheet-3>] \
+  #text(size: 13pt, weight: "bold", fill: c-bordeaux)[RATIONAL CLEAN GROCERY TEMPLATE — SHEET 3 / 3] \
   #v(1pt)
-  #text(size: 8.8pt, style: "italic", fill: c-slate)[Household Consumables, Office Tools & 30-Minute Market Protocol — Standalone Page to Detach]
+  #text(size: 8.8pt, style: "italic", fill: c-slate)[Seasoning Pillars, Household Consumables & Cutlery — Standalone Page to Detach]
 ]
 
-#v(0.12cm)
+#v(0.2cm)
 
 #grid(
   columns: (1fr, 1fr),
@@ -1071,143 +888,140 @@ Always purchase categories 7, 8, and 9 (dairy, seafood, meats) at the very end o
     #block(
       fill: rgb("#faf7f0"),
       stroke: 0.5pt + rgb("#dfdacf"),
-      inset: 7pt,
+      inset: 8pt,
       radius: 4pt,
       width: 100%,
       spacing: 0.65em
     )[
-      #text(weight: "bold", fill: c-bordeaux, size: 9.5pt)[11. TECHNICAL COOKING CONSUMABLES] \
+      #text(weight: "bold", size: 9.8pt, fill: c-bordeaux)[6. NOBLE FATS, ACIDS & CONDIMENTS]
       #v(1pt)
       #line(length: 100%, stroke: 0.5pt + c-bronze)
-      #v(2pt)
-      #set text(size: 8.6pt)
-      #set par(leading: 0.62em)
-      #case_cocher Unbleached Siliconized Parchment Paper roll \
-      #case_cocher Heavy-Duty Aluminum Foil (reflective shields) \
-      #case_cocher 100% Pure Unbleached Cotton Kitchen Twine \
-      #case_cocher Fine Cotton Cheesecloth (*Étamine*) square \
-      #case_cocher Heavy Sealable Freezer Bags (Ziploc type) \
-      #case_cocher 1-Liter Glass Canning Jars with rubber rings \
-      #case_cocher Heavy Paper Towels (for patting meats bone-dry) \
-      #case_cocher Food-Grade Mineral Oil (cutting board care)
-    ]
-    #v(0.12cm)
-    #block(
-      fill: rgb("#faf7f0"),
-      stroke: 0.5pt + rgb("#dfdacf"),
-      inset: 7pt,
-      radius: 4pt,
-      width: 100%,
-      spacing: 0.65em
-    )[
-      #text(weight: "bold", fill: c-bordeaux, size: 9.5pt)[12. OFFICE CUTLERY & HARDWARE CHECKS] \
-      #v(1pt)
-      #line(length: 100%, stroke: 0.5pt + c-bronze)
-      #v(2pt)
-      #set text(size: 8.6pt)
-      #set par(leading: 0.62em)
-      #case_cocher Digital Probe Thermometer (battery test) \
-      #case_cocher Ceramic or Steel Honing Rod (knife maintenance) \
-      #case_cocher Stainless Steel Scrubbing Wool (iron cleaning) \
-      #case_cocher Water Whetstone (#1000 / #3000 grit) \
-      #case_cocher Heatproof Silicone Spatula (*Maryse*) \
-      #case_cocher Conical Fine-Mesh Sieve (*Chinois*) \
-      #case_cocher Heavy Locking Stainless Steel Chef Tongs
+      #v(3pt)
+      #set text(size: 8.8pt)
+      #set par(leading: 0.65em)
+      #case_cocher Extra-virgin cold-pressed olive oil \
+      #case_cocher Refined peanut or high-oleic sunflower oil \
+      #case_cocher Toasted virgin sesame oil \
+      #case_cocher Pure rendered duck or goose fat in jar \
+      #case_cocher Traditional red wine vinegar \
+      #case_cocher Raw unfiltered apple cider vinegar \
+      #case_cocher Traditional sharp Dijon mustard \
+      #case_cocher Shoyu or Tamari soy sauce \
+      #case_cocher Coarse unrefined gray sea salt \
+      #case_cocher Fine finishing sea salt (fleur de sel) \
+      #case_cocher Whole black Tellicherry peppercorns \
+      #case_cocher Whole spices (cumin, coriander, cardamom) \
+      #case_cocher Smoked sweet paprika (pimentón) \
+      #case_cocher Dried bay leaves & dried wild thyme \
+      #case_cocher Unbleached baking parchment paper roll \
+      #case_cocher Heavy aluminum foil (for resting meats) \
+      #case_cocher Pure unbleached cotton kitchen twine \
+      #case_cocher Heavy-duty absorbent paper towels \
+      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
+      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
     ]
   ],
   [
     #block(
       fill: rgb("#faf7f0"),
       stroke: 0.5pt + rgb("#dfdacf"),
-      inset: 7pt,
+      inset: 8pt,
       radius: 4pt,
       width: 100%,
       spacing: 0.65em
     )[
-      #text(weight: "bold", fill: c-bordeaux, size: 9.5pt)[13. PILLAR MINERALS & WHOLE SPICES] \
+      #text(weight: "bold", size: 9.8pt, fill: c-bordeaux)[7. PREP CUTLERY & KITCHEN UTENSILS]
       #v(1pt)
       #line(length: 100%, stroke: 0.5pt + c-bronze)
-      #v(2pt)
-      #set text(size: 8.6pt)
-      #set par(leading: 0.62em)
-      #case_cocher Coarse Grey Sea Salt (Guérande / Celtic style) \
-      #case_cocher Fine Sea Salt (non-iodized, for general cooking) \
-      #case_cocher Crunchy Finishing Sea Salt Flakes (*Fleur de Sel*) \
-      #case_cocher Whole Black Tellicherry Peppercorns \
-      #case_cocher Whole Cumin Seeds (for Tadka / curries) \
-      #case_cocher Whole Coriander Seeds (citrus terpene note) \
-      #case_cocher Whole Mustard Seeds (for pickling brine) \
-      #case_cocher Pure Ground Turmeric root powder \
-      #case_cocher Whole Nutmeg nuts with microplane grater \
-      #case_cocher Dried Bay Leaves & Whole Dried Thyme
+      #v(3pt)
+      #set text(size: 8.8pt)
+      #set par(leading: 0.65em)
+      #case_cocher Short paring knife (8 to 10 cm / 3-4 in) \
+      #case_cocher Swiveling Y-peeler with carbon steel blade \
+      #case_cocher Stiff serrated bread knife (22 cm / 9 in) \
+      #case_cocher Solid 18/10 stainless spoon for basting \
+      #case_cocher Solid beechwood spatula spoon \
+      #case_cocher Beveled offset metal spatula (deglazing) \
+      #case_cocher High-heat silicone spatula Maryse (250°C) \
+      #case_cocher Precision chef's tongs (30 cm / 12 in) \
+      #case_cocher Forged two-prong meat carving fork \
+      #case_cocher Crossed-wire stainless spider skimmer \
+      #case_cocher Seamless one-piece soup ladle \
+      #case_cocher 12-wire spring balloon whisk \
+      #case_cocher Fine microplane grater (zests & Parmesan) \
+      #case_cocher Heavy take-apart bone kitchen shears \
+      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
     ]
   ]
 )
 
-#v(0.12cm)
+#v(0.2cm)
 
-#chef_tip[
-#strong[Weekly 30-Minute Market Execution Protocol:]
-1. #strong[Pantry Audit (Day D - 1):] Open pantry and crisper drawer; check off only missing staple components from categories 1 to 6.
-2. #strong[Linear Market Circuit:] Follow strict numerical order ($1 text(" Produce") arrow.r 2 text(" Bulk") arrow.r 3 text(" Dairy") arrow.r 4 text(" Meat/Fish")$). Perishable cold goods enter insulated cooler bags last.
-3. #strong[Direct Kitchen FIFO Storage:] Upon returning, stow fresh goods immediately according to thermal zones: meats/fish in coldest zone (0°C to 2°C / 32°F to 36°F), dairy in intermediate tier (4°C / 39°F), vegetables in crisper (6°C to 8°C / 43°F to 46°F).
+#truc_de_chef[
+#strong[30-Minute Weekly Grocery Protocol:]
+1. #strong[Pantry Audit (Day -1):] Open dry cupboard and crisper; check off on this template only the missing items in categories 1 through 6.
+2. #strong[Linear Market Circuit:] Follow strict numerical order (1 Produce $arrow.r$ 2 Bulk Grains $arrow.r$ 3 Dairy $arrow.r$ 4 Butcher/Fish). Cold, fragile proteins enter the insulated cooler bag last.
+3. #strong[Direct-Integration (FIFO):] Upon returning, immediately store fresh foods according to the thermal map of Appendix E: raw meats and fish in the coldest zone (0°C to 2°C / 32°F to 36°F), dairy in the middle (4°C / 39°F), vegetables in the crisper (6°C to 8°C / 43°F to 46°F).
 ]
-
-#pagebreak()
-
-= APPENDIX G --- Comprehensive Iconographic Directory & Image Sources
-<appendix-g-comprehensive-iconographic-directory-and-image-sources>
-
-This directory records all archival sources, institutional collections, historical dates, and open licenses (#emph[Creative Commons] or #emph[Public Domain]) for all artworks, historical engravings, scientific photography, and culinary plates featured in this treatise.
 
 #divider()
 
-== 1. MAJOR BOOK OPENING PORTALS (FULL-PAGE VERSO OPENINGS)
-<major-book-opening-portals-full-page-verso-openings>
+// =========================================================================
+// APPENDIX G: ICONOGRAPHIC DIRECTORY & IMAGE SOURCES
+// =========================================================================
 
+= APPENDIX G --- Comprehensive Iconographic Directory & Image Sources
+<annexe-g-répertoire-des-crédits-iconographiques-et-sources-des-illustrations>
+This directory compiles all sources, attributions, historical dates, and open licenses (#emph[Creative Commons] or #emph[Public Domain]) for all artworks, engravings, food photography plates, and vector diagrams in this work.
+
+#divider()
+
+== 1. Major Book Opening Portals (Full-Page Verso Openings)
+<grandes-ouvertures-de-livres-pleines-pages-verso>
 #figure(
   align(center)[#table(
-    stroke: 0.5pt + rgb("#dcd6ca"),
-    fill: (x, y) => if y == 0 { rgb("#f2ece1") } else if calc.odd(y) { rgb("#faf7f2") } else { none },
-    inset: 7pt,
-    columns: (18%, 24%, 22%, 16%, 20%),
-    align: (left, left, left, left, left),
-    table.header([Book Placement], [Subject & Artwork Description], [Artist / Cultural Institution], [Dating], [License & Source]),
+  stroke: 0.5pt + rgb("#dcd6ca"),
+  fill: (x, y) => if y == 0 { rgb("#f2ece1") } else if calc.odd(y) { rgb("#faf7f2") } else { none },
+  inset: 8pt,
+
+    columns: (20%, 20%, 20%, 20%, 20%),
+    align: (left,left,left,left,left,),
+    table.header([Placement], [Subject & Artwork], [Artist / Institution], [Dating], [License & Source],),
     table.hline(),
-    [#strong[Book I]], [#emph[Paleolithic Fire & Prehistoric Hearth: The externalization of human digestion]], [Archaeological Photographic Archive], [Paleolithic], [CC BY-SA 4.0 / Wikimedia],
-    [#strong[Book II]], [#emph[The Ordered Domestic Hearth: La Pourvoyeuse / L'Écureuse]], [Jean-Siméon Chardin / Musée du Louvre, Paris], [1738], [Public Domain / Wikimedia],
-    [#strong[Book III]], [#emph[Market Abundance of Raw Soil Produce Before Thermal Metamorphosis]], [Joachim Beuckelaer / Kunsthistorisches Museum, Vienna], [16th Century], [Public Domain / Wikimedia],
-    [#strong[Book IV]], [#emph[Golden Artisan Sourdough Loaves Baked in Wood-Fired Hearth]], [Artisan Bakery Documentary Photography], [2024], [CC BY-SA 4.0 / Wikimedia],
-    [#strong[Book V]], [#emph[Aristocratic Gala Banquet Table: Silver flatware and linen geometry]], [Formal Table Service Archive], [Contemporary], [CC BY-SA 3.0 / Wikimedia],
-    [#strong[Book VI]], [#emph[The Living Biodiverse Kitchen Garden Across Seasons and Deep Time]], [Agronomic Horticultural Photography], [Contemporary], [Public Domain / Wikimedia],
-    [#strong[Appendices]], [#emph[The Confectioner, Hearth Oven & Stove (Pl. II of Encyclopédie)]], [Diderot, d'Alembert, Goussier & Bénard], [1762], [Public Domain / Wikimedia]
+    [#strong[Book I]], [#emph[Paleolithic Fire Conquest & Externalized Digestion]], [Archaeological Collections], [Paleolithic], [CC BY-SA 4.0 / Wikimedia],
+    [#strong[Book II]], [#emph[The Ordered Domestic Hearth: La Pourvoyeuse / L'Écureuse]], [Jean Siméon Chardin / Louvre], [1738], [Public Domain / Wikimedia],
+    [#strong[Book III]], [#emph[Market Abundance of Raw Produce Before Cooking]], [Joachim Beuckelaer / Kunsthistorisches Museum], [16th c.], [Public Domain / Wikimedia],
+    [#strong[Book IV]], [#emph[Golden Artisan Sourdough Loaves in Hearth Oven]], [Artisanal Bakery Photography], [2024], [CC BY-SA 4.0 / Wikimedia],
+    [#strong[Book V]], [#emph[Gala Banquet Table, Silver Flatware & Shared Service]], [Gala Table Service Photography], [Contemporary], [CC BY-SA 3.0 / Wikimedia],
+    [#strong[Book VI]], [#emph[The Living Biodiverse Kitchen Garden Across Seasons]], [Agronomic & Horticultural Photography], [Contemporary], [Public Domain / Wikimedia],
+    [#strong[Appendices]], [#emph[Confectioner, Proofing Chamber & Oven (Encyclopédie Pl. II)]], [Diderot, d'Alembert, Goussier & Bénard], [1762], [Public Domain / Wikimedia],
   )],
-  caption: [Master photographic and fine art opening portals for each major Book of the treatise.],
+  caption: [Full-page verso opening artworks and historical plates for all major books.],
   kind: table
 )
 
 #divider()
 
-== 2. HISTORICAL PORTRAITS, SCIENTIFIC ENGRAVINGS, AND ARTWORKS
-<historical-portraits-scientific-engravings-and-artworks>
-
+== 2. Historical Portraits, Scientific Engravings & Documentary Photographs
+<portraits-historiques-gravures-et-photographies-scientifiques>
 #figure(
   align(center)[#table(
-    stroke: 0.5pt + rgb("#dcd6ca"),
-    fill: (x, y) => if y == 0 { rgb("#f2ece1") } else if calc.odd(y) { rgb("#faf7f2") } else { none },
-    inset: 7pt,
-    columns: (22%, 28%, 26%, 24%),
-    align: (left, left, left, left),
-    table.header([Location], [Subject & Artist / Work], [Institution & Historical Date], [Open License & Archival Source]),
+  stroke: 0.5pt + rgb("#dcd6ca"),
+  fill: (x, y) => if y == 0 { rgb("#f2ece1") } else if calc.odd(y) { rgb("#faf7f2") } else { none },
+  inset: 8pt,
+
+    columns: (25%, 25%, 25%, 25%),
+    align: (left,left,left,left,),
+    table.header([Placement], [Subject & Artist], [Institution & Date], [Open License & Source],),
     table.hline(),
-    [#strong[Chapter 02]], [#emph[Bread Stall in a Pompeii Bakery] (Roman wall fresco)], [Museo Archeologico Nazionale di Napoli (1st c. AD)], [Public Domain / Wikimedia Commons],
-    [#strong[Chapter 02]], [#emph[Master Renaissance Kitchen Cutlery & Vessels] (Bartolomeo Scappi)], [#emph[Opera dell'arte del cucinare] (Venice, 1570)], [Public Domain / Wikimedia Commons],
-    [#strong[Chapter 02]], [#emph[Portrait of Jean Anthelme Brillat-Savarin]], [Steel engraving plate (19th Century)], [Public Domain / Wikimedia Commons],
-    [#strong[Chapter 02]], [#emph[Portrait of Nicolas Appert] (Inventor of Appertization)], [Official historical portrait (1810)], [Public Domain / Wikimedia Commons],
-    [#strong[Chapter 02]], [#emph[Portrait of Auguste Escoffier] (Le Guide Culinaire)], [Historical archival photograph (1903)], [Public Domain / Wikimedia Commons],
-    [#strong[Chapter 18]], [#emph[Colloidal Separation of Curd and Whey in Cheese Vat]], [Documentary dairy photography], [CC BY-SA 2.0 / Wikimedia Commons],
-    [#strong[Chapter 22]], [#emph[Table Arts: Harmonious flatware placement and formal service geometry]], [Gastronomic service photography], [CC BY-SA 4.0 / Wikimedia Commons],
-    [#strong[Chapter 26]], [#emph[Biodiversity of Dry Legumes & Resistant Starch Grains]], [Agronomic botanical documentation], [Public Domain / Wikimedia Commons]
+    [#strong[Chapter 02]], [#emph[Bread Stall in a Pompeii Bakery] (Roman wall fresco)], [National Archaeological Museum of Naples (1st c. AD)], [Public Domain / Wikimedia],
+    [#strong[Chapter 02]], [#emph[Master Renaissance Kitchen Cutlery & Vessels] (Bartolomeo Scappi)], [#emph[Opera dell'arte del cucinare] (1570)], [Public Domain / Wikimedia],
+    [#strong[Chapter 02]], [#emph[Portrait of Jean Anthelme Brillat-Savarin]], [Steel engraving (19th Century)], [Public Domain / Wikimedia],
+    [#strong[Chapter 02]], [#emph[Portrait of Nicolas Appert] (Inventor of Appertization)], [Official historical portrait (1810)], [Public Domain / Wikimedia],
+    [#strong[Chapter 02]], [#emph[Portrait of Auguste Escoffier] (Le Guide Culinaire)], [Historical archival photograph (1903)], [Public Domain / Wikimedia],
+    [#strong[Chapter 18]], [#emph[Colloidal Curd and Whey Separation in Cheese Vat]], [Documentary dairy photography], [CC BY-SA 2.0 / Wikimedia],
+    [#strong[Chapter 22]], [#emph[Table Arts: Harmonious Flatware Placement]], [Documentary service photography], [CC BY-SA 4.0 / Wikimedia],
+    [#strong[Chapter 26]], [#emph[Biodiversity of Dry Legumes & Resistant Starch]], [Agronomic documentary photograph], [Public Domain / Wikimedia],
   )],
   caption: [Historical artworks, engravings, and documentary photography credits.],
   kind: table
@@ -1215,57 +1029,33 @@ This directory records all archival sources, institutional collections, historic
 
 #divider()
 
-== 3. MASTER FOOD PHOTOGRAPHY FOR THE 26 FOUNDATIONAL RECIPES
-<master-food-photography-for-the-26-foundational-recipes>
-All 26 foundational recipe plates were sourced from the global open repository #strong[Wikimedia Commons] and are distributed under #strong[Creative Commons (CC BY-SA 3.0 / 4.0)] or #strong[Public Domain (CC0)] licenses:
+== 3. Culinary Photography of the 26 Foundational Master Recipes
+<photographies-culinaires-des-26-recettes-fondatrices>
+All photographs illustrating the 26 foundational recipes of this work were sourced from the global open-access repository #strong[Wikimedia Commons] and are distributed under #strong[Creative Commons (CC BY-SA 3.0 / 4.0)] or #strong[Public Domain (CC0)] licenses:
 
 #figure(
   align(center)[#table(
-    stroke: 0.5pt + rgb("#dcd6ca"),
-    fill: (x, y) => if y == 0 { rgb("#f2ece1") } else if calc.odd(y) { rgb("#faf7f2") } else { none },
-    inset: 7pt,
+  stroke: 0.5pt + rgb("#dcd6ca"),
+  fill: (x, y) => if y == 0 { rgb("#f2ece1") } else if calc.odd(y) { rgb("#faf7f2") } else { none },
+  inset: 8pt,
+
     columns: (50%, 50%),
-    align: (left, left),
-    table.header([Recipes 01 to 13 (Book III)], [Recipes 14 to 26 (Books III & IV)]),
+    align: (left,left,),
+    table.header([Recipes 01 to 13 (Book III)], [Recipes 14 to 26 (Books III & IV)],),
     table.hline(),
-    [#strong[01.] Traditional Roman Spaghetti alla Carbonara (egg-pecorino emulsion)],
-    [#strong[14.] Perfect Soft-Boiled Egg (*Mollet*) with Warm Flowing Liquid Yolk],
-
-    [#strong[02.] Comforting Red Lentil Dahl with Coconut Milk & Bloom Spices],
-    [#strong[15.] Tear-Drop Poached Egg on Golden Sourdough Toast],
-
-    [#strong[03.] Crispy Pan-Seared Tofu Cubes Glazed with Tamari-Sesame Reduction],
-    [#strong[16.] Stiff Hand-Whisked Cold Yolk-Lecithin Mayonnaise Emulsion],
-
-    [#strong[04.] Golden Sarladaise Potatoes Crisped in Rendered Duck Fat with Garlic],
-    [#strong[17.] Velvet Hollandaise Emulsion Mounted Warm with Melted Butter & Lemon],
-
-    [#strong[05.] Grand Provençal Mortar-Crushed Aïoli with Poached Salt Cod & Vegetables],
-    [#strong[18.] Silky Classical Béchamel White Sauce Thickened with Roux & Fresh Nutmeg],
-
-    [#strong[06.] Cloud-like Potato Purée Infused with Peel Milk (Heston Blumenthal)],
-    [#strong[19.] Crackling Dutch-Oven Artisan Loaf Leavened with Wild Sourdough],
-
-    [#strong[07.] Butter-Glazed Carrots Reduced Under Parchment Paper Cartouche],
-    [#strong[20.] Crisp Lacto-Fermented Pickled Vegetables in Cold Mineral Brine],
-
-    [#strong[08.] Crisp Garden Salad Greens Tossed with Emulsified Dijon Vinaigrette],
-    [#strong[21.] Fresh Acid-Curdled Farm Cottage Cheese Drained in Cheesecloth in 15 Min],
-
-    [#strong[09.] Simmering Golden Bone Broth Reduced into Gelatinous Glaze],
-    [#strong[22.] Molten Dark Chocolate Lava Cake with Flowing Warm Core],
-
-    [#strong[10.] Mirror-Clear Beef Consommé Clarified with Albumin Egg White Raft],
-    [#strong[23.] Melt-in-the-Mouth Pure Butter Flaky Shortcrust Pastry (Sablage)],
-
-    [#strong[11.] Thick Cast-Iron Seared Beef Ribeye Basted in Foaming Butter],
-    [#strong[24.] Airy Dark Chocolate Mousse Leavened with Whipped Aquafaba Foam],
-
-    [#strong[12.] Pan Sauce Deglazed with Dry Red Wine and Mounted with Cold Butter],
-    [#strong[25.] Baked Alaska: Scorched Meringue Shield Protecting Frozen Sub-Zero Core],
-
-    [#strong[13.] Vibrant Lime-Cured Cod Ceviche with Red Onion & Fresh Cilantro],
-    [#strong[26.] Silky Churnless Vanilla Ice Cream Frozen over Cryoscopic Salt-Ice Bath]
+    [#strong[01.] Traditional Roman Spaghetti alla Carbonara], [#strong[14.] Perfect Soft-Boiled Egg (*Mollet*) with Flowing Yolk],
+    [#strong[02.] Comforting Red Lentil Dahl with Coconut Milk], [#strong[15.] Tear-Drop Poached Egg on Golden Toast],
+    [#strong[03.] Crispy Pan-Seared Tofu Glazed with Tamari & Sesame], [#strong[16.] Firm Hand-Whisked Cold Mayonnaise Emulsion],
+    [#strong[04.] Golden Sarladaise Potatoes Crisped in Duck Fat], [#strong[17.] Velvety Hollandaise Emulsion Mounted Warm],
+    [#strong[05.] Grand Provençal Mortar-Crushed Aïoli with Cod], [#strong[18.] Silky Classical Béchamel White Sauce],
+    [#strong[06.] Cloud-like Potato Purée Infused with Peel Milk], [#strong[19.] Crackling Dutch-Oven Wild Sourdough Loaf],
+    [#strong[07.] Butter-Glazed Carrots Reduced Under Cartouche], [#strong[20.] Crisp Lacto-Fermented Pickled Vegetables in Brine],
+    [#strong[08.] Crisp Garden Salad Greens & Dijon Vinaigrette], [#strong[21.] Fresh Farm Cottage Cheese Drained in 15 Minutes],
+    [#strong[09.] Simmering Golden Bone Broth Reduced to Glaze], [#strong[22.] Molten Dark Chocolate Lava Cake with Liquid Core],
+    [#strong[10.] Mirror-Clear Beef Consommé Clarified with Raft], [#strong[23.] Melt-in-the-Mouth Pure Butter Flaky Shortcrust],
+    [#strong[11.] Thick Cast-Iron Seared Beef Ribeye in Butter], [#strong[24.] Airy Dark Chocolate Mousse Leavened with Aquafaba],
+    [#strong[12.] Pan Sauce Deglazed with Wine & Mounted with Butter], [#strong[25.] Baked Alaska: Scorched Meringue Shield with Frozen Core],
+    [#strong[13.] Vibrant Lime-Cured Cod Ceviche with Red Onion], [#strong[26.] Silky Churnless Vanilla Ice Cream Frozen on Salt-Ice],
   )],
   caption: [Complete photographic index of the 26 foundational master recipes.],
   kind: table
@@ -1273,17 +1063,17 @@ All 26 foundational recipe plates were sourced from the global open repository #
 
 #divider()
 
-== 4. VECTOR SVG SCHEMATICS AND TECHNICAL FIGURES
-<vector-svg-schematics-and-technical-figures>
-All 18 technical schematics, thermodynamic timelines, transformation matrices, and anatomical diagrams were custom-engineered and authored in pure vector SVG adhering strictly to W3C standards under the #strong[Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)] license:
+== 4. Vector SVG Schematics and Technical Figures
+<schémas-vectoriels-svg-et-figures-didactiques>
+All technical diagrams, thermodynamic timelines, transformation matrices, and anatomical cross-sections (Vector SVG figures) were engineered and authored specifically for this treatise in strict compliance with W3C standards under the #strong[Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)] license:
 
 - #strong[Vector Graphic Authoring:] Editorial & Technical Team of #emph[Cooking Decoded / La Cuisine Expliquée].
-- \#strong[Embedded Open-Source Typography:] Clean system fonts \#emph[Liberation Sans] and \#emph[Liberation Serif].
-- \#strong[Official Semantic Color Palette:]
-  - Thermal Energy / Heat: `\#dc2626` (Red) / Background `\#fef2f2`
-  - Water / Hydration / Steam: `\#2563eb` (Royal Blue) / Background `\#eff6ff`
-  - Cold / Sub-Zero / Cryoscopy: `\#0284c7` (Cyan Blue) / Background `\#f0f9ff`
-  - Lipids / Caramelization / Oil: `\#d97706` (Amber Gold) / Background `\#fffbeb`
-  - Acidity / Balance / Success: `\#16a34a` (Emerald Green) / Background `\#f0fdf4`
-  - Metals / Vessels / Coordinate Axes: `\#0f172a` (Deep Slate) / Background `\#f8fafc`
-  - Reference Grids / Baseline Borders: `\#94a3b8` (Muted Grey) / Background `\#f1f5f9`
+- #strong[Embedded Open-Source Typography:] Clean system fonts #emph[Liberation Sans] and #emph[Liberation Serif].
+- #strong[Official Semantic Color Palette:]
+  - Thermal Energy / Heat: `#dc2626` (Red) / Background `#fef2f2`
+  - Water / Hydration / Steam: `#2563eb` (Royal Blue) / Background `#eff6ff`
+  - Cold / Sub-Zero / Cryoscopy: `#0284c7` (Cyan Blue) / Background `#f0f9ff`
+  - Lipids / Caramelization / Oil: `#d97706` (Amber Gold) / Background `#fffbeb`
+  - Acidity / Balance / Success: `#16a34a` (Emerald Green) / Background `#f0fdf4`
+  - Metals / Vessels / Coordinate Axes: `#0f172a` (Deep Slate) / Background `#f8fafc`
+  - Reference Grids / Baseline Borders: `#94a3b8` (Muted Grey) / Background `#f1f5f9`

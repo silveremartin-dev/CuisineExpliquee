@@ -11,8 +11,6 @@
 #let c-olive = rgb("#5a6e54")      // Muted bay-leaf sage
 #let c-rust = rgb("#92400e")       // Deep amber
 
-#let divider() = line(length: 100%, stroke: 0.5pt + c-bronze)
-
 // Running headers and footers
 #let pied-livre = context {
   let p = here().page()

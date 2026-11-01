@@ -3,15 +3,15 @@
   <text x="440" y="34" font-family="Liberation Serif, Georgia, serif" font-size="20" font-weight="bold" fill="#701C1A" text-anchor="middle">DAIRY CURDLING BIOMECHANICS: THE TWO COLLOIDAL PATHWAYS</text>
   <text x="440" y="55" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" fill="#5C5549" text-anchor="middle">From electrostatic casein micelle repulsion to cheese curd gelation.</text>
 
-  <!-- Bloc Racine : Lait Entier -->
-  <g transform="translate(245, 72)">
-    <rect width="390" height="76" rx="8" fill="#FAF7F2" stroke="#966C3B" stroke-width="1.8"/>
-    <text x="195" y="26" font-family="Liberation Serif, Georgia, serif" font-size="15" font-weight="bold" fill="#701C1A" text-anchor="middle">LAIT ENTIER FRAIS (pH 6,6)</text>
-    <text x="195" y="46" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" fill="#242124" text-anchor="middle">Suspension colloïdale stable de micelles de caséine</text>
-    <text x="195" y="64" font-family="Liberation Sans, Arial, sans-serif" font-size="11.8" font-style="italic" fill="#5C5549" text-anchor="middle">Charges négatives de surface = répulsion électrostatique mutuelle</text>
+  <!-- Root Block: Fresh Whole Milk -->
+  <g transform="translate(240, 72)">
+    <rect width="400" height="76" rx="8" fill="#FAF7F2" stroke="#966C3B" stroke-width="1.8"/>
+    <text x="200" y="26" font-family="Liberation Serif, Georgia, serif" font-size="15" font-weight="bold" fill="#701C1A" text-anchor="middle">FRESH WHOLE MILK (pH 6.6)</text>
+    <text x="200" y="46" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" fill="#242124" text-anchor="middle">Stable colloidal suspension of casein micelles</text>
+    <text x="200" y="64" font-family="Liberation Sans, Arial, sans-serif" font-size="11.8" font-style="italic" fill="#5C5549" text-anchor="middle">Negative surface charges = mutual electrostatic repulsion</text>
   </g>
 
-  <!-- Lignes de bifurcation -->
+  <!-- Bifurcation Lines -->
   <path d="M 440 148 L 440 175" stroke="#966C3B" stroke-width="2.2"/>
   <path d="M 227 175 L 652 175" stroke="#966C3B" stroke-width="2.2"/>
   <path d="M 227 175 L 227 198" stroke="#5A6E54" stroke-width="2.2"/>
@@ -19,13 +19,13 @@
   <path d="M 652 175 L 652 198" stroke="#B45309" stroke-width="2.2"/>
   <polygon points="652,204 647,196 657,196" fill="#B45309"/>
 
-  <!-- Voie Gauche : Acide -->
+  <!-- Left Pathway: Acid -->
   <g transform="translate(40, 206)">
     <rect width="375" height="92" rx="8" fill="#F4F6F4" stroke="#5A6E54" stroke-width="1.5"/>
-    <text x="187" y="25" font-family="Liberation Serif, Georgia, serif" font-size="14" font-weight="bold" fill="#5A6E54" text-anchor="middle">VOIE 1 : COAGULATION ACIDE DIRECTE</text>
+    <text x="187" y="25" font-family="Liberation Serif, Georgia, serif" font-size="14" font-weight="bold" fill="#5A6E54" text-anchor="middle">PATHWAY 1: DIRECT ACID COAGULATION</text>
     <text x="187" y="45" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#242124" text-anchor="middle">Lemon, Vinegar, or Lactic Cultures (pH 4.6)</text>
-    <text x="187" y="64" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#5C5549" text-anchor="middle">Isoelectric point: H⁺ protons cancel charges.</text>
-    <text x="187" y="81" font-family="Liberation Sans, Arial, sans-serif" font-size="11.8" fill="#5C5549" text-anchor="middle">Les micelles déminéralisées floculent instantanément.</text>
+    <text x="187" y="64" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#5C5549" text-anchor="middle">Isoelectric point: H⁺ protons cancel micelle charges.</text>
+    <text x="187" y="81" font-family="Liberation Sans, Arial, sans-serif" font-size="11.8" fill="#5C5549" text-anchor="middle">Demineralized micelles aggregate instantaneously.</text>
   </g>
 
   <path d="M 227 298 L 227 325" stroke="#5A6E54" stroke-width="2.2"/>
@@ -34,21 +34,21 @@
   <g transform="translate(40, 333)">
     <rect width="375" height="150" rx="8" fill="#FAF7F2" stroke="#5A6E54" stroke-width="1.5"/>
     <rect width="375" height="30" rx="8" fill="#5A6E54"/>
-    <text x="187" y="20" font-family="Liberation Serif, Georgia, serif" font-size="13" font-weight="bold" fill="#FCFBF7" text-anchor="middle">CAILLÉ LACTIQUE : PÂTE FRAÎCHE FRIABLE</text>
-    <text x="18" y="52" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#5A6E54">• Architecture microscopique :</text>
+    <text x="187" y="20" font-family="Liberation Serif, Georgia, serif" font-size="13" font-weight="bold" fill="#FCFBF7" text-anchor="middle">LACTIC CURD: CRUMBLY FRESH CHEESE</text>
+    <text x="18" y="52" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#5A6E54">• Microscopic Architecture:</text>
     <text x="28" y="70" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#242124">Porous, delicate, high-moisture curd network.</text>
-    <text x="18" y="94" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#5A6E54">• Applications au foyer :</text>
-    <text x="28" y="112" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#242124">Fromage frais en 15 min, Faisselle, Paneer, Ricotta.</text>
+    <text x="18" y="94" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#5A6E54">• Domestic Applications:</text>
+    <text x="28" y="112" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#242124">Fresh cheese in 15 min, Cottage Cheese, Paneer, Ricotta.</text>
     <text x="18" y="135" font-family="Liberation Sans, Arial, sans-serif" font-size="11.8" font-style="italic" fill="#5C5549">Gentle gravity drainage through fine cotton cheesecloth.</text>
   </g>
 
-  <!-- Voie Droite : Présure -->
+  <!-- Right Pathway: Rennet -->
   <g transform="translate(465, 206)">
     <rect width="375" height="92" rx="8" fill="#F2ECE1" stroke="#B45309" stroke-width="1.5"/>
-    <text x="187" y="25" font-family="Liberation Serif, Georgia, serif" font-size="14" font-weight="bold" fill="#B45309" text-anchor="middle">VOIE 2 : COAGULATION ENZYMATIQUE</text>
-    <text x="187" y="45" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#242124" text-anchor="middle">Présure / Chymosine à tiédeur animale (32–35°C)</text>
+    <text x="187" y="25" font-family="Liberation Serif, Georgia, serif" font-size="14" font-weight="bold" fill="#B45309" text-anchor="middle">PATHWAY 2: ENZYMATIC RENNET COAGULATION</text>
+    <text x="187" y="45" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#242124" text-anchor="middle">Animal Rennet / Chymosin at Body Temp (32–35°C)</text>
     <text x="187" y="64" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#5C5549" text-anchor="middle">Selective enzymatic shearing of kappa-casein hairs.</text>
-    <text x="187" y="81" font-family="Liberation Sans, Arial, sans-serif" font-size="11.8" fill="#5C5549" text-anchor="middle">Soudure tridimensionnelle par ponts de calcium (Ca²⁺).</text>
+    <text x="187" y="81" font-family="Liberation Sans, Arial, sans-serif" font-size="11.8" fill="#5C5549" text-anchor="middle">Three-dimensional bonding via calcium bridges (Ca²⁺).</text>
   </g>
 
   <path d="M 652 298 L 652 325" stroke="#B45309" stroke-width="2.2"/>
@@ -58,10 +58,10 @@
     <rect width="375" height="150" rx="8" fill="#FAF7F2" stroke="#B45309" stroke-width="1.5"/>
     <rect width="375" height="30" rx="8" fill="#B45309"/>
     <text x="187" y="20" font-family="Liberation Serif, Georgia, serif" font-size="13" font-weight="bold" fill="#FCFBF7" text-anchor="middle">RENNET CURD: ELASTIC, FIRM AGED CHEESE</text>
-    <text x="18" y="52" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#B45309">• Architecture microscopique :</text>
+    <text x="18" y="52" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#B45309">• Microscopic Architecture:</text>
     <text x="28" y="70" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#242124">Elastic, cohesive gel with strong syneresis.</text>
-    <text x="18" y="94" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#B45309">• Fromages d'affinage :</text>
-    <text x="28" y="112" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#242124">Comté, Beaufort, Tomme de montagne, Camembert.</text>
+    <text x="18" y="94" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#B45309">• Aged Cheeses:</text>
+    <text x="28" y="112" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#242124">Comté, Gruyère, Mountain Tomme, Camembert.</text>
     <text x="18" y="135" font-family="Liberation Sans, Arial, sans-serif" font-size="11.8" font-style="italic" fill="#5C5549">Withstands curd cutting with a harp, heating, and pressing.</text>
   </g>
 </svg>

@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 460" width="100%" height="100%">
   <rect width="880" height="460" rx="14" fill="#FCFBF7" stroke="#DFDACF" stroke-width="2"/>
-  <text x="440" y="34" font-family="Liberation Serif, Georgia, serif" font-size="20" font-weight="bold" fill="#701C1A" text-anchor="middle">LA PURÉE PARFAITE SELON HESTON BLUMENTHAL</text>
+  <text x="440" y="34" font-family="Liberation Serif, Georgia, serif" font-size="20" font-weight="bold" fill="#701C1A" text-anchor="middle">THE PERFECT PURÉE ACCORDING TO HESTON BLUMENTHAL</text>
   <text x="440" y="55" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" fill="#5C5549" text-anchor="middle">Volatile peel milk infusion and cellular starch shear protection.</text>
 
-  <!-- Panneau Gauche : Infusion des pelures -->
+  <!-- Left Panel: Peel Infusion -->
   <g transform="translate(30, 75)">
     <rect width="395" height="360" rx="10" fill="#FAF7F2" stroke="#B45309" stroke-width="1.5"/>
     <rect width="395" height="32" rx="10" fill="#B45309"/>
@@ -11,8 +11,8 @@
 
     <ellipse cx="197" cy="110" rx="95" ry="52" fill="#F2ECE1" stroke="#6B4423" stroke-width="3"/>
     <ellipse cx="197" cy="110" rx="85" ry="43" fill="#FAF7F2" stroke="#B45309" stroke-width="1.5" stroke-dasharray="4,2"/>
-    <text x="197" y="106" font-family="Liberation Serif, Georgia, serif" font-size="13.5" font-weight="bold" fill="#6B4423" text-anchor="middle">Chair centrale :</text>
-    <text x="197" y="124" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" fill="#B45309" text-anchor="middle">Pure starch (neutral)</text>
+    <text x="197" y="106" font-family="Liberation Serif, Georgia, serif" font-size="13.5" font-weight="bold" fill="#6B4423" text-anchor="middle">Central Flesh:</text>
+    <text x="197" y="124" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" fill="#B45309" text-anchor="middle">Pure starch (neutral flavor)</text>
 
     <text x="197" y="186" font-family="Liberation Sans, Arial, sans-serif" font-size="13.0" font-weight="bold" fill="#701C1A" text-anchor="middle">Sub-cortex (0 to 2 mm under peel):</text>
     <text x="197" y="205" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" fill="#242124" text-anchor="middle">Concentrates 85% of volatile aroma molecules</text>
@@ -25,15 +25,15 @@
     <text x="197" y="323" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" font-weight="bold" fill="#B45309" text-anchor="middle">before straining the aromatic milk over the riced potato flesh!</text>
   </g>
 
-  <!-- Panneau Droit : Presse-purée vs Mixeur -->
+  <!-- Right Panel: Ricer vs. Blender -->
   <g transform="translate(455, 75)">
     <rect width="395" height="360" rx="10" fill="#FAF7F2" stroke="#966C3B" stroke-width="1.5"/>
     <rect width="395" height="32" rx="10" fill="#6B4423"/>
-    <text x="197" y="21" font-family="Liberation Serif, Georgia, serif" font-size="13.5" font-weight="bold" fill="#FCFBF7" text-anchor="middle">2. MÉCANIQUE CELLULAIRE : PRESSE vs MIXEUR</text>
+    <text x="197" y="21" font-family="Liberation Serif, Georgia, serif" font-size="13.5" font-weight="bold" fill="#FCFBF7" text-anchor="middle">2. CELLULAR MECHANICS: RICER vs. BLENDER</text>
 
     <rect x="20" y="48" width="355" height="140" rx="6" fill="#F4F6F4" stroke="#5A6E54" stroke-width="1.2"/>
     <text x="32" y="70" font-family="Liberation Sans, Arial, sans-serif" font-size="13.0" font-weight="bold" fill="#5A6E54">✓ POTATO RICER OR FOOD MILL</text>
-    <text x="32" y="92" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">• Cisaillement lent à basse pression mécanique.</text>
+    <text x="32" y="92" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">• Gentle slow shearing at low mechanical pressure.</text>
     <text x="32" y="110" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">• Potato plant cells gently separate along their</text>
     <text x="42" y="126" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">pectin middle lamella without rupturing cell walls.</text>
     <text x="32" y="144" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">• Amylose remains sealed within plant cells.</text>
@@ -41,10 +41,10 @@
 
     <rect x="20" y="202" width="355" height="140" rx="6" fill="#FBF6F5" stroke="#A3432B" stroke-width="1.2"/>
     <text x="32" y="224" font-family="Liberation Sans, Arial, sans-serif" font-size="13.0" font-weight="bold" fill="#701C1A">✗ IMMERSION BLENDER OR FOOD PROCESSOR</text>
-    <text x="32" y="246" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">• Hélice tournant à 10 000 tours/minute.</text>
-    <text x="32" y="264" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">• Mechanical rupture of cellular walls.</text>
+    <text x="32" y="246" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">• High-speed blades spinning at 10,000 RPM.</text>
+    <text x="32" y="264" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">• Mechanical rupture of microscopic cell walls.</text>
     <text x="32" y="282" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">• Released amylose starches tangle into an</text>
-    <text x="42" y="298" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">réseau viscoélastique collant irréversible.</text>
+    <text x="42" y="298" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">irreversible, gluey viscoelastic starch network.</text>
     <text x="32" y="322" font-family="Liberation Serif, Georgia, serif" font-size="12.5" font-weight="bold" fill="#701C1A">→ Result: Sticky, elastic wallpaper paste.</text>
   </g>
 </svg>

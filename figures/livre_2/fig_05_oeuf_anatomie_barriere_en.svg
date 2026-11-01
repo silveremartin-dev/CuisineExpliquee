@@ -3,34 +3,34 @@
   <text x="440" y="34" font-family="Liberation Serif, Georgia, serif" font-size="20" font-weight="bold" fill="#701C1A" text-anchor="middle">PHYSICOCHEMICAL ANATOMY &amp; CUTICLE BARRIER OF THE EGG</text>
   <text x="440" y="55" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" fill="#5C5549" text-anchor="middle">Why the egg is a living respiratory ecosystem and why power-washing destroys its defense.</text>
 
-  <!-- Coupe de l'œuf à gauche -->
+  <!-- Egg Cross Section on Left -->
   <g transform="translate(55, 95)">
-    <!-- Cuticule externe pointillée -->
+    <!-- Outer dotted cuticle -->
     <path d="M 140 12 C 236 12 286 118 286 200 C 286 286 224 328 140 328 C 56 328 -6 286 -6 200 C -6 118 44 12 140 12 Z" fill="none" stroke="#5A6E54" stroke-width="2.2" stroke-dasharray="6,3"/>
-    <!-- Coquille -->
+    <!-- Shell -->
     <path d="M 140 20 C 230 20 280 120 280 200 C 280 280 220 320 140 320 C 60 320 0 280 0 200 C 0 120 50 20 140 20 Z" fill="#FAF7F2" stroke="#B45309" stroke-width="3.5"/>
-    <!-- Chambre à air -->
+    <!-- Air Cell -->
     <path d="M 50 294 Q 140 258 230 294 C 205 315 165 320 140 320 C 115 320 75 315 50 294 Z" fill="#F2ECE1" stroke="#966C3B" stroke-width="1.5"/>
-    <text x="140" y="304" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#6B4423" text-anchor="middle">Chambre à air</text>
+    <text x="140" y="304" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#6B4423" text-anchor="middle">Air Cell</text>
 
-    <!-- Blanc liquide et blanc épais -->
+    <!-- Thin & Thick Albumen -->
     <path d="M 140 36 C 215 36 260 125 260 195 C 260 255 205 265 140 265 C 75 265 20 255 20 195 C 20 125 65 36 140 36 Z" fill="#FCFBF7" stroke="#D4A373" stroke-width="1.2"/>
     <path d="M 140 62 C 195 62 235 130 235 190 C 235 240 195 245 140 245 C 85 245 45 240 45 190 C 45 130 85 62 140 62 Z" fill="#F5EFE6" stroke="#966C3B" stroke-width="1.5"/>
-    <text x="140" y="88" font-family="Liberation Sans, Arial, sans-serif" font-size="11.8" font-weight="bold" fill="#6B4423" text-anchor="middle">Albumen (62°C – 84°C)</text>
+    <text x="140" y="88" font-family="Liberation Sans, Arial, sans-serif" font-size="11.8" font-weight="bold" fill="#6B4423" text-anchor="middle">Albumen (62°C – 84°C / 144°F – 183°F)</text>
 
-    <!-- Jaune -->
+    <!-- Yolk -->
     <circle cx="140" cy="168" r="52" fill="#D97706" stroke="#B45309" stroke-width="2.5"/>
     <circle cx="140" cy="168" r="45" fill="#F59E0B"/>
     <text x="140" y="165" font-family="Liberation Serif, Georgia, serif" font-size="13" font-weight="bold" fill="#FCFBF7" text-anchor="middle">Vitellus (Yolk)</text>
-    <text x="140" y="182" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#FCFBF7" text-anchor="middle">Seuil : 68°C</text>
+    <text x="140" y="182" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#FCFBF7" text-anchor="middle">Threshold: 68°C (154°F)</text>
 
-    <!-- Chalazes -->
+    <!-- Chalazae -->
     <path d="M 88 168 C 70 162 65 174 48 168" fill="none" stroke="#6B4423" stroke-width="2.5"/>
     <path d="M 192 168 C 210 162 215 174 232 168" fill="none" stroke="#6B4423" stroke-width="2.5"/>
-    <text x="140" y="348" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#5A6E54" text-anchor="middle">Pointillés : Cuticule protéique (bouclier contre Salmonella)</text>
+    <text x="140" y="348" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#5A6E54" text-anchor="middle">Dotted line: Protein cuticle (barrier against Salmonella)</text>
   </g>
 
-  <!-- Cartouches explicatifs à droite -->
+  <!-- Explanatory Callout Cards on Right -->
   <g transform="translate(390, 80)">
     <rect width="460" height="165" rx="8" fill="#FAF7F2" stroke="#5A6E54" stroke-width="1.5"/>
     <rect width="460" height="30" rx="8" fill="#5A6E54"/>
@@ -38,23 +38,23 @@
 
     <text x="16" y="50" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" fill="#242124">• <tspan font-weight="bold" fill="#5A6E54">Natural Cuticle:</tspan> Proteinaceous glaze sealing 10,000</text>
     <text x="26" y="66" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#5C5549">microscopic calcite pores against bacterial ingress.</text>
-    <text x="16" y="88" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" fill="#242124">• <tspan font-weight="bold" fill="#5A6E54">Europe (non lavé) :</tspan> cuticule intacte → conservation stable</text>
-    <text x="26" y="104" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#5C5549">in Europe. Never wash an egg before long-term storage!</text>
-    <text x="16" y="126" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" fill="#242124">• <tspan font-weight="bold" fill="#701C1A">États-Unis (lavé au chlore) :</tspan> cuticule détruite → pores</text>
-    <text x="26" y="142" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#701C1A">pores requiring constant 4°C (39°F) chilling.</text>
+    <text x="16" y="88" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" fill="#242124">• <tspan font-weight="bold" fill="#5A6E54">Europe (unwashed):</tspan> cuticle remains intact → stable shelf</text>
+    <text x="26" y="104" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#5C5549">life at room temperature. Never wash an egg before storage!</text>
+    <text x="16" y="126" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" fill="#242124">• <tspan font-weight="bold" fill="#701C1A">United States (washed):</tspan> cuticle stripped by detergent washing →</text>
+    <text x="26" y="142" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#701C1A">open pores mandate continuous refrigeration at 4°C (39°F).</text>
 
     <rect y="182" width="460" height="190" rx="8" fill="#FAF7F2" stroke="#966C3B" stroke-width="1.5"/>
     <rect y="182" width="460" height="30" rx="8" fill="#701C1A"/>
     <text x="230" y="202" font-family="Liberation Serif, Georgia, serif" font-size="13.5" font-weight="bold" fill="#FCFBF7" text-anchor="middle">2. THE AGING TIMELINE: THREE PHYSICOCHEMICAL MARKERS</text>
 
-    <text x="16" y="232" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" fill="#242124"><tspan font-weight="bold" fill="#701C1A">1. Évaporation hydrique :</tspan> la chambre à air s'agrandit.</text>
-    <text x="26" y="248" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#5C5549">L'œuf frais coule à plat ; l'œuf de plus de 28 jours flotte.</text>
+    <text x="16" y="232" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" fill="#242124"><tspan font-weight="bold" fill="#701C1A">1. Moisture Evaporation:</tspan> internal air cell expands continuously.</text>
+    <text x="26" y="248" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#5C5549">Fresh eggs sink flat in water; eggs older than 28 days float upright.</text>
 
     <text x="16" y="272" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" fill="#242124"><tspan font-weight="bold" fill="#701C1A">2. Dissolved CO₂ Outgassing:</tspan> albumen pH rises from 7.6 to 9.2.</text>
     <text x="26" y="288" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#5C5549">A 10-day-old hard-boiled egg peels effortlessly; fresh eggs stick.</text>
 
     <text x="16" y="312" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" fill="#242124"><tspan font-weight="bold" fill="#701C1A">3. Ovomucin Breakdown:</tspan> the outer egg white thins and spreads out.</text>
-    <text x="26" y="328" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#5C5549">Seul un œuf extra-frais (&lt; 8 jours) donne un œuf poché compact.</text>
+    <text x="26" y="328" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#5C5549">Only extra-fresh eggs (&lt; 8 days) produce a tight, cohesive poached egg.</text>
     <text x="16" y="354" font-family="Liberation Serif, Georgia, serif" font-size="12.2" font-weight="bold" fill="#B45309">→ Temper egg 30 min at room temp before cooking.</text>
   </g>
 </svg>
