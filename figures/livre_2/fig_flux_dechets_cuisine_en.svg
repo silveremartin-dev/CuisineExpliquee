@@ -52,11 +52,11 @@
 
     <rect x="175" y="42" width="143" height="60" rx="5" fill="#fbf6f5" stroke="#b06d60" stroke-width="1"/>
     <text x="246.5" y="60" font-family="Liberation Serif, Georgia, serif" font-size="10.5" font-weight="bold" fill="#701c1a" text-anchor="middle">Enfouissement</text>
-    <text x="246.5" y="76" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#383330" text-anchor="middle">Putréfaction sans air</text>
+    <text x="246.5" y="76" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#383330" text-anchor="middle">Anaerobic putrefaction</text>
     <text x="246.5" y="90" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#5c5549" text-anchor="middle">Émission de méthane (CH₄)</text>
 
     <text x="16" y="124" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#242124"><tspan font-weight="bold" fill="#701c1a">• Bilan énergétique :</tspan> Déficitaire, perte nette de calories.</text>
     <text x="16" y="142" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#242124"><tspan font-weight="bold" fill="#701c1a">• Pollution Impact:</tspan> Acidic leachate and soil impoverishment.</text>
-    <text x="16" y="162" font-family="Liberation Serif, Georgia, serif" font-size="10" font-weight="bold" fill="#701c1a">→ Rupture stérile du cycle agronomique.</text>
+    <text x="16" y="162" font-family="Liberation Serif, Georgia, serif" font-size="10" font-weight="bold" fill="#701c1a">→ Disruption of the agronomic cycle.</text>
   </g>
 </svg>

@@ -16,15 +16,15 @@
     <path d="M 25 244 C 25 14 375 14 375 244 Z" fill="#FAF7F0" stroke="#92400E" stroke-width="2.5"/>
     <path d="M 33 242 C 33 23 367 23 367 242" fill="none" stroke="#D4A373" stroke-width="2" stroke-dasharray="5,3"/>
 
-    <text x="200" y="112" font-family="Liberation Serif, Georgia, serif" font-size="13.5" font-weight="bold" fill="#92400E" text-anchor="middle">MANTEAU DE MERINGUE (2 cm)</text>
-    <text x="200" y="130" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" fill="#5C5549" text-anchor="middle">90 % de microbulles d'air immobile</text>
+    <text x="200" y="112" font-family="Liberation Serif, Georgia, serif" font-size="13.5" font-weight="bold" fill="#92400E" text-anchor="middle">MERINGUE SHIELD (2 cm / 0.8 in)</text>
+    <text x="200" y="130" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" fill="#5C5549" text-anchor="middle">90% trapped still micro-bubbles</text>
 
     <path d="M 95 244 C 95 148 305 148 305 244 Z" fill="#F2ECE1" stroke="#8C7355" stroke-width="2"/>
-    <text x="200" y="204" font-family="Liberation Serif, Georgia, serif" font-size="13.5" font-weight="bold" fill="#242124" text-anchor="middle">CŒUR DE GLACE (-18°C)</text>
-    <text x="200" y="222" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#5A6E54" font-weight="bold" text-anchor="middle">Intact : zéro fusion thermique</text>
+    <text x="200" y="204" font-family="Liberation Serif, Georgia, serif" font-size="13.5" font-weight="bold" fill="#242124" text-anchor="middle">FROZEN ICE CREAM CORE (-18°C / 0°F)</text>
+    <text x="200" y="222" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#5A6E54" font-weight="bold" text-anchor="middle">Intact: zero thermal melting</text>
 
     <rect x="18" y="244" width="364" height="26" rx="4" fill="#E6C49A" stroke="#92400E" stroke-width="1.5"/>
-    <text x="200" y="261" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#451A03" text-anchor="middle">SOCLE DE GÉNOISE : Isolant thermique inférieur</text>
+    <text x="200" y="261" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#451A03" text-anchor="middle">SPONGE CAKE BASE: Lower thermal insulator</text>
   </g>
 
   <!-- Cartouche explicatif à droite -->
@@ -33,19 +33,19 @@
     <rect width="375" height="32" rx="8" fill="#701C1A"/>
     <text x="187" y="21" font-family="Liberation Serif, Georgia, serif" font-size="13.5" font-weight="bold" fill="#FCFBF7" text-anchor="middle">THE THREE PHYSICAL LAWS OF THE MIRACLE</text>
 
-    <text x="16" y="54" font-family="Liberation Serif, Georgia, serif" font-size="13.5" font-weight="bold" fill="#A3432B">1. L'air prisonnier est un mur thermique</text>
-    <text x="16" y="72" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">Egg white foam blocks heat conductivity ($k = 0.026$)</text>
-    <text x="16" y="88" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#5C5549">comme un double vitrage isolant parfait.</text>
+    <text x="16" y="54" font-family="Liberation Serif, Georgia, serif" font-size="13.5" font-weight="bold" fill="#A3432B">1. Trapped Still Air is a Thermal Shield</text>
+    <text x="16" y="72" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">Egg white foam arrests thermal conduction (k = 0.026)</text>
+    <text x="16" y="88" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#5C5549">like a flawless double-paned insulating window.</text>
 
     <text x="16" y="118" font-family="Liberation Serif, Georgia, serif" font-size="13.5" font-weight="bold" fill="#A3432B">2. Sponge Base Blocks Conduction</text>
     <text x="16" y="136" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">The aerated sponge prevents the hot baking dish</text>
     <text x="16" y="152" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#5C5549">from melting the ice cream core from underneath.</text>
 
-    <text x="16" y="182" font-family="Liberation Serif, Georgia, serif" font-size="13.5" font-weight="bold" fill="#701C1A">3. Étanchéité hermétique exigée</text>
+    <text x="16" y="182" font-family="Liberation Serif, Georgia, serif" font-size="13.5" font-weight="bold" fill="#701C1A">3. Hermetic Airtight Seal Required</text>
     <text x="16" y="200" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">The meringue must seal the sponge base without a single gap</text>
-    <text x="16" y="216" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#5C5549">fissure (coloration éclair : 3 à 4 min au gril).</text>
+    <text x="16" y="216" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#5C5549">gap (flash broiling: 3 to 4 min under oven broiler).</text>
 
     <rect x="16" y="232" width="343" height="28" rx="4" fill="#F4F6F4" stroke="#5A6E54" stroke-width="1"/>
-    <text x="187" y="250" font-family="Liberation Serif, Georgia, serif" font-size="12.5" font-weight="bold" fill="#5A6E54" text-anchor="middle">Contraste : +240°C dehors / -18°C dedans</text>
+    <text x="187" y="250" font-family="Liberation Serif, Georgia, serif" font-size="12.5" font-weight="bold" fill="#5A6E54" text-anchor="middle">Contrast: +240°C (+464°F) outside / -18°C (0°F) inside</text>
   </g>
 </svg>

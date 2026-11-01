@@ -23,8 +23,8 @@
   <g transform="translate(40, 206)">
     <rect width="375" height="92" rx="8" fill="#F4F6F4" stroke="#5A6E54" stroke-width="1.5"/>
     <text x="187" y="25" font-family="Liberation Serif, Georgia, serif" font-size="14" font-weight="bold" fill="#5A6E54" text-anchor="middle">VOIE 1 : COAGULATION ACIDE DIRECTE</text>
-    <text x="187" y="45" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#242124" text-anchor="middle">Citron, Vinaigre ou Ferments lactiques (pH 4,6)</text>
-    <text x="187" y="64" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#5C5549" text-anchor="middle">Point isoélectrique : les protons H⁺ annulent les charges.</text>
+    <text x="187" y="45" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#242124" text-anchor="middle">Lemon, Vinegar, or Lactic Cultures (pH 4.6)</text>
+    <text x="187" y="64" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#5C5549" text-anchor="middle">Isoelectric point: H⁺ protons cancel charges.</text>
     <text x="187" y="81" font-family="Liberation Sans, Arial, sans-serif" font-size="11.8" fill="#5C5549" text-anchor="middle">Les micelles déminéralisées floculent instantanément.</text>
   </g>
 
@@ -36,7 +36,7 @@
     <rect width="375" height="30" rx="8" fill="#5A6E54"/>
     <text x="187" y="20" font-family="Liberation Serif, Georgia, serif" font-size="13" font-weight="bold" fill="#FCFBF7" text-anchor="middle">CAILLÉ LACTIQUE : PÂTE FRAÎCHE FRIABLE</text>
     <text x="18" y="52" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#5A6E54">• Architecture microscopique :</text>
-    <text x="28" y="70" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#242124">Réseau poreux court, fragile et très humide.</text>
+    <text x="28" y="70" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#242124">Porous, delicate, high-moisture curd network.</text>
     <text x="18" y="94" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#5A6E54">• Applications au foyer :</text>
     <text x="28" y="112" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#242124">Fromage frais en 15 min, Faisselle, Paneer, Ricotta.</text>
     <text x="18" y="135" font-family="Liberation Sans, Arial, sans-serif" font-size="11.8" font-style="italic" fill="#5C5549">Gentle gravity drainage through fine cotton cheesecloth.</text>
@@ -59,7 +59,7 @@
     <rect width="375" height="30" rx="8" fill="#B45309"/>
     <text x="187" y="20" font-family="Liberation Serif, Georgia, serif" font-size="13" font-weight="bold" fill="#FCFBF7" text-anchor="middle">RENNET CURD: ELASTIC, FIRM AGED CHEESE</text>
     <text x="18" y="52" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#B45309">• Architecture microscopique :</text>
-    <text x="28" y="70" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#242124">Gel élastique et imperméable à forte synérèse.</text>
+    <text x="28" y="70" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#242124">Elastic, cohesive gel with strong syneresis.</text>
     <text x="18" y="94" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#B45309">• Fromages d'affinage :</text>
     <text x="28" y="112" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#242124">Comté, Beaufort, Tomme de montagne, Camembert.</text>
     <text x="18" y="135" font-family="Liberation Sans, Arial, sans-serif" font-size="11.8" font-style="italic" fill="#5C5549">Withstands curd cutting with a harp, heating, and pressing.</text>

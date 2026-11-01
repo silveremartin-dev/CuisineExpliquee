@@ -1,82 +1,82 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 520" width="100%" height="100%">
-  <rect width="940" height="520" rx="14" fill="#FCFBF7" stroke="#D1C7B7" stroke-width="1.5"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" width="100%" height="100%">
+  <rect width="960" height="520" rx="14" fill="#FCFBF7" stroke="#D1C7B7" stroke-width="1.5"/>
   
-  <text x="470" y="38" font-family="Liberation Serif, Georgia, serif" font-size="22" font-weight="bold" fill="#701C1A" text-anchor="middle">NUTRITION PHYSIOLOGY AND THE SURVIVAL CYCLE</text>
-  <text x="470" y="62" font-family="Liberation Sans, Arial, sans-serif" font-size="13" fill="#6B5E55" text-anchor="middle">From ingested macromolecules to cellular anabolism and toxin elimination</text>
+  <text x="480" y="38" font-family="Liberation Serif, Georgia, serif" font-size="22" font-weight="bold" fill="#701C1A" text-anchor="middle">NUTRITION PHYSIOLOGY AND THE SURVIVAL CYCLE</text>
+  <text x="480" y="62" font-family="Liberation Sans, Arial, sans-serif" font-size="13" fill="#6B5E55" text-anchor="middle">From ingested macromolecules to cellular anabolism and toxin elimination</text>
 
   <!-- Colonne 1 : Ingestion -->
-  <g transform="translate(30, 90)">
-    <rect width="270" height="390" rx="10" fill="#FAF6F0" stroke="#C8BAAA" stroke-width="1.5"/>
-    <rect width="270" height="42" rx="10" fill="#6B4423"/>
-    <text x="135" y="26" font-family="Liberation Sans, Arial, sans-serif" font-size="14.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">1. MACROMOLECULES</text>
+  <g transform="translate(25, 90)">
+    <rect width="275" height="390" rx="10" fill="#FAF6F0" stroke="#C8BAAA" stroke-width="1.5"/>
+    <rect width="275" height="42" rx="10" fill="#6B4423"/>
+    <text x="137.5" y="26" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">1. MACROMOLECULES</text>
     
-    <text x="16" y="72" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#6B4423">• Proteins (Building Blocks)</text>
-    <text x="26" y="93" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">Amino acid chains</text>
-    <text x="26" y="111" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">Dénaturation acide gastrique (pH 2)</text>
+    <text x="16" y="72" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#6B4423">• Proteins (Building Blocks)</text>
+    <text x="26" y="93" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">Amino acid chains</text>
+    <text x="26" y="111" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">Gastric acid denaturation (pH 2)</text>
     
-    <text x="16" y="145" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#6B4423">• Lipids (Dense Fuel)</text>
-    <text x="26" y="166" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">Energy-rich triglycerides (9 kcal/g)</text>
-    <text x="26" y="184" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">Bile salt emulsification in duodenum</text>
+    <text x="16" y="145" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#6B4423">• Lipids (Dense Fuel)</text>
+    <text x="26" y="166" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">Energy-rich triglycerides (9 kcal/g)</text>
+    <text x="26" y="184" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">Bile salt emulsification in duodenum</text>
     
-    <text x="16" y="218" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#6B4423">• Carbohydrates (Fast Energy)</text>
-    <text x="26" y="239" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">Gelatinized starch hydrolysed</text>
-    <text x="26" y="257" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">into single glucose monomers</text>
+    <text x="16" y="218" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#6B4423">• Carbohydrates (Fast Energy)</text>
+    <text x="26" y="239" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">Gelatinized starch hydrolysed</text>
+    <text x="26" y="257" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">into single glucose monomers</text>
     
-    <rect x="16" y="305" width="238" height="65" rx="6" fill="#EFE8DE"/>
-    <text x="135" y="330" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#6B4423" text-anchor="middle">Raw Food Intake:</text>
-    <text x="135" y="350" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#5C5046" text-anchor="middle">Complex polymers to break down</text>
+    <rect x="16" y="305" width="243" height="65" rx="6" fill="#EFE8DE"/>
+    <text x="137.5" y="330" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#6B4423" text-anchor="middle">Raw Food Intake:</text>
+    <text x="137.5" y="350" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#5C5046" text-anchor="middle">Complex polymers to break down</text>
   </g>
 
   <!-- Connecteur 1 -> 2 -->
-  <path d="M 305 285 L 345 285" stroke="#A3432B" stroke-width="2.5" marker-end="url(#arrow-terracotta)"/>
+  <path d="M 305 285 L 335 285" stroke="#A3432B" stroke-width="2.5" marker-end="url(#arrow-terracotta)"/>
 
   <!-- Colonne 2 : Digestion & Catabolisme -->
-  <g transform="translate(350, 90)">
-    <rect width="260" height="390" rx="10" fill="#FAF5F0" stroke="#C8BAAA" stroke-width="1.5"/>
-    <rect width="260" height="42" rx="10" fill="#A3432B"/>
-    <text x="130" y="26" font-family="Liberation Sans, Arial, sans-serif" font-size="14.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">2. INTERNAL BIOCHEMICAL BREAKDOWN</text>
+  <g transform="translate(340, 90)">
+    <rect width="275" height="390" rx="10" fill="#FAF5F0" stroke="#C8BAAA" stroke-width="1.5"/>
+    <rect width="275" height="42" rx="10" fill="#A3432B"/>
+    <text x="137.5" y="26" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">2. INTERNAL BIOCHEMISTRY</text>
     
-    <text x="16" y="72" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#A3432B">• Enzymatic Cleavage</text>
-    <text x="26" y="93" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">Pepsin, lipases, amylases:</text>
-    <text x="26" y="111" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">cleave chains into elementary monomers</text>
+    <text x="16" y="72" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#A3432B">• Enzymatic Cleavage</text>
+    <text x="26" y="93" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">Pepsin, lipases, amylases:</text>
+    <text x="26" y="111" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">cleave chains into single monomers</text>
     
-    <text x="16" y="145" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#A3432B">• Intestinal Nutrient Uptake</text>
-    <text x="26" y="166" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">Microvilli transport from small bowel</text>
-    <text x="26" y="184" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">into portal bloodstream</text>
+    <text x="16" y="145" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#A3432B">• Intestinal Nutrient Uptake</text>
+    <text x="26" y="166" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">Microvilli transport from small bowel</text>
+    <text x="26" y="184" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">into portal bloodstream</text>
     
-    <text x="16" y="218" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#A3432B">• Hepatic Filtration &amp; Storage</text>
-    <text x="26" y="239" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">Liver stores glucose as glycogen</text>
-    <text x="26" y="257" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">and clears metabolic waste</text>
+    <text x="16" y="218" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#A3432B">• Hepatic Filtration &amp; Storage</text>
+    <text x="26" y="239" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">Liver stores glucose as glycogen</text>
+    <text x="26" y="257" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">and clears metabolic waste</text>
     
-    <rect x="16" y="305" width="228" height="65" rx="6" fill="#F4E8DC"/>
-    <text x="130" y="330" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#A3432B" text-anchor="middle">Catabolism:</text>
-    <text x="130" y="350" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#7A3220" text-anchor="middle">Vital energy production (ATP)</text>
+    <rect x="16" y="305" width="243" height="65" rx="6" fill="#F4E8DC"/>
+    <text x="137.5" y="330" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#A3432B" text-anchor="middle">Catabolism:</text>
+    <text x="137.5" y="350" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#7A3220" text-anchor="middle">Vital energy production (ATP)</text>
   </g>
 
   <!-- Connecteur 2 -> 3 -->
-  <path d="M 615 285 L 655 285" stroke="#701C1A" stroke-width="2.5" marker-end="url(#arrow-bordeaux)"/>
+  <path d="M 620 285 L 650 285" stroke="#701C1A" stroke-width="2.5" marker-end="url(#arrow-bordeaux)"/>
 
   <!-- Colonne 3 : Élimination & Homéostasie -->
-  <g transform="translate(660, 90)">
-    <rect width="250" height="390" rx="10" fill="#FBF7F5" stroke="#C8BAAA" stroke-width="1.5"/>
-    <rect width="250" height="42" rx="10" fill="#701C1A"/>
-    <text x="125" y="26" font-family="Liberation Sans, Arial, sans-serif" font-size="14.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">3. ASSIMILATION &amp; EXCRETION</text>
+  <g transform="translate(655, 90)">
+    <rect width="275" height="390" rx="10" fill="#FBF7F5" stroke="#C8BAAA" stroke-width="1.5"/>
+    <rect width="275" height="42" rx="10" fill="#701C1A"/>
+    <text x="137.5" y="26" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">3. ASSIMILATION &amp; EXCRETION</text>
     
-    <text x="16" y="72" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#701C1A">• Anabolism &amp; Tissue Building</text>
-    <text x="26" y="93" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">Protein synthesis, cellular repair,</text>
-    <text x="26" y="111" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">and active immune defense</text>
+    <text x="16" y="72" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#701C1A">• Anabolism &amp; Tissue Building</text>
+    <text x="26" y="93" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">Protein synthesis, cellular repair,</text>
+    <text x="26" y="111" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">and active immune defense</text>
     
-    <text x="16" y="145" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#701C1A">• Microbiome Fermentation</text>
-    <text x="26" y="166" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">Colon feeds beneficial flora with</text>
-    <text x="26" y="184" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">prebiotic and resistant fibers</text>
+    <text x="16" y="145" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#701C1A">• Microbiome Fermentation</text>
+    <text x="26" y="166" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">Colon feeds beneficial flora with</text>
+    <text x="26" y="184" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">prebiotic and resistant fibers</text>
     
-    <text x="16" y="218" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#701C1A">• Waste Excretion</text>
-    <text x="26" y="239" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">Insoluble fecal bulk, urinary urea,</text>
-    <text x="26" y="257" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">and excreted bile salts</text>
+    <text x="16" y="218" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#701C1A">• Waste Excretion</text>
+    <text x="26" y="239" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">Insoluble fecal bulk, urinary urea,</text>
+    <text x="26" y="257" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">and excreted bile salts</text>
     
-    <rect x="16" y="305" width="218" height="65" rx="6" fill="#F0E3DF"/>
-    <text x="125" y="330" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#701C1A" text-anchor="middle">Whole-Body Homeostasis:</text>
-    <text x="125" y="350" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#501413" text-anchor="middle">Equilibrium and lasting health</text>
+    <rect x="16" y="305" width="243" height="65" rx="6" fill="#F0E3DF"/>
+    <text x="137.5" y="330" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#701C1A" text-anchor="middle">Whole-Body Homeostasis:</text>
+    <text x="137.5" y="350" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#501413" text-anchor="middle">Equilibrium and lasting health</text>
   </g>
 
   <defs>

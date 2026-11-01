@@ -7,7 +7,7 @@
   <g transform="translate(30, 72)">
     <rect width="820" height="62" rx="8" fill="#F2ECE1" stroke="#B45309" stroke-width="1.5"/>
     <text x="410" y="25" font-family="Liberation Serif, Georgia, serif" font-size="14" font-weight="bold" fill="#701C1A" text-anchor="middle">THE EQUATION OF STATE: THE RECIPE AS A MODULAR SYSTEM</text>
-    <text x="410" y="47" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#6B4423" text-anchor="middle">Corps Gras (Beurre/Huile) + Agent Sucrant + Féculent (Farine/Riz) + Liant (Œuf/Aquafaba) + Chaleur = GÂTEAU</text>
+    <text x="410" y="47" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#6B4423" text-anchor="middle">Fat Medium (Butter/Oil) + Sweetening Agent + Starch (Flour) + Binder (Egg/Aquafaba) + Heat = CAKE</text>
   </g>
 
   <!-- Méthode 1 : Tout-en-un -->
@@ -18,7 +18,7 @@
     <text x="16" y="50" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">• Mélange direct : œufs entiers + sucre + chocolat</text>
     <text x="26" y="66" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">et beurre fondus + farine tamisée en pluie.</text>
     <text x="16" y="88" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">• Temps actif : 4 minutes. Une seule jatte à laver.</text>
-    <text x="16" y="110" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#5A6E54" font-weight="bold">✓ Texture obtenue : Fondant dense et humide,</text>
+    <text x="16" y="110" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#5A6E54" font-weight="bold">✓ Resulting texture: Dense, moist, and melting crumb,</text>
     <text x="26" y="126" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#5C5549">ideal for molten lava cake, brownies, and dense financiers.</text>
     <text x="16" y="150" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" font-weight="bold" fill="#701C1A">Rule: Never over-whisk once flour is added (limits gluten elasticity).</text>
   </g>
@@ -27,12 +27,12 @@
   <g transform="translate(455, 148)">
     <rect width="395" height="175" rx="8" fill="#FAF7F2" stroke="#B45309" stroke-width="1.5"/>
     <rect width="395" height="30" rx="8" fill="#B45309"/>
-    <text x="197" y="20" font-family="Liberation Serif, Georgia, serif" font-size="13.5" font-weight="bold" fill="#FCFBF7" text-anchor="middle">MÉTHODE 2 : BLANCS MONTÉS EN NEIGE</text>
+    <text x="197" y="20" font-family="Liberation Serif, Georgia, serif" font-size="13.5" font-weight="bold" fill="#FCFBF7" text-anchor="middle">METHOD 2: WHIPPED EGG WHITES</text>
     <text x="16" y="50" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">• Gentle folding of stiff albumin foam with a silicone</text>
     <text x="26" y="66" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">spatula into the rich chocolate-butter base.</text>
-    <text x="16" y="88" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">• Dilatation thermique des microbulles d'air au four.</text>
+    <text x="16" y="88" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">• Thermal expansion of trapped air bubbles in oven.</text>
     <text x="16" y="110" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#6B4423" font-weight="bold">✓ Texture obtenue : Mie souple, aérienne et</text>
-    <text x="26" y="126" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#5C5549">alvéolée (biscuit de Savoie, génoise, soufflé).</text>
+    <text x="26" y="126" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#5C5549">open crumb (sponge cake, génoise, soufflé).</text>
     <text x="16" y="150" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" font-weight="bold" fill="#B45309">Plant alternative: Chickpea aquafaba foam.</text>
   </g>
 
@@ -40,7 +40,7 @@
   <g transform="translate(30, 340)">
     <rect width="820" height="156" rx="8" fill="#FAF7F2" stroke="#701C1A" stroke-width="1.5"/>
     <rect width="820" height="30" rx="8" fill="#701C1A"/>
-    <text x="410" y="20" font-family="Liberation Serif, Georgia, serif" font-size="13.5" font-weight="bold" fill="#FCFBF7" text-anchor="middle">POURQUOI ENFOURNER DANS UN FOUR PRÉCHAUFFÉ (180°C) PLUTÔT QUE FROID ?</text>
+    <text x="410" y="20" font-family="Liberation Serif, Georgia, serif" font-size="13.5" font-weight="bold" fill="#FCFBF7" text-anchor="middle">WHY BAKE IN A PREHEATED OVEN (180°C / 356°F) RATHER THAN COLD?</text>
 
     <text x="18" y="52" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" fill="#242124"><tspan font-weight="bold" fill="#5A6E54">1. Oven Spring (Synchronized Gas Expansion):</tspan> In a hot 350°F (180°C) oven, water vapor</text>
     <text x="34" y="69" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#5C5549">and CO₂ expand explosively, lifting batter before the outer crust sets.</text>

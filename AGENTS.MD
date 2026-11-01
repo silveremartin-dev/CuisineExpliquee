@@ -192,3 +192,94 @@ The work deconstructs what elevates everyday cooking to three-star gastronomic e
 5. **Shellfish Carapace Extraction:** Roasting shells in lipid media to extract fat-soluble coral-red astaxanthin.
 6. **The Poly-Textural Equation:** Crisp + Tender + Melt-in-mouth + Crunchy (*Croustillant + Moelleux + Fondant + Croquant*).
 7. **Millimetric Service Temperature:** Preheating plates to $50\text{--}60^\circ\mathrm{C}$ ($122\text{--}140^\circ\mathrm{F}$) for hot dishes (preventing the $25^\circ\mathrm{C}$ thermal drop that congeals animal fat within 60 seconds); serving crudos on chilled frost-dusted plates.
+
+---
+
+## 7. PROTOCOL FOR FAITHFUL 1:1 TRANSLATION AND BILINGUAL SYNCHRONIZATION
+
+> Whenever the French reference treatise (*LA CUISINE EXPLIQUÉE*) is updated or revised, the English international edition (*COOKING DECODED*) must be synchronized immediately following the strict 1:1 mirror protocol below. Any loose reinterpretation, summary, or omission is strictly prohibited.
+
+### A. The Fundamental Rule: Strict 1:1 Structural & Semantic Mirroring
+1. **Zero Hallucination / Zero Loose Paraphrasing:**
+   - Translating this work is **not** a creative retelling from chapter titles. Every scientific explanation, historical anecdote, physical mechanism, and culinary instruction in the French master text must be faithfully translated into clear, rigorous, idiomatic English.
+   - Never skip subsections or summarize long passages (e.g., botulism neurotoxin kinetics, *Clostridium botulinum* pressure thresholds, retrograded RS3 starch, or the 30-plant rule).
+2. **Exact Structural Equivalence:**
+   - Every heading (`=`, `==`, `===`) must maintain the exact same hierarchy and order.
+   - Every `#divider()`, `#quote`, and didactic callout box (`#truc_de_chef`, `#danger`, `#point_attention`, `#oeil_molecule`, `#anecdote_historique`) must be present in the identical sequence.
+   - The number of numbered protocol steps in every recipe sheet must match the French original exactly.
+   - Every table present in French must appear in English with identical columns and rows (translated and converted to dual units).
+3. **Epigraph and Quote Integrity:**
+   - Never invent or fabricate quotes. Translate the exact French epigraphs and quotes placed at chapter and section openings.
+
+### B. Typst Formatting & Layout Rules to Avoid Regressions
+1. **Recipe Sheet Formatting (Strict Prohibition of Nested Tables):**
+   - **Never** encapsulate recipe sheets inside `#table(...)` or arbitrary bounding boxes. In both French and English, recipe sheets use the native book layout:
+     - Header: `=== 🍳 Recipe Sheet XX: Title (Subtitle)`
+     - Subtitle: `#emph[...]`
+     - Photo: `#figure(image("/figures/nourriture/..."), caption: [...])`
+     - Metadata & Ratios: Bullet lists (`- #strong[Preparation time:] ...`)
+     - Protocol: `===== Step-by-Step Protocol:` followed by numbered list (`+ #strong[...]`)
+     - Tips & Warnings: `#truc_de_chef[...]` or `#danger[...]` at the bottom.
+2. **Preventing Multiple Blank Lines / Multi-Line Divider Bugs:**
+   - Consecutive divider lines (e.g., five horizontal orange lines) occur when duplicate `#divider()` calls are stacked or when empty table headers are misrendered. Use exactly one `#divider()` between major sections and before recipe headings.
+3. **Typst Math Syntax Traps:**
+   - **Never use slashes inside math mode for dual units:** Writing `$> 80°C / 176°F$` instructs Typst to perform algebraic division, rendering as a vertical fraction ($> 80^\circ\mathrm{C}$ over $176^\circ\mathrm{F}$).
+   - **Correct dual-unit syntax:** Write plain text outside math mode: `> 80°C (176°F)`, or formatted as `$80 compose upright(C) thin (176 compose upright(F))$`.
+   - **Math Variables:** Never leave words like `vs`, `kg`, `cups`, or `ml` bare inside `$ ... $`, as Typst interprets them as unknown variables. Wrap them in `upright(" vs. ")` or keep them in prose text.
+4. **Asset Paths in Sub-Files (`en/book*.typ`):**
+   - Always prefix figure and photo paths with a leading slash: `"/figures/..."`. In Typst, paths starting with `/` resolve cleanly from the project root directory where the main file compiles.
+
+### C. Systematic Dual Measurement Units (US / Imperial + Metric)
+Every measurement in text, tables, and recipes must feature dual units systematically:
+
+| Measurement Type | Metric (FR) | International / US (EN) | Format in Text |
+| :--- | :--- | :--- | :--- |
+| **Cooking Temperature** | $180^\circ\mathrm{C}$ | $356^\circ\mathrm{F}$ | `180°C (356°F)` |
+| **Baking / Roasting** | $240^\circ\mathrm{C}$ | $464^\circ\mathrm{F}$ | `240°C (464°F)` |
+| **Freezer / Deep Cold** | $-18^\circ\mathrm{C}$ | $0^\circ\mathrm{F}$ | `-18°C (0°F)` |
+| **Weight (Flour / Meat)** | $500\ \mathrm{g}$ | $17.6\ \mathrm{oz}\ /\ 1.1\ \mathrm{lb}$ | `500 g (17.6 oz / 1.1 lb / 3.8 cups)` |
+| **Weight (Butter / Fat)** | $125\ \mathrm{g}$ | $4.4\ \mathrm{oz}\ /\ 9\ \mathrm{tbsp}$ | `125 g (4.4 oz / 1 stick + 1 tbsp)` |
+| **Liquids (Water / Milk)** | $375\ \mathrm{ml}$ | $12.7\ \mathrm{fl\ oz}\ /\ 1.6\ \mathrm{cups}$ | `375 ml (12.7 fl oz / 1.6 cups)` |
+| **Liquids (Large Volume)**| $1\ \mathrm{L}$ | $1.05\ \mathrm{qt}$ | `1 L (1.05 qt)` |
+| **Thickness / Dimensions**| $2\ \mathrm{cm}$ | $0.8\ \mathrm{in}$ | `2 cm (0.8 in)` |
+| **Pan Diameter** | $28\ \mathrm{cm}$ | $11\ \mathrm{in}$ | `28 cm (11 in)` |
+
+- **Flour Typology Conversion:**
+  - T45 $	o$ Pastry Flour / Cake Flour
+  - T55 $	o$ All-Purpose Flour (AP Flour)
+  - T65 / T80 $	o$ Bread Flour / Stone-Ground Wheat Flour
+  - T110 / T150 $	o$ Whole Wheat Flour / Graham Flour
+- **Butter Standard:** Always specify fat percentage ($82\%$ European butter vs. $80\%$ American butter).
+
+### D. Vector SVG Figure Translation & Anti-Clipping Protocol
+1. **Exact 1:1 SVG Pairing:**
+   - Every technical diagram `figures/.../name.svg` must have an English counterpart `figures/.../name_en.svg`.
+   - Never reference French SVGs in the English edition.
+2. **Zero French Residuals:**
+   - Audit all `<text>` and `<tspan>` tags in the SVG. No French words may remain in `_en.svg` files.
+3. **Anti-Clipping & Box Width Calibration:**
+   - SVG text does not wrap automatically. When English phrases are longer than French equivalents, the agent must:
+     - Either widen the bounding card: `<rect width="..." ... />`
+     - Or split the text into multi-line `<tspan x="..." dy="14">` elements
+     - Or adjust font size: `font-size="12"` instead of `14`.
+   - Verify visually that text never touches or overflows the card borders.
+
+### E. Operational Step-by-Step Translation Workflow
+When revising or updating the treatise, follow this 4-step sequence:
+1. **Step 1 — Differential Mapping:**
+   - Identify the exact line range and chapter being modified in `LA_CUISINE_EXPLIQUEE.typ`.
+   - Count sections, figures, tables, and callouts to set the verification target.
+2. **Step 2 — Verbatim-Equivalent Translation:**
+   - Translate directly into the target `en/bookX.typ` file paragraph by paragraph.
+   - Insert dual units systematically using standard conversions.
+   - Keep identical figure captions, labels, and Typst tags (`<...>`).
+3. **Step 3 — Clean Typst Compilation:**
+   - Execute: `typst compile COOKING_DECODED.typ COOKING_DECODED.pdf`.
+   - Ensure the compiler exits with code 0.
+   - If warnings or errors appear, immediately check for:
+     - Math slashes (`/`) interpreted as division
+     - Missing `/` in image paths (`"figures/..."` vs `"/figures/..."`)
+     - Unescaped XML entities in SVGs (`&` vs `&amp;`)
+4. **Step 4 — Automated Verification via Script:**
+   - Use `pypdfium2` to verify that table of contents, chapter starts, and appendices are rendered and paginated cleanly.
+   - Confirm that the English edition matches the French edition in page depth and visual elegance.

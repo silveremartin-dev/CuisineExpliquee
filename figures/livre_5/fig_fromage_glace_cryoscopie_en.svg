@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 510" width="100%" height="100%">
   <rect width="880" height="510" rx="14" fill="#FCFBF7" stroke="#DFDACF" stroke-width="2"/>
-  <text x="440" y="34" font-family="Liberation Serif, Georgia, serif" font-size="20" font-weight="bold" fill="#701C1A" text-anchor="middle">DEUX PRODIGES DOMESTIQUES PAR LES PRINCIPES PREMIERS</text>
+  <text x="440" y="34" font-family="Liberation Serif, Georgia, serif" font-size="20" font-weight="bold" fill="#701C1A" text-anchor="middle">TWO DOMESTIC WONDERS FROM FIRST PRINCIPLES</text>
   <text x="440" y="55" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" fill="#5C5549" text-anchor="middle">Making fresh farmer's cheese in 15 minutes and churning silky ice cream without a machine.</text>
 
   <!-- Volet Gauche : Fromage frais -->
@@ -19,23 +19,23 @@
     <text x="132" y="79" font-family="Liberation Sans, Arial, sans-serif" font-size="11.8" font-weight="bold" fill="#5A6E54" text-anchor="middle">+ Citron (H⁺)</text>
 
     <path d="M 175 74 L 195 102 L 215 74 L 235 102 L 255 74" fill="none" stroke="#6B4423" stroke-width="2.5"/>
-    <text x="310" y="84" font-family="Liberation Serif, Georgia, serif" font-size="12.5" font-weight="bold" fill="#5A6E54" text-anchor="middle">Caillé blanc</text>
+    <text x="310" y="84" font-family="Liberation Serif, Georgia, serif" font-size="12.5" font-weight="bold" fill="#5A6E54" text-anchor="middle">White curd</text>
     <text x="310" y="102" font-family="Liberation Sans, Arial, sans-serif" font-size="11.8" fill="#5C5549" text-anchor="middle">+ Lactosérum</text>
 
     <text x="18" y="158" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#701C1A">Proportions canoniques :</text>
     <text x="18" y="176" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">1 qt (1 L) fresh whole milk + 3 tbsp fresh lemon juice</text>
     <text x="18" y="192" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#5C5549">(ou vinaigre de cidre) + 1 pincée de fleur de sel.</text>
 
-    <text x="18" y="220" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#5A6E54">Protocole thermique et colloïdal :</text>
+    <text x="18" y="220" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#5A6E54">Thermal and colloidal protocol:</text>
     <text x="18" y="240" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">1. Heat milk to <tspan font-weight="bold">180°F to 185°F (82°C to 85°C)</tspan> (steaming, do not boil).</text>
     <text x="18" y="258" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">2. Remove from heat, pour in acid, and stir gently once.</text>
     <text x="18" y="276" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">3. Cover 10 min: curds flocculate in translucent whey.</text>
     <text x="18" y="294" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">4. Égoutter en passoire tapissée d'un linge propre.</text>
 
     <rect x="18" y="316" width="359" height="76" rx="6" fill="#F2ECE1"/>
-    <text x="197" y="338" font-family="Liberation Serif, Georgia, serif" font-size="12.5" font-weight="bold" fill="#5A6E54" text-anchor="middle">✓ Deux textures selon le temps d'égouttage :</text>
+    <text x="197" y="338" font-family="Liberation Serif, Georgia, serif" font-size="12.5" font-weight="bold" fill="#5A6E54" text-anchor="middle">✓ Two textures according to draining duration:</text>
     <text x="197" y="358" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#242124" text-anchor="middle">• 15 min : Ricotta / Fromage frais crémeux à tartiner.</text>
-    <text x="197" y="376" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#242124" text-anchor="middle">• 1 h sous poids : Paneer ferme à dorer à la poêle.</text>
+    <text x="197" y="376" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#242124" text-anchor="middle">• 1 hr weighted: Firm paneer for pan-searing.</text>
   </g>
 
   <!-- Volet Droit : Glace cryoscopique -->
@@ -50,12 +50,12 @@
     <circle cx="115" cy="89" r="18" fill="#F59E0B" stroke="#B45309" stroke-width="1.5"/>
     <text x="115" y="93" font-family="Liberation Sans, Arial, sans-serif" font-size="10.5" font-weight="bold" fill="#242124" text-anchor="middle">Crème</text>
     <text x="260" y="78" font-family="Liberation Serif, Georgia, serif" font-size="12.5" font-weight="bold" fill="#701C1A" text-anchor="middle">Bain cryoscopique externe :</text>
-    <text x="260" y="96" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#242124" text-anchor="middle">3 parts de glace + 1 part de gros sel</text>
-    <text x="260" y="114" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" font-weight="bold" fill="#A3432B" text-anchor="middle">Chute thermique à -18°C !</text>
+    <text x="260" y="96" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#242124" text-anchor="middle">3 parts crushed ice + 1 part coarse salt</text>
+    <text x="260" y="114" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" font-weight="bold" fill="#A3432B" text-anchor="middle">Thermal collapse to -18°C (0°F)!</text>
 
     <text x="18" y="158" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#701C1A">Principe de l'abaissement cryoscopique :</text>
     <text x="18" y="176" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">Melting ice to dissolve salt consumes massive</text>
-    <text x="18" y="192" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">énergie endothermique massive pompée au bol central.</text>
+    <text x="18" y="192" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">massive endothermic energy drawn from central bowl.</text>
 
     <text x="18" y="220" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#B45309">Protocole de turbinage manuel :</text>
     <text x="18" y="240" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">1. Grand saladier : 1 kg de glaçons + 300 g de gros sel.</text>
@@ -66,6 +66,6 @@
     <rect x="18" y="316" width="359" height="76" rx="6" fill="#F2ECE1"/>
     <text x="197" y="338" font-family="Liberation Serif, Georgia, serif" font-size="12.5" font-weight="bold" fill="#701C1A" text-anchor="middle">✓ Why Still-Frozen Ice Cream Turns Rock-Hard:</text>
     <text x="197" y="358" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#242124" text-anchor="middle">Without rapid whisking, water freezes into coarse needle</text>
-    <text x="197" y="376" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#242124" text-anchor="middle">grossières. Le fouet crée l'onctuosité d'un glacier.</text>
+    <text x="197" y="376" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#242124" text-anchor="middle">crystals. Whisking yields artisanal gelato silkiness.</text>
   </g>
 </svg>

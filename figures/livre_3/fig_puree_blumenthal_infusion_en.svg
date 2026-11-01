@@ -12,15 +12,15 @@
     <ellipse cx="197" cy="110" rx="95" ry="52" fill="#F2ECE1" stroke="#6B4423" stroke-width="3"/>
     <ellipse cx="197" cy="110" rx="85" ry="43" fill="#FAF7F2" stroke="#B45309" stroke-width="1.5" stroke-dasharray="4,2"/>
     <text x="197" y="106" font-family="Liberation Serif, Georgia, serif" font-size="13.5" font-weight="bold" fill="#6B4423" text-anchor="middle">Chair centrale :</text>
-    <text x="197" y="124" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" fill="#B45309" text-anchor="middle">Amidon pur (neutre)</text>
+    <text x="197" y="124" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" fill="#B45309" text-anchor="middle">Pure starch (neutral)</text>
 
-    <text x="197" y="186" font-family="Liberation Sans, Arial, sans-serif" font-size="13.0" font-weight="bold" fill="#701C1A" text-anchor="middle">Sous-épiderme (0 à 2 mm sous la peau) :</text>
-    <text x="197" y="205" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" fill="#242124" text-anchor="middle">Concentre 85 % des molécules d'arômes volatils</text>
+    <text x="197" y="186" font-family="Liberation Sans, Arial, sans-serif" font-size="13.0" font-weight="bold" fill="#701C1A" text-anchor="middle">Sub-cortex (0 to 2 mm under peel):</text>
+    <text x="197" y="205" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" fill="#242124" text-anchor="middle">Concentrates 85% of volatile aroma molecules</text>
     <text x="197" y="223" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#5C5549" font-style="italic" text-anchor="middle">(Methional and pyrazines exuding warm, roasted earth aromas)</text>
 
     <rect x="20" y="245" width="355" height="95" rx="6" fill="#F2ECE1" stroke="#B45309" stroke-width="1.2"/>
-    <text x="197" y="267" font-family="Liberation Serif, Georgia, serif" font-size="13.0" font-weight="bold" fill="#701C1A" text-anchor="middle">✓ Le Protocole d'Infusion Blumenthal :</text>
-    <text x="197" y="287" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124" text-anchor="middle">Brosser les tubercules, prélever les épluchures saines</text>
+    <text x="197" y="267" font-family="Liberation Serif, Georgia, serif" font-size="13.0" font-weight="bold" fill="#701C1A" text-anchor="middle">✓ The Blumenthal Infusion Protocol:</text>
+    <text x="197" y="287" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124" text-anchor="middle">Scrub tubers, collect healthy peelings</text>
     <text x="197" y="305" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124" text-anchor="middle">and steep them for 25 min in hot, steaming milk</text>
     <text x="197" y="323" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" font-weight="bold" fill="#B45309" text-anchor="middle">before straining the aromatic milk over the riced potato flesh!</text>
   </g>
@@ -32,19 +32,19 @@
     <text x="197" y="21" font-family="Liberation Serif, Georgia, serif" font-size="13.5" font-weight="bold" fill="#FCFBF7" text-anchor="middle">2. MÉCANIQUE CELLULAIRE : PRESSE vs MIXEUR</text>
 
     <rect x="20" y="48" width="355" height="140" rx="6" fill="#F4F6F4" stroke="#5A6E54" stroke-width="1.2"/>
-    <text x="32" y="70" font-family="Liberation Sans, Arial, sans-serif" font-size="13.0" font-weight="bold" fill="#5A6E54">✓ PRESSE-PURÉE OU MOULIN À LÉGUMES</text>
+    <text x="32" y="70" font-family="Liberation Sans, Arial, sans-serif" font-size="13.0" font-weight="bold" fill="#5A6E54">✓ POTATO RICER OR FOOD MILL</text>
     <text x="32" y="92" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">• Cisaillement lent à basse pression mécanique.</text>
     <text x="32" y="110" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">• Potato plant cells gently separate along their</text>
     <text x="42" y="126" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">pectin middle lamella without rupturing cell walls.</text>
-    <text x="32" y="144" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">• L'amylose reste confiné dans son sac cellulaire.</text>
-    <text x="32" y="168" font-family="Liberation Serif, Georgia, serif" font-size="12.5" font-weight="bold" fill="#5A6E54">→ Résultat : Texture nuageuse, courte et fondante.</text>
+    <text x="32" y="144" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">• Amylose remains sealed within plant cells.</text>
+    <text x="32" y="168" font-family="Liberation Serif, Georgia, serif" font-size="12.5" font-weight="bold" fill="#5A6E54">→ Result: Cloud-like, delicate, melting texture.</text>
 
     <rect x="20" y="202" width="355" height="140" rx="6" fill="#FBF6F5" stroke="#A3432B" stroke-width="1.2"/>
-    <text x="32" y="224" font-family="Liberation Sans, Arial, sans-serif" font-size="13.0" font-weight="bold" fill="#701C1A">✗ MIXEUR PLONGEANT OU ROBOT À LAME</text>
+    <text x="32" y="224" font-family="Liberation Sans, Arial, sans-serif" font-size="13.0" font-weight="bold" fill="#701C1A">✗ IMMERSION BLENDER OR FOOD PROCESSOR</text>
     <text x="32" y="246" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">• Hélice tournant à 10 000 tours/minute.</text>
-    <text x="32" y="264" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">• Éventration mécanique des parois cellulaires.</text>
+    <text x="32" y="264" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">• Mechanical rupture of cellular walls.</text>
     <text x="32" y="282" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">• Released amylose starches tangle into an</text>
     <text x="42" y="298" font-family="Liberation Sans, Arial, sans-serif" font-size="12.2" fill="#242124">réseau viscoélastique collant irréversible.</text>
-    <text x="32" y="322" font-family="Liberation Serif, Georgia, serif" font-size="12.5" font-weight="bold" fill="#701C1A">→ Résultat : Colle à papier peint élastique et gluante.</text>
+    <text x="32" y="322" font-family="Liberation Serif, Georgia, serif" font-size="12.5" font-weight="bold" fill="#701C1A">→ Result: Sticky, elastic wallpaper paste.</text>
   </g>
 </svg>
