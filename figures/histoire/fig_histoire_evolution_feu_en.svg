@@ -12,19 +12,19 @@
     
     <text x="16" y="72" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#6B4423">• Endless chewing</text>
     <text x="26" y="93" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">5 to 7 hours per day</text>
-    <text x="26" y="111" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">pour broyer les fibres végétales</text>
+    <text x="26" y="111" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">to crush and grind tough plant fibers</text>
     
-    <text x="16" y="145" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#6B4423">• Tube digestif surdimensionné</text>
-    <text x="26" y="166" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">Intestin massif absorbant</text>
-    <text x="26" y="184" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">40% de l'énergie métabolique</text>
+    <text x="16" y="145" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#6B4423">• Oversized Digestive Tract</text>
+    <text x="26" y="166" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">Massive gut consuming</text>
+    <text x="26" y="184" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">40% of basal metabolic energy</text>
     
-    <text x="16" y="218" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#6B4423">• Rendement calorique faible</text>
-    <text x="26" y="239" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">Collagène et amidon cru</text>
-    <text x="26" y="257" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">en grande partie indigestibles</text>
+    <text x="16" y="218" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#6B4423">• Low Caloric Bioavailability</text>
+    <text x="26" y="239" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">Raw collagen and starches</text>
+    <text x="26" y="257" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">largely indigestible and excreted</text>
     
     <rect x="16" y="305" width="238" height="65" rx="6" fill="#EFE8DE"/>
-    <text x="135" y="330" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#6B4423" text-anchor="middle">Cerveau limité : 450 cm³</text>
-    <text x="135" y="350" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#5C5046" text-anchor="middle">Temps de survie contraint</text>
+    <text x="135" y="330" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#6B4423" text-anchor="middle">Constrained Brain: 450 cm³</text>
+    <text x="135" y="350" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#5C5046" text-anchor="middle">Strict metabolic survival budget</text>
   </g>
 
   <!-- Connecteur 1 -> 2 -->
@@ -34,23 +34,23 @@
   <g transform="translate(350, 90)">
     <rect width="260" height="390" rx="10" fill="#FAF5F0" stroke="#C8BAAA" stroke-width="1.5"/>
     <rect width="260" height="42" rx="10" fill="#A3432B"/>
-    <text x="130" y="26" font-family="Liberation Sans, Arial, sans-serif" font-size="14.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">2. L'ÉTINCELLE DU FEU</text>
+    <text x="130" y="26" font-family="Liberation Sans, Arial, sans-serif" font-size="14.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">2. THE SPARK OF FIRE</text>
     
     <text x="16" y="72" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#A3432B">• Starch gelatinization</text>
-    <text x="26" y="93" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">Explosion calorique :</text>
-    <text x="26" y="111" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">glucose assimilable à 95%</text>
+    <text x="26" y="93" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">Caloric explosion:</text>
+    <text x="26" y="111" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">95% bioavailable glucose</text>
     
-    <text x="16" y="145" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#A3432B">• Fusion du collagène</text>
-    <text x="26" y="166" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">Transformation en gélatine molle,</text>
-    <text x="26" y="184" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">mastication en 30 minutes</text>
+    <text x="16" y="145" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#A3432B">• Collagen Denaturation</text>
+    <text x="26" y="166" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">Melts into tender gelatin,</text>
+    <text x="26" y="184" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">chewing reduced to 30 minutes</text>
     
-    <text x="16" y="218" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#A3432B">• Barrière sanitaire absolue</text>
-    <text x="26" y="239" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">Éradication des parasites</text>
-    <text x="26" y="257" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">et des toxines thermolabiles</text>
+    <text x="16" y="218" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#A3432B">• Absolute Sanitary Barrier</text>
+    <text x="26" y="239" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">Eradicates foodborne parasites</text>
+    <text x="26" y="257" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">and heat-labile natural toxins</text>
     
     <rect x="16" y="305" width="228" height="65" rx="6" fill="#F4E8DC"/>
-    <text x="130" y="330" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#A3432B" text-anchor="middle">Prédigestion externe :</text>
-    <text x="130" y="350" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#7A3220" text-anchor="middle">Le feu remplace l'estomac</text>
+    <text x="130" y="330" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#A3432B" text-anchor="middle">External Predigestion:</text>
+    <text x="130" y="350" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#7A3220" text-anchor="middle">Fire replaces gastric work</text>
   </g>
 
   <!-- Connecteur 2 -> 3 -->
@@ -60,23 +60,23 @@
   <g transform="translate(660, 90)">
     <rect width="250" height="390" rx="10" fill="#FBF7F5" stroke="#C8BAAA" stroke-width="1.5"/>
     <rect width="250" height="42" rx="10" fill="#701C1A"/>
-    <text x="125" y="26" font-family="Liberation Sans, Arial, sans-serif" font-size="14.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">3. L'HOMME CULINAIRE</text>
+    <text x="125" y="26" font-family="Liberation Sans, Arial, sans-serif" font-size="14.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">3. CULINARY MAN (HOMO SAPIENS)</text>
     
-    <text x="16" y="72" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#701C1A">• Mâchoire et dents fines</text>
-    <text x="26" y="93" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">Rétrécissement de l'appareil</text>
-    <text x="26" y="111" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">mandibulaire et visage gracile</text>
+    <text x="16" y="72" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#701C1A">• Gracile Jaws &amp; Reduced Teeth</text>
+    <text x="26" y="93" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">Reduction of chewing apparatus,</text>
+    <text x="26" y="111" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">gracile facial morphogenesis</text>
     
-    <text x="16" y="145" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#701C1A">• Réduction du tube digestif</text>
-    <text x="26" y="166" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">Économie métabolique de 60%</text>
-    <text x="26" y="184" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">réallouée au cerveau</text>
+    <text x="16" y="145" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#701C1A">• Shortened Digestive Tract</text>
+    <text x="26" y="166" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">60% gut metabolic savings</text>
+    <text x="26" y="184" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">reallocated to brain tissue</text>
     
-    <text x="16" y="218" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#701C1A">• Veillées et culture du partage</text>
-    <text x="26" y="239" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">Naissance du foyer social,</text>
-    <text x="26" y="257" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">du récit et du langage</text>
+    <text x="16" y="218" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#701C1A">• The Social Hearth &amp; Language</text>
+    <text x="26" y="239" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">Birth of communal narrative,</text>
+    <text x="26" y="257" font-family="Liberation Sans, Arial, sans-serif" font-size="12" fill="#3D352E">mythmaking, and shared culture</text>
     
     <rect x="16" y="305" width="218" height="65" rx="6" fill="#F0E3DF"/>
-    <text x="125" y="330" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#701C1A" text-anchor="middle">Cerveau moderne : 1400 cm³</text>
-    <text x="125" y="350" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#501413" text-anchor="middle">Triplement du volume crânien</text>
+    <text x="125" y="330" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#701C1A" text-anchor="middle">Modern Brain: 1,400 cm³</text>
+    <text x="125" y="350" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#501413" text-anchor="middle">Tripling of cranial capacity</text>
   </g>
 
   <defs>

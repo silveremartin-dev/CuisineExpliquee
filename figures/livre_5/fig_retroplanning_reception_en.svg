@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" width="100%" height="100%">
   <rect width="960" height="360" rx="12" fill="#FCFBF7" stroke="#DFDACF" stroke-width="2"/>
-  <text x="480" y="36" font-family="Liberation Serif, Georgia, serif" font-size="20" font-weight="bold" fill="#701C1A" text-anchor="middle">LE RÉTROPLANNING DE RÉCEPTION : CHRONOGRAMME DU CUISINIER SEREIN</text>
-  <text x="480" y="58" font-family="Liberation Sans, Arial, sans-serif" font-size="13" fill="#5C5549" text-anchor="middle">La dissociation temporelle entre la préparation technique et le plaisir partagé à table.</text>
+  <text x="480" y="36" font-family="Liberation Serif, Georgia, serif" font-size="20" font-weight="bold" fill="#701C1A" text-anchor="middle">HOSTING MASTER SCHEDULE: TIMELINE OF THE STRESS-FREE COOK</text>
+  <text x="480" y="58" font-family="Liberation Sans, Arial, sans-serif" font-size="13" fill="#5C5549" text-anchor="middle">Decoupling prep-time physics from table-side hospitality.</text>
 
   <!-- Étape 1 : J-2 / J-1 -->
   <g transform="translate(30, 85)">
@@ -69,6 +69,6 @@
     <text x="12" y="151" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#5A6E54">✓ Cuissons minute</text>
     <text x="22" y="168" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#5C5549">Saisie rapide en fonte</text>
     <text x="12" y="194" font-family="Liberation Sans, Arial, sans-serif" font-size="12" font-weight="bold" fill="#5A6E54">✓ Partage intégral</text>
-    <text x="22" y="211" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#5C5549">Présence avec les convives</text>
+    <text x="22" y="211" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#5C5549">Seated and relaxed with your guests</text>
   </g>
 </svg>

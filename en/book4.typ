@@ -185,14 +185,6 @@ Without steam, the loaf surface dries instantly into a thick, dull, pale shell. 
 
 #divider()
 
-#divider()
-
-#divider()
-
-#divider()
-
-#divider()
-
 === 🍳 Recipe Protocol 20: Crunchy Lactofermented Pickles in 3% Saline Brine
 <recette-pickles-lactofermentes>
 
@@ -555,14 +547,6 @@ Lava cakes wait for no one: 10 minutes produces molten lava; 12 minutes produces
 
 #divider()
 
-#divider()
-
-#divider()
-
-#divider()
-
-#divider()
-
 === 🍳 Recipe Protocol 23: Pure Butter Shortcrust Pastry (Gluten Inhibition Sablage)
 <recette-pate-brisee>
 
@@ -614,14 +598,6 @@ If butter melts during mixing, it hydrates the flour instead of coating it, guar
   • #strong[Symptom: Tart crust shrank down the pan sides in the oven:] Dough was over-handled or baked without chilling. Rest rolled tart shell in the fridge for 30 minutes before blind baking.
   ]
 ]
-
-#divider()
-
-#divider()
-
-#divider()
-
-#divider()
 
 #divider()
 
@@ -761,7 +737,7 @@ $ Delta T_f = K_f dot m dot i $
     align: (left, left, left),
     table.header([Ingredient], [Metric (4 Portions)], [US Imperial]),
     table.hline(),
-    [High-Quality Vanilla or Raspberry Ice Cream], [400 g (well-frozen -18°C)], [14 oz (hard frozen)],
+    [High-Quality Vanilla or Raspberry Ice Cream], [400 g (well-frozen -18°C / 0°F)], [14 oz (hard frozen)],
     [Sponge Cake Base (génoise, sliced 1.5cm)], [1 round disc (16cm)], [1 sponge cake disc (6 in)],
     [Fresh Egg Whites (room temperature)], [3 large whites], [3 large whites],
     [Granulated Sugar], [120 g], [approx. 1/2 cup + 1 tbsp],
@@ -796,14 +772,6 @@ Do not bake on a thin metal baking sheet; metal conducts heat rapidly into the c
   • #strong[Symptom: Meringue wept liquid onto the plate:] Egg whites were over-beaten or sugar was added too late. Whip to stiff peaks but stop before foam turns dull and dry.
   ]
 ]
-
-#divider()
-
-#divider()
-
-#divider()
-
-#divider()
 
 #divider()
 

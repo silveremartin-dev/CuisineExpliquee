@@ -1,4 +1,4 @@
-# CONSIGNES POUR LA TRADUCTION — TRANSLATION GUIDELINES & INTERNATIONAL ROADMAP
+# TRANSLATION GUIDELINES & INTERNATIONAL ROADMAP
 ## Official Title, Metric/Imperial Conversion Matrix & Cultural Adaptation Protocol
 ### Reference French Edition: *LA CUISINE EXPLIQUÉE* — International English Edition: *COOKING DECODED*
 

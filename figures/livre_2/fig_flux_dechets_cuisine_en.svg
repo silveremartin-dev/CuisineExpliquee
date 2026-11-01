@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 375" width="100%" height="100%">
   <rect width="800" height="375" rx="12" fill="#fcfbf7" stroke="#dfdacf" stroke-width="1.5"/>
   
-  <text x="400" y="32" font-family="Liberation Serif, Georgia, serif" font-size="16.5" font-weight="bold" fill="#701c1a" text-anchor="middle">LE DESTIN DES DÉCHETS DE CUISINE : POUBELLE BIO vs SAC NOIR</text>
-  <text x="400" y="52" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#5c5549" text-anchor="middle">30 % du poids des ordures ménagères est organique : le cercle vertueux du sol face à l'incinération.</text>
+  <text x="400" y="32" font-family="Liberation Serif, Georgia, serif" font-size="16.5" font-weight="bold" fill="#701c1a" text-anchor="middle">THE DESTINY OF KITCHEN WASTE: COMPOST BIN vs. TRASH</text>
+  <text x="400" y="52" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#5c5549" text-anchor="middle">30% of household waste is organic: the fertile soil cycle vs. wasteful incineration.</text>
 
   <!-- Bloc Central -->
   <rect x="245" y="68" width="310" height="38" rx="6" fill="#f2ece1" stroke="#d4a373" stroke-width="1.5"/>
-  <text x="400" y="92" font-family="Liberation Serif, Georgia, serif" font-size="11.5" font-weight="bold" fill="#242124" text-anchor="middle">ÉPLUCHURES &amp; RESTES DE CUISINE (80 % D'EAU)</text>
+  <text x="400" y="92" font-family="Liberation Serif, Georgia, serif" font-size="11.5" font-weight="bold" fill="#242124" text-anchor="middle">PEELINGS &amp; FOOD SCRAPS (80% WATER CONTENT)</text>
 
   <!-- Flux Gauche : Poubelle Bio -->
   <path d="M 320 106 L 320 140 L 205 140 L 205 162" fill="none" stroke="#5a6e54" stroke-width="2.2"/>
@@ -34,8 +34,8 @@
     <text x="246.5" y="90" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#5c5549" text-anchor="middle">(remplace engrais NPK)</text>
 
     <text x="16" y="124" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#242124"><tspan font-weight="bold" fill="#5a6e54">• Bilan énergétique :</tspan> Positif et régénératif.</text>
-    <text x="16" y="142" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#242124"><tspan font-weight="bold" fill="#5a6e54">• Cycle minéral :</tspan> Retour direct de l'azote et du carbone au sol.</text>
-    <text x="16" y="162" font-family="Liberation Serif, Georgia, serif" font-size="10" font-weight="bold" fill="#5a6e54">→ Zéro gaspillage de la matière vivante.</text>
+    <text x="16" y="142" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#242124"><tspan font-weight="bold" fill="#5a6e54">• Mineral Cycle:</tspan> Direct return of nitrogen and carbon to soil.</text>
+    <text x="16" y="162" font-family="Liberation Serif, Georgia, serif" font-size="10" font-weight="bold" fill="#5a6e54">→ Zero waste of living organic biomass.</text>
   </g>
 
   <!-- Carte Droite : Poubelle Noire -->
@@ -56,7 +56,7 @@
     <text x="246.5" y="90" font-family="Liberation Sans, Arial, sans-serif" font-size="8.8" fill="#5c5549" text-anchor="middle">Émission de méthane (CH₄)</text>
 
     <text x="16" y="124" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#242124"><tspan font-weight="bold" fill="#701c1a">• Bilan énergétique :</tspan> Déficitaire, perte nette de calories.</text>
-    <text x="16" y="142" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#242124"><tspan font-weight="bold" fill="#701c1a">• Pollution induite :</tspan> Jus acides et appauvrissement des terres.</text>
+    <text x="16" y="142" font-family="Liberation Sans, Arial, sans-serif" font-size="9.5" fill="#242124"><tspan font-weight="bold" fill="#701c1a">• Pollution Impact:</tspan> Acidic leachate and soil impoverishment.</text>
     <text x="16" y="162" font-family="Liberation Serif, Georgia, serif" font-size="10" font-weight="bold" fill="#701c1a">→ Rupture stérile du cycle agronomique.</text>
   </g>
 </svg>

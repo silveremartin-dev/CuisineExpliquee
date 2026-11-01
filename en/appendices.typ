@@ -1,5 +1,18 @@
 #import "../styles.typ": *
 
+#show heading.where(level: 1): it => {
+  pagebreak(weak: true)
+  v(0.3cm)
+  align(left)[
+    #text(size: 9pt, tracking: 0.2em, fill: c-bordeaux, weight: "bold", font: "Liberation Sans")[#smallcaps[Treatise on Culinary Physics & First Principles]]
+    #v(5pt)
+    #text(size: 18.5pt, weight: "bold", fill: c-ink, font: "Liberation Serif")[#it.body]
+    #v(7pt)
+    #line(length: 100%, stroke: 1pt + c-bronze)
+    #v(0.35cm)
+  ]
+}
+
 = APPENDIX A --- The Absolute Dial of Critical Culinary Temperatures
 <appendix-a-the-absolute-dial-of-critical-culinary-temperatures>
 
@@ -19,12 +32,12 @@
     fill: (x, y) => if y == 0 { rgb("#f1f5f9") } else if calc.odd(y) { rgb("#f8fafc") } else { none },
     table.header([*Protein*], [*Matrix / Tissue*], [*Denaturation Temp.*], [*Biochemical & Physical Transformation*]),
     [Myosin], [Meat & Fish Muscle], [50°C (122°F)], [Coagulates into delicate pink gel; flesh turns opaque. Rare threshold.],
-    [Ovotransferrin], [Egg White], [62°C to 65°C (144°F to 149°F)], [Soft milky coagulation; base of the perfect 64°C egg.],
+    [Ovotransferrin], [Egg White], [62°C to 65°C (144°F to 149°F)], [Soft milky coagulation; base of the perfect 64°C (147°F) egg.],
     [Yolk Lipoproteins], [Egg Yolk], [65°C to 68°C (149°F to 154°F)], [Thickens into velvety fudge; spreadable rich texture.],
     [Actin], [Meat Muscle Fibers], [66°C to 68°C (151°F to 154°F)], [Contracts violently; expels intracellular moisture, turning meat tough.],
     [Collagen], [Connective Tissue], [70°C to 85°C (158°F to 185°F)], [Triple-helix unwinds into water-soluble, succulent gelatin.],
     [Ovalbumin], [Egg White (54%)], [80°C to 84°C (176°F to 183°F)], [Rigid, firm coagulation; sets hard-boiled white completely.],
-    [Casein], [Cow & Goat Milk], [Acid pH 4.6 or 90°C], [Micelles collapse into solid curd; base of fresh cheese.]
+    [Casein], [Cow & Goat Milk], [Acid pH 4.6 or 90°C (194°F)], [Micelles collapse into solid curd; base of fresh cheese.]
   )],
   caption: [Critical Denaturation Thresholds of Animal Proteins]
 )
@@ -43,7 +56,7 @@
     [Potato Starch], [Tubers], [58°C to 65°C (136°F to 149°F)], [Granules swell, trap water, and burst into smooth colloidal paste.],
     [Wheat Starch], [Flour, Bread, Pasta], [62°C to 70°C (144°F to 158°F)], [Gelatinizes in water; sets the spongy crumb structure in baked goods.],
     [Cornstarch (*Maizena*)], [Maize Endosperm], [75°C to 85°C (167°F to 185°F)], [Amylose networks cross-link rapidly; high-viscosity sauce thickener.],
-    [Type-3 Starch (RS3)], [Chilled Cooked Starches], [Refrigeration at 4°C], [Amylose retrogrades into crystalline double-helices; prebiotic fiber.],
+    [Type-3 Starch (RS3)], [Chilled Cooked Starches], [Refrigeration at 4°C (39°F)], [Amylose retrogrades into crystalline double-helices; prebiotic fiber.],
     [Fructose Caramel], [Honey, Fruit Sugars], [110°C (230°F)], [Early thermal decomposition; rapid browning and complex fruity acid notes.],
     [Sucrose Caramel], [Pure Table Sugar], [160°C to 180°C (320°F to 356°F)], [Pure pyrolysis; synthesizes diacetyl, maltol, furans, and caramelan.]
   )],
@@ -226,13 +239,13 @@
     stroke: 0.5pt + rgb("#cbd5e1"),
     fill: (x, y) => if y == 0 { rgb("#f1f5f9") } else if calc.odd(y) { rgb("#f8fafc") } else { none },
     table.header([*Ingredient*], [*Method*], [*Target Temp.*], [*Standard Duration*]),
-    [Steak ($300 thin upright("g")$)], [Cast-Iron Sear], [54°C (Medium-rare)], [2 min per side + 3 min butter baste + 5 min rest],
-    [Whole Roast Chicken ($1.5 thin upright("kg")$)], [Convection Oven], [74°C (Inner thigh)], [50 to 60 min at 190°C (374°F)],
-    [Pork Shoulder Braise ($1.5 thin upright("kg")$)], [Dutch Oven Simmer], [90°C (Collagen)], [3.5 to 4 hours at 140°C (284°F)],
-    [White Cod Fillet ($180 thin upright("g")$)], [Steam Poaching], [52°C (Translucent)], [6 to 8 min at 85°C (185°F)],
-    [Whole Potatoes ($200 thin upright("g")$)], [Cold Water Boil], [95°C (Tender)], [25 to 30 min from rolling boil],
-    [Dry Brown Lentils ($200 thin upright("g")$)], [Simmer with Lid], [95°C (Creamy)], [25 to 30 min (no soaking needed)],
-    [Soft-Boiled Egg], [Boiling Water (100°C)], [64°C Yolk], [Strictly 6 min 00 sec + ice shock]
+    [Steak (300 g / 10.5 oz)], [Cast-Iron Sear], [54°C / 129°F (Medium-rare)], [2 min per side + 3 min butter baste + 5 min rest],
+    [Whole Roast Chicken (1.5 kg / 3.3 lb)], [Convection Oven], [74°C / 165°F (Inner thigh)], [50 to 60 min at 190°C (374°F)],
+    [Pork Shoulder Braise (1.5 kg / 3.3 lb)], [Dutch Oven Simmer], [90°C / 194°F (Collagen)], [3.5 to 4 hours at 140°C (284°F)],
+    [White Cod Fillet (180 g / 6.3 oz)], [Steam Poaching], [52°C / 126°F (Translucent)], [6 to 8 min at 85°C (185°F)],
+    [Whole Potatoes (200 g / 7 oz)], [Cold Water Boil], [95°C / 203°F (Tender)], [25 to 30 min from rolling boil],
+    [Dry Brown Lentils (200 g / 7 oz)], [Simmer with Lid], [95°C / 203°F (Creamy)], [25 to 30 min (no soaking needed)],
+    [Soft-Boiled Egg], [Boiling Water (100°C / 212°F)], [64°C / 147°F Yolk], [Strictly 6 min 00 sec + ice shock]
   )],
   caption: [Reference Time Horizons and Internal Core Temperatures Across Methods]
 )
@@ -264,7 +277,7 @@ Because cold air sinks ($rho_"cold" > rho_"warm"$), static domestic refrigerator
     [Intermediate Shelves], [4°C to 5°C (39°F to 41°F)], [Cooked leftovers, charcuterie, dairy, soft cheeses], [Maintains cooked food safety within the 2- to 3-day window.],
     [Upper Top Shelf], [6°C to 7°C (43°F to 45°F)], [Aged hard cheeses, prepared desserts, open jars], [Temperate storage preventing excessive chilling of hard fats.],
     [Door Bins], [8°C to 10°C (46°F to 50°F)], [Pasteurized fruit juices, butter, mustard, pickles], [Withstands frequent warm room air intrusion during opening.],
-    [Crisper Drawer], [8°C to 10°C (High Humidity)], [Fresh leafy greens, root vegetables, citrus], [Maintains 90% relative humidity, preventing stomatal wilt.]
+    [Crisper Drawer], [8°C to 10°C (46°F to 50°F, High Humidity)], [Fresh leafy greens, root vegetables, citrus], [Maintains 90% relative humidity, preventing stomatal wilt.]
   )],
   caption: [Domestic Refrigerator Thermal Bio-Zone Stratification]
 )
@@ -279,12 +292,12 @@ Because cold air sinks ($rho_"cold" > rho_"warm"$), static domestic refrigerator
     columns: (1.6fr, 1.5fr, 1.5fr, 2.4fr),
     stroke: 0.5pt + rgb("#cbd5e1"),
     fill: (x, y) => if y == 0 { rgb("#f1f5f9") } else if calc.odd(y) { rgb("#f8fafc") } else { none },
-    table.header([*Food Item*], [*Fridge (0°C to 4°C)*], [*Freezer (-18°C)*], [*Sanitary Critical Threshold*]),
-    [Raw Ground Meat], [Strictly 24 hours], [2 to 3 months], [High bacterial surface area; cook thoroughly to 74°C.],
+    table.header([*Food Item*], [*Fridge (0°C to 4°C / 32°F to 39°F)*], [*Freezer (-18°C / 0°F)*], [*Sanitary Critical Threshold*]),
+    [Raw Ground Meat], [Strictly 24 hours], [2 to 3 months], [High bacterial surface area; cook thoroughly to 74°C (165°F).],
     [Fresh Raw Fish & Shellfish], [24 to 48 hours], [3 to 6 months], [Rapid autolytic enzymatic degradation; cook immediately.],
     [Raw Poultry (Whole / Cut)], [48 hours], [6 to 9 months], [*Campylobacter* and *Salmonella* risk; never wash raw in sink.],
     [Raw Beef Steaks & Roasts], [3 to 5 days], [9 to 12 months], [Intact interior muscle is sterile; surface sear pasteurizes.],
-    [Cooked Leftovers (Stew, Rice)], [3 to 4 days], [2 to 3 months], [Cool to 10°C in under 2 hours before chilling.],
+    [Cooked Leftovers (Stew, Rice)], [3 to 4 days], [2 to 3 months], [Cool to 10°C (50°F) in under 2 hours before chilling.],
     [Fresh Whole Shell Eggs], [28 days], [Do not freeze in shell], [Air cell expansion test in cold water.],
     [Hard Cheeses (Comté, Cheddar)], [3 to 4 weeks], [6 months (crumbles)], [Wrap in parchment paper; trim surface mold safely.],
     [Opened Pasteurized Milk], [5 to 7 days], [3 months], [Lactic souring; discard if curdled or off-smelling.]
@@ -607,7 +620,7 @@ Always purchase categories 7, 8, and 9 (dairy, seafood, meats) at the very end o
   #text(size: 8.8pt, style: "italic", fill: c-slate)[Household Consumables, Office Tools & 30-Minute Market Protocol — Standalone Page to Detach]
 ]
 
-#v(0.2cm)
+#v(0.12cm)
 
 #grid(
   columns: (1fr, 1fr),
@@ -616,13 +629,17 @@ Always purchase categories 7, 8, and 9 (dairy, seafood, meats) at the very end o
     #block(
       fill: rgb("#faf7f0"),
       stroke: 0.5pt + rgb("#dfdacf"),
-      inset: 8pt,
+      inset: 7pt,
       radius: 4pt,
       width: 100%,
-      spacing: 0.8em
+      spacing: 0.65em
     )[
       #text(weight: "bold", fill: c-bordeaux, size: 9.5pt)[11. TECHNICAL COOKING CONSUMABLES] \
+      #v(1pt)
+      #line(length: 100%, stroke: 0.5pt + c-bronze)
       #v(2pt)
+      #set text(size: 8.6pt)
+      #set par(leading: 0.62em)
       #case_cocher Unbleached Siliconized Parchment Paper roll \
       #case_cocher Heavy-Duty Aluminum Foil (reflective shields) \
       #case_cocher 100% Pure Unbleached Cotton Kitchen Twine \
@@ -632,17 +649,21 @@ Always purchase categories 7, 8, and 9 (dairy, seafood, meats) at the very end o
       #case_cocher Heavy Paper Towels (for patting meats bone-dry) \
       #case_cocher Food-Grade Mineral Oil (cutting board care)
     ]
-    #v(0.15cm)
+    #v(0.12cm)
     #block(
       fill: rgb("#faf7f0"),
       stroke: 0.5pt + rgb("#dfdacf"),
-      inset: 8pt,
+      inset: 7pt,
       radius: 4pt,
       width: 100%,
-      spacing: 0.8em
+      spacing: 0.65em
     )[
       #text(weight: "bold", fill: c-bordeaux, size: 9.5pt)[12. OFFICE CUTLERY & HARDWARE CHECKS] \
+      #v(1pt)
+      #line(length: 100%, stroke: 0.5pt + c-bronze)
       #v(2pt)
+      #set text(size: 8.6pt)
+      #set par(leading: 0.62em)
       #case_cocher Digital Probe Thermometer (battery test) \
       #case_cocher Ceramic or Steel Honing Rod (knife maintenance) \
       #case_cocher Stainless Steel Scrubbing Wool (iron cleaning) \
@@ -656,13 +677,17 @@ Always purchase categories 7, 8, and 9 (dairy, seafood, meats) at the very end o
     #block(
       fill: rgb("#faf7f0"),
       stroke: 0.5pt + rgb("#dfdacf"),
-      inset: 8pt,
+      inset: 7pt,
       radius: 4pt,
       width: 100%,
-      spacing: 0.8em
+      spacing: 0.65em
     )[
       #text(weight: "bold", fill: c-bordeaux, size: 9.5pt)[13. PILLAR MINERALS & WHOLE SPICES] \
+      #v(1pt)
+      #line(length: 100%, stroke: 0.5pt + c-bronze)
       #v(2pt)
+      #set text(size: 8.6pt)
+      #set par(leading: 0.62em)
       #case_cocher Coarse Grey Sea Salt (Guérande / Celtic style) \
       #case_cocher Fine Sea Salt (non-iodized, for general cooking) \
       #case_cocher Crunchy Finishing Sea Salt Flakes (*Fleur de Sel*) \
@@ -677,18 +702,16 @@ Always purchase categories 7, 8, and 9 (dairy, seafood, meats) at the very end o
   ]
 )
 
-#v(0.2cm)
+#v(0.12cm)
 
 #chef_tip[
 #strong[Weekly 30-Minute Market Execution Protocol:]
 1. #strong[Pantry Audit (Day D - 1):] Open pantry and crisper drawer; check off only missing staple components from categories 1 to 6.
 2. #strong[Linear Market Circuit:] Follow strict numerical order ($1 text(" Produce") arrow.r 2 text(" Bulk") arrow.r 3 text(" Dairy") arrow.r 4 text(" Meat/Fish")$). Perishable cold goods enter insulated cooler bags last.
-3. #strong[Direct Kitchen FIFO Storage:] Upon returning, stow fresh goods immediately according to thermal zones: meats/fish in coldest zone ($0^compose upright(" to ") 2^compose upright("C")$), dairy in intermediate tier ($4^compose upright("C")$), vegetables in crisper ($6^compose upright(" to ") 8^compose upright("C")$).
+3. #strong[Direct Kitchen FIFO Storage:] Upon returning, stow fresh goods immediately according to thermal zones: meats/fish in coldest zone (0°C to 2°C / 32°F to 36°F), dairy in intermediate tier (4°C / 39°F), vegetables in crisper (6°C to 8°C / 43°F to 46°F).
 ]
 
-#divider()
-
-
+#pagebreak()
 
 = APPENDIX G --- Comprehensive Iconographic Directory & Image Sources
 <appendix-g-comprehensive-iconographic-directory-and-image-sources>

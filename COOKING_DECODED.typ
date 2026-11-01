@@ -523,3 +523,89 @@
 #include "en/book5.typ"
 #include "en/book6.typ"
 #include "en/appendices.typ"
+
+#metadata("fin-section") <fin-section>
+#pagebreak(to: "odd")
+#set page(margin: 0pt, header: none, footer: none)
+#metadata("debut-section") <debut-section>
+#box()
+#pagebreak()
+
+#block(
+  fill: rgb("#1c1917"),
+  width: 100%,
+  height: 100%,
+  inset: (x: 2.6cm, y: 2.2cm)
+)[
+  #v(0.6cm)
+  #text(size: 11pt, weight: "bold", fill: rgb("#fbbf24"), tracking: 2pt, font: "Liberation Sans")[
+    COOKING DECODED — INTERNATIONAL UNABRIDGED EDITION
+  ]
+  #v(0.2cm)
+  #text(size: 20pt, weight: "bold", fill: white, font: "Liberation Serif")[
+    Reclaim the sovereign freedom of understanding what you cook.
+  ]
+  #v(0.4cm)
+  #line(length: 100%, stroke: 1.5pt + rgb("#f59e0b"))
+  #v(0.5cm)
+
+  #text(size: 10.5pt, fill: rgb("#f5f5f4"), font: "Liberation Serif")[
+    Why is boiling water sometimes the sworn enemy of delicate food? Why does salting a steak forty-five minutes before it touches the pan radically enhance its tenderness and juiciness? How can you make fresh cheese at home in fifteen minutes without special equipment, or emulsify a silky pasta sauce to perfection without a single drop of heavy cream?
+
+    *Cooking Decoded* is not another arbitrary recipe manual to memorize blindly. It is a foundational treatise spanning *evolutionary anthropology, cellular biology, heat-transfer thermodynamics, and manual kitchen mechanics*, engineered to permanently free the home cook from gadget dependency and culinary dogma.
+
+    This *unabridged six-book international edition* embraces the full spectrum of nourishment: from the ancestral paleolithic spark to the festive dining table, from water chemistry to living wild sourdough fermentations, and from stress-free reception planning to diachronic microbiome nutrition.
+  ]
+
+  #v(0.6cm)
+  #block(
+    fill: rgb("#292524"),
+    stroke: 1pt + rgb("#44403c"),
+    inset: 13pt,
+    radius: 6pt,
+    width: 100%
+  )[
+    #text(size: 9.5pt, fill: rgb("#fed7aa"), font: "Liberation Sans", weight: "bold")[
+      IN THIS DEFINITIVE REFERENCE EDITION:
+    ]
+    #v(3pt)
+    #text(size: 8.8pt, fill: rgb("#e7e5e4"), font: "Liberation Sans")[
+      • *6 Major Books & 26 Comprehensive Chapters*: From ancestral fire to diachronic nutrition.\
+      • *26 Foundational Recipe Protocols*: Universal ratios, step-by-step physics, and 30-second rescue trees.\
+      • *Dual Metrology Throughout*: Continuous °C / °F, grams / ounces, and milliliters / cups conversions.\
+      • *Kitchen Engineering & Safety*: Oil fire smothering, blackout protocols, and knife biomechanics.\
+      • *Open Access & Preservation*: Distributed under Creative Commons CC BY-SA 4.0 license.
+    ]
+  ]
+
+  #v(1.0cm)
+  #grid(
+    columns: (1fr, auto),
+    align: (left + bottom, right + bottom),
+    [
+      #text(size: 9pt, fill: rgb("#a8a29e"), font: "Liberation Sans")[
+        *Silvère-Martin Michiellot & Antigravity*\
+        Digital & Archival Edition — 2026\
+        Public GitHub Repository / Open Access Treatise
+      ]
+    ],
+    [
+      #block(
+        fill: rgb("#292524"),
+        stroke: 0.5pt + rgb("#78716c"),
+        inset: (x: 14pt, y: 8pt),
+        radius: 4pt
+      )[
+        #text(size: 8.5pt, weight: "bold", fill: rgb("#fbbf24"), font: "Liberation Sans")[
+          OPEN ACCESS & SHARING
+        ]
+        #v(-2pt)
+        #text(size: 7.5pt, fill: rgb("#d6d3d1"), font: "Liberation Sans")[
+          CC BY-SA 4.0 LICENSE
+        ]
+      ]
+    ]
+  )
+]
+
+#hide[] <recette-creme-anglaise>

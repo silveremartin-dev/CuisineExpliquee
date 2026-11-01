@@ -13,7 +13,7 @@
 - **Official English Title (International Edition):** *COOKING DECODED* (Alternative: *THE WAY OF THE PAN*)
 - **Subtitle:** *First Principles, Pure Physics, and Minimalist Tools*
 - **Companion Book:** *THE KITCHEN LAB GUIDE — Experimental Protocols, Rescue Decision Trees, and Pure Science*
-- **Roadmap & Internationalization:** Refer to `TRANSLATION_GUIDELINES.md` and `CONSIGNES_TRADUCTION.md` for complete unit conversion tables (Celsius/Fahrenheit, grams/ounces, milliliters/cups), flour typologies (T45/T55/T65 vs. Pastry/All-Purpose/Bread Flour), butter fat content (82% FR vs. 80% US), and butcher cuts comparison.
+- **Roadmap & Internationalization:** Refer to `TRANSLATION_GUIDELINES.md` and `TRANSLATION_GUIDELINES.md` for complete unit conversion tables (Celsius/Fahrenheit, grams/ounces, milliliters/cups), flour typologies (T45/T55/T65 vs. Pastry/All-Purpose/Bread Flour), butter fat content (82% FR vs. 80% US), and butcher cuts comparison.
 - **Scope & Mission:** This work is **not a casual recipe collection**, but a foundational treatise spanning evolutionary anthropology, biology, physics, chemistry, and manual culinary mechanics. The core mission is to master the transformation of raw matter, understand nutritional survival, and control thermodynamic energy flows with a **minimal arsenal of tools**.
 - **Historical & Scientific Foundations:**
   - *Evolutionary Thinkers & Anthropologists:* Richard Wrangham (*Catching Fire: How Cooking Made Us Human*), Claude Lévi-Strauss (*The Raw and the Cooked*).

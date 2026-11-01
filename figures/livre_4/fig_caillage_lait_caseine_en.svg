@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 510" width="100%" height="100%">
   <rect width="880" height="510" rx="14" fill="#FCFBF7" stroke="#DFDACF" stroke-width="2"/>
-  <text x="440" y="34" font-family="Liberation Serif, Georgia, serif" font-size="20" font-weight="bold" fill="#701C1A" text-anchor="middle">BIOMÉCANIQUE DU CAILLAGE : LES DEUX VOIES DE RUPTURE COLLOÏDALE</text>
-  <text x="440" y="55" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" fill="#5C5549" text-anchor="middle">De la répulsion électrostatique des micelles de caséine à la prise en gel du fromage.</text>
+  <text x="440" y="34" font-family="Liberation Serif, Georgia, serif" font-size="20" font-weight="bold" fill="#701C1A" text-anchor="middle">DAIRY CURDLING BIOMECHANICS: THE TWO COLLOIDAL PATHWAYS</text>
+  <text x="440" y="55" font-family="Liberation Sans, Arial, sans-serif" font-size="13.5" fill="#5C5549" text-anchor="middle">From electrostatic casein micelle repulsion to cheese curd gelation.</text>
 
   <!-- Bloc Racine : Lait Entier -->
   <g transform="translate(245, 72)">
@@ -39,7 +39,7 @@
     <text x="28" y="70" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#242124">Réseau poreux court, fragile et très humide.</text>
     <text x="18" y="94" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#5A6E54">• Applications au foyer :</text>
     <text x="28" y="112" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#242124">Fromage frais en 15 min, Faisselle, Paneer, Ricotta.</text>
-    <text x="18" y="135" font-family="Liberation Sans, Arial, sans-serif" font-size="11.8" font-style="italic" fill="#5C5549">Égouttage doux par gravité dans une étamine de coton.</text>
+    <text x="18" y="135" font-family="Liberation Sans, Arial, sans-serif" font-size="11.8" font-style="italic" fill="#5C5549">Gentle gravity drainage through fine cotton cheesecloth.</text>
   </g>
 
   <!-- Voie Droite : Présure -->
@@ -47,7 +47,7 @@
     <rect width="375" height="92" rx="8" fill="#F2ECE1" stroke="#B45309" stroke-width="1.5"/>
     <text x="187" y="25" font-family="Liberation Serif, Georgia, serif" font-size="14" font-weight="bold" fill="#B45309" text-anchor="middle">VOIE 2 : COAGULATION ENZYMATIQUE</text>
     <text x="187" y="45" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#242124" text-anchor="middle">Présure / Chymosine à tiédeur animale (32–35°C)</text>
-    <text x="187" y="64" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#5C5549" text-anchor="middle">Cisaillement sélectif des poils de caséine kappa.</text>
+    <text x="187" y="64" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#5C5549" text-anchor="middle">Selective enzymatic shearing of kappa-casein hairs.</text>
     <text x="187" y="81" font-family="Liberation Sans, Arial, sans-serif" font-size="11.8" fill="#5C5549" text-anchor="middle">Soudure tridimensionnelle par ponts de calcium (Ca²⁺).</text>
   </g>
 
@@ -57,11 +57,11 @@
   <g transform="translate(465, 333)">
     <rect width="375" height="150" rx="8" fill="#FAF7F2" stroke="#B45309" stroke-width="1.5"/>
     <rect width="375" height="30" rx="8" fill="#B45309"/>
-    <text x="187" y="20" font-family="Liberation Serif, Georgia, serif" font-size="13" font-weight="bold" fill="#FCFBF7" text-anchor="middle">GEL PRÉSURE : CAILLÉ SOUPLE DE GARDE</text>
+    <text x="187" y="20" font-family="Liberation Serif, Georgia, serif" font-size="13" font-weight="bold" fill="#FCFBF7" text-anchor="middle">RENNET CURD: ELASTIC, FIRM AGED CHEESE</text>
     <text x="18" y="52" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#B45309">• Architecture microscopique :</text>
     <text x="28" y="70" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#242124">Gel élastique et imperméable à forte synérèse.</text>
     <text x="18" y="94" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#B45309">• Fromages d'affinage :</text>
     <text x="28" y="112" font-family="Liberation Sans, Arial, sans-serif" font-size="12.0" fill="#242124">Comté, Beaufort, Tomme de montagne, Camembert.</text>
-    <text x="18" y="135" font-family="Liberation Sans, Arial, sans-serif" font-size="11.8" font-style="italic" fill="#5C5549">Autorise le décaillage au sabre, le chauffage et le pressage.</text>
+    <text x="18" y="135" font-family="Liberation Sans, Arial, sans-serif" font-size="11.8" font-style="italic" fill="#5C5549">Withstands curd cutting with a harp, heating, and pressing.</text>
   </g>
 </svg>

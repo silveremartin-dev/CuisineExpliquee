@@ -40,46 +40,46 @@
     <rect width="170" height="38" rx="8" fill="#6B4423"/>
     <text x="85" y="24" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">3. CAST IRON SKILLET</text>
     <text x="12" y="66" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#6B4423">• Pre-seasoned heavy iron</text>
-    <text x="12" y="86" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">Masse lourde (2 à 3 kg)</text>
-    <text x="12" y="112" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#6B4423">• Rôle thermique :</text>
-    <text x="12" y="132" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">Inertie calorifique pure,</text>
-    <text x="12" y="148" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">croûte de Maillard flash</text>
+    <text x="12" y="86" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">Heavy mass: 4.5 to 6.5 lb (2 to 3 kg)</text>
+    <text x="12" y="112" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#6B4423">• Thermal role:</text>
+    <text x="12" y="132" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">Immense heat retention,</text>
+    <text x="12" y="148" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">instant deep Maillard sear</text>
     <rect x="10" y="245" width="150" height="60" rx="6" fill="#EFE8DE"/>
-    <text x="85" y="268" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#6B4423" text-anchor="middle">Anti-adhésion n°1 :</text>
-    <text x="85" y="286" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#5C5046" text-anchor="middle">Huile polymérisée</text>
+    <text x="85" y="268" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#6B4423" text-anchor="middle">Natural non-stick #1:</text>
+    <text x="85" y="286" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#5C5046" text-anchor="middle">Polymerized lipid seasoning</text>
   </g>
 
   <!-- Outil 4 : Casserole Inox -->
   <g transform="translate(580, 85)">
     <rect width="170" height="325" rx="8" fill="#FAF6F0" stroke="#C8BAAA" stroke-width="1.5"/>
     <rect width="170" height="38" rx="8" fill="#8C6239"/>
-    <text x="85" y="24" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">4. CASSEROLE INOX</text>
-    <text x="12" y="66" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#8C6239">• Inox 18/10 sandwich</text>
-    <text x="12" y="86" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">Cœur alu conducteur</text>
-    <text x="12" y="112" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#8C6239">• Rôle chimique :</text>
-    <text x="12" y="132" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">Neutralité absolue,</text>
-    <text x="12" y="148" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">cuisson des acides sans risque</text>
+    <text x="85" y="24" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">4. STAINLESS STEEL SAUCEPAN</text>
+    <text x="12" y="66" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#8C6239">• 18/10 3-ply sandwich</text>
+    <text x="12" y="86" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">Conductive aluminum core</text>
+    <text x="12" y="112" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#8C6239">• Chemical role:</text>
+    <text x="12" y="132" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">Absolute chemical neutrality,</text>
+    <text x="12" y="148" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">safe for wine &amp; acid reductions</text>
     <rect x="10" y="245" width="150" height="60" rx="6" fill="#F0EBE1"/>
-    <text x="85" y="268" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#8C6239" text-anchor="middle">Zéro migration :</text>
-    <text x="85" y="286" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#5C5046" text-anchor="middle">Bouillons &amp; sauces</text>
+    <text x="85" y="268" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#8C6239" text-anchor="middle">Zero metallic leaching:</text>
+    <text x="85" y="286" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#5C5046" text-anchor="middle">Pure stocks, glazes &amp; sauces</text>
   </g>
 
   <!-- Outil 5 : Fouet & Maryse -->
   <g transform="translate(765, 85)">
     <rect width="170" height="325" rx="8" fill="#FAF6F0" stroke="#C8BAAA" stroke-width="1.5"/>
     <rect width="170" height="38" rx="8" fill="#B45309"/>
-    <text x="85" y="24" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">5. FOUET &amp; MARYSE</text>
-    <text x="12" y="66" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#B45309">• Fouet ballon inox</text>
-    <text x="12" y="86" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">Spatule silicone souple</text>
-    <text x="12" y="112" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#B45309">• Rôle d'émulsion :</text>
-    <text x="12" y="132" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">Cisaillement des gouttes,</text>
-    <text x="12" y="148" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">raclage intégral des fonds</text>
+    <text x="85" y="24" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">5. WHISK &amp; SILICONE SPATULA</text>
+    <text x="12" y="66" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#B45309">• Stainless balloon whisk</text>
+    <text x="12" y="86" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">Heat-resistant flexible spatula</text>
+    <text x="12" y="112" font-family="Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#B45309">• Emulsion mechanics:</text>
+    <text x="12" y="132" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">Shears micelle droplets,</text>
+    <text x="12" y="148" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" fill="#3D352E">scrapes 100% of pan fond</text>
     <rect x="10" y="245" width="150" height="60" rx="6" fill="#F4EADB"/>
-    <text x="85" y="268" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#B45309" text-anchor="middle">Liaison parfaite :</text>
-    <text x="85" y="286" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#78350F" text-anchor="middle">Mayonnaise &amp; roux</text>
+    <text x="85" y="268" font-family="Liberation Sans, Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#B45309" text-anchor="middle">Flawless colloidal binding:</text>
+    <text x="85" y="286" font-family="Liberation Sans, Arial, sans-serif" font-size="11" fill="#78350F" text-anchor="middle">Mayonnaise, béchamel &amp; roux</text>
   </g>
 
   <!-- Ruban Conclusion -->
   <rect x="70" y="425" width="820" height="38" rx="6" fill="#701C1A"/>
-  <text x="480" y="449" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">RÈGLE MAÎTRESSE : CINQ INSTRUMENTS PURS COMPOSENT 99% DE TOUTES LES RECETTES DU MONDE</text>
+  <text x="480" y="449" font-family="Liberation Sans, Arial, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">GOLDEN RULE: FIVE ESSENTIAL TOOLS EXECUTE 99% OF THE WORLD'S GREAT RECIPES</text>
 </svg>
