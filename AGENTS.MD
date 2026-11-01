@@ -182,6 +182,19 @@ figures/
 
 ---
 
+## 5 bis. LAYOUT AND EDITORIAL FOLIATION
+
+1. **Editorial Foliation (Page Numbering):**
+   - *Counting vs. Display:* The entire interior block is counted, but folios are visible only on body text pages.
+   - *Covers excluded from counting:* Covers 1, 2, 3, and 4 (front cover, inside covers, back cover) are never counted or numbered; the front cover is **never** page 1.
+   - *Page 1 = first recto page of interior block:* p. 1 half-title (recto), p. 2 blank (verso), p. 3 full title, p. 4 copyright/legal notices, p. 5 epigraph/dedication, p. 6 blank, then table of contents — all counted but **mute** (no printed page number).
+   - *Recto/Verso:* Odd pages on the right, even pages on the left. Every opening of a part, book, chapter, or appendix starts on a recto (odd) page and remains mute in the header; the first visible folio appears on the subsequent page (or in the footer for chapter openers).
+   - *Blank pages:* Counted in arithmetic order, never displaying folios or running headers.
+   - *Placement:* Folios centered or placed on the outer margin (left on even pages, right on odd pages), **never on the inner gutter (binding side)**.
+   - *Block ending:* The interior block ends on an even page (verso), followed by inside back cover (Cover 3) and back cover (Cover 4).
+
+---
+
 ## 6. THE SECRETS OF THE THREE-STAR PLATE (CHEF'S COMPENDIUM)
 
 The work deconstructs what elevates everyday cooking to three-star gastronomic excellence:
