@@ -25,6 +25,16 @@ Contrairement aux bactéries d'altération ordinaires qui sentent mauvais et dé
   1. *L'Acidité ($pH < 4{,}6$) :* Dans un milieu acide (tomates, fruits, cornichons au vinaigre), les spores de *Clostridium* sont totalement incapables de germer.
   2. *La Chaleur sous Pression ($121^\circ\mathrm{C}$) :* Pour toutes les conserves de légumes non acides, viandes et poissons, il est impératif de stériliser à **$121^\circ\mathrm{C}$ pendant 20 à 30 minutes en autocuiseur sous pression**. L'ébullition simple en bocal d'eau à $100^\circ\mathrm{C}$ ne détruit pas les spores !
 
+### C. Métrologie Frugale de l'Acidité ($pH$) et de l'Activité de l'Eau ($a_w$)
+Pour le praticien domestique qui refuse la foi aveugle, deux mesures simples permettent de valider la sécurité microbiologique absolue sans laboratoire sophistiqué :
+1. **La Mesure du $pH$ par Bandelettes Réfractaires ou Indicateur Naturel :**
+   - L'usage de bandelettes de papier pH à plage étroite (plage $3{,}0\text{ à }5{,}5$, coût minime) permet de vérifier objectivement que le liquide d'une saumure ou d'une conserve est bien descendu sous le seuil critique infranchissable de $\mathbf{pH < 4{,}6}$.
+   - *Alternative frugale au chou rouge :* Une décoction concentrée de chou rouge (gorgée d'anthocyanes) sert d'indicateur colorimétrique fiable : rouge vif à $pH \approx 2\text{--}3$, rose pourpre à $pH \approx 4\text{--}5$, bleu à la neutralité ($pH \approx 7$), et vert-jaune en milieu alcalin.
+2. **L'Évaluation Frugale de l'Activité de l'Eau ($a_w$) :**
+   - L'activité de l'eau ($a_w$) quantifie la fraction d'eau libre disponible pour les micro-organismes (échelle de 0 à 1,00). Sous $a_w < 0{,}85$, les bactéries pathogènes cessent leur toxinogenèse ; sous $a_w < 0{,}60$, aucune vie cellulaire ne peut croître.
+   - *Méthode gravimétrique différentielle :* Pour les viandes séchées, salaisons ou légumes déshydratés, une balance de cuisine précise au gramme permet de mesurer la perte d'eau. Dès lors qu'une pièce salée a perdu **$35\text{ à }45\,\%$ de sa masse initiale brute**, son eau libre a été évaporée ou adsorbée par les solutés salins : son $a_w$ est stabilisé sous 0,70.
+   - *Le densimètre à flotteur ou test de l'œuf pour les saumures :* Pour s'assurer qu'une saumure liquide exerce une pression osmotique inhibitrice suffisante ($>10\,\%$ de sel), plonger un œuf frais entier cru dans le bain. S'il coule au fond, la concentration est insuffisante ; s'il flotte en affleurant à la surface de la taille d'une pièce de monnaie, la saumure est saturée et stérile.
+
 ---
 
 ## 3. LA LACTOFERMENTATION DES LÉGUMES : LE CRU SAUVÉ PAR LE SEL
@@ -135,3 +145,20 @@ Ne jetez plus jamais vos restes de bouteilles de bon vin ou de cidre brut :
 3. **L'Immersion Anaérobie Totale :** Verser la saumure sur les légumes jusqu'à **$2\text{ cm}$ sous le rebord**. Tous les morceaux de légumes doivent impérativement être immergés sous la surface du liquide (ce qui dépasse de l'eau au contact de l'air moisirait ; ce qui est sous l'eau fermente noblement). Si nécessaire, poser un petit ramequin en verre lourd ou une feuille de chou pliée pour maintenir les morceaux immergés.
 4. **La Fermentation Active :** Fermer hermétiquement le bocal avec son joint de caoutchouc. Laisser à température ambiante ($20\text{--}22^\circ\mathrm{C}$) à l'abri du soleil direct pendant 5 à 7 jours. Dès le deuxième jour, des bulles de $\mathrm{CO}_2$ montent le long du verre et le liquide devient opalescent : c'est le signe éclatant de la vitalité des bactéries lactiques. Le joint permet au gaz de s'échapper sous pression sans laisser entrer l'air extérieur.
 5. **La Dégustation et Conservation :** Dès que le goût est acidulé, vif et croquant, placer le bocal au réfrigérateur ou dans une cave fraîche ($<12^\circ\mathrm{C}$) : le froid ralentit la fermentation. Les légumes se conservent ainsi pendant plus d'une année en se bonifiant.
+
+---
+
+## 6. LE KÔJI (*ASPERGILLUS ORYZAE*) ET LES FERMENTATIONS SOLIDES : LA BIOCATALYSE PURE ET L'UMAMI SANS FEU
+
+Le kôji (*Aspergillus oryzae*) constitue l'apogée du minimalisme instrumental asiatique : au lieu d'utiliser des heures de cuisson thermique au feu pour dégrader les fibres ou extraire les sucs d'un animal, on délègue cette tâche de prédigestion moléculaire à un champignon filamenteux noble.
+
+### A. La Fermentation en Substrat Solide (FSS)
+Contrairement aux fermentations liquides (bière, vin, vinaigre), le kôji se développe sur un substrat solide humide mais drainé :
+1. **L'Inoculation :** Des grains d'orge perlé ou de riz sont trempés, cuits à la vapeur jusqu'à être souples mais fermes, puis refroidis à $30^\circ\mathrm{C}$ avant d'être saupoudrés de spores microscopiques de koji.
+2. **L'Incubation à Chaleur Corporelle :** Maintenu dans un récipient tapissé d'un linge propre entre $28^\circ\mathrm{C}$ et $32^\circ\mathrm{C}$ pendant 48 heures, le mycélium blanc tisse un réseau dense et feutré qui enrobe chaque grain.
+3. **L'Usine Enzymatique Vivante :** Pour se nourrir de l'amidon et des protéines du grain, le champignon sécrète à l'extérieur de ses hyphes une cascade de macromolécules biocatalytiques pures : des **amylases** (qui cisaillent l'amidon en sucres fermentescibles), des **protéases et peptidases** (qui hydrolysent les chaînes polypeptidiques en peptides courts et acides aminés libres), et des **lipases**.
+
+### B. Le Shio-Koji : Le Trésor d'Assaisonnement et de Tendreté Domestique
+En mélangeant à parts égales du koji de riz, de l'eau tiède et $10\,\%$ de sel marin, on obtient après une semaine à température ambiante une pâte lacto-enzymatique appelée *shio-koji* :
+- **La Dénaturation Enzymatique sans Chaleur :** En badigeonnant une viande ferme ou un poisson d'une fine couche de shio-koji pendant 2 à 4 heures au frais, les protéases pénètrent les premiers millimètres de tissu et digèrent les trames dures d'actomyosine et de collagène : la chair devient incomparablement fondante sans nécessiter de cuisson longue.
+- **La Génération Pure d'Umami :** Les protéases libèrent des quantités colossales d'**acide L-glutamique naturel**, conférant une saveur umami profonde, ronde et sapide sans le moindre bouillon animal ni exhausteur de goût industriel (glutamate monosodique E621).

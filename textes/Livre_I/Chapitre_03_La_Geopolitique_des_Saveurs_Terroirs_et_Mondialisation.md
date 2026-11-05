@@ -13,7 +13,7 @@ Avant l'avènement des transports frigorifiques et de l'huile de tournesol indus
 ### A. Le Monde du Beurre et de la Crème : La Douceur Tempérée du Nord
 Dans les plaines humides de Normandie, de Bretagne, de Flandre et des îles britanniques, l'herbe grasse pousse dix mois sur douze, favorisant l'élevage bovin laitier.
 - **La Signature Moléculaire :** Le beurre frais contient $82\,\%$ de triglycérides saturés à chaîne courte et moyenne (comme l'acide butyrique), $16\,\%$ d'eau et $2\,\%$ de protéines laitières (caséines).
-- **La Règle Thermique :** Le beurre ne supporte pas la brutalité du feu vif. À $130^\circ\mathrm{C}$, son eau résiduelle s'évapore en crépitant ; à $140^\circ\mathrm{C}$, les caséines caramélisent en conférant l'arôme envoûtant de noisette grillée ; au-delà de $150^\circ\mathrm{C}$, les protéines noircissent et se décomposent en composés âcres et toxiques (acroléine). C'est pourquoi la cuisine au beurre est une cuisine de **nappage, d'arrosage doux et de réduction soyeuse**.
+- **La Règle Thermique :** Le beurre ne supporte pas la brutalité du feu vif. À $130^\circ\mathrm{C}$, son eau résiduelle s'évapore en crépitant ; dès $135\text{--}140^\circ\mathrm{C}$, les protéines laitières (caséines) réagissent avec les traces de lactose selon la réaction de Maillard tout en précipitant, libérant les pyrazines et les lactones conférant l'arôme envoûtant du beurre noisette ; au-delà de $150^\circ\mathrm{C}$, ces protéines carbonisent en particules noircies et le glycérol commence à se scinder thermiquement en composés âcres et toxiques (acroléine). C'est pourquoi la cuisine au beurre est une cuisine de **nappage, d'arrosage doux et de réduction soyeuse**.
 
 ### B. Le Monde de la Graisse de Volaille : Le Génie du Confit du Sud-Ouest
 Dans le Sud-Ouest de la France et en Europe centrale, les étés chauds et les hivers rigoureux ont imposé une méthode de conservation de longue durée : **le confisage**.
@@ -24,6 +24,12 @@ Dans le Sud-Ouest de la France et en Europe centrale, les étés chauds et les h
 Sous le soleil écrasant de Méditerranée, les vaches peinent à trouver de l'herbe grasse, mais l'*Olea europaea* prospère dans la rocaille depuis l'Antiquité.
 - **La Signature Moléculaire :** L'huile d'olive vierge extra est un pur jus de fruit extrait à froid, composé à $75\,\%$ d'acide oléique protecteur et gorgé de polyphénols antioxydants piquants (oléocanthal).
 - **Le Caractère Culinaire :** Elle ne fige jamais au réfrigérateur (ou seulement en gelée réversible). Elle s'utilise aussi bien crue pour réveiller une tomate mûre ou monter un pistou que pour dorer des poissons de roche à feu vif. Enrobant la bouche d'une saveur végétale herbacée, elle appelle l'acidité tranchante du citron ou du vinaigre de vin.
+
+### D. Triglycéridolyse, Acides Gras Libres (AGL) et Point de Fumée
+La résistance thermique d'une matière grasse ne dépend pas seulement de sa proportion en acides gras saturés ou insaturés, mais avant tout de son degré de pureté moléculaire et de son intégrité chimique :
+- **Le Mécanisme de la Triglycéridolyse :** Sous l'action conjointe de la chaleur et de l'humidité résiduelle des aliments, les triglycérides se scindent par hydrolyse : la molécule libère du glycérol et des **acides gras libres (AGL)**. Le glycérol se déshydrate ensuite en acroléine, gaz volatil suffocant et lacrymogène marquant le point de fumée.
+- **L'Impact Décisif des AGL :** Plus une huile contient d'acides gras libres (comme une huile vierge artisanale de première pression à froid ou une huile d'olive non filtrée d'acidité élevée), plus son point de fumée s'abaisse ($160\text{--}190^\circ\mathrm{C}$). À l'inverse, le raffinage physique ou la désacidification élimine ces AGL, hissant le point de fumée au-delà de $220\text{--}240^\circ\mathrm{C}$.
+- **La Sensibilité des Insaturations à l'Oxydation Peroxydique :** Les acides gras polyinsaturés (huiles de noix, de lin, de colza) comportent plusieurs doubles liaisons carbone-carbone très vulnérables à l'attaque des radicaux libres d'oxygène. Chauffés brutalement en présence d'air, ils forment des hydroperoxydes lipidiques instables qui se dégradent en aldéhydes toxiques et polymères poisseux : ils doivent impérativement être réservés à l'assaisonnement froid ou aux cuissons très douces.
 
 ---
 

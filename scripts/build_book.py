@@ -4,7 +4,7 @@ Master Culinary Book Builder pour LA CUISINE EXPLIQUÉE — ÉDITION RÉVISÉE E
 - Auteurs : Silvère-Martin Michiellot & Antigravity
 - Moteur Typographique : Typst v0.15.1
 - Moteur de conversion : Pandoc 3.12.1
-- Architecture : Traité Magistral en Six Livres + Annexes (26 Chapitres, 26 Recettes Piliers)
+- Architecture : Traité Magistral en Six Livres + Annexes (27 Chapitres, 29 Recettes Piliers)
 - Grandes Ouvertures de Livre : Illustration pleine page sur page paire (verso) en regard du portail (recto)
 - Photographies culinaires haute définition dédiées pour chaque recette
 - Foliotage éditorial sans failles, zéro fausse page, navigation transversale interactive
@@ -473,7 +473,7 @@ PREAMBLE = """
 // ==========================================
 #align(left)[
   #text(size: 15pt, weight: "bold", fill: c-bordeaux, font: "Liberation Serif")[
-    🍳 Table des Vingt-Six Recettes et Préparations Piliers
+    🍳 Table des Vingt-Neuf Recettes et Préparations Piliers
   ]
   #v(-4pt)
   #line(length: 100%, stroke: 0.8pt + c-bronze)
@@ -488,7 +488,7 @@ PREAMBLE = """
   width: 100%
 )[
   #text(size: 9.2pt)[
-    Cette table réunit les vingt-six protocoles fondamentaux pas à pas décrits dans l'ouvrage. Chaque recette constitue une application directe et vivante des lois physiques, chimiques et biologiques exposées :
+    Cette table réunit les vingt-neuf protocoles fondamentaux pas à pas décrits dans l'ouvrage. Chaque recette constitue une application directe et vivante des lois physiques, chimiques et biologiques exposées :
 
     #v(0.15cm)
     *1. Pâtes, Féculents & Protéines Végétales (Livre III)*
@@ -536,6 +536,12 @@ PREAMBLE = """
     - #link(<recette-mousse-aquafaba>)[*Fiche 24 :* La Mousse Aérienne au Chocolat à l'Aquafaba (Zéro Œuf)] --- _Chapitre 20_
     - #link(<recette-omelette-norvegienne>)[*Fiche 25 :* L'Omelette Norvégienne Minute (Bouclier de la Meringue)] --- _Chapitre 21_
     - #link(<recette-glace-sel>)[*Fiche 26 :* La Glace Express sans Sorbetière par Abaissement Cryoscopique] --- _Chapitre 21_
+
+    #v(0.12cm)
+    *8. Cuisines Dérivées & Nouveaux Paradigmes (Livre VI)*
+    - #link(<recette-celeri-granulats>)[*Fiche 27 :* Le Céleri-Rave Cuit en Lit de Granulats Siliceux (Cuisine Tellurique)] --- _Chapitre 27_
+    - #link(<recette-maquereau-brule-froid>)[*Fiche 28 :* Le Maquereau « Brûlé à Froid » par Fermentation Lacto-Saline (Cuisine Enzy-Biotique)] --- _Chapitre 27_
+    - #link(<recette-emulsion-parures-oignon>)[*Fiche 29 :* L'Émulsion Noire de Parures d'Oignon et Moelleux Réduit (Cuisine des Interfaces)] --- _Chapitre 27_
   ]
 ]
 
@@ -593,7 +599,7 @@ BACK_COVER = """
     ]
     #v(3pt)
     #text(size: 8.8pt, fill: rgb("#e7e5e4"), font: "Liberation Sans")[
-      • *6 Livres Majeurs & 26 Chapitres Exhaustifs* : Du premier foyer à la nutrition diachronique.\\
+      • *6 Livres Majeurs & 27 Chapitres Exhaustifs* : Du premier foyer à la nutrition diachronique.\\
       • *26 Fiches Recettes Fondatrices* : Ratios universels, pas-à-pas et arbres de sauvetage en 30 secondes.\\
       • *Ouvertures Iconographiques Pleine Page* : Face-à-face graphique noble sur chaque nouveau Livre.\\
       • *Ingénierie du Foyer & Sécurité Sanitaire* : Gestion des pannes, brûlures, découpes et marche en avant.\\
@@ -865,10 +871,11 @@ def run_build():
             "titre": "LE TEMPS LONG : NUTRITION DIACHRONIQUE ET PLAISIR DURABLE",
             "img": "figures/nourriture/livre6_ouverture_potager_saisons.jpg",
             "legende": "Le potager vivant au fil des saisons : diversité végétale et temps long.",
-            "citation": "Sortir de la Tyrannie des Régimes : Physiologie du Poids /// La Diachronie Culinaire : Microbiote et Batch Cooking",
+            "citation": "Sortir de la Tyrannie des Régimes : Physiologie du Poids /// La Diachronie Culinaire : Microbiote et Batch Cooking /// L'Espace des Cuisines Dérivées : Trois Paradigmes Prospectifs et Leurs Protocoles",
             "fichiers": [
                 "textes/Livre_VI/Chapitre_25_Sortir_de_la_Tyrannie_des_Regimes_Physiologie_du_Poids.md",
-                "textes/Livre_VI/Chapitre_26_La_Diachronie_Culinaire_Microbiote_et_Batch_Cooking.md"
+                "textes/Livre_VI/Chapitre_26_La_Diachronie_Culinaire_Microbiote_et_Batch_Cooking.md",
+                "textes/Livre_VI/Chapitre_27_L_Espace_des_Cuisines_Derivees_Trois_Paradigmes_et_Protocoles.md"
             ]
         },
         {

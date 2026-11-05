@@ -24,7 +24,15 @@ Le sucre blanc de table est une molécule pure de **saccharose** ($\mathrm{C}_{1
 
 ---
 
-## 2. CARAMEL À SEC vs CARAMEL À L'EAU : LA VÉRITÉ TECHNIQUE
+## 2. LA FRONTIÈRE THERMIQUE : CARAMÉLISATION vs RÉACTION DE MAILLARD
+
+Bien que toutes deux soient des brunissements non enzymatiques déclenchés par l'apport d'énergie thermique, ces deux voies chimiques obéissent à des cinétiques et à des réactifs fondamentalement distincts :
+- **La Caramélisation (Pyrolyse Glucidique Pure) :** Elle implique exclusivement des sucres purs (saccharose, glucose, fructose) en l'absence totale de protéines ou d'azote. Elle s'amorce à haute température ($>160^\circ\mathrm{C}$ pour le saccharose, $>150^\circ\mathrm{C}$ pour le glucose, $>110^\circ\mathrm{C}$ pour le fructose pur). La molécule d'hydrate de carbone se déshydrate, s'isomérise et subit des scissions thermiques produisant du diacétyle (arôme beurré), des furanes, du maltol et des polymères complexes ambrés (caramélane $\mathrm{C}_{12}\mathrm{H}_{18}\mathrm{O}_9$, caramélène $\mathrm{C}_{36}\mathrm{H}_{50}\mathrm{O}_{25}$, caraméline $\mathrm{C}_{125}\mathrm{H}_{188}\mathrm{O}_{80}$).
+- **La Réaction de Maillard (Condensation Glucide Réducteur + Acide Aminé) :** Elle exige impérativement la condensation d'un sucre réducteur et d'un composé aminé (protéine, peptide, acide aminé libre). Elle se produit dès $130\text{--}140^\circ\mathrm{C}$ et produit des mélanoïdines azotées complexes ainsi qu'une palette d'arômes hétérocycliques (pyrazines rôties, thiazoles, pyrroles). Chauffer du saccharose pur dans une casserole sèche ne produit aucune réaction de Maillard, tout comme roussir une tranche de viande séchée sans sucre ajouté relève prioritairement de Maillard grâce aux traces de glycogène et d'acides aminés musculaires.
+
+---
+
+## 3. CARAMEL À SEC vs CARAMEL À L'EAU : LA VÉRITÉ TECHNIQUE : LA VÉRITÉ TECHNIQUE
 
 1. **Le Caramel à l'Eau (Méthode Débutante Sécurisée) :**
    - On humidifie le sucre avec un tiers de son poids en eau.
@@ -36,7 +44,7 @@ Le sucre blanc de table est une molécule pure de **saccharose** ($\mathrm{C}_{1
 
 ---
 
-## 3. LE PHÉNOMÈNE DU « MASSAGE » ET SA NEUTRALISATION PAR L'ACIDE
+## 4. LE PHÉNOMÈNE DU « MASSAGE » ET SA NEUTRALISATION PAR L'ACIDE
 
 C'est la hantise du pâtissier : vous surveillez votre sirop limpide sur le feu. Soudain, en une fraction de seconde, le liquide limpide se fige en une pâte blanche, granuleuse, opaque et solide comme de la craie : **le caramel a « massé »**.
 
@@ -63,7 +71,7 @@ Si malgré tout votre caramel a massé et s'est transformé en un bloc de craie 
 
 ---
 
-## 4. LE PRALINÉ ARTISANAL MAISON : LA PYROLYSE AU SERVICE DU FRUIT SEC
+## 5. LE PRALINÉ ARTISANAL MAISON : LA PYROLYSE AU SERVICE DU FRUIT SEC
 
 Le praliné est le mariage de deux chimies complémentaires :
 1. **La Torréfaction des Fruits Secs :** Les noisettes et amandes entières sont enfournées à $150^\circ\mathrm{C}$ pendant 15 minutes. Leurs lipides polyinsaturés se réchauffent, libérant des terpènes de sous-bois.

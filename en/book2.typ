@@ -52,7 +52,7 @@ The knife is not a passive mechanical wedge: it is a cellular scalpel.
 === B. The Heavy Raw Cast-Iron or Tri-Ply Stainless Skillet (10 to 11-inch / 28 cm)
 <b.-the-heavy-raw-cast-iron-or-tri-ply-stainless-skillet-10-to-11-inch-28-cm>
 - #strong[The Concept of Volumetric Heat Capacity:] Why do thin Teflon or stamped aluminum pans fail to sear meats properly? When a cold piece of meat at 50°F (10°C) is dropped into a lightweight pan, the minuscule thermal mass collapses immediately below 212°F (100°C). Surface water escaping the meat cannot vaporize instantly; it boils in its own juices, turning gray, soggy, and completely blocking the Maillard reaction.
-- A heavy cast-iron skillet weighing 6 to 8 lb (3 to 4 kg) acts as a #strong[colossal thermal energy reservoir]: its stored kinetic energy absorbs the cold shock without flinching, sustaining temperatures above 320°F (160°C), flash-vaporizing moisture, and initiating the rich aromatic browning of amino acids.
+- A heavy cast-iron skillet weighing 6 to 8 lb (3 to 4 kg) acts as a #strong[colossal thermal energy reservoir]: its internal enthalpy and high volumetric heat capacity ($rho dot c_p$), accumulated within its dense stationary mass on the flame, absorb the cold thermal shock without flinching, sustaining interfacial contact above 320°F (160°C), flash-vaporizing surface moisture, and driving the Maillard reaction between reducing sugars and amino acids.
 
 === C. The Medium Tri-Ply Saucepan (2 to 3 Quarts / 2 to 3 Liters)
 <c.-the-medium-tri-ply-saucepan-2-to-3-quarts-2-to-3-liters>
@@ -109,9 +109,9 @@ Bare, stripped iron reacts with atmospheric oxygen within seconds (*flash rust*)
 <step-3-foundational-seasoning-via-flaxseed-oil-polymerization>
 Seasoning (*culottage*) is not a film of grease: it is the #strong[thermal cross-linking and polymerization of polyunsaturated fatty acids] into an insoluble, hydrophobic, glass-like organo-carbon matrix.
 
-1. #strong[Oil Selection:] Use food-grade organic #strong[flaxseed oil] (dense in triple-bond alpha-linolenic acid, which cross-links fastest) or, alternatively, high-oleic canola or grapeseed oil.
+1. #strong[Oil Selection and Unsaturation Chemistry:] Use food-grade organic #strong[flaxseed oil] (dense in drying alpha-linolenic acid with three double bonds). Controlled peroxidic oxidation of these unsaturated sites generates free radicals that establish cross-linking carbon-carbon bonds (curing). Caution: if applied too thickly or heated below its breakdown threshold, the oil oxidizes incompletely, creating a gummy, rancid varnish instead of a vitrified surface.
 2. #strong[The Invisible Drop:] Rub half a teaspoon of oil into the warm pan. Using clean paper towels, buff the oil over every square inch (inside, base, sides, handle).
-3. #strong[The Thorough Wipe-Off (The Critical Secret):] Take a fresh dry cloth and buff the skillet aggressively as if trying to remove every trace of oil. The metal must appear completely matte and dry to the touch! Any remaining liquid oil pooling on the surface will turn into gummy, sticky blisters that ruin the finish.
+3. #strong[The Thorough Wipe-Off (The Molecular Monolayer):] Take a fresh dry cloth and buff the skillet aggressively as if trying to remove every trace of oil. The metal must appear completely matte and dry to the touch! You are aiming for a #strong[molecular monolayer]: any remaining liquid pooling on the surface will form gummy, sticky peroxides that ruin the seasoning instead of vitrifying it.
 4. #strong[Baking in the Oven:] Preheat your oven to #strong[450°F to 475°F (230°C to 245°C)]. Place the skillet #strong[upside down] on the center rack (to prevent any runaway drip pooling). Bake undisturbed for #strong[1 full hour].
 5. Turn off the oven and let the skillet cool completely inside without opening the door.
 6. #strong[Repeat the protocol 3 times:] With each pass, the polymerized cross-linked layer thickens. The skillet transforms from light matte gray to a deep, lustrous, satin ebony black.

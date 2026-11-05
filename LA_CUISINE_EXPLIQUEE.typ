@@ -283,8 +283,6 @@
   #body
 ]
 
-#let case_cocher = box(width: 8pt, height: 8pt, stroke: 0.7pt + c-slate, radius: 1.5pt, baseline: 0.5pt)
-
 // ==========================================
 // 1. COUVERTURE PHOTOGRAPHIQUE GASTRONOMIQUE
 // ==========================================
@@ -435,7 +433,7 @@
 // ==========================================
 #align(left)[
   #text(size: 15pt, weight: "bold", fill: c-bordeaux, font: "Liberation Serif")[
-    🍳 Table des Vingt-Six Recettes et Préparations Piliers
+    🍳 Table des Vingt-Neuf Recettes et Préparations Piliers
   ]
   #v(-4pt)
   #line(length: 100%, stroke: 0.8pt + c-bronze)
@@ -450,7 +448,7 @@
   width: 100%
 )[
   #text(size: 9.2pt)[
-    Cette table réunit les vingt-six protocoles fondamentaux pas à pas décrits dans l'ouvrage. Chaque recette constitue une application directe et vivante des lois physiques, chimiques et biologiques exposées :
+    Cette table réunit les vingt-neuf protocoles fondamentaux pas à pas décrits dans l'ouvrage. Chaque recette constitue une application directe et vivante des lois physiques, chimiques et biologiques exposées :
 
     #v(0.15cm)
     *1. Pâtes, Féculents & Protéines Végétales (Livre III)*
@@ -498,6 +496,12 @@
     - #link(<recette-mousse-aquafaba>)[*Fiche 24 :* La Mousse Aérienne au Chocolat à l'Aquafaba (Zéro Œuf)] --- _Chapitre 20_
     - #link(<recette-omelette-norvegienne>)[*Fiche 25 :* L'Omelette Norvégienne Minute (Bouclier de la Meringue)] --- _Chapitre 21_
     - #link(<recette-glace-sel>)[*Fiche 26 :* La Glace Express sans Sorbetière par Abaissement Cryoscopique] --- _Chapitre 21_
+
+    #v(0.12cm)
+    *8. Cuisines Dérivées & Nouveaux Paradigmes (Livre VI)*
+    - #link(<recette-celeri-granulats>)[*Fiche 27 :* Le Céleri-Rave Cuit en Lit de Granulats Siliceux (Cuisine Tellurique)] --- _Chapitre 27_
+    - #link(<recette-maquereau-brule-froid>)[*Fiche 28 :* Le Maquereau « Brûlé à Froid » par Fermentation Lacto-Saline (Cuisine Enzy-Biotique)] --- _Chapitre 27_
+    - #link(<recette-emulsion-parures-oignon>)[*Fiche 29 :* L'Émulsion Noire de Parures d'Oignon et Moelleux Réduit (Cuisine des Interfaces)] --- _Chapitre 27_
   ]
 ]
 
@@ -551,9 +555,15 @@ il mourrait rapidement de dénutrition sévère ou d'infection parasitaire.
 
 === A. La Prédigestion Externe : L'Économie Énergétique Absolue
 <a.-la-prédigestion-externe-léconomie-énergétique-absolue>
-Comme l'a démontré le primatologue et anthropologue d'Harvard Richard
-Wrangham, l'invention de la cuisson il y a environ 1,8 million d'années
-par #emph[Homo erectus] est le pivot de notre évolution biologique : 1.
+Selon la thèse pionnière du primatologue et anthropologue d'Harvard
+Richard Wrangham (#emph[Catching Fire]), l'adoption précoce de la
+cuisson à l'aube d'#emph[Homo erectus] (vers $- 1\,8$ million d'années)
+constitue le pivot biologique de notre lignée. Si cette datation très
+haute demeure un modèle théorique fécond débattu en paléoanthropologie
+--- les preuves archéologiques formelles de foyers entretenus et
+maîtrisés (Wonderwerk, Gesher Benot Ya'aqov, Qesem) s'échelonnant plus
+sûrement entre $- 1$ million d'années et $- 300 thin 000$ ans ---, la
+dynamique métabolique mise en lumière reste incontestable : 1.
 #strong[La Gélatinisation de l'Amidon et la Dénaturation des Protéines
 :] Les glucides complexes (racines, tubercules) crus sont enfermés dans
 des granules d'amidon cristallins étanches que les enzymes digestives
@@ -829,9 +839,16 @@ des quatre humeurs : chaud, froid, sec, humide).
 <a.-le-viandier-de-taillevent-vers-1380>
 Guillaume Tirel, dit #strong[Taillevent], premier écuyer de cuisine du
 roi de France Charles V puis Charles VI, consigne la doctrine culinaire
-du Moyen Âge : 1. #strong[L'Absence Totale de Corps Gras Surchauffés :]
-Contrairement à une idée reçue tenace, la grande cuisine médiévale n'est
-ni grasse ni lourde. Le beurre fondu est absent des sauces nobles. 2.
+du Moyen Âge : 1. #strong[La Primauté des Sauces Acides et l'Usage Ciblé
+des Graisses :] Contrairement au mythe tenace d'un Moyen Âge
+uniformément gras et pesant, la haute cuisine féodale ne noie pas ses
+viandes dans des sauces au beurre fondu : elle privilégie des jus vifs
+montés à l'acide. Pour autant, les corps gras chauds ne sont nullement
+absents de l'office médiéval : le lard fondu (larder, barder, saindoux)
+est abondamment employé pour rôtir les venaisons, l'huile de noix régit
+les jours maigres imposés par le calendrier liturgique, et les fritures
+de poissons et beignets sont formellement attestées dans le
+#emph[Mesnagier de Paris] et le #emph[Tractatus de Modo Preparandi]. 2.
 #strong[L'Hégémonie du Verjus et du Vinaigre :] Les sauces sont
 émulsionnées ou montées sans matière grasse : leur base liquide est le
 #strong[verjus] (jus acide extrait de raisins cueillis avant maturité)
@@ -1012,12 +1029,16 @@ frais contient $82 thin %$ de triglycérides saturés à chaîne courte et
 moyenne (comme l'acide butyrique), $16 thin %$ d'eau et $2 thin %$ de
 protéines laitières (caséines). - #strong[La Règle Thermique :] Le
 beurre ne supporte pas la brutalité du feu vif. À
-$130^compose upright(C)$, son eau résiduelle s'évapore en crépitant \; à
-$140^compose upright(C)$, les caséines caramélisent en conférant l'arôme
-envoûtant de noisette grillée \; au-delà de $150^compose upright(C)$,
-les protéines noircissent et se décomposent en composés âcres et
-toxiques (acroléine). C'est pourquoi la cuisine au beurre est une
-cuisine de #strong[nappage, d'arrosage doux et de réduction soyeuse].
+$130^compose upright(C)$, son eau résiduelle s'évapore en crépitant \;
+dès $135 upright("–") 140^compose upright(C)$, les protéines laitières
+(caséines) réagissent avec les traces de lactose selon la réaction de
+Maillard tout en précipitant, libérant les pyrazines et les lactones
+conférant l'arôme envoûtant du beurre noisette \; au-delà de
+$150^compose upright(C)$, ces protéines carbonisent en particules
+noircies et le glycérol commence à se scinder thermiquement en composés
+âcres et toxiques (acroléine). C'est pourquoi la cuisine au beurre est
+une cuisine de #strong[nappage, d'arrosage doux et de réduction
+soyeuse].
 
 === B. Le Monde de la Graisse de Volaille : Le Génie du Confit du Sud-Ouest
 <b.-le-monde-de-la-graisse-de-volaille-le-génie-du-confit-du-sud-ouest>
@@ -1051,6 +1072,31 @@ Elle s'utilise aussi bien crue pour réveiller une tomate mûre ou monter
 un pistou que pour dorer des poissons de roche à feu vif. Enrobant la
 bouche d'une saveur végétale herbacée, elle appelle l'acidité tranchante
 du citron ou du vinaigre de vin.
+
+=== D. Triglycéridolyse, Acides Gras Libres (AGL) et Point de Fumée
+<d.-triglycéridolyse-acides-gras-libres-agl-et-point-de-fumée>
+La résistance thermique d'une matière grasse ne dépend pas seulement de
+sa proportion en acides gras saturés ou insaturés, mais avant tout de
+son degré de pureté moléculaire et de son intégrité chimique : -
+#strong[Le Mécanisme de la Triglycéridolyse :] Sous l'action conjointe
+de la chaleur et de l'humidité résiduelle des aliments, les
+triglycérides se scindent par hydrolyse : la molécule libère du glycérol
+et des #strong[acides gras libres (AGL)]. Le glycérol se déshydrate
+ensuite en acroléine, gaz volatil suffocant et lacrymogène marquant le
+point de fumée. - #strong[L'Impact Décisif des AGL :] Plus une huile
+contient d'acides gras libres (comme une huile vierge artisanale de
+première pression à froid ou une huile d'olive non filtrée d'acidité
+élevée), plus son point de fumée s'abaisse
+($160 upright("–") 190^compose upright(C)$). À l'inverse, le raffinage
+physique ou la désacidification élimine ces AGL, hissant le point de
+fumée au-delà de $220 upright("–") 240^compose upright(C)$. - #strong[La
+Sensibilité des Insaturations à l'Oxydation Peroxydique :] Les acides
+gras polyinsaturés (huiles de noix, de lin, de colza) comportent
+plusieurs doubles liaisons carbone-carbone très vulnérables à l'attaque
+des radicaux libres d'oxygène. Chauffés brutalement en présence d'air,
+ils forment des hydroperoxydes lipidiques instables qui se dégradent en
+aldéhydes toxiques et polymères poisseux : ils doivent impérativement
+être réservés à l'assaisonnement froid ou aux cuissons très douces.
 
 #divider()
 
@@ -1186,11 +1232,12 @@ plastique.
   elle bouillonne dans son jus, ramollit la chair et interdit la
   réaction de Maillard.
 - Une poêle en fonte épaisse de 3 à 4 kg agit comme un
-  #strong[accumulateur thermique massif] : son énergie cinétique
-  accumulée absorbe le choc thermique sans faiblir, maintenant la
-  surface à plus de $160^compose upright(C)$, vaporisant immédiatement
-  le film aqueux et déclenchant le roussissement aromatique des acides
-  aminés.
+  #strong[accumulateur thermique massif] : son enthalpie interne et sa
+  haute capacité thermique volumique ($rho dot.op c_p$), accumulées dans
+  sa masse dense au repos sur le feu, absorbent le choc thermique sans
+  faiblir, maintenant l'interface à plus de $160^compose upright(C)$,
+  vaporisant immédiatement le film aqueux et déclenchant la réaction de
+  Maillard entre sucres réducteurs et acides aminés.
 
 === C. La Casserole Moyenne à Fond Sandwich (2 à 3 litres)
 <c.-la-casserole-moyenne-à-fond-sandwich-2-à-3-litres>
@@ -1297,19 +1344,26 @@ Le culottage n'est pas un dépôt de graisse : c'est la
 transformés en un réseau de carbone dur, lisse, hydrophobe et
 antiadhésif.
 
-+ #strong[Le Choix de l'Huile :] Privilégier l'#strong[huile de lin
-  biologique alimentaire] (la plus riche en acide alpha-linolénique à
-  triple liaison, qui polymérise le plus vite) ou, à défaut, de l'huile
-  de colza ou de pépin de raisin.
++ #strong[Le Choix de l'Huile et la Chimie des Insaturations :]
+  Privilégier l'#strong[huile de lin biologique alimentaire] (la plus
+  riche en acide alpha-linolénique à trois doubles liaisons, hautement
+  siccative). L'oxydation peroxydique contrôlée de ces insaturations
+  amorce la formation de radicaux libres qui créent des ponts
+  carbone-carbone transversaux (réticulation). Attention : si l'huile
+  est appliquée en couche trop épaisse ou si la température reste
+  inférieure à son point de décomposition, elle s'oxyde sans réticuler
+  complètement, devenant poisseuse et prompte à rancir.
 + #strong[L'Onction Invisible :] Déposer 1 demi-cuillère à café d'huile
   au centre de la poêle tiédie. Avec un essuie-tout ou un linge, étaler
   l'huile sur l'ensemble de la pièce (intérieur, fond, dos, manche).
-+ #strong[L'Essuyage Total (Le Secret) :] Prendre un second chiffon
-  parfaitement sec et frotter la poêle avec insistance comme si vous
-  vouliez retirer toute l'huile. La poêle doit paraître complètement
-  sèche au toucher ! S'il reste une nappe brillante d'huile liquide,
-  elle formera des coulures visqueuses et collantes qui ruineront le
-  culottage.
++ #strong[L'Essuyage Total (Le Secret de la Monocouche) :] Prendre un
+  second chiffon parfaitement sec et frotter la poêle avec insistance
+  comme si vous vouliez retirer toute l'huile. La poêle doit paraître
+  complètement sèche au toucher ! C'est une #strong[monocouche
+  moléculaire] que l'on recherche : s'il reste une nappe brillante
+  d'huile liquide, les peroxydes lipidiques formeront des coulures
+  visqueuses et collantes qui ruineront le culottage au lieu de le
+  vitrifier.
 + #strong[La Cuisson au Four :] Préchauffer le four ménager à
   #strong[$230 upright("–") 240^compose upright(C)$]. Poser la poêle
   #strong[à l'envers] sur la grille centrale (pour éviter toute
@@ -1403,10 +1457,9 @@ aux appareils du commerce :
     circulaire net sépare les pâtons sans étirer le réseau de
     gluten.], [Fariner le col du verre avant chaque pression pour un
     démoulage instantané.],
-  )],
-  caption: [Détournement d'objets du quotidien et équivalences d'ustensiles techniques.],
-  kind: table
-)
+  )]
+  , kind: table
+  )
 
 #truc_de_chef[
 
@@ -1798,10 +1851,9 @@ inoffensives lorsqu'elles sont chauffées.
     bicarbonate ou du vinaigre d'alcool pur séparément.], [Mélanger eau
     de Javel et vinaigre blanc : émanation instantanée de dichlore
     gazeux toxique pour les poumons.],
-  )],
-  caption: [Protocoles de sécurité d'urgence face aux accidents majeurs du foyer.],
-  kind: table
-)
+  )]
+  , kind: table
+  )
 
 = CHAPITRE 06 --- L'Économie du Foyer : Courses Rationnelles, Additifs et Saisonnalité
 <chapitre-06-léconomie-du-foyer-courses-rationnelles-additifs-et-saisonnalité>
@@ -1959,10 +2011,9 @@ nomenclature numérique européenne du code E :
     d'emballage]], [Imiter la sensation sucrée sans calories ou chasser
     l'oxygène des sachets plastiques.], [Miel, sirop d'érable, sucre de
     canne complet.],
-  )],
-  caption: [Les sept familles fonctionnelles d'additifs dans l'industrie agroalimentaire.],
-  kind: table
-)
+  )]
+  , kind: table
+  )
 
 #divider()
 
@@ -2064,10 +2115,9 @@ dangereuses documentées par la recherche biomédicale :
     hyper-sucrantes], [Maintiennent l'appétence addictive pour le sucre,
     altèrent le microbiote intestinal et perturbent la sensibilité à
     l'insuline.], [#strong[ILLUSION CHIMIQUE]],
-  )],
-  caption: [Tableau critique des additifs alimentaires : composés nobles vs substances à proscrire.],
-  kind: table
-)
+  )]
+  , kind: table
+  )
 
 #point_attention[
 
@@ -2231,10 +2281,9 @@ biologique :
     fermier]], [$approx upright(bold(6 thin 000 upright(" Litres")))$],
     [#strong[Bœuf de
     pâturage]], [$approx upright(bold(15 thin 400 upright(" Litres")))$],
-  )],
-  caption: [Empreinte hydrique et coût environnemental comparé des grandes filières alimentaires.],
-  kind: table
-)
+  )]
+  , kind: table
+  )
 
 === B. Le Calendrier Vivant : Légumes, Viandes et Fromages au Fil de l'Année
 <b.-le-calendrier-vivant-légumes-viandes-et-fromages-au-fil-de-lannée>
@@ -2799,10 +2848,9 @@ cellulaire.
     laitiers et œufs de plein air]], [Des œufs de poules élevées en
     plein air (Code 1) sur parcours herbagé offrent déjà une excellente
     balance en oméga-3.],
-  )],
-  caption: [Arbitrage budgétaire raisonné : où investir pour une alimentation souveraine.],
-  kind: table
-)
+  )]
+  , kind: table
+  )
 
 #truc_de_chef[
 
@@ -3336,10 +3384,9 @@ distinctes :
     ciment pectique, libération des pectines solubles liant les
     lipides.], [#strong[Crémeuse, aérienne, veloutée comme une
     crème.]], [Douceur suave enveloppante, notes toastées.],
-  )],
-  caption: [Métamorphoses d'un monovégétal : l'exemple de la carotte sous quatre modes thermiques.],
-  kind: table
-)
+  )]
+  , kind: table
+  )
 
 #divider()
 
@@ -3612,16 +3659,22 @@ moutarde et d'huile.]
 + #strong[L'Essorage Radical :] Passer la salade à l'essoreuse avec
   énergie. Toucher les feuilles : elles doivent être fraîches mais
   absolument sèches en surface.
-+ #strong[L'Émulsion Primaire de la Vinaigrette (L'Ordre Impératif) :]
++ #strong[L'Émulsion Primaire de la Vinaigrette (L'Ordre Impératif et la
+  Force Ionique) :]
   - Dans le bol, déposer la moutarde, le sel fin et le vinaigre.
     #strong[Remuer à la fourchette pour dissoudre complètement le sel
-    dans l'acide]. (Le sel ne se dissout pas dans l'huile ! Si vous
-    mettez l'huile d'abord, les grains de sel resteront croquants et la
-    vinaigrette sera fade par endroits et trop salée par d'autres).
+    dans la phase aqueuse acide]. (Le chlorure de sodium est polaire et
+    hautement hydrophile, donc rigoureusement insoluble dans les lipides
+    neutres. Si l'huile est versée en premier, les grains de sel
+    demeurent intacts et la sauce est hétérogène). Au surplus, l'acidité
+    et la force ionique modifient favorablement la tension interfaciale
+    entre l'eau et l'huile, renforçant l'action tensioactive des
+    mucilages polysaccharidiques de la moutarde.
   - Verser ensuite les 3 cuillères d'huile en fouettant vivement à la
     fourchette : les mucilages et lipides de la graine de moutarde
-    enrobent les gouttelettes d'huile pour former une vinaigrette
-    crémeuse, épaisse et stable qui ne tranche pas.
+    enrobent les microgouttelettes d'huile pour former une vinaigrette
+    crémeuse, épaisse et thermodynamiquement stabilisée qui ne tranche
+    pas.
 + #strong[Le Mariage à la Seconde :] Disposer la salade dans le saladier
   de service. Verser la vinaigrette sur les feuilles #strong[au moment
   exact où le premier convive prend sa fourchette]. Mélanger
@@ -4071,10 +4124,9 @@ installations) :
     fermier)], [$approx upright(bold(4 thin 300 upright(" Litres")))$], [$12 times$],
     [#strong[Viande Bovine] (Bœuf de
     pâturage)], [$approx upright(bold(15 thin 400 upright(" Litres")))$], [$upright(bold(45 times))$],
-  )],
-  caption: [Empreinte hydrique comparée des viandes, poissons et légumineuses au kilogramme.],
-  kind: table
-)
+  )]
+  , kind: table
+  )
 
 $ upright("Rendement Trophique") : 10 upright(" kg de matière végétale consommée") arrow.r 1 upright(" kg de gain de poids animal") $
 
@@ -4173,6 +4225,25 @@ cuisson (5 à 8 minutes)] sous une feuille d'aluminium lâche : la
 température s'égalise entre le cœur et la périphérie, les fibres
 musculaires se relâchent et réabsorbent les sucs dans tout le volume. À
 la première bouchée, le jus reste à l'intérieur de la chair.
+
+=== D. La Chimie des Sucs : Réaction de Maillard vs Caramélisation
+<d.-la-chimie-des-sucs-réaction-de-maillard-vs-caramélisation>
+Une confusion tenace qualifie fréquemment de « caramélisés » les sucs
+brunis qui s'attachent au fond de la poêle. La réalité biochimique est
+tout autre : - #strong[La Caramélisation Pure :] C'est une pyrolyse
+thermique de glucides purs (saccharose à $> 160^compose upright(C)$,
+glucose à $> 150^compose upright(C)$), se déroulant en l'absence totale
+de composés azotés. Elle produit du maltol, des furanes et des polymères
+de déshydratation (caramélane, caramélène). - #strong[La Réaction de
+Maillard :] Dans le muscle carné, les sucres réducteurs libres (traces
+de glucose, ribose) entrent en condensation avec les groupements amine
+des acides aminés et peptides dès
+$130 upright("–") 140^compose upright(C)$. Cette cascade complexe génère
+des centaines de molécules aromatiques hétérocycliques (pyrazines aux
+notes rôties, thiazoles, thiophènes soufrés) et des polymères bruns
+azotés appelés #strong[mélanoïdines]. Ce sont ces mélanoïdines et ces
+hétérocycles qui constituent les #strong[vrais sucs de rissolage]
+solubles lors du déglaçage, et non un simple caramel.
 
 #divider()
 
@@ -4309,8 +4380,8 @@ Maillard et du repos des jus.]
 
 === 🍳 Fiche Recette 12 : Le Déglaçage Minute & Sauce Réduite au Vin Montée au Beurre
 <recette-deglacage-minute>
-#emph[La récupération des sucs caramélisés au fond de la poêle et la
-liaison au beurre froid.]
+#emph[La dissolution des mélanoïdines de Maillard attachées au fond de
+la poêle et la liaison au beurre froid.]
 
 #figure(image("figures/nourriture/deglacage_sauce_vin.jpg", width: 90%, height: 35%, fit: "cover"),
   caption: [
@@ -4324,7 +4395,8 @@ liaison au beurre froid.]
 - #strong[Minimalisme Instrumental :] La poêle de cuisson de la viande,
   1 spatule en bois, 1 petit fouet.
 - #strong[Ingrédients pour 2 personnes :]
-  - Sucs caramélisés au fond de la poêle après la cuisson des viandes
+  - Sucs de Maillard (mélanoïdines dorées) attachés au fond de la poêle
+    après la saisie des viandes
   - Échalote finement ciselée : 1 pièce
   - Vin rouge corsé (ou vin blanc sec) : $100 upright(" ml")$
   - Beurre doux très froid coupé en petits dés : $30 upright(" g")$ |
@@ -4544,10 +4616,9 @@ cocktail de protéines aux seuils thermiques décalés :
     [#strong[Blanc
     épais]], [#strong[Ovalbumine]], [$54 thin %$], [#strong[$84^compose upright(C)$]
     (rigidification ferme et opaque)],
-  )],
-  caption: [Seuils thermiques fractionnés de coagulation des protéines de l'œuf.],
-  kind: table
-)
+  )]
+  , kind: table
+  )
 
 === A. L'Œuf à 64°C d'Hervé This (Sans Thermoplongeur)
 <a.-lœuf-à-64c-dhervé-this-sans-thermoplongeur>
@@ -4926,10 +4997,9 @@ plat abouti :
     [#strong[Grains d'amidon]], [Suspension dans un corps gras chaud
     (Roux)], [Gélatinisation contrôlée sans grumeaux], [Velouté nappant
     homogène],
-  )],
-  caption: [Table synoptique des transformations culinaires et substitutions d'ingrédients.],
-  kind: table
-)
+  )]
+  , kind: table
+  )
 
 #divider()
 
@@ -5077,6 +5147,38 @@ conserves de légumes non acides, viandes et poissons, il est impératif
 de stériliser à #strong[$121^compose upright(C)$ pendant 20 à 30 minutes
 en autocuiseur sous pression]. L'ébullition simple en bocal d'eau à
 $100^compose upright(C)$ ne détruit pas les spores !
+
+=== C. Métrologie Frugale de l'Acidité ($p H$) et de l'Activité de l'Eau ($a_w$)
+<c.-métrologie-frugale-de-lacidité-ph-et-de-lactivité-de-leau-a_w>
+Pour le praticien domestique qui refuse la foi aveugle, deux mesures
+simples permettent de valider la sécurité microbiologique absolue sans
+laboratoire sophistiqué : 1. #strong[La Mesure du $p H$ par Bandelettes
+Réfractaires ou Indicateur Naturel :] - L'usage de bandelettes de papier
+pH à plage étroite (plage $3\,0 upright(" à ") 5\,5$, coût minime)
+permet de vérifier objectivement que le liquide d'une saumure ou d'une
+conserve est bien descendu sous le seuil critique infranchissable de
+$upright(bold(p H < 4\,6))$. - #emph[Alternative frugale au chou rouge
+:] Une décoction concentrée de chou rouge (gorgée d'anthocyanes) sert
+d'indicateur colorimétrique fiable : rouge vif à
+$p H approx 2 upright("–") 3$, rose pourpre à
+$p H approx 4 upright("–") 5$, bleu à la neutralité ($p H approx 7$), et
+vert-jaune en milieu alcalin. 2. #strong[L'Évaluation Frugale de
+l'Activité de l'Eau ($a_w$) :] - L'activité de l'eau ($a_w$) quantifie
+la fraction d'eau libre disponible pour les micro-organismes (échelle de
+0 à 1,00). Sous $a_w < 0\,85$, les bactéries pathogènes cessent leur
+toxinogenèse \; sous $a_w < 0\,60$, aucune vie cellulaire ne peut
+croître. - #emph[Méthode gravimétrique différentielle :] Pour les
+viandes séchées, salaisons ou légumes déshydratés, une balance de
+cuisine précise au gramme permet de mesurer la perte d'eau. Dès lors
+qu'une pièce salée a perdu #strong[$35 upright(" à ") 45 thin %$ de sa
+masse initiale brute], son eau libre a été évaporée ou adsorbée par les
+solutés salins : son $a_w$ est stabilisé sous 0,70. - #emph[Le
+densimètre à flotteur ou test de l'œuf pour les saumures :] Pour
+s'assurer qu'une saumure liquide exerce une pression osmotique
+inhibitrice suffisante ($> 10 thin %$ de sel), plonger un œuf frais
+entier cru dans le bain. S'il coule au fond, la concentration est
+insuffisante \; s'il flotte en affleurant à la surface de la taille
+d'une pièce de monnaie, la saumure est saturée et stérile.
 
 #divider()
 
@@ -5333,6 +5435,50 @@ choux-fleurs et radis en condiments acidulés probiotiques.]
   fermentation. Les légumes se conservent ainsi pendant plus d'une année
   en se bonifiant.
 
+#divider()
+
+== 6. LE KÔJI (#emph[ASPERGILLUS ORYZAE]) ET LES FERMENTATIONS SOLIDES : LA BIOCATALYSE PURE ET L'UMAMI SANS FEU
+<le-kôji-aspergillus-oryzae-et-les-fermentations-solides-la-biocatalyse-pure-et-lumami-sans-feu>
+Le kôji (#emph[Aspergillus oryzae]) constitue l'apogée du minimalisme
+instrumental asiatique : au lieu d'utiliser des heures de cuisson
+thermique au feu pour dégrader les fibres ou extraire les sucs d'un
+animal, on délègue cette tâche de prédigestion moléculaire à un
+champignon filamenteux noble.
+
+=== A. La Fermentation en Substrat Solide (FSS)
+<a.-la-fermentation-en-substrat-solide-fss>
+Contrairement aux fermentations liquides (bière, vin, vinaigre), le kôji
+se développe sur un substrat solide humide mais drainé : 1.
+#strong[L'Inoculation :] Des grains d'orge perlé ou de riz sont trempés,
+cuits à la vapeur jusqu'à être souples mais fermes, puis refroidis à
+$30^compose upright(C)$ avant d'être saupoudrés de spores microscopiques
+de koji. 2. #strong[L'Incubation à Chaleur Corporelle :] Maintenu dans
+un récipient tapissé d'un linge propre entre $28^compose upright(C)$ et
+$32^compose upright(C)$ pendant 48 heures, le mycélium blanc tisse un
+réseau dense et feutré qui enrobe chaque grain. 3. #strong[L'Usine
+Enzymatique Vivante :] Pour se nourrir de l'amidon et des protéines du
+grain, le champignon sécrète à l'extérieur de ses hyphes une cascade de
+macromolécules biocatalytiques pures : des #strong[amylases] (qui
+cisaillent l'amidon en sucres fermentescibles), des #strong[protéases et
+peptidases] (qui hydrolysent les chaînes polypeptidiques en peptides
+courts et acides aminés libres), et des #strong[lipases].
+
+=== B. Le Shio-Koji : Le Trésor d'Assaisonnement et de Tendreté Domestique
+<b.-le-shio-koji-le-trésor-dassaisonnement-et-de-tendreté-domestique>
+En mélangeant à parts égales du koji de riz, de l'eau tiède et
+$10 thin %$ de sel marin, on obtient après une semaine à température
+ambiante une pâte lacto-enzymatique appelée #emph[shio-koji] : -
+#strong[La Dénaturation Enzymatique sans Chaleur :] En badigeonnant une
+viande ferme ou un poisson d'une fine couche de shio-koji pendant 2 à 4
+heures au frais, les protéases pénètrent les premiers millimètres de
+tissu et digèrent les trames dures d'actomyosine et de collagène : la
+chair devient incomparablement fondante sans nécessiter de cuisson
+longue. - #strong[La Génération Pure d'Umami :] Les protéases libèrent
+des quantités colossales d'#strong[acide L-glutamique naturel],
+conférant une saveur umami profonde, ronde et sapide sans le moindre
+bouillon animal ni exhausteur de goût industriel (glutamate monosodique
+E621).
+
 = CHAPITRE 18 --- L'Alchimie Laitière et la Fromagerie Autonome
 <chapitre-18-lalchimie-laitière-et-la-fromagerie-autonome>
 #quote(block: true)[
@@ -5558,15 +5704,43 @@ l'eau s'évapore, plus le point d'ébullition s'élève) :
     profond, amertume subtile], [Praliné, sauces au caramel],
     [#strong[Carbonisation]], [#strong[$> 190^compose upright(C)$]], [Décomposition], [Noir,
     fumée âcre, amertume acide], [Inconsommable (Acroléine toxique)],
-  )],
-  caption: [Échelle thermique des stades de cuisson et de concentration du saccharose.],
-  kind: table
-)
+  )]
+  , kind: table
+  )
 
 #divider()
 
-== 2. CARAMEL À SEC vs CARAMEL À L'EAU : LA VÉRITÉ TECHNIQUE
-<caramel-à-sec-vs-caramel-à-leau-la-vérité-technique>
+== 2. LA FRONTIÈRE THERMIQUE : CARAMÉLISATION vs RÉACTION DE MAILLARD
+<la-frontière-thermique-caramélisation-vs-réaction-de-maillard>
+Bien que toutes deux soient des brunissements non enzymatiques
+déclenchés par l'apport d'énergie thermique, ces deux voies chimiques
+obéissent à des cinétiques et à des réactifs fondamentalement distincts
+: - #strong[La Caramélisation (Pyrolyse Glucidique Pure) :] Elle
+implique exclusivement des sucres purs (saccharose, glucose, fructose)
+en l'absence totale de protéines ou d'azote. Elle s'amorce à haute
+température ($> 160^compose upright(C)$ pour le saccharose,
+$> 150^compose upright(C)$ pour le glucose, $> 110^compose upright(C)$
+pour le fructose pur). La molécule d'hydrate de carbone se déshydrate,
+s'isomérise et subit des scissions thermiques produisant du diacétyle
+(arôme beurré), des furanes, du maltol et des polymères complexes ambrés
+(caramélane $upright(C)_12 upright(H)_18 upright(O)_9$, caramélène
+$upright(C)_36 upright(H)_50 upright(O)_25$, caraméline
+$upright(C)_125 upright(H)_188 upright(O)_80$). - #strong[La Réaction de
+Maillard (Condensation Glucide Réducteur + Acide Aminé) :] Elle exige
+impérativement la condensation d'un sucre réducteur et d'un composé
+aminé (protéine, peptide, acide aminé libre). Elle se produit dès
+$130 upright("–") 140^compose upright(C)$ et produit des mélanoïdines
+azotées complexes ainsi qu'une palette d'arômes hétérocycliques
+(pyrazines rôties, thiazoles, pyrroles). Chauffer du saccharose pur dans
+une casserole sèche ne produit aucune réaction de Maillard, tout comme
+roussir une tranche de viande séchée sans sucre ajouté relève
+prioritairement de Maillard grâce aux traces de glycogène et d'acides
+aminés musculaires.
+
+#divider()
+
+== 3. CARAMEL À SEC vs CARAMEL À L'EAU : LA VÉRITÉ TECHNIQUE : LA VÉRITÉ TECHNIQUE
+<caramel-à-sec-vs-caramel-à-leau-la-vérité-technique-la-vérité-technique>
 + #strong[Le Caramel à l'Eau (Méthode Débutante Sécurisée) :]
   - On humidifie le sucre avec un tiers de son poids en eau.
   - #emph[L'avantage :] L'eau dissout uniformément les cristaux avant
@@ -5584,7 +5758,7 @@ l'eau s'évapore, plus le point d'ébullition s'élève) :
 
 #divider()
 
-== 3. LE PHÉNOMÈNE DU « MASSAGE » ET SA NEUTRALISATION PAR L'ACIDE
+== 4. LE PHÉNOMÈNE DU « MASSAGE » ET SA NEUTRALISATION PAR L'ACIDE
 <le-phénomène-du-massage-et-sa-neutralisation-par-lacide>
 C'est la hantise du pâtissier : vous surveillez votre sirop limpide sur
 le feu. Soudain, en une fraction de seconde, le liquide limpide se fige
@@ -5636,7 +5810,7 @@ couleur ambrée souhaitée.
 
 #divider()
 
-== 4. LE PRALINÉ ARTISANAL MAISON : LA PYROLYSE AU SERVICE DU FRUIT SEC
+== 5. LE PRALINÉ ARTISANAL MAISON : LA PYROLYSE AU SERVICE DU FRUIT SEC
 <le-praliné-artisanal-maison-la-pyrolyse-au-service-du-fruit-sec>
 Le praliné est le mariage de deux chimies complémentaires : 1.
 #strong[La Torréfaction des Fruits Secs :] Les noisettes et amandes
@@ -6571,7 +6745,10 @@ et chimiques accessibles à quiconque possède une casserole et un couteau
 de la Tyrannie des Régimes : Physiologie du Poids] \
 #v(0.38cm)
 #text(size: 11.5pt, style: "italic")[— La Diachronie
-Culinaire : Microbiote et Batch Cooking]])
+Culinaire : Microbiote et Batch Cooking] \
+#v(0.38cm)
+#text(size: 11.5pt, style: "italic")[— L'Espace des Cuisines
+Dérivées : Trois Paradigmes Prospectifs et Leurs Protocoles]])
 
 #pagebreak(weak: false, to: "odd")
 #set page(header: entete-livre, footer: pied-livre)
@@ -6653,10 +6830,9 @@ notre tube digestif :
     [#strong[20 à 25 min]], [Arrivée des lipides et protéines dans le
     duodénum : pic de CCK, GLP-1 et PYY.], [L'hypothalamus coupe la faim
     : #strong[le signal de satiété est pleinement atteint].],
-  )],
-  caption: [Cinétique neuro-hormonale de la satiété et impact de la vitesse d'ingestion.],
-  kind: table
-)
+  )]
+  , kind: table
+  )
 
 === A. Le Rôle Vital de la Mastication
 <a.-le-rôle-vital-de-la-mastication>
@@ -6868,6 +7044,293 @@ Vous avez mangé sainement, varié les saveurs, nourri votre microbiote et
 préservé votre budget, sans jamais subir la tyrannie de la cuisine
 répétitive.
 
+= CHAPITRE 27 --- L'Espace des Cuisines Dérivées : Trois Paradigmes Prospectifs et Leurs Protocoles
+<chapitre-27-lespace-des-cuisines-dérivées-trois-paradigmes-prospectifs-et-leurs-protocoles>
+#quote(block: true)[
+« La cuisine n'est pas un conservatoire de gestes figés par la coutume,
+mais un champ de vecteurs physiques et biologiques. Lorsque l'on pousse
+les principes premiers à leur limite logique, de nouveaux continents
+gastronomiques apparaissent. »
+]
+
+#divider()
+
+== 1. LA MATRICE DES PARADIGMES PROSPECTIFS
+<la-matrice-des-paradigmes-prospectifs>
+En poussant jusqu'à leurs ultimes conséquences les lois explorées dans
+ce traité --- minimalisme instrumental strict, souveraineté
+thermodynamique, biologie du vivant et refus catégorique des additifs
+industriels ultra-transformés ---, l'art culinaire s'affranchit des
+dogmes conventionnels.
+
+Loin d'un laboratoire moderniste onéreux saturé de pompes à vide et de
+texturants exogènes, ces trois écoles explorent des voies inédites par
+la simplification radicale du dispositif matériel :
+
+```
+                  ESPACE DES CUISINES DÉRIVÉES
+                 [ Thermodynamique / Minéral ]
+                              ▲
+                              │  1. Cuisine Tellurique
+                              │  (Masse thermique,
+                              │   litho-conduction)
+                              │
+  3. Gastronomie Frugale      ┼───────────────────►  2. Cuisine Enzy-Biotique
+     des Interfaces           │                      (Biocatalyse, fermentations
+     (Surfaces & colloïdes)   │                       solides, autolyse à froid)
+                              ▼
+                  [ Biologie / Cinétique ]
+```
+
+#divider()
+
+== 2. LA CUISINE TELLURIQUE ET LITHO-THERMIQUE : L'INERTIE MINÉRALE POUSSÉE À L'ABSOLU
+<la-cuisine-tellurique-et-litho-thermique-linertie-minérale-poussée-à-labsolu>
+=== A. L'Axiome Fondateur
+<a.-laxiome-fondateur>
+Supprimer l'intermédiaire du métal manufacturé \; exploiter directement
+la masse thermique volumique, la diffusivité contrôlée et l'émissivité
+radiative infrarouge de la roche brute (granit, basalte, grès,
+stéatite).
+
+=== B. L'Arsenal Minimal
+<b.-larsenal-minimal>
+- Deux dalles planes de roche volcanique ou de schiste taillé (épaisseur
+  $3 upright(" à ") 5 thin upright("cm")$).
+- Un lit de granulats siliceux purs (sable réfractaire) ou gros sel de
+  mer sec non raffiné.
+- Un foyer de braises vives ou un caisson réfractaire fermé.
+
+=== C. Les Principes Physiques en Jeu
+<c.-les-principes-physiques-en-jeu>
++ #strong[Conduction par Compression Lithique :] Deux plaques de basalte
+  préchauffées à $180 upright("–") 200^compose upright(C)$ enserrent la
+  pièce végétale ou carnée. La pression massique de la pierre assure un
+  contact surfacique intime continu sans poches d'air isolantes : le
+  transfert d'enthalpie est quasi instantané, formant une croûte de
+  Maillard bilatérale parfaite en quelques dizaines de secondes, sans
+  projection de matières grasses ni détérioration des fibres centrales.
++ #strong[Cuisson en Lit de Granulats (Bain Fluidisé Passif) :] Enfouir
+  un bulbe ou un tubercule dans un milieu granulaire chauffé par le
+  dessous permet une transmission thermique tridimensionnelle isotrope.
+  Les grains de silice enveloppent chaque micro-relief de l'aliment,
+  interdisant tout point chaud localisé tout en piégeant la vapeur
+  vacuolaire sous la cuticule externe.
+
+#divider()
+
+== 3. LA CUISINE ENZY-BIOTIQUE ET AUTOLYTIQUE : L'EXTERNALISATION DE LA DIGESTION À FROID
+<la-cuisine-enzy-biotique-et-autolytique-lexternalisation-de-la-digestion-à-froid>
+=== A. L'Axiome Fondateur
+<a.-laxiome-fondateur-1>
+Réduire l'apport d'énergie thermique calorifique à son minimum
+biologique \; déléguer la transformation macromoléculaire des trames
+protéiques et des parois végétales aux enzymes endogènes (cathepsines)
+et aux protéases sécrétées par des micro-organismes nobles sur substrat
+simple.
+
+=== B. L'Arsenal Minimal
+<b.-larsenal-minimal-1>
+- Un récipient en verre borosilicaté ou grès vernissé muni d'un
+  couvercle hermétique.
+- Une étamine de lin non blanchi et un poids de pressage minéral.
+- Un mortier lourd en pierre dure.
+
+=== C. Les Principes Physico-Biologiques en Jeu
+<c.-les-principes-physico-biologiques-en-jeu>
++ #strong[Autolyse Protéolytique Accélérée :] En tirant parti des
+  enzymes végétales naturelles (ficines du figuier, actinidines,
+  bromélaïnes) ou d'un #emph[shio-koji] d'orge artisanal inoculé à
+  #emph[Aspergillus oryzae], les protéines musculaires coriaces et le
+  tissu conjonctif sont fragmentés à température ambiante
+  ($30 upright("–") 35^compose upright(C)$). Les liaisons peptidiques
+  sont cisaillées sans coagulation thermique de l'actine, préservant
+  l'eau intracellulaire et libérant des vagues d'acide glutamique
+  naturel sans cuisson prolongée.
++ #strong[Condensation Lacto-Osmotique :] L'extraction des nectars
+  cellulaires par un gradient salin étagé sous exclusion mécanique d'air
+  génère une saumure vivante saturée d'acides organiques
+  ($p H approx 3\,5 upright("–") 3\,8$). Cette acidité dénature et fige
+  superficiellement les protéines des poissons côtiers en quelques
+  minutes à froid, sans recours au jus de citron importé.
+
+#divider()
+
+== 4. LA GASTRONOMIE FRUGALE DES INTERFACES ET MICRO-SURFACES
+<la-gastronomie-frugale-des-interfaces-et-micro-surfaces>
+=== A. L'Axiome Fondateur
+<a.-laxiome-fondateur-2>
+Exploiter la géométrie fractionnaire des liquides et la surface
+spécifique des sous-produits végétaux pour maximiser les rendements
+d'extraction colloïdale et supprimer tout additif liant, fécule modifiée
+ou excédent lipidique.
+
+=== B. L'Arsenal Minimal
+<b.-larsenal-minimal-2>
+- Une lame d'acier au carbone à tranchant rasoir.
+- Un fouet ballon à brins fins en inox.
+- Une passoire fine en toile métallique tissée (chinois étamine).
+
+=== C. Les Principes Colloïdaux en Jeu
+<c.-les-principes-colloïdaux-en-jeu>
++ #strong[Émulsions Aqueuses par Mucilages Pariétaux Spontanés :]
+  L'extraction à l'eau frémissante des polysaccharides solubles et des
+  pectines logées dans les parures végétales (épluchures d'oignons,
+  peaux de racines, eau de trempage de graines) produit des tensioactifs
+  naturels surpuissants. Par cisaillement mécanique, ces longues chaînes
+  s'interposent entre la phase aqueuse et des gouttelettes lipidiques
+  microscopiques, stabilisant une sauce onctueuse sans beurre lourd ni
+  farine.
++ #strong[Cavitation Aérienne et Cisaillement Visqueux :] Dans un
+  cul-de-poule hémisphérique exempt d'angles morts, un mouvement
+  elliptique rapide injecte et fractionne l'air ambiant au sein d'une
+  matrice protéique ou végétale jusqu'à créer une mousse ultra-dense et
+  durable, rendant obsolètes les siphons sous pression de protoxyde
+  d'azote ($upright(N)_2 upright(O)$).
+
+#divider()
+
+== 5. LES PROTOCOLES EXPÉRIMENTAUX PILIERS
+<les-protocoles-expérimentaux-piliers>
+=== 🍳 Fiche Recette 27 : Le Céleri-Rave Cuit en Lit de Granulats Siliceux (Cuisine Tellurique)
+<recette-celeri-granulats>
+#emph[L'application du bain réfractaire granulaire : transfert thermique
+omnidirectionnel et rétention de l'eau vacuolaire sans contact direct
+avec la flamme.]
+
+- #strong[Temps de préparation active :] 5 minutes
+- #strong[Temps de diffusion thermique :] 1 h 30 à
+  $180^compose upright(C)$
+- #strong[Arsenal minimal :] 1 cocotte ou plat en fonte brute avec
+  couvercle ajusté, 1 kg de sable siliceux fin propre (ou gros sel gris
+  de mer sec non raffiné), 1 couteau de chef affûté.
+- #strong[Ingrédients bruts :]
+  - Céleri-rave entier non épluché, brossé sous l'eau froide : 1 pièce
+    ($approx 800 thin upright("g")$)
+  - Poivre noir concassé au mortier, laurier sec émietté : 1 c.~à café
+  - Huile de noix de première pression ou beurre noisette clarifié
+    (finition) : $20 thin upright("ml")$
+  - Fleur de sel de mer : $3 thin upright("g")$
+
+==== Protocole mécanique et thermodynamique :
+<protocole-mécanique-et-thermodynamique>
++ #strong[Le Lit Réfractaire :] Verser 3 cm de sable siliceux ou de gros
+  sel sec au fond de la cocotte en fonte. Déposer le céleri-rave entier
+  au centre.
++ #strong[L'Enfouissement Isotrope :] Combler l'espace annulaire et
+  recouvrir intégralement la racine avec le reste des granulats. Fermer
+  hermétiquement la cocotte avec son couvercle lourd.
++ #strong[La Diffusion Thermique Homogène :] Enfourner à
+  $180^compose upright(C)$ (chaleur statique sole et voûte). Les grains
+  minéraux conduisent la chaleur de manière radiale continue : la vapeur
+  d'eau cellulaire ne peut s'échapper brutalement dans l'air sec du
+  four, cuisant le cœur à l'étouffée interne tout en concentrant les
+  sucres et les pyrazines de la périphérie sans la moindre
+  carbonisation.
++ #strong[La Révélation de la Matière :] Sortir la cocotte du four,
+  extraire la sphère végétale encore brûlante à l'aide d'une pince et
+  brosser l'excès de matière minérale. Trancher en deux au couteau de
+  chef : la chair présente la texture soyeuse d'un beurre végétal
+  fondant. Arroser du filet d'huile de noix et parsemer de fleur de sel.
+
+#divider()
+
+=== 🍳 Fiche Recette 28 : Le Maquereau « Brûlé à Froid » par Fermentation Lacto-Saline (Cuisine Enzy-Biotique)
+<recette-maquereau-brule-froid>
+#emph[La dénaturation protéique sans feu : synergie entre force ionique
+et acide lactique endogène pour figer l'actomyosine sans agression
+calorifique.]
+
+- #strong[Temps de travail actif :] 15 minutes
+- #strong[Temps de maturation osmotique :] 20 minutes (sel) + 12 minutes
+  (acide lactique)
+- #strong[Arsenal minimal :] 1 couteau de chef rasoir, 1 cul-de-poule en
+  inox, 1 passoire fine, 1 torchon propre.
+- #strong[Ingrédients bruts :]
+  - Filets de maquereaux ultra-frais levés sur l'arête (préalablement
+    congelés à $- 20^compose upright(C)$ pendant 24 h par sécurité
+    anisakienne) : 2 pièces
+  - Gros sel gris marin brut : $50 thin upright("g")$ (agent de traction
+    osmotique)
+  - Jus de choucroute crue non pasteurisée ou lactosérum de yaourt
+    vivant : $60 thin upright("ml")$ ($p H approx 3\,6$)
+  - Racine de raifort frais (ou gingembre frais) râpée :
+    $10 thin upright("g")$
+  - Huile de colza vierge de première pression à froid : 1 c.~à soupe
+
+==== Protocole biochimique étape par étape :
+<protocole-biochimique-étape-par-étape>
++ #strong[L'Expulsion Osmotique de l'Eau Libre :] Poser les filets de
+  maquereau côté peau sur une assiette ou une grille. Recouvrir
+  intégralement la chair d'un manteau de gros sel marin. Laisser agir 20
+  minutes : la pression osmotique extrait 10 à $15 thin %$ de l'eau
+  interstitielle libre, resserrant la trame des myofibrilles.
++ #strong[Le Rinçage Éclair et Séchage :] Rincer brièvement sous un
+  mince filet d'eau très froide pour éliminer l'excès superficiel de
+  chlorure de sodium. Sécher vigoureusement en tamponnant avec un
+  torchon propre.
++ #strong[La Coagulation Acide Vivante :] Immerger les filets séchés
+  dans le jus de fermentation lactique vivant pendant 12 minutes. Les
+  ions $upright(H)^(+)$ neutralisent les charges électriques des chaînes
+  polypeptidiques : les protéines superficielles coagulent en un blanc
+  nacré soyeux, tandis que le cœur reste cru, riche en acides gras
+  oméga-3 et délicieusement fondant.
++ #strong[Le Tranchage Cellulaire et Dressage :] Émincer les filets en
+  biseaux nets de 5 mm d'épaisseur d'un seul mouvement fluide sans
+  scier. Disposer sur assiette froide, parsemer de raifort râpé et
+  napper de quelques gouttes d'huile vierge pour fixer les composés
+  aromatiques soufrés volatils.
+
+#divider()
+
+=== 🍳 Fiche Recette 29 : L'Émulsion Noire de Parures d'Oignon et Moelleux Réduit (Cuisine des Interfaces)
+<recette-emulsion-parures-oignon>
+#emph[La valorisation intégrale de la matière : tensioactifs pectiques
+d'épluchures et réduction collagénique pour un nappage miroitant sans
+beurre ni farine.]
+
+- #strong[Temps de préparation active :] 10 minutes
+- #strong[Temps d'extraction et de liaison :] 35 minutes
+- #strong[Arsenal minimal :] 1 casserole en inox à fond sandwich, 1
+  chinois étamine doublé d'un linge propre, 1 fouet ballon inox.
+- #strong[Ingrédients bruts :]
+  - Tuniques sèches et talons bruns de 4 oignons jaunes (conservés au
+    bocal de parures)
+  - Eau de source ou eau filtrée : $400 thin upright("ml")$
+  - Fond brun concentré ou glace de viande (riche en gélatine
+    hydrolysée) : 2 c.~à soupe
+  - Huile d'olive vierge ou graisse de canard filtrée :
+    $30 thin upright("ml")$
+  - Poivre noir concassé au mortier : 1 tour de moulin
+
+==== Protocole d'extraction et de liaison colloïdale :
+<protocole-dextraction-et-de-liaison-colloïdale>
++ #strong[La Pyrolyse Aromatique Sèche des Tuniques :] Dans la casserole
+  inox sèche bien chaude sur feu moyen-vif, déposer les peaux et talons
+  d'oignons propres. Laisser griller à sec pendant 2 minutes en remuant
+  constamment jusqu'à ce que des effluves torréfiés et fumés s'élèvent,
+  sans carboniser totalement.
++ #strong[L'Extraction Aqueuse Pectique :] Mouiller avec les
+  $400 thin upright("ml")$ d'eau froide. Porter à frémissement doux et
+  maintenir 30 minutes à feu doux. Les pigments antioxydants
+  (quercétine) et les pectines hydrosolubles logées dans les parois
+  cellulaires végétales se dissolvent dans la phase aqueuse.
++ #strong[La Filtration Micrométrique :] Passer l'infusion sombre à
+  travers le chinois étamine garni d'un linge propre en pressant
+  fermement avec le dos d'une cuillère pour extraire la totalité du
+  liquide ambré dense.
++ #strong[La Concentration et Liaison Colloïdale :] Verser le jus ambré
+  filtré dans la casserole propre avec les 2 cuillères à soupe de glace
+  de viande. Faire réduire de moitié sur feu vif. Retirer du feu dès que
+  le thermomètre affiche $75^compose upright(C)$.
++ #strong[L'Agitation Cisaillante :] Verser l'huile ou la graisse fondue
+  en mince filet continu tout en battant vigoureusement avec le fouet
+  ballon d'un mouvement elliptique rapide. La gélatine animale et les
+  polysaccharides végétaux s'adsorbent spontanément à l'interface des
+  microgouttelettes lipidiques : le liquide sombre se transforme
+  instantanément en une sauce nappante, lustrée et soyeuse, sans la
+  moindre trace de crème fraîche ni de farine.
+
 
 #pagebreak(weak: false, to: "even")
 #set page(margin: 0pt, header: none, footer: none)
@@ -6890,9 +7353,7 @@ Minimal, Coûts et Durées] \
 #text(size: 11.5pt, style: "italic")[— Annexe E --- Conservation au Froid, Zones
 et Durées Limites] \
 #v(0.38cm)
-#text(size: 11.5pt, style: "italic")[— Annexe F --- Matériel d'Office, Consommables, Fond de Placard & Gabarit de Courses Saines] \
-#v(0.38cm)
-#text(size: 11.5pt, style: "italic")[— Annexe G --- Répertoire des Crédits
+#text(size: 11.5pt, style: "italic")[— Annexe F --- Répertoire des Crédits
 Iconographiques et Sources]])
 
 #pagebreak(weak: false, to: "odd")
@@ -6948,10 +7409,9 @@ en surface.
     $upright(H)_2 upright(S)$ et précipitation avec
     $upright(F e)^(2 +)$.], [Formation du sulfure de fer
     ($upright(F e S)$) : anneau gris-vert autour du jaune dur.],
-  )],
-  caption: [Seuils critiques de dénaturation et de coagulation des protéines animales.],
-  kind: table
-)
+  )]
+  , kind: table
+  )
 
 #divider()
 
@@ -6989,10 +7449,9 @@ en surface.
     [#strong[$> 190^compose upright(C)$]], [Pyrolyse
     carbonée.], [Amertume brûlée et formation de molécules indésirables
     (acroléine, HAP).],
-  )],
-  caption: [Seuils de transformation et de dégradation thermique de l'amidon et des sucres.],
-  kind: table
-)
+  )]
+  , kind: table
+  )
 
 #divider()
 
@@ -7026,10 +7485,9 @@ en surface.
     (Ghee)]], [#strong[$250^compose upright(C)$]], [Saisie à très haute
     température, sauces], [Protéines et eau éliminées : matière grasse
     pure $100 %$.],
-  )],
-  caption: [Points de fumée et domaines d'utilisation culinaire des matières grasses.],
-  kind: table
-)
+  )]
+  , kind: table
+  )
 
 = ANNEXE B --- Glossaire Physico-Chimique & Culinaire Exhaustif
 <annexe-b-glossaire-physico-chimique-culinaire-exhaustif>
@@ -7492,10 +7950,9 @@ pour une fraction de leur prix :
     (30 s de latence, fatale pour une crème anglaise à
     $82^compose upright(C)$).], [$15 upright(" €")$ à
     $35 upright(" €")$],
-  )],
-  caption: [Critères de sélection et contrôle qualité de l'Arsenal Minimal du cuisinier.],
-  kind: table
-)
+  )]
+  , kind: table
+  )
 
 #divider()
 
@@ -7541,10 +7998,9 @@ moyen pour la cuisson d'un repas familial :
     dipolaire)]], [#strong[$60 upright(" à ") 65 thin %$]], [$800 upright(" à ") 1 thin 000 upright(" W")$], [Réchauffage
     soupe ($300 upright(" ml")$) :
     $1 upright(" min ") 30 upright(" s")$], [$0\,025 upright(" kWh")$], [$0\,01 upright(" €")$],
-  )],
-  caption: [Rendement énergétique, puissance et déperditions thermiques des modes de cuisson.],
-  kind: table
-)
+  )]
+  , kind: table
+  )
 
 #oeil_molecule[
 
@@ -7619,10 +8075,9 @@ gaspilleur.
     $10 upright(" g/L")$], [$100^compose upright(C)$], [#strong[$9 upright(" min")$
     (#emph[al dente])]], [Point blanc microscopique d'amidon résistant
     au cœur du spaghetti brisé en deux.],
-  )],
-  caption: [Tableau synoptique des durées de cuisson de référence et repères sensoriels.],
-  kind: table
-)
+  )]
+  , kind: table
+  )
 
 = ANNEXE E --- Conservation au Froid, Zones du Réfrigérateur & Durées Limites Sanitaires
 <annexe-e-conservation-au-froid-zones-du-réfrigérateur-durées-limites-sanitaires>
@@ -7685,10 +8140,9 @@ de contamination croisée :
     (moutarde, cornichons, câpres).• Confitures ouvertes, jus de fruits
     entamés.], [Choc thermique répété provoquant la condensation d'eau
     liquide sur les coquilles d'œufs.],
-  )],
-  caption: [Cartographie des bio-zones thermiques du réfrigérateur et répartition des denrées.],
-  kind: table
-)
+  )]
+  , kind: table
+  )
 
 #danger[
 
@@ -7763,10 +8217,9 @@ congélation :
     [#strong[Légumes Verts Cuits / Soupes
     Légumes]], [$2 upright(" à ") 3 upright(" jours")$], [$8 upright(" à ") 10 upright(" mois")$], [Oxydation
     de la chlorophylle au brun cendre, goût acide d'amidon suri.],
-  )],
-  caption: [Durées maximales de conservation sanitaire : réfrigérateur vs congélateur.],
-  kind: table
-)
+  )]
+  , kind: table
+  )
 
 #divider()
 
@@ -7814,606 +8267,8 @@ de quatre mille descendants toxiques !
 
 ]
 
-= ANNEXE F --- L'Arsenal d'Office, Consommables Domestiques, Fond de Placard & Gabarit Matriciel de Courses Saines
-<annexe-f-larsenal-doffice-consommables-domestiques-fond-de-placard-gabarit-matriciel-de-courses-saines>
-#quote(block: true)[
-« La liberté souveraine du cuisinier ne s'improvise pas devant une poêle vide ; elle repose sur la présence silencieuse, ordonnée et inébranlable des instruments d'office, des consommables fiables, d'un fond de placard durable et d'un panier de courses rationnel. »
-]
-
-#divider()
-
-== 1. L'ÉQUIPEMENT D'OFFICE & COUTELLERIE DU QUOTIDIEN (AU-DELÀ DES HUIT GRANDS INSTRUMENTS)
-<léquipement-doffice-coutellerie-du-quotidien-au-delà-des-huit-grands-instruments>
-Si l'#emph[Arsenal Minimal] (Annexe D) rassemble les huit pièces maîtresses massives de la cuisson (poêle en fonte, sauteuse inox multicouche, casserole, cul-de-poule, couteau de chef, planche de bout, maryse et thermomètre sonde), le quotidien d'une maison vivante exige une batterie de #strong[prolongements précis de la main]. Couteaux de petite taille, cuillères spécialisées, spatules de contact, fourchettes de maintien, pinces de préhension et instruments de mesure constituent la boîte à outils indispensable du praticien :
-
-#figure(
-  align(center)[#table(
-  stroke: 0.5pt + rgb("#dcd6ca"),
-  fill: (x, y) => if y == 0 { rgb("#f2ece1") } else if calc.odd(y) { rgb("#faf7f2") } else { none },
-  inset: 7pt,
-    columns: (22%, 26%, 26%, 26%),
-    align: (left, left, left, left),
-    table.header([Ustensile d'Office], [Caractéristiques & Rôle Mécanique], [Ce Qu'il Faut Choisir (Le Bon Choix)], [Ce Qu'il Faut Fuir Absolument]),
-    table.hline(),
-    [#strong[Le Couteau d'Office ($8 upright(" à ") 10 upright(" cm")$)]],
-    [Lame courte, droite et rigide en acier trempé enrichi en carbone. Indispensable pour éplucher, parer, châtrer, tailler les légumes en main levée et dénerver les viandes.],
-    [Soie pleine traversante rivetée, fil rasoir facile à réaffûter sur pierre, garde équilibrée.],
-    [Lames en tôle mince emboutie qui fléchissent sous la pression, manches plastiques moulés creux se fendant au lave-vaisselle.],
-
-    [#strong[Le Couteau à Pain Cranté ($20 upright(" à ") 24 upright(" cm")$)]],
-    [Lame longue et rigide dotée de dentures ondulées espacées. Permet de scier les croûtes de pain épaisses et les courges dures sans comprimer la mie alvéolée.],
-    [Denture profonde à profil festonné tranchant (et non écrasant), épaisseur de lame minimale de $1\,8 upright(" mm")$.],
-    [Lames molles qui dévient lors de la coupe, petites dentures d'appoint type scie à métaux arrachant la mie en miettes.],
-
-    [#strong[L'Éplucheur Rasoir en « Y » (Économe)]],
-    [Lame basculante pivotante ultra-affûtée montée sur arceau transversal en forme de Y. Ergonomie réduisant l'effort de poignet.],
-    [Lame en acier au carbone ou acier inoxydable trempé de haute dureté, avec ergot latéral pour ôter les yeux des pommes de terre.],
-    [Économes droits à manche rond glissant entre les doigts mouillés, lames émoussées dès la troisième utilisation.],
-
-    [#strong[La Grande Cuillère en Bois de Bout (Hêtre)]],
-    [Bois dur massif naturel non traité. Outil roi pour suer les alliacées, mélanger les risottos et incorporer sans rayer le métal.],
-    [Cuillère en hêtre, charme ou buis taillée dans la masse, à bout légèrement biseauté pour racler le fond plat des casseroles.],
-    [Cuillères en bois verni ou laqué dont les solvants migrent dans la nourriture chaude ; ustensiles en pin ou bois tendre pelucheux.],
-
-    [#strong[La Cuillère de Poule en Inox (Grande Cuillère d'Arrosage)]],
-    [Grande cuillère profonde en acier inoxydable $18\/10$ monobloc à manche long ($30 upright(" cm")$). Outil d'arrosage thermique par convection.],
-    [Cuilleron généreux permettant de prélever le beurre moussant pour napper viandes et poissons en continu lors de la réaction de Maillard.],
-    [Grandes cuillères fines en aluminium ployant sous le poids du liquide ; cuillères à manche collé piégeant les graisses.],
-
-    [#strong[Cuillère à Soupe & Cuillère de Dégustation]],
-    [Couverts de travail en inox massif épais. Outil d'évaluation organoleptique et de dosage volumétrique d'appoint ($15 upright(" ml")$ et $5 upright(" ml")$).],
-    [Inox forgé $18\/10$ lourd, cuilleron aux bords polis pour un passage agréable en bouche lors de l'étalonnage de l'assaisonnement.],
-    [Couverts bas de gamme légers aux rebords coupants ou présentant des décors gravés impossibles à désinfecter.],
-
-    [#strong[La Spatule Plate Rigide Biseautée]],
-    [Lame métallique très mince et rigide à bord avant biseauté. Décollement net de la croûte dorée sans arrachement.],
-    [Inox trempé élastique avec manche décalé athermique, pour glisser horizontalement sous un pavé de bœuf ou un pavé de saumon.],
-    [Spatules épaisses à bord arrondi butant contre l'aliment et déchirant la surface croustillante en formation.],
-
-    [#strong[La Spatule Souple Maryse en Silicone]],
-    [Tête en silicone élastique monobloc résistante à $250^compose upright(C)$. Raclage total des parois, zéro perte de matière.],
-    [Silicone platine sans jointure entre manche et tête, pour une hygiène bactériologique irréprochable et un lavage instantané.],
-    [Maryses anciennes à tête amovible en caoutchouc blanc durcissant avec le temps et accumulant les moisissures dans le manchon.],
-
-    [#strong[La Pince de Chef en Inox ($30 upright(" cm")$)]],
-    [Pince longue à ressort souple munie de mors striés. Manipule les aliments sans jamais percer la chair (zéro fuite de sucs).],
-    [Acier inox robuste avec anneau de verrouillage coulissant, tension douce évitant la fatigue de la main.],
-    [Pinces courtes exposant la main aux projections d'huile brûlante ; pinces dotées d'embouts plastiques fondant au contact de la fonte.],
-
-    [#strong[La Grande Fourchette de Chef (Diapason)]],
-    [Fourchette lourde à deux longues dents effilées et rigides. Maintien stable des rôtis et gigots chauds pendant la découpe.],
-    [Acier forgé monobloc massif assurant un guidage millimétrique de la tranche de viande sans écrasement.],
-    [Fourchettes légères à dents minces qui plient sous le poids des pièces carnées ou se déboîtent du manche.],
-
-    [#strong[L'Écumoire / Araignée Métallique]],
-    [Panier en fils d'inox croisés soudés sur un manche long. Sort les aliments des liquides bouillants sans retenir une goutte d'eau.],
-    [Maille très ajourée réduisant au néant la traînée hydrodynamique pour repêcher gnocchis, légumes blanchis, pâtes et beignets.],
-    [Écumoires à trous circulaires minuscules formant une cuillère qui emporte l'eau de cuisson et dilue les sauces.],
-
-    [#strong[La Louche Monobloc Emboutie ($120 upright(" ml")$)]],
-    [Acier inoxydable embouti d'une seule pièce sans aucune soudure. Transvasement des bouillons, potages et crêpes.],
-    [Bord verseur anti-goutte franc sur tout le pourtour, manche rigide avec crochet de suspension d'office.],
-    [Louches dont le manche est fixé par points de soudure électrique fragiles qui cassent après quelques mois de chauffe.],
-
-    [#strong[Le Fouet Ballon à Fils Fins (12 fils)]],
-    [Douze fils souples en corde à piano inox montés en goutte d'eau. Rôle : foisonnement et incorporation d'air dans les émulsions.],
-    [Manche étanche injecté de résine époxy sanitaire, fils élastiques épousant le fond hémisphérique du cul-de-poule.],
-    [Fouets rigides à 4 fils épais ressemblant à des fourches, inaptes à monter une mayonnaise ou des blancs en neige.],
-
-    [#strong[La Râpe Fine Micro-Dentée (Type Microplane)]],
-    [Feuille d'inox affûtée par photo-gravure chimique. Tranche les aliments au lieu de les écraser.],
-    [Lames ultra-vives prélevant l'épiderme superficiel des agrumes sans entamer le ziste amer ; pulvérise le parmesan en nuage.],
-    [Râpes à quatre faces traditionnelles en tôle emboutie émoussée qui déchiquettent les zestes et forment une pâte grasse.],
-
-    [#strong[La Passoire Fine / Chinois Tamis]],
-    [Cône ou demi-sphère grillagée en inox à trame ultra-serrée ($0\,5 upright(" mm")$). Tamisage et filtration de précision.],
-    [Structure rigide renforcée de fils arceaux, permet d'égoutter un œuf poché ou de filtrer une sauce sans laisser passer de grumeaux.],
-    [Passoires en plastique à trous grossiers fondant au contact des liquides chauds et laissant passer les impuretés.],
-
-    [#strong[La Balance Électronique au Gramme ($1 upright(" g") \/ 5 upright(" kg")$)]],
-    [Capteur à jauge de contrainte avec fonction tare instantanée. Mesure quantitative exacte des ratios de panification et salage.],
-    [Plateau lisse en verre ou inox facile à nettoyer d'un coup d'éponge, extinction automatique temporisée à plus de 2 minutes.],
-    [Balances mécaniques à ressort décalibrées d'origine ($\pm 20 upright(" g")$) ou balances digitales coupant l'affichage après 15 secondes.],
-
-    [#strong[Les Ciseaux de Cuisine Démontables à Crans]],
-    [Lames épaisses en inox trempé avec cran coupe-os et démontage instantané des deux branches sans outil.],
-    [Permet de découper les nageoires de poisson, fendre la cage thoracique des volailles, couper la ficelle et désinfecter à cœur.],
-    [Ciseaux de bureau détournés dont l'axe riveté non démontable piège sang, graisses et germes dans l'interstice inaccessible.]
-  )]
-  , caption: [L'arsenal d'office indispensable : 17 outils de main et instruments de mesure complétant les 8 pièces maîtresses.],
-  kind: table
-)
-
-#divider()
-
-== 2. LES CONSOMMABLES TECHNIQUES DU FOYER : THERMODYNAMIQUE, CONTACT ET SÉCURITÉ
-<les-consommables-techniques-du-foyer-thermodynamique-contact-et-sécurité>
-Un consommable culinaire n'est pas un déchet ménager passif : c'est un #strong[réactif mécanique et thermique] dont l'interaction avec l'aliment obéit aux lois strictes de la physique des matériaux et de la toxicologie alimentaire. Huit consommables et produits d'entretien vertueux doivent équiper le foyer :
-
-#figure(
-  align(center)[#table(
-  stroke: 0.5pt + rgb("#dcd6ca"),
-  fill: (x, y) => if y == 0 { rgb("#f2ece1") } else if calc.odd(y) { rgb("#faf7f2") } else { none },
-  inset: 7pt,
-    columns: (22%, 24%, 28%, 26%),
-    align: (left, left, left, left),
-    table.header([Consommable Technique], [Nature & Résistance Thermique], [Fonctions Culinaires Majeures], [Contre-Modèle & Risque Sanitaire]),
-    table.hline(),
-    [#strong[Papier Sulfoné / Cuisson Siliconé]],
-    [Papier cellulose pur non blanchi, imprégné de silicone végétal. Thermostable jusqu'à $220^compose upright(C)$, hydrophobe et oléophobe.],
-    [• Confection des cartouches d'étuvée (#emph[Chapitre 10]).\ • Chemisage anti-adhésif des plaques et cocottes à pain.\ • Cuisson en papillote douce à la vapeur.],
-    [#strong[Interdiction formelle sous le gril direct :] au-delà de $230^compose upright(C)$, pyrolyse immédiate du papier avec risque d'embrasement et fumées d'acroléine.],
-
-    [#strong[Papier d'Aluminium Épais Traiteur]],
-    [Feuille d'aluminium pur de calibre traiteur ($18 upright(" à ") 20\,\mu upright("m")$). Réflecteur thermique infrarouge à 95% ($T^4$).],
-    [• Bouclier thermique sur les arêtes fragiles de rôtis et volailles.\ • Enveloppe de repos post-cuisson des viandes pour équilibrer les pressions internes sans refroidissement.],
-    [#strong[DANGER SANITAIRE ABSOLU :] Ne jamais mettre au contact direct d'acides (citron, coulis de tomate, vinaigre, vin). L'acide dissout l'oxyde d'aluminium et libère des ions $"Al"^(3+)$ neurotoxiques.],
-
-    [#strong[Film Étirable Alimentaire Étanche]],
-    [Polyéthylène basse densité (PEBD) sans phtalates, sans bisphénol ni PVC. Barrière hermétique à la vapeur d'eau et aux gaz.],
-    [• Filmage « au contact » des crèmes et purées chaudes pour empêcher la dessiccation et la formation de croûte superficielle.\ • Ballottines et pochage doux à basse température ($< 85^compose upright(C)$).],
-    [Fuir les films industriels contenant du PVC chloré qui migrent dans les graisses chaudes. Ne jamais placer au four traditionnel ni en contact direct avec une flamme.],
-
-    [#strong[Ficelle de Boucher en Lin ou Coton Écru]],
-    [Fibres végétales pures non blanchies, non teintées, sans apprêt chimique. Forte résistance à la traction mécanique.],
-    [• Bridage des volailles pour plaquer les cuisses contre les suprêmes et homogénéiser la pénétration thermique.\ • Roulage des rôtis et confection des bouquets garnis retirables.],
-    [#strong[Fuir les ficelles plastiques ou synthétiques :] le polypropylène et le nylon fondent dès $80 upright(" à ") 120^compose upright(C)$ et libèrent des composés pétrochimiques toxiques dans la sauce.],
-
-    [#strong[Étamine en Coton / Gaze à Fromage]],
-    [Tissu de coton fin non blanchi à maillage micrométrique régulier. Lavable et réutilisable indéfiniment.],
-    [• Égouttage gravitationnel du caillé pour fromage frais en 15 minutes (#emph[Chapitre 18]).\ • Filtration colloïdale du grand bouillon d'or et des gelées limpides.],
-    [Ne jamais laver l'étamine avec un adoucissant de lessive parfumé : les cires et parfums synthétiques s'imprègnent dans les fibres et contaminent les préparations.],
-
-    [#strong[Papier Absorbant Kraft & Torchons de Lin]],
-    [Papier pure pâte de bois non gaufré, sans chlore, ou torchon 100% lin lourd lavé sans détergent parfumé.],
-    [• #strong[Séchage méticuleux des chairs :] essuyer l'humidité de surface des viandes, poissons et tofu avant la pose sur le feu. Élimine l'eau libre pour atteindre $140 upright(" à ") 165^compose upright(C)$ sans bouillir.],
-    [Essuie-tout parfumés ou imprimés d'encres colorées transférant des solvants sur la nourriture crue.],
-
-    [#strong[Sacs de Congélation Hermétiques à Zip]],
-    [Polyéthylène épais de qualité congélation hermétique avec double zip étanche. Résistance mécanique aux cristaux de glace.],
-    [• Protection des aliments contre les brûlures de congélation.\ • Technique de dépression d'Archimède : plonger le sac ouvert dans l'eau pour chasser l'air avant fermeture (mise sous vide passive).],
-    [Sacs à fermeture par lien métallique torsadé qui ne garantissent aucune étanchéité gazeuse et favorisent la sublimation de l'eau.],
-
-    [#strong[Bocaux en Verre à Joint en Caoutchouc]],
-    [Bocaux en verre épais recuit (type Le Parfait ou Weck) munis d'un joint en caoutchouc naturel orange et d'une armature à ressort.],
-    [• Fermentation lactique anaérobie (#emph[Chapitre 17]) : le joint souple fait office de clapet évacuant le $upright(C O)_2$ en surpression sans laisser entrer d'oxygène.\ • Stockage hermétique des bouillons et fonds.],
-    [Bocaux à couvercles métalliques à vis rouillés ou dont le vernis intérieur est rayé, libérant des oxydes métalliques au contact du sel.]
-  )]
-  , caption: [Les huit consommables techniques indispensables du foyer : caractéristiques et impératifs de sécurité.],
-  kind: table
-)
-
-#point_attention[
-#strong[La Règle d'Or du Séchage de Surface :] Une goutte d'eau liquide sur une pièce de viande absorbe $2\,260 upright(" J/g")$ d'énergie par chaleur latente de vaporisation. Tant que cette eau est présente, la surface de la viande reste captive du palier de $100^compose upright(C)$ : la réaction de Maillard ($140 upright(" à ") 165^compose upright(C)$) ne peut jamais démarrer. L'aliment bout dans son suintement au lieu de rôtir. Le papier absorbant ou le torchon propre est le garant physique du croustillant.
-]
-
-#divider()
-
-== 3. LE FOND DE PLACARD MATRICIEL : L'ÉPICERIE DE SURVIE SAINE (HORS FRIGO)
-<le-fond-de-placard-matriciel-lépicerie-de-survie-saine-hors-frigo>
-Le fond de placard ne désigne pas une accumulation désordonnée de produits industriels préfabriqués, mais un ensemble de #strong[matières premières stables à haute densité nutritive], capables de traverser les mois sans s'altérer et permettant de confectionner un repas gastronomique complet en toute circonstance :
-
-=== A. Les Matières Grasses Stables & Vinaigres d'Action
-- #strong[Huile d'olive vierge extra de première pression à froid :] base des cuissons douces ($< 180^compose upright(C)$), des assaisonnements à cru et des émulsions au mortier. Riche en acide oléique et polyphénols antioxydants.
-- #strong[Huile neutre à haut point de fumée (colza ou tournesol oléique) :] point de fumée supérieur à $215^compose upright(C)$, indispensable pour la saisie violente en fonte et le montage des mayonnaises fermes.
-- #strong[Vinaigre de cidre biologique non pasteurisé (avec mère) :] source vivante d'acide acétique doux et de probiotiques naturels.
-- #strong[Vinaigre de vin vieux ou balsamique traditionnel :] dégraissage des sucs de poêle lors du déglaçage minute (#emph[Chapitre 14]).
-
-=== B. Les Minéraux Piliers & Épices Entières
-- #strong[Gros sel gris de mer non raffiné :] teneur équilibrée en magnésium et oligo-éléments, calibré pour saler l'eau d'ébullition à $10 upright(" g/L")$.
-- #strong[Fleur de sel croquante de Guérande ou de Camargue :] cristaux пирамиdaux fragiles réservés à la finition sur table pour le contraste textural.
-- #strong[Poivre noir en grains entiers (Piper nigrum) en moulin réglable :] les huiles aromatiques et la pipérine s'oxydent en moins de quarante-huit heures une fois broyées. Ne jamais acheter de poivre moulu d'avance.
-- #strong[Épices entières fondamentales :] graines de cumin, graines de coriandre, curcuma en poudre, paprika doux et pimentón fumé, piment d'Espelette, noix de muscade entière à râper, cannelle de Ceylan.
-- #strong[Herbes sèches de garde :] laurier noble en feuilles entières et thym de garrigue séché à l'ombre.
-
-=== C. Féculents, Céréales & Légumineuses Protéiques
-- #strong[Farine de blé T65 biologique :] équilibre optimal entre teneur en gluten pour la panification et richesse en minéraux du son.
-- #strong[Pâtes sèches 100% semoule de blé dur de tréfilage au bronze :] rugosité microscopique retenant les sauces émulsionnées sans nécessiter de crème.
-- #strong[Riz basmati ou jasmin (grains longs) & Riz carnaroli (grains ronds) :] bases glucidiques neutres ou riches en amylopectine pour risottos.
-- #strong[Lentilles corail entières :] cuisson express en 12 minutes sans trempage, désagrégation naturelle en velouté réconfortant (Dahl du #emph[Chapitre 09]).
-- #strong[Lentilles vertes du Puy & Pois chiches secs :] protéines végétales denses, riches en amidon résistant RS3 après refroidissement.
-- #strong[Flocons d'avoine complets :] fibres solubles (bêta-glucanes) régulant la glycémie et liant les appareils à galettes.
-- #strong[Fécule de maïs (Maïzena) :] gélatinisation instantanée à $75^compose upright(C)$ pour lier les sauces en légèreté sans apport lipidique.
-
-=== D. Conserves Brutes de Haute Valeur & Oléagineux
-- #strong[Pulpe fine de tomates ou tomates pelées entières en bocal verre :] concentré d'acide glutamique libre (umami) et de lycopène biodisponible.
-- #strong[Petits poissons gras en boîte à l'huile d'olive (sardines entières, maquereaux) :] apport exceptionnel en acides gras oméga-3 à longue chaîne (EPA/DHA) et calcium assimilable (arêtes attendries par l'appertisation).
-- #strong[Lait de coco pur (60 à 80% d'extrait de coco sans épaississant) :] émulsion végétale stable pour sauces épicées.
-- #strong[Fruits oléagineux bruts non salés :] amandes entières, cerneaux de noix de Grenoble, noisettes, graines de courge et graines de lin brun.
-
-=== E. Alliacées & Tubercules de Garde (Garde-Manger à l'Ombre)
-- #strong[Ail sec en gousses :] allicine antibactérienne et fondation aromatique universelle.
-- #strong[Oignons jaunes de garde & oignons rouges :] quercétine et sucres libérés par caramélisation douce.
-- #strong[Échalotes traditionnelles :] finesse aromatique sulfurée pour sauces au vin et vinaigrettes.
-- #strong[Pommes de terre de conservation :] chair ferme (type Charlotte ou Amandine) et chair farineuse (type Bintje).
-
-#divider()
-
-== 4. LE FRAIS PERMANENT DU RÉFRIGÉRATEUR (LE « FOND DE FRIGO » TOUJOURS DISPONIBLE)
-<le-frais-permanent-du-réfrigérateur-le-fond-de-frigo-toujours-disponible>
-Au-delà des approvisionnements hebdomadaires de marché, le réfrigérateur du foyer moderne doit abriter en permanence #strong[neuf sentinelles du frais], dont la combinaison permet d'élaborer une assiette équilibrée en moins de quinze minutes :
-
-#figure(
-  align(center)[#table(
-  stroke: 0.5pt + rgb("#dcd6ca"),
-  fill: (x, y) => if y == 0 { rgb("#f2ece1") } else if calc.odd(y) { rgb("#faf7f2") } else { none },
-  inset: 7pt,
-    columns: (24%, 22%, 28%, 26%),
-    align: (left, left, left, left),
-    table.header([Ingrédient Permanent], [Emplacement dans le Frigo], [Pouvoir Culinaire & Geste Clé], [Durée Limite de Garde]),
-    table.hline(),
-    [#strong[Œufs Frais de Plein Air (0 ou 1)]],
-    [Étage intermédiaire ($4 upright(" à ") 6^compose upright(C)$) dans leur boîte d'origine.],
-    [Le caméléon protéique universel : mollet (6 min), poché (3 min), omelette baveuse, liant de sauce ou émulsion moussante.],
-    [28 jours après la ponte (date inscrite sur la coquille).],
-
-    [#strong[Bloc de Parmigiano Reggiano AOP]],
-    [Zone fraîche ($4 upright(" à ") 6^compose upright(C)$) emballé dans du papier sulfurisé.],
-    [Mine de glutamate libre et de cristaux de tyrosine : sel d'assaisonnement noble, exhausteur d'umami et liant de pâtes.],
-    [3 à 6 mois sans altération s'il respire dans le papier cuisson.],
-
-    [#strong[Beurre Doux de Baratte (82% MG)]],
-    [Zone fraîche ou beurrier de porte ($6 upright(" à ") 8^compose upright(C)$).],
-    [Montage des sauces au beurre moussant, glaçage des carottes sous cartouche, feuilletage des pâtes brisées.],
-    [3 à 4 semaines après ouverture ; congélation possible en portions.],
-
-    [#strong[Citrons Jaunes Biologiques]],
-    [Bac à légumes ou contre-porte fraîche.],
-    [L'acide invisible de chef : le zeste parfume en huiles essentielles, le jus dégraisse le palais et active la salivation.],
-    [3 à 4 semaines entiers ; 3 jours une fois entamés.],
-
-    [#strong[Trio Végétal : Carotte, Céleri, Poireau]],
-    [Bac à légumes ($6 upright(" à ") 8^compose upright(C)$).],
-    [La mirepoix universelle : base de tous les bouillons d'or, sauces brunes réduites et étuvées aromatiques.],
-    [2 à 3 semaines dans le bac sans perte de turgescence.],
-
-    [#strong[Moutarde Forte de Dijon Pure]],
-    [Contre-porte intermédiaire ($6 upright(" à ") 8^compose upright(C)$).],
-    [Agent tensioactif d'émulsion : ses mucilages naturels stabilisent les liaisons entre l'huile et le vinaigre.],
-    [6 mois au réfrigérateur après ouverture.],
-
-    [#strong[Yaourt Grec ou Fromage Blanc Entier]],
-    [Étage supérieur ou intermédiaire ($4^compose upright(C)$).],
-    [Ferments lactiques vivants, base de sauces fraîches minute au citron et herbes, attendrisseur de volaille.],
-    [2 à 3 semaines non ouvert ; 5 jours après ouverture.],
-
-    [#strong[Tofu Ferme Nature ou Pâte Miso]],
-    [Zone la plus froide ($2 upright(" à ") 4^compose upright(C)$).],
-    [Protéines végétales pures prêtes à dorer en cube croustillant, ou assaisonnement fermenté profond pour soupes minute.],
-    [Tofu : 1 semaine au frais dans un bol d'eau changée tous les 2 jours ; Miso : 12 mois.],
-
-    [#strong[Bouquet d'Herbes Fraîches (Persil)]],
-    [Contre-porte, tiges trempées dans $2 upright(" cm")$ d'eau.],
-    [Finition aromatique chlorophyllienne vive, antioxydants et fraîcheur immédiate dressée sur l'assiette chaude.],
-    [7 à 10 jours en changeant l'eau tous les deux jours.]
-  )]
-  , caption: [Les neuf piliers du frais permanent au réfrigérateur : conservation et potentiel culinaire immédiat.],
-  kind: table
-)
-
-#divider()
-
-== 5. LE GABARIT MATRICIEL DE COURSES SAINES (TRIPTYQUE SUR TROIS PAGES ENTIÈRES)
-<le-gabarit-matriciel-de-courses-saines-avec-cases-à-cocher>
-Faire ses courses de manière éclairée ne consiste pas à remplir un chariot au gré des stimulations publicitaires des têtes de gondole. Ce protocole applique les #strong[quatre principes cardinaux de l'approvisionnement souverain] :
-
-1. #strong[La Règle du Ventre Repu :] Ne jamais franchir les portes d'un marché ou d'un magasin l'estomac vide. La chute de leptine et la sécrétion de ghréline activent les réflexes ancestraux de recherche impulsive de calories simples (sucres raffinés et graisses saturées).
-2. #strong[La Règle du Pourtour 80/20 :] Dans toute surface marchande, consacrer 80% de son budget et de son panier au pourtour extérieur (étals des primeurs, boucheries artisanales, marées, produits laitiers bruts, farines en vrac). Fuir le cœur central des allées où s'empilent les produits ultra-transformés.
-3. #strong[La Règle des Cinq Ingrédients :] Si l'étiquette d'un aliment manufacturé énumère plus de cinq composants ou mentionne des agents introuvables dans une cuisine domestique (amidons modifiés, graisses hydrogénées, exhausteurs de goût), le produit n'a aucune place dans votre organisme.
-4. #strong[La Règle des Trente Végétaux Hebdomadaires :] Garantir la diversité de l'écosystème bactérien intestinal en cochant chaque semaine un panaché de légumes racines, feuilles vertes, graines, herbes aromatiques et légumineuses.
-
-Le gabarit ci-après a été conçu pour occuper #strong[trois pages entières indépendantes], immédiatement imprimables, détachables ou photographiables sur smartphone, sans aucun texte tronqué à cheval sur les pages.
-
-#pagebreak()
-
-// =========================================================================
-// GABARIT DE COURSES — PLEINE PAGE 1 / 3 : MARAÎCHAGE, RACINES & VRAC VITAL
-// =========================================================================
-
-#align(center)[
-  #text(size: 13pt, weight: "bold", fill: c-bordeaux)[GABARIT DE COURSES RATIONNELLES DU FOYER — FICHE 1 / 3] \
-  #v(1pt)
-  #text(size: 8.8pt, style: "italic", fill: c-slate)[Le Règne Végétal : Primeur, Maraîchage Vivant, Céréales & Vrac — Page autonome à détacher]
-]
-
-#v(0.2cm)
-
-#grid(
-  columns: (1fr, 1fr),
-  gutter: 12pt,
-  [
-    #block(
-      fill: rgb("#faf7f0"),
-      stroke: 0.5pt + rgb("#dfdacf"),
-      inset: 8pt,
-      radius: 4pt,
-      width: 100%,
-      spacing: 0.65em
-    )[
-      #text(weight: "bold", size: 9.8pt, fill: c-bordeaux)[1. PRIMEUR, RACINES & HERBORISTERIE]
-      #v(1pt)
-      #line(length: 100%, stroke: 0.5pt + c-bronze)
-      #v(3pt)
-      #set text(size: 8.8pt)
-      #set par(leading: 0.65em)
-      #case_cocher Carottes de garde (terre non lavée) \
-      #case_cocher Céleri branche ou céleri-rave \
-      #case_cocher Oignons jaunes de garde & oignons rouges \
-      #case_cocher Ail sec en têtes & échalotes grises \
-      #case_cocher Poireaux ou chou pommé (vert / rouge) \
-      #case_cocher Salade maraîchère croquante / pousses \
-      #case_cocher Citrons jaunes biologiques non traités \
-      #case_cocher Pommes de terre à chair ferme (Charlotte) \
-      #case_cocher Pommes de terre farineuses (Bintje / purée) \
-      #case_cocher Bouquet de persil plat ou coriandre fraîche \
-      #case_cocher Légumes-feuilles de saison (épinards, blettes) \
-      #case_cocher Légumes-fruits de saison (courgettes, tomates) \
-      #case_cocher Fruits frais bruts de saison (pommes, poires) \
-      #case_cocher Champignons frais de Paris ou de forêt \
-      #case_cocher Gingembre frais en racine \
-      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
-      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
-      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
-      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
-    ]
-  ],
-  [
-    #block(
-      fill: rgb("#faf7f0"),
-      stroke: 0.5pt + rgb("#dfdacf"),
-      inset: 8pt,
-      radius: 4pt,
-      width: 100%,
-      spacing: 0.65em
-    )[
-      #text(weight: "bold", size: 9.8pt, fill: c-bordeaux)[2. ÉPICERIE SÈCHE & VRAC VITAL]
-      #v(1pt)
-      #line(length: 100%, stroke: 0.5pt + c-bronze)
-      #v(3pt)
-      #set text(size: 8.8pt)
-      #set par(leading: 0.65em)
-      #case_cocher Farine de blé T65 biologique de meule \
-      #case_cocher Pâtes de semoule de blé dur au bronze \
-      #case_cocher Riz long basmati ou jasmin \
-      #case_cocher Riz rond pour risotto (Carnaroli / Arborio) \
-      #case_cocher Lentilles corail (cuisson 12 min sans trempage) \
-      #case_cocher Lentilles vertes du Puy ou lentilles brunes \
-      #case_cocher Pois chiches secs de ferme \
-      #case_cocher Haricots blancs secs (lingots / cocos) \
-      #case_cocher Flocons d'avoine complets (bêta-glucanes) \
-      #case_cocher Fécule de maïs (Maïzena) ou de pomme de terre \
-      #case_cocher Graines de lin brun & graines de courge \
-      #case_cocher Graines de sésame blond complet \
-      #case_cocher Cerneaux de noix de Grenoble & amandes brutes \
-      #case_cocher Sucre de canne complet (Rapadura / Muscovado) \
-      #case_cocher Miel brut artisanal d'apiculteur \
-      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
-      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
-      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
-      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
-    ]
-  ]
-)
-
-#v(0.2cm)
-
-#point_attention[
-#strong[Objectif Microbiote des 30 Végétaux :] Pour nourrir l'ensemble des phyla bactériens de votre côlon, variez les couleurs et les familles botaniques. Chaque case cochée dans les deux colonnes ci-dessus (alliacées, crucifères, ombellifères, légumineuses, graminées, graines et fruits oléagineux) apporte un profil distinct de fibres prébiotiques et de polyphénols protecteurs.
-]
-
-#pagebreak()
-
-// =========================================================================
-// GABARIT DE COURSES — PLEINE PAGE 2 / 3 : CRÈMERIE, PROTÉINES & CONSERVES
-// =========================================================================
-
-#align(center)[
-  #text(size: 13pt, weight: "bold", fill: c-bordeaux)[GABARIT DE COURSES RATIONNELLES DU FOYER — FICHE 2 / 3] \
-  #v(1pt)
-  #text(size: 8.8pt, style: "italic", fill: c-slate)[Le Frais Vivant, Boucherie, Marée & Conserves Nobles — Page autonome à détacher]
-]
-
-#v(0.2cm)
-
-#grid(
-  columns: (1fr, 1fr),
-  gutter: 12pt,
-  [
-    #block(
-      fill: rgb("#faf7f0"),
-      stroke: 0.5pt + rgb("#dfdacf"),
-      inset: 8pt,
-      radius: 4pt,
-      width: 100%,
-      spacing: 0.65em
-    )[
-      #text(weight: "bold", size: 9.8pt, fill: c-bordeaux)[3. CRÈMERIE, ŒUFS & FRAIS VIVANT]
-      #v(1pt)
-      #line(length: 100%, stroke: 0.5pt + c-bronze)
-      #v(3pt)
-      #set text(size: 8.8pt)
-      #set par(leading: 0.65em)
-      #case_cocher Œufs frais biologiques ou plein air (code 0 ou 1) \
-      #case_cocher Beurre doux de baratte (82% de matière grasse) \
-      #case_cocher Bloc de Parmigiano Reggiano AOP (24 à 30 mois) \
-      #case_cocher Yaourts grecs entiers au lait de brebis / vache \
-      #case_cocher Fromage blanc fermier au lait entier \
-      #case_cocher Crème liquide entière d'Isigny (35% MG) \
-      #case_cocher Lait entier pasteurisé de ferme \
-      #case_cocher Tofu ferme nature de soja biologique \
-      #case_cocher Pâte miso brune ou blanche de longue garde \
-      #case_cocher Fromage de garde au lait cru (Comté / Cantal) \
-      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
-      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
-    ]
-
-    #v(0.2cm)
-
-    #block(
-      fill: rgb("#faf7f0"),
-      stroke: 0.5pt + rgb("#dfdacf"),
-      inset: 8pt,
-      radius: 4pt,
-      width: 100%,
-      spacing: 0.65em
-    )[
-      #text(weight: "bold", size: 9.8pt, fill: c-bordeaux)[4. BOUCHERIE, VOLAILLE & MARÉE]
-      #v(1pt)
-      #line(length: 100%, stroke: 0.5pt + c-bronze)
-      #v(3pt)
-      #set text(size: 8.8pt)
-      #set par(leading: 0.65em)
-      #case_cocher Poulet fermier entier prêt à brider \
-      #case_cocher Pavé de bœuf épais à poêler (rumsteck, aloyau) \
-      #case_cocher Morceau collagénique à braiser (paleron, joue) \
-      #case_cocher Filets de poisson blanc de ligne (cabillaud, lieu) \
-      #case_cocher Petits poissons bleus frais (sardines, maquereaux) \
-      #case_cocher Graisse de canard pure du Sud-Ouest en bocal \
-      #case_cocher Os à moelle ou carcasse pour fond de volaille \
-      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
-      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
-    ]
-  ],
-  [
-    #block(
-      fill: rgb("#faf7f0"),
-      stroke: 0.5pt + rgb("#dfdacf"),
-      inset: 8pt,
-      radius: 4pt,
-      width: 100%,
-      spacing: 0.65em
-    )[
-      #text(weight: "bold", size: 9.8pt, fill: c-bordeaux)[5. CONDIMENTS, CONSERVES & SAUCES MÈRES]
-      #v(1pt)
-      #line(length: 100%, stroke: 0.5pt + c-bronze)
-      #v(3pt)
-      #set text(size: 8.8pt)
-      #set par(leading: 0.65em)
-      #case_cocher Huile d'olive vierge extra de première pression \
-      #case_cocher Huile de colza ou pépin de raisin (saisies vives) \
-      #case_cocher Vinaigre de cidre bio non pasteurisé avec mère \
-      #case_cocher Vinaigre de vin vieux ou balsamique traditionnel \
-      #case_cocher Moutarde de Dijon forte traditionnelle \
-      #case_cocher Sauce soja ou tamari naturellement fermenté \
-      #case_cocher Pulpe fine de tomates ou tomates pelées en boîte \
-      #case_cocher Conserves de sardines entières à l'huile d'olive \
-      #case_cocher Conserves de filets de maquereaux au naturel \
-      #case_cocher Lait de coco pur sans épaississant (guar/xanthane) \
-      #case_cocher Gros sel gris marin non raffiné (pour l'eau) \
-      #case_cocher Fleur de sel de Guérande (finition croquante) \
-      #case_cocher Poivre noir entier en grains (moulin réglable) \
-      #case_cocher Graines de cumin, de coriandre et curcuma pur \
-      #case_cocher Paprika fumé pimentón de la Vera & Espelette \
-      #case_cocher Noix de muscade entière avec sa coque protectrice \
-      #case_cocher Feuilles de laurier noble et thym de Provence \
-      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
-      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
-      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
-    ]
-  ]
-)
-
-#v(0.2cm)
-
-#point_attention[
-#strong[Sécurité Chaîne du Froid :] Au retour des courses, intégrer immédiatement les articles des sections 3 et 4 dans leurs bio-zones respectives selon la cartographie de l'Annexe E. Les poissons et viandes fraîches ($0 upright(" à ") 2^compose upright(C)$) ne tolèrent aucune attente sur le plan de travail.
-]
-
-#pagebreak()
-
-// =========================================================================
-// GABARIT DE COURSES — PLEINE PAGE 3 / 3 : DROGUERIE, OUTILLAGE & PROTOCOLE
-// =========================================================================
-
-#align(center)[
-  #text(size: 13pt, weight: "bold", fill: c-bordeaux)[GABARIT DE COURSES RATIONNELLES DU FOYER — FICHE 3 / 3] \
-  #v(1pt)
-  #text(size: 8.8pt, style: "italic", fill: c-slate)[Consommables, Outillage d'Office & Protocole de Marche — Page autonome à détacher]
-]
-
-#v(0.2cm)
-
-#grid(
-  columns: (1fr, 1fr),
-  gutter: 12pt,
-  [
-    #block(
-      fill: rgb("#faf7f0"),
-      stroke: 0.5pt + rgb("#dfdacf"),
-      inset: 8pt,
-      radius: 4pt,
-      width: 100%,
-      spacing: 0.65em
-    )[
-      #text(weight: "bold", size: 9.8pt, fill: c-bordeaux)[6. CONSOMMABLES & DROGUERIE DU FOYER]
-      #v(1pt)
-      #line(length: 100%, stroke: 0.5pt + c-bronze)
-      #v(3pt)
-      #set text(size: 8.8pt)
-      #set par(leading: 0.65em)
-      #case_cocher Rouleau de papier sulfurisé siliconé non blanchi \
-      #case_cocher Rouleau de papier d'aluminium épais traiteur \
-      #case_cocher Rouleau de film étirable alimentaire sans PVC \
-      #case_cocher Pelote de ficelle de boucher en lin ou coton écru \
-      #case_cocher Carrés d'étamine de coton pur / gaze à fromage \
-      #case_cocher Boîte de sacs congélation hermétiques à double zip \
-      #case_cocher Bocaux en verre avec joints en caoutchouc neufs \
-      #case_cocher Vinaigre blanc d'alcool à $12^compose$ (détartrage inox) \
-      #case_cocher Bicarbonate de soude technique alimentaire \
-      #case_cocher Pain de savon de Marseille ou savon noir liquide \
-      #case_cocher Tampons de laine d'acier 000 ou paille de fer fine \
-      #case_cocher Éponges végétales naturelles double face \
-      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
-      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
-    ]
-  ],
-  [
-    #block(
-      fill: rgb("#faf7f0"),
-      stroke: 0.5pt + rgb("#dfdacf"),
-      inset: 8pt,
-      radius: 4pt,
-      width: 100%,
-      spacing: 0.65em
-    )[
-      #text(weight: "bold", size: 9.8pt, fill: c-bordeaux)[7. OUTILLAGE D'OFFICE & COUTELLERIE]
-      #v(1pt)
-      #line(length: 100%, stroke: 0.5pt + c-bronze)
-      #v(3pt)
-      #set text(size: 8.8pt)
-      #set par(leading: 0.65em)
-      #case_cocher Couteau d'office court ($8 upright(" à ") 10 upright(" cm")$) \
-      #case_cocher Éplucheur rasoir en « Y » (lame carbone) \
-      #case_cocher Couteau à pain cranté rigide ($22 upright(" cm")$) \
-      #case_cocher Grande cuillère de poule en inox pour arroser \
-      #case_cocher Grande cuillère en bois de hêtre massif \
-      #case_cocher Spatule plate rigide biseautée (déglaçage / saisie) \
-      #case_cocher Spatule souple Maryse en silicone ($250^compose upright(C)$) \
-      #case_cocher Pince de chef en inox ($30 upright(" cm")$) \
-      #case_cocher Grande fourchette de chef à deux dents (diapason) \
-      #case_cocher Écumoire araignée en inox à fils croisés \
-      #case_cocher Louche monobloc emboutie sans soudure \
-      #case_cocher Fouet ballon à douze fils souples \
-      #case_cocher Râpe fine micro-dentée (zestes et parmesan) \
-      #case_cocher Ciseaux de cuisine démontables à crans osseux \
-      #case_cocher #line(length: 82%, stroke: 0.4pt + rgb("#a8a29e")) \
-    ]
-  ]
-)
-
-#v(0.2cm)
-
-#truc_de_chef[
-#strong[Protocole de Courses Hebdomadaires en 30 Minutes Chrono :]
-1. #strong[Revue du Fond de Placard (J-1) :] Ouvrir le garde-manger et le bac à légumes ; cocher sur le gabarit uniquement les éléments manquants des catégories 1 à 6.
-2. #strong[Le Parcours Linéaire au Marché :] Suivre l'ordre numérique strict (1 Primeur $arrow.r$ 2 Vrac $arrow.r$ 3 Crèmerie $arrow.r$ 4 Boucherie/Marée). Les produits fragiles et froids arrivent en dernier dans le cabas isotherme.
-3. #strong[Intégration Directe (FIFO) :] Au retour, ranger immédiatement le frais selon la cartographie thermique de l'Annexe E : viandes et poissons dans la zone la plus froide ($0 upright(" à ") 2^compose upright(C)$), crèmerie au milieu ($4^compose upright(C)$), légumes au bac ($6 upright(" à ") 8^compose upright(C)$).
-]
-
-#divider()
-
-= ANNEXE G --- Répertoire des Crédits Iconographiques et Sources des Illustrations
-<annexe-g-répertoire-des-crédits-iconographiques-et-sources-des-illustrations>
+= ANNEXE F --- Répertoire des Crédits Iconographiques et Sources des Illustrations
+<annexe-f-répertoire-des-crédits-iconographiques-et-sources-des-illustrations>
 Le présent répertoire consigne l'ensemble des sources, attributions,
 dates et licences libres (#emph[Creative Commons] ou #emph[Domaine
 Public]) des documents iconographiques, gravures historiques,
@@ -8455,10 +8310,9 @@ photographies culinaires et schémas scientifiques de l'ouvrage.
     [#strong[Annexes]], [#emph[Confiseur, Étuve et Four (Pl. II de
     l'Encyclopédie)]], [Diderot, d'Alembert, Goussier &
     Bénard], [1762], [Domaine Public / Wikimedia],
-  )],
-  caption: [Crédits et sources des grandes ouvertures de livres en pleine page verso.],
-  kind: table
-)
+  )]
+  , kind: table
+  )
 
 #divider()
 
@@ -8499,10 +8353,9 @@ photographies culinaires et schémas scientifiques de l'ouvrage.
     [#strong[Chapitre 26]], [#emph[Diversité des légumineuses sèches et
     amidon résistant]], [Photographie agronomique (#emph[Various
     legumes])], [Domaine Public / Wikimedia],
-  )],
-  caption: [Crédits des portraits historiques, gravures d'archives et photographies scientifiques.],
-  kind: table
-)
+  )]
+  , kind: table
+  )
 
 #divider()
 
@@ -8559,10 +8412,9 @@ ou #strong[Domaine Public (CC0)] :
     intact],
     [#strong[\13.] Ceviche éclatant de cabillaud mariné au citron
     vert], [#strong[\26.] Crème glacée onctueuse turbinée au sel],
-  )],
-  caption: [Répertoire des crédits photographiques des 26 recettes fondatrices.],
-  kind: table
-)
+  )]
+  , kind: table
+  )
 
 #divider()
 
@@ -8631,7 +8483,7 @@ Partage dans les Mêmes Conditions 4.0 International (CC BY-SA 4.0)] :
     ]
     #v(3pt)
     #text(size: 8.8pt, fill: rgb("#e7e5e4"), font: "Liberation Sans")[
-      • *6 Livres Majeurs & 26 Chapitres Exhaustifs* : Du premier foyer à la nutrition diachronique.\
+      • *6 Livres Majeurs & 27 Chapitres Exhaustifs* : Du premier foyer à la nutrition diachronique.\
       • *26 Fiches Recettes Fondatrices* : Ratios universels, pas-à-pas et arbres de sauvetage en 30 secondes.\
       • *Ouvertures Iconographiques Pleine Page* : Face-à-face graphique noble sur chaque nouveau Livre.\
       • *Ingénierie du Foyer & Sécurité Sanitaire* : Gestion des pannes, brûlures, découpes et marche en avant.\

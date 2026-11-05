@@ -66,6 +66,11 @@ Pourquoi ne doit-on **jamais** découper une viande immédiatement à la sortie 
 - Si vous coupez le steak immédiatement : la pression interne fait jaillir toute l'eau sur la planche en une flaque rouge, laissant la viande sèche et fade.
 - En laissant reposer la viande sur une grille tiède pendant un **temps égal au temps de cuisson (5 à 8 minutes)** sous une feuille d'aluminium lâche : la température s'égalise entre le cœur et la périphérie, les fibres musculaires se relâchent et réabsorbent les sucs dans tout le volume. À la première bouchée, le jus reste à l'intérieur de la chair.
 
+### D. La Chimie des Sucs : Réaction de Maillard vs Caramélisation
+Une confusion tenace qualifie fréquemment de « caramélisés » les sucs brunis qui s'attachent au fond de la poêle. La réalité biochimique est tout autre :
+- **La Caramélisation Pure :** C'est une pyrolyse thermique de glucides purs (saccharose à $>160^\circ\mathrm{C}$, glucose à $>150^\circ\mathrm{C}$), se déroulant en l'absence totale de composés azotés. Elle produit du maltol, des furanes et des polymères de déshydratation (caramélane, caramélène).
+- **La Réaction de Maillard :** Dans le muscle carné, les sucres réducteurs libres (traces de glucose, ribose) entrent en condensation avec les groupements amine des acides aminés et peptides dès $130\text{--}140^\circ\mathrm{C}$. Cette cascade complexe génère des centaines de molécules aromatiques hétérocycliques (pyrazines aux notes rôties, thiazoles, thiophènes soufrés) et des polymères bruns azotés appelés **mélanoïdines**. Ce sont ces mélanoïdines et ces hétérocycles qui constituent les **vrais sucs de rissolage** solubles lors du déglaçage, et non un simple caramel.
+
 ---
 
 ## 4. LA MÉCANIQUE DU POISSON ENTIER : ÉCAILLAGE, VIDAGE ET LEVÉE DES FILETS
@@ -128,14 +133,14 @@ Peut-on « cuire » un poisson sans le moindre apport de chaleur ? C'est le prin
 
 ### 🍳 Fiche Recette 12 : Le Déglaçage Minute & Sauce Réduite au Vin Montée au Beurre {#recette-deglacage-minute}
 
-*La récupération des sucs caramélisés au fond de la poêle et la liaison au beurre froid.*
+*La dissolution des mélanoïdines de Maillard attachées au fond de la poêle et la liaison au beurre froid.*
 
 ![Sauce miroitante issue d'un déglaçage minute au vin rouge montée au beurre](figures/nourriture/deglacage_sauce_vin.jpg)
 
 - **Temps de préparation :** 2 minutes | **Temps de cuisson :** 4 minutes
 - **Minimalisme Instrumental :** La poêle de cuisson de la viande, 1 spatule en bois, 1 petit fouet.
 - **Ingrédients pour 2 personnes :**
-  - Sucs caramélisés au fond de la poêle après la cuisson des viandes
+  - Sucs de Maillard (mélanoïdines dorées) attachés au fond de la poêle après la saisie des viandes
   - Échalote finement ciselée : 1 pièce
   - Vin rouge corsé (ou vin blanc sec) : $100\text{ ml}$
   - Beurre doux très froid coupé en petits dés : $30\text{ g}$ | Fleur de sel, poivre noir.

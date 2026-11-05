@@ -12,7 +12,7 @@ Aucun groupe humain connu sur Terre ne vit exclusivement d'aliments sauvages cru
 ![L'Évolution du Feu et la Morphogenèse Humaine](figures/histoire/fig_histoire_evolution_feu.svg)
 
 ### A. La Prédigestion Externe : L'Économie Énergétique Absolue
-Comme l'a démontré le primatologue et anthropologue d'Harvard Richard Wrangham, l'invention de la cuisson il y a environ 1,8 million d'années par *Homo erectus* est le pivot de notre évolution biologique :
+Selon la thèse pionnière du primatologue et anthropologue d'Harvard Richard Wrangham (*Catching Fire*), l'adoption précoce de la cuisson à l'aube d'*Homo erectus* (vers $-1{,}8$ million d'années) constitue le pivot biologique de notre lignée. Si cette datation très haute demeure un modèle théorique fécond débattu en paléoanthropologie — les preuves archéologiques formelles de foyers entretenus et maîtrisés (Wonderwerk, Gesher Benot Ya'aqov, Qesem) s'échelonnant plus sûrement entre $-1$ million d'années et $-300\,000$ ans —, la dynamique métabolique mise en lumière reste incontestable :
 1. **La Gélatinisation de l'Amidon et la Dénaturation des Protéines :**
    Les glucides complexes (racines, tubercules) crus sont enfermés dans des granules d'amidon cristallins étanches que les enzymes digestives humaines (amylases) peinent à attaquer. La chaleur en milieu humide fait gonfler et éclater ces granules ($60\text{--}75^\circ\mathrm{C}$), rendant les chaînes de glucose directement biodisponibles. 
    Parallèlement, la chaleur déroule les pelotes compactes de protéines animales, exposant les liaisons peptidiques aux protéases stomacales.

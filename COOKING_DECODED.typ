@@ -511,6 +511,12 @@
     - #link(<recette-mousse-aquafaba>)[*Protocol 24:* Airy Aquafaba Chocolate Mousse (Zero-Egg)] --- _Chapter 20_
     - #link(<recette-omelette-norvegienne>)[*Protocol 25:* Baked Alaska Minute (Air-Insulated Meringue Shield)] --- _Chapter 21_
     - #link(<recette-glace-sel>)[*Protocol 26:* Rapid Ice Cream without Churn via Salt Cryoscopic Depression] --- _Chapter 21_
+
+    #v(0.12cm)
+    *8. Derivative Cuisines & Frontier Paradigms (Book VI)*
+    - #link(<recette-celeri-granulats>)[*Protocol 27:* Celeriac Baked in a Refractory Silica Sand Bed (Telluric Cuisine)] --- _Chapter 27_
+    - #link(<recette-maquereau-brule-froid>)[*Protocol 28:* Cold-Seared Mackerel via Lacto-Saline Fermentation (Enzy-Biotic Cuisine)] --- _Chapter 27_
+    - #link(<recette-emulsion-parures-oignon>)[*Protocol 29:* Black Onion Peel Emulsion and Reduced Bone Glaze (Interface Cuisine)] --- _Chapter 27_
   ]
 ]
 
@@ -570,8 +576,8 @@
     ]
     #v(3pt)
     #text(size: 8.8pt, fill: rgb("#e7e5e4"), font: "Liberation Sans")[
-      • *6 Major Books & 26 Comprehensive Chapters*: From ancestral fire to diachronic nutrition.\
-      • *26 Foundational Recipe Protocols*: Universal ratios, step-by-step physics, and 30-second rescue trees.\
+      • *6 Major Books & 27 Comprehensive Chapters*: From ancestral fire to diachronic nutrition.\
+      • *29 Foundational Recipe Protocols*: Universal ratios, step-by-step physics, and 30-second rescue trees.\
       • *Dual Metrology Throughout*: Continuous °C / °F, grams / ounces, and milliliters / cups conversions.\
       • *Kitchen Engineering & Safety*: Oil fire smothering, blackout protocols, and knife biomechanics.\
       • *Open Access & Preservation*: Distributed under Creative Commons CC BY-SA 4.0 license.
