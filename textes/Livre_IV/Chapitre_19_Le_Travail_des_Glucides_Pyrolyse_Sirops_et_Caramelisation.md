@@ -32,7 +32,7 @@ Bien que toutes deux soient des brunissements non enzymatiques déclenchés par 
 
 ---
 
-## 3. CARAMEL À SEC vs CARAMEL À L'EAU : LA VÉRITÉ TECHNIQUE : LA VÉRITÉ TECHNIQUE
+## 3. CARAMEL À SEC vs CARAMEL À L'EAU : LA VÉRITÉ TECHNIQUE
 
 1. **Le Caramel à l'Eau (Méthode Débutante Sécurisée) :**
    - On humidifie le sucre avec un tiers de son poids en eau.

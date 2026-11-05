@@ -5739,8 +5739,8 @@ aminés musculaires.
 
 #divider()
 
-== 3. CARAMEL À SEC vs CARAMEL À L'EAU : LA VÉRITÉ TECHNIQUE : LA VÉRITÉ TECHNIQUE
-<caramel-à-sec-vs-caramel-à-leau-la-vérité-technique-la-vérité-technique>
+== 3. CARAMEL À SEC vs CARAMEL À L'EAU : LA VÉRITÉ TECHNIQUE
+<caramel-à-sec-vs-caramel-à-leau-la-vérité-technique>
 + #strong[Le Caramel à l'Eau (Méthode Débutante Sécurisée) :]
   - On humidifie le sucre avec un tiers de son poids en eau.
   - #emph[L'avantage :] L'eau dissout uniformément les cristaux avant
